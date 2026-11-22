@@ -99,3 +99,13 @@ Both arms decode the same question and A/B options. Only the conditioned compres
 .venv/bin/python prepare_clotho.py --fresh-val
 .venv/bin/python -u bottleneck.py fresh --clotho --out fresh-capacity
 ```
+
+### 原始模型與聲音置換對照
+
+沿用 fresh_val.json 內相同的題目、選項及音檔。原始模型依序評估純文字、完整音訊以及非配對音訊。置換用 seed=17 將錄音打亂後循環平移，同一錄音的兩題共用 donor，每段音訊被使用一次。置換後仍按原始問題的原標籤計分，因此觀察的是配對聲音能帶來多少額外正確答案。其他錄音偶爾也可能符合該題。
+
+```bash
+.venv/bin/python -u bottleneck.py controls --clotho --out fresh-controls
+```
+
+將 fresh-controls 下四個 JSON 放入本機 phase2/fresh-controls，執行 `python analyze_controls.py`（NumPy）會生成逐題型 metrics.csv 與配對 contrasts.csv。yes/no recall 分別以各自正解數為分母；balanced accuracy 是兩者的平均。差異區間以錄音為單位配對 bootstrap，條件在本次三個固定訓練 seed 與單一 donor 排列。

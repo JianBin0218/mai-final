@@ -35,7 +35,7 @@ class Compressor(nn.Module):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("mode", choices=["train", "eval", "pool", "fresh"])
+    parser.add_argument("mode", choices=["train", "eval", "pool", "fresh", "controls"])
     parser.add_argument("--out", type=Path, required=True)
     parser.add_argument("--steps", type=int, default=16)
     parser.add_argument("--k", type=int, default=16)
@@ -46,7 +46,7 @@ def main():
     parser.add_argument("--init-from", type=Path, help="Warm-start from an audio-only compressor; reset AdamW and zero the question projection")
     parser.add_argument("--pool-ks", type=int, nargs="+", default=[4, 16], help="Slot counts for the fixed pooling evaluation")
     args = parser.parse_args()
-    if args.mode == "fresh" and (not args.clotho or args.conditioned):
+    if args.mode in ("fresh","controls") and (not args.clotho or args.conditioned):
         parser.error("fresh requires --clotho and audio-only checkpoints")
     if args.mode == "pool" and (not args.clotho or args.conditioned or min(args.pool_ks) < 1):
         parser.error("pool requires --clotho and positive slot counts without --conditioned")
@@ -80,7 +80,7 @@ def main():
                 rows.append((item["path"], question, item["label"]))
             return rows
         train, test = samples("train"), samples("val")
-        if args.mode == "fresh":
+        if args.mode in ("fresh","controls"):
             previous = {r[0] for r in train + test}
             manifest = json.loads(Path("data/clotho/fresh_val.json").read_text())
             test = samples("val")
@@ -139,7 +139,7 @@ def main():
         return comp(features(path), condition)
 
     @torch.no_grad()
-    def evaluate(samples, swap=False, full=False, text_only=False, pool_k=None):
+    def evaluate(samples, swap=False, full=False, text_only=False, pool_k=None, donors=None):
         rows = []
         for path, question, target in samples:
             if text_only:
@@ -152,12 +152,25 @@ def main():
                     audio = features(path)
                     latent = F.adaptive_avg_pool1d(audio.T.unsqueeze(0), pool_k)[0].T
                 else:
-                    latent = features(path) if full else compress(path, question, swap)
+                    latent = features(donors[path] if donors else path) if full else compress(path, question, swap)
                 scores = decode(latent, question)
             rows.append(dict(path=path, question=question, target=target, prediction=scores.argmax().item(),
                              loss=F.cross_entropy(scores[None], torch.tensor([target],device="cuda")).item()))
         return dict(correct=sum(r["prediction"]==r["target"] for r in rows), n=len(rows),
                     loss=sum(r["loss"] for r in rows)/len(rows), rows=rows)
+
+    if args.mode == "controls":
+        clips = sorted({row[0] for row in test})
+        random.Random(17).shuffle(clips)
+        donors = dict(zip(clips, clips[1:] + clips[:1]))
+        assert all(k != v for k,v in donors.items())
+        (args.out / "donors.json").write_text(json.dumps(donors))
+        for name, kwargs in (("text", {"text_only":True}), ("full", {"full":True}),
+                             ("unrelated", {"full":True, "donors":donors})):
+            scored = evaluate(test, **kwargs)
+            (args.out / (name+".json")).write_text(json.dumps(scored))
+            print(name, scored["correct"], scored["n"], flush=True)
+        return
 
     if args.mode == "fresh":
         print("Fresh validation:", len(test), "questions", flush=True)
