@@ -1,0 +1,601 @@
+task,group,pair,direction,question,clip,donor,condition,margin_yes
+identity,esc-0,0,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-0-0-0.wav,data/paired_evidence/identity-0-0-1.wav,own,2.5
+identity,esc-0,0,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-0-0-0.wav,data/paired_evidence/identity-0-0-1.wav,donor_residual,1.5
+identity,esc-0,0,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-0-0-0.wav,data/paired_evidence/identity-0-0-1.wav,donor_pool,3.25
+identity,esc-0,0,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-0-0-1.wav,data/paired_evidence/identity-0-0-0.wav,own,1.875
+identity,esc-0,0,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-0-0-1.wav,data/paired_evidence/identity-0-0-0.wav,donor_residual,3.25
+identity,esc-0,0,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-0-0-1.wav,data/paired_evidence/identity-0-0-0.wav,donor_pool,1.5
+second_event,esc-0,1,0,Can you hear the sound of door wood creaks after the pause?,data/paired_evidence/identity-0-0-0.wav,data/paired_evidence/identity-0-0-1.wav,own,4.25
+second_event,esc-0,1,0,Can you hear the sound of door wood creaks after the pause?,data/paired_evidence/identity-0-0-0.wav,data/paired_evidence/identity-0-0-1.wav,donor_residual,2.0
+second_event,esc-0,1,0,Can you hear the sound of door wood creaks after the pause?,data/paired_evidence/identity-0-0-0.wav,data/paired_evidence/identity-0-0-1.wav,donor_pool,4.25
+second_event,esc-0,1,1,Can you hear the sound of door wood creaks after the pause?,data/paired_evidence/identity-0-0-1.wav,data/paired_evidence/identity-0-0-0.wav,own,1.375
+second_event,esc-0,1,1,Can you hear the sound of door wood creaks after the pause?,data/paired_evidence/identity-0-0-1.wav,data/paired_evidence/identity-0-0-0.wav,donor_residual,4.25
+second_event,esc-0,1,1,Can you hear the sound of door wood creaks after the pause?,data/paired_evidence/identity-0-0-1.wav,data/paired_evidence/identity-0-0-0.wav,donor_pool,2.0
+identity,esc-0,2,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-0-1-1.wav,data/paired_evidence/identity-0-1-0.wav,own,1.625
+identity,esc-0,2,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-0-1-1.wav,data/paired_evidence/identity-0-1-0.wav,donor_residual,1.5
+identity,esc-0,2,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-0-1-1.wav,data/paired_evidence/identity-0-1-0.wav,donor_pool,1.75
+identity,esc-0,2,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-0-1-0.wav,data/paired_evidence/identity-0-1-1.wav,own,1.375
+identity,esc-0,2,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-0-1-0.wav,data/paired_evidence/identity-0-1-1.wav,donor_residual,1.75
+identity,esc-0,2,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-0-1-0.wav,data/paired_evidence/identity-0-1-1.wav,donor_pool,1.5
+second_event,esc-0,3,0,Can you hear the sound of clock alarm after the pause?,data/paired_evidence/identity-0-1-1.wav,data/paired_evidence/identity-0-1-0.wav,own,2.375
+second_event,esc-0,3,0,Can you hear the sound of clock alarm after the pause?,data/paired_evidence/identity-0-1-1.wav,data/paired_evidence/identity-0-1-0.wav,donor_residual,0.875
+second_event,esc-0,3,0,Can you hear the sound of clock alarm after the pause?,data/paired_evidence/identity-0-1-1.wav,data/paired_evidence/identity-0-1-0.wav,donor_pool,2.125
+second_event,esc-0,3,1,Can you hear the sound of clock alarm after the pause?,data/paired_evidence/identity-0-1-0.wav,data/paired_evidence/identity-0-1-1.wav,own,0.5
+second_event,esc-0,3,1,Can you hear the sound of clock alarm after the pause?,data/paired_evidence/identity-0-1-0.wav,data/paired_evidence/identity-0-1-1.wav,donor_residual,2.125
+second_event,esc-0,3,1,Can you hear the sound of clock alarm after the pause?,data/paired_evidence/identity-0-1-0.wav,data/paired_evidence/identity-0-1-1.wav,donor_pool,0.875
+identity,esc-1,4,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-1-0-0.wav,data/paired_evidence/identity-1-0-1.wav,own,1.625
+identity,esc-1,4,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-1-0-0.wav,data/paired_evidence/identity-1-0-1.wav,donor_residual,1.125
+identity,esc-1,4,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-1-0-0.wav,data/paired_evidence/identity-1-0-1.wav,donor_pool,1.375
+identity,esc-1,4,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-1-0-1.wav,data/paired_evidence/identity-1-0-0.wav,own,0.75
+identity,esc-1,4,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-1-0-1.wav,data/paired_evidence/identity-1-0-0.wav,donor_residual,1.375
+identity,esc-1,4,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-1-0-1.wav,data/paired_evidence/identity-1-0-0.wav,donor_pool,1.125
+second_event,esc-1,5,0,Can you hear the sound of airplane after the pause?,data/paired_evidence/identity-1-0-0.wav,data/paired_evidence/identity-1-0-1.wav,own,2.125
+second_event,esc-1,5,0,Can you hear the sound of airplane after the pause?,data/paired_evidence/identity-1-0-0.wav,data/paired_evidence/identity-1-0-1.wav,donor_residual,2.0
+second_event,esc-1,5,0,Can you hear the sound of airplane after the pause?,data/paired_evidence/identity-1-0-0.wav,data/paired_evidence/identity-1-0-1.wav,donor_pool,2.625
+second_event,esc-1,5,1,Can you hear the sound of airplane after the pause?,data/paired_evidence/identity-1-0-1.wav,data/paired_evidence/identity-1-0-0.wav,own,2.125
+second_event,esc-1,5,1,Can you hear the sound of airplane after the pause?,data/paired_evidence/identity-1-0-1.wav,data/paired_evidence/identity-1-0-0.wav,donor_residual,2.625
+second_event,esc-1,5,1,Can you hear the sound of airplane after the pause?,data/paired_evidence/identity-1-0-1.wav,data/paired_evidence/identity-1-0-0.wav,donor_pool,2.0
+identity,esc-1,6,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-1-1-1.wav,data/paired_evidence/identity-1-1-0.wav,own,1.625
+identity,esc-1,6,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-1-1-1.wav,data/paired_evidence/identity-1-1-0.wav,donor_residual,0.875
+identity,esc-1,6,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-1-1-1.wav,data/paired_evidence/identity-1-1-0.wav,donor_pool,2.5
+identity,esc-1,6,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-1-1-0.wav,data/paired_evidence/identity-1-1-1.wav,own,1.375
+identity,esc-1,6,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-1-1-0.wav,data/paired_evidence/identity-1-1-1.wav,donor_residual,2.5
+identity,esc-1,6,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-1-1-0.wav,data/paired_evidence/identity-1-1-1.wav,donor_pool,0.875
+second_event,esc-1,7,0,Can you hear the sound of crickets after the pause?,data/paired_evidence/identity-1-1-1.wav,data/paired_evidence/identity-1-1-0.wav,own,2.5
+second_event,esc-1,7,0,Can you hear the sound of crickets after the pause?,data/paired_evidence/identity-1-1-1.wav,data/paired_evidence/identity-1-1-0.wav,donor_residual,1.75
+second_event,esc-1,7,0,Can you hear the sound of crickets after the pause?,data/paired_evidence/identity-1-1-1.wav,data/paired_evidence/identity-1-1-0.wav,donor_pool,1.875
+second_event,esc-1,7,1,Can you hear the sound of crickets after the pause?,data/paired_evidence/identity-1-1-0.wav,data/paired_evidence/identity-1-1-1.wav,own,0.375
+second_event,esc-1,7,1,Can you hear the sound of crickets after the pause?,data/paired_evidence/identity-1-1-0.wav,data/paired_evidence/identity-1-1-1.wav,donor_residual,1.875
+second_event,esc-1,7,1,Can you hear the sound of crickets after the pause?,data/paired_evidence/identity-1-1-0.wav,data/paired_evidence/identity-1-1-1.wav,donor_pool,1.75
+identity,esc-2,8,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-2-0-0.wav,data/paired_evidence/identity-2-0-1.wav,own,1.875
+identity,esc-2,8,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-2-0-0.wav,data/paired_evidence/identity-2-0-1.wav,donor_residual,1.8125
+identity,esc-2,8,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-2-0-0.wav,data/paired_evidence/identity-2-0-1.wav,donor_pool,1.25
+identity,esc-2,8,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-2-0-1.wav,data/paired_evidence/identity-2-0-0.wav,own,1.6875
+identity,esc-2,8,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-2-0-1.wav,data/paired_evidence/identity-2-0-0.wav,donor_residual,1.25
+identity,esc-2,8,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-2-0-1.wav,data/paired_evidence/identity-2-0-0.wav,donor_pool,1.8125
+second_event,esc-2,9,0,Can you hear the sound of door wood knock after the pause?,data/paired_evidence/identity-2-0-0.wav,data/paired_evidence/identity-2-0-1.wav,own,3.25
+second_event,esc-2,9,0,Can you hear the sound of door wood knock after the pause?,data/paired_evidence/identity-2-0-0.wav,data/paired_evidence/identity-2-0-1.wav,donor_residual,-0.125
+second_event,esc-2,9,0,Can you hear the sound of door wood knock after the pause?,data/paired_evidence/identity-2-0-0.wav,data/paired_evidence/identity-2-0-1.wav,donor_pool,2.625
+second_event,esc-2,9,1,Can you hear the sound of door wood knock after the pause?,data/paired_evidence/identity-2-0-1.wav,data/paired_evidence/identity-2-0-0.wav,own,-0.5
+second_event,esc-2,9,1,Can you hear the sound of door wood knock after the pause?,data/paired_evidence/identity-2-0-1.wav,data/paired_evidence/identity-2-0-0.wav,donor_residual,2.625
+second_event,esc-2,9,1,Can you hear the sound of door wood knock after the pause?,data/paired_evidence/identity-2-0-1.wav,data/paired_evidence/identity-2-0-0.wav,donor_pool,-0.125
+identity,esc-2,10,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-2-1-1.wav,data/paired_evidence/identity-2-1-0.wav,own,1.875
+identity,esc-2,10,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-2-1-1.wav,data/paired_evidence/identity-2-1-0.wav,donor_residual,0.75
+identity,esc-2,10,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-2-1-1.wav,data/paired_evidence/identity-2-1-0.wav,donor_pool,1.8125
+identity,esc-2,10,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-2-1-0.wav,data/paired_evidence/identity-2-1-1.wav,own,1.125
+identity,esc-2,10,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-2-1-0.wav,data/paired_evidence/identity-2-1-1.wav,donor_residual,1.8125
+identity,esc-2,10,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-2-1-0.wav,data/paired_evidence/identity-2-1-1.wav,donor_pool,0.75
+second_event,esc-2,11,0,Can you hear the sound of pig after the pause?,data/paired_evidence/identity-2-1-1.wav,data/paired_evidence/identity-2-1-0.wav,own,2.125
+second_event,esc-2,11,0,Can you hear the sound of pig after the pause?,data/paired_evidence/identity-2-1-1.wav,data/paired_evidence/identity-2-1-0.wav,donor_residual,-1.375
+second_event,esc-2,11,0,Can you hear the sound of pig after the pause?,data/paired_evidence/identity-2-1-1.wav,data/paired_evidence/identity-2-1-0.wav,donor_pool,2.0
+second_event,esc-2,11,1,Can you hear the sound of pig after the pause?,data/paired_evidence/identity-2-1-0.wav,data/paired_evidence/identity-2-1-1.wav,own,-1.625
+second_event,esc-2,11,1,Can you hear the sound of pig after the pause?,data/paired_evidence/identity-2-1-0.wav,data/paired_evidence/identity-2-1-1.wav,donor_residual,2.0
+second_event,esc-2,11,1,Can you hear the sound of pig after the pause?,data/paired_evidence/identity-2-1-0.wav,data/paired_evidence/identity-2-1-1.wav,donor_pool,-1.375
+identity,esc-3,12,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-3-0-0.wav,data/paired_evidence/identity-3-0-1.wav,own,2.0
+identity,esc-3,12,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-3-0-0.wav,data/paired_evidence/identity-3-0-1.wav,donor_residual,2.5
+identity,esc-3,12,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-3-0-0.wav,data/paired_evidence/identity-3-0-1.wav,donor_pool,2.125
+identity,esc-3,12,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-3-0-1.wav,data/paired_evidence/identity-3-0-0.wav,own,2.375
+identity,esc-3,12,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-3-0-1.wav,data/paired_evidence/identity-3-0-0.wav,donor_residual,2.125
+identity,esc-3,12,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-3-0-1.wav,data/paired_evidence/identity-3-0-0.wav,donor_pool,2.5
+second_event,esc-3,13,0,Can you hear the sound of train after the pause?,data/paired_evidence/identity-3-0-0.wav,data/paired_evidence/identity-3-0-1.wav,own,2.5
+second_event,esc-3,13,0,Can you hear the sound of train after the pause?,data/paired_evidence/identity-3-0-0.wav,data/paired_evidence/identity-3-0-1.wav,donor_residual,1.375
+second_event,esc-3,13,0,Can you hear the sound of train after the pause?,data/paired_evidence/identity-3-0-0.wav,data/paired_evidence/identity-3-0-1.wav,donor_pool,2.25
+second_event,esc-3,13,1,Can you hear the sound of train after the pause?,data/paired_evidence/identity-3-0-1.wav,data/paired_evidence/identity-3-0-0.wav,own,1.75
+second_event,esc-3,13,1,Can you hear the sound of train after the pause?,data/paired_evidence/identity-3-0-1.wav,data/paired_evidence/identity-3-0-0.wav,donor_residual,2.25
+second_event,esc-3,13,1,Can you hear the sound of train after the pause?,data/paired_evidence/identity-3-0-1.wav,data/paired_evidence/identity-3-0-0.wav,donor_pool,1.375
+identity,esc-3,14,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-3-1-1.wav,data/paired_evidence/identity-3-1-0.wav,own,2.3125
+identity,esc-3,14,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-3-1-1.wav,data/paired_evidence/identity-3-1-0.wav,donor_residual,1.6875
+identity,esc-3,14,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-3-1-1.wav,data/paired_evidence/identity-3-1-0.wav,donor_pool,1.875
+identity,esc-3,14,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-3-1-0.wav,data/paired_evidence/identity-3-1-1.wav,own,1.625
+identity,esc-3,14,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-3-1-0.wav,data/paired_evidence/identity-3-1-1.wav,donor_residual,1.875
+identity,esc-3,14,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-3-1-0.wav,data/paired_evidence/identity-3-1-1.wav,donor_pool,1.6875
+second_event,esc-3,15,0,Can you hear the sound of clock tick after the pause?,data/paired_evidence/identity-3-1-1.wav,data/paired_evidence/identity-3-1-0.wav,own,0.875
+second_event,esc-3,15,0,Can you hear the sound of clock tick after the pause?,data/paired_evidence/identity-3-1-1.wav,data/paired_evidence/identity-3-1-0.wav,donor_residual,-0.625
+second_event,esc-3,15,0,Can you hear the sound of clock tick after the pause?,data/paired_evidence/identity-3-1-1.wav,data/paired_evidence/identity-3-1-0.wav,donor_pool,-0.375
+second_event,esc-3,15,1,Can you hear the sound of clock tick after the pause?,data/paired_evidence/identity-3-1-0.wav,data/paired_evidence/identity-3-1-1.wav,own,-1.0
+second_event,esc-3,15,1,Can you hear the sound of clock tick after the pause?,data/paired_evidence/identity-3-1-0.wav,data/paired_evidence/identity-3-1-1.wav,donor_residual,-0.375
+second_event,esc-3,15,1,Can you hear the sound of clock tick after the pause?,data/paired_evidence/identity-3-1-0.wav,data/paired_evidence/identity-3-1-1.wav,donor_pool,-0.625
+identity,esc-4,16,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-4-0-0.wav,data/paired_evidence/identity-4-0-1.wav,own,2.375
+identity,esc-4,16,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-4-0-0.wav,data/paired_evidence/identity-4-0-1.wav,donor_residual,1.75
+identity,esc-4,16,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-4-0-0.wav,data/paired_evidence/identity-4-0-1.wav,donor_pool,2.25
+identity,esc-4,16,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-4-0-1.wav,data/paired_evidence/identity-4-0-0.wav,own,1.25
+identity,esc-4,16,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-4-0-1.wav,data/paired_evidence/identity-4-0-0.wav,donor_residual,2.25
+identity,esc-4,16,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-4-0-1.wav,data/paired_evidence/identity-4-0-0.wav,donor_pool,1.75
+second_event,esc-4,17,0,Can you hear the sound of brushing teeth after the pause?,data/paired_evidence/identity-4-0-0.wav,data/paired_evidence/identity-4-0-1.wav,own,0.75
+second_event,esc-4,17,0,Can you hear the sound of brushing teeth after the pause?,data/paired_evidence/identity-4-0-0.wav,data/paired_evidence/identity-4-0-1.wav,donor_residual,0.0
+second_event,esc-4,17,0,Can you hear the sound of brushing teeth after the pause?,data/paired_evidence/identity-4-0-0.wav,data/paired_evidence/identity-4-0-1.wav,donor_pool,0.25
+second_event,esc-4,17,1,Can you hear the sound of brushing teeth after the pause?,data/paired_evidence/identity-4-0-1.wav,data/paired_evidence/identity-4-0-0.wav,own,-0.625
+second_event,esc-4,17,1,Can you hear the sound of brushing teeth after the pause?,data/paired_evidence/identity-4-0-1.wav,data/paired_evidence/identity-4-0-0.wav,donor_residual,0.25
+second_event,esc-4,17,1,Can you hear the sound of brushing teeth after the pause?,data/paired_evidence/identity-4-0-1.wav,data/paired_evidence/identity-4-0-0.wav,donor_pool,0.0
+identity,esc-4,18,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-4-1-1.wav,data/paired_evidence/identity-4-1-0.wav,own,2.0
+identity,esc-4,18,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-4-1-1.wav,data/paired_evidence/identity-4-1-0.wav,donor_residual,1.75
+identity,esc-4,18,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-4-1-1.wav,data/paired_evidence/identity-4-1-0.wav,donor_pool,1.875
+identity,esc-4,18,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-4-1-0.wav,data/paired_evidence/identity-4-1-1.wav,own,1.625
+identity,esc-4,18,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-4-1-0.wav,data/paired_evidence/identity-4-1-1.wav,donor_residual,1.875
+identity,esc-4,18,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-4-1-0.wav,data/paired_evidence/identity-4-1-1.wav,donor_pool,1.75
+second_event,esc-4,19,0,Can you hear the sound of chirping birds after the pause?,data/paired_evidence/identity-4-1-1.wav,data/paired_evidence/identity-4-1-0.wav,own,2.5
+second_event,esc-4,19,0,Can you hear the sound of chirping birds after the pause?,data/paired_evidence/identity-4-1-1.wav,data/paired_evidence/identity-4-1-0.wav,donor_residual,1.125
+second_event,esc-4,19,0,Can you hear the sound of chirping birds after the pause?,data/paired_evidence/identity-4-1-1.wav,data/paired_evidence/identity-4-1-0.wav,donor_pool,2.5
+second_event,esc-4,19,1,Can you hear the sound of chirping birds after the pause?,data/paired_evidence/identity-4-1-0.wav,data/paired_evidence/identity-4-1-1.wav,own,1.125
+second_event,esc-4,19,1,Can you hear the sound of chirping birds after the pause?,data/paired_evidence/identity-4-1-0.wav,data/paired_evidence/identity-4-1-1.wav,donor_residual,2.5
+second_event,esc-4,19,1,Can you hear the sound of chirping birds after the pause?,data/paired_evidence/identity-4-1-0.wav,data/paired_evidence/identity-4-1-1.wav,donor_pool,1.125
+identity,esc-5,20,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-5-0-0.wav,data/paired_evidence/identity-5-0-1.wav,own,1.875
+identity,esc-5,20,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-5-0-0.wav,data/paired_evidence/identity-5-0-1.wav,donor_residual,1.625
+identity,esc-5,20,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-5-0-0.wav,data/paired_evidence/identity-5-0-1.wav,donor_pool,1.6875
+identity,esc-5,20,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-5-0-1.wav,data/paired_evidence/identity-5-0-0.wav,own,1.375
+identity,esc-5,20,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-5-0-1.wav,data/paired_evidence/identity-5-0-0.wav,donor_residual,1.6875
+identity,esc-5,20,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-5-0-1.wav,data/paired_evidence/identity-5-0-0.wav,donor_pool,1.625
+second_event,esc-5,21,0,Can you hear the sound of wind after the pause?,data/paired_evidence/identity-5-0-0.wav,data/paired_evidence/identity-5-0-1.wav,own,1.5
+second_event,esc-5,21,0,Can you hear the sound of wind after the pause?,data/paired_evidence/identity-5-0-0.wav,data/paired_evidence/identity-5-0-1.wav,donor_residual,0.75
+second_event,esc-5,21,0,Can you hear the sound of wind after the pause?,data/paired_evidence/identity-5-0-0.wav,data/paired_evidence/identity-5-0-1.wav,donor_pool,1.375
+second_event,esc-5,21,1,Can you hear the sound of wind after the pause?,data/paired_evidence/identity-5-0-1.wav,data/paired_evidence/identity-5-0-0.wav,own,0.5
+second_event,esc-5,21,1,Can you hear the sound of wind after the pause?,data/paired_evidence/identity-5-0-1.wav,data/paired_evidence/identity-5-0-0.wav,donor_residual,1.375
+second_event,esc-5,21,1,Can you hear the sound of wind after the pause?,data/paired_evidence/identity-5-0-1.wav,data/paired_evidence/identity-5-0-0.wav,donor_pool,0.75
+identity,esc-5,22,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-5-1-1.wav,data/paired_evidence/identity-5-1-0.wav,own,1.8125
+identity,esc-5,22,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-5-1-1.wav,data/paired_evidence/identity-5-1-0.wav,donor_residual,1.25
+identity,esc-5,22,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-5-1-1.wav,data/paired_evidence/identity-5-1-0.wav,donor_pool,1.625
+identity,esc-5,22,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-5-1-0.wav,data/paired_evidence/identity-5-1-1.wav,own,1.25
+identity,esc-5,22,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-5-1-0.wav,data/paired_evidence/identity-5-1-1.wav,donor_residual,1.625
+identity,esc-5,22,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-5-1-0.wav,data/paired_evidence/identity-5-1-1.wav,donor_pool,1.25
+second_event,esc-5,23,0,Can you hear the sound of snoring after the pause?,data/paired_evidence/identity-5-1-1.wav,data/paired_evidence/identity-5-1-0.wav,own,2.8125
+second_event,esc-5,23,0,Can you hear the sound of snoring after the pause?,data/paired_evidence/identity-5-1-1.wav,data/paired_evidence/identity-5-1-0.wav,donor_residual,2.8125
+second_event,esc-5,23,0,Can you hear the sound of snoring after the pause?,data/paired_evidence/identity-5-1-1.wav,data/paired_evidence/identity-5-1-0.wav,donor_pool,2.625
+second_event,esc-5,23,1,Can you hear the sound of snoring after the pause?,data/paired_evidence/identity-5-1-0.wav,data/paired_evidence/identity-5-1-1.wav,own,2.9375
+second_event,esc-5,23,1,Can you hear the sound of snoring after the pause?,data/paired_evidence/identity-5-1-0.wav,data/paired_evidence/identity-5-1-1.wav,donor_residual,2.625
+second_event,esc-5,23,1,Can you hear the sound of snoring after the pause?,data/paired_evidence/identity-5-1-0.wav,data/paired_evidence/identity-5-1-1.wav,donor_pool,2.8125
+identity,esc-6,24,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-6-0-0.wav,data/paired_evidence/identity-6-0-1.wav,own,1.5
+identity,esc-6,24,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-6-0-0.wav,data/paired_evidence/identity-6-0-1.wav,donor_residual,1.5
+identity,esc-6,24,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-6-0-0.wav,data/paired_evidence/identity-6-0-1.wav,donor_pool,1.75
+identity,esc-6,24,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-6-0-1.wav,data/paired_evidence/identity-6-0-0.wav,own,2.4375
+identity,esc-6,24,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-6-0-1.wav,data/paired_evidence/identity-6-0-0.wav,donor_residual,1.75
+identity,esc-6,24,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-6-0-1.wav,data/paired_evidence/identity-6-0-0.wav,donor_pool,1.5
+second_event,esc-6,25,0,Can you hear the sound of glass breaking after the pause?,data/paired_evidence/identity-6-0-0.wav,data/paired_evidence/identity-6-0-1.wav,own,2.625
+second_event,esc-6,25,0,Can you hear the sound of glass breaking after the pause?,data/paired_evidence/identity-6-0-0.wav,data/paired_evidence/identity-6-0-1.wav,donor_residual,0.375
+second_event,esc-6,25,0,Can you hear the sound of glass breaking after the pause?,data/paired_evidence/identity-6-0-0.wav,data/paired_evidence/identity-6-0-1.wav,donor_pool,2.5
+second_event,esc-6,25,1,Can you hear the sound of glass breaking after the pause?,data/paired_evidence/identity-6-0-1.wav,data/paired_evidence/identity-6-0-0.wav,own,-0.625
+second_event,esc-6,25,1,Can you hear the sound of glass breaking after the pause?,data/paired_evidence/identity-6-0-1.wav,data/paired_evidence/identity-6-0-0.wav,donor_residual,2.5
+second_event,esc-6,25,1,Can you hear the sound of glass breaking after the pause?,data/paired_evidence/identity-6-0-1.wav,data/paired_evidence/identity-6-0-0.wav,donor_pool,0.375
+identity,esc-6,26,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-6-1-1.wav,data/paired_evidence/identity-6-1-0.wav,own,2.375
+identity,esc-6,26,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-6-1-1.wav,data/paired_evidence/identity-6-1-0.wav,donor_residual,2.75
+identity,esc-6,26,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-6-1-1.wav,data/paired_evidence/identity-6-1-0.wav,donor_pool,2.3125
+identity,esc-6,26,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-6-1-0.wav,data/paired_evidence/identity-6-1-1.wav,own,2.375
+identity,esc-6,26,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-6-1-0.wav,data/paired_evidence/identity-6-1-1.wav,donor_residual,2.3125
+identity,esc-6,26,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-6-1-0.wav,data/paired_evidence/identity-6-1-1.wav,donor_pool,2.75
+second_event,esc-6,27,0,Can you hear the sound of rain after the pause?,data/paired_evidence/identity-6-1-1.wav,data/paired_evidence/identity-6-1-0.wav,own,2.875
+second_event,esc-6,27,0,Can you hear the sound of rain after the pause?,data/paired_evidence/identity-6-1-1.wav,data/paired_evidence/identity-6-1-0.wav,donor_residual,2.125
+second_event,esc-6,27,0,Can you hear the sound of rain after the pause?,data/paired_evidence/identity-6-1-1.wav,data/paired_evidence/identity-6-1-0.wav,donor_pool,2.75
+second_event,esc-6,27,1,Can you hear the sound of rain after the pause?,data/paired_evidence/identity-6-1-0.wav,data/paired_evidence/identity-6-1-1.wav,own,1.0
+second_event,esc-6,27,1,Can you hear the sound of rain after the pause?,data/paired_evidence/identity-6-1-0.wav,data/paired_evidence/identity-6-1-1.wav,donor_residual,2.75
+second_event,esc-6,27,1,Can you hear the sound of rain after the pause?,data/paired_evidence/identity-6-1-0.wav,data/paired_evidence/identity-6-1-1.wav,donor_pool,2.125
+identity,esc-7,28,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-7-0-0.wav,data/paired_evidence/identity-7-0-1.wav,own,2.25
+identity,esc-7,28,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-7-0-0.wav,data/paired_evidence/identity-7-0-1.wav,donor_residual,2.375
+identity,esc-7,28,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-7-0-0.wav,data/paired_evidence/identity-7-0-1.wav,donor_pool,2.0
+identity,esc-7,28,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-7-0-1.wav,data/paired_evidence/identity-7-0-0.wav,own,2.5
+identity,esc-7,28,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-7-0-1.wav,data/paired_evidence/identity-7-0-0.wav,donor_residual,2.0
+identity,esc-7,28,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-7-0-1.wav,data/paired_evidence/identity-7-0-0.wav,donor_pool,2.375
+second_event,esc-7,29,0,Can you hear the sound of insects after the pause?,data/paired_evidence/identity-7-0-0.wav,data/paired_evidence/identity-7-0-1.wav,own,1.625
+second_event,esc-7,29,0,Can you hear the sound of insects after the pause?,data/paired_evidence/identity-7-0-0.wav,data/paired_evidence/identity-7-0-1.wav,donor_residual,1.875
+second_event,esc-7,29,0,Can you hear the sound of insects after the pause?,data/paired_evidence/identity-7-0-0.wav,data/paired_evidence/identity-7-0-1.wav,donor_pool,1.25
+second_event,esc-7,29,1,Can you hear the sound of insects after the pause?,data/paired_evidence/identity-7-0-1.wav,data/paired_evidence/identity-7-0-0.wav,own,1.625
+second_event,esc-7,29,1,Can you hear the sound of insects after the pause?,data/paired_evidence/identity-7-0-1.wav,data/paired_evidence/identity-7-0-0.wav,donor_residual,1.25
+second_event,esc-7,29,1,Can you hear the sound of insects after the pause?,data/paired_evidence/identity-7-0-1.wav,data/paired_evidence/identity-7-0-0.wav,donor_pool,1.875
+identity,esc-7,30,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-7-1-1.wav,data/paired_evidence/identity-7-1-0.wav,own,0.75
+identity,esc-7,30,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-7-1-1.wav,data/paired_evidence/identity-7-1-0.wav,donor_residual,1.875
+identity,esc-7,30,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-7-1-1.wav,data/paired_evidence/identity-7-1-0.wav,donor_pool,0.75
+identity,esc-7,30,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-7-1-0.wav,data/paired_evidence/identity-7-1-1.wav,own,1.75
+identity,esc-7,30,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-7-1-0.wav,data/paired_evidence/identity-7-1-1.wav,donor_residual,0.75
+identity,esc-7,30,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-7-1-0.wav,data/paired_evidence/identity-7-1-1.wav,donor_pool,1.875
+second_event,esc-7,31,0,Can you hear the sound of breathing after the pause?,data/paired_evidence/identity-7-1-1.wav,data/paired_evidence/identity-7-1-0.wav,own,-0.125
+second_event,esc-7,31,0,Can you hear the sound of breathing after the pause?,data/paired_evidence/identity-7-1-1.wav,data/paired_evidence/identity-7-1-0.wav,donor_residual,-0.375
+second_event,esc-7,31,0,Can you hear the sound of breathing after the pause?,data/paired_evidence/identity-7-1-1.wav,data/paired_evidence/identity-7-1-0.wav,donor_pool,0.5
+second_event,esc-7,31,1,Can you hear the sound of breathing after the pause?,data/paired_evidence/identity-7-1-0.wav,data/paired_evidence/identity-7-1-1.wav,own,0.5
+second_event,esc-7,31,1,Can you hear the sound of breathing after the pause?,data/paired_evidence/identity-7-1-0.wav,data/paired_evidence/identity-7-1-1.wav,donor_residual,0.5
+second_event,esc-7,31,1,Can you hear the sound of breathing after the pause?,data/paired_evidence/identity-7-1-0.wav,data/paired_evidence/identity-7-1-1.wav,donor_pool,-0.375
+identity,esc-8,32,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-8-0-0.wav,data/paired_evidence/identity-8-0-1.wav,own,2.0
+identity,esc-8,32,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-8-0-0.wav,data/paired_evidence/identity-8-0-1.wav,donor_residual,1.5
+identity,esc-8,32,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-8-0-0.wav,data/paired_evidence/identity-8-0-1.wav,donor_pool,1.625
+identity,esc-8,32,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-8-0-1.wav,data/paired_evidence/identity-8-0-0.wav,own,1.375
+identity,esc-8,32,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-8-0-1.wav,data/paired_evidence/identity-8-0-0.wav,donor_residual,1.625
+identity,esc-8,32,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-8-0-1.wav,data/paired_evidence/identity-8-0-0.wav,donor_pool,1.5
+second_event,esc-8,33,0,Can you hear the sound of mouse click after the pause?,data/paired_evidence/identity-8-0-0.wav,data/paired_evidence/identity-8-0-1.wav,own,2.0
+second_event,esc-8,33,0,Can you hear the sound of mouse click after the pause?,data/paired_evidence/identity-8-0-0.wav,data/paired_evidence/identity-8-0-1.wav,donor_residual,-0.5
+second_event,esc-8,33,0,Can you hear the sound of mouse click after the pause?,data/paired_evidence/identity-8-0-0.wav,data/paired_evidence/identity-8-0-1.wav,donor_pool,1.75
+second_event,esc-8,33,1,Can you hear the sound of mouse click after the pause?,data/paired_evidence/identity-8-0-1.wav,data/paired_evidence/identity-8-0-0.wav,own,-1.25
+second_event,esc-8,33,1,Can you hear the sound of mouse click after the pause?,data/paired_evidence/identity-8-0-1.wav,data/paired_evidence/identity-8-0-0.wav,donor_residual,1.75
+second_event,esc-8,33,1,Can you hear the sound of mouse click after the pause?,data/paired_evidence/identity-8-0-1.wav,data/paired_evidence/identity-8-0-0.wav,donor_pool,-0.5
+identity,esc-8,34,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-8-1-1.wav,data/paired_evidence/identity-8-1-0.wav,own,1.375
+identity,esc-8,34,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-8-1-1.wav,data/paired_evidence/identity-8-1-0.wav,donor_residual,1.25
+identity,esc-8,34,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-8-1-1.wav,data/paired_evidence/identity-8-1-0.wav,donor_pool,1.4375
+identity,esc-8,34,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-8-1-0.wav,data/paired_evidence/identity-8-1-1.wav,own,1.6875
+identity,esc-8,34,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-8-1-0.wav,data/paired_evidence/identity-8-1-1.wav,donor_residual,1.4375
+identity,esc-8,34,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-8-1-0.wav,data/paired_evidence/identity-8-1-1.wav,donor_pool,1.25
+second_event,esc-8,35,0,Can you hear the sound of thunderstorm after the pause?,data/paired_evidence/identity-8-1-1.wav,data/paired_evidence/identity-8-1-0.wav,own,2.25
+second_event,esc-8,35,0,Can you hear the sound of thunderstorm after the pause?,data/paired_evidence/identity-8-1-1.wav,data/paired_evidence/identity-8-1-0.wav,donor_residual,0.5
+second_event,esc-8,35,0,Can you hear the sound of thunderstorm after the pause?,data/paired_evidence/identity-8-1-1.wav,data/paired_evidence/identity-8-1-0.wav,donor_pool,2.125
+second_event,esc-8,35,1,Can you hear the sound of thunderstorm after the pause?,data/paired_evidence/identity-8-1-0.wav,data/paired_evidence/identity-8-1-1.wav,own,0.0
+second_event,esc-8,35,1,Can you hear the sound of thunderstorm after the pause?,data/paired_evidence/identity-8-1-0.wav,data/paired_evidence/identity-8-1-1.wav,donor_residual,2.125
+second_event,esc-8,35,1,Can you hear the sound of thunderstorm after the pause?,data/paired_evidence/identity-8-1-0.wav,data/paired_evidence/identity-8-1-1.wav,donor_pool,0.5
+identity,esc-9,36,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-9-0-0.wav,data/paired_evidence/identity-9-0-1.wav,own,1.125
+identity,esc-9,36,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-9-0-0.wav,data/paired_evidence/identity-9-0-1.wav,donor_residual,1.25
+identity,esc-9,36,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-9-0-0.wav,data/paired_evidence/identity-9-0-1.wav,donor_pool,0.75
+identity,esc-9,36,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-9-0-1.wav,data/paired_evidence/identity-9-0-0.wav,own,0.75
+identity,esc-9,36,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-9-0-1.wav,data/paired_evidence/identity-9-0-0.wav,donor_residual,0.75
+identity,esc-9,36,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-9-0-1.wav,data/paired_evidence/identity-9-0-0.wav,donor_pool,1.25
+second_event,esc-9,37,0,Can you hear the sound of car horn after the pause?,data/paired_evidence/identity-9-0-0.wav,data/paired_evidence/identity-9-0-1.wav,own,2.25
+second_event,esc-9,37,0,Can you hear the sound of car horn after the pause?,data/paired_evidence/identity-9-0-0.wav,data/paired_evidence/identity-9-0-1.wav,donor_residual,0.25
+second_event,esc-9,37,0,Can you hear the sound of car horn after the pause?,data/paired_evidence/identity-9-0-0.wav,data/paired_evidence/identity-9-0-1.wav,donor_pool,2.0
+second_event,esc-9,37,1,Can you hear the sound of car horn after the pause?,data/paired_evidence/identity-9-0-1.wav,data/paired_evidence/identity-9-0-0.wav,own,-0.25
+second_event,esc-9,37,1,Can you hear the sound of car horn after the pause?,data/paired_evidence/identity-9-0-1.wav,data/paired_evidence/identity-9-0-0.wav,donor_residual,2.0
+second_event,esc-9,37,1,Can you hear the sound of car horn after the pause?,data/paired_evidence/identity-9-0-1.wav,data/paired_evidence/identity-9-0-0.wav,donor_pool,0.25
+identity,esc-9,38,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-9-1-1.wav,data/paired_evidence/identity-9-1-0.wav,own,1.875
+identity,esc-9,38,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-9-1-1.wav,data/paired_evidence/identity-9-1-0.wav,donor_residual,0.875
+identity,esc-9,38,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-9-1-1.wav,data/paired_evidence/identity-9-1-0.wav,donor_pool,2.0
+identity,esc-9,38,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-9-1-0.wav,data/paired_evidence/identity-9-1-1.wav,own,0.375
+identity,esc-9,38,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-9-1-0.wav,data/paired_evidence/identity-9-1-1.wav,donor_residual,2.0
+identity,esc-9,38,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-9-1-0.wav,data/paired_evidence/identity-9-1-1.wav,donor_pool,0.875
+second_event,esc-9,39,0,Can you hear the sound of dog after the pause?,data/paired_evidence/identity-9-1-1.wav,data/paired_evidence/identity-9-1-0.wav,own,2.375
+second_event,esc-9,39,0,Can you hear the sound of dog after the pause?,data/paired_evidence/identity-9-1-1.wav,data/paired_evidence/identity-9-1-0.wav,donor_residual,2.0
+second_event,esc-9,39,0,Can you hear the sound of dog after the pause?,data/paired_evidence/identity-9-1-1.wav,data/paired_evidence/identity-9-1-0.wav,donor_pool,2.0
+second_event,esc-9,39,1,Can you hear the sound of dog after the pause?,data/paired_evidence/identity-9-1-0.wav,data/paired_evidence/identity-9-1-1.wav,own,1.375
+second_event,esc-9,39,1,Can you hear the sound of dog after the pause?,data/paired_evidence/identity-9-1-0.wav,data/paired_evidence/identity-9-1-1.wav,donor_residual,2.0
+second_event,esc-9,39,1,Can you hear the sound of dog after the pause?,data/paired_evidence/identity-9-1-0.wav,data/paired_evidence/identity-9-1-1.wav,donor_pool,2.0
+identity,esc-10,40,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-10-0-0.wav,data/paired_evidence/identity-10-0-1.wav,own,0.5
+identity,esc-10,40,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-10-0-0.wav,data/paired_evidence/identity-10-0-1.wav,donor_residual,1.125
+identity,esc-10,40,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-10-0-0.wav,data/paired_evidence/identity-10-0-1.wav,donor_pool,0.75
+identity,esc-10,40,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-10-0-1.wav,data/paired_evidence/identity-10-0-0.wav,own,1.125
+identity,esc-10,40,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-10-0-1.wav,data/paired_evidence/identity-10-0-0.wav,donor_residual,0.75
+identity,esc-10,40,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-10-0-1.wav,data/paired_evidence/identity-10-0-0.wav,donor_pool,1.125
+second_event,esc-10,41,0,Can you hear the sound of laughing after the pause?,data/paired_evidence/identity-10-0-0.wav,data/paired_evidence/identity-10-0-1.wav,own,2.625
+second_event,esc-10,41,0,Can you hear the sound of laughing after the pause?,data/paired_evidence/identity-10-0-0.wav,data/paired_evidence/identity-10-0-1.wav,donor_residual,2.5
+second_event,esc-10,41,0,Can you hear the sound of laughing after the pause?,data/paired_evidence/identity-10-0-0.wav,data/paired_evidence/identity-10-0-1.wav,donor_pool,2.8125
+second_event,esc-10,41,1,Can you hear the sound of laughing after the pause?,data/paired_evidence/identity-10-0-1.wav,data/paired_evidence/identity-10-0-0.wav,own,2.375
+second_event,esc-10,41,1,Can you hear the sound of laughing after the pause?,data/paired_evidence/identity-10-0-1.wav,data/paired_evidence/identity-10-0-0.wav,donor_residual,2.8125
+second_event,esc-10,41,1,Can you hear the sound of laughing after the pause?,data/paired_evidence/identity-10-0-1.wav,data/paired_evidence/identity-10-0-0.wav,donor_pool,2.5
+identity,esc-10,42,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-10-1-1.wav,data/paired_evidence/identity-10-1-0.wav,own,2.5
+identity,esc-10,42,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-10-1-1.wav,data/paired_evidence/identity-10-1-0.wav,donor_residual,2.9375
+identity,esc-10,42,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-10-1-1.wav,data/paired_evidence/identity-10-1-0.wav,donor_pool,2.6875
+identity,esc-10,42,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-10-1-0.wav,data/paired_evidence/identity-10-1-1.wav,own,2.0
+identity,esc-10,42,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-10-1-0.wav,data/paired_evidence/identity-10-1-1.wav,donor_residual,2.6875
+identity,esc-10,42,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-10-1-0.wav,data/paired_evidence/identity-10-1-1.wav,donor_pool,2.9375
+second_event,esc-10,43,0,Can you hear the sound of vacuum cleaner after the pause?,data/paired_evidence/identity-10-1-1.wav,data/paired_evidence/identity-10-1-0.wav,own,1.125
+second_event,esc-10,43,0,Can you hear the sound of vacuum cleaner after the pause?,data/paired_evidence/identity-10-1-1.wav,data/paired_evidence/identity-10-1-0.wav,donor_residual,1.0
+second_event,esc-10,43,0,Can you hear the sound of vacuum cleaner after the pause?,data/paired_evidence/identity-10-1-1.wav,data/paired_evidence/identity-10-1-0.wav,donor_pool,1.375
+second_event,esc-10,43,1,Can you hear the sound of vacuum cleaner after the pause?,data/paired_evidence/identity-10-1-0.wav,data/paired_evidence/identity-10-1-1.wav,own,1.0
+second_event,esc-10,43,1,Can you hear the sound of vacuum cleaner after the pause?,data/paired_evidence/identity-10-1-0.wav,data/paired_evidence/identity-10-1-1.wav,donor_residual,1.375
+second_event,esc-10,43,1,Can you hear the sound of vacuum cleaner after the pause?,data/paired_evidence/identity-10-1-0.wav,data/paired_evidence/identity-10-1-1.wav,donor_pool,1.0
+identity,esc-11,44,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-11-0-0.wav,data/paired_evidence/identity-11-0-1.wav,own,1.75
+identity,esc-11,44,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-11-0-0.wav,data/paired_evidence/identity-11-0-1.wav,donor_residual,1.875
+identity,esc-11,44,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-11-0-0.wav,data/paired_evidence/identity-11-0-1.wav,donor_pool,1.875
+identity,esc-11,44,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-11-0-1.wav,data/paired_evidence/identity-11-0-0.wav,own,2.125
+identity,esc-11,44,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-11-0-1.wav,data/paired_evidence/identity-11-0-0.wav,donor_residual,1.875
+identity,esc-11,44,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-11-0-1.wav,data/paired_evidence/identity-11-0-0.wav,donor_pool,1.875
+second_event,esc-11,45,0,Can you hear the sound of church bells after the pause?,data/paired_evidence/identity-11-0-0.wav,data/paired_evidence/identity-11-0-1.wav,own,2.125
+second_event,esc-11,45,0,Can you hear the sound of church bells after the pause?,data/paired_evidence/identity-11-0-0.wav,data/paired_evidence/identity-11-0-1.wav,donor_residual,2.25
+second_event,esc-11,45,0,Can you hear the sound of church bells after the pause?,data/paired_evidence/identity-11-0-0.wav,data/paired_evidence/identity-11-0-1.wav,donor_pool,2.0
+second_event,esc-11,45,1,Can you hear the sound of church bells after the pause?,data/paired_evidence/identity-11-0-1.wav,data/paired_evidence/identity-11-0-0.wav,own,2.0
+second_event,esc-11,45,1,Can you hear the sound of church bells after the pause?,data/paired_evidence/identity-11-0-1.wav,data/paired_evidence/identity-11-0-0.wav,donor_residual,2.0
+second_event,esc-11,45,1,Can you hear the sound of church bells after the pause?,data/paired_evidence/identity-11-0-1.wav,data/paired_evidence/identity-11-0-0.wav,donor_pool,2.25
+identity,esc-11,46,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-11-1-1.wav,data/paired_evidence/identity-11-1-0.wav,own,0.75
+identity,esc-11,46,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-11-1-1.wav,data/paired_evidence/identity-11-1-0.wav,donor_residual,0.75
+identity,esc-11,46,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-11-1-1.wav,data/paired_evidence/identity-11-1-0.wav,donor_pool,1.125
+identity,esc-11,46,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-11-1-0.wav,data/paired_evidence/identity-11-1-1.wav,own,1.0
+identity,esc-11,46,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-11-1-0.wav,data/paired_evidence/identity-11-1-1.wav,donor_residual,1.125
+identity,esc-11,46,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-11-1-0.wav,data/paired_evidence/identity-11-1-1.wav,donor_pool,0.75
+second_event,esc-11,47,0,Can you hear the sound of coughing after the pause?,data/paired_evidence/identity-11-1-1.wav,data/paired_evidence/identity-11-1-0.wav,own,2.375
+second_event,esc-11,47,0,Can you hear the sound of coughing after the pause?,data/paired_evidence/identity-11-1-1.wav,data/paired_evidence/identity-11-1-0.wav,donor_residual,2.375
+second_event,esc-11,47,0,Can you hear the sound of coughing after the pause?,data/paired_evidence/identity-11-1-1.wav,data/paired_evidence/identity-11-1-0.wav,donor_pool,2.25
+second_event,esc-11,47,1,Can you hear the sound of coughing after the pause?,data/paired_evidence/identity-11-1-0.wav,data/paired_evidence/identity-11-1-1.wav,own,2.25
+second_event,esc-11,47,1,Can you hear the sound of coughing after the pause?,data/paired_evidence/identity-11-1-0.wav,data/paired_evidence/identity-11-1-1.wav,donor_residual,2.25
+second_event,esc-11,47,1,Can you hear the sound of coughing after the pause?,data/paired_evidence/identity-11-1-0.wav,data/paired_evidence/identity-11-1-1.wav,donor_pool,2.375
+identity,esc-12,48,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-12-0-0.wav,data/paired_evidence/identity-12-0-1.wav,own,1.5
+identity,esc-12,48,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-12-0-0.wav,data/paired_evidence/identity-12-0-1.wav,donor_residual,1.625
+identity,esc-12,48,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-12-0-0.wav,data/paired_evidence/identity-12-0-1.wav,donor_pool,1.75
+identity,esc-12,48,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-12-0-1.wav,data/paired_evidence/identity-12-0-0.wav,own,1.375
+identity,esc-12,48,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-12-0-1.wav,data/paired_evidence/identity-12-0-0.wav,donor_residual,1.75
+identity,esc-12,48,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-12-0-1.wav,data/paired_evidence/identity-12-0-0.wav,donor_pool,1.625
+second_event,esc-12,49,0,Can you hear the sound of footsteps after the pause?,data/paired_evidence/identity-12-0-0.wav,data/paired_evidence/identity-12-0-1.wav,own,1.625
+second_event,esc-12,49,0,Can you hear the sound of footsteps after the pause?,data/paired_evidence/identity-12-0-0.wav,data/paired_evidence/identity-12-0-1.wav,donor_residual,1.25
+second_event,esc-12,49,0,Can you hear the sound of footsteps after the pause?,data/paired_evidence/identity-12-0-0.wav,data/paired_evidence/identity-12-0-1.wav,donor_pool,1.375
+second_event,esc-12,49,1,Can you hear the sound of footsteps after the pause?,data/paired_evidence/identity-12-0-1.wav,data/paired_evidence/identity-12-0-0.wav,own,1.25
+second_event,esc-12,49,1,Can you hear the sound of footsteps after the pause?,data/paired_evidence/identity-12-0-1.wav,data/paired_evidence/identity-12-0-0.wav,donor_residual,1.375
+second_event,esc-12,49,1,Can you hear the sound of footsteps after the pause?,data/paired_evidence/identity-12-0-1.wav,data/paired_evidence/identity-12-0-0.wav,donor_pool,1.25
+identity,esc-12,50,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-12-1-1.wav,data/paired_evidence/identity-12-1-0.wav,own,1.625
+identity,esc-12,50,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-12-1-1.wav,data/paired_evidence/identity-12-1-0.wav,donor_residual,2.0
+identity,esc-12,50,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-12-1-1.wav,data/paired_evidence/identity-12-1-0.wav,donor_pool,1.875
+identity,esc-12,50,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-12-1-0.wav,data/paired_evidence/identity-12-1-1.wav,own,1.75
+identity,esc-12,50,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-12-1-0.wav,data/paired_evidence/identity-12-1-1.wav,donor_residual,1.875
+identity,esc-12,50,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-12-1-0.wav,data/paired_evidence/identity-12-1-1.wav,donor_pool,2.0
+second_event,esc-12,51,0,Can you hear the sound of drinking sipping after the pause?,data/paired_evidence/identity-12-1-1.wav,data/paired_evidence/identity-12-1-0.wav,own,1.0
+second_event,esc-12,51,0,Can you hear the sound of drinking sipping after the pause?,data/paired_evidence/identity-12-1-1.wav,data/paired_evidence/identity-12-1-0.wav,donor_residual,-2.6875
+second_event,esc-12,51,0,Can you hear the sound of drinking sipping after the pause?,data/paired_evidence/identity-12-1-1.wav,data/paired_evidence/identity-12-1-0.wav,donor_pool,0.625
+second_event,esc-12,51,1,Can you hear the sound of drinking sipping after the pause?,data/paired_evidence/identity-12-1-0.wav,data/paired_evidence/identity-12-1-1.wav,own,-3.0
+second_event,esc-12,51,1,Can you hear the sound of drinking sipping after the pause?,data/paired_evidence/identity-12-1-0.wav,data/paired_evidence/identity-12-1-1.wav,donor_residual,0.625
+second_event,esc-12,51,1,Can you hear the sound of drinking sipping after the pause?,data/paired_evidence/identity-12-1-0.wav,data/paired_evidence/identity-12-1-1.wav,donor_pool,-2.6875
+identity,esc-13,52,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-13-0-0.wav,data/paired_evidence/identity-13-0-1.wav,own,1.125
+identity,esc-13,52,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-13-0-0.wav,data/paired_evidence/identity-13-0-1.wav,donor_residual,1.0625
+identity,esc-13,52,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-13-0-0.wav,data/paired_evidence/identity-13-0-1.wav,donor_pool,0.875
+identity,esc-13,52,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-13-0-1.wav,data/paired_evidence/identity-13-0-0.wav,own,1.1875
+identity,esc-13,52,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-13-0-1.wav,data/paired_evidence/identity-13-0-0.wav,donor_residual,0.875
+identity,esc-13,52,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-13-0-1.wav,data/paired_evidence/identity-13-0-0.wav,donor_pool,1.0625
+second_event,esc-13,53,0,Can you hear the sound of clapping after the pause?,data/paired_evidence/identity-13-0-0.wav,data/paired_evidence/identity-13-0-1.wav,own,1.25
+second_event,esc-13,53,0,Can you hear the sound of clapping after the pause?,data/paired_evidence/identity-13-0-0.wav,data/paired_evidence/identity-13-0-1.wav,donor_residual,-1.125
+second_event,esc-13,53,0,Can you hear the sound of clapping after the pause?,data/paired_evidence/identity-13-0-0.wav,data/paired_evidence/identity-13-0-1.wav,donor_pool,1.5
+second_event,esc-13,53,1,Can you hear the sound of clapping after the pause?,data/paired_evidence/identity-13-0-1.wav,data/paired_evidence/identity-13-0-0.wav,own,-0.625
+second_event,esc-13,53,1,Can you hear the sound of clapping after the pause?,data/paired_evidence/identity-13-0-1.wav,data/paired_evidence/identity-13-0-0.wav,donor_residual,1.5
+second_event,esc-13,53,1,Can you hear the sound of clapping after the pause?,data/paired_evidence/identity-13-0-1.wav,data/paired_evidence/identity-13-0-0.wav,donor_pool,-1.125
+identity,esc-13,54,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-13-1-1.wav,data/paired_evidence/identity-13-1-0.wav,own,1.375
+identity,esc-13,54,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-13-1-1.wav,data/paired_evidence/identity-13-1-0.wav,donor_residual,0.625
+identity,esc-13,54,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-13-1-1.wav,data/paired_evidence/identity-13-1-0.wav,donor_pool,1.5
+identity,esc-13,54,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-13-1-0.wav,data/paired_evidence/identity-13-1-1.wav,own,1.0
+identity,esc-13,54,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-13-1-0.wav,data/paired_evidence/identity-13-1-1.wav,donor_residual,1.5
+identity,esc-13,54,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-13-1-0.wav,data/paired_evidence/identity-13-1-1.wav,donor_pool,0.625
+second_event,esc-13,55,0,Can you hear the sound of sneezing after the pause?,data/paired_evidence/identity-13-1-1.wav,data/paired_evidence/identity-13-1-0.wav,own,2.875
+second_event,esc-13,55,0,Can you hear the sound of sneezing after the pause?,data/paired_evidence/identity-13-1-1.wav,data/paired_evidence/identity-13-1-0.wav,donor_residual,2.3125
+second_event,esc-13,55,0,Can you hear the sound of sneezing after the pause?,data/paired_evidence/identity-13-1-1.wav,data/paired_evidence/identity-13-1-0.wav,donor_pool,2.75
+second_event,esc-13,55,1,Can you hear the sound of sneezing after the pause?,data/paired_evidence/identity-13-1-0.wav,data/paired_evidence/identity-13-1-1.wav,own,2.0
+second_event,esc-13,55,1,Can you hear the sound of sneezing after the pause?,data/paired_evidence/identity-13-1-0.wav,data/paired_evidence/identity-13-1-1.wav,donor_residual,2.75
+second_event,esc-13,55,1,Can you hear the sound of sneezing after the pause?,data/paired_evidence/identity-13-1-0.wav,data/paired_evidence/identity-13-1-1.wav,donor_pool,2.3125
+identity,esc-14,56,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-14-0-0.wav,data/paired_evidence/identity-14-0-1.wav,own,2.75
+identity,esc-14,56,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-14-0-0.wav,data/paired_evidence/identity-14-0-1.wav,donor_residual,3.5
+identity,esc-14,56,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-14-0-0.wav,data/paired_evidence/identity-14-0-1.wav,donor_pool,2.875
+identity,esc-14,56,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-14-0-1.wav,data/paired_evidence/identity-14-0-0.wav,own,3.9375
+identity,esc-14,56,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-14-0-1.wav,data/paired_evidence/identity-14-0-0.wav,donor_residual,2.875
+identity,esc-14,56,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-14-0-1.wav,data/paired_evidence/identity-14-0-0.wav,donor_pool,3.5
+second_event,esc-14,57,0,Can you hear the sound of cat after the pause?,data/paired_evidence/identity-14-0-0.wav,data/paired_evidence/identity-14-0-1.wav,own,3.4375
+second_event,esc-14,57,0,Can you hear the sound of cat after the pause?,data/paired_evidence/identity-14-0-0.wav,data/paired_evidence/identity-14-0-1.wav,donor_residual,1.75
+second_event,esc-14,57,0,Can you hear the sound of cat after the pause?,data/paired_evidence/identity-14-0-0.wav,data/paired_evidence/identity-14-0-1.wav,donor_pool,3.5625
+second_event,esc-14,57,1,Can you hear the sound of cat after the pause?,data/paired_evidence/identity-14-0-1.wav,data/paired_evidence/identity-14-0-0.wav,own,2.125
+second_event,esc-14,57,1,Can you hear the sound of cat after the pause?,data/paired_evidence/identity-14-0-1.wav,data/paired_evidence/identity-14-0-0.wav,donor_residual,3.5625
+second_event,esc-14,57,1,Can you hear the sound of cat after the pause?,data/paired_evidence/identity-14-0-1.wav,data/paired_evidence/identity-14-0-0.wav,donor_pool,1.75
+identity,esc-14,58,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-14-1-1.wav,data/paired_evidence/identity-14-1-0.wav,own,3.0
+identity,esc-14,58,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-14-1-1.wav,data/paired_evidence/identity-14-1-0.wav,donor_residual,3.5625
+identity,esc-14,58,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-14-1-1.wav,data/paired_evidence/identity-14-1-0.wav,donor_pool,2.75
+identity,esc-14,58,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-14-1-0.wav,data/paired_evidence/identity-14-1-1.wav,own,3.4375
+identity,esc-14,58,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-14-1-0.wav,data/paired_evidence/identity-14-1-1.wav,donor_residual,2.75
+identity,esc-14,58,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-14-1-0.wav,data/paired_evidence/identity-14-1-1.wav,donor_pool,3.5625
+second_event,esc-14,59,0,Can you hear the sound of hen after the pause?,data/paired_evidence/identity-14-1-1.wav,data/paired_evidence/identity-14-1-0.wav,own,1.875
+second_event,esc-14,59,0,Can you hear the sound of hen after the pause?,data/paired_evidence/identity-14-1-1.wav,data/paired_evidence/identity-14-1-0.wav,donor_residual,2.25
+second_event,esc-14,59,0,Can you hear the sound of hen after the pause?,data/paired_evidence/identity-14-1-1.wav,data/paired_evidence/identity-14-1-0.wav,donor_pool,1.75
+second_event,esc-14,59,1,Can you hear the sound of hen after the pause?,data/paired_evidence/identity-14-1-0.wav,data/paired_evidence/identity-14-1-1.wav,own,2.625
+second_event,esc-14,59,1,Can you hear the sound of hen after the pause?,data/paired_evidence/identity-14-1-0.wav,data/paired_evidence/identity-14-1-1.wav,donor_residual,1.75
+second_event,esc-14,59,1,Can you hear the sound of hen after the pause?,data/paired_evidence/identity-14-1-0.wav,data/paired_evidence/identity-14-1-1.wav,donor_pool,2.25
+identity,esc-15,60,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-15-0-0.wav,data/paired_evidence/identity-15-0-1.wav,own,3.125
+identity,esc-15,60,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-15-0-0.wav,data/paired_evidence/identity-15-0-1.wav,donor_residual,2.875
+identity,esc-15,60,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-15-0-0.wav,data/paired_evidence/identity-15-0-1.wav,donor_pool,3.25
+identity,esc-15,60,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-15-0-1.wav,data/paired_evidence/identity-15-0-0.wav,own,3.0
+identity,esc-15,60,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-15-0-1.wav,data/paired_evidence/identity-15-0-0.wav,donor_residual,3.25
+identity,esc-15,60,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-15-0-1.wav,data/paired_evidence/identity-15-0-0.wav,donor_pool,2.875
+second_event,esc-15,61,0,Can you hear the sound of sheep after the pause?,data/paired_evidence/identity-15-0-0.wav,data/paired_evidence/identity-15-0-1.wav,own,3.25
+second_event,esc-15,61,0,Can you hear the sound of sheep after the pause?,data/paired_evidence/identity-15-0-0.wav,data/paired_evidence/identity-15-0-1.wav,donor_residual,2.875
+second_event,esc-15,61,0,Can you hear the sound of sheep after the pause?,data/paired_evidence/identity-15-0-0.wav,data/paired_evidence/identity-15-0-1.wav,donor_pool,3.0
+second_event,esc-15,61,1,Can you hear the sound of sheep after the pause?,data/paired_evidence/identity-15-0-1.wav,data/paired_evidence/identity-15-0-0.wav,own,2.875
+second_event,esc-15,61,1,Can you hear the sound of sheep after the pause?,data/paired_evidence/identity-15-0-1.wav,data/paired_evidence/identity-15-0-0.wav,donor_residual,3.0
+second_event,esc-15,61,1,Can you hear the sound of sheep after the pause?,data/paired_evidence/identity-15-0-1.wav,data/paired_evidence/identity-15-0-0.wav,donor_pool,2.875
+identity,esc-15,62,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-15-1-1.wav,data/paired_evidence/identity-15-1-0.wav,own,1.0
+identity,esc-15,62,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-15-1-1.wav,data/paired_evidence/identity-15-1-0.wav,donor_residual,2.125
+identity,esc-15,62,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-15-1-1.wav,data/paired_evidence/identity-15-1-0.wav,donor_pool,1.5
+identity,esc-15,62,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-15-1-0.wav,data/paired_evidence/identity-15-1-1.wav,own,2.875
+identity,esc-15,62,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-15-1-0.wav,data/paired_evidence/identity-15-1-1.wav,donor_residual,1.5
+identity,esc-15,62,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-15-1-0.wav,data/paired_evidence/identity-15-1-1.wav,donor_pool,2.125
+second_event,esc-15,63,0,Can you hear the sound of engine after the pause?,data/paired_evidence/identity-15-1-1.wav,data/paired_evidence/identity-15-1-0.wav,own,1.5
+second_event,esc-15,63,0,Can you hear the sound of engine after the pause?,data/paired_evidence/identity-15-1-1.wav,data/paired_evidence/identity-15-1-0.wav,donor_residual,-1.25
+second_event,esc-15,63,0,Can you hear the sound of engine after the pause?,data/paired_evidence/identity-15-1-1.wav,data/paired_evidence/identity-15-1-0.wav,donor_pool,2.0
+second_event,esc-15,63,1,Can you hear the sound of engine after the pause?,data/paired_evidence/identity-15-1-0.wav,data/paired_evidence/identity-15-1-1.wav,own,-1.625
+second_event,esc-15,63,1,Can you hear the sound of engine after the pause?,data/paired_evidence/identity-15-1-0.wav,data/paired_evidence/identity-15-1-1.wav,donor_residual,2.0
+second_event,esc-15,63,1,Can you hear the sound of engine after the pause?,data/paired_evidence/identity-15-1-0.wav,data/paired_evidence/identity-15-1-1.wav,donor_pool,-1.25
+identity,esc-16,64,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-16-0-0.wav,data/paired_evidence/identity-16-0-1.wav,own,2.125
+identity,esc-16,64,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-16-0-0.wav,data/paired_evidence/identity-16-0-1.wav,donor_residual,1.625
+identity,esc-16,64,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-16-0-0.wav,data/paired_evidence/identity-16-0-1.wav,donor_pool,3.0
+identity,esc-16,64,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-16-0-1.wav,data/paired_evidence/identity-16-0-0.wav,own,2.3125
+identity,esc-16,64,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-16-0-1.wav,data/paired_evidence/identity-16-0-0.wav,donor_residual,3.0
+identity,esc-16,64,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-16-0-1.wav,data/paired_evidence/identity-16-0-0.wav,donor_pool,1.625
+second_event,esc-16,65,0,Can you hear the sound of chainsaw after the pause?,data/paired_evidence/identity-16-0-0.wav,data/paired_evidence/identity-16-0-1.wav,own,1.375
+second_event,esc-16,65,0,Can you hear the sound of chainsaw after the pause?,data/paired_evidence/identity-16-0-0.wav,data/paired_evidence/identity-16-0-1.wav,donor_residual,1.0
+second_event,esc-16,65,0,Can you hear the sound of chainsaw after the pause?,data/paired_evidence/identity-16-0-0.wav,data/paired_evidence/identity-16-0-1.wav,donor_pool,1.75
+second_event,esc-16,65,1,Can you hear the sound of chainsaw after the pause?,data/paired_evidence/identity-16-0-1.wav,data/paired_evidence/identity-16-0-0.wav,own,0.875
+second_event,esc-16,65,1,Can you hear the sound of chainsaw after the pause?,data/paired_evidence/identity-16-0-1.wav,data/paired_evidence/identity-16-0-0.wav,donor_residual,1.75
+second_event,esc-16,65,1,Can you hear the sound of chainsaw after the pause?,data/paired_evidence/identity-16-0-1.wav,data/paired_evidence/identity-16-0-0.wav,donor_pool,1.0
+identity,esc-16,66,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-16-1-1.wav,data/paired_evidence/identity-16-1-0.wav,own,1.25
+identity,esc-16,66,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-16-1-1.wav,data/paired_evidence/identity-16-1-0.wav,donor_residual,2.25
+identity,esc-16,66,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-16-1-1.wav,data/paired_evidence/identity-16-1-0.wav,donor_pool,1.0
+identity,esc-16,66,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-16-1-0.wav,data/paired_evidence/identity-16-1-1.wav,own,2.125
+identity,esc-16,66,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-16-1-0.wav,data/paired_evidence/identity-16-1-1.wav,donor_residual,1.0
+identity,esc-16,66,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-16-1-0.wav,data/paired_evidence/identity-16-1-1.wav,donor_pool,2.25
+second_event,esc-16,67,0,Can you hear the sound of helicopter after the pause?,data/paired_evidence/identity-16-1-1.wav,data/paired_evidence/identity-16-1-0.wav,own,2.25
+second_event,esc-16,67,0,Can you hear the sound of helicopter after the pause?,data/paired_evidence/identity-16-1-1.wav,data/paired_evidence/identity-16-1-0.wav,donor_residual,1.75
+second_event,esc-16,67,0,Can you hear the sound of helicopter after the pause?,data/paired_evidence/identity-16-1-1.wav,data/paired_evidence/identity-16-1-0.wav,donor_pool,1.875
+second_event,esc-16,67,1,Can you hear the sound of helicopter after the pause?,data/paired_evidence/identity-16-1-0.wav,data/paired_evidence/identity-16-1-1.wav,own,1.375
+second_event,esc-16,67,1,Can you hear the sound of helicopter after the pause?,data/paired_evidence/identity-16-1-0.wav,data/paired_evidence/identity-16-1-1.wav,donor_residual,1.875
+second_event,esc-16,67,1,Can you hear the sound of helicopter after the pause?,data/paired_evidence/identity-16-1-0.wav,data/paired_evidence/identity-16-1-1.wav,donor_pool,1.75
+identity,esc-17,68,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-17-0-0.wav,data/paired_evidence/identity-17-0-1.wav,own,2.25
+identity,esc-17,68,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-17-0-0.wav,data/paired_evidence/identity-17-0-1.wav,donor_residual,1.8125
+identity,esc-17,68,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-17-0-0.wav,data/paired_evidence/identity-17-0-1.wav,donor_pool,2.125
+identity,esc-17,68,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-17-0-1.wav,data/paired_evidence/identity-17-0-0.wav,own,1.75
+identity,esc-17,68,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-17-0-1.wav,data/paired_evidence/identity-17-0-0.wav,donor_residual,2.125
+identity,esc-17,68,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-17-0-1.wav,data/paired_evidence/identity-17-0-0.wav,donor_pool,1.8125
+second_event,esc-17,69,0,Can you hear the sound of crow after the pause?,data/paired_evidence/identity-17-0-0.wav,data/paired_evidence/identity-17-0-1.wav,own,2.6875
+second_event,esc-17,69,0,Can you hear the sound of crow after the pause?,data/paired_evidence/identity-17-0-0.wav,data/paired_evidence/identity-17-0-1.wav,donor_residual,2.25
+second_event,esc-17,69,0,Can you hear the sound of crow after the pause?,data/paired_evidence/identity-17-0-0.wav,data/paired_evidence/identity-17-0-1.wav,donor_pool,2.4375
+second_event,esc-17,69,1,Can you hear the sound of crow after the pause?,data/paired_evidence/identity-17-0-1.wav,data/paired_evidence/identity-17-0-0.wav,own,2.0
+second_event,esc-17,69,1,Can you hear the sound of crow after the pause?,data/paired_evidence/identity-17-0-1.wav,data/paired_evidence/identity-17-0-0.wav,donor_residual,2.4375
+second_event,esc-17,69,1,Can you hear the sound of crow after the pause?,data/paired_evidence/identity-17-0-1.wav,data/paired_evidence/identity-17-0-0.wav,donor_pool,2.25
+identity,esc-17,70,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-17-1-1.wav,data/paired_evidence/identity-17-1-0.wav,own,1.5
+identity,esc-17,70,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-17-1-1.wav,data/paired_evidence/identity-17-1-0.wav,donor_residual,1.875
+identity,esc-17,70,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-17-1-1.wav,data/paired_evidence/identity-17-1-0.wav,donor_pool,1.0
+identity,esc-17,70,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-17-1-0.wav,data/paired_evidence/identity-17-1-1.wav,own,1.875
+identity,esc-17,70,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-17-1-0.wav,data/paired_evidence/identity-17-1-1.wav,donor_residual,1.0
+identity,esc-17,70,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-17-1-0.wav,data/paired_evidence/identity-17-1-1.wav,donor_pool,1.875
+second_event,esc-17,71,0,Can you hear the sound of can opening after the pause?,data/paired_evidence/identity-17-1-1.wav,data/paired_evidence/identity-17-1-0.wav,own,2.625
+second_event,esc-17,71,0,Can you hear the sound of can opening after the pause?,data/paired_evidence/identity-17-1-1.wav,data/paired_evidence/identity-17-1-0.wav,donor_residual,2.25
+second_event,esc-17,71,0,Can you hear the sound of can opening after the pause?,data/paired_evidence/identity-17-1-1.wav,data/paired_evidence/identity-17-1-0.wav,donor_pool,2.125
+second_event,esc-17,71,1,Can you hear the sound of can opening after the pause?,data/paired_evidence/identity-17-1-0.wav,data/paired_evidence/identity-17-1-1.wav,own,1.75
+second_event,esc-17,71,1,Can you hear the sound of can opening after the pause?,data/paired_evidence/identity-17-1-0.wav,data/paired_evidence/identity-17-1-1.wav,donor_residual,2.125
+second_event,esc-17,71,1,Can you hear the sound of can opening after the pause?,data/paired_evidence/identity-17-1-0.wav,data/paired_evidence/identity-17-1-1.wav,donor_pool,2.25
+identity,esc-18,72,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-18-0-0.wav,data/paired_evidence/identity-18-0-1.wav,own,2.125
+identity,esc-18,72,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-18-0-0.wav,data/paired_evidence/identity-18-0-1.wav,donor_residual,1.3125
+identity,esc-18,72,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-18-0-0.wav,data/paired_evidence/identity-18-0-1.wav,donor_pool,2.1875
+identity,esc-18,72,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-18-0-1.wav,data/paired_evidence/identity-18-0-0.wav,own,1.5625
+identity,esc-18,72,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-18-0-1.wav,data/paired_evidence/identity-18-0-0.wav,donor_residual,2.1875
+identity,esc-18,72,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-18-0-1.wav,data/paired_evidence/identity-18-0-0.wav,donor_pool,1.3125
+second_event,esc-18,73,0,Can you hear the sound of frog after the pause?,data/paired_evidence/identity-18-0-0.wav,data/paired_evidence/identity-18-0-1.wav,own,2.25
+second_event,esc-18,73,0,Can you hear the sound of frog after the pause?,data/paired_evidence/identity-18-0-0.wav,data/paired_evidence/identity-18-0-1.wav,donor_residual,1.25
+second_event,esc-18,73,0,Can you hear the sound of frog after the pause?,data/paired_evidence/identity-18-0-0.wav,data/paired_evidence/identity-18-0-1.wav,donor_pool,1.875
+second_event,esc-18,73,1,Can you hear the sound of frog after the pause?,data/paired_evidence/identity-18-0-1.wav,data/paired_evidence/identity-18-0-0.wav,own,0.875
+second_event,esc-18,73,1,Can you hear the sound of frog after the pause?,data/paired_evidence/identity-18-0-1.wav,data/paired_evidence/identity-18-0-0.wav,donor_residual,1.875
+second_event,esc-18,73,1,Can you hear the sound of frog after the pause?,data/paired_evidence/identity-18-0-1.wav,data/paired_evidence/identity-18-0-0.wav,donor_pool,1.25
+identity,esc-18,74,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-18-1-1.wav,data/paired_evidence/identity-18-1-0.wav,own,2.5
+identity,esc-18,74,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-18-1-1.wav,data/paired_evidence/identity-18-1-0.wav,donor_residual,2.6875
+identity,esc-18,74,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-18-1-1.wav,data/paired_evidence/identity-18-1-0.wav,donor_pool,1.625
+identity,esc-18,74,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-18-1-0.wav,data/paired_evidence/identity-18-1-1.wav,own,2.1875
+identity,esc-18,74,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-18-1-0.wav,data/paired_evidence/identity-18-1-1.wav,donor_residual,1.625
+identity,esc-18,74,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-18-1-0.wav,data/paired_evidence/identity-18-1-1.wav,donor_pool,2.6875
+second_event,esc-18,75,0,Can you hear the sound of cow after the pause?,data/paired_evidence/identity-18-1-1.wav,data/paired_evidence/identity-18-1-0.wav,own,2.375
+second_event,esc-18,75,0,Can you hear the sound of cow after the pause?,data/paired_evidence/identity-18-1-1.wav,data/paired_evidence/identity-18-1-0.wav,donor_residual,2.25
+second_event,esc-18,75,0,Can you hear the sound of cow after the pause?,data/paired_evidence/identity-18-1-1.wav,data/paired_evidence/identity-18-1-0.wav,donor_pool,1.875
+second_event,esc-18,75,1,Can you hear the sound of cow after the pause?,data/paired_evidence/identity-18-1-0.wav,data/paired_evidence/identity-18-1-1.wav,own,1.75
+second_event,esc-18,75,1,Can you hear the sound of cow after the pause?,data/paired_evidence/identity-18-1-0.wav,data/paired_evidence/identity-18-1-1.wav,donor_residual,1.875
+second_event,esc-18,75,1,Can you hear the sound of cow after the pause?,data/paired_evidence/identity-18-1-0.wav,data/paired_evidence/identity-18-1-1.wav,donor_pool,2.25
+identity,esc-19,76,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-19-0-0.wav,data/paired_evidence/identity-19-0-1.wav,own,1.5
+identity,esc-19,76,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-19-0-0.wav,data/paired_evidence/identity-19-0-1.wav,donor_residual,1.0
+identity,esc-19,76,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-19-0-0.wav,data/paired_evidence/identity-19-0-1.wav,donor_pool,2.1875
+identity,esc-19,76,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-19-0-1.wav,data/paired_evidence/identity-19-0-0.wav,own,1.625
+identity,esc-19,76,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-19-0-1.wav,data/paired_evidence/identity-19-0-0.wav,donor_residual,2.1875
+identity,esc-19,76,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-19-0-1.wav,data/paired_evidence/identity-19-0-0.wav,donor_pool,1.0
+second_event,esc-19,77,0,Can you hear the sound of keyboard typing after the pause?,data/paired_evidence/identity-19-0-0.wav,data/paired_evidence/identity-19-0-1.wav,own,2.25
+second_event,esc-19,77,0,Can you hear the sound of keyboard typing after the pause?,data/paired_evidence/identity-19-0-0.wav,data/paired_evidence/identity-19-0-1.wav,donor_residual,0.875
+second_event,esc-19,77,0,Can you hear the sound of keyboard typing after the pause?,data/paired_evidence/identity-19-0-0.wav,data/paired_evidence/identity-19-0-1.wav,donor_pool,2.25
+second_event,esc-19,77,1,Can you hear the sound of keyboard typing after the pause?,data/paired_evidence/identity-19-0-1.wav,data/paired_evidence/identity-19-0-0.wav,own,0.25
+second_event,esc-19,77,1,Can you hear the sound of keyboard typing after the pause?,data/paired_evidence/identity-19-0-1.wav,data/paired_evidence/identity-19-0-0.wav,donor_residual,2.25
+second_event,esc-19,77,1,Can you hear the sound of keyboard typing after the pause?,data/paired_evidence/identity-19-0-1.wav,data/paired_evidence/identity-19-0-0.wav,donor_pool,0.875
+identity,esc-19,78,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-19-1-1.wav,data/paired_evidence/identity-19-1-0.wav,own,1.5
+identity,esc-19,78,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-19-1-1.wav,data/paired_evidence/identity-19-1-0.wav,donor_residual,2.0
+identity,esc-19,78,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-19-1-1.wav,data/paired_evidence/identity-19-1-0.wav,donor_pool,1.125
+identity,esc-19,78,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-19-1-0.wav,data/paired_evidence/identity-19-1-1.wav,own,1.75
+identity,esc-19,78,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-19-1-0.wav,data/paired_evidence/identity-19-1-1.wav,donor_residual,1.125
+identity,esc-19,78,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-19-1-0.wav,data/paired_evidence/identity-19-1-1.wav,donor_pool,2.0
+second_event,esc-19,79,0,Can you hear the sound of washing machine after the pause?,data/paired_evidence/identity-19-1-1.wav,data/paired_evidence/identity-19-1-0.wav,own,-0.125
+second_event,esc-19,79,0,Can you hear the sound of washing machine after the pause?,data/paired_evidence/identity-19-1-1.wav,data/paired_evidence/identity-19-1-0.wav,donor_residual,-1.0
+second_event,esc-19,79,0,Can you hear the sound of washing machine after the pause?,data/paired_evidence/identity-19-1-1.wav,data/paired_evidence/identity-19-1-0.wav,donor_pool,0.0
+second_event,esc-19,79,1,Can you hear the sound of washing machine after the pause?,data/paired_evidence/identity-19-1-0.wav,data/paired_evidence/identity-19-1-1.wav,own,-0.5
+second_event,esc-19,79,1,Can you hear the sound of washing machine after the pause?,data/paired_evidence/identity-19-1-0.wav,data/paired_evidence/identity-19-1-1.wav,donor_residual,0.0
+second_event,esc-19,79,1,Can you hear the sound of washing machine after the pause?,data/paired_evidence/identity-19-1-0.wav,data/paired_evidence/identity-19-1-1.wav,donor_pool,-1.0
+identity,esc-20,80,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-20-0-0.wav,data/paired_evidence/identity-20-0-1.wav,own,3.0
+identity,esc-20,80,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-20-0-0.wav,data/paired_evidence/identity-20-0-1.wav,donor_residual,1.5
+identity,esc-20,80,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-20-0-0.wav,data/paired_evidence/identity-20-0-1.wav,donor_pool,3.125
+identity,esc-20,80,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-20-0-1.wav,data/paired_evidence/identity-20-0-0.wav,own,1.125
+identity,esc-20,80,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-20-0-1.wav,data/paired_evidence/identity-20-0-0.wav,donor_residual,3.125
+identity,esc-20,80,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-20-0-1.wav,data/paired_evidence/identity-20-0-0.wav,donor_pool,1.5
+second_event,esc-20,81,0,Can you hear the sound of rooster after the pause?,data/paired_evidence/identity-20-0-0.wav,data/paired_evidence/identity-20-0-1.wav,own,2.75
+second_event,esc-20,81,0,Can you hear the sound of rooster after the pause?,data/paired_evidence/identity-20-0-0.wav,data/paired_evidence/identity-20-0-1.wav,donor_residual,2.0
+second_event,esc-20,81,0,Can you hear the sound of rooster after the pause?,data/paired_evidence/identity-20-0-0.wav,data/paired_evidence/identity-20-0-1.wav,donor_pool,2.625
+second_event,esc-20,81,1,Can you hear the sound of rooster after the pause?,data/paired_evidence/identity-20-0-1.wav,data/paired_evidence/identity-20-0-0.wav,own,1.375
+second_event,esc-20,81,1,Can you hear the sound of rooster after the pause?,data/paired_evidence/identity-20-0-1.wav,data/paired_evidence/identity-20-0-0.wav,donor_residual,2.625
+second_event,esc-20,81,1,Can you hear the sound of rooster after the pause?,data/paired_evidence/identity-20-0-1.wav,data/paired_evidence/identity-20-0-0.wav,donor_pool,2.0
+identity,esc-20,82,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-20-1-1.wav,data/paired_evidence/identity-20-1-0.wav,own,1.25
+identity,esc-20,82,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-20-1-1.wav,data/paired_evidence/identity-20-1-0.wav,donor_residual,2.6875
+identity,esc-20,82,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-20-1-1.wav,data/paired_evidence/identity-20-1-0.wav,donor_pool,1.0
+identity,esc-20,82,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-20-1-0.wav,data/paired_evidence/identity-20-1-1.wav,own,2.25
+identity,esc-20,82,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-20-1-0.wav,data/paired_evidence/identity-20-1-1.wav,donor_residual,1.0
+identity,esc-20,82,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-20-1-0.wav,data/paired_evidence/identity-20-1-1.wav,donor_pool,2.6875
+second_event,esc-20,83,0,Can you hear the sound of crying baby after the pause?,data/paired_evidence/identity-20-1-1.wav,data/paired_evidence/identity-20-1-0.wav,own,1.25
+second_event,esc-20,83,0,Can you hear the sound of crying baby after the pause?,data/paired_evidence/identity-20-1-1.wav,data/paired_evidence/identity-20-1-0.wav,donor_residual,-0.125
+second_event,esc-20,83,0,Can you hear the sound of crying baby after the pause?,data/paired_evidence/identity-20-1-1.wav,data/paired_evidence/identity-20-1-0.wav,donor_pool,1.5
+second_event,esc-20,83,1,Can you hear the sound of crying baby after the pause?,data/paired_evidence/identity-20-1-0.wav,data/paired_evidence/identity-20-1-1.wav,own,-0.625
+second_event,esc-20,83,1,Can you hear the sound of crying baby after the pause?,data/paired_evidence/identity-20-1-0.wav,data/paired_evidence/identity-20-1-1.wav,donor_residual,1.5
+second_event,esc-20,83,1,Can you hear the sound of crying baby after the pause?,data/paired_evidence/identity-20-1-0.wav,data/paired_evidence/identity-20-1-1.wav,donor_pool,-0.125
+identity,esc-21,84,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-21-0-0.wav,data/paired_evidence/identity-21-0-1.wav,own,1.625
+identity,esc-21,84,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-21-0-0.wav,data/paired_evidence/identity-21-0-1.wav,donor_residual,0.5
+identity,esc-21,84,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-21-0-0.wav,data/paired_evidence/identity-21-0-1.wav,donor_pool,0.875
+identity,esc-21,84,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-21-0-1.wav,data/paired_evidence/identity-21-0-0.wav,own,0.5
+identity,esc-21,84,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-21-0-1.wav,data/paired_evidence/identity-21-0-0.wav,donor_residual,0.875
+identity,esc-21,84,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-21-0-1.wav,data/paired_evidence/identity-21-0-0.wav,donor_pool,0.5
+second_event,esc-21,85,0,Can you hear the sound of pouring water after the pause?,data/paired_evidence/identity-21-0-0.wav,data/paired_evidence/identity-21-0-1.wav,own,2.375
+second_event,esc-21,85,0,Can you hear the sound of pouring water after the pause?,data/paired_evidence/identity-21-0-0.wav,data/paired_evidence/identity-21-0-1.wav,donor_residual,0.625
+second_event,esc-21,85,0,Can you hear the sound of pouring water after the pause?,data/paired_evidence/identity-21-0-0.wav,data/paired_evidence/identity-21-0-1.wav,donor_pool,2.0
+second_event,esc-21,85,1,Can you hear the sound of pouring water after the pause?,data/paired_evidence/identity-21-0-1.wav,data/paired_evidence/identity-21-0-0.wav,own,-0.75
+second_event,esc-21,85,1,Can you hear the sound of pouring water after the pause?,data/paired_evidence/identity-21-0-1.wav,data/paired_evidence/identity-21-0-0.wav,donor_residual,2.0
+second_event,esc-21,85,1,Can you hear the sound of pouring water after the pause?,data/paired_evidence/identity-21-0-1.wav,data/paired_evidence/identity-21-0-0.wav,donor_pool,0.625
+identity,esc-21,86,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-21-1-1.wav,data/paired_evidence/identity-21-1-0.wav,own,0.375
+identity,esc-21,86,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-21-1-1.wav,data/paired_evidence/identity-21-1-0.wav,donor_residual,-0.125
+identity,esc-21,86,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-21-1-1.wav,data/paired_evidence/identity-21-1-0.wav,donor_pool,0.75
+identity,esc-21,86,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-21-1-0.wav,data/paired_evidence/identity-21-1-1.wav,own,0.125
+identity,esc-21,86,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-21-1-0.wav,data/paired_evidence/identity-21-1-1.wav,donor_residual,0.75
+identity,esc-21,86,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-21-1-0.wav,data/paired_evidence/identity-21-1-1.wav,donor_pool,-0.125
+second_event,esc-21,87,0,Can you hear the sound of siren after the pause?,data/paired_evidence/identity-21-1-1.wav,data/paired_evidence/identity-21-1-0.wav,own,2.1875
+second_event,esc-21,87,0,Can you hear the sound of siren after the pause?,data/paired_evidence/identity-21-1-1.wav,data/paired_evidence/identity-21-1-0.wav,donor_residual,2.125
+second_event,esc-21,87,0,Can you hear the sound of siren after the pause?,data/paired_evidence/identity-21-1-1.wav,data/paired_evidence/identity-21-1-0.wav,donor_pool,2.6875
+second_event,esc-21,87,1,Can you hear the sound of siren after the pause?,data/paired_evidence/identity-21-1-0.wav,data/paired_evidence/identity-21-1-1.wav,own,2.375
+second_event,esc-21,87,1,Can you hear the sound of siren after the pause?,data/paired_evidence/identity-21-1-0.wav,data/paired_evidence/identity-21-1-1.wav,donor_residual,2.6875
+second_event,esc-21,87,1,Can you hear the sound of siren after the pause?,data/paired_evidence/identity-21-1-0.wav,data/paired_evidence/identity-21-1-1.wav,donor_pool,2.125
+identity,esc-22,88,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-22-0-0.wav,data/paired_evidence/identity-22-0-1.wav,own,2.375
+identity,esc-22,88,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-22-0-0.wav,data/paired_evidence/identity-22-0-1.wav,donor_residual,2.5
+identity,esc-22,88,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-22-0-0.wav,data/paired_evidence/identity-22-0-1.wav,donor_pool,2.625
+identity,esc-22,88,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-22-0-1.wav,data/paired_evidence/identity-22-0-0.wav,own,2.875
+identity,esc-22,88,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-22-0-1.wav,data/paired_evidence/identity-22-0-0.wav,donor_residual,2.625
+identity,esc-22,88,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-22-0-1.wav,data/paired_evidence/identity-22-0-0.wav,donor_pool,2.5
+second_event,esc-22,89,0,Can you hear the sound of crackling fire after the pause?,data/paired_evidence/identity-22-0-0.wav,data/paired_evidence/identity-22-0-1.wav,own,1.875
+second_event,esc-22,89,0,Can you hear the sound of crackling fire after the pause?,data/paired_evidence/identity-22-0-0.wav,data/paired_evidence/identity-22-0-1.wav,donor_residual,1.75
+second_event,esc-22,89,0,Can you hear the sound of crackling fire after the pause?,data/paired_evidence/identity-22-0-0.wav,data/paired_evidence/identity-22-0-1.wav,donor_pool,2.0
+second_event,esc-22,89,1,Can you hear the sound of crackling fire after the pause?,data/paired_evidence/identity-22-0-1.wav,data/paired_evidence/identity-22-0-0.wav,own,1.0
+second_event,esc-22,89,1,Can you hear the sound of crackling fire after the pause?,data/paired_evidence/identity-22-0-1.wav,data/paired_evidence/identity-22-0-0.wav,donor_residual,2.0
+second_event,esc-22,89,1,Can you hear the sound of crackling fire after the pause?,data/paired_evidence/identity-22-0-1.wav,data/paired_evidence/identity-22-0-0.wav,donor_pool,1.75
+identity,esc-22,90,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-22-1-1.wav,data/paired_evidence/identity-22-1-0.wav,own,1.6875
+identity,esc-22,90,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-22-1-1.wav,data/paired_evidence/identity-22-1-0.wav,donor_residual,1.625
+identity,esc-22,90,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-22-1-1.wav,data/paired_evidence/identity-22-1-0.wav,donor_pool,2.0
+identity,esc-22,90,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-22-1-0.wav,data/paired_evidence/identity-22-1-1.wav,own,1.875
+identity,esc-22,90,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-22-1-0.wav,data/paired_evidence/identity-22-1-1.wav,donor_residual,2.0
+identity,esc-22,90,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-22-1-0.wav,data/paired_evidence/identity-22-1-1.wav,donor_pool,1.625
+second_event,esc-22,91,0,Can you hear the sound of water drops after the pause?,data/paired_evidence/identity-22-1-1.wav,data/paired_evidence/identity-22-1-0.wav,own,1.5
+second_event,esc-22,91,0,Can you hear the sound of water drops after the pause?,data/paired_evidence/identity-22-1-1.wav,data/paired_evidence/identity-22-1-0.wav,donor_residual,1.5
+second_event,esc-22,91,0,Can you hear the sound of water drops after the pause?,data/paired_evidence/identity-22-1-1.wav,data/paired_evidence/identity-22-1-0.wav,donor_pool,1.875
+second_event,esc-22,91,1,Can you hear the sound of water drops after the pause?,data/paired_evidence/identity-22-1-0.wav,data/paired_evidence/identity-22-1-1.wav,own,1.375
+second_event,esc-22,91,1,Can you hear the sound of water drops after the pause?,data/paired_evidence/identity-22-1-0.wav,data/paired_evidence/identity-22-1-1.wav,donor_residual,1.875
+second_event,esc-22,91,1,Can you hear the sound of water drops after the pause?,data/paired_evidence/identity-22-1-0.wav,data/paired_evidence/identity-22-1-1.wav,donor_pool,1.5
+identity,esc-23,92,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-23-0-0.wav,data/paired_evidence/identity-23-0-1.wav,own,3.25
+identity,esc-23,92,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-23-0-0.wav,data/paired_evidence/identity-23-0-1.wav,donor_residual,3.25
+identity,esc-23,92,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-23-0-0.wav,data/paired_evidence/identity-23-0-1.wav,donor_pool,2.5
+identity,esc-23,92,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-23-0-1.wav,data/paired_evidence/identity-23-0-0.wav,own,2.375
+identity,esc-23,92,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-23-0-1.wav,data/paired_evidence/identity-23-0-0.wav,donor_residual,2.5
+identity,esc-23,92,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-23-0-1.wav,data/paired_evidence/identity-23-0-0.wav,donor_pool,3.25
+second_event,esc-23,93,0,Can you hear the sound of toilet flush after the pause?,data/paired_evidence/identity-23-0-0.wav,data/paired_evidence/identity-23-0-1.wav,own,3.0
+second_event,esc-23,93,0,Can you hear the sound of toilet flush after the pause?,data/paired_evidence/identity-23-0-0.wav,data/paired_evidence/identity-23-0-1.wav,donor_residual,2.625
+second_event,esc-23,93,0,Can you hear the sound of toilet flush after the pause?,data/paired_evidence/identity-23-0-0.wav,data/paired_evidence/identity-23-0-1.wav,donor_pool,3.0
+second_event,esc-23,93,1,Can you hear the sound of toilet flush after the pause?,data/paired_evidence/identity-23-0-1.wav,data/paired_evidence/identity-23-0-0.wav,own,1.75
+second_event,esc-23,93,1,Can you hear the sound of toilet flush after the pause?,data/paired_evidence/identity-23-0-1.wav,data/paired_evidence/identity-23-0-0.wav,donor_residual,3.0
+second_event,esc-23,93,1,Can you hear the sound of toilet flush after the pause?,data/paired_evidence/identity-23-0-1.wav,data/paired_evidence/identity-23-0-0.wav,donor_pool,2.625
+identity,esc-23,94,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-23-1-1.wav,data/paired_evidence/identity-23-1-0.wav,own,2.0625
+identity,esc-23,94,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-23-1-1.wav,data/paired_evidence/identity-23-1-0.wav,donor_residual,1.8125
+identity,esc-23,94,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-23-1-1.wav,data/paired_evidence/identity-23-1-0.wav,donor_pool,2.125
+identity,esc-23,94,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-23-1-0.wav,data/paired_evidence/identity-23-1-1.wav,own,1.875
+identity,esc-23,94,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-23-1-0.wav,data/paired_evidence/identity-23-1-1.wav,donor_residual,2.125
+identity,esc-23,94,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-23-1-0.wav,data/paired_evidence/identity-23-1-1.wav,donor_pool,1.8125
+second_event,esc-23,95,0,Can you hear the sound of hand saw after the pause?,data/paired_evidence/identity-23-1-1.wav,data/paired_evidence/identity-23-1-0.wav,own,1.125
+second_event,esc-23,95,0,Can you hear the sound of hand saw after the pause?,data/paired_evidence/identity-23-1-1.wav,data/paired_evidence/identity-23-1-0.wav,donor_residual,1.0
+second_event,esc-23,95,0,Can you hear the sound of hand saw after the pause?,data/paired_evidence/identity-23-1-1.wav,data/paired_evidence/identity-23-1-0.wav,donor_pool,1.5
+second_event,esc-23,95,1,Can you hear the sound of hand saw after the pause?,data/paired_evidence/identity-23-1-0.wav,data/paired_evidence/identity-23-1-1.wav,own,1.125
+second_event,esc-23,95,1,Can you hear the sound of hand saw after the pause?,data/paired_evidence/identity-23-1-0.wav,data/paired_evidence/identity-23-1-1.wav,donor_residual,1.5
+second_event,esc-23,95,1,Can you hear the sound of hand saw after the pause?,data/paired_evidence/identity-23-1-0.wav,data/paired_evidence/identity-23-1-1.wav,donor_pool,1.0
+identity,esc-24,96,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-24-0-0.wav,data/paired_evidence/identity-24-0-1.wav,own,0.75
+identity,esc-24,96,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-24-0-0.wav,data/paired_evidence/identity-24-0-1.wav,donor_residual,0.625
+identity,esc-24,96,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-24-0-0.wav,data/paired_evidence/identity-24-0-1.wav,donor_pool,0.875
+identity,esc-24,96,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-24-0-1.wav,data/paired_evidence/identity-24-0-0.wav,own,1.0
+identity,esc-24,96,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-24-0-1.wav,data/paired_evidence/identity-24-0-0.wav,donor_residual,0.875
+identity,esc-24,96,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-24-0-1.wav,data/paired_evidence/identity-24-0-0.wav,donor_pool,0.625
+second_event,esc-24,97,0,Can you hear the sound of fireworks after the pause?,data/paired_evidence/identity-24-0-0.wav,data/paired_evidence/identity-24-0-1.wav,own,0.875
+second_event,esc-24,97,0,Can you hear the sound of fireworks after the pause?,data/paired_evidence/identity-24-0-0.wav,data/paired_evidence/identity-24-0-1.wav,donor_residual,0.875
+second_event,esc-24,97,0,Can you hear the sound of fireworks after the pause?,data/paired_evidence/identity-24-0-0.wav,data/paired_evidence/identity-24-0-1.wav,donor_pool,0.5
+second_event,esc-24,97,1,Can you hear the sound of fireworks after the pause?,data/paired_evidence/identity-24-0-1.wav,data/paired_evidence/identity-24-0-0.wav,own,0.5
+second_event,esc-24,97,1,Can you hear the sound of fireworks after the pause?,data/paired_evidence/identity-24-0-1.wav,data/paired_evidence/identity-24-0-0.wav,donor_residual,0.5
+second_event,esc-24,97,1,Can you hear the sound of fireworks after the pause?,data/paired_evidence/identity-24-0-1.wav,data/paired_evidence/identity-24-0-0.wav,donor_pool,0.875
+identity,esc-24,98,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-24-1-1.wav,data/paired_evidence/identity-24-1-0.wav,own,2.9375
+identity,esc-24,98,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-24-1-1.wav,data/paired_evidence/identity-24-1-0.wav,donor_residual,3.75
+identity,esc-24,98,0,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-24-1-1.wav,data/paired_evidence/identity-24-1-0.wav,donor_pool,2.9375
+identity,esc-24,98,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-24-1-0.wav,data/paired_evidence/identity-24-1-1.wav,own,3.3125
+identity,esc-24,98,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-24-1-0.wav,data/paired_evidence/identity-24-1-1.wav,donor_residual,2.9375
+identity,esc-24,98,1,Are the sounds before and after the pause from the same kind of source?,data/paired_evidence/identity-24-1-0.wav,data/paired_evidence/identity-24-1-1.wav,donor_pool,3.75
+second_event,esc-24,99,0,Can you hear the sound of sea waves after the pause?,data/paired_evidence/identity-24-1-1.wav,data/paired_evidence/identity-24-1-0.wav,own,1.625
+second_event,esc-24,99,0,Can you hear the sound of sea waves after the pause?,data/paired_evidence/identity-24-1-1.wav,data/paired_evidence/identity-24-1-0.wav,donor_residual,0.75
+second_event,esc-24,99,0,Can you hear the sound of sea waves after the pause?,data/paired_evidence/identity-24-1-1.wav,data/paired_evidence/identity-24-1-0.wav,donor_pool,1.875
+second_event,esc-24,99,1,Can you hear the sound of sea waves after the pause?,data/paired_evidence/identity-24-1-0.wav,data/paired_evidence/identity-24-1-1.wav,own,0.75
+second_event,esc-24,99,1,Can you hear the sound of sea waves after the pause?,data/paired_evidence/identity-24-1-0.wav,data/paired_evidence/identity-24-1-1.wav,donor_residual,1.875
+second_event,esc-24,99,1,Can you hear the sound of sea waves after the pause?,data/paired_evidence/identity-24-1-0.wav,data/paired_evidence/identity-24-1-1.wav,donor_pool,0.75

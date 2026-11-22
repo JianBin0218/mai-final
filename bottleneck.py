@@ -35,7 +35,7 @@ class Compressor(nn.Module):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("mode", choices=["train", "eval", "pool", "fresh", "controls", "intervene"])
+    parser.add_argument("mode", choices=["train", "eval", "pool", "fresh", "controls", "intervene", "opposite", "level-probe"])
     parser.add_argument("--out", type=Path, required=True)
     parser.add_argument("--steps", type=int, default=16)
     parser.add_argument("--k", type=int, default=16)
@@ -48,6 +48,7 @@ def main():
     parser.add_argument("--intervention", choices=["swap","components","factorial"], default="swap")
     parser.add_argument("--donor-seed", type=int, default=17)
     parser.add_argument("--types", type=Path, default=Path("phase2/fresh-capacity/question_types.csv"))
+    parser.add_argument("--pair-manifest", type=Path, default=Path("data/paired_evidence/pairs.json"))
     args = parser.parse_args()
     if args.mode in ("fresh","controls","intervene") and (not args.clotho or args.conditioned):
         parser.error(f"{args.mode} requires --clotho and audio-only checkpoints")
@@ -161,6 +162,15 @@ def main():
                              loss=F.cross_entropy(scores[None], torch.tensor([target],device="cuda")).item()))
         return dict(correct=sum(r["prediction"]==r["target"] for r in rows), n=len(rows),
                     loss=sum(r["loss"] for r in rows)/len(rows), rows=rows)
+
+    if args.mode == "level-probe":
+        from level_probe import probe
+        probe(args, comp, features)
+        return
+    if args.mode == "opposite":
+        from opposite_eval import measure
+        measure(args, comp, features, decode)
+        return
 
     if args.mode == "intervene":
         from latent_interventions import run_interventions

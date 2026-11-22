@@ -1,0 +1,1302 @@
+[
+  {
+    "task": "second_other",
+    "group": "esc-0",
+    "q": "Can you hear the sound of clock alarm after the pause?",
+    "yes": "data/paired_evidence/identity-0-0-1.wav",
+    "no": "data/paired_evidence/identity-0-0-0.wav",
+    "sources": [
+      "data/5-173568-A-33.wav",
+      "data/5-234247-A-37.wav",
+      "data/5-187444-A-33.wav",
+      "data/5-219242-B-37.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-0",
+    "q": "Can you hear the sound of clock alarm anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-0-0-1.wav",
+    "no": "data/paired_evidence/identity-0-0-0.wav",
+    "sources": [
+      "data/5-173568-A-33.wav",
+      "data/5-234247-A-37.wav",
+      "data/5-187444-A-33.wav",
+      "data/5-219242-B-37.wav"
+    ]
+  },
+  {
+    "task": "second_other",
+    "group": "esc-0",
+    "q": "Can you hear the sound of door wood creaks after the pause?",
+    "yes": "data/paired_evidence/identity-0-1-0.wav",
+    "no": "data/paired_evidence/identity-0-1-1.wav",
+    "sources": [
+      "data/5-173568-A-33.wav",
+      "data/5-234247-A-37.wav",
+      "data/5-187444-A-33.wav",
+      "data/5-219242-B-37.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-0",
+    "q": "Can you hear the sound of door wood creaks anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-0-1-0.wav",
+    "no": "data/paired_evidence/identity-0-1-1.wav",
+    "sources": [
+      "data/5-173568-A-33.wav",
+      "data/5-234247-A-37.wav",
+      "data/5-187444-A-33.wav",
+      "data/5-219242-B-37.wav"
+    ]
+  },
+  {
+    "task": "second_other",
+    "group": "esc-1",
+    "q": "Can you hear the sound of crickets after the pause?",
+    "yes": "data/paired_evidence/identity-1-0-1.wav",
+    "no": "data/paired_evidence/identity-1-0-0.wav",
+    "sources": [
+      "data/5-251957-A-47.wav",
+      "data/5-210540-A-13.wav",
+      "data/5-251971-A-47.wav",
+      "data/5-215172-A-13.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-1",
+    "q": "Can you hear the sound of crickets anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-1-0-1.wav",
+    "no": "data/paired_evidence/identity-1-0-0.wav",
+    "sources": [
+      "data/5-251957-A-47.wav",
+      "data/5-210540-A-13.wav",
+      "data/5-251971-A-47.wav",
+      "data/5-215172-A-13.wav"
+    ]
+  },
+  {
+    "task": "second_other",
+    "group": "esc-1",
+    "q": "Can you hear the sound of airplane after the pause?",
+    "yes": "data/paired_evidence/identity-1-1-0.wav",
+    "no": "data/paired_evidence/identity-1-1-1.wav",
+    "sources": [
+      "data/5-251957-A-47.wav",
+      "data/5-210540-A-13.wav",
+      "data/5-251971-A-47.wav",
+      "data/5-215172-A-13.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-1",
+    "q": "Can you hear the sound of airplane anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-1-1-0.wav",
+    "no": "data/paired_evidence/identity-1-1-1.wav",
+    "sources": [
+      "data/5-251957-A-47.wav",
+      "data/5-210540-A-13.wav",
+      "data/5-251971-A-47.wav",
+      "data/5-215172-A-13.wav"
+    ]
+  },
+  {
+    "task": "second_other",
+    "group": "esc-2",
+    "q": "Can you hear the sound of pig after the pause?",
+    "yes": "data/paired_evidence/identity-2-0-1.wav",
+    "no": "data/paired_evidence/identity-2-0-0.wav",
+    "sources": [
+      "data/5-218981-A-30.wav",
+      "data/5-117250-A-2.wav",
+      "data/5-250026-A-30.wav",
+      "data/5-103418-A-2.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-2",
+    "q": "Can you hear the sound of pig anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-2-0-1.wav",
+    "no": "data/paired_evidence/identity-2-0-0.wav",
+    "sources": [
+      "data/5-218981-A-30.wav",
+      "data/5-117250-A-2.wav",
+      "data/5-250026-A-30.wav",
+      "data/5-103418-A-2.wav"
+    ]
+  },
+  {
+    "task": "second_other",
+    "group": "esc-2",
+    "q": "Can you hear the sound of door wood knock after the pause?",
+    "yes": "data/paired_evidence/identity-2-1-0.wav",
+    "no": "data/paired_evidence/identity-2-1-1.wav",
+    "sources": [
+      "data/5-218981-A-30.wav",
+      "data/5-117250-A-2.wav",
+      "data/5-250026-A-30.wav",
+      "data/5-103418-A-2.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-2",
+    "q": "Can you hear the sound of door wood knock anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-2-1-0.wav",
+    "no": "data/paired_evidence/identity-2-1-1.wav",
+    "sources": [
+      "data/5-218981-A-30.wav",
+      "data/5-117250-A-2.wav",
+      "data/5-250026-A-30.wav",
+      "data/5-103418-A-2.wav"
+    ]
+  },
+  {
+    "task": "second_other",
+    "group": "esc-3",
+    "q": "Can you hear the sound of clock tick after the pause?",
+    "yes": "data/paired_evidence/identity-3-0-1.wav",
+    "no": "data/paired_evidence/identity-3-0-0.wav",
+    "sources": [
+      "data/5-197121-B-45.wav",
+      "data/5-208624-A-38.wav",
+      "data/5-188945-A-45.wav",
+      "data/5-235671-A-38.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-3",
+    "q": "Can you hear the sound of clock tick anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-3-0-1.wav",
+    "no": "data/paired_evidence/identity-3-0-0.wav",
+    "sources": [
+      "data/5-197121-B-45.wav",
+      "data/5-208624-A-38.wav",
+      "data/5-188945-A-45.wav",
+      "data/5-235671-A-38.wav"
+    ]
+  },
+  {
+    "task": "second_other",
+    "group": "esc-3",
+    "q": "Can you hear the sound of train after the pause?",
+    "yes": "data/paired_evidence/identity-3-1-0.wav",
+    "no": "data/paired_evidence/identity-3-1-1.wav",
+    "sources": [
+      "data/5-197121-B-45.wav",
+      "data/5-208624-A-38.wav",
+      "data/5-188945-A-45.wav",
+      "data/5-235671-A-38.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-3",
+    "q": "Can you hear the sound of train anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-3-1-0.wav",
+    "no": "data/paired_evidence/identity-3-1-1.wav",
+    "sources": [
+      "data/5-197121-B-45.wav",
+      "data/5-208624-A-38.wav",
+      "data/5-188945-A-45.wav",
+      "data/5-235671-A-38.wav"
+    ]
+  },
+  {
+    "task": "second_other",
+    "group": "esc-4",
+    "q": "Can you hear the sound of chirping birds after the pause?",
+    "yes": "data/paired_evidence/identity-4-0-1.wav",
+    "no": "data/paired_evidence/identity-4-0-0.wav",
+    "sources": [
+      "data/5-185516-A-27.wav",
+      "data/5-243459-B-14.wav",
+      "data/5-220939-A-27.wav",
+      "data/5-257839-A-14.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-4",
+    "q": "Can you hear the sound of chirping birds anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-4-0-1.wav",
+    "no": "data/paired_evidence/identity-4-0-0.wav",
+    "sources": [
+      "data/5-185516-A-27.wav",
+      "data/5-243459-B-14.wav",
+      "data/5-220939-A-27.wav",
+      "data/5-257839-A-14.wav"
+    ]
+  },
+  {
+    "task": "second_other",
+    "group": "esc-4",
+    "q": "Can you hear the sound of brushing teeth after the pause?",
+    "yes": "data/paired_evidence/identity-4-1-0.wav",
+    "no": "data/paired_evidence/identity-4-1-1.wav",
+    "sources": [
+      "data/5-185516-A-27.wav",
+      "data/5-243459-B-14.wav",
+      "data/5-220939-A-27.wav",
+      "data/5-257839-A-14.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-4",
+    "q": "Can you hear the sound of brushing teeth anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-4-1-0.wav",
+    "no": "data/paired_evidence/identity-4-1-1.wav",
+    "sources": [
+      "data/5-185516-A-27.wav",
+      "data/5-243459-B-14.wav",
+      "data/5-220939-A-27.wav",
+      "data/5-257839-A-14.wav"
+    ]
+  },
+  {
+    "task": "second_other",
+    "group": "esc-5",
+    "q": "Can you hear the sound of snoring after the pause?",
+    "yes": "data/paired_evidence/identity-5-0-1.wav",
+    "no": "data/paired_evidence/identity-5-0-0.wav",
+    "sources": [
+      "data/5-179496-B-16.wav",
+      "data/5-249748-A-28.wav",
+      "data/5-217186-B-16.wav",
+      "data/5-236288-A-28.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-5",
+    "q": "Can you hear the sound of snoring anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-5-0-1.wav",
+    "no": "data/paired_evidence/identity-5-0-0.wav",
+    "sources": [
+      "data/5-179496-B-16.wav",
+      "data/5-249748-A-28.wav",
+      "data/5-217186-B-16.wav",
+      "data/5-236288-A-28.wav"
+    ]
+  },
+  {
+    "task": "second_other",
+    "group": "esc-5",
+    "q": "Can you hear the sound of wind after the pause?",
+    "yes": "data/paired_evidence/identity-5-1-0.wav",
+    "no": "data/paired_evidence/identity-5-1-1.wav",
+    "sources": [
+      "data/5-179496-B-16.wav",
+      "data/5-249748-A-28.wav",
+      "data/5-217186-B-16.wav",
+      "data/5-236288-A-28.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-5",
+    "q": "Can you hear the sound of wind anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-5-1-0.wav",
+    "no": "data/paired_evidence/identity-5-1-1.wav",
+    "sources": [
+      "data/5-179496-B-16.wav",
+      "data/5-249748-A-28.wav",
+      "data/5-217186-B-16.wav",
+      "data/5-236288-A-28.wav"
+    ]
+  },
+  {
+    "task": "second_other",
+    "group": "esc-6",
+    "q": "Can you hear the sound of rain after the pause?",
+    "yes": "data/paired_evidence/identity-6-0-1.wav",
+    "no": "data/paired_evidence/identity-6-0-0.wav",
+    "sources": [
+      "data/5-260434-A-39.wav",
+      "data/5-194892-A-10.wav",
+      "data/5-233605-A-39.wav",
+      "data/5-181766-A-10.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-6",
+    "q": "Can you hear the sound of rain anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-6-0-1.wav",
+    "no": "data/paired_evidence/identity-6-0-0.wav",
+    "sources": [
+      "data/5-260434-A-39.wav",
+      "data/5-194892-A-10.wav",
+      "data/5-233605-A-39.wav",
+      "data/5-181766-A-10.wav"
+    ]
+  },
+  {
+    "task": "second_other",
+    "group": "esc-6",
+    "q": "Can you hear the sound of glass breaking after the pause?",
+    "yes": "data/paired_evidence/identity-6-1-0.wav",
+    "no": "data/paired_evidence/identity-6-1-1.wav",
+    "sources": [
+      "data/5-260434-A-39.wav",
+      "data/5-194892-A-10.wav",
+      "data/5-233605-A-39.wav",
+      "data/5-181766-A-10.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-6",
+    "q": "Can you hear the sound of glass breaking anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-6-1-0.wav",
+    "no": "data/paired_evidence/identity-6-1-1.wav",
+    "sources": [
+      "data/5-260434-A-39.wav",
+      "data/5-194892-A-10.wav",
+      "data/5-233605-A-39.wav",
+      "data/5-181766-A-10.wav"
+    ]
+  },
+  {
+    "task": "second_other",
+    "group": "esc-7",
+    "q": "Can you hear the sound of breathing after the pause?",
+    "yes": "data/paired_evidence/identity-7-0-1.wav",
+    "no": "data/paired_evidence/identity-7-0-0.wav",
+    "sources": [
+      "data/5-195518-A-7.wav",
+      "data/5-234335-A-23.wav",
+      "data/5-194932-A-7.wav",
+      "data/5-232816-A-23.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-7",
+    "q": "Can you hear the sound of breathing anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-7-0-1.wav",
+    "no": "data/paired_evidence/identity-7-0-0.wav",
+    "sources": [
+      "data/5-195518-A-7.wav",
+      "data/5-234335-A-23.wav",
+      "data/5-194932-A-7.wav",
+      "data/5-232816-A-23.wav"
+    ]
+  },
+  {
+    "task": "second_other",
+    "group": "esc-7",
+    "q": "Can you hear the sound of insects after the pause?",
+    "yes": "data/paired_evidence/identity-7-1-0.wav",
+    "no": "data/paired_evidence/identity-7-1-1.wav",
+    "sources": [
+      "data/5-195518-A-7.wav",
+      "data/5-234335-A-23.wav",
+      "data/5-194932-A-7.wav",
+      "data/5-232816-A-23.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-7",
+    "q": "Can you hear the sound of insects anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-7-1-0.wav",
+    "no": "data/paired_evidence/identity-7-1-1.wav",
+    "sources": [
+      "data/5-195518-A-7.wav",
+      "data/5-234335-A-23.wav",
+      "data/5-194932-A-7.wav",
+      "data/5-232816-A-23.wav"
+    ]
+  },
+  {
+    "task": "second_other",
+    "group": "esc-8",
+    "q": "Can you hear the sound of thunderstorm after the pause?",
+    "yes": "data/paired_evidence/identity-8-0-1.wav",
+    "no": "data/paired_evidence/identity-8-0-0.wav",
+    "sources": [
+      "data/5-238926-A-31.wav",
+      "data/5-156999-C-19.wav",
+      "data/5-232802-A-31.wav",
+      "data/5-195557-A-19.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-8",
+    "q": "Can you hear the sound of thunderstorm anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-8-0-1.wav",
+    "no": "data/paired_evidence/identity-8-0-0.wav",
+    "sources": [
+      "data/5-238926-A-31.wav",
+      "data/5-156999-C-19.wav",
+      "data/5-232802-A-31.wav",
+      "data/5-195557-A-19.wav"
+    ]
+  },
+  {
+    "task": "second_other",
+    "group": "esc-8",
+    "q": "Can you hear the sound of mouse click after the pause?",
+    "yes": "data/paired_evidence/identity-8-1-0.wav",
+    "no": "data/paired_evidence/identity-8-1-1.wav",
+    "sources": [
+      "data/5-238926-A-31.wav",
+      "data/5-156999-C-19.wav",
+      "data/5-232802-A-31.wav",
+      "data/5-195557-A-19.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-8",
+    "q": "Can you hear the sound of mouse click anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-8-1-0.wav",
+    "no": "data/paired_evidence/identity-8-1-1.wav",
+    "sources": [
+      "data/5-238926-A-31.wav",
+      "data/5-156999-C-19.wav",
+      "data/5-232802-A-31.wav",
+      "data/5-195557-A-19.wav"
+    ]
+  },
+  {
+    "task": "second_other",
+    "group": "esc-9",
+    "q": "Can you hear the sound of dog after the pause?",
+    "yes": "data/paired_evidence/identity-9-0-1.wav",
+    "no": "data/paired_evidence/identity-9-0-0.wav",
+    "sources": [
+      "data/5-179865-A-43.wav",
+      "data/5-208030-A-0.wav",
+      "data/5-179868-A-43.wav",
+      "data/5-212454-A-0.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-9",
+    "q": "Can you hear the sound of dog anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-9-0-1.wav",
+    "no": "data/paired_evidence/identity-9-0-0.wav",
+    "sources": [
+      "data/5-179865-A-43.wav",
+      "data/5-208030-A-0.wav",
+      "data/5-179868-A-43.wav",
+      "data/5-212454-A-0.wav"
+    ]
+  },
+  {
+    "task": "second_other",
+    "group": "esc-9",
+    "q": "Can you hear the sound of car horn after the pause?",
+    "yes": "data/paired_evidence/identity-9-1-0.wav",
+    "no": "data/paired_evidence/identity-9-1-1.wav",
+    "sources": [
+      "data/5-179865-A-43.wav",
+      "data/5-208030-A-0.wav",
+      "data/5-179868-A-43.wav",
+      "data/5-212454-A-0.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-9",
+    "q": "Can you hear the sound of car horn anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-9-1-0.wav",
+    "no": "data/paired_evidence/identity-9-1-1.wav",
+    "sources": [
+      "data/5-179865-A-43.wav",
+      "data/5-208030-A-0.wav",
+      "data/5-179868-A-43.wav",
+      "data/5-212454-A-0.wav"
+    ]
+  },
+  {
+    "task": "second_other",
+    "group": "esc-10",
+    "q": "Can you hear the sound of vacuum cleaner after the pause?",
+    "yes": "data/paired_evidence/identity-10-0-1.wav",
+    "no": "data/paired_evidence/identity-10-0-0.wav",
+    "sources": [
+      "data/5-259514-A-26.wav",
+      "data/5-263902-A-36.wav",
+      "data/5-263775-B-26.wav",
+      "data/5-212054-A-36.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-10",
+    "q": "Can you hear the sound of vacuum cleaner anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-10-0-1.wav",
+    "no": "data/paired_evidence/identity-10-0-0.wav",
+    "sources": [
+      "data/5-259514-A-26.wav",
+      "data/5-263902-A-36.wav",
+      "data/5-263775-B-26.wav",
+      "data/5-212054-A-36.wav"
+    ]
+  },
+  {
+    "task": "second_other",
+    "group": "esc-10",
+    "q": "Can you hear the sound of laughing after the pause?",
+    "yes": "data/paired_evidence/identity-10-1-0.wav",
+    "no": "data/paired_evidence/identity-10-1-1.wav",
+    "sources": [
+      "data/5-259514-A-26.wav",
+      "data/5-263902-A-36.wav",
+      "data/5-263775-B-26.wav",
+      "data/5-212054-A-36.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-10",
+    "q": "Can you hear the sound of laughing anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-10-1-0.wav",
+    "no": "data/paired_evidence/identity-10-1-1.wav",
+    "sources": [
+      "data/5-259514-A-26.wav",
+      "data/5-263902-A-36.wav",
+      "data/5-263775-B-26.wav",
+      "data/5-212054-A-36.wav"
+    ]
+  },
+  {
+    "task": "second_other",
+    "group": "esc-11",
+    "q": "Can you hear the sound of coughing after the pause?",
+    "yes": "data/paired_evidence/identity-11-0-1.wav",
+    "no": "data/paired_evidence/identity-11-0-0.wav",
+    "sources": [
+      "data/5-188716-A-46.wav",
+      "data/5-184871-A-24.wav",
+      "data/5-219044-A-46.wav",
+      "data/5-207681-A-24.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-11",
+    "q": "Can you hear the sound of coughing anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-11-0-1.wav",
+    "no": "data/paired_evidence/identity-11-0-0.wav",
+    "sources": [
+      "data/5-188716-A-46.wav",
+      "data/5-184871-A-24.wav",
+      "data/5-219044-A-46.wav",
+      "data/5-207681-A-24.wav"
+    ]
+  },
+  {
+    "task": "second_other",
+    "group": "esc-11",
+    "q": "Can you hear the sound of church bells after the pause?",
+    "yes": "data/paired_evidence/identity-11-1-0.wav",
+    "no": "data/paired_evidence/identity-11-1-1.wav",
+    "sources": [
+      "data/5-188716-A-46.wav",
+      "data/5-184871-A-24.wav",
+      "data/5-219044-A-46.wav",
+      "data/5-207681-A-24.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-11",
+    "q": "Can you hear the sound of church bells anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-11-1-0.wav",
+    "no": "data/paired_evidence/identity-11-1-1.wav",
+    "sources": [
+      "data/5-188716-A-46.wav",
+      "data/5-184871-A-24.wav",
+      "data/5-219044-A-46.wav",
+      "data/5-207681-A-24.wav"
+    ]
+  },
+  {
+    "task": "second_other",
+    "group": "esc-12",
+    "q": "Can you hear the sound of drinking sipping after the pause?",
+    "yes": "data/paired_evidence/identity-12-0-1.wav",
+    "no": "data/paired_evidence/identity-12-0-0.wav",
+    "sources": [
+      "data/5-263490-A-25.wav",
+      "data/5-243635-A-29.wav",
+      "data/5-263501-A-25.wav",
+      "data/5-259640-A-29.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-12",
+    "q": "Can you hear the sound of drinking sipping anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-12-0-1.wav",
+    "no": "data/paired_evidence/identity-12-0-0.wav",
+    "sources": [
+      "data/5-263490-A-25.wav",
+      "data/5-243635-A-29.wav",
+      "data/5-263501-A-25.wav",
+      "data/5-259640-A-29.wav"
+    ]
+  },
+  {
+    "task": "second_other",
+    "group": "esc-12",
+    "q": "Can you hear the sound of footsteps after the pause?",
+    "yes": "data/paired_evidence/identity-12-1-0.wav",
+    "no": "data/paired_evidence/identity-12-1-1.wav",
+    "sources": [
+      "data/5-263490-A-25.wav",
+      "data/5-243635-A-29.wav",
+      "data/5-263501-A-25.wav",
+      "data/5-259640-A-29.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-12",
+    "q": "Can you hear the sound of footsteps anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-12-1-0.wav",
+    "no": "data/paired_evidence/identity-12-1-1.wav",
+    "sources": [
+      "data/5-263490-A-25.wav",
+      "data/5-243635-A-29.wav",
+      "data/5-263501-A-25.wav",
+      "data/5-259640-A-29.wav"
+    ]
+  },
+  {
+    "task": "second_other",
+    "group": "esc-13",
+    "q": "Can you hear the sound of sneezing after the pause?",
+    "yes": "data/paired_evidence/identity-13-0-1.wav",
+    "no": "data/paired_evidence/identity-13-0-0.wav",
+    "sources": [
+      "data/5-218494-A-22.wav",
+      "data/5-202220-A-21.wav",
+      "data/5-254160-A-22.wav",
+      "data/5-221518-A-21.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-13",
+    "q": "Can you hear the sound of sneezing anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-13-0-1.wav",
+    "no": "data/paired_evidence/identity-13-0-0.wav",
+    "sources": [
+      "data/5-218494-A-22.wav",
+      "data/5-202220-A-21.wav",
+      "data/5-254160-A-22.wav",
+      "data/5-221518-A-21.wav"
+    ]
+  },
+  {
+    "task": "second_other",
+    "group": "esc-13",
+    "q": "Can you hear the sound of clapping after the pause?",
+    "yes": "data/paired_evidence/identity-13-1-0.wav",
+    "no": "data/paired_evidence/identity-13-1-1.wav",
+    "sources": [
+      "data/5-218494-A-22.wav",
+      "data/5-202220-A-21.wav",
+      "data/5-254160-A-22.wav",
+      "data/5-221518-A-21.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-13",
+    "q": "Can you hear the sound of clapping anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-13-1-0.wav",
+    "no": "data/paired_evidence/identity-13-1-1.wav",
+    "sources": [
+      "data/5-218494-A-22.wav",
+      "data/5-202220-A-21.wav",
+      "data/5-254160-A-22.wav",
+      "data/5-221518-A-21.wav"
+    ]
+  },
+  {
+    "task": "second_other",
+    "group": "esc-14",
+    "q": "Can you hear the sound of hen after the pause?",
+    "yes": "data/paired_evidence/identity-14-0-1.wav",
+    "no": "data/paired_evidence/identity-14-0-0.wav",
+    "sources": [
+      "data/5-172299-A-5.wav",
+      "data/5-248341-B-6.wav",
+      "data/5-214759-A-5.wav",
+      "data/5-244315-B-6.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-14",
+    "q": "Can you hear the sound of hen anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-14-0-1.wav",
+    "no": "data/paired_evidence/identity-14-0-0.wav",
+    "sources": [
+      "data/5-172299-A-5.wav",
+      "data/5-248341-B-6.wav",
+      "data/5-214759-A-5.wav",
+      "data/5-244315-B-6.wav"
+    ]
+  },
+  {
+    "task": "second_other",
+    "group": "esc-14",
+    "q": "Can you hear the sound of cat after the pause?",
+    "yes": "data/paired_evidence/identity-14-1-0.wav",
+    "no": "data/paired_evidence/identity-14-1-1.wav",
+    "sources": [
+      "data/5-172299-A-5.wav",
+      "data/5-248341-B-6.wav",
+      "data/5-214759-A-5.wav",
+      "data/5-244315-B-6.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-14",
+    "q": "Can you hear the sound of cat anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-14-1-0.wav",
+    "no": "data/paired_evidence/identity-14-1-1.wav",
+    "sources": [
+      "data/5-172299-A-5.wav",
+      "data/5-248341-B-6.wav",
+      "data/5-214759-A-5.wav",
+      "data/5-244315-B-6.wav"
+    ]
+  },
+  {
+    "task": "second_other",
+    "group": "esc-15",
+    "q": "Can you hear the sound of engine after the pause?",
+    "yes": "data/paired_evidence/identity-15-0-1.wav",
+    "no": "data/paired_evidence/identity-15-0-0.wav",
+    "sources": [
+      "data/5-198891-B-8.wav",
+      "data/5-243773-B-44.wav",
+      "data/5-200329-A-8.wav",
+      "data/5-209992-B-44.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-15",
+    "q": "Can you hear the sound of engine anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-15-0-1.wav",
+    "no": "data/paired_evidence/identity-15-0-0.wav",
+    "sources": [
+      "data/5-198891-B-8.wav",
+      "data/5-243773-B-44.wav",
+      "data/5-200329-A-8.wav",
+      "data/5-209992-B-44.wav"
+    ]
+  },
+  {
+    "task": "second_other",
+    "group": "esc-15",
+    "q": "Can you hear the sound of sheep after the pause?",
+    "yes": "data/paired_evidence/identity-15-1-0.wav",
+    "no": "data/paired_evidence/identity-15-1-1.wav",
+    "sources": [
+      "data/5-198891-B-8.wav",
+      "data/5-243773-B-44.wav",
+      "data/5-200329-A-8.wav",
+      "data/5-209992-B-44.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-15",
+    "q": "Can you hear the sound of sheep anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-15-1-0.wav",
+    "no": "data/paired_evidence/identity-15-1-1.wav",
+    "sources": [
+      "data/5-198891-B-8.wav",
+      "data/5-243773-B-44.wav",
+      "data/5-200329-A-8.wav",
+      "data/5-209992-B-44.wav"
+    ]
+  },
+  {
+    "task": "second_other",
+    "group": "esc-16",
+    "q": "Can you hear the sound of helicopter after the pause?",
+    "yes": "data/paired_evidence/identity-16-0-1.wav",
+    "no": "data/paired_evidence/identity-16-0-0.wav",
+    "sources": [
+      "data/5-185579-A-41.wav",
+      "data/5-177957-D-40.wav",
+      "data/5-170338-B-41.wav",
+      "data/5-191131-A-40.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-16",
+    "q": "Can you hear the sound of helicopter anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-16-0-1.wav",
+    "no": "data/paired_evidence/identity-16-0-0.wav",
+    "sources": [
+      "data/5-185579-A-41.wav",
+      "data/5-177957-D-40.wav",
+      "data/5-170338-B-41.wav",
+      "data/5-191131-A-40.wav"
+    ]
+  },
+  {
+    "task": "second_other",
+    "group": "esc-16",
+    "q": "Can you hear the sound of chainsaw after the pause?",
+    "yes": "data/paired_evidence/identity-16-1-0.wav",
+    "no": "data/paired_evidence/identity-16-1-1.wav",
+    "sources": [
+      "data/5-185579-A-41.wav",
+      "data/5-177957-D-40.wav",
+      "data/5-170338-B-41.wav",
+      "data/5-191131-A-40.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-16",
+    "q": "Can you hear the sound of chainsaw anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-16-1-0.wav",
+    "no": "data/paired_evidence/identity-16-1-1.wav",
+    "sources": [
+      "data/5-185579-A-41.wav",
+      "data/5-177957-D-40.wav",
+      "data/5-170338-B-41.wav",
+      "data/5-191131-A-40.wav"
+    ]
+  },
+  {
+    "task": "second_other",
+    "group": "esc-17",
+    "q": "Can you hear the sound of can opening after the pause?",
+    "yes": "data/paired_evidence/identity-17-0-1.wav",
+    "no": "data/paired_evidence/identity-17-0-0.wav",
+    "sources": [
+      "data/5-213836-D-9.wav",
+      "data/5-260011-A-34.wav",
+      "data/5-222041-A-9.wav",
+      "data/5-237795-A-34.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-17",
+    "q": "Can you hear the sound of can opening anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-17-0-1.wav",
+    "no": "data/paired_evidence/identity-17-0-0.wav",
+    "sources": [
+      "data/5-213836-D-9.wav",
+      "data/5-260011-A-34.wav",
+      "data/5-222041-A-9.wav",
+      "data/5-237795-A-34.wav"
+    ]
+  },
+  {
+    "task": "second_other",
+    "group": "esc-17",
+    "q": "Can you hear the sound of crow after the pause?",
+    "yes": "data/paired_evidence/identity-17-1-0.wav",
+    "no": "data/paired_evidence/identity-17-1-1.wav",
+    "sources": [
+      "data/5-213836-D-9.wav",
+      "data/5-260011-A-34.wav",
+      "data/5-222041-A-9.wav",
+      "data/5-237795-A-34.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-17",
+    "q": "Can you hear the sound of crow anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-17-1-0.wav",
+    "no": "data/paired_evidence/identity-17-1-1.wav",
+    "sources": [
+      "data/5-213836-D-9.wav",
+      "data/5-260011-A-34.wav",
+      "data/5-222041-A-9.wav",
+      "data/5-237795-A-34.wav"
+    ]
+  },
+  {
+    "task": "second_other",
+    "group": "esc-18",
+    "q": "Can you hear the sound of cow after the pause?",
+    "yes": "data/paired_evidence/identity-18-0-1.wav",
+    "no": "data/paired_evidence/identity-18-0-0.wav",
+    "sources": [
+      "data/5-187201-B-4.wav",
+      "data/5-194899-C-3.wav",
+      "data/5-189795-A-4.wav",
+      "data/5-202795-A-3.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-18",
+    "q": "Can you hear the sound of cow anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-18-0-1.wav",
+    "no": "data/paired_evidence/identity-18-0-0.wav",
+    "sources": [
+      "data/5-187201-B-4.wav",
+      "data/5-194899-C-3.wav",
+      "data/5-189795-A-4.wav",
+      "data/5-202795-A-3.wav"
+    ]
+  },
+  {
+    "task": "second_other",
+    "group": "esc-18",
+    "q": "Can you hear the sound of frog after the pause?",
+    "yes": "data/paired_evidence/identity-18-1-0.wav",
+    "no": "data/paired_evidence/identity-18-1-1.wav",
+    "sources": [
+      "data/5-187201-B-4.wav",
+      "data/5-194899-C-3.wav",
+      "data/5-189795-A-4.wav",
+      "data/5-202795-A-3.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-18",
+    "q": "Can you hear the sound of frog anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-18-1-0.wav",
+    "no": "data/paired_evidence/identity-18-1-1.wav",
+    "sources": [
+      "data/5-187201-B-4.wav",
+      "data/5-194899-C-3.wav",
+      "data/5-189795-A-4.wav",
+      "data/5-202795-A-3.wav"
+    ]
+  },
+  {
+    "task": "second_other",
+    "group": "esc-19",
+    "q": "Can you hear the sound of washing machine after the pause?",
+    "yes": "data/paired_evidence/identity-19-0-1.wav",
+    "no": "data/paired_evidence/identity-19-0-0.wav",
+    "sources": [
+      "data/5-234923-A-32.wav",
+      "data/5-141683-A-35.wav",
+      "data/5-223099-B-32.wav",
+      "data/5-245040-A-35.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-19",
+    "q": "Can you hear the sound of washing machine anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-19-0-1.wav",
+    "no": "data/paired_evidence/identity-19-0-0.wav",
+    "sources": [
+      "data/5-234923-A-32.wav",
+      "data/5-141683-A-35.wav",
+      "data/5-223099-B-32.wav",
+      "data/5-245040-A-35.wav"
+    ]
+  },
+  {
+    "task": "second_other",
+    "group": "esc-19",
+    "q": "Can you hear the sound of keyboard typing after the pause?",
+    "yes": "data/paired_evidence/identity-19-1-0.wav",
+    "no": "data/paired_evidence/identity-19-1-1.wav",
+    "sources": [
+      "data/5-234923-A-32.wav",
+      "data/5-141683-A-35.wav",
+      "data/5-223099-B-32.wav",
+      "data/5-245040-A-35.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-19",
+    "q": "Can you hear the sound of keyboard typing anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-19-1-0.wav",
+    "no": "data/paired_evidence/identity-19-1-1.wav",
+    "sources": [
+      "data/5-234923-A-32.wav",
+      "data/5-141683-A-35.wav",
+      "data/5-223099-B-32.wav",
+      "data/5-245040-A-35.wav"
+    ]
+  },
+  {
+    "task": "second_other",
+    "group": "esc-20",
+    "q": "Can you hear the sound of crying baby after the pause?",
+    "yes": "data/paired_evidence/identity-20-0-1.wav",
+    "no": "data/paired_evidence/identity-20-0-0.wav",
+    "sources": [
+      "data/5-200334-B-1.wav",
+      "data/5-198411-G-20.wav",
+      "data/5-194930-A-1.wav",
+      "data/5-151085-A-20.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-20",
+    "q": "Can you hear the sound of crying baby anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-20-0-1.wav",
+    "no": "data/paired_evidence/identity-20-0-0.wav",
+    "sources": [
+      "data/5-200334-B-1.wav",
+      "data/5-198411-G-20.wav",
+      "data/5-194930-A-1.wav",
+      "data/5-151085-A-20.wav"
+    ]
+  },
+  {
+    "task": "second_other",
+    "group": "esc-20",
+    "q": "Can you hear the sound of rooster after the pause?",
+    "yes": "data/paired_evidence/identity-20-1-0.wav",
+    "no": "data/paired_evidence/identity-20-1-1.wav",
+    "sources": [
+      "data/5-200334-B-1.wav",
+      "data/5-198411-G-20.wav",
+      "data/5-194930-A-1.wav",
+      "data/5-151085-A-20.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-20",
+    "q": "Can you hear the sound of rooster anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-20-1-0.wav",
+    "no": "data/paired_evidence/identity-20-1-1.wav",
+    "sources": [
+      "data/5-200334-B-1.wav",
+      "data/5-198411-G-20.wav",
+      "data/5-194930-A-1.wav",
+      "data/5-151085-A-20.wav"
+    ]
+  },
+  {
+    "task": "second_other",
+    "group": "esc-21",
+    "q": "Can you hear the sound of siren after the pause?",
+    "yes": "data/paired_evidence/identity-21-0-1.wav",
+    "no": "data/paired_evidence/identity-21-0-0.wav",
+    "sources": [
+      "data/5-212736-A-17.wav",
+      "data/5-117120-A-42.wav",
+      "data/5-212730-A-17.wav",
+      "data/5-117118-A-42.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-21",
+    "q": "Can you hear the sound of siren anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-21-0-1.wav",
+    "no": "data/paired_evidence/identity-21-0-0.wav",
+    "sources": [
+      "data/5-212736-A-17.wav",
+      "data/5-117120-A-42.wav",
+      "data/5-212730-A-17.wav",
+      "data/5-117118-A-42.wav"
+    ]
+  },
+  {
+    "task": "second_other",
+    "group": "esc-21",
+    "q": "Can you hear the sound of pouring water after the pause?",
+    "yes": "data/paired_evidence/identity-21-1-0.wav",
+    "no": "data/paired_evidence/identity-21-1-1.wav",
+    "sources": [
+      "data/5-212736-A-17.wav",
+      "data/5-117120-A-42.wav",
+      "data/5-212730-A-17.wav",
+      "data/5-117118-A-42.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-21",
+    "q": "Can you hear the sound of pouring water anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-21-1-0.wav",
+    "no": "data/paired_evidence/identity-21-1-1.wav",
+    "sources": [
+      "data/5-212736-A-17.wav",
+      "data/5-117120-A-42.wav",
+      "data/5-212730-A-17.wav",
+      "data/5-117118-A-42.wav"
+    ]
+  },
+  {
+    "task": "second_other",
+    "group": "esc-22",
+    "q": "Can you hear the sound of water drops after the pause?",
+    "yes": "data/paired_evidence/identity-22-0-1.wav",
+    "no": "data/paired_evidence/identity-22-0-0.wav",
+    "sources": [
+      "data/5-215658-A-12.wav",
+      "data/5-261439-A-15.wav",
+      "data/5-193473-B-12.wav",
+      "data/5-262641-A-15.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-22",
+    "q": "Can you hear the sound of water drops anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-22-0-1.wav",
+    "no": "data/paired_evidence/identity-22-0-0.wav",
+    "sources": [
+      "data/5-215658-A-12.wav",
+      "data/5-261439-A-15.wav",
+      "data/5-193473-B-12.wav",
+      "data/5-262641-A-15.wav"
+    ]
+  },
+  {
+    "task": "second_other",
+    "group": "esc-22",
+    "q": "Can you hear the sound of crackling fire after the pause?",
+    "yes": "data/paired_evidence/identity-22-1-0.wav",
+    "no": "data/paired_evidence/identity-22-1-1.wav",
+    "sources": [
+      "data/5-215658-A-12.wav",
+      "data/5-261439-A-15.wav",
+      "data/5-193473-B-12.wav",
+      "data/5-262641-A-15.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-22",
+    "q": "Can you hear the sound of crackling fire anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-22-1-0.wav",
+    "no": "data/paired_evidence/identity-22-1-1.wav",
+    "sources": [
+      "data/5-215658-A-12.wav",
+      "data/5-261439-A-15.wav",
+      "data/5-193473-B-12.wav",
+      "data/5-262641-A-15.wav"
+    ]
+  },
+  {
+    "task": "second_other",
+    "group": "esc-23",
+    "q": "Can you hear the sound of hand saw after the pause?",
+    "yes": "data/paired_evidence/identity-23-0-1.wav",
+    "no": "data/paired_evidence/identity-23-0-0.wav",
+    "sources": [
+      "data/5-156698-A-18.wav",
+      "data/5-253094-D-49.wav",
+      "data/5-197913-A-18.wav",
+      "data/5-253101-A-49.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-23",
+    "q": "Can you hear the sound of hand saw anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-23-0-1.wav",
+    "no": "data/paired_evidence/identity-23-0-0.wav",
+    "sources": [
+      "data/5-156698-A-18.wav",
+      "data/5-253094-D-49.wav",
+      "data/5-197913-A-18.wav",
+      "data/5-253101-A-49.wav"
+    ]
+  },
+  {
+    "task": "second_other",
+    "group": "esc-23",
+    "q": "Can you hear the sound of toilet flush after the pause?",
+    "yes": "data/paired_evidence/identity-23-1-0.wav",
+    "no": "data/paired_evidence/identity-23-1-1.wav",
+    "sources": [
+      "data/5-156698-A-18.wav",
+      "data/5-253094-D-49.wav",
+      "data/5-197913-A-18.wav",
+      "data/5-253101-A-49.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-23",
+    "q": "Can you hear the sound of toilet flush anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-23-1-0.wav",
+    "no": "data/paired_evidence/identity-23-1-1.wav",
+    "sources": [
+      "data/5-156698-A-18.wav",
+      "data/5-253094-D-49.wav",
+      "data/5-197913-A-18.wav",
+      "data/5-253101-A-49.wav"
+    ]
+  },
+  {
+    "task": "second_other",
+    "group": "esc-24",
+    "q": "Can you hear the sound of sea waves after the pause?",
+    "yes": "data/paired_evidence/identity-24-0-1.wav",
+    "no": "data/paired_evidence/identity-24-0-0.wav",
+    "sources": [
+      "data/5-160614-D-48.wav",
+      "data/5-219379-C-11.wav",
+      "data/4-119647-C-48.wav",
+      "data/5-213077-A-11.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-24",
+    "q": "Can you hear the sound of sea waves anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-24-0-1.wav",
+    "no": "data/paired_evidence/identity-24-0-0.wav",
+    "sources": [
+      "data/5-160614-D-48.wav",
+      "data/5-219379-C-11.wav",
+      "data/4-119647-C-48.wav",
+      "data/5-213077-A-11.wav"
+    ]
+  },
+  {
+    "task": "second_other",
+    "group": "esc-24",
+    "q": "Can you hear the sound of fireworks after the pause?",
+    "yes": "data/paired_evidence/identity-24-1-0.wav",
+    "no": "data/paired_evidence/identity-24-1-1.wav",
+    "sources": [
+      "data/5-160614-D-48.wav",
+      "data/5-219379-C-11.wav",
+      "data/4-119647-C-48.wav",
+      "data/5-213077-A-11.wav"
+    ]
+  },
+  {
+    "task": "anywhere_other",
+    "group": "esc-24",
+    "q": "Can you hear the sound of fireworks anywhere in this recording?",
+    "yes": "data/paired_evidence/identity-24-1-0.wav",
+    "no": "data/paired_evidence/identity-24-1-1.wav",
+    "sources": [
+      "data/5-160614-D-48.wav",
+      "data/5-219379-C-11.wav",
+      "data/4-119647-C-48.wav",
+      "data/5-213077-A-11.wav"
+    ]
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "k": 0,
+    "seed": 0,
+    "accuracy": 0.91,
+    "null_mean": 0.4993293293293294,
+    "null_p95": 0.63,
+    "permutation_p": 0.001
+  },
+  {
+    "k": 4,
+    "seed": 17,
+    "accuracy": 0.86,
+    "null_mean": 0.5016316316316317,
+    "null_p95": 0.61,
+    "permutation_p": 0.001
+  },
+  {
+    "k": 16,
+    "seed": 17,
+    "accuracy": 0.9,
+    "null_mean": 0.5000500500500501,
+    "null_p95": 0.63,
+    "permutation_p": 0.001
+  },
+  {
+    "k": 4,
+    "seed": 23,
+    "accuracy": 0.89,
+    "null_mean": 0.5012212212212213,
+    "null_p95": 0.63,
+    "permutation_p": 0.001
+  },
+  {
+    "k": 16,
+    "seed": 23,
+    "accuracy": 0.9,
+    "null_mean": 0.5002102102102103,
+    "null_p95": 0.63,
+    "permutation_p": 0.001
+  },
+  {
+    "k": 4,
+    "seed": 41,
+    "accuracy": 0.88,
+    "null_mean": 0.5002802802802803,
+    "null_p95": 0.6109999999999991,
+    "permutation_p": 0.001
+  },
+  {
+    "k": 16,
+    "seed": 41,
+    "accuracy": 0.84,
+    "null_mean": 0.49805805805805814,
+    "null_p95": 0.62,
+    "permutation_p": 0.001
+  }
+]

@@ -138,3 +138,7 @@ K=16 的學習式版本相較 K=4 多答對 9 題，反方向翻轉為 0 題，�
 ### 關係題 latent 置換：三輪結果
 
 46 題、43 段錄音、三個模型 seed。依序測整組置換、分段平均與學習式修正交叉置換，再更換兩組 donor 配對。K=16 使用原錄音／其他錄音的準確率為 74.6%／54.8%；混合表示中，保留原錄音的修正比只保留原錄音的平均高 11.1 個百分點（錄音配對 95% 區間 +2.0 至 +20.3）。混合向量是診斷用介入。逐題資料、donor、logit 與區間見 [interventions-v1](phase2/interventions-v1)。重算：`python analyze_interventions.py`。重跑推論：`bottleneck.py intervene --clotho --out NEW_DIR --intervention factorial --donor-seed N`（N=17、23、41；cml30 單卡環境）。分析時相同 donor seed 擇一使用 factorial 或 swap 加 components。
+
+### 已知相反正解的配對與音量讀出
+
+18 組自然題對、K=16 中，限定兩段原本皆答對的題對，交換學習式修正後有 80.6% 的方向性測試跟隨來源錄音正解；只換分段平均為 19.4%（三個 seed 合計 36 個合格 pair-seed，雙向計分）。自然題以聲源辨識為主。受控音量差 18.06 dB 時 K=16 問答平均 51.5%；固定 latent、依聲源組留一交叉驗證的線性音量讀出為 84–90%。讀出器利用額外音量標籤。原始逐題／逐折結果：phase2/opposite-v1、identity-v1、level-probe-v1。counterbalanced-v1 於完整原模型評測途中停止，僅保存 manifest 與 partial，不計入結論；音量泛化尚未執行。重跑入口：run_opposite_phase.sh。

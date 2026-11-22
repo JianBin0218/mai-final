@@ -1,0 +1,185 @@
+task,group,pair,direction,question,clip,donor,condition,margin_yes
+second_other,esc-0,0,0,Can you hear the sound of clock alarm after the pause?,data/paired_evidence/identity-0-0-1.wav,data/paired_evidence/identity-0-0-0.wav,own,3.625
+second_other,esc-0,0,1,Can you hear the sound of clock alarm after the pause?,data/paired_evidence/identity-0-0-0.wav,data/paired_evidence/identity-0-0-1.wav,own,0.5
+anywhere_other,esc-0,1,0,Can you hear the sound of clock alarm anywhere in this recording?,data/paired_evidence/identity-0-0-1.wav,data/paired_evidence/identity-0-0-0.wav,own,2.5
+anywhere_other,esc-0,1,1,Can you hear the sound of clock alarm anywhere in this recording?,data/paired_evidence/identity-0-0-0.wav,data/paired_evidence/identity-0-0-1.wav,own,-2.1875
+second_other,esc-0,2,0,Can you hear the sound of door wood creaks after the pause?,data/paired_evidence/identity-0-1-0.wav,data/paired_evidence/identity-0-1-1.wav,own,3.375
+second_other,esc-0,2,1,Can you hear the sound of door wood creaks after the pause?,data/paired_evidence/identity-0-1-1.wav,data/paired_evidence/identity-0-1-0.wav,own,2.25
+anywhere_other,esc-0,3,0,Can you hear the sound of door wood creaks anywhere in this recording?,data/paired_evidence/identity-0-1-0.wav,data/paired_evidence/identity-0-1-1.wav,own,2.125
+anywhere_other,esc-0,3,1,Can you hear the sound of door wood creaks anywhere in this recording?,data/paired_evidence/identity-0-1-1.wav,data/paired_evidence/identity-0-1-0.wav,own,-0.5
+second_other,esc-1,4,0,Can you hear the sound of crickets after the pause?,data/paired_evidence/identity-1-0-1.wav,data/paired_evidence/identity-1-0-0.wav,own,2.0
+second_other,esc-1,4,1,Can you hear the sound of crickets after the pause?,data/paired_evidence/identity-1-0-0.wav,data/paired_evidence/identity-1-0-1.wav,own,-1.0
+anywhere_other,esc-1,5,0,Can you hear the sound of crickets anywhere in this recording?,data/paired_evidence/identity-1-0-1.wav,data/paired_evidence/identity-1-0-0.wav,own,0.25
+anywhere_other,esc-1,5,1,Can you hear the sound of crickets anywhere in this recording?,data/paired_evidence/identity-1-0-0.wav,data/paired_evidence/identity-1-0-1.wav,own,-6.0
+second_other,esc-1,6,0,Can you hear the sound of airplane after the pause?,data/paired_evidence/identity-1-1-0.wav,data/paired_evidence/identity-1-1-1.wav,own,1.625
+second_other,esc-1,6,1,Can you hear the sound of airplane after the pause?,data/paired_evidence/identity-1-1-1.wav,data/paired_evidence/identity-1-1-0.wav,own,-1.0
+anywhere_other,esc-1,7,0,Can you hear the sound of airplane anywhere in this recording?,data/paired_evidence/identity-1-1-0.wav,data/paired_evidence/identity-1-1-1.wav,own,-0.625
+anywhere_other,esc-1,7,1,Can you hear the sound of airplane anywhere in this recording?,data/paired_evidence/identity-1-1-1.wav,data/paired_evidence/identity-1-1-0.wav,own,-5.0
+second_other,esc-2,8,0,Can you hear the sound of pig after the pause?,data/paired_evidence/identity-2-0-1.wav,data/paired_evidence/identity-2-0-0.wav,own,3.0
+second_other,esc-2,8,1,Can you hear the sound of pig after the pause?,data/paired_evidence/identity-2-0-0.wav,data/paired_evidence/identity-2-0-1.wav,own,1.25
+anywhere_other,esc-2,9,0,Can you hear the sound of pig anywhere in this recording?,data/paired_evidence/identity-2-0-1.wav,data/paired_evidence/identity-2-0-0.wav,own,2.375
+anywhere_other,esc-2,9,1,Can you hear the sound of pig anywhere in this recording?,data/paired_evidence/identity-2-0-0.wav,data/paired_evidence/identity-2-0-1.wav,own,-3.125
+second_other,esc-2,10,0,Can you hear the sound of door wood knock after the pause?,data/paired_evidence/identity-2-1-0.wav,data/paired_evidence/identity-2-1-1.wav,own,3.75
+second_other,esc-2,10,1,Can you hear the sound of door wood knock after the pause?,data/paired_evidence/identity-2-1-1.wav,data/paired_evidence/identity-2-1-0.wav,own,0.625
+anywhere_other,esc-2,11,0,Can you hear the sound of door wood knock anywhere in this recording?,data/paired_evidence/identity-2-1-0.wav,data/paired_evidence/identity-2-1-1.wav,own,2.375
+anywhere_other,esc-2,11,1,Can you hear the sound of door wood knock anywhere in this recording?,data/paired_evidence/identity-2-1-1.wav,data/paired_evidence/identity-2-1-0.wav,own,-2.875
+second_other,esc-3,12,0,Can you hear the sound of clock tick after the pause?,data/paired_evidence/identity-3-0-1.wav,data/paired_evidence/identity-3-0-0.wav,own,0.375
+second_other,esc-3,12,1,Can you hear the sound of clock tick after the pause?,data/paired_evidence/identity-3-0-0.wav,data/paired_evidence/identity-3-0-1.wav,own,-0.375
+anywhere_other,esc-3,13,0,Can you hear the sound of clock tick anywhere in this recording?,data/paired_evidence/identity-3-0-1.wav,data/paired_evidence/identity-3-0-0.wav,own,-1.75
+anywhere_other,esc-3,13,1,Can you hear the sound of clock tick anywhere in this recording?,data/paired_evidence/identity-3-0-0.wav,data/paired_evidence/identity-3-0-1.wav,own,-2.9375
+second_other,esc-3,14,0,Can you hear the sound of train after the pause?,data/paired_evidence/identity-3-1-0.wav,data/paired_evidence/identity-3-1-1.wav,own,2.25
+second_other,esc-3,14,1,Can you hear the sound of train after the pause?,data/paired_evidence/identity-3-1-1.wav,data/paired_evidence/identity-3-1-0.wav,own,1.375
+anywhere_other,esc-3,15,0,Can you hear the sound of train anywhere in this recording?,data/paired_evidence/identity-3-1-0.wav,data/paired_evidence/identity-3-1-1.wav,own,0.625
+anywhere_other,esc-3,15,1,Can you hear the sound of train anywhere in this recording?,data/paired_evidence/identity-3-1-1.wav,data/paired_evidence/identity-3-1-0.wav,own,-2.3125
+second_other,esc-4,16,0,Can you hear the sound of chirping birds after the pause?,data/paired_evidence/identity-4-0-1.wav,data/paired_evidence/identity-4-0-0.wav,own,3.5
+second_other,esc-4,16,1,Can you hear the sound of chirping birds after the pause?,data/paired_evidence/identity-4-0-0.wav,data/paired_evidence/identity-4-0-1.wav,own,0.5
+anywhere_other,esc-4,17,0,Can you hear the sound of chirping birds anywhere in this recording?,data/paired_evidence/identity-4-0-1.wav,data/paired_evidence/identity-4-0-0.wav,own,3.25
+anywhere_other,esc-4,17,1,Can you hear the sound of chirping birds anywhere in this recording?,data/paired_evidence/identity-4-0-0.wav,data/paired_evidence/identity-4-0-1.wav,own,-2.5
+second_other,esc-4,18,0,Can you hear the sound of brushing teeth after the pause?,data/paired_evidence/identity-4-1-0.wav,data/paired_evidence/identity-4-1-1.wav,own,1.875
+second_other,esc-4,18,1,Can you hear the sound of brushing teeth after the pause?,data/paired_evidence/identity-4-1-1.wav,data/paired_evidence/identity-4-1-0.wav,own,-0.375
+anywhere_other,esc-4,19,0,Can you hear the sound of brushing teeth anywhere in this recording?,data/paired_evidence/identity-4-1-0.wav,data/paired_evidence/identity-4-1-1.wav,own,-0.25
+anywhere_other,esc-4,19,1,Can you hear the sound of brushing teeth anywhere in this recording?,data/paired_evidence/identity-4-1-1.wav,data/paired_evidence/identity-4-1-0.wav,own,-2.5625
+second_other,esc-5,20,0,Can you hear the sound of snoring after the pause?,data/paired_evidence/identity-5-0-1.wav,data/paired_evidence/identity-5-0-0.wav,own,2.875
+second_other,esc-5,20,1,Can you hear the sound of snoring after the pause?,data/paired_evidence/identity-5-0-0.wav,data/paired_evidence/identity-5-0-1.wav,own,1.25
+anywhere_other,esc-5,21,0,Can you hear the sound of snoring anywhere in this recording?,data/paired_evidence/identity-5-0-1.wav,data/paired_evidence/identity-5-0-0.wav,own,1.125
+anywhere_other,esc-5,21,1,Can you hear the sound of snoring anywhere in this recording?,data/paired_evidence/identity-5-0-0.wav,data/paired_evidence/identity-5-0-1.wav,own,-3.0
+second_other,esc-5,22,0,Can you hear the sound of wind after the pause?,data/paired_evidence/identity-5-1-0.wav,data/paired_evidence/identity-5-1-1.wav,own,2.875
+second_other,esc-5,22,1,Can you hear the sound of wind after the pause?,data/paired_evidence/identity-5-1-1.wav,data/paired_evidence/identity-5-1-0.wav,own,1.25
+anywhere_other,esc-5,23,0,Can you hear the sound of wind anywhere in this recording?,data/paired_evidence/identity-5-1-0.wav,data/paired_evidence/identity-5-1-1.wav,own,1.625
+anywhere_other,esc-5,23,1,Can you hear the sound of wind anywhere in this recording?,data/paired_evidence/identity-5-1-1.wav,data/paired_evidence/identity-5-1-0.wav,own,-2.5
+second_other,esc-6,24,0,Can you hear the sound of rain after the pause?,data/paired_evidence/identity-6-0-1.wav,data/paired_evidence/identity-6-0-0.wav,own,3.125
+second_other,esc-6,24,1,Can you hear the sound of rain after the pause?,data/paired_evidence/identity-6-0-0.wav,data/paired_evidence/identity-6-0-1.wav,own,1.0
+anywhere_other,esc-6,25,0,Can you hear the sound of rain anywhere in this recording?,data/paired_evidence/identity-6-0-1.wav,data/paired_evidence/identity-6-0-0.wav,own,1.75
+anywhere_other,esc-6,25,1,Can you hear the sound of rain anywhere in this recording?,data/paired_evidence/identity-6-0-0.wav,data/paired_evidence/identity-6-0-1.wav,own,-3.25
+second_other,esc-6,26,0,Can you hear the sound of glass breaking after the pause?,data/paired_evidence/identity-6-1-0.wav,data/paired_evidence/identity-6-1-1.wav,own,3.0
+second_other,esc-6,26,1,Can you hear the sound of glass breaking after the pause?,data/paired_evidence/identity-6-1-1.wav,data/paired_evidence/identity-6-1-0.wav,own,-0.5
+anywhere_other,esc-6,27,0,Can you hear the sound of glass breaking anywhere in this recording?,data/paired_evidence/identity-6-1-0.wav,data/paired_evidence/identity-6-1-1.wav,own,1.0
+anywhere_other,esc-6,27,1,Can you hear the sound of glass breaking anywhere in this recording?,data/paired_evidence/identity-6-1-1.wav,data/paired_evidence/identity-6-1-0.wav,own,-3.9375
+second_other,esc-7,28,0,Can you hear the sound of breathing after the pause?,data/paired_evidence/identity-7-0-1.wav,data/paired_evidence/identity-7-0-0.wav,own,2.25
+second_other,esc-7,28,1,Can you hear the sound of breathing after the pause?,data/paired_evidence/identity-7-0-0.wav,data/paired_evidence/identity-7-0-1.wav,own,0.375
+anywhere_other,esc-7,29,0,Can you hear the sound of breathing anywhere in this recording?,data/paired_evidence/identity-7-0-1.wav,data/paired_evidence/identity-7-0-0.wav,own,-0.25
+anywhere_other,esc-7,29,1,Can you hear the sound of breathing anywhere in this recording?,data/paired_evidence/identity-7-0-0.wav,data/paired_evidence/identity-7-0-1.wav,own,-2.875
+second_other,esc-7,30,0,Can you hear the sound of insects after the pause?,data/paired_evidence/identity-7-1-0.wav,data/paired_evidence/identity-7-1-1.wav,own,3.375
+second_other,esc-7,30,1,Can you hear the sound of insects after the pause?,data/paired_evidence/identity-7-1-1.wav,data/paired_evidence/identity-7-1-0.wav,own,1.5
+anywhere_other,esc-7,31,0,Can you hear the sound of insects anywhere in this recording?,data/paired_evidence/identity-7-1-0.wav,data/paired_evidence/identity-7-1-1.wav,own,2.25
+anywhere_other,esc-7,31,1,Can you hear the sound of insects anywhere in this recording?,data/paired_evidence/identity-7-1-1.wav,data/paired_evidence/identity-7-1-0.wav,own,-0.5
+second_other,esc-8,32,0,Can you hear the sound of thunderstorm after the pause?,data/paired_evidence/identity-8-0-1.wav,data/paired_evidence/identity-8-0-0.wav,own,2.0
+second_other,esc-8,32,1,Can you hear the sound of thunderstorm after the pause?,data/paired_evidence/identity-8-0-0.wav,data/paired_evidence/identity-8-0-1.wav,own,0.75
+anywhere_other,esc-8,33,0,Can you hear the sound of thunderstorm anywhere in this recording?,data/paired_evidence/identity-8-0-1.wav,data/paired_evidence/identity-8-0-0.wav,own,2.125
+anywhere_other,esc-8,33,1,Can you hear the sound of thunderstorm anywhere in this recording?,data/paired_evidence/identity-8-0-0.wav,data/paired_evidence/identity-8-0-1.wav,own,-0.5
+second_other,esc-8,34,0,Can you hear the sound of mouse click after the pause?,data/paired_evidence/identity-8-1-0.wav,data/paired_evidence/identity-8-1-1.wav,own,1.375
+second_other,esc-8,34,1,Can you hear the sound of mouse click after the pause?,data/paired_evidence/identity-8-1-1.wav,data/paired_evidence/identity-8-1-0.wav,own,-1.0
+anywhere_other,esc-8,35,0,Can you hear the sound of mouse click anywhere in this recording?,data/paired_evidence/identity-8-1-0.wav,data/paired_evidence/identity-8-1-1.wav,own,-1.75
+anywhere_other,esc-8,35,1,Can you hear the sound of mouse click anywhere in this recording?,data/paired_evidence/identity-8-1-1.wav,data/paired_evidence/identity-8-1-0.wav,own,-5.1875
+second_other,esc-9,36,0,Can you hear the sound of dog after the pause?,data/paired_evidence/identity-9-0-1.wav,data/paired_evidence/identity-9-0-0.wav,own,3.0
+second_other,esc-9,36,1,Can you hear the sound of dog after the pause?,data/paired_evidence/identity-9-0-0.wav,data/paired_evidence/identity-9-0-1.wav,own,1.25
+anywhere_other,esc-9,37,0,Can you hear the sound of dog anywhere in this recording?,data/paired_evidence/identity-9-0-1.wav,data/paired_evidence/identity-9-0-0.wav,own,0.875
+anywhere_other,esc-9,37,1,Can you hear the sound of dog anywhere in this recording?,data/paired_evidence/identity-9-0-0.wav,data/paired_evidence/identity-9-0-1.wav,own,-2.9375
+second_other,esc-9,38,0,Can you hear the sound of car horn after the pause?,data/paired_evidence/identity-9-1-0.wav,data/paired_evidence/identity-9-1-1.wav,own,2.0
+second_other,esc-9,38,1,Can you hear the sound of car horn after the pause?,data/paired_evidence/identity-9-1-1.wav,data/paired_evidence/identity-9-1-0.wav,own,-0.875
+anywhere_other,esc-9,39,0,Can you hear the sound of car horn anywhere in this recording?,data/paired_evidence/identity-9-1-0.wav,data/paired_evidence/identity-9-1-1.wav,own,0.375
+anywhere_other,esc-9,39,1,Can you hear the sound of car horn anywhere in this recording?,data/paired_evidence/identity-9-1-1.wav,data/paired_evidence/identity-9-1-0.wav,own,-3.625
+second_other,esc-10,40,0,Can you hear the sound of vacuum cleaner after the pause?,data/paired_evidence/identity-10-0-1.wav,data/paired_evidence/identity-10-0-0.wav,own,3.625
+second_other,esc-10,40,1,Can you hear the sound of vacuum cleaner after the pause?,data/paired_evidence/identity-10-0-0.wav,data/paired_evidence/identity-10-0-1.wav,own,1.25
+anywhere_other,esc-10,41,0,Can you hear the sound of vacuum cleaner anywhere in this recording?,data/paired_evidence/identity-10-0-1.wav,data/paired_evidence/identity-10-0-0.wav,own,1.375
+anywhere_other,esc-10,41,1,Can you hear the sound of vacuum cleaner anywhere in this recording?,data/paired_evidence/identity-10-0-0.wav,data/paired_evidence/identity-10-0-1.wav,own,-2.125
+second_other,esc-10,42,0,Can you hear the sound of laughing after the pause?,data/paired_evidence/identity-10-1-0.wav,data/paired_evidence/identity-10-1-1.wav,own,3.625
+second_other,esc-10,42,1,Can you hear the sound of laughing after the pause?,data/paired_evidence/identity-10-1-1.wav,data/paired_evidence/identity-10-1-0.wav,own,-1.0
+anywhere_other,esc-10,43,0,Can you hear the sound of laughing anywhere in this recording?,data/paired_evidence/identity-10-1-0.wav,data/paired_evidence/identity-10-1-1.wav,own,3.125
+anywhere_other,esc-10,43,1,Can you hear the sound of laughing anywhere in this recording?,data/paired_evidence/identity-10-1-1.wav,data/paired_evidence/identity-10-1-0.wav,own,-3.8125
+second_other,esc-11,44,0,Can you hear the sound of coughing after the pause?,data/paired_evidence/identity-11-0-1.wav,data/paired_evidence/identity-11-0-0.wav,own,2.625
+second_other,esc-11,44,1,Can you hear the sound of coughing after the pause?,data/paired_evidence/identity-11-0-0.wav,data/paired_evidence/identity-11-0-1.wav,own,-0.25
+anywhere_other,esc-11,45,0,Can you hear the sound of coughing anywhere in this recording?,data/paired_evidence/identity-11-0-1.wav,data/paired_evidence/identity-11-0-0.wav,own,0.625
+anywhere_other,esc-11,45,1,Can you hear the sound of coughing anywhere in this recording?,data/paired_evidence/identity-11-0-0.wav,data/paired_evidence/identity-11-0-1.wav,own,-2.625
+second_other,esc-11,46,0,Can you hear the sound of church bells after the pause?,data/paired_evidence/identity-11-1-0.wav,data/paired_evidence/identity-11-1-1.wav,own,2.625
+second_other,esc-11,46,1,Can you hear the sound of church bells after the pause?,data/paired_evidence/identity-11-1-1.wav,data/paired_evidence/identity-11-1-0.wav,own,0.375
+anywhere_other,esc-11,47,0,Can you hear the sound of church bells anywhere in this recording?,data/paired_evidence/identity-11-1-0.wav,data/paired_evidence/identity-11-1-1.wav,own,3.0
+anywhere_other,esc-11,47,1,Can you hear the sound of church bells anywhere in this recording?,data/paired_evidence/identity-11-1-1.wav,data/paired_evidence/identity-11-1-0.wav,own,-2.3125
+second_other,esc-12,48,0,Can you hear the sound of drinking sipping after the pause?,data/paired_evidence/identity-12-0-1.wav,data/paired_evidence/identity-12-0-0.wav,own,1.875
+second_other,esc-12,48,1,Can you hear the sound of drinking sipping after the pause?,data/paired_evidence/identity-12-0-0.wav,data/paired_evidence/identity-12-0-1.wav,own,-2.0
+anywhere_other,esc-12,49,0,Can you hear the sound of drinking sipping anywhere in this recording?,data/paired_evidence/identity-12-0-1.wav,data/paired_evidence/identity-12-0-0.wav,own,-0.625
+anywhere_other,esc-12,49,1,Can you hear the sound of drinking sipping anywhere in this recording?,data/paired_evidence/identity-12-0-0.wav,data/paired_evidence/identity-12-0-1.wav,own,-4.625
+second_other,esc-12,50,0,Can you hear the sound of footsteps after the pause?,data/paired_evidence/identity-12-1-0.wav,data/paired_evidence/identity-12-1-1.wav,own,2.25
+second_other,esc-12,50,1,Can you hear the sound of footsteps after the pause?,data/paired_evidence/identity-12-1-1.wav,data/paired_evidence/identity-12-1-0.wav,own,1.875
+anywhere_other,esc-12,51,0,Can you hear the sound of footsteps anywhere in this recording?,data/paired_evidence/identity-12-1-0.wav,data/paired_evidence/identity-12-1-1.wav,own,1.625
+anywhere_other,esc-12,51,1,Can you hear the sound of footsteps anywhere in this recording?,data/paired_evidence/identity-12-1-1.wav,data/paired_evidence/identity-12-1-0.wav,own,-2.5
+second_other,esc-13,52,0,Can you hear the sound of sneezing after the pause?,data/paired_evidence/identity-13-0-1.wav,data/paired_evidence/identity-13-0-0.wav,own,2.625
+second_other,esc-13,52,1,Can you hear the sound of sneezing after the pause?,data/paired_evidence/identity-13-0-0.wav,data/paired_evidence/identity-13-0-1.wav,own,0.5
+anywhere_other,esc-13,53,0,Can you hear the sound of sneezing anywhere in this recording?,data/paired_evidence/identity-13-0-1.wav,data/paired_evidence/identity-13-0-0.wav,own,1.375
+anywhere_other,esc-13,53,1,Can you hear the sound of sneezing anywhere in this recording?,data/paired_evidence/identity-13-0-0.wav,data/paired_evidence/identity-13-0-1.wav,own,-2.25
+second_other,esc-13,54,0,Can you hear the sound of clapping after the pause?,data/paired_evidence/identity-13-1-0.wav,data/paired_evidence/identity-13-1-1.wav,own,3.5
+second_other,esc-13,54,1,Can you hear the sound of clapping after the pause?,data/paired_evidence/identity-13-1-1.wav,data/paired_evidence/identity-13-1-0.wav,own,0.875
+anywhere_other,esc-13,55,0,Can you hear the sound of clapping anywhere in this recording?,data/paired_evidence/identity-13-1-0.wav,data/paired_evidence/identity-13-1-1.wav,own,2.25
+anywhere_other,esc-13,55,1,Can you hear the sound of clapping anywhere in this recording?,data/paired_evidence/identity-13-1-1.wav,data/paired_evidence/identity-13-1-0.wav,own,-2.1875
+second_other,esc-14,56,0,Can you hear the sound of hen after the pause?,data/paired_evidence/identity-14-0-1.wav,data/paired_evidence/identity-14-0-0.wav,own,3.375
+second_other,esc-14,56,1,Can you hear the sound of hen after the pause?,data/paired_evidence/identity-14-0-0.wav,data/paired_evidence/identity-14-0-1.wav,own,2.0
+anywhere_other,esc-14,57,0,Can you hear the sound of hen anywhere in this recording?,data/paired_evidence/identity-14-0-1.wav,data/paired_evidence/identity-14-0-0.wav,own,1.75
+anywhere_other,esc-14,57,1,Can you hear the sound of hen anywhere in this recording?,data/paired_evidence/identity-14-0-0.wav,data/paired_evidence/identity-14-0-1.wav,own,-0.25
+second_other,esc-14,58,0,Can you hear the sound of cat after the pause?,data/paired_evidence/identity-14-1-0.wav,data/paired_evidence/identity-14-1-1.wav,own,3.375
+second_other,esc-14,58,1,Can you hear the sound of cat after the pause?,data/paired_evidence/identity-14-1-1.wav,data/paired_evidence/identity-14-1-0.wav,own,1.5
+anywhere_other,esc-14,59,0,Can you hear the sound of cat anywhere in this recording?,data/paired_evidence/identity-14-1-0.wav,data/paired_evidence/identity-14-1-1.wav,own,2.0
+anywhere_other,esc-14,59,1,Can you hear the sound of cat anywhere in this recording?,data/paired_evidence/identity-14-1-1.wav,data/paired_evidence/identity-14-1-0.wav,own,-2.0
+second_other,esc-15,60,0,Can you hear the sound of engine after the pause?,data/paired_evidence/identity-15-0-1.wav,data/paired_evidence/identity-15-0-0.wav,own,2.25
+second_other,esc-15,60,1,Can you hear the sound of engine after the pause?,data/paired_evidence/identity-15-0-0.wav,data/paired_evidence/identity-15-0-1.wav,own,-1.0
+anywhere_other,esc-15,61,0,Can you hear the sound of engine anywhere in this recording?,data/paired_evidence/identity-15-0-1.wav,data/paired_evidence/identity-15-0-0.wav,own,-0.75
+anywhere_other,esc-15,61,1,Can you hear the sound of engine anywhere in this recording?,data/paired_evidence/identity-15-0-0.wav,data/paired_evidence/identity-15-0-1.wav,own,-4.625
+second_other,esc-15,62,0,Can you hear the sound of sheep after the pause?,data/paired_evidence/identity-15-1-0.wav,data/paired_evidence/identity-15-1-1.wav,own,3.25
+second_other,esc-15,62,1,Can you hear the sound of sheep after the pause?,data/paired_evidence/identity-15-1-1.wav,data/paired_evidence/identity-15-1-0.wav,own,-1.375
+anywhere_other,esc-15,63,0,Can you hear the sound of sheep anywhere in this recording?,data/paired_evidence/identity-15-1-0.wav,data/paired_evidence/identity-15-1-1.wav,own,2.125
+anywhere_other,esc-15,63,1,Can you hear the sound of sheep anywhere in this recording?,data/paired_evidence/identity-15-1-1.wav,data/paired_evidence/identity-15-1-0.wav,own,-6.25
+second_other,esc-16,64,0,Can you hear the sound of helicopter after the pause?,data/paired_evidence/identity-16-0-1.wav,data/paired_evidence/identity-16-0-0.wav,own,2.0
+second_other,esc-16,64,1,Can you hear the sound of helicopter after the pause?,data/paired_evidence/identity-16-0-0.wav,data/paired_evidence/identity-16-0-1.wav,own,1.125
+anywhere_other,esc-16,65,0,Can you hear the sound of helicopter anywhere in this recording?,data/paired_evidence/identity-16-0-1.wav,data/paired_evidence/identity-16-0-0.wav,own,0.75
+anywhere_other,esc-16,65,1,Can you hear the sound of helicopter anywhere in this recording?,data/paired_evidence/identity-16-0-0.wav,data/paired_evidence/identity-16-0-1.wav,own,-1.375
+second_other,esc-16,66,0,Can you hear the sound of chainsaw after the pause?,data/paired_evidence/identity-16-1-0.wav,data/paired_evidence/identity-16-1-1.wav,own,3.75
+second_other,esc-16,66,1,Can you hear the sound of chainsaw after the pause?,data/paired_evidence/identity-16-1-1.wav,data/paired_evidence/identity-16-1-0.wav,own,0.625
+anywhere_other,esc-16,67,0,Can you hear the sound of chainsaw anywhere in this recording?,data/paired_evidence/identity-16-1-0.wav,data/paired_evidence/identity-16-1-1.wav,own,1.625
+anywhere_other,esc-16,67,1,Can you hear the sound of chainsaw anywhere in this recording?,data/paired_evidence/identity-16-1-1.wav,data/paired_evidence/identity-16-1-0.wav,own,-1.75
+second_other,esc-17,68,0,Can you hear the sound of can opening after the pause?,data/paired_evidence/identity-17-0-1.wav,data/paired_evidence/identity-17-0-0.wav,own,3.25
+second_other,esc-17,68,1,Can you hear the sound of can opening after the pause?,data/paired_evidence/identity-17-0-0.wav,data/paired_evidence/identity-17-0-1.wav,own,0.875
+anywhere_other,esc-17,69,0,Can you hear the sound of can opening anywhere in this recording?,data/paired_evidence/identity-17-0-1.wav,data/paired_evidence/identity-17-0-0.wav,own,1.5
+anywhere_other,esc-17,69,1,Can you hear the sound of can opening anywhere in this recording?,data/paired_evidence/identity-17-0-0.wav,data/paired_evidence/identity-17-0-1.wav,own,-2.1875
+second_other,esc-17,70,0,Can you hear the sound of crow after the pause?,data/paired_evidence/identity-17-1-0.wav,data/paired_evidence/identity-17-1-1.wav,own,3.25
+second_other,esc-17,70,1,Can you hear the sound of crow after the pause?,data/paired_evidence/identity-17-1-1.wav,data/paired_evidence/identity-17-1-0.wav,own,2.125
+anywhere_other,esc-17,71,0,Can you hear the sound of crow anywhere in this recording?,data/paired_evidence/identity-17-1-0.wav,data/paired_evidence/identity-17-1-1.wav,own,1.75
+anywhere_other,esc-17,71,1,Can you hear the sound of crow anywhere in this recording?,data/paired_evidence/identity-17-1-1.wav,data/paired_evidence/identity-17-1-0.wav,own,-1.5
+second_other,esc-18,72,0,Can you hear the sound of cow after the pause?,data/paired_evidence/identity-18-0-1.wav,data/paired_evidence/identity-18-0-0.wav,own,2.625
+second_other,esc-18,72,1,Can you hear the sound of cow after the pause?,data/paired_evidence/identity-18-0-0.wav,data/paired_evidence/identity-18-0-1.wav,own,1.625
+anywhere_other,esc-18,73,0,Can you hear the sound of cow anywhere in this recording?,data/paired_evidence/identity-18-0-1.wav,data/paired_evidence/identity-18-0-0.wav,own,0.625
+anywhere_other,esc-18,73,1,Can you hear the sound of cow anywhere in this recording?,data/paired_evidence/identity-18-0-0.wav,data/paired_evidence/identity-18-0-1.wav,own,-4.1875
+second_other,esc-18,74,0,Can you hear the sound of frog after the pause?,data/paired_evidence/identity-18-1-0.wav,data/paired_evidence/identity-18-1-1.wav,own,2.5
+second_other,esc-18,74,1,Can you hear the sound of frog after the pause?,data/paired_evidence/identity-18-1-1.wav,data/paired_evidence/identity-18-1-0.wav,own,1.0
+anywhere_other,esc-18,75,0,Can you hear the sound of frog anywhere in this recording?,data/paired_evidence/identity-18-1-0.wav,data/paired_evidence/identity-18-1-1.wav,own,1.75
+anywhere_other,esc-18,75,1,Can you hear the sound of frog anywhere in this recording?,data/paired_evidence/identity-18-1-1.wav,data/paired_evidence/identity-18-1-0.wav,own,-2.125
+second_other,esc-19,76,0,Can you hear the sound of washing machine after the pause?,data/paired_evidence/identity-19-0-1.wav,data/paired_evidence/identity-19-0-0.wav,own,2.125
+second_other,esc-19,76,1,Can you hear the sound of washing machine after the pause?,data/paired_evidence/identity-19-0-0.wav,data/paired_evidence/identity-19-0-1.wav,own,0.625
+anywhere_other,esc-19,77,0,Can you hear the sound of washing machine anywhere in this recording?,data/paired_evidence/identity-19-0-1.wav,data/paired_evidence/identity-19-0-0.wav,own,1.875
+anywhere_other,esc-19,77,1,Can you hear the sound of washing machine anywhere in this recording?,data/paired_evidence/identity-19-0-0.wav,data/paired_evidence/identity-19-0-1.wav,own,-0.25
+second_other,esc-19,78,0,Can you hear the sound of keyboard typing after the pause?,data/paired_evidence/identity-19-1-0.wav,data/paired_evidence/identity-19-1-1.wav,own,2.625
+second_other,esc-19,78,1,Can you hear the sound of keyboard typing after the pause?,data/paired_evidence/identity-19-1-1.wav,data/paired_evidence/identity-19-1-0.wav,own,0.875
+anywhere_other,esc-19,79,0,Can you hear the sound of keyboard typing anywhere in this recording?,data/paired_evidence/identity-19-1-0.wav,data/paired_evidence/identity-19-1-1.wav,own,1.25
+anywhere_other,esc-19,79,1,Can you hear the sound of keyboard typing anywhere in this recording?,data/paired_evidence/identity-19-1-1.wav,data/paired_evidence/identity-19-1-0.wav,own,-2.75
+second_other,esc-20,80,0,Can you hear the sound of crying baby after the pause?,data/paired_evidence/identity-20-0-1.wav,data/paired_evidence/identity-20-0-0.wav,own,2.0
+second_other,esc-20,80,1,Can you hear the sound of crying baby after the pause?,data/paired_evidence/identity-20-0-0.wav,data/paired_evidence/identity-20-0-1.wav,own,-0.875
+anywhere_other,esc-20,81,0,Can you hear the sound of crying baby anywhere in this recording?,data/paired_evidence/identity-20-0-1.wav,data/paired_evidence/identity-20-0-0.wav,own,0.625
+anywhere_other,esc-20,81,1,Can you hear the sound of crying baby anywhere in this recording?,data/paired_evidence/identity-20-0-0.wav,data/paired_evidence/identity-20-0-1.wav,own,-4.5
+second_other,esc-20,82,0,Can you hear the sound of rooster after the pause?,data/paired_evidence/identity-20-1-0.wav,data/paired_evidence/identity-20-1-1.wav,own,3.125
+second_other,esc-20,82,1,Can you hear the sound of rooster after the pause?,data/paired_evidence/identity-20-1-1.wav,data/paired_evidence/identity-20-1-0.wav,own,1.5
+anywhere_other,esc-20,83,0,Can you hear the sound of rooster anywhere in this recording?,data/paired_evidence/identity-20-1-0.wav,data/paired_evidence/identity-20-1-1.wav,own,1.625
+anywhere_other,esc-20,83,1,Can you hear the sound of rooster anywhere in this recording?,data/paired_evidence/identity-20-1-1.wav,data/paired_evidence/identity-20-1-0.wav,own,0.0
+second_other,esc-21,84,0,Can you hear the sound of siren after the pause?,data/paired_evidence/identity-21-0-1.wav,data/paired_evidence/identity-21-0-0.wav,own,4.25
+second_other,esc-21,84,1,Can you hear the sound of siren after the pause?,data/paired_evidence/identity-21-0-0.wav,data/paired_evidence/identity-21-0-1.wav,own,-0.625
+anywhere_other,esc-21,85,0,Can you hear the sound of siren anywhere in this recording?,data/paired_evidence/identity-21-0-1.wav,data/paired_evidence/identity-21-0-0.wav,own,2.5
+anywhere_other,esc-21,85,1,Can you hear the sound of siren anywhere in this recording?,data/paired_evidence/identity-21-0-0.wav,data/paired_evidence/identity-21-0-1.wav,own,-3.1875
+second_other,esc-21,86,0,Can you hear the sound of pouring water after the pause?,data/paired_evidence/identity-21-1-0.wav,data/paired_evidence/identity-21-1-1.wav,own,2.5
+second_other,esc-21,86,1,Can you hear the sound of pouring water after the pause?,data/paired_evidence/identity-21-1-1.wav,data/paired_evidence/identity-21-1-0.wav,own,0.0
+anywhere_other,esc-21,87,0,Can you hear the sound of pouring water anywhere in this recording?,data/paired_evidence/identity-21-1-0.wav,data/paired_evidence/identity-21-1-1.wav,own,0.5
+anywhere_other,esc-21,87,1,Can you hear the sound of pouring water anywhere in this recording?,data/paired_evidence/identity-21-1-1.wav,data/paired_evidence/identity-21-1-0.wav,own,-2.125
+second_other,esc-22,88,0,Can you hear the sound of water drops after the pause?,data/paired_evidence/identity-22-0-1.wav,data/paired_evidence/identity-22-0-0.wav,own,3.25
+second_other,esc-22,88,1,Can you hear the sound of water drops after the pause?,data/paired_evidence/identity-22-0-0.wav,data/paired_evidence/identity-22-0-1.wav,own,0.625
+anywhere_other,esc-22,89,0,Can you hear the sound of water drops anywhere in this recording?,data/paired_evidence/identity-22-0-1.wav,data/paired_evidence/identity-22-0-0.wav,own,2.75
+anywhere_other,esc-22,89,1,Can you hear the sound of water drops anywhere in this recording?,data/paired_evidence/identity-22-0-0.wav,data/paired_evidence/identity-22-0-1.wav,own,-2.8125
+second_other,esc-22,90,0,Can you hear the sound of crackling fire after the pause?,data/paired_evidence/identity-22-1-0.wav,data/paired_evidence/identity-22-1-1.wav,own,2.625
+second_other,esc-22,90,1,Can you hear the sound of crackling fire after the pause?,data/paired_evidence/identity-22-1-1.wav,data/paired_evidence/identity-22-1-0.wav,own,1.875
+anywhere_other,esc-22,91,0,Can you hear the sound of crackling fire anywhere in this recording?,data/paired_evidence/identity-22-1-0.wav,data/paired_evidence/identity-22-1-1.wav,own,2.125
+anywhere_other,esc-22,91,1,Can you hear the sound of crackling fire anywhere in this recording?,data/paired_evidence/identity-22-1-1.wav,data/paired_evidence/identity-22-1-0.wav,own,-0.125
