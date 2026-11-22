@@ -35,7 +35,7 @@ class Compressor(nn.Module):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("mode", choices=["train", "eval"])
+    parser.add_argument("mode", choices=["train", "eval", "pool"])
     parser.add_argument("--out", type=Path, required=True)
     parser.add_argument("--steps", type=int, default=16)
     parser.add_argument("--k", type=int, default=16)
@@ -44,7 +44,10 @@ def main():
     parser.add_argument("--conditioned", action="store_true")
     parser.add_argument("--wandb", action="store_true")
     parser.add_argument("--init-from", type=Path, help="Warm-start from an audio-only compressor; reset AdamW and zero the question projection")
+    parser.add_argument("--pool-ks", type=int, nargs="+", default=[4, 16], help="Slot counts for the fixed pooling evaluation")
     args = parser.parse_args()
+    if args.mode == "pool" and (not args.clotho or args.conditioned or min(args.pool_ks) < 1):
+        parser.error("pool requires --clotho and positive slot counts without --conditioned")
     if args.init_from and (args.mode != "train" or not args.clotho):
         parser.error("--init-from requires train --clotho")
     args.out.mkdir(exist_ok=True, parents=True)
@@ -129,7 +132,7 @@ def main():
         return comp(features(path), condition)
 
     @torch.no_grad()
-    def evaluate(samples, swap=False, full=False, text_only=False):
+    def evaluate(samples, swap=False, full=False, text_only=False, pool_k=None):
         rows = []
         for path, question, target in samples:
             if text_only:
@@ -138,12 +141,21 @@ def main():
                 tokens = proc.tokenizer(template, return_tensors="pt").input_ids.cuda()
                 scores = lm(input_ids=tokens,use_cache=False).logits[0,-1,ids].float()
             else:
-                latent = features(path) if full else compress(path, question, swap)
+                if pool_k is not None:
+                    audio = features(path)
+                    latent = F.adaptive_avg_pool1d(audio.T.unsqueeze(0), pool_k)[0].T
+                else:
+                    latent = features(path) if full else compress(path, question, swap)
                 scores = decode(latent, question)
             rows.append(dict(path=path, question=question, target=target, prediction=scores.argmax().item(),
                              loss=F.cross_entropy(scores[None], torch.tensor([target],device="cuda")).item()))
         return dict(correct=sum(r["prediction"]==r["target"] for r in rows), n=len(rows),
                     loss=sum(r["loss"] for r in rows)/len(rows), rows=rows)
+
+    if args.mode == "pool":
+        pooled = {str(k):evaluate(test, pool_k=k) for k in args.pool_ks}
+        (args.out / "pool.json").write_text(json.dumps(pooled, indent=2))
+        return
 
     run = None
     if args.wandb:

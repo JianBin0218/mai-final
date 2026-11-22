@@ -71,3 +71,14 @@ Both arms decode the same question and A/B options. Only the conditioned compres
 ```
 
 使用 GitHub checkout 的 bottleneck.py；本輪 cml30 共享根目錄上的該版本另存為 bottleneck_a.py，讓其他使用者可繼續使用舊入口。兩組 train.json 內的 warm_start.sha256 應相同。將兩份結果各放入本機 phase2/ 下同名資料夾後，執行 python compare_pilot.py warm-k16-s17。
+
+## A 組容量與固定平均池化對照
+
+沿用 Clotho 小型驗證集。兩個學習式容量版本皆從頭訓練 192 步；這裡的 K=16 比較對象為 clotho-k16-s17-audio，而非額外續訓 192 步的 warm 版本。固定池化沿時間將 projected audio features 做 adaptive average pooling，再交給同一個凍結解碼器，沒有訓練參數。以下在 cml30 專案環境、選好單卡後執行。重跑時換新的輸出路徑。
+
+```bash
+.venv/bin/python bottleneck.py train --clotho --k 4 --seed 17 --steps 192 --out capacity-k4-s17-audio
+.venv/bin/python bottleneck.py pool --clotho --pool-ks 4 16 --out capacity-fixed
+```
+
+在本機 repo 執行 `python compare_capacity.py` 可從已保存的逐題預測重建準確率、同錄音兩題皆對數、問題層級的勝負數，以及以錄音為單位的配對 bootstrap 區間。
