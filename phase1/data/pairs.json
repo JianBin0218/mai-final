@@ -1,0 +1,686 @@
+[
+  {
+    "task": "order",
+    "question": "Which description matches the order of sounds?",
+    "clips": [
+      "data/compa_394_rev.wav",
+      "data/compa_394.wav"
+    ],
+    "options": [
+      "A telephone ringing, followed by a man conversing.",
+      "A man conversing, followed by a telephone ringing."
+    ]
+  },
+  {
+    "task": "order",
+    "question": "Which description matches the order of sounds?",
+    "clips": [
+      "data/compa_359.wav",
+      "data/compa_359_rev.wav"
+    ],
+    "options": [
+      "A bird call concluding with a slam sound",
+      "A slam sound concluding with a bird call."
+    ]
+  },
+  {
+    "task": "order",
+    "question": "Which description matches the order of sounds?",
+    "clips": [
+      "data/compa_218_rev.wav",
+      "data/compa_218.wav"
+    ],
+    "options": [
+      "A blaring siren concluding with a chirp",
+      "A chirp concluding with a blaring siren"
+    ]
+  },
+  {
+    "task": "order",
+    "question": "Which description matches the order of sounds?",
+    "clips": [
+      "data/compa_6.wav",
+      "data/compa_6_rev.wav"
+    ],
+    "options": [
+      "A barking dog preceding a man's conversation.",
+      "A man's conversation preceding a barking dog."
+    ]
+  },
+  {
+    "task": "order",
+    "question": "Which description matches the order of sounds?",
+    "clips": [
+      "data/compa_291.wav",
+      "data/compa_291_rev.wav"
+    ],
+    "options": [
+      "Screaming animal ends in music.",
+      "Music ends in screaming animal."
+    ]
+  },
+  {
+    "task": "order",
+    "question": "Which description matches the order of sounds?",
+    "clips": [
+      "data/compa_81_rev.wav",
+      "data/compa_81.wav"
+    ],
+    "options": [
+      "A barking dog followed by background disturbance.",
+      "Background disturbance concluded by a barking dog."
+    ]
+  },
+  {
+    "task": "order",
+    "question": "Which description matches the order of sounds?",
+    "clips": [
+      "data/compa_55.wav",
+      "data/compa_55_rev.wav"
+    ],
+    "options": [
+      "A revving engine followed by a man's dialogue.",
+      "A man's dialogue followed by a revving engine."
+    ]
+  },
+  {
+    "task": "order",
+    "question": "Which description matches the order of sounds?",
+    "clips": [
+      "data/compa_115_rev.wav",
+      "data/compa_115.wav"
+    ],
+    "options": [
+      "A resonating thud followed promptly by a person conversing",
+      "A person conversing then followed by a resonating thud"
+    ]
+  },
+  {
+    "task": "order",
+    "question": "Which description matches the order of sounds?",
+    "clips": [
+      "data/compa_127.wav",
+      "data/compa_127_rev.wav"
+    ],
+    "options": [
+      "A bird's call preceding human laughter and giggles.",
+      "Human laughter and giggles preceding a bird's call."
+    ]
+  },
+  {
+    "task": "order",
+    "question": "Which description matches the order of sounds?",
+    "clips": [
+      "data/compa_60_rev.wav",
+      "data/compa_60.wav"
+    ],
+    "options": [
+      "People conversing, succeeded by an engine revving and accelerating",
+      "An engine revving and accelerating, succeeded by people conversing"
+    ]
+  },
+  {
+    "task": "order",
+    "question": "Which description matches the order of sounds?",
+    "clips": [
+      "data/compa_293.wav",
+      "data/compa_293_rev.wav"
+    ],
+    "options": [
+      "A neighing horse followed by melodious music.",
+      "Melodious music preceding a neighing horse."
+    ]
+  },
+  {
+    "task": "order",
+    "question": "Which description matches the order of sounds?",
+    "clips": [
+      "data/compa_106.wav",
+      "data/compa_106_rev.wav"
+    ],
+    "options": [
+      "A man's speech followed by background rustling.",
+      "Background rustling followed by a man's speech."
+    ]
+  },
+  {
+    "task": "order",
+    "question": "Which description matches the order of sounds?",
+    "clips": [
+      "data/compa_187.wav",
+      "data/compa_187_rev.wav"
+    ],
+    "options": [
+      "A man conversing followed by a series of knocks.",
+      "A series of knocks followed by a conversing man."
+    ]
+  },
+  {
+    "task": "order",
+    "question": "Which description matches the order of sounds?",
+    "clips": [
+      "data/compa_321_rev.wav",
+      "data/compa_321.wav"
+    ],
+    "options": [
+      "A camera shuttering followed by a man speaking",
+      "A man speaking followed by a camera shuttering"
+    ]
+  },
+  {
+    "task": "order",
+    "question": "Which description matches the order of sounds?",
+    "clips": [
+      "data/compa_355.wav",
+      "data/compa_355_rev.wav"
+    ],
+    "options": [
+      "An animal's scream concluded by a chatter of speech.",
+      "A chatter of speech concluding with an animal's scream."
+    ]
+  },
+  {
+    "task": "order",
+    "question": "Which description matches the order of sounds?",
+    "clips": [
+      "data/compa_352.wav",
+      "data/compa_352_rev.wav"
+    ],
+    "options": [
+      "A huffing dog succeeded by snapping fingers.",
+      "Snapping fingers succeeded by a huffing dog."
+    ]
+  },
+  {
+    "task": "order",
+    "question": "Which description matches the order of sounds?",
+    "clips": [
+      "data/compa_213_rev.wav",
+      "data/compa_213.wav"
+    ],
+    "options": [
+      "The audible busy signal precedes a person speaking.",
+      "A person speaking prior to the audible busy signal."
+    ]
+  },
+  {
+    "task": "order",
+    "question": "Which description matches the order of sounds?",
+    "clips": [
+      "data/compa_62.wav",
+      "data/compa_62_rev.wav"
+    ],
+    "options": [
+      "A revving engine followed by a talking man.",
+      "A talking man followed by a revving engine."
+    ]
+  },
+  {
+    "task": "order",
+    "question": "Which description matches the order of sounds?",
+    "clips": [
+      "data/compa_279.wav",
+      "data/compa_279_rev.wav"
+    ],
+    "options": [
+      "A revving engine followed by a man conversing.",
+      "A man conversing followed by a revving engine."
+    ]
+  },
+  {
+    "task": "order",
+    "question": "Which description matches the order of sounds?",
+    "clips": [
+      "data/compa_248.wav",
+      "data/compa_248_rev.wav"
+    ],
+    "options": [
+      "A warbling bird call succeeded by a camera's click.",
+      "A camera's click succeeded by a warbling bird call."
+    ]
+  },
+  {
+    "task": "order",
+    "question": "Which description matches the order of sounds?",
+    "clips": [
+      "data/compa_299_rev.wav",
+      "data/compa_299.wav"
+    ],
+    "options": [
+      "Melodious tunes followed by a bleating goat.",
+      "A bleating goat followed by melodious tunes"
+    ]
+  },
+  {
+    "task": "order",
+    "question": "Which description matches the order of sounds?",
+    "clips": [
+      "data/compa_372.wav",
+      "data/compa_372_rev.wav"
+    ],
+    "options": [
+      "A voice speaking, then followed by distinct hammering.",
+      "Distinct hammering, then followed by a voice speaking."
+    ]
+  },
+  {
+    "task": "order",
+    "question": "Which description matches the order of sounds?",
+    "clips": [
+      "data/compa_229_rev.wav",
+      "data/compa_229.wav"
+    ],
+    "options": [
+      "The collision of two objects followed by the sound of water splashing.",
+      "The sound of water splashing followed by the collision of two objects."
+    ]
+  },
+  {
+    "task": "order",
+    "question": "Which description matches the order of sounds?",
+    "clips": [
+      "data/compa_92_rev.wav",
+      "data/compa_92.wav"
+    ],
+    "options": [
+      "Footsteps of a walking person followed by a barking dog.",
+      "A barking dog followed by footsteps of a walking person."
+    ]
+  },
+  {
+    "task": "order",
+    "question": "Which description matches the order of sounds?",
+    "clips": [
+      "data/compa_98_rev.wav",
+      "data/compa_98.wav"
+    ],
+    "options": [
+      "A resounding thud followed by a chatting man.",
+      "A chatting man followed by a resounding thud."
+    ]
+  },
+  {
+    "task": "order",
+    "question": "Which description matches the order of sounds?",
+    "clips": [
+      "data/compa_366_rev.wav",
+      "data/compa_366.wav"
+    ],
+    "options": [
+      "A profound sigh followed by the soothing sound of water cascade into a jug.",
+      "The cascading sound of water pouring into a jug, followed by a profound sigh."
+    ]
+  },
+  {
+    "task": "order",
+    "question": "Which description matches the order of sounds?",
+    "clips": [
+      "data/compa_340.wav",
+      "data/compa_340_rev.wav"
+    ],
+    "options": [
+      "The call of a bird concludes with the sound of footsteps.",
+      "The sound of footsteps concludes with the call of a bird."
+    ]
+  },
+  {
+    "task": "order",
+    "question": "Which description matches the order of sounds?",
+    "clips": [
+      "data/compa_24.wav",
+      "data/compa_24_rev.wav"
+    ],
+    "options": [
+      "Background noise preceding a ringing telephone",
+      "A ringing telephone preceding background noise"
+    ]
+  },
+  {
+    "task": "order",
+    "question": "Which description matches the order of sounds?",
+    "clips": [
+      "data/compa_266.wav",
+      "data/compa_266_rev.wav"
+    ],
+    "options": [
+      "A woman speaking, followed by an alarm sounding off",
+      "An alarm sounding off, followed by a woman speaking"
+    ]
+  },
+  {
+    "task": "order",
+    "question": "Which description matches the order of sounds?",
+    "clips": [
+      "data/compa_170_rev.wav",
+      "data/compa_170.wav"
+    ],
+    "options": [
+      "Mooing cow concluded by clucking chickens.",
+      "Clucking chickens concluded by a mooing cow."
+    ]
+  },
+  {
+    "task": "order",
+    "question": "Which description matches the order of sounds?",
+    "clips": [
+      "data/compa_295_rev.wav",
+      "data/compa_295.wav"
+    ],
+    "options": [
+      "Melodic music and croaking frog taking turns.",
+      "Croaking frog and melodic music taking turns."
+    ]
+  },
+  {
+    "task": "order",
+    "question": "Which description matches the order of sounds?",
+    "clips": [
+      "data/compa_367.wav",
+      "data/compa_367_rev.wav"
+    ],
+    "options": [
+      "Water splashing followed by the laughter of people.",
+      "The laughter of people followed by a water splashing."
+    ]
+  },
+  {
+    "task": "event",
+    "question": "Which sound is present?",
+    "clips": [
+      "data/5-173568-A-33.wav",
+      "data/5-234247-A-37.wav"
+    ],
+    "options": [
+      "door wood creaks",
+      "clock alarm"
+    ]
+  },
+  {
+    "task": "event",
+    "question": "Which sound is present?",
+    "clips": [
+      "data/5-251957-A-47.wav",
+      "data/5-210540-A-13.wav"
+    ],
+    "options": [
+      "airplane",
+      "crickets"
+    ]
+  },
+  {
+    "task": "event",
+    "question": "Which sound is present?",
+    "clips": [
+      "data/5-218981-A-30.wav",
+      "data/5-117250-A-2.wav"
+    ],
+    "options": [
+      "door wood knock",
+      "pig"
+    ]
+  },
+  {
+    "task": "event",
+    "question": "Which sound is present?",
+    "clips": [
+      "data/5-197121-B-45.wav",
+      "data/5-208624-A-38.wav"
+    ],
+    "options": [
+      "train",
+      "clock tick"
+    ]
+  },
+  {
+    "task": "event",
+    "question": "Which sound is present?",
+    "clips": [
+      "data/5-185516-A-27.wav",
+      "data/5-243459-B-14.wav"
+    ],
+    "options": [
+      "brushing teeth",
+      "chirping birds"
+    ]
+  },
+  {
+    "task": "event",
+    "question": "Which sound is present?",
+    "clips": [
+      "data/5-179496-B-16.wav",
+      "data/5-249748-A-28.wav"
+    ],
+    "options": [
+      "wind",
+      "snoring"
+    ]
+  },
+  {
+    "task": "event",
+    "question": "Which sound is present?",
+    "clips": [
+      "data/5-260434-A-39.wav",
+      "data/5-194892-A-10.wav"
+    ],
+    "options": [
+      "glass breaking",
+      "rain"
+    ]
+  },
+  {
+    "task": "event",
+    "question": "Which sound is present?",
+    "clips": [
+      "data/5-195518-A-7.wav",
+      "data/5-234335-A-23.wav"
+    ],
+    "options": [
+      "insects",
+      "breathing"
+    ]
+  },
+  {
+    "task": "event",
+    "question": "Which sound is present?",
+    "clips": [
+      "data/5-238926-A-31.wav",
+      "data/5-156999-C-19.wav"
+    ],
+    "options": [
+      "mouse click",
+      "thunderstorm"
+    ]
+  },
+  {
+    "task": "event",
+    "question": "Which sound is present?",
+    "clips": [
+      "data/5-179865-A-43.wav",
+      "data/5-208030-A-0.wav"
+    ],
+    "options": [
+      "car horn",
+      "dog"
+    ]
+  },
+  {
+    "task": "event",
+    "question": "Which sound is present?",
+    "clips": [
+      "data/5-259514-A-26.wav",
+      "data/5-263902-A-36.wav"
+    ],
+    "options": [
+      "laughing",
+      "vacuum cleaner"
+    ]
+  },
+  {
+    "task": "event",
+    "question": "Which sound is present?",
+    "clips": [
+      "data/5-188716-A-46.wav",
+      "data/5-184871-A-24.wav"
+    ],
+    "options": [
+      "church bells",
+      "coughing"
+    ]
+  },
+  {
+    "task": "event",
+    "question": "Which sound is present?",
+    "clips": [
+      "data/5-263490-A-25.wav",
+      "data/5-243635-A-29.wav"
+    ],
+    "options": [
+      "footsteps",
+      "drinking sipping"
+    ]
+  },
+  {
+    "task": "event",
+    "question": "Which sound is present?",
+    "clips": [
+      "data/5-218494-A-22.wav",
+      "data/5-202220-A-21.wav"
+    ],
+    "options": [
+      "clapping",
+      "sneezing"
+    ]
+  },
+  {
+    "task": "event",
+    "question": "Which sound is present?",
+    "clips": [
+      "data/5-172299-A-5.wav",
+      "data/5-248341-B-6.wav"
+    ],
+    "options": [
+      "cat",
+      "hen"
+    ]
+  },
+  {
+    "task": "event",
+    "question": "Which sound is present?",
+    "clips": [
+      "data/5-198891-B-8.wav",
+      "data/5-243773-B-44.wav"
+    ],
+    "options": [
+      "sheep",
+      "engine"
+    ]
+  },
+  {
+    "task": "event",
+    "question": "Which sound is present?",
+    "clips": [
+      "data/5-185579-A-41.wav",
+      "data/5-177957-D-40.wav"
+    ],
+    "options": [
+      "chainsaw",
+      "helicopter"
+    ]
+  },
+  {
+    "task": "event",
+    "question": "Which sound is present?",
+    "clips": [
+      "data/5-213836-D-9.wav",
+      "data/5-260011-A-34.wav"
+    ],
+    "options": [
+      "crow",
+      "can opening"
+    ]
+  },
+  {
+    "task": "event",
+    "question": "Which sound is present?",
+    "clips": [
+      "data/5-187201-B-4.wav",
+      "data/5-194899-C-3.wav"
+    ],
+    "options": [
+      "frog",
+      "cow"
+    ]
+  },
+  {
+    "task": "event",
+    "question": "Which sound is present?",
+    "clips": [
+      "data/5-234923-A-32.wav",
+      "data/5-141683-A-35.wav"
+    ],
+    "options": [
+      "keyboard typing",
+      "washing machine"
+    ]
+  },
+  {
+    "task": "event",
+    "question": "Which sound is present?",
+    "clips": [
+      "data/5-200334-B-1.wav",
+      "data/5-198411-G-20.wav"
+    ],
+    "options": [
+      "rooster",
+      "crying baby"
+    ]
+  },
+  {
+    "task": "event",
+    "question": "Which sound is present?",
+    "clips": [
+      "data/5-212736-A-17.wav",
+      "data/5-117120-A-42.wav"
+    ],
+    "options": [
+      "pouring water",
+      "siren"
+    ]
+  },
+  {
+    "task": "event",
+    "question": "Which sound is present?",
+    "clips": [
+      "data/5-215658-A-12.wav",
+      "data/5-261439-A-15.wav"
+    ],
+    "options": [
+      "crackling fire",
+      "water drops"
+    ]
+  },
+  {
+    "task": "event",
+    "question": "Which sound is present?",
+    "clips": [
+      "data/5-156698-A-18.wav",
+      "data/5-253094-D-49.wav"
+    ],
+    "options": [
+      "toilet flush",
+      "hand saw"
+    ]
+  },
+  {
+    "task": "event",
+    "question": "Which sound is present?",
+    "clips": [
+      "data/5-160614-D-48.wav",
+      "data/5-219379-C-11.wav"
+    ],
+    "options": [
+      "fireworks",
+      "sea waves"
+    ]
+  }
+]

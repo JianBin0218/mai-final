@@ -1,0 +1,30 @@
+{
+  "results": {
+    "order/audio": {
+      "pairs": 362,
+      "correct": 404,
+      "both_correct": 50,
+      "accuracy": 0.5580110497237569
+    },
+    "order/swapped": {
+      "pairs": 362,
+      "correct": 320,
+      "both_correct": 8,
+      "accuracy": 0.4419889502762431
+    },
+    "order/text": {
+      "pairs": 362,
+      "correct": 362,
+      "both_correct": 0,
+      "accuracy": 0.5
+    }
+  },
+  "gpu": "NVIDIA RTX 6000 Ada Generation",
+  "gpu_index": "4",
+  "peak_allocated_GiB": 15.759210109710693,
+  "python": "3.10.12",
+  "torch": "2.5.1+cu121",
+  "transformers": "4.51.3",
+  "load_seconds": 21.139315651729703,
+  "eval_seconds": 63.18388472823426
+}
