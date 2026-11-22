@@ -35,7 +35,7 @@ class Compressor(nn.Module):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("mode", choices=["train", "eval", "pool"])
+    parser.add_argument("mode", choices=["train", "eval", "pool", "fresh"])
     parser.add_argument("--out", type=Path, required=True)
     parser.add_argument("--steps", type=int, default=16)
     parser.add_argument("--k", type=int, default=16)
@@ -46,6 +46,8 @@ def main():
     parser.add_argument("--init-from", type=Path, help="Warm-start from an audio-only compressor; reset AdamW and zero the question projection")
     parser.add_argument("--pool-ks", type=int, nargs="+", default=[4, 16], help="Slot counts for the fixed pooling evaluation")
     args = parser.parse_args()
+    if args.mode == "fresh" and (not args.clotho or args.conditioned):
+        parser.error("fresh requires --clotho and audio-only checkpoints")
     if args.mode == "pool" and (not args.clotho or args.conditioned or min(args.pool_ks) < 1):
         parser.error("pool requires --clotho and positive slot counts without --conditioned")
     if args.init_from and (args.mode != "train" or not args.clotho):
@@ -78,6 +80,11 @@ def main():
                 rows.append((item["path"], question, item["label"]))
             return rows
         train, test = samples("train"), samples("val")
+        if args.mode == "fresh":
+            previous = {r[0] for r in train + test}
+            manifest = json.loads(Path("data/clotho/fresh_val.json").read_text())
+            test = samples("val")
+            assert test and not previous.intersection(r[0] for r in test)
     else:
         with open("data/esc50.csv") as handle:
             metadata = list(csv.DictReader(handle))
@@ -151,6 +158,23 @@ def main():
                              loss=F.cross_entropy(scores[None], torch.tensor([target],device="cuda")).item()))
         return dict(correct=sum(r["prediction"]==r["target"] for r in rows), n=len(rows),
                     loss=sum(r["loss"] for r in rows)/len(rows), rows=rows)
+
+    if args.mode == "fresh":
+        print("Fresh validation:", len(test), "questions", flush=True)
+        results = {}
+        for seed in (17,23,41):
+            for k in (4,16):
+                name = f"capacity-k{k}-s{seed}-audio"
+                if (k,seed) == (16,17):
+                    name = "clotho-k16-s17-audio"
+                comp = Compressor(embed.embedding_dim,k).cuda()
+                comp.load_state_dict(torch.load(Path(name)/"compressor.pt", weights_only=True))
+                scored = evaluate(test)
+                (args.out / (name+".json")).write_text(json.dumps(scored))
+                results[name] = [scored["correct"],scored["n"]]
+                print(name, results[name], flush=True)
+        (args.out / "summary.json").write_text(json.dumps(results,indent=2))
+        return
 
     if args.mode == "pool":
         pooled = {str(k):evaluate(test, pool_k=k) for k in args.pool_ks}

@@ -90,3 +90,12 @@ Both arms decode the same question and A/B options. Only the conditioned compres
 把各 run 的 train.json 放入 phase2/ 下同名資料夾後，本機執行 `python analyze_capacity_types.py`。如只分析特定 seed，可用 `--seeds 17`。程式以錄音、題幹及正解核對資料，輸出逐 seed 成績、yes/no 表現、依題型的淨增答對數及每個 seed 都翻轉的題目。
 
 題型檔 phase2/capacity_question_types.csv 依題目文字預先固定，採單一主要標籤。time_pattern 涵蓋時序、規律與持續性；acoustic_property 涵蓋響度、音色等性質；count_or_relation 涵蓋數量、相對距離與背景位置；scene_context 涵蓋場所與情境推斷；source_or_event 涵蓋聲源及事件辨識。標籤描述提問內容，不能單獨判定模型實際依靠哪一項聲學線索。
+
+### A 線：獨立錄音驗證
+
+在已準備好的 cml30 環境執行下列命令。保留原始 48 段訓練與 32 段 pilot 驗證錄音，從官方 val 其餘合格錄音各取一題一致 yes、一題一致 no。使用既有六個 checkpoint 做推論，逐模型寫入結果，全部完成時產生 summary.json。官方 test 保留。
+
+```bash
+.venv/bin/python prepare_clotho.py --fresh-val
+.venv/bin/python -u bottleneck.py fresh --clotho --out fresh-capacity
+```
