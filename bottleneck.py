@@ -39,6 +39,9 @@ def main():
     parser.add_argument("--steps", type=int, default=16)
     parser.add_argument("--k", type=int, default=16)
     parser.add_argument("--seed", type=int, default=17)
+    parser.add_argument("--clotho", action="store_true")
+    parser.add_argument("--conditioned", action="store_true")
+    parser.add_argument("--wandb", action="store_true")
     args = parser.parse_args()
     args.out.mkdir(exist_ok=True, parents=True)
     checkpoint = args.out / "compressor.pt"
@@ -55,20 +58,33 @@ def main():
     choices = [proc.tokenizer.encode(x, add_special_tokens=False) for x in "AB"]
     assert all(len(x) == 1 for x in choices)
     ids = [x[0] for x in choices]
-    with open("data/esc50.csv") as handle:
-        metadata = list(csv.DictReader(handle))
-    pairs = [p for p in json.loads(Path("data/pairs.json").read_text()) if p["task"] == "event"][:4]
     cache = {}
-    train, test = [], []
-    for pair in pairs:
-        q = pair["question"] + "\nA. " + pair["options"][0] + "\nB. " + pair["options"][1] + "\nAnswer with only A or B."
-        for label, heldout in enumerate(pair["clips"]):
-            category = pair["options"][label].replace(" ", "_")
-            row = rng.choice([r for r in metadata if r["category"] == category and r["fold"] == "1"])
-            path = Path("data") / row["filename"]
-            download(ESC + "/audio/" + row["filename"], path)
-            train.append((str(path), q, label))
-            test.append((heldout, q, label))
+    donor_stems = {}
+    suffix = "\nA. yes\nB. no\nAnswer with only A or B."
+    if args.clotho:
+        manifest = json.loads(Path("data/clotho/manifest.json").read_text())
+        def samples(split):
+            rows = []
+            for item in manifest[split]:
+                question = item["question"] + suffix
+                donor_stems[item["path"], question] = item["donor"]
+                rows.append((item["path"], question, item["label"]))
+            return rows
+        train, test = samples("train"), samples("val")
+    else:
+        with open("data/esc50.csv") as handle:
+            metadata = list(csv.DictReader(handle))
+        pairs = [p for p in json.loads(Path("data/pairs.json").read_text()) if p["task"] == "event"][:4]
+        train, test = [], []
+        for pair in pairs:
+            q = pair["question"] + "\nA. " + pair["options"][0] + "\nB. " + pair["options"][1] + "\nAnswer with only A or B."
+            for label, heldout in enumerate(pair["clips"]):
+                category = pair["options"][label].replace(" ", "_")
+                row = rng.choice([r for r in metadata if r["category"] == category and r["fold"] == "1"])
+                path = Path("data") / row["filename"]
+                download(ESC + "/audio/" + row["filename"], path)
+                train.append((str(path), q, label))
+                test.append((heldout, q, label))
 
     @torch.no_grad()
     def features(path):
@@ -79,14 +95,14 @@ def main():
             inputs["input_features"] = inputs["input_features"].to(base.dtype)
             mask = inputs["input_ids"][0] == base.config.audio_token_index
             def capture(module, positional, kwargs):
-                cache[path] = kwargs["inputs_embeds"][0, mask].float().detach()
+                cache[path] = kwargs["inputs_embeds"][0, mask].detach().cpu()
             hook = lm.register_forward_pre_hook(capture, with_kwargs=True)
             try:
                 base(**inputs, use_cache=False)
             finally:
                 hook.remove()
             assert cache[path].shape[0] > 0
-        return cache[path]
+        return cache[path].cuda().float()
 
     def decode(latent, question):
         messages = [{"role":"user","content":[{"type":"audio","audio_url":"placeholder"},
@@ -98,22 +114,46 @@ def main():
         sequence = torch.cat((text[:, :index], latent[None].to(text.dtype), text[:, index+1:]), dim=1)
         return lm(inputs_embeds=sequence, use_cache=False).logits[0,-1,ids].float()
 
+    def compress(path, question, swap=False):
+        condition = None
+        if args.conditioned:
+            stem = donor_stems[path, question] if swap else question.split("\n")[0]
+            tokens = proc.tokenizer(stem, add_special_tokens=False, return_tensors="pt").input_ids.cuda()
+            condition = F.layer_norm(embed(tokens).float().mean(dim=1), (embed.embedding_dim,))
+        return comp(features(path), condition)
+
     @torch.no_grad()
-    def evaluate(samples):
+    def evaluate(samples, swap=False, full=False, text_only=False):
         rows = []
         for path, question, target in samples:
-            scores = decode(comp(features(path)), question)
+            if text_only:
+                template = proc.apply_chat_template([{"role":"user","content":[{"type":"text","text":question}]}],
+                                                    tokenize=False, add_generation_prompt=True)
+                tokens = proc.tokenizer(template, return_tensors="pt").input_ids.cuda()
+                scores = lm(input_ids=tokens,use_cache=False).logits[0,-1,ids].float()
+            else:
+                latent = features(path) if full else compress(path, question, swap)
+                scores = decode(latent, question)
             rows.append(dict(path=path, question=question, target=target, prediction=scores.argmax().item(),
                              loss=F.cross_entropy(scores[None], torch.tensor([target],device="cuda")).item()))
         return dict(correct=sum(r["prediction"]==r["target"] for r in rows), n=len(rows),
                     loss=sum(r["loss"] for r in rows)/len(rows), rows=rows)
 
+    run = None
+    if args.wandb:
+        import wandb
+        run = wandb.init(project="mai-audio-bottleneck", name=args.out.name, config={
+            "K":args.k, "seed":args.seed, "steps":args.steps, "conditioned":args.conditioned,
+            "dataset":"Clotho-AQA" if args.clotho else "ESC-50", "learning_rate":0.001,
+        })
+        print("RUN_URL",run.url,flush=True)
     if args.mode == "eval":
         comp.load_state_dict(torch.load(checkpoint, weights_only=True))
     for path, _, _ in train + test:
         features(path)
     with torch.no_grad():
-        a, b = train[:2]
+        a = train[0]
+        b = next(row for row in train if row[0] != a[0])
         fixed = comp(features(a[0]))
         original = decode(fixed,a[1])
         alternative = comp(features(b[0]))
@@ -128,7 +168,7 @@ def main():
             if step % len(train) == 0:
                 rng.shuffle(train)
             path, question, label = train[step % len(train)]
-            scores = decode(comp(features(path)),question)
+            scores = decode(compress(path, question),question)
             loss = F.cross_entropy(scores[None],torch.tensor([label],device="cuda"))
             opt.zero_grad()
             loss.backward()
@@ -138,11 +178,27 @@ def main():
                 result["first_grad_norm"] = norm.item()
                 old = comp.keys.weight.detach().clone()
             opt.step()
+            if args.clotho:
+                print("METRIC", json.dumps(dict(step=step+1, loss=loss.item(), gradient_norm=norm.item())), flush=True)
+            if run:
+                run.log({"train/loss":loss.item(), "train/gradient_norm":norm.item()},step=step+1)
             if step == 0:
                 result["first_update_max"] = (comp.keys.weight.detach()-old).abs().max().item()
                 assert result["first_update_max"] > 0
         torch.save(comp.state_dict(), checkpoint)
     result.update(train=evaluate(train), heldout=evaluate(test), peak_allocated_GiB=torch.cuda.max_memory_allocated()/2**30)
+    if args.conditioned:
+        result["wrong_question"] = evaluate(test, swap=True)
+    if args.clotho and not args.conditioned:
+        result["full_audio"] = evaluate(test, full=True)
+        result["text_only"] = evaluate(test, text_only=True)
+    if run:
+        for key in ("train","heldout","wrong_question","full_audio"):
+            if key in result:
+                run.summary[key+"/accuracy"] = result[key]["correct"]/result[key]["n"]
+                run.summary[key+"/loss"] = result[key]["loss"]
+        result["wandb_url"] = run.url
+        run.finish()
     (args.out / (args.mode+".json")).write_text(json.dumps(result,indent=2))
     print(args.mode, result["train"]["loss"], result["heldout"]["correct"], result["peak_allocated_GiB"])
 
