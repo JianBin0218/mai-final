@@ -58,3 +58,16 @@ To evaluate a saved conditioned checkpoint directly on cml30, select the GPU as 
 
 Both arms decode the same question and A/B options. Only the conditioned compressor sees the question stem. Wrong-question evaluation uses the other stem for the same recording and keeps the original decoder input. Confidence intervals in compare_pilot.py resample whole recordings.
 
+
+## 共用起點續訓（A、B 組）
+
+在 cml30 專題目錄、選定一張 GPU 後執行。A、B 使用同一份 Clotho manifest、父 checkpoint、seed 17、K=16、192 次更新與學習率 0.001。兩組都重建 AdamW。題幹投影在兩組起始時均歸零；每次續訓前逐一對比 64 個驗證問題的 A/B logits，另在一個訓練樣本上檢查題幹投影梯度。此檢查不更新模型。
+
+```bash
+# A：已執行。重跑請換新的 --out。
+.venv/bin/python bottleneck.py train --clotho --steps 192 --seed 17 --k 16 --init-from clotho-k16-s17-audio/compressor.pt --out warm-k16-s17-audio
+# B：從相同的原始父 checkpoint 起跑。
+.venv/bin/python bottleneck.py train --clotho --steps 192 --seed 17 --k 16 --init-from clotho-k16-s17-audio/compressor.pt --out warm-k16-s17-question --conditioned
+```
+
+使用 GitHub checkout 的 bottleneck.py；本輪 cml30 共享根目錄上的該版本另存為 bottleneck_a.py，讓其他使用者可繼續使用舊入口。兩組 train.json 內的 warm_start.sha256 應相同。將兩份結果各放入本機 phase2/ 下同名資料夾後，執行 python compare_pilot.py warm-k16-s17。

@@ -1,5 +1,6 @@
 """Reproducible K-slot bottleneck smoke test on held-out ESC-50 recordings."""
 import argparse
+import hashlib
 import csv
 import json
 import math
@@ -42,7 +43,10 @@ def main():
     parser.add_argument("--clotho", action="store_true")
     parser.add_argument("--conditioned", action="store_true")
     parser.add_argument("--wandb", action="store_true")
+    parser.add_argument("--init-from", type=Path, help="Warm-start from an audio-only compressor; reset AdamW and zero the question projection")
     args = parser.parse_args()
+    if args.init_from and (args.mode != "train" or not args.clotho):
+        parser.error("--init-from requires train --clotho")
     args.out.mkdir(exist_ok=True, parents=True)
     checkpoint = args.out / "compressor.pt"
     if args.mode == "train" and checkpoint.exists():
@@ -114,9 +118,11 @@ def main():
         sequence = torch.cat((text[:, :index], latent[None].to(text.dtype), text[:, index+1:]), dim=1)
         return lm(inputs_embeds=sequence, use_cache=False).logits[0,-1,ids].float()
 
-    def compress(path, question, swap=False):
+    def compress(path, question, swap=False, *, conditioned=None):
         condition = None
-        if args.conditioned:
+        if conditioned is None:
+            conditioned = args.conditioned
+        if conditioned:
             stem = donor_stems[path, question] if swap else question.split("\n")[0]
             tokens = proc.tokenizer(stem, add_special_tokens=False, return_tensors="pt").input_ids.cuda()
             condition = F.layer_norm(embed(tokens).float().mean(dim=1), (embed.embedding_dim,))
@@ -147,6 +153,9 @@ def main():
             "dataset":"Clotho-AQA" if args.clotho else "ESC-50", "learning_rate":0.001,
         })
         print("RUN_URL",run.url,flush=True)
+    if args.init_from:
+        comp.load_state_dict(torch.load(args.init_from, weights_only=True))
+        nn.init.zeros_(comp.condition.weight)
     if args.mode == "eval":
         comp.load_state_dict(torch.load(checkpoint, weights_only=True))
     for path, _, _ in train + test:
@@ -162,6 +171,24 @@ def main():
         assert drift == 0
     result = dict(isolation_AB_logit_delta=drift, k=args.k, seed=args.seed, gpu=torch.cuda.get_device_name())
     if args.mode == "train":
+        if args.init_from:
+            max_delta = 0.0
+            with torch.no_grad():
+                for path, question, _ in test:
+                    audio = decode(compress(path, question, conditioned=False), question)
+                    guided = decode(compress(path, question, conditioned=True), question)
+                    torch.testing.assert_close(audio, guided, rtol=0, atol=0)
+                    max_delta = max(max_delta, (audio-guided).abs().max().item())
+            path, question, label = train[0]
+            loss = F.cross_entropy(decode(compress(path, question, conditioned=True), question)[None],
+                                   torch.tensor([label],device="cuda"))
+            grad, = torch.autograd.grad(loss, comp.condition.weight)
+            assert torch.isfinite(grad).all() and grad.norm().item() > 0
+            result["warm_start"] = dict(checkpoint=str(args.init_from),
+                sha256=hashlib.sha256(args.init_from.read_bytes()).hexdigest(),
+                steps=args.steps, checked_questions=len(test), max_logit_delta=max_delta,
+                question_grad_norm=grad.norm().item())
+            result["heldout_before"] = evaluate(test)
         result["before"] = evaluate(train)
         opt = torch.optim.AdamW(comp.parameters(), lr=0.001)
         for step in range(args.steps):
