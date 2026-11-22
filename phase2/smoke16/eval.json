@@ -1,0 +1,133 @@
+{
+  "isolation_AB_logit_delta": 0.0,
+  "k": 16,
+  "seed": 17,
+  "gpu": "NVIDIA RTX 6000 Ada Generation",
+  "train": {
+    "correct": 8,
+    "n": 8,
+    "loss": 0.04918574007751886,
+    "rows": [
+      {
+        "path": "data/1-51805-G-33.wav",
+        "question": "Which sound is present?\nA. door wood creaks\nB. clock alarm\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.001032772590406239
+      },
+      {
+        "path": "data/1-72195-A-37.wav",
+        "question": "Which sound is present?\nA. door wood creaks\nB. clock alarm\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.005233753472566605
+      },
+      {
+        "path": "data/1-43807-C-47.wav",
+        "question": "Which sound is present?\nA. airplane\nB. crickets\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.2014133334159851
+      },
+      {
+        "path": "data/1-7456-A-13.wav",
+        "question": "Which sound is present?\nA. airplane\nB. crickets\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.042999111115932465
+      },
+      {
+        "path": "data/1-103999-A-30.wav",
+        "question": "Which sound is present?\nA. door wood knock\nB. pig\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.04858732968568802
+      },
+      {
+        "path": "data/1-208757-E-2.wav",
+        "question": "Which sound is present?\nA. door wood knock\nB. pig\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.008614521473646164
+      },
+      {
+        "path": "data/1-54065-A-45.wav",
+        "question": "Which sound is present?\nA. train\nB. clock tick\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.07888974994421005
+      },
+      {
+        "path": "data/1-21934-A-38.wav",
+        "question": "Which sound is present?\nA. train\nB. clock tick\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.006715348921716213
+      }
+    ]
+  },
+  "heldout": {
+    "correct": 7,
+    "n": 8,
+    "loss": 0.16644510729020112,
+    "rows": [
+      {
+        "path": "data/5-173568-A-33.wav",
+        "question": "Which sound is present?\nA. door wood creaks\nB. clock alarm\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.011047743260860443
+      },
+      {
+        "path": "data/5-234247-A-37.wav",
+        "question": "Which sound is present?\nA. door wood creaks\nB. clock alarm\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.11282224208116531
+      },
+      {
+        "path": "data/5-251957-A-47.wav",
+        "question": "Which sound is present?\nA. airplane\nB. crickets\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.03364565595984459
+      },
+      {
+        "path": "data/5-210540-A-13.wav",
+        "question": "Which sound is present?\nA. airplane\nB. crickets\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.00011598391574807465
+      },
+      {
+        "path": "data/5-218981-A-30.wav",
+        "question": "Which sound is present?\nA. door wood knock\nB. pig\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 1,
+        "loss": 1.0537006855010986
+      },
+      {
+        "path": "data/5-117250-A-2.wav",
+        "question": "Which sound is present?\nA. door wood knock\nB. pig\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.029750416055321693
+      },
+      {
+        "path": "data/5-197121-B-45.wav",
+        "question": "Which sound is present?\nA. train\nB. clock tick\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.06993623077869415
+      },
+      {
+        "path": "data/5-208624-A-38.wav",
+        "question": "Which sound is present?\nA. train\nB. clock tick\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.020541900768876076
+      }
+    ]
+  },
+  "peak_allocated_GiB": 15.73707389831543
+}
