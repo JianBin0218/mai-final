@@ -1,0 +1,13 @@
+# Install torch first from the CUDA 12.1 index, then this file (see README):
+#   pip install torch==2.5.1 --index-url https://download.pytorch.org/whl/cu121
+#   pip install -r requirements.txt
+# Versions match the recorded runs (phase1/results/summary.json). Pinning accelerate keeps pip from upgrading torch.
+torch==2.5.1
+transformers==4.51.3
+accelerate==1.6.0
+numpy<2.3
+scipy
+soundfile
+pyarrow
+huggingface_hub
+wandb

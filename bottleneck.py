@@ -12,7 +12,7 @@ from torch import nn
 from torch.nn import functional as F
 from transformers import AutoProcessor, Qwen2AudioForConditionalGeneration
 
-from baseline import waveform
+from baseline import MODEL_DIR, waveform
 from prepare import ESC, download
 
 
@@ -56,8 +56,8 @@ def main():
         parser.error("Choose a fresh output directory to preserve the previous run.")
     torch.manual_seed(args.seed)
     rng = random.Random(args.seed)
-    proc = AutoProcessor.from_pretrained("model")
-    base = Qwen2AudioForConditionalGeneration.from_pretrained("model", torch_dtype=torch.bfloat16,
+    proc = AutoProcessor.from_pretrained(MODEL_DIR)
+    base = Qwen2AudioForConditionalGeneration.from_pretrained(MODEL_DIR, torch_dtype=torch.bfloat16,
                                                               device_map={"": 0}).eval().requires_grad_(False)
     lm = base.language_model
     embed = lm.get_input_embeddings()

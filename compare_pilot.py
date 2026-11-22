@@ -6,10 +6,11 @@ from pathlib import Path
 import random
 import statistics
 
+ROOT = Path(__file__).resolve().parent / "phase2"
 parser = argparse.ArgumentParser()
 parser.add_argument("tag")
 args = parser.parse_args()
-read = lambda name: json.loads((Path("phase2") / (args.tag+"-"+name) / "train.json").read_text())
+read = lambda name: json.loads((ROOT / (args.tag+"-"+name) / "train.json").read_text())
 a, q = read("audio"), read("question")
 parts = {"audio":a["heldout"], "question":q["heldout"], "wrong_question":q["wrong_question"],
          "full_audio":a["full_audio"], "text_only":a["text_only"]}

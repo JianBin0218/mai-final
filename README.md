@@ -2,14 +2,31 @@
 
 [中文專題進度、暫定規劃與研究分工](PROJECT_HANDOFF.md)
 
-Run from `/tmp2/b12902071/m_final` on cml30. The local checkout contains code and small result files. The remote `.venv`, audio and checkpoint stay on the SSD.
+The shared server is cml30 (`/tmp2/b12902071/m_final`), but every script runs on any machine with one 24 GB GPU. The Git checkout contains code and small result files. The `.venv`, model, audio and checkpoints stay on the machine that runs them.
+
+## Set up a new machine
+
+Run every command from the checkout root; result files store data paths relative to it.
+
+```bash
+python3 -m venv .venv
+.venv/bin/pip install torch==2.5.1 --index-url https://download.pytorch.org/whl/cu121
+.venv/bin/pip install -r requirements.txt
+.venv/bin/python download_model.py        # ~16 GB into model/, pinned revision
+.venv/bin/python prepare_clotho.py        # Clotho-AQA audio and question manifest
+.venv/bin/python prepare.py               # ESC-50 / CompA-Order pilot pairs
+```
+
+Several checkouts or worktrees on one machine can share a single model copy: set `MAI_MODEL_DIR=/path/to/model`. To share audio, symlink `data` to one prepared copy, because manifests record paths as `data/...`. Write checkpoints under `runs/`, which Git ignores; copy only `train.json`/`pool.json` into `phase2/<name>/`.
+
+`track_comparison.py` defaults to the cml30 layout. Use `--host local` to run in this checkout, or `--host <ssh-alias> --project-dir <path>` for another server; `MAI_HOST`, `MAI_PROJECT_DIR` and `MAI_PYTHON` set the same defaults from the environment.
 
 ## Reproduce on the prepared server
 
 Choose one available GPU after checking `nvidia-smi` and the lab limits. Substitute its index for N. Use a persistent SSH terminal and run the commands inside tmux.
 
 ```bash
-cd /tmp2/b12902071/m_final
+cd /tmp2/b12902071/m_final   # or your own checkout
 export CUDA_DEVICE_ORDER=PCI_BUS_ID CUDA_VISIBLE_DEVICES=N
 export OMP_NUM_THREADS=4 OPENBLAS_NUM_THREADS=4 MKL_NUM_THREADS=4
 .venv/bin/python prepare.py
@@ -48,6 +65,13 @@ From the local checkout, with the code synced to cml30, choose a free GPU with e
 ```powershell
 python -u track_comparison.py --gpu N --tag clotho-k16-repeat --steps 192
 python compare_pilot.py clotho-k16-repeat
+```
+
+On a machine that already has the model and data, run both arms in place instead, optionally from a shared parent checkpoint:
+
+```bash
+.venv/bin/python -u track_comparison.py --host local --gpu N --tag mywarm-k16-s17 --out-root runs --init-from runs/my-parent/compressor.pt
+.venv/bin/python compare_pilot.py mywarm-k16-s17
 ```
 
 To evaluate a saved conditioned checkpoint directly on cml30, select the GPU as above and run:
