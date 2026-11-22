@@ -41,10 +41,10 @@ Prepare the audio archive and the question manifest on cml30 from the project di
 
 The script verifies the published archive and annotation checksums, uses the official training and validation splits, and chooses one unanimously positive and one unanimously negative question per recording. It selects 48 training and 32 validation recordings with seed 17. The test split is unused.
 
-From the local checkout, with the code synced to cml30, choose a free GPU with enough memory and run both arms sequentially. Replace N with its physical index, and use a new tag for each repetition. The local runner reads WANDB_API_KEY from the ignored .env file and sends only metrics and configuration to W&B. Audio and checkpoints remain on cml30. Keep the local runner connected throughout the pilot.
+From the local checkout, with the code synced to cml30, choose a free GPU with enough memory and run both arms sequentially. Replace N with its physical index, and use a new tag for each repetition. By default the runner stores per-step metrics in the remote log. Add --wandb for direct server-side tracking. The runner passes the local .env key over SSH standard input for the life of the remote process. Audio and checkpoints remain on cml30. Keep the local runner connected throughout the pilot.
 
 ```powershell
-uv run --with wandb python -u track_comparison.py --gpu N --tag clotho-k16-repeat --steps 192
+python -u track_comparison.py --gpu N --tag clotho-k16-repeat --steps 192
 python compare_pilot.py clotho-k16-repeat
 ```
 
@@ -55,3 +55,4 @@ To evaluate a saved conditioned checkpoint directly on cml30, select the GPU as 
 ```
 
 Both arms decode the same question and A/B options. Only the conditioned compressor sees the question stem. Wrong-question evaluation uses the other stem for the same recording and keeps the original decoder input. Confidence intervals in compare_pilot.py resample whole recordings.
+
