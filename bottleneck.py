@@ -35,7 +35,7 @@ class Compressor(nn.Module):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("mode", choices=["train", "eval", "pool", "fresh", "controls"])
+    parser.add_argument("mode", choices=["train", "eval", "pool", "fresh", "controls", "intervene"])
     parser.add_argument("--out", type=Path, required=True)
     parser.add_argument("--steps", type=int, default=16)
     parser.add_argument("--k", type=int, default=16)
@@ -45,9 +45,12 @@ def main():
     parser.add_argument("--wandb", action="store_true")
     parser.add_argument("--init-from", type=Path, help="Warm-start from an audio-only compressor; reset AdamW and zero the question projection")
     parser.add_argument("--pool-ks", type=int, nargs="+", default=[4, 16], help="Slot counts for the fixed pooling evaluation")
+    parser.add_argument("--intervention", choices=["swap","components","factorial"], default="swap")
+    parser.add_argument("--donor-seed", type=int, default=17)
+    parser.add_argument("--types", type=Path, default=Path("phase2/fresh-capacity/question_types.csv"))
     args = parser.parse_args()
-    if args.mode in ("fresh","controls") and (not args.clotho or args.conditioned):
-        parser.error("fresh requires --clotho and audio-only checkpoints")
+    if args.mode in ("fresh","controls","intervene") and (not args.clotho or args.conditioned):
+        parser.error(f"{args.mode} requires --clotho and audio-only checkpoints")
     if args.mode == "pool" and (not args.clotho or args.conditioned or min(args.pool_ks) < 1):
         parser.error("pool requires --clotho and positive slot counts without --conditioned")
     if args.init_from and (args.mode != "train" or not args.clotho):
@@ -80,7 +83,7 @@ def main():
                 rows.append((item["path"], question, item["label"]))
             return rows
         train, test = samples("train"), samples("val")
-        if args.mode in ("fresh","controls"):
+        if args.mode in ("fresh","controls","intervene"):
             previous = {r[0] for r in train + test}
             manifest = json.loads(Path("data/clotho/fresh_val.json").read_text())
             test = samples("val")
@@ -158,6 +161,11 @@ def main():
                              loss=F.cross_entropy(scores[None], torch.tensor([target],device="cuda")).item()))
         return dict(correct=sum(r["prediction"]==r["target"] for r in rows), n=len(rows),
                     loss=sum(r["loss"] for r in rows)/len(rows), rows=rows)
+
+    if args.mode == "intervene":
+        from latent_interventions import run_interventions
+        run_interventions(args, test, comp, features, decode)
+        return
 
     if args.mode == "controls":
         clips = sorted({row[0] for row in test})

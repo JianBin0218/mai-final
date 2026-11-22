@@ -1,0 +1,9 @@
+k,first,second,gain_pp,ci_low,ci_high
+4,own,donor,11.111,1.389,21.235
+4,donor_pool_own_residual,own_pool_donor_residual,7.005,-1.932,16.1
+4,own,donor_pool_own_residual,-1.932,-6.713,1.656
+4,own,own_pool_donor_residual,5.072,-2.657,13.132
+16,own,donor,19.807,8.696,31.715
+16,donor_pool_own_residual,own_pool_donor_residual,11.111,2.02,20.247
+16,own,donor_pool_own_residual,2.415,-2.9,7.971
+16,own,own_pool_donor_residual,13.527,4.666,22.917

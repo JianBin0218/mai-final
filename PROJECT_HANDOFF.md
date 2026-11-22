@@ -134,3 +134,7 @@ K=16 的學習式版本相較 K=4 多答對 9 題，反方向翻轉為 0 題，�
 **研究決策。** (1) 時間規律題的完整音訊 yes/no 召回率分別為 50.0% 與 61.5%，K=16 為 51.3% 與 56.4%。兩者整體差僅 0.9 點，區間 −10.8 到 +13.9；原模型本身在這批題目就有明顯困難。(2) 關係題的完整音訊比 K=16 高 14.5 點，區間 +5.9 到 +24.2，適合優先研究固定長度壓縮後遺失了哪些可用證據。這與先前「K=4 到 K=16 的提升沒有特別集中於關係題」回答的是不同問題。(3) 場景題的純文字只答對一半，現有證據不足以把壓縮模型高分歸因於文字捷徑。若要判斷這兩個受訓壓縮器是否真的依賴配對聲音，仍需直接置換其 latent。
 
 以上為開發集描述性分析；分組區間未校正多重比較，無關音訊使用單一固定配對。完整[結果表](phase2/fresh-controls/metrics.csv)、[配對區間](phase2/fresh-controls/contrasts.csv)、[答案類別圖](phase2/fresh-controls/answer-class-recall.png)及逐題預測皆已保存。
+
+### 關係題 latent 置換：三輪結果
+
+46 題、43 段錄音、三個模型 seed。依序測整組置換、分段平均與學習式修正交叉置換，再更換兩組 donor 配對。K=16 使用原錄音／其他錄音的準確率為 74.6%／54.8%；混合表示中，保留原錄音的修正比只保留原錄音的平均高 11.1 個百分點（錄音配對 95% 區間 +2.0 至 +20.3）。混合向量是診斷用介入。逐題資料、donor、logit 與區間見 [interventions-v1](phase2/interventions-v1)。重算：`python analyze_interventions.py`。重跑推論：`bottleneck.py intervene --clotho --out NEW_DIR --intervention factorial --donor-seed N`（N=17、23、41；cml30 單卡環境）。分析時相同 donor seed 擇一使用 factorial 或 swap 加 components。
