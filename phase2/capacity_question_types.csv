@@ -1,0 +1,65 @@
+clip,question,type
+data/clotho/Night Frogs.wav,Is this noise consistent?,time_pattern
+data/clotho/Night Frogs.wav,Does this sound come from a human?,source_or_event
+data/clotho/Steam 20.wav,Is the beat steady?,time_pattern
+data/clotho/Steam 20.wav,Is a doctor talking to the patient?,scene_context
+data/clotho/carnival_parade_cologne_1.wav,Is there music playing?,source_or_event
+data/clotho/carnival_parade_cologne_1.wav,Are there lots of animal sounds?,count_or_relation
+data/clotho/Babble of Frogs 001.wav,Are there living things here?,source_or_event
+data/clotho/Babble of Frogs 001.wav,Is there a woman singing?,source_or_event
+data/clotho/Walking in Grass in Evening with Loud Bird.wav,Is the person outside?,scene_context
+data/clotho/Walking in Grass in Evening with Loud Bird.wav,Could the person be in walking in a room?,scene_context
+data/clotho/Bathtub_Water-drain.wav,is there water?,source_or_event
+data/clotho/Bathtub_Water-drain.wav,are there waves?,source_or_event
+data/clotho/Walking on pebble beach.wav,Does the person walk at the same speed as time goes on?,time_pattern
+data/clotho/Walking on pebble beach.wav,Is a cat hissing?,source_or_event
+data/clotho/05769 carpenter&#39;s workshop ambience.wav,Can voices be heard in this recording?,source_or_event
+data/clotho/05769 carpenter&#39;s workshop ambience.wav,Is this a person?,source_or_event
+data/clotho/DR0000_0020.wav,Is it drizzling in the place?,source_or_event
+data/clotho/DR0000_0020.wav,is there a large storm?,source_or_event
+data/clotho/bird in the Hague at dawn 5.wav,Are some birds closer than others?,count_or_relation
+data/clotho/bird in the Hague at dawn 5.wav,Is a snake slithering through dry leaves?,source_or_event
+data/clotho/outdoors ambient  village bird distant neighbours children car.wav,Are birds chirping?,source_or_event
+data/clotho/outdoors ambient  village bird distant neighbours children car.wav,Are people speaking?,source_or_event
+data/clotho/amazon 04.wav,Are there animals outside?,scene_context
+data/clotho/amazon 04.wav,Is this in a church?,scene_context
+data/clotho/CoffeeShopChatter.wav,Are the people in a very crowded place?,scene_context
+data/clotho/CoffeeShopChatter.wav,Are the people in a nursery?,scene_context
+data/clotho/Streatham Railway Station and on a Train.wav,Can humans be heard talking?,source_or_event
+data/clotho/Streatham Railway Station and on a Train.wav,Is a cat scratching something?,source_or_event
+data/clotho/T24_home_dishwasher_cycle change.wav,Are multiple sounds heard?,count_or_relation
+data/clotho/T24_home_dishwasher_cycle change.wav,Is anyone riding on a carousel?,source_or_event
+data/clotho/windscreen wipers heavy rain.wav,Is there windshield wipers wiping the rain off the car?,source_or_event
+data/clotho/windscreen wipers heavy rain.wav,Is there a turn signal on?,source_or_event
+data/clotho/Walking On Dry Leaves Normalised.wav,Does it sound crispy?,acoustic_property
+data/clotho/Walking On Dry Leaves Normalised.wav,Can the ocean be heard?,source_or_event
+data/clotho/Building Site.wav,Is there a machine running?,source_or_event
+data/clotho/Building Site.wav,Is someone coughing?,source_or_event
+data/clotho/Waterfall close.wav,Is this loud?,acoustic_property
+data/clotho/Waterfall close.wav,Is a person chopping wood?,source_or_event
+data/clotho/Writing with Pen.wav,Was a page flipped?,source_or_event
+data/clotho/Writing with Pen.wav,Is a dog barking in the background?,count_or_relation
+data/clotho/Tools .wav,Are metallic objects being moved?,source_or_event
+data/clotho/Tools .wav,Are people singing?,source_or_event
+data/clotho/slam.wav,Is that sound of something being hit?,source_or_event
+data/clotho/slam.wav,Are children fighting?,source_or_event
+data/clotho/100121.wav,Is it raining in this place?,source_or_event
+data/clotho/100121.wav,Is it good weather in this area?,scene_context
+"data/clotho/Kortedala, Gothenburg - By night - Police sirens and surroundings.wav",Is the sound continuous?,time_pattern
+"data/clotho/Kortedala, Gothenburg - By night - Police sirens and surroundings.wav",Is there a woman crying?,source_or_event
+data/clotho/HeavyRain.wav,Is the rain heavy?,acoustic_property
+data/clotho/HeavyRain.wav,Is a priest giving a sermon?,scene_context
+data/clotho/Conversacion Punjabi.wav,are both people male?,count_or_relation
+data/clotho/Conversacion Punjabi.wav,Is only one person talking?,count_or_relation
+data/clotho/vague_sable.wav,Is the hissing sound after each cycle cause by water receding from the sand?,time_pattern
+data/clotho/vague_sable.wav,Is this happening in a mountain stream?,scene_context
+data/clotho/Thunder Outside.wav,Is there a large strike of thunder?,source_or_event
+data/clotho/Thunder Outside.wav,Are people running away from the thunder?,source_or_event
+data/clotho/More Amphitheatre Birds. Wav.wav,Is there a series of squeaks?,time_pattern
+data/clotho/More Amphitheatre Birds. Wav.wav,Are the sounds low pitched?,acoustic_property
+data/clotho/Menziken Sawmill.wav,Is there an engine?,source_or_event
+data/clotho/Menziken Sawmill.wav,Is the area crowded?,scene_context
+data/clotho/Evening Atmosphere #2.wav,Is there more than one animal in the recording?,count_or_relation
+data/clotho/Evening Atmosphere #2.wav,Is there a rainstorm?,source_or_event
+data/clotho/20100515.park.ambiance.02.wav,Are there birds around?,source_or_event
+data/clotho/20100515.park.ambiance.02.wav,Is this inside of a restaurant?,scene_context
