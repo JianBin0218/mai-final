@@ -82,3 +82,11 @@ Both arms decode the same question and A/B options. Only the conditioned compres
 ```
 
 在本機 repo 執行 `python compare_capacity.py` 可從已保存的逐題預測重建準確率、同錄音兩題皆對數、問題層級的勝負數，以及以錄音為單位的配對 bootstrap 區間。
+
+### A 線：用多個訓練 seed 重測容量
+
+在準備好的 cml30 專案目錄、選好一張 GPU 後執行 `bash run_capacity_seeds.sh 23 41`。每個 seed 依序跑 K=4 和 16，每次從頭更新 192 步。腳本沿用同一份資料 manifest，已完成且有結果與權重的設定會跳過。每次只啟動一個程序。若在分開的工作目錄使用共用資料，先確認模型、資料和環境路徑正確。
+
+把各 run 的 train.json 放入 phase2/ 下同名資料夾後，本機執行 `python analyze_capacity_types.py`。如只分析特定 seed，可用 `--seeds 17`。程式以錄音、題幹及正解核對資料，輸出逐 seed 成績、yes/no 表現、依題型的淨增答對數及每個 seed 都翻轉的題目。
+
+題型檔 phase2/capacity_question_types.csv 依題目文字預先固定，採單一主要標籤。time_pattern 涵蓋時序、規律與持續性；acoustic_property 涵蓋響度、音色等性質；count_or_relation 涵蓋數量、相對距離與背景位置；scene_context 涵蓋場所與情境推斷；source_or_event 涵蓋聲源及事件辨識。標籤描述提問內容，不能單獨判定模型實際依靠哪一項聲學線索。
