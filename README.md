@@ -1,6 +1,6 @@
 # Audio bottleneck baseline
 
-[中文專題進度、暫定規劃與三人分工](PROJECT_HANDOFF.md)
+[中文專題進度、暫定規劃與研究分工](PROJECT_HANDOFF.md)
 
 Run from `/tmp2/b12902071/m_final` on cml30. The local checkout contains code and small result files. The remote `.venv`, audio and checkpoint stay on the SSD.
 
