@@ -1,0 +1,26 @@
+{
+  "capacity-k4-s17-audio": [
+    251,
+    340
+  ],
+  "clotho-k16-s17-audio": [
+    281,
+    340
+  ],
+  "capacity-k4-s23-audio": [
+    250,
+    340
+  ],
+  "capacity-k16-s23-audio": [
+    281,
+    340
+  ],
+  "capacity-k4-s41-audio": [
+    246,
+    340
+  ],
+  "capacity-k16-s41-audio": [
+    277,
+    340
+  ]
+}

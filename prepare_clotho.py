@@ -25,11 +25,15 @@ def md5(path):
 
 def main():
     parser = argparse.ArgumentParser()
+    parser.add_argument("--fresh-val", action="store_true")
     parser.add_argument("--extended", action="store_true",
                         help="Also write manifest_extended.json with every unused eligible val recording (val_extra) "
                              "and a larger training pool (train_large); manifest.json is unchanged")
     parser.add_argument("--train-large", type=int, default=384, help="Recordings in train_large, including the original 48")
     args = parser.parse_args()
+    if args.fresh_val and args.extended:
+        parser.error("Run --fresh-val and --extended separately")
+    fresh = args.fresh_val
     ROOT.mkdir(exist_ok=True, parents=True)
     audio = ROOT / "audio.zip"
     download("https://huggingface.co/datasets/danasone/clotho-aqa/resolve/main/audio_files.zip", audio)
@@ -38,9 +42,12 @@ def main():
     manifest = {}
     used = set()
     pools = {}
+    if fresh:
+        pilot = json.loads((ROOT / "manifest.json").read_text())
+        used.update(Path(row["path"]).name for split in pilot.values() for row in split)
     with zipfile.ZipFile(audio) as archive:
         members = {Path(x).name: x for x in archive.namelist() if x.lower().endswith(".wav") and "__MACOSX" not in x}
-        for split, count in [("train", 48), ("val", 32)]:
+        for split, count in ([("val", None)] if fresh else [("train", 48), ("val", 32)]):
             filename = f"clotho_aqa_{split}.csv"
             path = ROOT / filename
             download(f"https://zenodo.org/api/records/6473207/files/{filename}/content", path)
@@ -56,7 +63,7 @@ def main():
             eligible = sorted(c for c,v in questions.items() if c in members and v["yes"] and v["no"] and c not in used)
             pools[split] = (questions, eligible)
             items = []
-            for clip in rng.sample(eligible, count):
+            for clip in rng.sample(eligible, len(eligible) if fresh else count):
                 used.add(clip)
                 dest = ROOT / clip
                 dest.write_bytes(archive.read(members[clip]))
@@ -64,7 +71,7 @@ def main():
                 for q, donor, label in [(yes,no,0),(no,yes,1)]:
                     items.append(dict(path=str(dest), question=q, donor=donor, label=label))
             manifest[split] = items
-        (ROOT / "manifest.json").write_text(json.dumps(manifest,indent=2))
+        (ROOT / ("fresh_val.json" if fresh else "manifest.json")).write_text(json.dumps(manifest,indent=2))
         if args.extended:
             # A separate generator leaves the original selection untouched.
             extra_rng = random.Random(1017)

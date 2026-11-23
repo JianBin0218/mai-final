@@ -106,3 +106,30 @@ Both arms decode the same question and A/B options. Only the conditioned compres
 ```
 
 在本機 repo 執行 `python compare_capacity.py` 可從已保存的逐題預測重建準確率、同錄音兩題皆對數、問題層級的勝負數，以及以錄音為單位的配對 bootstrap 區間。
+
+### A 線：用多個訓練 seed 重測容量
+
+在準備好的 cml30 專案目錄、選好一張 GPU 後執行 `bash run_capacity_seeds.sh 23 41`。每個 seed 依序跑 K=4 和 16，每次從頭更新 192 步。腳本沿用同一份資料 manifest，已完成且有結果與權重的設定會跳過。每次只啟動一個程序。若在分開的工作目錄使用共用資料，先確認模型、資料和環境路徑正確。
+
+把各 run 的 train.json 放入 phase2/ 下同名資料夾後，本機執行 `python analyze_capacity_types.py`。如只分析特定 seed，可用 `--seeds 17`。程式以錄音、題幹及正解核對資料，輸出逐 seed 成績、yes/no 表現、依題型的淨增答對數及每個 seed 都翻轉的題目。
+
+題型檔 phase2/capacity_question_types.csv 依題目文字預先固定，採單一主要標籤。time_pattern 涵蓋時序、規律與持續性；acoustic_property 涵蓋響度、音色等性質；count_or_relation 涵蓋數量、相對距離與背景位置；scene_context 涵蓋場所與情境推斷；source_or_event 涵蓋聲源及事件辨識。標籤描述提問內容，不能單獨判定模型實際依靠哪一項聲學線索。
+
+### A 線：獨立錄音驗證
+
+在已準備好的 cml30 環境執行下列命令。保留原始 48 段訓練與 32 段 pilot 驗證錄音，從官方 val 其餘合格錄音各取一題一致 yes、一題一致 no。使用既有六個 checkpoint 做推論，逐模型寫入結果，全部完成時產生 summary.json。官方 test 保留。
+
+```bash
+.venv/bin/python prepare_clotho.py --fresh-val
+.venv/bin/python -u bottleneck.py fresh --clotho --out fresh-capacity
+```
+
+### 原始模型與聲音置換對照
+
+沿用 fresh_val.json 內相同的題目、選項及音檔。原始模型依序評估純文字、完整音訊以及非配對音訊。置換用 seed=17 將錄音打亂後循環平移，同一錄音的兩題共用 donor，每段音訊被使用一次。置換後仍按原始問題的原標籤計分，因此觀察的是配對聲音能帶來多少額外正確答案。其他錄音偶爾也可能符合該題。
+
+```bash
+.venv/bin/python -u bottleneck.py controls --clotho --out fresh-controls
+```
+
+將 fresh-controls 下四個 JSON 放入本機 phase2/fresh-controls，執行 `python analyze_controls.py`（NumPy）會生成逐題型 metrics.csv 與配對 contrasts.csv。yes/no recall 分別以各自正解數為分母；balanced accuracy 是兩者的平均。差異區間以錄音為單位配對 bootstrap，條件在本次三個固定訓練 seed 與單一 donor 排列。

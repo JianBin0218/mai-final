@@ -1,0 +1,553 @@
+seed,k,clip,donor,question,target,condition,prediction,logit_yes_minus_no
+17,4,data/clotho/Plane crash - black box.wav,data/clotho/crumpleTissuePaper.wav,are there two different voices?,0,own_pool_donor_residual,1,-1.125
+17,4,data/clotho/Plane crash - black box.wav,data/clotho/crumpleTissuePaper.wav,are there two different voices?,0,donor_pool_own_residual,1,-0.125
+17,4,data/clotho/Traffic Light.wav,data/clotho/Plane crash - black box.wav,Are there people talking in the background?,0,own_pool_donor_residual,0,0.375
+17,4,data/clotho/Traffic Light.wav,data/clotho/Plane crash - black box.wav,Are there people talking in the background?,0,donor_pool_own_residual,1,-0.125
+17,4,data/clotho/Traffic Light.wav,data/clotho/Plane crash - black box.wav,Is there complete silence in the background?,1,own_pool_donor_residual,1,-2.125
+17,4,data/clotho/Traffic Light.wav,data/clotho/Plane crash - black box.wav,Is there complete silence in the background?,1,donor_pool_own_residual,1,-2.375
+17,4,data/clotho/20141026 Bangkok House Traffic Thunder Bird 01.wav,data/clotho/indoors house dorm dormitory ambient room tone distant motor.wav,Was there a lot of honking?,1,own_pool_donor_residual,0,0.125
+17,4,data/clotho/20141026 Bangkok House Traffic Thunder Bird 01.wav,data/clotho/indoors house dorm dormitory ambient room tone distant motor.wav,Was there a lot of honking?,1,donor_pool_own_residual,1,-0.875
+17,4,data/clotho/CityPark Evening Moerputten NL 130510_01.wav,data/clotho/Fuente Cotino 2.wav,Is there more than one bird chirping?,0,own_pool_donor_residual,1,-0.5
+17,4,data/clotho/CityPark Evening Moerputten NL 130510_01.wav,data/clotho/Fuente Cotino 2.wav,Is there more than one bird chirping?,0,donor_pool_own_residual,0,3.875
+17,4,data/clotho/greece_melanes_cofee_1.wav,data/clotho/CityPark Evening Moerputten NL 130510_01.wav,Are there birds in the background?,0,own_pool_donor_residual,0,3.0
+17,4,data/clotho/greece_melanes_cofee_1.wav,data/clotho/CityPark Evening Moerputten NL 130510_01.wav,Are there birds in the background?,0,donor_pool_own_residual,0,0.625
+17,4,data/clotho/Hanoi street walking.wav,data/clotho/laundry.machine.wav,Is there more than one person around?,0,own_pool_donor_residual,1,-1.125
+17,4,data/clotho/Hanoi street walking.wav,data/clotho/laundry.machine.wav,Is there more than one person around?,0,donor_pool_own_residual,1,-2.125
+17,4,data/clotho/UnionStation06OutBack_BusyOutside.wav,data/clotho/Page turns and book close_open.wav,Is the person alone?,1,own_pool_donor_residual,1,-2.75
+17,4,data/clotho/UnionStation06OutBack_BusyOutside.wav,data/clotho/Page turns and book close_open.wav,Is the person alone?,1,donor_pool_own_residual,1,-3.4375
+17,4,data/clotho/Charleston Campus Summer.wav,data/clotho/birdy.wav,Is there more than one person present?,0,own_pool_donor_residual,1,-1.75
+17,4,data/clotho/Charleston Campus Summer.wav,data/clotho/birdy.wav,Is there more than one person present?,0,donor_pool_own_residual,1,-1.375
+17,4,data/clotho/2013-03-28 rain in the rainforest.wav,data/clotho/Song Birds-Lighthouse Park-March.wav,Is there a group of people?,1,own_pool_donor_residual,1,-0.375
+17,4,data/clotho/2013-03-28 rain in the rainforest.wav,data/clotho/Song Birds-Lighthouse Park-March.wav,Is there a group of people?,1,donor_pool_own_residual,1,-1.1875
+17,4,data/clotho/WavesOnTheShore.wav,data/clotho/2013-03-28 rain in the rainforest.wav,Can more that a dozen people be heard?,1,own_pool_donor_residual,0,2.5
+17,4,data/clotho/WavesOnTheShore.wav,data/clotho/2013-03-28 rain in the rainforest.wav,Can more that a dozen people be heard?,1,donor_pool_own_residual,0,2.5
+17,4,data/clotho/street_ambience_day.wav,data/clotho/FOLEY_Ext_Garbage_Hauling_001.wav,Is the person alone?,1,own_pool_donor_residual,1,-1.9375
+17,4,data/clotho/street_ambience_day.wav,data/clotho/FOLEY_Ext_Garbage_Hauling_001.wav,Is the person alone?,1,donor_pool_own_residual,1,-2.5
+17,4,data/clotho/Sukhapha anchor chain.wav,data/clotho/17-Year Cicada Mating Call.wav,Are there people nearby?,0,own_pool_donor_residual,1,-2.125
+17,4,data/clotho/Sukhapha anchor chain.wav,data/clotho/17-Year Cicada Mating Call.wav,Are there people nearby?,0,donor_pool_own_residual,1,-3.1875
+17,4,data/clotho/Sukhapha anchor chain.wav,data/clotho/17-Year Cicada Mating Call.wav,does only one guy speak?,1,own_pool_donor_residual,0,0.25
+17,4,data/clotho/Sukhapha anchor chain.wav,data/clotho/17-Year Cicada Mating Call.wav,does only one guy speak?,1,donor_pool_own_residual,1,-0.75
+17,4,"data/clotho/Walla chatter, adults and children in auditorium.wav",data/clotho/waves_1.wav,Is there more than one person in the group?,0,own_pool_donor_residual,1,-0.5
+17,4,"data/clotho/Walla chatter, adults and children in auditorium.wav",data/clotho/waves_1.wav,Is there more than one person in the group?,0,donor_pool_own_residual,0,2.0
+17,4,data/clotho/Los Angeles Bus Ride.wav,data/clotho/Lluvia agosto 2011.wav,Is there more than one voice?,0,own_pool_donor_residual,1,-1.875
+17,4,data/clotho/Los Angeles Bus Ride.wav,data/clotho/Lluvia agosto 2011.wav,Is there more than one voice?,0,donor_pool_own_residual,0,1.0
+17,4,data/clotho/medical car horn EGYPT Alexandria.wav,data/clotho/Cafeteria Ambience.wav,Does the emergency vehicle stop in front of the person?,1,own_pool_donor_residual,1,-1.25
+17,4,data/clotho/medical car horn EGYPT Alexandria.wav,data/clotho/Cafeteria Ambience.wav,Does the emergency vehicle stop in front of the person?,1,donor_pool_own_residual,1,-1.625
+17,4,data/clotho/Coffeehouse Ambience Burlington VT 0112xx.wav,data/clotho/medical car horn EGYPT Alexandria.wav,Are there both male and female voices?,0,own_pool_donor_residual,0,1.125
+17,4,data/clotho/Coffeehouse Ambience Burlington VT 0112xx.wav,data/clotho/medical car horn EGYPT Alexandria.wav,Are there both male and female voices?,0,donor_pool_own_residual,1,-1.5
+17,4,data/clotho/20110422_shower.wav,data/clotho/Distorted AM Radio noise.wav,Are a variety of birds singing?,0,own_pool_donor_residual,0,0.5
+17,4,data/clotho/20110422_shower.wav,data/clotho/Distorted AM Radio noise.wav,Are a variety of birds singing?,0,donor_pool_own_residual,0,2.875
+17,4,data/clotho/STE-031 italian road.wav,data/clotho/wind-sound-from-inside-car.wav,is there more than one car present?,0,own_pool_donor_residual,0,2.75
+17,4,data/clotho/STE-031 italian road.wav,data/clotho/wind-sound-from-inside-car.wav,is there more than one car present?,0,donor_pool_own_residual,0,4.5625
+17,4,data/clotho/0221 Bar_terrace.wav,data/clotho/STE-031 italian road.wav,Are there only males?,1,own_pool_donor_residual,1,-5.25
+17,4,data/clotho/0221 Bar_terrace.wav,data/clotho/STE-031 italian road.wav,Are there only males?,1,donor_pool_own_residual,1,-5.0
+17,4,data/clotho/110422_village_dusk.wav,data/clotho/Silencyo_CC_Field_Cicadas_French Children Playing_Wind_Dog_Distant Traffic.wav,Are multiple species heard through?,0,own_pool_donor_residual,0,4.875
+17,4,data/clotho/110422_village_dusk.wav,data/clotho/Silencyo_CC_Field_Cicadas_French Children Playing_Wind_Dog_Distant Traffic.wav,Are multiple species heard through?,0,donor_pool_own_residual,0,4.125
+17,4,"data/clotho/INT Factory budimka, pozega.wav",data/clotho/110422_village_dusk.wav,Does the flat slapping at the beginning happen more than once?,1,own_pool_donor_residual,0,5.1875
+17,4,"data/clotho/INT Factory budimka, pozega.wav",data/clotho/110422_village_dusk.wav,Does the flat slapping at the beginning happen more than once?,1,donor_pool_own_residual,0,5.75
+17,4,data/clotho/CalmWaves SandBeach 03 EQ 130430_03.wav,data/clotho/watertab.wav,Is the sound of the water crashing the only thing that can be heard?,0,own_pool_donor_residual,1,-3.375
+17,4,data/clotho/CalmWaves SandBeach 03 EQ 130430_03.wav,data/clotho/watertab.wav,Is the sound of the water crashing the only thing that can be heard?,0,donor_pool_own_residual,1,-2.875
+17,4,data/clotho/20080416.buzz.stereo.wav,data/clotho/CalmWaves SandBeach 03 EQ 130430_03.wav,Are there birds chirping in the background ?,0,own_pool_donor_residual,0,0.125
+17,4,data/clotho/20080416.buzz.stereo.wav,data/clotho/CalmWaves SandBeach 03 EQ 130430_03.wav,Are there birds chirping in the background ?,0,donor_pool_own_residual,0,1.75
+17,4,data/clotho/People talking while waiting the bus.wav,data/clotho/Kocking door and open door.wav,Are the people singing together?,1,own_pool_donor_residual,1,-1.3125
+17,4,data/clotho/People talking while waiting the bus.wav,data/clotho/Kocking door and open door.wav,Are the people singing together?,1,donor_pool_own_residual,1,-1.375
+17,4,data/clotho/crowd booing.wav,data/clotho/rain_on_a_roof_01.wav,do the women vastly outnumber the men?,0,own_pool_donor_residual,1,-2.75
+17,4,data/clotho/crowd booing.wav,data/clotho/rain_on_a_roof_01.wav,do the women vastly outnumber the men?,0,donor_pool_own_residual,0,0.625
+17,4,data/clotho/crowd booing.wav,data/clotho/rain_on_a_roof_01.wav,Is the person alone?,1,own_pool_donor_residual,1,-4.125
+17,4,data/clotho/crowd booing.wav,data/clotho/rain_on_a_roof_01.wav,Is the person alone?,1,donor_pool_own_residual,1,-1.875
+17,4,data/clotho/london-st-james-park-feeding-the-birds.wav,data/clotho/1122thrum.wav,Is this sound coming from one single source?,1,own_pool_donor_residual,1,-4.1875
+17,4,data/clotho/london-st-james-park-feeding-the-birds.wav,data/clotho/1122thrum.wav,Is this sound coming from one single source?,1,donor_pool_own_residual,1,-2.6875
+17,4,data/clotho/greece_naxos_cicadas_4.wav,data/clotho/LondonTraffic.wav,are many people speaking?,1,own_pool_donor_residual,1,-3.125
+17,4,data/clotho/greece_naxos_cicadas_4.wav,data/clotho/LondonTraffic.wav,are many people speaking?,1,donor_pool_own_residual,1,-2.3125
+17,4,data/clotho/HammerDrill.wav,data/clotho/greece_naxos_cicadas_4.wav,Are there multiple instruments?,0,own_pool_donor_residual,1,-0.875
+17,4,data/clotho/HammerDrill.wav,data/clotho/greece_naxos_cicadas_4.wav,Are there multiple instruments?,0,donor_pool_own_residual,1,-2.0
+17,4,data/clotho/Heavy Rain 1.wav,data/clotho/pencil on paper.wav,Are there multiple people talking in the rain?,1,own_pool_donor_residual,0,0.25
+17,4,data/clotho/Heavy Rain 1.wav,data/clotho/pencil on paper.wav,Are there multiple people talking in the rain?,1,donor_pool_own_residual,0,1.125
+17,4,data/clotho/Lambs.wav,data/clotho/Heavy Rain 1.wav,Are people chatting in the background?,1,own_pool_donor_residual,0,2.125
+17,4,data/clotho/Lambs.wav,data/clotho/Heavy Rain 1.wav,Are people chatting in the background?,1,donor_pool_own_residual,0,3.625
+17,4,data/clotho/street steps child car.wav,data/clotho/cat_purr_1.wav,Are the people isolated?,1,own_pool_donor_residual,1,-3.875
+17,4,data/clotho/street steps child car.wav,data/clotho/cat_purr_1.wav,Are the people isolated?,1,donor_pool_own_residual,1,-4.0
+17,4,data/clotho/electric-screwdriver.wav,data/clotho/creeeeek-GAIN_01.wav,Can a car be heard in the background?,1,own_pool_donor_residual,1,-1.875
+17,4,data/clotho/electric-screwdriver.wav,data/clotho/creeeeek-GAIN_01.wav,Can a car be heard in the background?,1,donor_pool_own_residual,1,-2.1875
+17,4,data/clotho/WasherSpinCycle.wav,data/clotho/nxSample012.wav,Can a group of people be heard speaking?,1,own_pool_donor_residual,1,-3.1875
+17,4,data/clotho/WasherSpinCycle.wav,data/clotho/nxSample012.wav,Can a group of people be heard speaking?,1,donor_pool_own_residual,1,-3.4375
+17,4,data/clotho/Forest Birds .wav,data/clotho/helicopter.wav,Is there conclusive evidence that there are multiple people heard?,1,own_pool_donor_residual,1,-1.5
+17,4,data/clotho/Forest Birds .wav,data/clotho/helicopter.wav,Is there conclusive evidence that there are multiple people heard?,1,donor_pool_own_residual,1,-1.75
+17,4,data/clotho/Rain WashingtonSt 1.wav,data/clotho/April dawn chorus Sydenham Hill.wav,Is there a lot of thunder?,1,own_pool_donor_residual,1,-4.3125
+17,4,data/clotho/Rain WashingtonSt 1.wav,data/clotho/April dawn chorus Sydenham Hill.wav,Is there a lot of thunder?,1,donor_pool_own_residual,1,-2.9375
+17,4,data/clotho/espresso-maschine.wav,data/clotho/Truck starts and stops_edit.wav,Is a motor running in the background ?,0,own_pool_donor_residual,0,1.5
+17,4,data/clotho/espresso-maschine.wav,data/clotho/Truck starts and stops_edit.wav,Is a motor running in the background ?,0,donor_pool_own_residual,0,2.375
+17,4,data/clotho/auto-rickshaw-trip.wav,data/clotho/STE-027FIRE.wav,Is there more than one vehicle?,0,own_pool_donor_residual,0,2.625
+17,4,data/clotho/auto-rickshaw-trip.wav,data/clotho/STE-027FIRE.wav,Is there more than one vehicle?,0,donor_pool_own_residual,0,5.4375
+17,4,data/clotho/rotatingdome.wav,data/clotho/Hyeres street voices ambience f.wav,Can a crowd be heard speaking in the background?,1,own_pool_donor_residual,0,2.25
+17,4,data/clotho/rotatingdome.wav,data/clotho/Hyeres street voices ambience f.wav,Can a crowd be heard speaking in the background?,1,donor_pool_own_residual,0,3.0
+17,4,data/clotho/glas-bubbels-def01.wav,data/clotho/Rusty old boat.wav,Is there a cow in the background?,1,own_pool_donor_residual,1,-0.125
+17,4,data/clotho/glas-bubbels-def01.wav,data/clotho/Rusty old boat.wav,Is there a cow in the background?,1,donor_pool_own_residual,1,-1.375
+17,4,data/clotho/Breaking Glass .wav,data/clotho/NYC Subway Train Approach Doors Announce Depart.wav,Does the glass break four separate times?,1,own_pool_donor_residual,0,2.25
+17,4,data/clotho/Breaking Glass .wav,data/clotho/NYC Subway Train Approach Doors Announce Depart.wav,Does the glass break four separate times?,1,donor_pool_own_residual,0,3.875
+17,4,data/clotho/Serving Water Quickly.wav,data/clotho/Frogs in town.wav,Are several glasses being poured?,0,own_pool_donor_residual,0,1.375
+17,4,data/clotho/Serving Water Quickly.wav,data/clotho/Frogs in town.wav,Are several glasses being poured?,0,donor_pool_own_residual,0,3.875
+17,4,data/clotho/Tibetan Bells 192kHz Original.wav,data/clotho/La Barca i La Tempesta.wav,Does the high pitched noise only happen once ?,1,own_pool_donor_residual,1,-0.125
+17,4,data/clotho/Tibetan Bells 192kHz Original.wav,data/clotho/La Barca i La Tempesta.wav,Does the high pitched noise only happen once ?,1,donor_pool_own_residual,0,0.75
+17,4,data/clotho/SheryT_mixdown.wav,data/clotho/elevator going up open closed door 20161025.wav,Are there several people chatting?,0,own_pool_donor_residual,0,1.125
+17,4,data/clotho/SheryT_mixdown.wav,data/clotho/elevator going up open closed door 20161025.wav,Are there several people chatting?,0,donor_pool_own_residual,0,1.625
+17,16,data/clotho/Plane crash - black box.wav,data/clotho/crumpleTissuePaper.wav,are there two different voices?,0,own_pool_donor_residual,1,-3.0
+17,16,data/clotho/Plane crash - black box.wav,data/clotho/crumpleTissuePaper.wav,are there two different voices?,0,donor_pool_own_residual,1,-1.75
+17,16,data/clotho/Traffic Light.wav,data/clotho/Plane crash - black box.wav,Are there people talking in the background?,0,own_pool_donor_residual,1,-2.0625
+17,16,data/clotho/Traffic Light.wav,data/clotho/Plane crash - black box.wav,Are there people talking in the background?,0,donor_pool_own_residual,0,0.5
+17,16,data/clotho/Traffic Light.wav,data/clotho/Plane crash - black box.wav,Is there complete silence in the background?,1,own_pool_donor_residual,1,-2.625
+17,16,data/clotho/Traffic Light.wav,data/clotho/Plane crash - black box.wav,Is there complete silence in the background?,1,donor_pool_own_residual,1,-3.5
+17,16,data/clotho/20141026 Bangkok House Traffic Thunder Bird 01.wav,data/clotho/indoors house dorm dormitory ambient room tone distant motor.wav,Was there a lot of honking?,1,own_pool_donor_residual,1,-2.0
+17,16,data/clotho/20141026 Bangkok House Traffic Thunder Bird 01.wav,data/clotho/indoors house dorm dormitory ambient room tone distant motor.wav,Was there a lot of honking?,1,donor_pool_own_residual,1,-1.5625
+17,16,data/clotho/CityPark Evening Moerputten NL 130510_01.wav,data/clotho/Fuente Cotino 2.wav,Is there more than one bird chirping?,0,own_pool_donor_residual,1,-3.25
+17,16,data/clotho/CityPark Evening Moerputten NL 130510_01.wav,data/clotho/Fuente Cotino 2.wav,Is there more than one bird chirping?,0,donor_pool_own_residual,0,4.4375
+17,16,data/clotho/greece_melanes_cofee_1.wav,data/clotho/CityPark Evening Moerputten NL 130510_01.wav,Are there birds in the background?,0,own_pool_donor_residual,0,3.9375
+17,16,data/clotho/greece_melanes_cofee_1.wav,data/clotho/CityPark Evening Moerputten NL 130510_01.wav,Are there birds in the background?,0,donor_pool_own_residual,0,1.75
+17,16,data/clotho/Hanoi street walking.wav,data/clotho/laundry.machine.wav,Is there more than one person around?,0,own_pool_donor_residual,1,-0.75
+17,16,data/clotho/Hanoi street walking.wav,data/clotho/laundry.machine.wav,Is there more than one person around?,0,donor_pool_own_residual,1,-0.625
+17,16,data/clotho/UnionStation06OutBack_BusyOutside.wav,data/clotho/Page turns and book close_open.wav,Is the person alone?,1,own_pool_donor_residual,1,-2.75
+17,16,data/clotho/UnionStation06OutBack_BusyOutside.wav,data/clotho/Page turns and book close_open.wav,Is the person alone?,1,donor_pool_own_residual,1,-3.1875
+17,16,data/clotho/Charleston Campus Summer.wav,data/clotho/birdy.wav,Is there more than one person present?,0,own_pool_donor_residual,1,-3.1875
+17,16,data/clotho/Charleston Campus Summer.wav,data/clotho/birdy.wav,Is there more than one person present?,0,donor_pool_own_residual,1,-2.6875
+17,16,data/clotho/2013-03-28 rain in the rainforest.wav,data/clotho/Song Birds-Lighthouse Park-March.wav,Is there a group of people?,1,own_pool_donor_residual,1,-0.625
+17,16,data/clotho/2013-03-28 rain in the rainforest.wav,data/clotho/Song Birds-Lighthouse Park-March.wav,Is there a group of people?,1,donor_pool_own_residual,1,-2.0625
+17,16,data/clotho/WavesOnTheShore.wav,data/clotho/2013-03-28 rain in the rainforest.wav,Can more that a dozen people be heard?,1,own_pool_donor_residual,0,1.625
+17,16,data/clotho/WavesOnTheShore.wav,data/clotho/2013-03-28 rain in the rainforest.wav,Can more that a dozen people be heard?,1,donor_pool_own_residual,0,1.5
+17,16,data/clotho/street_ambience_day.wav,data/clotho/FOLEY_Ext_Garbage_Hauling_001.wav,Is the person alone?,1,own_pool_donor_residual,1,-2.0
+17,16,data/clotho/street_ambience_day.wav,data/clotho/FOLEY_Ext_Garbage_Hauling_001.wav,Is the person alone?,1,donor_pool_own_residual,1,-3.5
+17,16,data/clotho/Sukhapha anchor chain.wav,data/clotho/17-Year Cicada Mating Call.wav,Are there people nearby?,0,own_pool_donor_residual,1,-2.0625
+17,16,data/clotho/Sukhapha anchor chain.wav,data/clotho/17-Year Cicada Mating Call.wav,Are there people nearby?,0,donor_pool_own_residual,1,-2.3125
+17,16,data/clotho/Sukhapha anchor chain.wav,data/clotho/17-Year Cicada Mating Call.wav,does only one guy speak?,1,own_pool_donor_residual,0,0.125
+17,16,data/clotho/Sukhapha anchor chain.wav,data/clotho/17-Year Cicada Mating Call.wav,does only one guy speak?,1,donor_pool_own_residual,1,-1.125
+17,16,"data/clotho/Walla chatter, adults and children in auditorium.wav",data/clotho/waves_1.wav,Is there more than one person in the group?,0,own_pool_donor_residual,1,-2.375
+17,16,"data/clotho/Walla chatter, adults and children in auditorium.wav",data/clotho/waves_1.wav,Is there more than one person in the group?,0,donor_pool_own_residual,0,2.5
+17,16,data/clotho/Los Angeles Bus Ride.wav,data/clotho/Lluvia agosto 2011.wav,Is there more than one voice?,0,own_pool_donor_residual,1,-3.25
+17,16,data/clotho/Los Angeles Bus Ride.wav,data/clotho/Lluvia agosto 2011.wav,Is there more than one voice?,0,donor_pool_own_residual,0,1.25
+17,16,data/clotho/medical car horn EGYPT Alexandria.wav,data/clotho/Cafeteria Ambience.wav,Does the emergency vehicle stop in front of the person?,1,own_pool_donor_residual,1,-1.5
+17,16,data/clotho/medical car horn EGYPT Alexandria.wav,data/clotho/Cafeteria Ambience.wav,Does the emergency vehicle stop in front of the person?,1,donor_pool_own_residual,1,-2.5
+17,16,data/clotho/Coffeehouse Ambience Burlington VT 0112xx.wav,data/clotho/medical car horn EGYPT Alexandria.wav,Are there both male and female voices?,0,own_pool_donor_residual,0,1.375
+17,16,data/clotho/Coffeehouse Ambience Burlington VT 0112xx.wav,data/clotho/medical car horn EGYPT Alexandria.wav,Are there both male and female voices?,0,donor_pool_own_residual,0,0.625
+17,16,data/clotho/20110422_shower.wav,data/clotho/Distorted AM Radio noise.wav,Are a variety of birds singing?,0,own_pool_donor_residual,1,-2.625
+17,16,data/clotho/20110422_shower.wav,data/clotho/Distorted AM Radio noise.wav,Are a variety of birds singing?,0,donor_pool_own_residual,0,2.125
+17,16,data/clotho/STE-031 italian road.wav,data/clotho/wind-sound-from-inside-car.wav,is there more than one car present?,0,own_pool_donor_residual,0,2.625
+17,16,data/clotho/STE-031 italian road.wav,data/clotho/wind-sound-from-inside-car.wav,is there more than one car present?,0,donor_pool_own_residual,0,4.5
+17,16,data/clotho/0221 Bar_terrace.wav,data/clotho/STE-031 italian road.wav,Are there only males?,1,own_pool_donor_residual,1,-5.125
+17,16,data/clotho/0221 Bar_terrace.wav,data/clotho/STE-031 italian road.wav,Are there only males?,1,donor_pool_own_residual,1,-5.1875
+17,16,data/clotho/110422_village_dusk.wav,data/clotho/Silencyo_CC_Field_Cicadas_French Children Playing_Wind_Dog_Distant Traffic.wav,Are multiple species heard through?,0,own_pool_donor_residual,0,5.0625
+17,16,data/clotho/110422_village_dusk.wav,data/clotho/Silencyo_CC_Field_Cicadas_French Children Playing_Wind_Dog_Distant Traffic.wav,Are multiple species heard through?,0,donor_pool_own_residual,0,4.625
+17,16,"data/clotho/INT Factory budimka, pozega.wav",data/clotho/110422_village_dusk.wav,Does the flat slapping at the beginning happen more than once?,1,own_pool_donor_residual,0,6.3125
+17,16,"data/clotho/INT Factory budimka, pozega.wav",data/clotho/110422_village_dusk.wav,Does the flat slapping at the beginning happen more than once?,1,donor_pool_own_residual,0,5.8125
+17,16,data/clotho/CalmWaves SandBeach 03 EQ 130430_03.wav,data/clotho/watertab.wav,Is the sound of the water crashing the only thing that can be heard?,0,own_pool_donor_residual,1,-4.5625
+17,16,data/clotho/CalmWaves SandBeach 03 EQ 130430_03.wav,data/clotho/watertab.wav,Is the sound of the water crashing the only thing that can be heard?,0,donor_pool_own_residual,1,-4.375
+17,16,data/clotho/20080416.buzz.stereo.wav,data/clotho/CalmWaves SandBeach 03 EQ 130430_03.wav,Are there birds chirping in the background ?,0,own_pool_donor_residual,1,-1.5
+17,16,data/clotho/20080416.buzz.stereo.wav,data/clotho/CalmWaves SandBeach 03 EQ 130430_03.wav,Are there birds chirping in the background ?,0,donor_pool_own_residual,0,2.25
+17,16,data/clotho/People talking while waiting the bus.wav,data/clotho/Kocking door and open door.wav,Are the people singing together?,1,own_pool_donor_residual,1,-2.5625
+17,16,data/clotho/People talking while waiting the bus.wav,data/clotho/Kocking door and open door.wav,Are the people singing together?,1,donor_pool_own_residual,1,-2.9375
+17,16,data/clotho/crowd booing.wav,data/clotho/rain_on_a_roof_01.wav,do the women vastly outnumber the men?,0,own_pool_donor_residual,1,-4.125
+17,16,data/clotho/crowd booing.wav,data/clotho/rain_on_a_roof_01.wav,do the women vastly outnumber the men?,0,donor_pool_own_residual,0,0.0
+17,16,data/clotho/crowd booing.wav,data/clotho/rain_on_a_roof_01.wav,Is the person alone?,1,own_pool_donor_residual,1,-4.375
+17,16,data/clotho/crowd booing.wav,data/clotho/rain_on_a_roof_01.wav,Is the person alone?,1,donor_pool_own_residual,1,-2.9375
+17,16,data/clotho/london-st-james-park-feeding-the-birds.wav,data/clotho/1122thrum.wav,Is this sound coming from one single source?,1,own_pool_donor_residual,1,-3.875
+17,16,data/clotho/london-st-james-park-feeding-the-birds.wav,data/clotho/1122thrum.wav,Is this sound coming from one single source?,1,donor_pool_own_residual,1,-2.625
+17,16,data/clotho/greece_naxos_cicadas_4.wav,data/clotho/LondonTraffic.wav,are many people speaking?,1,own_pool_donor_residual,1,-5.1875
+17,16,data/clotho/greece_naxos_cicadas_4.wav,data/clotho/LondonTraffic.wav,are many people speaking?,1,donor_pool_own_residual,1,-4.4375
+17,16,data/clotho/HammerDrill.wav,data/clotho/greece_naxos_cicadas_4.wav,Are there multiple instruments?,0,own_pool_donor_residual,1,-0.375
+17,16,data/clotho/HammerDrill.wav,data/clotho/greece_naxos_cicadas_4.wav,Are there multiple instruments?,0,donor_pool_own_residual,1,-2.0625
+17,16,data/clotho/Heavy Rain 1.wav,data/clotho/pencil on paper.wav,Are there multiple people talking in the rain?,1,own_pool_donor_residual,1,-0.875
+17,16,data/clotho/Heavy Rain 1.wav,data/clotho/pencil on paper.wav,Are there multiple people talking in the rain?,1,donor_pool_own_residual,1,-0.25
+17,16,data/clotho/Lambs.wav,data/clotho/Heavy Rain 1.wav,Are people chatting in the background?,1,own_pool_donor_residual,1,-0.75
+17,16,data/clotho/Lambs.wav,data/clotho/Heavy Rain 1.wav,Are people chatting in the background?,1,donor_pool_own_residual,0,1.625
+17,16,data/clotho/street steps child car.wav,data/clotho/cat_purr_1.wav,Are the people isolated?,1,own_pool_donor_residual,1,-5.1875
+17,16,data/clotho/street steps child car.wav,data/clotho/cat_purr_1.wav,Are the people isolated?,1,donor_pool_own_residual,1,-5.125
+17,16,data/clotho/electric-screwdriver.wav,data/clotho/creeeeek-GAIN_01.wav,Can a car be heard in the background?,1,own_pool_donor_residual,1,-2.375
+17,16,data/clotho/electric-screwdriver.wav,data/clotho/creeeeek-GAIN_01.wav,Can a car be heard in the background?,1,donor_pool_own_residual,1,-2.125
+17,16,data/clotho/WasherSpinCycle.wav,data/clotho/nxSample012.wav,Can a group of people be heard speaking?,1,own_pool_donor_residual,1,-3.1875
+17,16,data/clotho/WasherSpinCycle.wav,data/clotho/nxSample012.wav,Can a group of people be heard speaking?,1,donor_pool_own_residual,1,-3.4375
+17,16,data/clotho/Forest Birds .wav,data/clotho/helicopter.wav,Is there conclusive evidence that there are multiple people heard?,1,own_pool_donor_residual,1,-2.1875
+17,16,data/clotho/Forest Birds .wav,data/clotho/helicopter.wav,Is there conclusive evidence that there are multiple people heard?,1,donor_pool_own_residual,1,-3.875
+17,16,data/clotho/Rain WashingtonSt 1.wav,data/clotho/April dawn chorus Sydenham Hill.wav,Is there a lot of thunder?,1,own_pool_donor_residual,1,-5.25
+17,16,data/clotho/Rain WashingtonSt 1.wav,data/clotho/April dawn chorus Sydenham Hill.wav,Is there a lot of thunder?,1,donor_pool_own_residual,1,-4.375
+17,16,data/clotho/espresso-maschine.wav,data/clotho/Truck starts and stops_edit.wav,Is a motor running in the background ?,0,own_pool_donor_residual,0,3.125
+17,16,data/clotho/espresso-maschine.wav,data/clotho/Truck starts and stops_edit.wav,Is a motor running in the background ?,0,donor_pool_own_residual,0,3.0625
+17,16,data/clotho/auto-rickshaw-trip.wav,data/clotho/STE-027FIRE.wav,Is there more than one vehicle?,0,own_pool_donor_residual,0,2.375
+17,16,data/clotho/auto-rickshaw-trip.wav,data/clotho/STE-027FIRE.wav,Is there more than one vehicle?,0,donor_pool_own_residual,0,5.1875
+17,16,data/clotho/rotatingdome.wav,data/clotho/Hyeres street voices ambience f.wav,Can a crowd be heard speaking in the background?,1,own_pool_donor_residual,0,2.75
+17,16,data/clotho/rotatingdome.wav,data/clotho/Hyeres street voices ambience f.wav,Can a crowd be heard speaking in the background?,1,donor_pool_own_residual,0,3.0
+17,16,data/clotho/glas-bubbels-def01.wav,data/clotho/Rusty old boat.wav,Is there a cow in the background?,1,own_pool_donor_residual,1,-0.5
+17,16,data/clotho/glas-bubbels-def01.wav,data/clotho/Rusty old boat.wav,Is there a cow in the background?,1,donor_pool_own_residual,1,-2.5625
+17,16,data/clotho/Breaking Glass .wav,data/clotho/NYC Subway Train Approach Doors Announce Depart.wav,Does the glass break four separate times?,1,own_pool_donor_residual,0,2.25
+17,16,data/clotho/Breaking Glass .wav,data/clotho/NYC Subway Train Approach Doors Announce Depart.wav,Does the glass break four separate times?,1,donor_pool_own_residual,0,4.1875
+17,16,data/clotho/Serving Water Quickly.wav,data/clotho/Frogs in town.wav,Are several glasses being poured?,0,own_pool_donor_residual,1,-0.875
+17,16,data/clotho/Serving Water Quickly.wav,data/clotho/Frogs in town.wav,Are several glasses being poured?,0,donor_pool_own_residual,0,2.875
+17,16,data/clotho/Tibetan Bells 192kHz Original.wav,data/clotho/La Barca i La Tempesta.wav,Does the high pitched noise only happen once ?,1,own_pool_donor_residual,1,-0.125
+17,16,data/clotho/Tibetan Bells 192kHz Original.wav,data/clotho/La Barca i La Tempesta.wav,Does the high pitched noise only happen once ?,1,donor_pool_own_residual,0,0.625
+17,16,data/clotho/SheryT_mixdown.wav,data/clotho/elevator going up open closed door 20161025.wav,Are there several people chatting?,0,own_pool_donor_residual,0,1.0
+17,16,data/clotho/SheryT_mixdown.wav,data/clotho/elevator going up open closed door 20161025.wav,Are there several people chatting?,0,donor_pool_own_residual,0,1.0
+23,4,data/clotho/Plane crash - black box.wav,data/clotho/crumpleTissuePaper.wav,are there two different voices?,0,own_pool_donor_residual,1,-1.125
+23,4,data/clotho/Plane crash - black box.wav,data/clotho/crumpleTissuePaper.wav,are there two different voices?,0,donor_pool_own_residual,1,-0.875
+23,4,data/clotho/Traffic Light.wav,data/clotho/Plane crash - black box.wav,Are there people talking in the background?,0,own_pool_donor_residual,0,0.0
+23,4,data/clotho/Traffic Light.wav,data/clotho/Plane crash - black box.wav,Are there people talking in the background?,0,donor_pool_own_residual,1,-0.875
+23,4,data/clotho/Traffic Light.wav,data/clotho/Plane crash - black box.wav,Is there complete silence in the background?,1,own_pool_donor_residual,1,-2.375
+23,4,data/clotho/Traffic Light.wav,data/clotho/Plane crash - black box.wav,Is there complete silence in the background?,1,donor_pool_own_residual,1,-2.25
+23,4,data/clotho/20141026 Bangkok House Traffic Thunder Bird 01.wav,data/clotho/indoors house dorm dormitory ambient room tone distant motor.wav,Was there a lot of honking?,1,own_pool_donor_residual,0,0.625
+23,4,data/clotho/20141026 Bangkok House Traffic Thunder Bird 01.wav,data/clotho/indoors house dorm dormitory ambient room tone distant motor.wav,Was there a lot of honking?,1,donor_pool_own_residual,1,-1.0
+23,4,data/clotho/CityPark Evening Moerputten NL 130510_01.wav,data/clotho/Fuente Cotino 2.wav,Is there more than one bird chirping?,0,own_pool_donor_residual,1,-0.25
+23,4,data/clotho/CityPark Evening Moerputten NL 130510_01.wav,data/clotho/Fuente Cotino 2.wav,Is there more than one bird chirping?,0,donor_pool_own_residual,0,4.3125
+23,4,data/clotho/greece_melanes_cofee_1.wav,data/clotho/CityPark Evening Moerputten NL 130510_01.wav,Are there birds in the background?,0,own_pool_donor_residual,0,2.8125
+23,4,data/clotho/greece_melanes_cofee_1.wav,data/clotho/CityPark Evening Moerputten NL 130510_01.wav,Are there birds in the background?,0,donor_pool_own_residual,0,0.75
+23,4,data/clotho/Hanoi street walking.wav,data/clotho/laundry.machine.wav,Is there more than one person around?,0,own_pool_donor_residual,1,-1.0
+23,4,data/clotho/Hanoi street walking.wav,data/clotho/laundry.machine.wav,Is there more than one person around?,0,donor_pool_own_residual,1,-2.125
+23,4,data/clotho/UnionStation06OutBack_BusyOutside.wav,data/clotho/Page turns and book close_open.wav,Is the person alone?,1,own_pool_donor_residual,1,-3.0
+23,4,data/clotho/UnionStation06OutBack_BusyOutside.wav,data/clotho/Page turns and book close_open.wav,Is the person alone?,1,donor_pool_own_residual,1,-3.125
+23,4,data/clotho/Charleston Campus Summer.wav,data/clotho/birdy.wav,Is there more than one person present?,0,own_pool_donor_residual,1,-1.75
+23,4,data/clotho/Charleston Campus Summer.wav,data/clotho/birdy.wav,Is there more than one person present?,0,donor_pool_own_residual,1,-1.875
+23,4,data/clotho/2013-03-28 rain in the rainforest.wav,data/clotho/Song Birds-Lighthouse Park-March.wav,Is there a group of people?,1,own_pool_donor_residual,1,-0.625
+23,4,data/clotho/2013-03-28 rain in the rainforest.wav,data/clotho/Song Birds-Lighthouse Park-March.wav,Is there a group of people?,1,donor_pool_own_residual,1,-1.1875
+23,4,data/clotho/WavesOnTheShore.wav,data/clotho/2013-03-28 rain in the rainforest.wav,Can more that a dozen people be heard?,1,own_pool_donor_residual,0,2.625
+23,4,data/clotho/WavesOnTheShore.wav,data/clotho/2013-03-28 rain in the rainforest.wav,Can more that a dozen people be heard?,1,donor_pool_own_residual,0,2.625
+23,4,data/clotho/street_ambience_day.wav,data/clotho/FOLEY_Ext_Garbage_Hauling_001.wav,Is the person alone?,1,own_pool_donor_residual,1,-1.625
+23,4,data/clotho/street_ambience_day.wav,data/clotho/FOLEY_Ext_Garbage_Hauling_001.wav,Is the person alone?,1,donor_pool_own_residual,1,-2.5
+23,4,data/clotho/Sukhapha anchor chain.wav,data/clotho/17-Year Cicada Mating Call.wav,Are there people nearby?,0,own_pool_donor_residual,1,-2.25
+23,4,data/clotho/Sukhapha anchor chain.wav,data/clotho/17-Year Cicada Mating Call.wav,Are there people nearby?,0,donor_pool_own_residual,1,-3.375
+23,4,data/clotho/Sukhapha anchor chain.wav,data/clotho/17-Year Cicada Mating Call.wav,does only one guy speak?,1,own_pool_donor_residual,0,0.125
+23,4,data/clotho/Sukhapha anchor chain.wav,data/clotho/17-Year Cicada Mating Call.wav,does only one guy speak?,1,donor_pool_own_residual,1,-0.875
+23,4,"data/clotho/Walla chatter, adults and children in auditorium.wav",data/clotho/waves_1.wav,Is there more than one person in the group?,0,own_pool_donor_residual,1,-0.625
+23,4,"data/clotho/Walla chatter, adults and children in auditorium.wav",data/clotho/waves_1.wav,Is there more than one person in the group?,0,donor_pool_own_residual,0,2.25
+23,4,data/clotho/Los Angeles Bus Ride.wav,data/clotho/Lluvia agosto 2011.wav,Is there more than one voice?,0,own_pool_donor_residual,1,-1.875
+23,4,data/clotho/Los Angeles Bus Ride.wav,data/clotho/Lluvia agosto 2011.wav,Is there more than one voice?,0,donor_pool_own_residual,0,2.4375
+23,4,data/clotho/medical car horn EGYPT Alexandria.wav,data/clotho/Cafeteria Ambience.wav,Does the emergency vehicle stop in front of the person?,1,own_pool_donor_residual,1,-1.5
+23,4,data/clotho/medical car horn EGYPT Alexandria.wav,data/clotho/Cafeteria Ambience.wav,Does the emergency vehicle stop in front of the person?,1,donor_pool_own_residual,1,-3.1875
+23,4,data/clotho/Coffeehouse Ambience Burlington VT 0112xx.wav,data/clotho/medical car horn EGYPT Alexandria.wav,Are there both male and female voices?,0,own_pool_donor_residual,0,0.25
+23,4,data/clotho/Coffeehouse Ambience Burlington VT 0112xx.wav,data/clotho/medical car horn EGYPT Alexandria.wav,Are there both male and female voices?,0,donor_pool_own_residual,1,-1.5
+23,4,data/clotho/20110422_shower.wav,data/clotho/Distorted AM Radio noise.wav,Are a variety of birds singing?,0,own_pool_donor_residual,0,0.0
+23,4,data/clotho/20110422_shower.wav,data/clotho/Distorted AM Radio noise.wav,Are a variety of birds singing?,0,donor_pool_own_residual,0,2.8125
+23,4,data/clotho/STE-031 italian road.wav,data/clotho/wind-sound-from-inside-car.wav,is there more than one car present?,0,own_pool_donor_residual,0,2.375
+23,4,data/clotho/STE-031 italian road.wav,data/clotho/wind-sound-from-inside-car.wav,is there more than one car present?,0,donor_pool_own_residual,0,5.0625
+23,4,data/clotho/0221 Bar_terrace.wav,data/clotho/STE-031 italian road.wav,Are there only males?,1,own_pool_donor_residual,1,-4.625
+23,4,data/clotho/0221 Bar_terrace.wav,data/clotho/STE-031 italian road.wav,Are there only males?,1,donor_pool_own_residual,1,-5.375
+23,4,data/clotho/110422_village_dusk.wav,data/clotho/Silencyo_CC_Field_Cicadas_French Children Playing_Wind_Dog_Distant Traffic.wav,Are multiple species heard through?,0,own_pool_donor_residual,0,4.8125
+23,4,data/clotho/110422_village_dusk.wav,data/clotho/Silencyo_CC_Field_Cicadas_French Children Playing_Wind_Dog_Distant Traffic.wav,Are multiple species heard through?,0,donor_pool_own_residual,0,4.3125
+23,4,"data/clotho/INT Factory budimka, pozega.wav",data/clotho/110422_village_dusk.wav,Does the flat slapping at the beginning happen more than once?,1,own_pool_donor_residual,0,4.625
+23,4,"data/clotho/INT Factory budimka, pozega.wav",data/clotho/110422_village_dusk.wav,Does the flat slapping at the beginning happen more than once?,1,donor_pool_own_residual,0,5.875
+23,4,data/clotho/CalmWaves SandBeach 03 EQ 130430_03.wav,data/clotho/watertab.wav,Is the sound of the water crashing the only thing that can be heard?,0,own_pool_donor_residual,1,-3.375
+23,4,data/clotho/CalmWaves SandBeach 03 EQ 130430_03.wav,data/clotho/watertab.wav,Is the sound of the water crashing the only thing that can be heard?,0,donor_pool_own_residual,1,-2.875
+23,4,data/clotho/20080416.buzz.stereo.wav,data/clotho/CalmWaves SandBeach 03 EQ 130430_03.wav,Are there birds chirping in the background ?,0,own_pool_donor_residual,1,-0.125
+23,4,data/clotho/20080416.buzz.stereo.wav,data/clotho/CalmWaves SandBeach 03 EQ 130430_03.wav,Are there birds chirping in the background ?,0,donor_pool_own_residual,0,3.625
+23,4,data/clotho/People talking while waiting the bus.wav,data/clotho/Kocking door and open door.wav,Are the people singing together?,1,own_pool_donor_residual,1,-1.3125
+23,4,data/clotho/People talking while waiting the bus.wav,data/clotho/Kocking door and open door.wav,Are the people singing together?,1,donor_pool_own_residual,1,-1.875
+23,4,data/clotho/crowd booing.wav,data/clotho/rain_on_a_roof_01.wav,do the women vastly outnumber the men?,0,own_pool_donor_residual,1,-2.8125
+23,4,data/clotho/crowd booing.wav,data/clotho/rain_on_a_roof_01.wav,do the women vastly outnumber the men?,0,donor_pool_own_residual,0,0.5
+23,4,data/clotho/crowd booing.wav,data/clotho/rain_on_a_roof_01.wav,Is the person alone?,1,own_pool_donor_residual,1,-4.1875
+23,4,data/clotho/crowd booing.wav,data/clotho/rain_on_a_roof_01.wav,Is the person alone?,1,donor_pool_own_residual,1,-2.5
+23,4,data/clotho/london-st-james-park-feeding-the-birds.wav,data/clotho/1122thrum.wav,Is this sound coming from one single source?,1,own_pool_donor_residual,1,-4.1875
+23,4,data/clotho/london-st-james-park-feeding-the-birds.wav,data/clotho/1122thrum.wav,Is this sound coming from one single source?,1,donor_pool_own_residual,1,-2.875
+23,4,data/clotho/greece_naxos_cicadas_4.wav,data/clotho/LondonTraffic.wav,are many people speaking?,1,own_pool_donor_residual,1,-2.8125
+23,4,data/clotho/greece_naxos_cicadas_4.wav,data/clotho/LondonTraffic.wav,are many people speaking?,1,donor_pool_own_residual,1,-1.9375
+23,4,data/clotho/HammerDrill.wav,data/clotho/greece_naxos_cicadas_4.wav,Are there multiple instruments?,0,own_pool_donor_residual,1,-0.625
+23,4,data/clotho/HammerDrill.wav,data/clotho/greece_naxos_cicadas_4.wav,Are there multiple instruments?,0,donor_pool_own_residual,1,-2.0
+23,4,data/clotho/Heavy Rain 1.wav,data/clotho/pencil on paper.wav,Are there multiple people talking in the rain?,1,own_pool_donor_residual,0,0.5
+23,4,data/clotho/Heavy Rain 1.wav,data/clotho/pencil on paper.wav,Are there multiple people talking in the rain?,1,donor_pool_own_residual,0,1.25
+23,4,data/clotho/Lambs.wav,data/clotho/Heavy Rain 1.wav,Are people chatting in the background?,1,own_pool_donor_residual,0,2.125
+23,4,data/clotho/Lambs.wav,data/clotho/Heavy Rain 1.wav,Are people chatting in the background?,1,donor_pool_own_residual,0,3.3125
+23,4,data/clotho/street steps child car.wav,data/clotho/cat_purr_1.wav,Are the people isolated?,1,own_pool_donor_residual,1,-3.8125
+23,4,data/clotho/street steps child car.wav,data/clotho/cat_purr_1.wav,Are the people isolated?,1,donor_pool_own_residual,1,-4.1875
+23,4,data/clotho/electric-screwdriver.wav,data/clotho/creeeeek-GAIN_01.wav,Can a car be heard in the background?,1,own_pool_donor_residual,1,-1.75
+23,4,data/clotho/electric-screwdriver.wav,data/clotho/creeeeek-GAIN_01.wav,Can a car be heard in the background?,1,donor_pool_own_residual,1,-1.8125
+23,4,data/clotho/WasherSpinCycle.wav,data/clotho/nxSample012.wav,Can a group of people be heard speaking?,1,own_pool_donor_residual,1,-3.25
+23,4,data/clotho/WasherSpinCycle.wav,data/clotho/nxSample012.wav,Can a group of people be heard speaking?,1,donor_pool_own_residual,1,-3.5
+23,4,data/clotho/Forest Birds .wav,data/clotho/helicopter.wav,Is there conclusive evidence that there are multiple people heard?,1,own_pool_donor_residual,1,-1.625
+23,4,data/clotho/Forest Birds .wav,data/clotho/helicopter.wav,Is there conclusive evidence that there are multiple people heard?,1,donor_pool_own_residual,1,-1.8125
+23,4,data/clotho/Rain WashingtonSt 1.wav,data/clotho/April dawn chorus Sydenham Hill.wav,Is there a lot of thunder?,1,own_pool_donor_residual,1,-4.875
+23,4,data/clotho/Rain WashingtonSt 1.wav,data/clotho/April dawn chorus Sydenham Hill.wav,Is there a lot of thunder?,1,donor_pool_own_residual,1,-2.75
+23,4,data/clotho/espresso-maschine.wav,data/clotho/Truck starts and stops_edit.wav,Is a motor running in the background ?,0,own_pool_donor_residual,0,1.375
+23,4,data/clotho/espresso-maschine.wav,data/clotho/Truck starts and stops_edit.wav,Is a motor running in the background ?,0,donor_pool_own_residual,0,2.25
+23,4,data/clotho/auto-rickshaw-trip.wav,data/clotho/STE-027FIRE.wav,Is there more than one vehicle?,0,own_pool_donor_residual,0,2.875
+23,4,data/clotho/auto-rickshaw-trip.wav,data/clotho/STE-027FIRE.wav,Is there more than one vehicle?,0,donor_pool_own_residual,0,5.6875
+23,4,data/clotho/rotatingdome.wav,data/clotho/Hyeres street voices ambience f.wav,Can a crowd be heard speaking in the background?,1,own_pool_donor_residual,0,3.625
+23,4,data/clotho/rotatingdome.wav,data/clotho/Hyeres street voices ambience f.wav,Can a crowd be heard speaking in the background?,1,donor_pool_own_residual,0,3.0
+23,4,data/clotho/glas-bubbels-def01.wav,data/clotho/Rusty old boat.wav,Is there a cow in the background?,1,own_pool_donor_residual,1,-0.25
+23,4,data/clotho/glas-bubbels-def01.wav,data/clotho/Rusty old boat.wav,Is there a cow in the background?,1,donor_pool_own_residual,1,-2.1875
+23,4,data/clotho/Breaking Glass .wav,data/clotho/NYC Subway Train Approach Doors Announce Depart.wav,Does the glass break four separate times?,1,own_pool_donor_residual,0,2.25
+23,4,data/clotho/Breaking Glass .wav,data/clotho/NYC Subway Train Approach Doors Announce Depart.wav,Does the glass break four separate times?,1,donor_pool_own_residual,0,4.0
+23,4,data/clotho/Serving Water Quickly.wav,data/clotho/Frogs in town.wav,Are several glasses being poured?,0,own_pool_donor_residual,0,0.375
+23,4,data/clotho/Serving Water Quickly.wav,data/clotho/Frogs in town.wav,Are several glasses being poured?,0,donor_pool_own_residual,0,4.375
+23,4,data/clotho/Tibetan Bells 192kHz Original.wav,data/clotho/La Barca i La Tempesta.wav,Does the high pitched noise only happen once ?,1,own_pool_donor_residual,0,0.0
+23,4,data/clotho/Tibetan Bells 192kHz Original.wav,data/clotho/La Barca i La Tempesta.wav,Does the high pitched noise only happen once ?,1,donor_pool_own_residual,0,0.375
+23,4,data/clotho/SheryT_mixdown.wav,data/clotho/elevator going up open closed door 20161025.wav,Are there several people chatting?,0,own_pool_donor_residual,0,1.625
+23,4,data/clotho/SheryT_mixdown.wav,data/clotho/elevator going up open closed door 20161025.wav,Are there several people chatting?,0,donor_pool_own_residual,0,3.125
+23,16,data/clotho/Plane crash - black box.wav,data/clotho/crumpleTissuePaper.wav,are there two different voices?,0,own_pool_donor_residual,1,-2.5625
+23,16,data/clotho/Plane crash - black box.wav,data/clotho/crumpleTissuePaper.wav,are there two different voices?,0,donor_pool_own_residual,1,-2.25
+23,16,data/clotho/Traffic Light.wav,data/clotho/Plane crash - black box.wav,Are there people talking in the background?,0,own_pool_donor_residual,1,-1.875
+23,16,data/clotho/Traffic Light.wav,data/clotho/Plane crash - black box.wav,Are there people talking in the background?,0,donor_pool_own_residual,1,-1.125
+23,16,data/clotho/Traffic Light.wav,data/clotho/Plane crash - black box.wav,Is there complete silence in the background?,1,own_pool_donor_residual,1,-2.625
+23,16,data/clotho/Traffic Light.wav,data/clotho/Plane crash - black box.wav,Is there complete silence in the background?,1,donor_pool_own_residual,1,-3.625
+23,16,data/clotho/20141026 Bangkok House Traffic Thunder Bird 01.wav,data/clotho/indoors house dorm dormitory ambient room tone distant motor.wav,Was there a lot of honking?,1,own_pool_donor_residual,1,-2.4375
+23,16,data/clotho/20141026 Bangkok House Traffic Thunder Bird 01.wav,data/clotho/indoors house dorm dormitory ambient room tone distant motor.wav,Was there a lot of honking?,1,donor_pool_own_residual,1,-2.5625
+23,16,data/clotho/CityPark Evening Moerputten NL 130510_01.wav,data/clotho/Fuente Cotino 2.wav,Is there more than one bird chirping?,0,own_pool_donor_residual,1,-3.3125
+23,16,data/clotho/CityPark Evening Moerputten NL 130510_01.wav,data/clotho/Fuente Cotino 2.wav,Is there more than one bird chirping?,0,donor_pool_own_residual,0,5.0
+23,16,data/clotho/greece_melanes_cofee_1.wav,data/clotho/CityPark Evening Moerputten NL 130510_01.wav,Are there birds in the background?,0,own_pool_donor_residual,0,4.0
+23,16,data/clotho/greece_melanes_cofee_1.wav,data/clotho/CityPark Evening Moerputten NL 130510_01.wav,Are there birds in the background?,0,donor_pool_own_residual,0,1.125
+23,16,data/clotho/Hanoi street walking.wav,data/clotho/laundry.machine.wav,Is there more than one person around?,0,own_pool_donor_residual,1,-1.125
+23,16,data/clotho/Hanoi street walking.wav,data/clotho/laundry.machine.wav,Is there more than one person around?,0,donor_pool_own_residual,1,-2.25
+23,16,data/clotho/UnionStation06OutBack_BusyOutside.wav,data/clotho/Page turns and book close_open.wav,Is the person alone?,1,own_pool_donor_residual,1,-2.75
+23,16,data/clotho/UnionStation06OutBack_BusyOutside.wav,data/clotho/Page turns and book close_open.wav,Is the person alone?,1,donor_pool_own_residual,1,-3.1875
+23,16,data/clotho/Charleston Campus Summer.wav,data/clotho/birdy.wav,Is there more than one person present?,0,own_pool_donor_residual,1,-3.1875
+23,16,data/clotho/Charleston Campus Summer.wav,data/clotho/birdy.wav,Is there more than one person present?,0,donor_pool_own_residual,1,-3.4375
+23,16,data/clotho/2013-03-28 rain in the rainforest.wav,data/clotho/Song Birds-Lighthouse Park-March.wav,Is there a group of people?,1,own_pool_donor_residual,1,-1.25
+23,16,data/clotho/2013-03-28 rain in the rainforest.wav,data/clotho/Song Birds-Lighthouse Park-March.wav,Is there a group of people?,1,donor_pool_own_residual,1,-2.25
+23,16,data/clotho/WavesOnTheShore.wav,data/clotho/2013-03-28 rain in the rainforest.wav,Can more that a dozen people be heard?,1,own_pool_donor_residual,0,0.75
+23,16,data/clotho/WavesOnTheShore.wav,data/clotho/2013-03-28 rain in the rainforest.wav,Can more that a dozen people be heard?,1,donor_pool_own_residual,0,1.0
+23,16,data/clotho/street_ambience_day.wav,data/clotho/FOLEY_Ext_Garbage_Hauling_001.wav,Is the person alone?,1,own_pool_donor_residual,1,-1.875
+23,16,data/clotho/street_ambience_day.wav,data/clotho/FOLEY_Ext_Garbage_Hauling_001.wav,Is the person alone?,1,donor_pool_own_residual,1,-4.25
+23,16,data/clotho/Sukhapha anchor chain.wav,data/clotho/17-Year Cicada Mating Call.wav,Are there people nearby?,0,own_pool_donor_residual,1,-1.9375
+23,16,data/clotho/Sukhapha anchor chain.wav,data/clotho/17-Year Cicada Mating Call.wav,Are there people nearby?,0,donor_pool_own_residual,1,-2.0625
+23,16,data/clotho/Sukhapha anchor chain.wav,data/clotho/17-Year Cicada Mating Call.wav,does only one guy speak?,1,own_pool_donor_residual,1,-0.125
+23,16,data/clotho/Sukhapha anchor chain.wav,data/clotho/17-Year Cicada Mating Call.wav,does only one guy speak?,1,donor_pool_own_residual,1,-1.0
+23,16,"data/clotho/Walla chatter, adults and children in auditorium.wav",data/clotho/waves_1.wav,Is there more than one person in the group?,0,own_pool_donor_residual,1,-2.625
+23,16,"data/clotho/Walla chatter, adults and children in auditorium.wav",data/clotho/waves_1.wav,Is there more than one person in the group?,0,donor_pool_own_residual,0,2.5
+23,16,data/clotho/Los Angeles Bus Ride.wav,data/clotho/Lluvia agosto 2011.wav,Is there more than one voice?,0,own_pool_donor_residual,1,-2.625
+23,16,data/clotho/Los Angeles Bus Ride.wav,data/clotho/Lluvia agosto 2011.wav,Is there more than one voice?,0,donor_pool_own_residual,0,2.625
+23,16,data/clotho/medical car horn EGYPT Alexandria.wav,data/clotho/Cafeteria Ambience.wav,Does the emergency vehicle stop in front of the person?,1,own_pool_donor_residual,1,-1.125
+23,16,data/clotho/medical car horn EGYPT Alexandria.wav,data/clotho/Cafeteria Ambience.wav,Does the emergency vehicle stop in front of the person?,1,donor_pool_own_residual,1,-2.9375
+23,16,data/clotho/Coffeehouse Ambience Burlington VT 0112xx.wav,data/clotho/medical car horn EGYPT Alexandria.wav,Are there both male and female voices?,0,own_pool_donor_residual,0,0.25
+23,16,data/clotho/Coffeehouse Ambience Burlington VT 0112xx.wav,data/clotho/medical car horn EGYPT Alexandria.wav,Are there both male and female voices?,0,donor_pool_own_residual,0,0.375
+23,16,data/clotho/20110422_shower.wav,data/clotho/Distorted AM Radio noise.wav,Are a variety of birds singing?,0,own_pool_donor_residual,1,-2.9375
+23,16,data/clotho/20110422_shower.wav,data/clotho/Distorted AM Radio noise.wav,Are a variety of birds singing?,0,donor_pool_own_residual,0,1.625
+23,16,data/clotho/STE-031 italian road.wav,data/clotho/wind-sound-from-inside-car.wav,is there more than one car present?,0,own_pool_donor_residual,0,2.5
+23,16,data/clotho/STE-031 italian road.wav,data/clotho/wind-sound-from-inside-car.wav,is there more than one car present?,0,donor_pool_own_residual,0,4.4375
+23,16,data/clotho/0221 Bar_terrace.wav,data/clotho/STE-031 italian road.wav,Are there only males?,1,own_pool_donor_residual,1,-5.3125
+23,16,data/clotho/0221 Bar_terrace.wav,data/clotho/STE-031 italian road.wav,Are there only males?,1,donor_pool_own_residual,1,-5.8125
+23,16,data/clotho/110422_village_dusk.wav,data/clotho/Silencyo_CC_Field_Cicadas_French Children Playing_Wind_Dog_Distant Traffic.wav,Are multiple species heard through?,0,own_pool_donor_residual,0,5.6875
+23,16,data/clotho/110422_village_dusk.wav,data/clotho/Silencyo_CC_Field_Cicadas_French Children Playing_Wind_Dog_Distant Traffic.wav,Are multiple species heard through?,0,donor_pool_own_residual,0,5.0625
+23,16,"data/clotho/INT Factory budimka, pozega.wav",data/clotho/110422_village_dusk.wav,Does the flat slapping at the beginning happen more than once?,1,own_pool_donor_residual,0,5.3125
+23,16,"data/clotho/INT Factory budimka, pozega.wav",data/clotho/110422_village_dusk.wav,Does the flat slapping at the beginning happen more than once?,1,donor_pool_own_residual,0,5.75
+23,16,data/clotho/CalmWaves SandBeach 03 EQ 130430_03.wav,data/clotho/watertab.wav,Is the sound of the water crashing the only thing that can be heard?,0,own_pool_donor_residual,1,-4.75
+23,16,data/clotho/CalmWaves SandBeach 03 EQ 130430_03.wav,data/clotho/watertab.wav,Is the sound of the water crashing the only thing that can be heard?,0,donor_pool_own_residual,1,-4.5625
+23,16,data/clotho/20080416.buzz.stereo.wav,data/clotho/CalmWaves SandBeach 03 EQ 130430_03.wav,Are there birds chirping in the background ?,0,own_pool_donor_residual,1,-1.5
+23,16,data/clotho/20080416.buzz.stereo.wav,data/clotho/CalmWaves SandBeach 03 EQ 130430_03.wav,Are there birds chirping in the background ?,0,donor_pool_own_residual,0,0.25
+23,16,data/clotho/People talking while waiting the bus.wav,data/clotho/Kocking door and open door.wav,Are the people singing together?,1,own_pool_donor_residual,1,-2.6875
+23,16,data/clotho/People talking while waiting the bus.wav,data/clotho/Kocking door and open door.wav,Are the people singing together?,1,donor_pool_own_residual,1,-3.4375
+23,16,data/clotho/crowd booing.wav,data/clotho/rain_on_a_roof_01.wav,do the women vastly outnumber the men?,0,own_pool_donor_residual,1,-4.5
+23,16,data/clotho/crowd booing.wav,data/clotho/rain_on_a_roof_01.wav,do the women vastly outnumber the men?,0,donor_pool_own_residual,0,0.0
+23,16,data/clotho/crowd booing.wav,data/clotho/rain_on_a_roof_01.wav,Is the person alone?,1,own_pool_donor_residual,1,-4.5625
+23,16,data/clotho/crowd booing.wav,data/clotho/rain_on_a_roof_01.wav,Is the person alone?,1,donor_pool_own_residual,1,-3.125
+23,16,data/clotho/london-st-james-park-feeding-the-birds.wav,data/clotho/1122thrum.wav,Is this sound coming from one single source?,1,own_pool_donor_residual,1,-3.9375
+23,16,data/clotho/london-st-james-park-feeding-the-birds.wav,data/clotho/1122thrum.wav,Is this sound coming from one single source?,1,donor_pool_own_residual,1,-3.3125
+23,16,data/clotho/greece_naxos_cicadas_4.wav,data/clotho/LondonTraffic.wav,are many people speaking?,1,own_pool_donor_residual,1,-5.1875
+23,16,data/clotho/greece_naxos_cicadas_4.wav,data/clotho/LondonTraffic.wav,are many people speaking?,1,donor_pool_own_residual,1,-4.0625
+23,16,data/clotho/HammerDrill.wav,data/clotho/greece_naxos_cicadas_4.wav,Are there multiple instruments?,0,own_pool_donor_residual,1,-0.875
+23,16,data/clotho/HammerDrill.wav,data/clotho/greece_naxos_cicadas_4.wav,Are there multiple instruments?,0,donor_pool_own_residual,1,-2.1875
+23,16,data/clotho/Heavy Rain 1.wav,data/clotho/pencil on paper.wav,Are there multiple people talking in the rain?,1,own_pool_donor_residual,1,-0.625
+23,16,data/clotho/Heavy Rain 1.wav,data/clotho/pencil on paper.wav,Are there multiple people talking in the rain?,1,donor_pool_own_residual,0,0.0
+23,16,data/clotho/Lambs.wav,data/clotho/Heavy Rain 1.wav,Are people chatting in the background?,1,own_pool_donor_residual,1,-0.5
+23,16,data/clotho/Lambs.wav,data/clotho/Heavy Rain 1.wav,Are people chatting in the background?,1,donor_pool_own_residual,0,2.25
+23,16,data/clotho/street steps child car.wav,data/clotho/cat_purr_1.wav,Are the people isolated?,1,own_pool_donor_residual,1,-5.0
+23,16,data/clotho/street steps child car.wav,data/clotho/cat_purr_1.wav,Are the people isolated?,1,donor_pool_own_residual,1,-5.25
+23,16,data/clotho/electric-screwdriver.wav,data/clotho/creeeeek-GAIN_01.wav,Can a car be heard in the background?,1,own_pool_donor_residual,1,-2.8125
+23,16,data/clotho/electric-screwdriver.wav,data/clotho/creeeeek-GAIN_01.wav,Can a car be heard in the background?,1,donor_pool_own_residual,1,-2.9375
+23,16,data/clotho/WasherSpinCycle.wav,data/clotho/nxSample012.wav,Can a group of people be heard speaking?,1,own_pool_donor_residual,1,-3.875
+23,16,data/clotho/WasherSpinCycle.wav,data/clotho/nxSample012.wav,Can a group of people be heard speaking?,1,donor_pool_own_residual,1,-4.0625
+23,16,data/clotho/Forest Birds .wav,data/clotho/helicopter.wav,Is there conclusive evidence that there are multiple people heard?,1,own_pool_donor_residual,1,-2.6875
+23,16,data/clotho/Forest Birds .wav,data/clotho/helicopter.wav,Is there conclusive evidence that there are multiple people heard?,1,donor_pool_own_residual,1,-3.625
+23,16,data/clotho/Rain WashingtonSt 1.wav,data/clotho/April dawn chorus Sydenham Hill.wav,Is there a lot of thunder?,1,own_pool_donor_residual,1,-5.6875
+23,16,data/clotho/Rain WashingtonSt 1.wav,data/clotho/April dawn chorus Sydenham Hill.wav,Is there a lot of thunder?,1,donor_pool_own_residual,1,-4.9375
+23,16,data/clotho/espresso-maschine.wav,data/clotho/Truck starts and stops_edit.wav,Is a motor running in the background ?,0,own_pool_donor_residual,0,2.8125
+23,16,data/clotho/espresso-maschine.wav,data/clotho/Truck starts and stops_edit.wav,Is a motor running in the background ?,0,donor_pool_own_residual,0,2.9375
+23,16,data/clotho/auto-rickshaw-trip.wav,data/clotho/STE-027FIRE.wav,Is there more than one vehicle?,0,own_pool_donor_residual,0,2.75
+23,16,data/clotho/auto-rickshaw-trip.wav,data/clotho/STE-027FIRE.wav,Is there more than one vehicle?,0,donor_pool_own_residual,0,5.4375
+23,16,data/clotho/rotatingdome.wav,data/clotho/Hyeres street voices ambience f.wav,Can a crowd be heard speaking in the background?,1,own_pool_donor_residual,0,3.375
+23,16,data/clotho/rotatingdome.wav,data/clotho/Hyeres street voices ambience f.wav,Can a crowd be heard speaking in the background?,1,donor_pool_own_residual,0,2.75
+23,16,data/clotho/glas-bubbels-def01.wav,data/clotho/Rusty old boat.wav,Is there a cow in the background?,1,own_pool_donor_residual,1,-0.25
+23,16,data/clotho/glas-bubbels-def01.wav,data/clotho/Rusty old boat.wav,Is there a cow in the background?,1,donor_pool_own_residual,1,-3.3125
+23,16,data/clotho/Breaking Glass .wav,data/clotho/NYC Subway Train Approach Doors Announce Depart.wav,Does the glass break four separate times?,1,own_pool_donor_residual,0,2.125
+23,16,data/clotho/Breaking Glass .wav,data/clotho/NYC Subway Train Approach Doors Announce Depart.wav,Does the glass break four separate times?,1,donor_pool_own_residual,0,4.125
+23,16,data/clotho/Serving Water Quickly.wav,data/clotho/Frogs in town.wav,Are several glasses being poured?,0,own_pool_donor_residual,0,0.25
+23,16,data/clotho/Serving Water Quickly.wav,data/clotho/Frogs in town.wav,Are several glasses being poured?,0,donor_pool_own_residual,0,2.5625
+23,16,data/clotho/Tibetan Bells 192kHz Original.wav,data/clotho/La Barca i La Tempesta.wav,Does the high pitched noise only happen once ?,1,own_pool_donor_residual,1,-0.25
+23,16,data/clotho/Tibetan Bells 192kHz Original.wav,data/clotho/La Barca i La Tempesta.wav,Does the high pitched noise only happen once ?,1,donor_pool_own_residual,0,0.5
+23,16,data/clotho/SheryT_mixdown.wav,data/clotho/elevator going up open closed door 20161025.wav,Are there several people chatting?,0,own_pool_donor_residual,0,0.5
+23,16,data/clotho/SheryT_mixdown.wav,data/clotho/elevator going up open closed door 20161025.wav,Are there several people chatting?,0,donor_pool_own_residual,0,2.25
+41,4,data/clotho/Plane crash - black box.wav,data/clotho/crumpleTissuePaper.wav,are there two different voices?,0,own_pool_donor_residual,1,-1.0
+41,4,data/clotho/Plane crash - black box.wav,data/clotho/crumpleTissuePaper.wav,are there two different voices?,0,donor_pool_own_residual,1,-0.625
+41,4,data/clotho/Traffic Light.wav,data/clotho/Plane crash - black box.wav,Are there people talking in the background?,0,own_pool_donor_residual,1,-0.125
+41,4,data/clotho/Traffic Light.wav,data/clotho/Plane crash - black box.wav,Are there people talking in the background?,0,donor_pool_own_residual,1,-0.125
+41,4,data/clotho/Traffic Light.wav,data/clotho/Plane crash - black box.wav,Is there complete silence in the background?,1,own_pool_donor_residual,1,-2.75
+41,4,data/clotho/Traffic Light.wav,data/clotho/Plane crash - black box.wav,Is there complete silence in the background?,1,donor_pool_own_residual,1,-2.0
+41,4,data/clotho/20141026 Bangkok House Traffic Thunder Bird 01.wav,data/clotho/indoors house dorm dormitory ambient room tone distant motor.wav,Was there a lot of honking?,1,own_pool_donor_residual,0,1.125
+41,4,data/clotho/20141026 Bangkok House Traffic Thunder Bird 01.wav,data/clotho/indoors house dorm dormitory ambient room tone distant motor.wav,Was there a lot of honking?,1,donor_pool_own_residual,1,-0.375
+41,4,data/clotho/CityPark Evening Moerputten NL 130510_01.wav,data/clotho/Fuente Cotino 2.wav,Is there more than one bird chirping?,0,own_pool_donor_residual,1,-0.125
+41,4,data/clotho/CityPark Evening Moerputten NL 130510_01.wav,data/clotho/Fuente Cotino 2.wav,Is there more than one bird chirping?,0,donor_pool_own_residual,0,3.8125
+41,4,data/clotho/greece_melanes_cofee_1.wav,data/clotho/CityPark Evening Moerputten NL 130510_01.wav,Are there birds in the background?,0,own_pool_donor_residual,0,2.4375
+41,4,data/clotho/greece_melanes_cofee_1.wav,data/clotho/CityPark Evening Moerputten NL 130510_01.wav,Are there birds in the background?,0,donor_pool_own_residual,0,0.625
+41,4,data/clotho/Hanoi street walking.wav,data/clotho/laundry.machine.wav,Is there more than one person around?,0,own_pool_donor_residual,1,-0.5
+41,4,data/clotho/Hanoi street walking.wav,data/clotho/laundry.machine.wav,Is there more than one person around?,0,donor_pool_own_residual,1,-1.625
+41,4,data/clotho/UnionStation06OutBack_BusyOutside.wav,data/clotho/Page turns and book close_open.wav,Is the person alone?,1,own_pool_donor_residual,1,-2.9375
+41,4,data/clotho/UnionStation06OutBack_BusyOutside.wav,data/clotho/Page turns and book close_open.wav,Is the person alone?,1,donor_pool_own_residual,1,-3.125
+41,4,data/clotho/Charleston Campus Summer.wav,data/clotho/birdy.wav,Is there more than one person present?,0,own_pool_donor_residual,1,-1.25
+41,4,data/clotho/Charleston Campus Summer.wav,data/clotho/birdy.wav,Is there more than one person present?,0,donor_pool_own_residual,1,-1.375
+41,4,data/clotho/2013-03-28 rain in the rainforest.wav,data/clotho/Song Birds-Lighthouse Park-March.wav,Is there a group of people?,1,own_pool_donor_residual,1,-0.375
+41,4,data/clotho/2013-03-28 rain in the rainforest.wav,data/clotho/Song Birds-Lighthouse Park-March.wav,Is there a group of people?,1,donor_pool_own_residual,1,-1.0625
+41,4,data/clotho/WavesOnTheShore.wav,data/clotho/2013-03-28 rain in the rainforest.wav,Can more that a dozen people be heard?,1,own_pool_donor_residual,0,2.8125
+41,4,data/clotho/WavesOnTheShore.wav,data/clotho/2013-03-28 rain in the rainforest.wav,Can more that a dozen people be heard?,1,donor_pool_own_residual,0,2.875
+41,4,data/clotho/street_ambience_day.wav,data/clotho/FOLEY_Ext_Garbage_Hauling_001.wav,Is the person alone?,1,own_pool_donor_residual,1,-1.75
+41,4,data/clotho/street_ambience_day.wav,data/clotho/FOLEY_Ext_Garbage_Hauling_001.wav,Is the person alone?,1,donor_pool_own_residual,1,-2.625
+41,4,data/clotho/Sukhapha anchor chain.wav,data/clotho/17-Year Cicada Mating Call.wav,Are there people nearby?,0,own_pool_donor_residual,1,-2.3125
+41,4,data/clotho/Sukhapha anchor chain.wav,data/clotho/17-Year Cicada Mating Call.wav,Are there people nearby?,0,donor_pool_own_residual,1,-3.0625
+41,4,data/clotho/Sukhapha anchor chain.wav,data/clotho/17-Year Cicada Mating Call.wav,does only one guy speak?,1,own_pool_donor_residual,0,0.125
+41,4,data/clotho/Sukhapha anchor chain.wav,data/clotho/17-Year Cicada Mating Call.wav,does only one guy speak?,1,donor_pool_own_residual,1,-0.75
+41,4,"data/clotho/Walla chatter, adults and children in auditorium.wav",data/clotho/waves_1.wav,Is there more than one person in the group?,0,own_pool_donor_residual,1,-0.125
+41,4,"data/clotho/Walla chatter, adults and children in auditorium.wav",data/clotho/waves_1.wav,Is there more than one person in the group?,0,donor_pool_own_residual,0,2.25
+41,4,data/clotho/Los Angeles Bus Ride.wav,data/clotho/Lluvia agosto 2011.wav,Is there more than one voice?,0,own_pool_donor_residual,1,-1.875
+41,4,data/clotho/Los Angeles Bus Ride.wav,data/clotho/Lluvia agosto 2011.wav,Is there more than one voice?,0,donor_pool_own_residual,0,1.5
+41,4,data/clotho/medical car horn EGYPT Alexandria.wav,data/clotho/Cafeteria Ambience.wav,Does the emergency vehicle stop in front of the person?,1,own_pool_donor_residual,1,-1.0
+41,4,data/clotho/medical car horn EGYPT Alexandria.wav,data/clotho/Cafeteria Ambience.wav,Does the emergency vehicle stop in front of the person?,1,donor_pool_own_residual,1,-2.375
+41,4,data/clotho/Coffeehouse Ambience Burlington VT 0112xx.wav,data/clotho/medical car horn EGYPT Alexandria.wav,Are there both male and female voices?,0,own_pool_donor_residual,0,0.5
+41,4,data/clotho/Coffeehouse Ambience Burlington VT 0112xx.wav,data/clotho/medical car horn EGYPT Alexandria.wav,Are there both male and female voices?,0,donor_pool_own_residual,1,-0.5
+41,4,data/clotho/20110422_shower.wav,data/clotho/Distorted AM Radio noise.wav,Are a variety of birds singing?,0,own_pool_donor_residual,0,1.3125
+41,4,data/clotho/20110422_shower.wav,data/clotho/Distorted AM Radio noise.wav,Are a variety of birds singing?,0,donor_pool_own_residual,0,3.375
+41,4,data/clotho/STE-031 italian road.wav,data/clotho/wind-sound-from-inside-car.wav,is there more than one car present?,0,own_pool_donor_residual,0,2.625
+41,4,data/clotho/STE-031 italian road.wav,data/clotho/wind-sound-from-inside-car.wav,is there more than one car present?,0,donor_pool_own_residual,0,5.0
+41,4,data/clotho/0221 Bar_terrace.wav,data/clotho/STE-031 italian road.wav,Are there only males?,1,own_pool_donor_residual,1,-4.6875
+41,4,data/clotho/0221 Bar_terrace.wav,data/clotho/STE-031 italian road.wav,Are there only males?,1,donor_pool_own_residual,1,-5.125
+41,4,data/clotho/110422_village_dusk.wav,data/clotho/Silencyo_CC_Field_Cicadas_French Children Playing_Wind_Dog_Distant Traffic.wav,Are multiple species heard through?,0,own_pool_donor_residual,0,4.625
+41,4,data/clotho/110422_village_dusk.wav,data/clotho/Silencyo_CC_Field_Cicadas_French Children Playing_Wind_Dog_Distant Traffic.wav,Are multiple species heard through?,0,donor_pool_own_residual,0,4.1875
+41,4,"data/clotho/INT Factory budimka, pozega.wav",data/clotho/110422_village_dusk.wav,Does the flat slapping at the beginning happen more than once?,1,own_pool_donor_residual,0,4.8125
+41,4,"data/clotho/INT Factory budimka, pozega.wav",data/clotho/110422_village_dusk.wav,Does the flat slapping at the beginning happen more than once?,1,donor_pool_own_residual,0,5.5625
+41,4,data/clotho/CalmWaves SandBeach 03 EQ 130430_03.wav,data/clotho/watertab.wav,Is the sound of the water crashing the only thing that can be heard?,0,own_pool_donor_residual,1,-3.3125
+41,4,data/clotho/CalmWaves SandBeach 03 EQ 130430_03.wav,data/clotho/watertab.wav,Is the sound of the water crashing the only thing that can be heard?,0,donor_pool_own_residual,1,-2.875
+41,4,data/clotho/20080416.buzz.stereo.wav,data/clotho/CalmWaves SandBeach 03 EQ 130430_03.wav,Are there birds chirping in the background ?,0,own_pool_donor_residual,0,0.25
+41,4,data/clotho/20080416.buzz.stereo.wav,data/clotho/CalmWaves SandBeach 03 EQ 130430_03.wav,Are there birds chirping in the background ?,0,donor_pool_own_residual,0,1.625
+41,4,data/clotho/People talking while waiting the bus.wav,data/clotho/Kocking door and open door.wav,Are the people singing together?,1,own_pool_donor_residual,1,-0.5
+41,4,data/clotho/People talking while waiting the bus.wav,data/clotho/Kocking door and open door.wav,Are the people singing together?,1,donor_pool_own_residual,1,-1.375
+41,4,data/clotho/crowd booing.wav,data/clotho/rain_on_a_roof_01.wav,do the women vastly outnumber the men?,0,own_pool_donor_residual,1,-2.4375
+41,4,data/clotho/crowd booing.wav,data/clotho/rain_on_a_roof_01.wav,do the women vastly outnumber the men?,0,donor_pool_own_residual,0,0.625
+41,4,data/clotho/crowd booing.wav,data/clotho/rain_on_a_roof_01.wav,Is the person alone?,1,own_pool_donor_residual,1,-3.9375
+41,4,data/clotho/crowd booing.wav,data/clotho/rain_on_a_roof_01.wav,Is the person alone?,1,donor_pool_own_residual,1,-2.1875
+41,4,data/clotho/london-st-james-park-feeding-the-birds.wav,data/clotho/1122thrum.wav,Is this sound coming from one single source?,1,own_pool_donor_residual,1,-4.5
+41,4,data/clotho/london-st-james-park-feeding-the-birds.wav,data/clotho/1122thrum.wav,Is this sound coming from one single source?,1,donor_pool_own_residual,1,-3.0
+41,4,data/clotho/greece_naxos_cicadas_4.wav,data/clotho/LondonTraffic.wav,are many people speaking?,1,own_pool_donor_residual,1,-2.5625
+41,4,data/clotho/greece_naxos_cicadas_4.wav,data/clotho/LondonTraffic.wav,are many people speaking?,1,donor_pool_own_residual,1,-1.125
+41,4,data/clotho/HammerDrill.wav,data/clotho/greece_naxos_cicadas_4.wav,Are there multiple instruments?,0,own_pool_donor_residual,1,-0.5
+41,4,data/clotho/HammerDrill.wav,data/clotho/greece_naxos_cicadas_4.wav,Are there multiple instruments?,0,donor_pool_own_residual,1,-1.875
+41,4,data/clotho/Heavy Rain 1.wav,data/clotho/pencil on paper.wav,Are there multiple people talking in the rain?,1,own_pool_donor_residual,0,0.75
+41,4,data/clotho/Heavy Rain 1.wav,data/clotho/pencil on paper.wav,Are there multiple people talking in the rain?,1,donor_pool_own_residual,0,1.375
+41,4,data/clotho/Lambs.wav,data/clotho/Heavy Rain 1.wav,Are people chatting in the background?,1,own_pool_donor_residual,0,2.375
+41,4,data/clotho/Lambs.wav,data/clotho/Heavy Rain 1.wav,Are people chatting in the background?,1,donor_pool_own_residual,0,3.5
+41,4,data/clotho/street steps child car.wav,data/clotho/cat_purr_1.wav,Are the people isolated?,1,own_pool_donor_residual,1,-3.6875
+41,4,data/clotho/street steps child car.wav,data/clotho/cat_purr_1.wav,Are the people isolated?,1,donor_pool_own_residual,1,-4.0
+41,4,data/clotho/electric-screwdriver.wav,data/clotho/creeeeek-GAIN_01.wav,Can a car be heard in the background?,1,own_pool_donor_residual,1,-1.5
+41,4,data/clotho/electric-screwdriver.wav,data/clotho/creeeeek-GAIN_01.wav,Can a car be heard in the background?,1,donor_pool_own_residual,1,-2.0
+41,4,data/clotho/WasherSpinCycle.wav,data/clotho/nxSample012.wav,Can a group of people be heard speaking?,1,own_pool_donor_residual,1,-2.625
+41,4,data/clotho/WasherSpinCycle.wav,data/clotho/nxSample012.wav,Can a group of people be heard speaking?,1,donor_pool_own_residual,1,-3.1875
+41,4,data/clotho/Forest Birds .wav,data/clotho/helicopter.wav,Is there conclusive evidence that there are multiple people heard?,1,own_pool_donor_residual,1,-1.25
+41,4,data/clotho/Forest Birds .wav,data/clotho/helicopter.wav,Is there conclusive evidence that there are multiple people heard?,1,donor_pool_own_residual,1,-1.625
+41,4,data/clotho/Rain WashingtonSt 1.wav,data/clotho/April dawn chorus Sydenham Hill.wav,Is there a lot of thunder?,1,own_pool_donor_residual,1,-4.5
+41,4,data/clotho/Rain WashingtonSt 1.wav,data/clotho/April dawn chorus Sydenham Hill.wav,Is there a lot of thunder?,1,donor_pool_own_residual,1,-1.875
+41,4,data/clotho/espresso-maschine.wav,data/clotho/Truck starts and stops_edit.wav,Is a motor running in the background ?,0,own_pool_donor_residual,0,1.25
+41,4,data/clotho/espresso-maschine.wav,data/clotho/Truck starts and stops_edit.wav,Is a motor running in the background ?,0,donor_pool_own_residual,0,2.125
+41,4,data/clotho/auto-rickshaw-trip.wav,data/clotho/STE-027FIRE.wav,Is there more than one vehicle?,0,own_pool_donor_residual,0,2.875
+41,4,data/clotho/auto-rickshaw-trip.wav,data/clotho/STE-027FIRE.wav,Is there more than one vehicle?,0,donor_pool_own_residual,0,5.375
+41,4,data/clotho/rotatingdome.wav,data/clotho/Hyeres street voices ambience f.wav,Can a crowd be heard speaking in the background?,1,own_pool_donor_residual,0,3.0
+41,4,data/clotho/rotatingdome.wav,data/clotho/Hyeres street voices ambience f.wav,Can a crowd be heard speaking in the background?,1,donor_pool_own_residual,0,2.875
+41,4,data/clotho/glas-bubbels-def01.wav,data/clotho/Rusty old boat.wav,Is there a cow in the background?,1,own_pool_donor_residual,1,-0.125
+41,4,data/clotho/glas-bubbels-def01.wav,data/clotho/Rusty old boat.wav,Is there a cow in the background?,1,donor_pool_own_residual,1,-1.5
+41,4,data/clotho/Breaking Glass .wav,data/clotho/NYC Subway Train Approach Doors Announce Depart.wav,Does the glass break four separate times?,1,own_pool_donor_residual,0,2.625
+41,4,data/clotho/Breaking Glass .wav,data/clotho/NYC Subway Train Approach Doors Announce Depart.wav,Does the glass break four separate times?,1,donor_pool_own_residual,0,4.0625
+41,4,data/clotho/Serving Water Quickly.wav,data/clotho/Frogs in town.wav,Are several glasses being poured?,0,own_pool_donor_residual,0,1.625
+41,4,data/clotho/Serving Water Quickly.wav,data/clotho/Frogs in town.wav,Are several glasses being poured?,0,donor_pool_own_residual,0,4.1875
+41,4,data/clotho/Tibetan Bells 192kHz Original.wav,data/clotho/La Barca i La Tempesta.wav,Does the high pitched noise only happen once ?,1,own_pool_donor_residual,1,-0.125
+41,4,data/clotho/Tibetan Bells 192kHz Original.wav,data/clotho/La Barca i La Tempesta.wav,Does the high pitched noise only happen once ?,1,donor_pool_own_residual,0,0.25
+41,4,data/clotho/SheryT_mixdown.wav,data/clotho/elevator going up open closed door 20161025.wav,Are there several people chatting?,0,own_pool_donor_residual,0,2.125
+41,4,data/clotho/SheryT_mixdown.wav,data/clotho/elevator going up open closed door 20161025.wav,Are there several people chatting?,0,donor_pool_own_residual,0,4.125
+41,16,data/clotho/Plane crash - black box.wav,data/clotho/crumpleTissuePaper.wav,are there two different voices?,0,own_pool_donor_residual,1,-2.9375
+41,16,data/clotho/Plane crash - black box.wav,data/clotho/crumpleTissuePaper.wav,are there two different voices?,0,donor_pool_own_residual,1,-1.625
+41,16,data/clotho/Traffic Light.wav,data/clotho/Plane crash - black box.wav,Are there people talking in the background?,0,own_pool_donor_residual,1,-1.6875
+41,16,data/clotho/Traffic Light.wav,data/clotho/Plane crash - black box.wav,Are there people talking in the background?,0,donor_pool_own_residual,1,-1.375
+41,16,data/clotho/Traffic Light.wav,data/clotho/Plane crash - black box.wav,Is there complete silence in the background?,1,own_pool_donor_residual,1,-2.625
+41,16,data/clotho/Traffic Light.wav,data/clotho/Plane crash - black box.wav,Is there complete silence in the background?,1,donor_pool_own_residual,1,-3.125
+41,16,data/clotho/20141026 Bangkok House Traffic Thunder Bird 01.wav,data/clotho/indoors house dorm dormitory ambient room tone distant motor.wav,Was there a lot of honking?,1,own_pool_donor_residual,1,-1.9375
+41,16,data/clotho/20141026 Bangkok House Traffic Thunder Bird 01.wav,data/clotho/indoors house dorm dormitory ambient room tone distant motor.wav,Was there a lot of honking?,1,donor_pool_own_residual,1,-2.1875
+41,16,data/clotho/CityPark Evening Moerputten NL 130510_01.wav,data/clotho/Fuente Cotino 2.wav,Is there more than one bird chirping?,0,own_pool_donor_residual,1,-2.75
+41,16,data/clotho/CityPark Evening Moerputten NL 130510_01.wav,data/clotho/Fuente Cotino 2.wav,Is there more than one bird chirping?,0,donor_pool_own_residual,0,5.0
+41,16,data/clotho/greece_melanes_cofee_1.wav,data/clotho/CityPark Evening Moerputten NL 130510_01.wav,Are there birds in the background?,0,own_pool_donor_residual,0,4.0
+41,16,data/clotho/greece_melanes_cofee_1.wav,data/clotho/CityPark Evening Moerputten NL 130510_01.wav,Are there birds in the background?,0,donor_pool_own_residual,0,0.875
+41,16,data/clotho/Hanoi street walking.wav,data/clotho/laundry.machine.wav,Is there more than one person around?,0,own_pool_donor_residual,1,-0.375
+41,16,data/clotho/Hanoi street walking.wav,data/clotho/laundry.machine.wav,Is there more than one person around?,0,donor_pool_own_residual,1,-1.75
+41,16,data/clotho/UnionStation06OutBack_BusyOutside.wav,data/clotho/Page turns and book close_open.wav,Is the person alone?,1,own_pool_donor_residual,1,-2.375
+41,16,data/clotho/UnionStation06OutBack_BusyOutside.wav,data/clotho/Page turns and book close_open.wav,Is the person alone?,1,donor_pool_own_residual,1,-3.125
+41,16,data/clotho/Charleston Campus Summer.wav,data/clotho/birdy.wav,Is there more than one person present?,0,own_pool_donor_residual,1,-2.9375
+41,16,data/clotho/Charleston Campus Summer.wav,data/clotho/birdy.wav,Is there more than one person present?,0,donor_pool_own_residual,1,-2.9375
+41,16,data/clotho/2013-03-28 rain in the rainforest.wav,data/clotho/Song Birds-Lighthouse Park-March.wav,Is there a group of people?,1,own_pool_donor_residual,1,-1.375
+41,16,data/clotho/2013-03-28 rain in the rainforest.wav,data/clotho/Song Birds-Lighthouse Park-March.wav,Is there a group of people?,1,donor_pool_own_residual,1,-1.9375
+41,16,data/clotho/WavesOnTheShore.wav,data/clotho/2013-03-28 rain in the rainforest.wav,Can more that a dozen people be heard?,1,own_pool_donor_residual,0,0.375
+41,16,data/clotho/WavesOnTheShore.wav,data/clotho/2013-03-28 rain in the rainforest.wav,Can more that a dozen people be heard?,1,donor_pool_own_residual,0,0.75
+41,16,data/clotho/street_ambience_day.wav,data/clotho/FOLEY_Ext_Garbage_Hauling_001.wav,Is the person alone?,1,own_pool_donor_residual,1,-1.6875
+41,16,data/clotho/street_ambience_day.wav,data/clotho/FOLEY_Ext_Garbage_Hauling_001.wav,Is the person alone?,1,donor_pool_own_residual,1,-3.4375
+41,16,data/clotho/Sukhapha anchor chain.wav,data/clotho/17-Year Cicada Mating Call.wav,Are there people nearby?,0,own_pool_donor_residual,1,-2.1875
+41,16,data/clotho/Sukhapha anchor chain.wav,data/clotho/17-Year Cicada Mating Call.wav,Are there people nearby?,0,donor_pool_own_residual,1,-2.75
+41,16,data/clotho/Sukhapha anchor chain.wav,data/clotho/17-Year Cicada Mating Call.wav,does only one guy speak?,1,own_pool_donor_residual,0,0.125
+41,16,data/clotho/Sukhapha anchor chain.wav,data/clotho/17-Year Cicada Mating Call.wav,does only one guy speak?,1,donor_pool_own_residual,1,-0.625
+41,16,"data/clotho/Walla chatter, adults and children in auditorium.wav",data/clotho/waves_1.wav,Is there more than one person in the group?,0,own_pool_donor_residual,1,-2.5
+41,16,"data/clotho/Walla chatter, adults and children in auditorium.wav",data/clotho/waves_1.wav,Is there more than one person in the group?,0,donor_pool_own_residual,0,2.25
+41,16,data/clotho/Los Angeles Bus Ride.wav,data/clotho/Lluvia agosto 2011.wav,Is there more than one voice?,0,own_pool_donor_residual,1,-2.25
+41,16,data/clotho/Los Angeles Bus Ride.wav,data/clotho/Lluvia agosto 2011.wav,Is there more than one voice?,0,donor_pool_own_residual,0,2.75
+41,16,data/clotho/medical car horn EGYPT Alexandria.wav,data/clotho/Cafeteria Ambience.wav,Does the emergency vehicle stop in front of the person?,1,own_pool_donor_residual,1,-1.375
+41,16,data/clotho/medical car horn EGYPT Alexandria.wav,data/clotho/Cafeteria Ambience.wav,Does the emergency vehicle stop in front of the person?,1,donor_pool_own_residual,1,-2.125
+41,16,data/clotho/Coffeehouse Ambience Burlington VT 0112xx.wav,data/clotho/medical car horn EGYPT Alexandria.wav,Are there both male and female voices?,0,own_pool_donor_residual,0,1.125
+41,16,data/clotho/Coffeehouse Ambience Burlington VT 0112xx.wav,data/clotho/medical car horn EGYPT Alexandria.wav,Are there both male and female voices?,0,donor_pool_own_residual,0,0.5
+41,16,data/clotho/20110422_shower.wav,data/clotho/Distorted AM Radio noise.wav,Are a variety of birds singing?,0,own_pool_donor_residual,1,-2.1875
+41,16,data/clotho/20110422_shower.wav,data/clotho/Distorted AM Radio noise.wav,Are a variety of birds singing?,0,donor_pool_own_residual,0,3.875
+41,16,data/clotho/STE-031 italian road.wav,data/clotho/wind-sound-from-inside-car.wav,is there more than one car present?,0,own_pool_donor_residual,0,2.875
+41,16,data/clotho/STE-031 italian road.wav,data/clotho/wind-sound-from-inside-car.wav,is there more than one car present?,0,donor_pool_own_residual,0,4.5625
+41,16,data/clotho/0221 Bar_terrace.wav,data/clotho/STE-031 italian road.wav,Are there only males?,1,own_pool_donor_residual,1,-5.25
+41,16,data/clotho/0221 Bar_terrace.wav,data/clotho/STE-031 italian road.wav,Are there only males?,1,donor_pool_own_residual,1,-5.1875
+41,16,data/clotho/110422_village_dusk.wav,data/clotho/Silencyo_CC_Field_Cicadas_French Children Playing_Wind_Dog_Distant Traffic.wav,Are multiple species heard through?,0,own_pool_donor_residual,0,5.5
+41,16,data/clotho/110422_village_dusk.wav,data/clotho/Silencyo_CC_Field_Cicadas_French Children Playing_Wind_Dog_Distant Traffic.wav,Are multiple species heard through?,0,donor_pool_own_residual,0,4.3125
+41,16,"data/clotho/INT Factory budimka, pozega.wav",data/clotho/110422_village_dusk.wav,Does the flat slapping at the beginning happen more than once?,1,own_pool_donor_residual,0,5.75
+41,16,"data/clotho/INT Factory budimka, pozega.wav",data/clotho/110422_village_dusk.wav,Does the flat slapping at the beginning happen more than once?,1,donor_pool_own_residual,0,5.4375
+41,16,data/clotho/CalmWaves SandBeach 03 EQ 130430_03.wav,data/clotho/watertab.wav,Is the sound of the water crashing the only thing that can be heard?,0,own_pool_donor_residual,1,-4.75
+41,16,data/clotho/CalmWaves SandBeach 03 EQ 130430_03.wav,data/clotho/watertab.wav,Is the sound of the water crashing the only thing that can be heard?,0,donor_pool_own_residual,1,-4.4375
+41,16,data/clotho/20080416.buzz.stereo.wav,data/clotho/CalmWaves SandBeach 03 EQ 130430_03.wav,Are there birds chirping in the background ?,0,own_pool_donor_residual,1,-1.25
+41,16,data/clotho/20080416.buzz.stereo.wav,data/clotho/CalmWaves SandBeach 03 EQ 130430_03.wav,Are there birds chirping in the background ?,0,donor_pool_own_residual,0,2.875
+41,16,data/clotho/People talking while waiting the bus.wav,data/clotho/Kocking door and open door.wav,Are the people singing together?,1,own_pool_donor_residual,1,-2.5625
+41,16,data/clotho/People talking while waiting the bus.wav,data/clotho/Kocking door and open door.wav,Are the people singing together?,1,donor_pool_own_residual,1,-3.1875
+41,16,data/clotho/crowd booing.wav,data/clotho/rain_on_a_roof_01.wav,do the women vastly outnumber the men?,0,own_pool_donor_residual,1,-4.125
+41,16,data/clotho/crowd booing.wav,data/clotho/rain_on_a_roof_01.wav,do the women vastly outnumber the men?,0,donor_pool_own_residual,0,0.25
+41,16,data/clotho/crowd booing.wav,data/clotho/rain_on_a_roof_01.wav,Is the person alone?,1,own_pool_donor_residual,1,-4.4375
+41,16,data/clotho/crowd booing.wav,data/clotho/rain_on_a_roof_01.wav,Is the person alone?,1,donor_pool_own_residual,1,-3.25
+41,16,data/clotho/london-st-james-park-feeding-the-birds.wav,data/clotho/1122thrum.wav,Is this sound coming from one single source?,1,own_pool_donor_residual,1,-3.0625
+41,16,data/clotho/london-st-james-park-feeding-the-birds.wav,data/clotho/1122thrum.wav,Is this sound coming from one single source?,1,donor_pool_own_residual,1,-3.3125
+41,16,data/clotho/greece_naxos_cicadas_4.wav,data/clotho/LondonTraffic.wav,are many people speaking?,1,own_pool_donor_residual,1,-5.25
+41,16,data/clotho/greece_naxos_cicadas_4.wav,data/clotho/LondonTraffic.wav,are many people speaking?,1,donor_pool_own_residual,1,-4.25
+41,16,data/clotho/HammerDrill.wav,data/clotho/greece_naxos_cicadas_4.wav,Are there multiple instruments?,0,own_pool_donor_residual,1,-0.625
+41,16,data/clotho/HammerDrill.wav,data/clotho/greece_naxos_cicadas_4.wav,Are there multiple instruments?,0,donor_pool_own_residual,1,-2.5625
+41,16,data/clotho/Heavy Rain 1.wav,data/clotho/pencil on paper.wav,Are there multiple people talking in the rain?,1,own_pool_donor_residual,1,-0.875
+41,16,data/clotho/Heavy Rain 1.wav,data/clotho/pencil on paper.wav,Are there multiple people talking in the rain?,1,donor_pool_own_residual,0,0.5
+41,16,data/clotho/Lambs.wav,data/clotho/Heavy Rain 1.wav,Are people chatting in the background?,1,own_pool_donor_residual,0,0.125
+41,16,data/clotho/Lambs.wav,data/clotho/Heavy Rain 1.wav,Are people chatting in the background?,1,donor_pool_own_residual,0,2.125
+41,16,data/clotho/street steps child car.wav,data/clotho/cat_purr_1.wav,Are the people isolated?,1,own_pool_donor_residual,1,-5.3125
+41,16,data/clotho/street steps child car.wav,data/clotho/cat_purr_1.wav,Are the people isolated?,1,donor_pool_own_residual,1,-5.3125
+41,16,data/clotho/electric-screwdriver.wav,data/clotho/creeeeek-GAIN_01.wav,Can a car be heard in the background?,1,own_pool_donor_residual,1,-2.875
+41,16,data/clotho/electric-screwdriver.wav,data/clotho/creeeeek-GAIN_01.wav,Can a car be heard in the background?,1,donor_pool_own_residual,1,-2.75
+41,16,data/clotho/WasherSpinCycle.wav,data/clotho/nxSample012.wav,Can a group of people be heard speaking?,1,own_pool_donor_residual,1,-4.25
+41,16,data/clotho/WasherSpinCycle.wav,data/clotho/nxSample012.wav,Can a group of people be heard speaking?,1,donor_pool_own_residual,1,-4.25
+41,16,data/clotho/Forest Birds .wav,data/clotho/helicopter.wav,Is there conclusive evidence that there are multiple people heard?,1,own_pool_donor_residual,1,-2.125
+41,16,data/clotho/Forest Birds .wav,data/clotho/helicopter.wav,Is there conclusive evidence that there are multiple people heard?,1,donor_pool_own_residual,1,-3.0
+41,16,data/clotho/Rain WashingtonSt 1.wav,data/clotho/April dawn chorus Sydenham Hill.wav,Is there a lot of thunder?,1,own_pool_donor_residual,1,-5.75
+41,16,data/clotho/Rain WashingtonSt 1.wav,data/clotho/April dawn chorus Sydenham Hill.wav,Is there a lot of thunder?,1,donor_pool_own_residual,1,-4.8125
+41,16,data/clotho/espresso-maschine.wav,data/clotho/Truck starts and stops_edit.wav,Is a motor running in the background ?,0,own_pool_donor_residual,0,2.625
+41,16,data/clotho/espresso-maschine.wav,data/clotho/Truck starts and stops_edit.wav,Is a motor running in the background ?,0,donor_pool_own_residual,0,3.25
+41,16,data/clotho/auto-rickshaw-trip.wav,data/clotho/STE-027FIRE.wav,Is there more than one vehicle?,0,own_pool_donor_residual,0,2.875
+41,16,data/clotho/auto-rickshaw-trip.wav,data/clotho/STE-027FIRE.wav,Is there more than one vehicle?,0,donor_pool_own_residual,0,5.8125
+41,16,data/clotho/rotatingdome.wav,data/clotho/Hyeres street voices ambience f.wav,Can a crowd be heard speaking in the background?,1,own_pool_donor_residual,0,1.5
+41,16,data/clotho/rotatingdome.wav,data/clotho/Hyeres street voices ambience f.wav,Can a crowd be heard speaking in the background?,1,donor_pool_own_residual,0,2.625
+41,16,data/clotho/glas-bubbels-def01.wav,data/clotho/Rusty old boat.wav,Is there a cow in the background?,1,own_pool_donor_residual,1,-0.75
+41,16,data/clotho/glas-bubbels-def01.wav,data/clotho/Rusty old boat.wav,Is there a cow in the background?,1,donor_pool_own_residual,1,-2.3125
+41,16,data/clotho/Breaking Glass .wav,data/clotho/NYC Subway Train Approach Doors Announce Depart.wav,Does the glass break four separate times?,1,own_pool_donor_residual,0,2.625
+41,16,data/clotho/Breaking Glass .wav,data/clotho/NYC Subway Train Approach Doors Announce Depart.wav,Does the glass break four separate times?,1,donor_pool_own_residual,0,3.75
+41,16,data/clotho/Serving Water Quickly.wav,data/clotho/Frogs in town.wav,Are several glasses being poured?,0,own_pool_donor_residual,1,-0.25
+41,16,data/clotho/Serving Water Quickly.wav,data/clotho/Frogs in town.wav,Are several glasses being poured?,0,donor_pool_own_residual,0,1.875
+41,16,data/clotho/Tibetan Bells 192kHz Original.wav,data/clotho/La Barca i La Tempesta.wav,Does the high pitched noise only happen once ?,1,own_pool_donor_residual,1,-0.125
+41,16,data/clotho/Tibetan Bells 192kHz Original.wav,data/clotho/La Barca i La Tempesta.wav,Does the high pitched noise only happen once ?,1,donor_pool_own_residual,0,0.75
+41,16,data/clotho/SheryT_mixdown.wav,data/clotho/elevator going up open closed door 20161025.wav,Are there several people chatting?,0,own_pool_donor_residual,0,2.0
+41,16,data/clotho/SheryT_mixdown.wav,data/clotho/elevator going up open closed door 20161025.wav,Are there several people chatting?,0,donor_pool_own_residual,0,2.125

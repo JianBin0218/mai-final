@@ -1,0 +1,1228 @@
+[
+  {
+    "task": "natural",
+    "group": "natural-0",
+    "q": "Are birds chirping?",
+    "yes": "data/clotho/Frogs in town.wav",
+    "no": "data/clotho/helicopter.wav"
+  },
+  {
+    "task": "natural",
+    "group": "natural-1",
+    "q": "Are people talking?",
+    "yes": "data/clotho/UnionStation06OutBack_BusyOutside.wav",
+    "no": "data/clotho/Bath 01.wav"
+  },
+  {
+    "task": "natural",
+    "group": "natural-2",
+    "q": "Are people talking?",
+    "yes": "data/clotho/Hanoi streets.wav",
+    "no": "data/clotho/Night in nature.wav"
+  },
+  {
+    "task": "natural",
+    "group": "natural-3",
+    "q": "Are people talking?",
+    "yes": "data/clotho/Cafeteria Ambience.wav",
+    "no": "data/clotho/Nord_Odal_Nyhus_04_juni_2011_quiet_forest_birds_insects_leaf_rustle_03.wav"
+  },
+  {
+    "task": "natural",
+    "group": "natural-4",
+    "q": "Are people talking?",
+    "yes": "data/clotho/village bar.wav",
+    "no": "data/clotho/160917-eichelherr000.wav"
+  },
+  {
+    "task": "natural",
+    "group": "natural-5",
+    "q": "Are people talking in the background?",
+    "yes": "data/clotho/underpass.wav",
+    "no": "data/clotho/Wind Noise Backyard.wav"
+  },
+  {
+    "task": "natural",
+    "group": "natural-6",
+    "q": "Are there animals around?",
+    "yes": "data/clotho/Birds of Klein Profijt.wav",
+    "no": "data/clotho/AC Unit.wav"
+  },
+  {
+    "task": "natural",
+    "group": "natural-7",
+    "q": "Are there people talking?",
+    "yes": "data/clotho/street steps child car.wav",
+    "no": "data/clotho/laundry.machine.wav"
+  },
+  {
+    "task": "natural",
+    "group": "natural-8",
+    "q": "Is it raining?",
+    "yes": "data/clotho/Rain drops on marquee.wav",
+    "no": "data/clotho/Traffic Light.wav"
+  },
+  {
+    "task": "natural",
+    "group": "natural-9",
+    "q": "Is it raining?",
+    "yes": "data/clotho/LightRaininPinesMarch302013.wav",
+    "no": "data/clotho/Plane crash - black box.wav"
+  },
+  {
+    "task": "natural",
+    "group": "natural-10",
+    "q": "Is it raining?",
+    "yes": "data/clotho/outdoors ambient windy wind leaves rustle hum.wav",
+    "no": "data/clotho/Birdsong2.wav"
+  },
+  {
+    "task": "natural",
+    "group": "natural-11",
+    "q": "Is it raining?",
+    "yes": "data/clotho/Lluvia agosto 2011.wav",
+    "no": "data/clotho/110709_05 goma exhibit.wav"
+  },
+  {
+    "task": "natural",
+    "group": "natural-12",
+    "q": "Is it snowing?",
+    "yes": "data/clotho/CicadasAPedreira.wav",
+    "no": "data/clotho/Ronda - Fountain near the Town Hall (general) - Fuente cerca del Ayuntamiento (general).wav"
+  },
+  {
+    "task": "natural",
+    "group": "natural-13",
+    "q": "Is someone talking?",
+    "yes": "data/clotho/Walla chatter, adults and children in auditorium.wav",
+    "no": "data/clotho/espresso-maschine.wav"
+  },
+  {
+    "task": "natural",
+    "group": "natural-14",
+    "q": "Is the person alone?",
+    "yes": "data/clotho/Coffeehouse Ambience Burlington VT 0112xx.wav",
+    "no": "data/clotho/crowd booing.wav"
+  },
+  {
+    "task": "natural",
+    "group": "natural-15",
+    "q": "Is there a loud bang?",
+    "yes": "data/clotho/Cable Car Ride Birds.wav",
+    "no": "data/clotho/Bathroom.wav"
+  },
+  {
+    "task": "natural",
+    "group": "natural-16",
+    "q": "Is this in a bathroom?",
+    "yes": "data/clotho/RBH_Household_shower 03.wav",
+    "no": "data/clotho/20110422_shower.wav"
+  },
+  {
+    "task": "natural",
+    "group": "natural-17",
+    "q": "Is this in nature?",
+    "yes": "data/clotho/Gulls at beach.wav",
+    "no": "data/clotho/Autumnal Ambient 24 Bits 48 Khz.wav"
+  },
+  {
+    "task": "level",
+    "group": "esc-0",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-0-0-first.wav",
+    "no": "data/paired_evidence/level-0-0-second.wav",
+    "sources": [
+      "data/5-173568-A-33.wav",
+      "data/5-234247-A-37.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-0",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-0-0-second.wav",
+    "no": "data/paired_evidence/level-0-0-first.wav",
+    "sources": [
+      "data/5-173568-A-33.wav",
+      "data/5-234247-A-37.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-0",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-0-1-first.wav",
+    "no": "data/paired_evidence/level-0-1-second.wav",
+    "sources": [
+      "data/5-173568-A-33.wav",
+      "data/5-234247-A-37.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-0",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-0-1-second.wav",
+    "no": "data/paired_evidence/level-0-1-first.wav",
+    "sources": [
+      "data/5-173568-A-33.wav",
+      "data/5-234247-A-37.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-1",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-1-0-first.wav",
+    "no": "data/paired_evidence/level-1-0-second.wav",
+    "sources": [
+      "data/5-251957-A-47.wav",
+      "data/5-210540-A-13.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-1",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-1-0-second.wav",
+    "no": "data/paired_evidence/level-1-0-first.wav",
+    "sources": [
+      "data/5-251957-A-47.wav",
+      "data/5-210540-A-13.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-1",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-1-1-first.wav",
+    "no": "data/paired_evidence/level-1-1-second.wav",
+    "sources": [
+      "data/5-251957-A-47.wav",
+      "data/5-210540-A-13.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-1",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-1-1-second.wav",
+    "no": "data/paired_evidence/level-1-1-first.wav",
+    "sources": [
+      "data/5-251957-A-47.wav",
+      "data/5-210540-A-13.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-2",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-2-0-first.wav",
+    "no": "data/paired_evidence/level-2-0-second.wav",
+    "sources": [
+      "data/5-218981-A-30.wav",
+      "data/5-117250-A-2.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-2",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-2-0-second.wav",
+    "no": "data/paired_evidence/level-2-0-first.wav",
+    "sources": [
+      "data/5-218981-A-30.wav",
+      "data/5-117250-A-2.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-2",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-2-1-first.wav",
+    "no": "data/paired_evidence/level-2-1-second.wav",
+    "sources": [
+      "data/5-218981-A-30.wav",
+      "data/5-117250-A-2.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-2",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-2-1-second.wav",
+    "no": "data/paired_evidence/level-2-1-first.wav",
+    "sources": [
+      "data/5-218981-A-30.wav",
+      "data/5-117250-A-2.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-3",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-3-0-first.wav",
+    "no": "data/paired_evidence/level-3-0-second.wav",
+    "sources": [
+      "data/5-197121-B-45.wav",
+      "data/5-208624-A-38.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-3",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-3-0-second.wav",
+    "no": "data/paired_evidence/level-3-0-first.wav",
+    "sources": [
+      "data/5-197121-B-45.wav",
+      "data/5-208624-A-38.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-3",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-3-1-first.wav",
+    "no": "data/paired_evidence/level-3-1-second.wav",
+    "sources": [
+      "data/5-197121-B-45.wav",
+      "data/5-208624-A-38.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-3",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-3-1-second.wav",
+    "no": "data/paired_evidence/level-3-1-first.wav",
+    "sources": [
+      "data/5-197121-B-45.wav",
+      "data/5-208624-A-38.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-4",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-4-0-first.wav",
+    "no": "data/paired_evidence/level-4-0-second.wav",
+    "sources": [
+      "data/5-185516-A-27.wav",
+      "data/5-243459-B-14.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-4",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-4-0-second.wav",
+    "no": "data/paired_evidence/level-4-0-first.wav",
+    "sources": [
+      "data/5-185516-A-27.wav",
+      "data/5-243459-B-14.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-4",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-4-1-first.wav",
+    "no": "data/paired_evidence/level-4-1-second.wav",
+    "sources": [
+      "data/5-185516-A-27.wav",
+      "data/5-243459-B-14.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-4",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-4-1-second.wav",
+    "no": "data/paired_evidence/level-4-1-first.wav",
+    "sources": [
+      "data/5-185516-A-27.wav",
+      "data/5-243459-B-14.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-5",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-5-0-first.wav",
+    "no": "data/paired_evidence/level-5-0-second.wav",
+    "sources": [
+      "data/5-179496-B-16.wav",
+      "data/5-249748-A-28.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-5",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-5-0-second.wav",
+    "no": "data/paired_evidence/level-5-0-first.wav",
+    "sources": [
+      "data/5-179496-B-16.wav",
+      "data/5-249748-A-28.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-5",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-5-1-first.wav",
+    "no": "data/paired_evidence/level-5-1-second.wav",
+    "sources": [
+      "data/5-179496-B-16.wav",
+      "data/5-249748-A-28.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-5",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-5-1-second.wav",
+    "no": "data/paired_evidence/level-5-1-first.wav",
+    "sources": [
+      "data/5-179496-B-16.wav",
+      "data/5-249748-A-28.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-6",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-6-0-first.wav",
+    "no": "data/paired_evidence/level-6-0-second.wav",
+    "sources": [
+      "data/5-260434-A-39.wav",
+      "data/5-194892-A-10.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-6",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-6-0-second.wav",
+    "no": "data/paired_evidence/level-6-0-first.wav",
+    "sources": [
+      "data/5-260434-A-39.wav",
+      "data/5-194892-A-10.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-6",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-6-1-first.wav",
+    "no": "data/paired_evidence/level-6-1-second.wav",
+    "sources": [
+      "data/5-260434-A-39.wav",
+      "data/5-194892-A-10.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-6",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-6-1-second.wav",
+    "no": "data/paired_evidence/level-6-1-first.wav",
+    "sources": [
+      "data/5-260434-A-39.wav",
+      "data/5-194892-A-10.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-7",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-7-0-first.wav",
+    "no": "data/paired_evidence/level-7-0-second.wav",
+    "sources": [
+      "data/5-195518-A-7.wav",
+      "data/5-234335-A-23.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-7",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-7-0-second.wav",
+    "no": "data/paired_evidence/level-7-0-first.wav",
+    "sources": [
+      "data/5-195518-A-7.wav",
+      "data/5-234335-A-23.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-7",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-7-1-first.wav",
+    "no": "data/paired_evidence/level-7-1-second.wav",
+    "sources": [
+      "data/5-195518-A-7.wav",
+      "data/5-234335-A-23.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-7",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-7-1-second.wav",
+    "no": "data/paired_evidence/level-7-1-first.wav",
+    "sources": [
+      "data/5-195518-A-7.wav",
+      "data/5-234335-A-23.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-8",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-8-0-first.wav",
+    "no": "data/paired_evidence/level-8-0-second.wav",
+    "sources": [
+      "data/5-238926-A-31.wav",
+      "data/5-156999-C-19.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-8",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-8-0-second.wav",
+    "no": "data/paired_evidence/level-8-0-first.wav",
+    "sources": [
+      "data/5-238926-A-31.wav",
+      "data/5-156999-C-19.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-8",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-8-1-first.wav",
+    "no": "data/paired_evidence/level-8-1-second.wav",
+    "sources": [
+      "data/5-238926-A-31.wav",
+      "data/5-156999-C-19.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-8",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-8-1-second.wav",
+    "no": "data/paired_evidence/level-8-1-first.wav",
+    "sources": [
+      "data/5-238926-A-31.wav",
+      "data/5-156999-C-19.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-9",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-9-0-first.wav",
+    "no": "data/paired_evidence/level-9-0-second.wav",
+    "sources": [
+      "data/5-179865-A-43.wav",
+      "data/5-208030-A-0.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-9",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-9-0-second.wav",
+    "no": "data/paired_evidence/level-9-0-first.wav",
+    "sources": [
+      "data/5-179865-A-43.wav",
+      "data/5-208030-A-0.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-9",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-9-1-first.wav",
+    "no": "data/paired_evidence/level-9-1-second.wav",
+    "sources": [
+      "data/5-179865-A-43.wav",
+      "data/5-208030-A-0.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-9",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-9-1-second.wav",
+    "no": "data/paired_evidence/level-9-1-first.wav",
+    "sources": [
+      "data/5-179865-A-43.wav",
+      "data/5-208030-A-0.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-10",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-10-0-first.wav",
+    "no": "data/paired_evidence/level-10-0-second.wav",
+    "sources": [
+      "data/5-259514-A-26.wav",
+      "data/5-263902-A-36.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-10",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-10-0-second.wav",
+    "no": "data/paired_evidence/level-10-0-first.wav",
+    "sources": [
+      "data/5-259514-A-26.wav",
+      "data/5-263902-A-36.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-10",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-10-1-first.wav",
+    "no": "data/paired_evidence/level-10-1-second.wav",
+    "sources": [
+      "data/5-259514-A-26.wav",
+      "data/5-263902-A-36.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-10",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-10-1-second.wav",
+    "no": "data/paired_evidence/level-10-1-first.wav",
+    "sources": [
+      "data/5-259514-A-26.wav",
+      "data/5-263902-A-36.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-11",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-11-0-first.wav",
+    "no": "data/paired_evidence/level-11-0-second.wav",
+    "sources": [
+      "data/5-188716-A-46.wav",
+      "data/5-184871-A-24.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-11",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-11-0-second.wav",
+    "no": "data/paired_evidence/level-11-0-first.wav",
+    "sources": [
+      "data/5-188716-A-46.wav",
+      "data/5-184871-A-24.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-11",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-11-1-first.wav",
+    "no": "data/paired_evidence/level-11-1-second.wav",
+    "sources": [
+      "data/5-188716-A-46.wav",
+      "data/5-184871-A-24.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-11",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-11-1-second.wav",
+    "no": "data/paired_evidence/level-11-1-first.wav",
+    "sources": [
+      "data/5-188716-A-46.wav",
+      "data/5-184871-A-24.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-12",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-12-0-first.wav",
+    "no": "data/paired_evidence/level-12-0-second.wav",
+    "sources": [
+      "data/5-263490-A-25.wav",
+      "data/5-243635-A-29.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-12",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-12-0-second.wav",
+    "no": "data/paired_evidence/level-12-0-first.wav",
+    "sources": [
+      "data/5-263490-A-25.wav",
+      "data/5-243635-A-29.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-12",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-12-1-first.wav",
+    "no": "data/paired_evidence/level-12-1-second.wav",
+    "sources": [
+      "data/5-263490-A-25.wav",
+      "data/5-243635-A-29.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-12",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-12-1-second.wav",
+    "no": "data/paired_evidence/level-12-1-first.wav",
+    "sources": [
+      "data/5-263490-A-25.wav",
+      "data/5-243635-A-29.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-13",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-13-0-first.wav",
+    "no": "data/paired_evidence/level-13-0-second.wav",
+    "sources": [
+      "data/5-218494-A-22.wav",
+      "data/5-202220-A-21.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-13",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-13-0-second.wav",
+    "no": "data/paired_evidence/level-13-0-first.wav",
+    "sources": [
+      "data/5-218494-A-22.wav",
+      "data/5-202220-A-21.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-13",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-13-1-first.wav",
+    "no": "data/paired_evidence/level-13-1-second.wav",
+    "sources": [
+      "data/5-218494-A-22.wav",
+      "data/5-202220-A-21.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-13",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-13-1-second.wav",
+    "no": "data/paired_evidence/level-13-1-first.wav",
+    "sources": [
+      "data/5-218494-A-22.wav",
+      "data/5-202220-A-21.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-14",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-14-0-first.wav",
+    "no": "data/paired_evidence/level-14-0-second.wav",
+    "sources": [
+      "data/5-172299-A-5.wav",
+      "data/5-248341-B-6.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-14",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-14-0-second.wav",
+    "no": "data/paired_evidence/level-14-0-first.wav",
+    "sources": [
+      "data/5-172299-A-5.wav",
+      "data/5-248341-B-6.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-14",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-14-1-first.wav",
+    "no": "data/paired_evidence/level-14-1-second.wav",
+    "sources": [
+      "data/5-172299-A-5.wav",
+      "data/5-248341-B-6.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-14",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-14-1-second.wav",
+    "no": "data/paired_evidence/level-14-1-first.wav",
+    "sources": [
+      "data/5-172299-A-5.wav",
+      "data/5-248341-B-6.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-15",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-15-0-first.wav",
+    "no": "data/paired_evidence/level-15-0-second.wav",
+    "sources": [
+      "data/5-198891-B-8.wav",
+      "data/5-243773-B-44.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-15",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-15-0-second.wav",
+    "no": "data/paired_evidence/level-15-0-first.wav",
+    "sources": [
+      "data/5-198891-B-8.wav",
+      "data/5-243773-B-44.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-15",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-15-1-first.wav",
+    "no": "data/paired_evidence/level-15-1-second.wav",
+    "sources": [
+      "data/5-198891-B-8.wav",
+      "data/5-243773-B-44.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-15",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-15-1-second.wav",
+    "no": "data/paired_evidence/level-15-1-first.wav",
+    "sources": [
+      "data/5-198891-B-8.wav",
+      "data/5-243773-B-44.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-16",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-16-0-first.wav",
+    "no": "data/paired_evidence/level-16-0-second.wav",
+    "sources": [
+      "data/5-185579-A-41.wav",
+      "data/5-177957-D-40.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-16",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-16-0-second.wav",
+    "no": "data/paired_evidence/level-16-0-first.wav",
+    "sources": [
+      "data/5-185579-A-41.wav",
+      "data/5-177957-D-40.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-16",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-16-1-first.wav",
+    "no": "data/paired_evidence/level-16-1-second.wav",
+    "sources": [
+      "data/5-185579-A-41.wav",
+      "data/5-177957-D-40.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-16",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-16-1-second.wav",
+    "no": "data/paired_evidence/level-16-1-first.wav",
+    "sources": [
+      "data/5-185579-A-41.wav",
+      "data/5-177957-D-40.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-17",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-17-0-first.wav",
+    "no": "data/paired_evidence/level-17-0-second.wav",
+    "sources": [
+      "data/5-213836-D-9.wav",
+      "data/5-260011-A-34.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-17",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-17-0-second.wav",
+    "no": "data/paired_evidence/level-17-0-first.wav",
+    "sources": [
+      "data/5-213836-D-9.wav",
+      "data/5-260011-A-34.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-17",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-17-1-first.wav",
+    "no": "data/paired_evidence/level-17-1-second.wav",
+    "sources": [
+      "data/5-213836-D-9.wav",
+      "data/5-260011-A-34.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-17",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-17-1-second.wav",
+    "no": "data/paired_evidence/level-17-1-first.wav",
+    "sources": [
+      "data/5-213836-D-9.wav",
+      "data/5-260011-A-34.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-18",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-18-0-first.wav",
+    "no": "data/paired_evidence/level-18-0-second.wav",
+    "sources": [
+      "data/5-187201-B-4.wav",
+      "data/5-194899-C-3.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-18",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-18-0-second.wav",
+    "no": "data/paired_evidence/level-18-0-first.wav",
+    "sources": [
+      "data/5-187201-B-4.wav",
+      "data/5-194899-C-3.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-18",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-18-1-first.wav",
+    "no": "data/paired_evidence/level-18-1-second.wav",
+    "sources": [
+      "data/5-187201-B-4.wav",
+      "data/5-194899-C-3.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-18",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-18-1-second.wav",
+    "no": "data/paired_evidence/level-18-1-first.wav",
+    "sources": [
+      "data/5-187201-B-4.wav",
+      "data/5-194899-C-3.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-19",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-19-0-first.wav",
+    "no": "data/paired_evidence/level-19-0-second.wav",
+    "sources": [
+      "data/5-234923-A-32.wav",
+      "data/5-141683-A-35.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-19",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-19-0-second.wav",
+    "no": "data/paired_evidence/level-19-0-first.wav",
+    "sources": [
+      "data/5-234923-A-32.wav",
+      "data/5-141683-A-35.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-19",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-19-1-first.wav",
+    "no": "data/paired_evidence/level-19-1-second.wav",
+    "sources": [
+      "data/5-234923-A-32.wav",
+      "data/5-141683-A-35.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-19",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-19-1-second.wav",
+    "no": "data/paired_evidence/level-19-1-first.wav",
+    "sources": [
+      "data/5-234923-A-32.wav",
+      "data/5-141683-A-35.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-20",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-20-0-first.wav",
+    "no": "data/paired_evidence/level-20-0-second.wav",
+    "sources": [
+      "data/5-200334-B-1.wav",
+      "data/5-198411-G-20.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-20",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-20-0-second.wav",
+    "no": "data/paired_evidence/level-20-0-first.wav",
+    "sources": [
+      "data/5-200334-B-1.wav",
+      "data/5-198411-G-20.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-20",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-20-1-first.wav",
+    "no": "data/paired_evidence/level-20-1-second.wav",
+    "sources": [
+      "data/5-200334-B-1.wav",
+      "data/5-198411-G-20.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-20",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-20-1-second.wav",
+    "no": "data/paired_evidence/level-20-1-first.wav",
+    "sources": [
+      "data/5-200334-B-1.wav",
+      "data/5-198411-G-20.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-21",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-21-0-first.wav",
+    "no": "data/paired_evidence/level-21-0-second.wav",
+    "sources": [
+      "data/5-212736-A-17.wav",
+      "data/5-117120-A-42.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-21",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-21-0-second.wav",
+    "no": "data/paired_evidence/level-21-0-first.wav",
+    "sources": [
+      "data/5-212736-A-17.wav",
+      "data/5-117120-A-42.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-21",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-21-1-first.wav",
+    "no": "data/paired_evidence/level-21-1-second.wav",
+    "sources": [
+      "data/5-212736-A-17.wav",
+      "data/5-117120-A-42.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-21",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-21-1-second.wav",
+    "no": "data/paired_evidence/level-21-1-first.wav",
+    "sources": [
+      "data/5-212736-A-17.wav",
+      "data/5-117120-A-42.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-22",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-22-0-first.wav",
+    "no": "data/paired_evidence/level-22-0-second.wav",
+    "sources": [
+      "data/5-215658-A-12.wav",
+      "data/5-261439-A-15.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-22",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-22-0-second.wav",
+    "no": "data/paired_evidence/level-22-0-first.wav",
+    "sources": [
+      "data/5-215658-A-12.wav",
+      "data/5-261439-A-15.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-22",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-22-1-first.wav",
+    "no": "data/paired_evidence/level-22-1-second.wav",
+    "sources": [
+      "data/5-215658-A-12.wav",
+      "data/5-261439-A-15.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-22",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-22-1-second.wav",
+    "no": "data/paired_evidence/level-22-1-first.wav",
+    "sources": [
+      "data/5-215658-A-12.wav",
+      "data/5-261439-A-15.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-23",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-23-0-first.wav",
+    "no": "data/paired_evidence/level-23-0-second.wav",
+    "sources": [
+      "data/5-156698-A-18.wav",
+      "data/5-253094-D-49.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-23",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-23-0-second.wav",
+    "no": "data/paired_evidence/level-23-0-first.wav",
+    "sources": [
+      "data/5-156698-A-18.wav",
+      "data/5-253094-D-49.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-23",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-23-1-first.wav",
+    "no": "data/paired_evidence/level-23-1-second.wav",
+    "sources": [
+      "data/5-156698-A-18.wav",
+      "data/5-253094-D-49.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-23",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-23-1-second.wav",
+    "no": "data/paired_evidence/level-23-1-first.wav",
+    "sources": [
+      "data/5-156698-A-18.wav",
+      "data/5-253094-D-49.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-24",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-24-0-first.wav",
+    "no": "data/paired_evidence/level-24-0-second.wav",
+    "sources": [
+      "data/5-160614-D-48.wav",
+      "data/5-219379-C-11.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-24",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-24-0-second.wav",
+    "no": "data/paired_evidence/level-24-0-first.wav",
+    "sources": [
+      "data/5-160614-D-48.wav",
+      "data/5-219379-C-11.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-24",
+    "q": "Is the first sound louder than the second sound?",
+    "yes": "data/paired_evidence/level-24-1-first.wav",
+    "no": "data/paired_evidence/level-24-1-second.wav",
+    "sources": [
+      "data/5-160614-D-48.wav",
+      "data/5-219379-C-11.wav"
+    ]
+  },
+  {
+    "task": "level",
+    "group": "esc-24",
+    "q": "Is the first sound quieter than the second sound?",
+    "yes": "data/paired_evidence/level-24-1-second.wav",
+    "no": "data/paired_evidence/level-24-1-first.wav",
+    "sources": [
+      "data/5-160614-D-48.wav",
+      "data/5-219379-C-11.wav"
+    ]
+  }
+]

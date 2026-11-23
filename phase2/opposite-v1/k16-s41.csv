@@ -1,0 +1,709 @@
+task,group,pair,direction,question,clip,donor,condition,margin_yes
+natural,natural-0,0,0,Are birds chirping?,data/clotho/Frogs in town.wav,data/clotho/helicopter.wav,own,6.75
+natural,natural-0,0,0,Are birds chirping?,data/clotho/Frogs in town.wav,data/clotho/helicopter.wav,donor_residual,1.6875
+natural,natural-0,0,0,Are birds chirping?,data/clotho/Frogs in town.wav,data/clotho/helicopter.wav,donor_pool,5.25
+natural,natural-0,0,1,Are birds chirping?,data/clotho/helicopter.wav,data/clotho/Frogs in town.wav,own,-1.375
+natural,natural-0,0,1,Are birds chirping?,data/clotho/helicopter.wav,data/clotho/Frogs in town.wav,donor_residual,5.25
+natural,natural-0,0,1,Are birds chirping?,data/clotho/helicopter.wav,data/clotho/Frogs in town.wav,donor_pool,1.6875
+natural,natural-1,1,0,Are people talking?,data/clotho/UnionStation06OutBack_BusyOutside.wav,data/clotho/Bath 01.wav,own,-2.4375
+natural,natural-1,1,0,Are people talking?,data/clotho/UnionStation06OutBack_BusyOutside.wav,data/clotho/Bath 01.wav,donor_residual,-3.0
+natural,natural-1,1,0,Are people talking?,data/clotho/UnionStation06OutBack_BusyOutside.wav,data/clotho/Bath 01.wav,donor_pool,-2.6875
+natural,natural-1,1,1,Are people talking?,data/clotho/Bath 01.wav,data/clotho/UnionStation06OutBack_BusyOutside.wav,own,-3.625
+natural,natural-1,1,1,Are people talking?,data/clotho/Bath 01.wav,data/clotho/UnionStation06OutBack_BusyOutside.wav,donor_residual,-2.6875
+natural,natural-1,1,1,Are people talking?,data/clotho/Bath 01.wav,data/clotho/UnionStation06OutBack_BusyOutside.wav,donor_pool,-3.0
+natural,natural-2,2,0,Are people talking?,data/clotho/Hanoi streets.wav,data/clotho/Night in nature.wav,own,3.0
+natural,natural-2,2,0,Are people talking?,data/clotho/Hanoi streets.wav,data/clotho/Night in nature.wav,donor_residual,-2.75
+natural,natural-2,2,0,Are people talking?,data/clotho/Hanoi streets.wav,data/clotho/Night in nature.wav,donor_pool,1.25
+natural,natural-2,2,1,Are people talking?,data/clotho/Night in nature.wav,data/clotho/Hanoi streets.wav,own,-3.25
+natural,natural-2,2,1,Are people talking?,data/clotho/Night in nature.wav,data/clotho/Hanoi streets.wav,donor_residual,1.25
+natural,natural-2,2,1,Are people talking?,data/clotho/Night in nature.wav,data/clotho/Hanoi streets.wav,donor_pool,-2.75
+natural,natural-3,3,0,Are people talking?,data/clotho/Cafeteria Ambience.wav,data/clotho/Nord_Odal_Nyhus_04_juni_2011_quiet_forest_birds_insects_leaf_rustle_03.wav,own,2.75
+natural,natural-3,3,0,Are people talking?,data/clotho/Cafeteria Ambience.wav,data/clotho/Nord_Odal_Nyhus_04_juni_2011_quiet_forest_birds_insects_leaf_rustle_03.wav,donor_residual,-3.5
+natural,natural-3,3,0,Are people talking?,data/clotho/Cafeteria Ambience.wav,data/clotho/Nord_Odal_Nyhus_04_juni_2011_quiet_forest_birds_insects_leaf_rustle_03.wav,donor_pool,0.125
+natural,natural-3,3,1,Are people talking?,data/clotho/Nord_Odal_Nyhus_04_juni_2011_quiet_forest_birds_insects_leaf_rustle_03.wav,data/clotho/Cafeteria Ambience.wav,own,-3.125
+natural,natural-3,3,1,Are people talking?,data/clotho/Nord_Odal_Nyhus_04_juni_2011_quiet_forest_birds_insects_leaf_rustle_03.wav,data/clotho/Cafeteria Ambience.wav,donor_residual,0.125
+natural,natural-3,3,1,Are people talking?,data/clotho/Nord_Odal_Nyhus_04_juni_2011_quiet_forest_birds_insects_leaf_rustle_03.wav,data/clotho/Cafeteria Ambience.wav,donor_pool,-3.5
+natural,natural-4,4,0,Are people talking?,data/clotho/village bar.wav,data/clotho/160917-eichelherr000.wav,own,4.625
+natural,natural-4,4,0,Are people talking?,data/clotho/village bar.wav,data/clotho/160917-eichelherr000.wav,donor_residual,-1.0
+natural,natural-4,4,0,Are people talking?,data/clotho/village bar.wav,data/clotho/160917-eichelherr000.wav,donor_pool,3.9375
+natural,natural-4,4,1,Are people talking?,data/clotho/160917-eichelherr000.wav,data/clotho/village bar.wav,own,-2.0625
+natural,natural-4,4,1,Are people talking?,data/clotho/160917-eichelherr000.wav,data/clotho/village bar.wav,donor_residual,3.9375
+natural,natural-4,4,1,Are people talking?,data/clotho/160917-eichelherr000.wav,data/clotho/village bar.wav,donor_pool,-1.0
+natural,natural-5,5,0,Are people talking in the background?,data/clotho/underpass.wav,data/clotho/Wind Noise Backyard.wav,own,1.875
+natural,natural-5,5,0,Are people talking in the background?,data/clotho/underpass.wav,data/clotho/Wind Noise Backyard.wav,donor_residual,0.0
+natural,natural-5,5,0,Are people talking in the background?,data/clotho/underpass.wav,data/clotho/Wind Noise Backyard.wav,donor_pool,-1.25
+natural,natural-5,5,1,Are people talking in the background?,data/clotho/Wind Noise Backyard.wav,data/clotho/underpass.wav,own,-1.0
+natural,natural-5,5,1,Are people talking in the background?,data/clotho/Wind Noise Backyard.wav,data/clotho/underpass.wav,donor_residual,-1.25
+natural,natural-5,5,1,Are people talking in the background?,data/clotho/Wind Noise Backyard.wav,data/clotho/underpass.wav,donor_pool,0.0
+natural,natural-6,6,0,Are there animals around?,data/clotho/Birds of Klein Profijt.wav,data/clotho/AC Unit.wav,own,3.625
+natural,natural-6,6,0,Are there animals around?,data/clotho/Birds of Klein Profijt.wav,data/clotho/AC Unit.wav,donor_residual,-0.9375
+natural,natural-6,6,0,Are there animals around?,data/clotho/Birds of Klein Profijt.wav,data/clotho/AC Unit.wav,donor_pool,2.6875
+natural,natural-6,6,1,Are there animals around?,data/clotho/AC Unit.wav,data/clotho/Birds of Klein Profijt.wav,own,-0.875
+natural,natural-6,6,1,Are there animals around?,data/clotho/AC Unit.wav,data/clotho/Birds of Klein Profijt.wav,donor_residual,2.6875
+natural,natural-6,6,1,Are there animals around?,data/clotho/AC Unit.wav,data/clotho/Birds of Klein Profijt.wav,donor_pool,-0.9375
+natural,natural-7,7,0,Are there people talking?,data/clotho/street steps child car.wav,data/clotho/laundry.machine.wav,own,0.125
+natural,natural-7,7,0,Are there people talking?,data/clotho/street steps child car.wav,data/clotho/laundry.machine.wav,donor_residual,-3.6875
+natural,natural-7,7,0,Are there people talking?,data/clotho/street steps child car.wav,data/clotho/laundry.machine.wav,donor_pool,-3.875
+natural,natural-7,7,1,Are there people talking?,data/clotho/laundry.machine.wav,data/clotho/street steps child car.wav,own,-3.875
+natural,natural-7,7,1,Are there people talking?,data/clotho/laundry.machine.wav,data/clotho/street steps child car.wav,donor_residual,-3.875
+natural,natural-7,7,1,Are there people talking?,data/clotho/laundry.machine.wav,data/clotho/street steps child car.wav,donor_pool,-3.6875
+natural,natural-8,8,0,Is it raining?,data/clotho/Rain drops on marquee.wav,data/clotho/Traffic Light.wav,own,5.625
+natural,natural-8,8,0,Is it raining?,data/clotho/Rain drops on marquee.wav,data/clotho/Traffic Light.wav,donor_residual,3.3125
+natural,natural-8,8,0,Is it raining?,data/clotho/Rain drops on marquee.wav,data/clotho/Traffic Light.wav,donor_pool,5.0
+natural,natural-8,8,1,Is it raining?,data/clotho/Traffic Light.wav,data/clotho/Rain drops on marquee.wav,own,0.25
+natural,natural-8,8,1,Is it raining?,data/clotho/Traffic Light.wav,data/clotho/Rain drops on marquee.wav,donor_residual,5.0
+natural,natural-8,8,1,Is it raining?,data/clotho/Traffic Light.wav,data/clotho/Rain drops on marquee.wav,donor_pool,3.3125
+natural,natural-9,9,0,Is it raining?,data/clotho/LightRaininPinesMarch302013.wav,data/clotho/Plane crash - black box.wav,own,6.25
+natural,natural-9,9,0,Is it raining?,data/clotho/LightRaininPinesMarch302013.wav,data/clotho/Plane crash - black box.wav,donor_residual,1.6875
+natural,natural-9,9,0,Is it raining?,data/clotho/LightRaininPinesMarch302013.wav,data/clotho/Plane crash - black box.wav,donor_pool,4.125
+natural,natural-9,9,1,Is it raining?,data/clotho/Plane crash - black box.wav,data/clotho/LightRaininPinesMarch302013.wav,own,0.125
+natural,natural-9,9,1,Is it raining?,data/clotho/Plane crash - black box.wav,data/clotho/LightRaininPinesMarch302013.wav,donor_residual,4.125
+natural,natural-9,9,1,Is it raining?,data/clotho/Plane crash - black box.wav,data/clotho/LightRaininPinesMarch302013.wav,donor_pool,1.6875
+natural,natural-10,10,0,Is it raining?,data/clotho/outdoors ambient windy wind leaves rustle hum.wav,data/clotho/Birdsong2.wav,own,4.1875
+natural,natural-10,10,0,Is it raining?,data/clotho/outdoors ambient windy wind leaves rustle hum.wav,data/clotho/Birdsong2.wav,donor_residual,0.625
+natural,natural-10,10,0,Is it raining?,data/clotho/outdoors ambient windy wind leaves rustle hum.wav,data/clotho/Birdsong2.wav,donor_pool,3.625
+natural,natural-10,10,1,Is it raining?,data/clotho/Birdsong2.wav,data/clotho/outdoors ambient windy wind leaves rustle hum.wav,own,-1.875
+natural,natural-10,10,1,Is it raining?,data/clotho/Birdsong2.wav,data/clotho/outdoors ambient windy wind leaves rustle hum.wav,donor_residual,3.625
+natural,natural-10,10,1,Is it raining?,data/clotho/Birdsong2.wav,data/clotho/outdoors ambient windy wind leaves rustle hum.wav,donor_pool,0.625
+natural,natural-11,11,0,Is it raining?,data/clotho/Lluvia agosto 2011.wav,data/clotho/110709_05 goma exhibit.wav,own,4.9375
+natural,natural-11,11,0,Is it raining?,data/clotho/Lluvia agosto 2011.wav,data/clotho/110709_05 goma exhibit.wav,donor_residual,0.1875
+natural,natural-11,11,0,Is it raining?,data/clotho/Lluvia agosto 2011.wav,data/clotho/110709_05 goma exhibit.wav,donor_pool,4.8125
+natural,natural-11,11,1,Is it raining?,data/clotho/110709_05 goma exhibit.wav,data/clotho/Lluvia agosto 2011.wav,own,-1.375
+natural,natural-11,11,1,Is it raining?,data/clotho/110709_05 goma exhibit.wav,data/clotho/Lluvia agosto 2011.wav,donor_residual,4.8125
+natural,natural-11,11,1,Is it raining?,data/clotho/110709_05 goma exhibit.wav,data/clotho/Lluvia agosto 2011.wav,donor_pool,0.1875
+natural,natural-12,12,0,Is it snowing?,data/clotho/CicadasAPedreira.wav,data/clotho/Ronda - Fountain near the Town Hall (general) - Fuente cerca del Ayuntamiento (general).wav,own,-4.9375
+natural,natural-12,12,0,Is it snowing?,data/clotho/CicadasAPedreira.wav,data/clotho/Ronda - Fountain near the Town Hall (general) - Fuente cerca del Ayuntamiento (general).wav,donor_residual,-5.625
+natural,natural-12,12,0,Is it snowing?,data/clotho/CicadasAPedreira.wav,data/clotho/Ronda - Fountain near the Town Hall (general) - Fuente cerca del Ayuntamiento (general).wav,donor_pool,-3.375
+natural,natural-12,12,1,Is it snowing?,data/clotho/Ronda - Fountain near the Town Hall (general) - Fuente cerca del Ayuntamiento (general).wav,data/clotho/CicadasAPedreira.wav,own,-3.75
+natural,natural-12,12,1,Is it snowing?,data/clotho/Ronda - Fountain near the Town Hall (general) - Fuente cerca del Ayuntamiento (general).wav,data/clotho/CicadasAPedreira.wav,donor_residual,-3.375
+natural,natural-12,12,1,Is it snowing?,data/clotho/Ronda - Fountain near the Town Hall (general) - Fuente cerca del Ayuntamiento (general).wav,data/clotho/CicadasAPedreira.wav,donor_pool,-5.625
+natural,natural-13,13,0,Is someone talking?,"data/clotho/Walla chatter, adults and children in auditorium.wav",data/clotho/espresso-maschine.wav,own,2.5
+natural,natural-13,13,0,Is someone talking?,"data/clotho/Walla chatter, adults and children in auditorium.wav",data/clotho/espresso-maschine.wav,donor_residual,-2.375
+natural,natural-13,13,0,Is someone talking?,"data/clotho/Walla chatter, adults and children in auditorium.wav",data/clotho/espresso-maschine.wav,donor_pool,0.5
+natural,natural-13,13,1,Is someone talking?,data/clotho/espresso-maschine.wav,"data/clotho/Walla chatter, adults and children in auditorium.wav",own,-2.375
+natural,natural-13,13,1,Is someone talking?,data/clotho/espresso-maschine.wav,"data/clotho/Walla chatter, adults and children in auditorium.wav",donor_residual,0.5
+natural,natural-13,13,1,Is someone talking?,data/clotho/espresso-maschine.wav,"data/clotho/Walla chatter, adults and children in auditorium.wav",donor_pool,-2.375
+natural,natural-14,14,0,Is the person alone?,data/clotho/Coffeehouse Ambience Burlington VT 0112xx.wav,data/clotho/crowd booing.wav,own,-3.75
+natural,natural-14,14,0,Is the person alone?,data/clotho/Coffeehouse Ambience Burlington VT 0112xx.wav,data/clotho/crowd booing.wav,donor_residual,-2.625
+natural,natural-14,14,0,Is the person alone?,data/clotho/Coffeehouse Ambience Burlington VT 0112xx.wav,data/clotho/crowd booing.wav,donor_pool,-4.1875
+natural,natural-14,14,1,Is the person alone?,data/clotho/crowd booing.wav,data/clotho/Coffeehouse Ambience Burlington VT 0112xx.wav,own,-3.4375
+natural,natural-14,14,1,Is the person alone?,data/clotho/crowd booing.wav,data/clotho/Coffeehouse Ambience Burlington VT 0112xx.wav,donor_residual,-4.1875
+natural,natural-14,14,1,Is the person alone?,data/clotho/crowd booing.wav,data/clotho/Coffeehouse Ambience Burlington VT 0112xx.wav,donor_pool,-2.625
+natural,natural-15,15,0,Is there a loud bang?,data/clotho/Cable Car Ride Birds.wav,data/clotho/Bathroom.wav,own,-0.125
+natural,natural-15,15,0,Is there a loud bang?,data/clotho/Cable Car Ride Birds.wav,data/clotho/Bathroom.wav,donor_residual,0.25
+natural,natural-15,15,0,Is there a loud bang?,data/clotho/Cable Car Ride Birds.wav,data/clotho/Bathroom.wav,donor_pool,-1.8125
+natural,natural-15,15,1,Is there a loud bang?,data/clotho/Bathroom.wav,data/clotho/Cable Car Ride Birds.wav,own,-1.375
+natural,natural-15,15,1,Is there a loud bang?,data/clotho/Bathroom.wav,data/clotho/Cable Car Ride Birds.wav,donor_residual,-1.8125
+natural,natural-15,15,1,Is there a loud bang?,data/clotho/Bathroom.wav,data/clotho/Cable Car Ride Birds.wav,donor_pool,0.25
+natural,natural-16,16,0,Is this in a bathroom?,data/clotho/RBH_Household_shower 03.wav,data/clotho/20110422_shower.wav,own,3.5
+natural,natural-16,16,0,Is this in a bathroom?,data/clotho/RBH_Household_shower 03.wav,data/clotho/20110422_shower.wav,donor_residual,-1.3125
+natural,natural-16,16,0,Is this in a bathroom?,data/clotho/RBH_Household_shower 03.wav,data/clotho/20110422_shower.wav,donor_pool,3.875
+natural,natural-16,16,1,Is this in a bathroom?,data/clotho/20110422_shower.wav,data/clotho/RBH_Household_shower 03.wav,own,-3.125
+natural,natural-16,16,1,Is this in a bathroom?,data/clotho/20110422_shower.wav,data/clotho/RBH_Household_shower 03.wav,donor_residual,3.875
+natural,natural-16,16,1,Is this in a bathroom?,data/clotho/20110422_shower.wav,data/clotho/RBH_Household_shower 03.wav,donor_pool,-1.3125
+natural,natural-17,17,0,Is this in nature?,data/clotho/Gulls at beach.wav,data/clotho/Autumnal Ambient 24 Bits 48 Khz.wav,own,3.8125
+natural,natural-17,17,0,Is this in nature?,data/clotho/Gulls at beach.wav,data/clotho/Autumnal Ambient 24 Bits 48 Khz.wav,donor_residual,-1.0
+natural,natural-17,17,0,Is this in nature?,data/clotho/Gulls at beach.wav,data/clotho/Autumnal Ambient 24 Bits 48 Khz.wav,donor_pool,4.9375
+natural,natural-17,17,1,Is this in nature?,data/clotho/Autumnal Ambient 24 Bits 48 Khz.wav,data/clotho/Gulls at beach.wav,own,-1.25
+natural,natural-17,17,1,Is this in nature?,data/clotho/Autumnal Ambient 24 Bits 48 Khz.wav,data/clotho/Gulls at beach.wav,donor_residual,4.9375
+natural,natural-17,17,1,Is this in nature?,data/clotho/Autumnal Ambient 24 Bits 48 Khz.wav,data/clotho/Gulls at beach.wav,donor_pool,-1.0
+level,esc-0,18,0,Is the first sound louder than the second sound?,data/paired_evidence/level-0-0-first.wav,data/paired_evidence/level-0-0-second.wav,own,3.0
+level,esc-0,18,0,Is the first sound louder than the second sound?,data/paired_evidence/level-0-0-first.wav,data/paired_evidence/level-0-0-second.wav,donor_residual,3.25
+level,esc-0,18,0,Is the first sound louder than the second sound?,data/paired_evidence/level-0-0-first.wav,data/paired_evidence/level-0-0-second.wav,donor_pool,2.75
+level,esc-0,18,1,Is the first sound louder than the second sound?,data/paired_evidence/level-0-0-second.wav,data/paired_evidence/level-0-0-first.wav,own,2.875
+level,esc-0,18,1,Is the first sound louder than the second sound?,data/paired_evidence/level-0-0-second.wav,data/paired_evidence/level-0-0-first.wav,donor_residual,2.75
+level,esc-0,18,1,Is the first sound louder than the second sound?,data/paired_evidence/level-0-0-second.wav,data/paired_evidence/level-0-0-first.wav,donor_pool,3.25
+level,esc-0,19,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-0-0-second.wav,data/paired_evidence/level-0-0-first.wav,own,1.125
+level,esc-0,19,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-0-0-second.wav,data/paired_evidence/level-0-0-first.wav,donor_residual,1.125
+level,esc-0,19,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-0-0-second.wav,data/paired_evidence/level-0-0-first.wav,donor_pool,1.5
+level,esc-0,19,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-0-0-first.wav,data/paired_evidence/level-0-0-second.wav,own,1.5
+level,esc-0,19,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-0-0-first.wav,data/paired_evidence/level-0-0-second.wav,donor_residual,1.5
+level,esc-0,19,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-0-0-first.wav,data/paired_evidence/level-0-0-second.wav,donor_pool,1.125
+level,esc-0,20,0,Is the first sound louder than the second sound?,data/paired_evidence/level-0-1-first.wav,data/paired_evidence/level-0-1-second.wav,own,2.25
+level,esc-0,20,0,Is the first sound louder than the second sound?,data/paired_evidence/level-0-1-first.wav,data/paired_evidence/level-0-1-second.wav,donor_residual,2.25
+level,esc-0,20,0,Is the first sound louder than the second sound?,data/paired_evidence/level-0-1-first.wav,data/paired_evidence/level-0-1-second.wav,donor_pool,2.875
+level,esc-0,20,1,Is the first sound louder than the second sound?,data/paired_evidence/level-0-1-second.wav,data/paired_evidence/level-0-1-first.wav,own,2.75
+level,esc-0,20,1,Is the first sound louder than the second sound?,data/paired_evidence/level-0-1-second.wav,data/paired_evidence/level-0-1-first.wav,donor_residual,2.875
+level,esc-0,20,1,Is the first sound louder than the second sound?,data/paired_evidence/level-0-1-second.wav,data/paired_evidence/level-0-1-first.wav,donor_pool,2.25
+level,esc-0,21,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-0-1-second.wav,data/paired_evidence/level-0-1-first.wav,own,1.75
+level,esc-0,21,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-0-1-second.wav,data/paired_evidence/level-0-1-first.wav,donor_residual,1.875
+level,esc-0,21,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-0-1-second.wav,data/paired_evidence/level-0-1-first.wav,donor_pool,1.375
+level,esc-0,21,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-0-1-first.wav,data/paired_evidence/level-0-1-second.wav,own,1.5
+level,esc-0,21,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-0-1-first.wav,data/paired_evidence/level-0-1-second.wav,donor_residual,1.375
+level,esc-0,21,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-0-1-first.wav,data/paired_evidence/level-0-1-second.wav,donor_pool,1.875
+level,esc-1,22,0,Is the first sound louder than the second sound?,data/paired_evidence/level-1-0-first.wav,data/paired_evidence/level-1-0-second.wav,own,2.0
+level,esc-1,22,0,Is the first sound louder than the second sound?,data/paired_evidence/level-1-0-first.wav,data/paired_evidence/level-1-0-second.wav,donor_residual,3.375
+level,esc-1,22,0,Is the first sound louder than the second sound?,data/paired_evidence/level-1-0-first.wav,data/paired_evidence/level-1-0-second.wav,donor_pool,1.875
+level,esc-1,22,1,Is the first sound louder than the second sound?,data/paired_evidence/level-1-0-second.wav,data/paired_evidence/level-1-0-first.wav,own,2.5
+level,esc-1,22,1,Is the first sound louder than the second sound?,data/paired_evidence/level-1-0-second.wav,data/paired_evidence/level-1-0-first.wav,donor_residual,1.875
+level,esc-1,22,1,Is the first sound louder than the second sound?,data/paired_evidence/level-1-0-second.wav,data/paired_evidence/level-1-0-first.wav,donor_pool,3.375
+level,esc-1,23,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-1-0-second.wav,data/paired_evidence/level-1-0-first.wav,own,0.125
+level,esc-1,23,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-1-0-second.wav,data/paired_evidence/level-1-0-first.wav,donor_residual,0.125
+level,esc-1,23,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-1-0-second.wav,data/paired_evidence/level-1-0-first.wav,donor_pool,-0.75
+level,esc-1,23,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-1-0-first.wav,data/paired_evidence/level-1-0-second.wav,own,-0.5
+level,esc-1,23,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-1-0-first.wav,data/paired_evidence/level-1-0-second.wav,donor_residual,-0.75
+level,esc-1,23,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-1-0-first.wav,data/paired_evidence/level-1-0-second.wav,donor_pool,0.125
+level,esc-1,24,0,Is the first sound louder than the second sound?,data/paired_evidence/level-1-1-first.wav,data/paired_evidence/level-1-1-second.wav,own,2.375
+level,esc-1,24,0,Is the first sound louder than the second sound?,data/paired_evidence/level-1-1-first.wav,data/paired_evidence/level-1-1-second.wav,donor_residual,2.25
+level,esc-1,24,0,Is the first sound louder than the second sound?,data/paired_evidence/level-1-1-first.wav,data/paired_evidence/level-1-1-second.wav,donor_pool,2.375
+level,esc-1,24,1,Is the first sound louder than the second sound?,data/paired_evidence/level-1-1-second.wav,data/paired_evidence/level-1-1-first.wav,own,2.125
+level,esc-1,24,1,Is the first sound louder than the second sound?,data/paired_evidence/level-1-1-second.wav,data/paired_evidence/level-1-1-first.wav,donor_residual,2.375
+level,esc-1,24,1,Is the first sound louder than the second sound?,data/paired_evidence/level-1-1-second.wav,data/paired_evidence/level-1-1-first.wav,donor_pool,2.25
+level,esc-1,25,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-1-1-second.wav,data/paired_evidence/level-1-1-first.wav,own,0.5
+level,esc-1,25,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-1-1-second.wav,data/paired_evidence/level-1-1-first.wav,donor_residual,0.0
+level,esc-1,25,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-1-1-second.wav,data/paired_evidence/level-1-1-first.wav,donor_pool,0.375
+level,esc-1,25,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-1-1-first.wav,data/paired_evidence/level-1-1-second.wav,own,0.0
+level,esc-1,25,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-1-1-first.wav,data/paired_evidence/level-1-1-second.wav,donor_residual,0.375
+level,esc-1,25,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-1-1-first.wav,data/paired_evidence/level-1-1-second.wav,donor_pool,0.0
+level,esc-2,26,0,Is the first sound louder than the second sound?,data/paired_evidence/level-2-0-first.wav,data/paired_evidence/level-2-0-second.wav,own,2.0
+level,esc-2,26,0,Is the first sound louder than the second sound?,data/paired_evidence/level-2-0-first.wav,data/paired_evidence/level-2-0-second.wav,donor_residual,2.625
+level,esc-2,26,0,Is the first sound louder than the second sound?,data/paired_evidence/level-2-0-first.wav,data/paired_evidence/level-2-0-second.wav,donor_pool,2.0
+level,esc-2,26,1,Is the first sound louder than the second sound?,data/paired_evidence/level-2-0-second.wav,data/paired_evidence/level-2-0-first.wav,own,2.75
+level,esc-2,26,1,Is the first sound louder than the second sound?,data/paired_evidence/level-2-0-second.wav,data/paired_evidence/level-2-0-first.wav,donor_residual,2.0
+level,esc-2,26,1,Is the first sound louder than the second sound?,data/paired_evidence/level-2-0-second.wav,data/paired_evidence/level-2-0-first.wav,donor_pool,2.625
+level,esc-2,27,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-2-0-second.wav,data/paired_evidence/level-2-0-first.wav,own,1.125
+level,esc-2,27,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-2-0-second.wav,data/paired_evidence/level-2-0-first.wav,donor_residual,0.875
+level,esc-2,27,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-2-0-second.wav,data/paired_evidence/level-2-0-first.wav,donor_pool,1.0
+level,esc-2,27,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-2-0-first.wav,data/paired_evidence/level-2-0-second.wav,own,0.875
+level,esc-2,27,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-2-0-first.wav,data/paired_evidence/level-2-0-second.wav,donor_residual,1.0
+level,esc-2,27,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-2-0-first.wav,data/paired_evidence/level-2-0-second.wav,donor_pool,0.875
+level,esc-2,28,0,Is the first sound louder than the second sound?,data/paired_evidence/level-2-1-first.wav,data/paired_evidence/level-2-1-second.wav,own,2.625
+level,esc-2,28,0,Is the first sound louder than the second sound?,data/paired_evidence/level-2-1-first.wav,data/paired_evidence/level-2-1-second.wav,donor_residual,2.125
+level,esc-2,28,0,Is the first sound louder than the second sound?,data/paired_evidence/level-2-1-first.wav,data/paired_evidence/level-2-1-second.wav,donor_pool,2.75
+level,esc-2,28,1,Is the first sound louder than the second sound?,data/paired_evidence/level-2-1-second.wav,data/paired_evidence/level-2-1-first.wav,own,2.0
+level,esc-2,28,1,Is the first sound louder than the second sound?,data/paired_evidence/level-2-1-second.wav,data/paired_evidence/level-2-1-first.wav,donor_residual,2.75
+level,esc-2,28,1,Is the first sound louder than the second sound?,data/paired_evidence/level-2-1-second.wav,data/paired_evidence/level-2-1-first.wav,donor_pool,2.125
+level,esc-2,29,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-2-1-second.wav,data/paired_evidence/level-2-1-first.wav,own,1.125
+level,esc-2,29,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-2-1-second.wav,data/paired_evidence/level-2-1-first.wav,donor_residual,1.125
+level,esc-2,29,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-2-1-second.wav,data/paired_evidence/level-2-1-first.wav,donor_pool,1.0
+level,esc-2,29,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-2-1-first.wav,data/paired_evidence/level-2-1-second.wav,own,1.125
+level,esc-2,29,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-2-1-first.wav,data/paired_evidence/level-2-1-second.wav,donor_residual,1.0
+level,esc-2,29,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-2-1-first.wav,data/paired_evidence/level-2-1-second.wav,donor_pool,1.125
+level,esc-3,30,0,Is the first sound louder than the second sound?,data/paired_evidence/level-3-0-first.wav,data/paired_evidence/level-3-0-second.wav,own,1.5
+level,esc-3,30,0,Is the first sound louder than the second sound?,data/paired_evidence/level-3-0-first.wav,data/paired_evidence/level-3-0-second.wav,donor_residual,2.6875
+level,esc-3,30,0,Is the first sound louder than the second sound?,data/paired_evidence/level-3-0-first.wav,data/paired_evidence/level-3-0-second.wav,donor_pool,2.0
+level,esc-3,30,1,Is the first sound louder than the second sound?,data/paired_evidence/level-3-0-second.wav,data/paired_evidence/level-3-0-first.wav,own,2.6875
+level,esc-3,30,1,Is the first sound louder than the second sound?,data/paired_evidence/level-3-0-second.wav,data/paired_evidence/level-3-0-first.wav,donor_residual,2.0
+level,esc-3,30,1,Is the first sound louder than the second sound?,data/paired_evidence/level-3-0-second.wav,data/paired_evidence/level-3-0-first.wav,donor_pool,2.6875
+level,esc-3,31,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-3-0-second.wav,data/paired_evidence/level-3-0-first.wav,own,1.0
+level,esc-3,31,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-3-0-second.wav,data/paired_evidence/level-3-0-first.wav,donor_residual,0.75
+level,esc-3,31,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-3-0-second.wav,data/paired_evidence/level-3-0-first.wav,donor_pool,1.125
+level,esc-3,31,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-3-0-first.wav,data/paired_evidence/level-3-0-second.wav,own,0.5
+level,esc-3,31,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-3-0-first.wav,data/paired_evidence/level-3-0-second.wav,donor_residual,1.125
+level,esc-3,31,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-3-0-first.wav,data/paired_evidence/level-3-0-second.wav,donor_pool,0.75
+level,esc-3,32,0,Is the first sound louder than the second sound?,data/paired_evidence/level-3-1-first.wav,data/paired_evidence/level-3-1-second.wav,own,2.0
+level,esc-3,32,0,Is the first sound louder than the second sound?,data/paired_evidence/level-3-1-first.wav,data/paired_evidence/level-3-1-second.wav,donor_residual,1.5
+level,esc-3,32,0,Is the first sound louder than the second sound?,data/paired_evidence/level-3-1-first.wav,data/paired_evidence/level-3-1-second.wav,donor_pool,1.875
+level,esc-3,32,1,Is the first sound louder than the second sound?,data/paired_evidence/level-3-1-second.wav,data/paired_evidence/level-3-1-first.wav,own,1.5
+level,esc-3,32,1,Is the first sound louder than the second sound?,data/paired_evidence/level-3-1-second.wav,data/paired_evidence/level-3-1-first.wav,donor_residual,1.875
+level,esc-3,32,1,Is the first sound louder than the second sound?,data/paired_evidence/level-3-1-second.wav,data/paired_evidence/level-3-1-first.wav,donor_pool,1.5
+level,esc-3,33,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-3-1-second.wav,data/paired_evidence/level-3-1-first.wav,own,0.625
+level,esc-3,33,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-3-1-second.wav,data/paired_evidence/level-3-1-first.wav,donor_residual,0.875
+level,esc-3,33,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-3-1-second.wav,data/paired_evidence/level-3-1-first.wav,donor_pool,0.625
+level,esc-3,33,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-3-1-first.wav,data/paired_evidence/level-3-1-second.wav,own,1.0
+level,esc-3,33,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-3-1-first.wav,data/paired_evidence/level-3-1-second.wav,donor_residual,0.625
+level,esc-3,33,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-3-1-first.wav,data/paired_evidence/level-3-1-second.wav,donor_pool,0.875
+level,esc-4,34,0,Is the first sound louder than the second sound?,data/paired_evidence/level-4-0-first.wav,data/paired_evidence/level-4-0-second.wav,own,1.75
+level,esc-4,34,0,Is the first sound louder than the second sound?,data/paired_evidence/level-4-0-first.wav,data/paired_evidence/level-4-0-second.wav,donor_residual,1.25
+level,esc-4,34,0,Is the first sound louder than the second sound?,data/paired_evidence/level-4-0-first.wav,data/paired_evidence/level-4-0-second.wav,donor_pool,1.625
+level,esc-4,34,1,Is the first sound louder than the second sound?,data/paired_evidence/level-4-0-second.wav,data/paired_evidence/level-4-0-first.wav,own,1.25
+level,esc-4,34,1,Is the first sound louder than the second sound?,data/paired_evidence/level-4-0-second.wav,data/paired_evidence/level-4-0-first.wav,donor_residual,1.625
+level,esc-4,34,1,Is the first sound louder than the second sound?,data/paired_evidence/level-4-0-second.wav,data/paired_evidence/level-4-0-first.wav,donor_pool,1.25
+level,esc-4,35,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-4-0-second.wav,data/paired_evidence/level-4-0-first.wav,own,1.0
+level,esc-4,35,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-4-0-second.wav,data/paired_evidence/level-4-0-first.wav,donor_residual,1.0
+level,esc-4,35,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-4-0-second.wav,data/paired_evidence/level-4-0-first.wav,donor_pool,0.875
+level,esc-4,35,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-4-0-first.wav,data/paired_evidence/level-4-0-second.wav,own,1.0
+level,esc-4,35,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-4-0-first.wav,data/paired_evidence/level-4-0-second.wav,donor_residual,0.875
+level,esc-4,35,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-4-0-first.wav,data/paired_evidence/level-4-0-second.wav,donor_pool,1.0
+level,esc-4,36,0,Is the first sound louder than the second sound?,data/paired_evidence/level-4-1-first.wav,data/paired_evidence/level-4-1-second.wav,own,1.5
+level,esc-4,36,0,Is the first sound louder than the second sound?,data/paired_evidence/level-4-1-first.wav,data/paired_evidence/level-4-1-second.wav,donor_residual,1.75
+level,esc-4,36,0,Is the first sound louder than the second sound?,data/paired_evidence/level-4-1-first.wav,data/paired_evidence/level-4-1-second.wav,donor_pool,1.5
+level,esc-4,36,1,Is the first sound louder than the second sound?,data/paired_evidence/level-4-1-second.wav,data/paired_evidence/level-4-1-first.wav,own,1.625
+level,esc-4,36,1,Is the first sound louder than the second sound?,data/paired_evidence/level-4-1-second.wav,data/paired_evidence/level-4-1-first.wav,donor_residual,1.5
+level,esc-4,36,1,Is the first sound louder than the second sound?,data/paired_evidence/level-4-1-second.wav,data/paired_evidence/level-4-1-first.wav,donor_pool,1.75
+level,esc-4,37,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-4-1-second.wav,data/paired_evidence/level-4-1-first.wav,own,0.75
+level,esc-4,37,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-4-1-second.wav,data/paired_evidence/level-4-1-first.wav,donor_residual,1.25
+level,esc-4,37,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-4-1-second.wav,data/paired_evidence/level-4-1-first.wav,donor_pool,0.875
+level,esc-4,37,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-4-1-first.wav,data/paired_evidence/level-4-1-second.wav,own,1.125
+level,esc-4,37,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-4-1-first.wav,data/paired_evidence/level-4-1-second.wav,donor_residual,0.875
+level,esc-4,37,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-4-1-first.wav,data/paired_evidence/level-4-1-second.wav,donor_pool,1.25
+level,esc-5,38,0,Is the first sound louder than the second sound?,data/paired_evidence/level-5-0-first.wav,data/paired_evidence/level-5-0-second.wav,own,1.75
+level,esc-5,38,0,Is the first sound louder than the second sound?,data/paired_evidence/level-5-0-first.wav,data/paired_evidence/level-5-0-second.wav,donor_residual,1.875
+level,esc-5,38,0,Is the first sound louder than the second sound?,data/paired_evidence/level-5-0-first.wav,data/paired_evidence/level-5-0-second.wav,donor_pool,1.625
+level,esc-5,38,1,Is the first sound louder than the second sound?,data/paired_evidence/level-5-0-second.wav,data/paired_evidence/level-5-0-first.wav,own,1.75
+level,esc-5,38,1,Is the first sound louder than the second sound?,data/paired_evidence/level-5-0-second.wav,data/paired_evidence/level-5-0-first.wav,donor_residual,1.625
+level,esc-5,38,1,Is the first sound louder than the second sound?,data/paired_evidence/level-5-0-second.wav,data/paired_evidence/level-5-0-first.wav,donor_pool,1.875
+level,esc-5,39,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-5-0-second.wav,data/paired_evidence/level-5-0-first.wav,own,1.5
+level,esc-5,39,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-5-0-second.wav,data/paired_evidence/level-5-0-first.wav,donor_residual,2.125
+level,esc-5,39,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-5-0-second.wav,data/paired_evidence/level-5-0-first.wav,donor_pool,1.5
+level,esc-5,39,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-5-0-first.wav,data/paired_evidence/level-5-0-second.wav,own,1.875
+level,esc-5,39,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-5-0-first.wav,data/paired_evidence/level-5-0-second.wav,donor_residual,1.5
+level,esc-5,39,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-5-0-first.wav,data/paired_evidence/level-5-0-second.wav,donor_pool,2.125
+level,esc-5,40,0,Is the first sound louder than the second sound?,data/paired_evidence/level-5-1-first.wav,data/paired_evidence/level-5-1-second.wav,own,2.0
+level,esc-5,40,0,Is the first sound louder than the second sound?,data/paired_evidence/level-5-1-first.wav,data/paired_evidence/level-5-1-second.wav,donor_residual,1.875
+level,esc-5,40,0,Is the first sound louder than the second sound?,data/paired_evidence/level-5-1-first.wav,data/paired_evidence/level-5-1-second.wav,donor_pool,2.1875
+level,esc-5,40,1,Is the first sound louder than the second sound?,data/paired_evidence/level-5-1-second.wav,data/paired_evidence/level-5-1-first.wav,own,2.0
+level,esc-5,40,1,Is the first sound louder than the second sound?,data/paired_evidence/level-5-1-second.wav,data/paired_evidence/level-5-1-first.wav,donor_residual,2.1875
+level,esc-5,40,1,Is the first sound louder than the second sound?,data/paired_evidence/level-5-1-second.wav,data/paired_evidence/level-5-1-first.wav,donor_pool,1.875
+level,esc-5,41,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-5-1-second.wav,data/paired_evidence/level-5-1-first.wav,own,1.75
+level,esc-5,41,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-5-1-second.wav,data/paired_evidence/level-5-1-first.wav,donor_residual,1.375
+level,esc-5,41,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-5-1-second.wav,data/paired_evidence/level-5-1-first.wav,donor_pool,1.875
+level,esc-5,41,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-5-1-first.wav,data/paired_evidence/level-5-1-second.wav,own,1.5
+level,esc-5,41,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-5-1-first.wav,data/paired_evidence/level-5-1-second.wav,donor_residual,1.875
+level,esc-5,41,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-5-1-first.wav,data/paired_evidence/level-5-1-second.wav,donor_pool,1.375
+level,esc-6,42,0,Is the first sound louder than the second sound?,data/paired_evidence/level-6-0-first.wav,data/paired_evidence/level-6-0-second.wav,own,0.875
+level,esc-6,42,0,Is the first sound louder than the second sound?,data/paired_evidence/level-6-0-first.wav,data/paired_evidence/level-6-0-second.wav,donor_residual,1.0
+level,esc-6,42,0,Is the first sound louder than the second sound?,data/paired_evidence/level-6-0-first.wav,data/paired_evidence/level-6-0-second.wav,donor_pool,1.5
+level,esc-6,42,1,Is the first sound louder than the second sound?,data/paired_evidence/level-6-0-second.wav,data/paired_evidence/level-6-0-first.wav,own,1.25
+level,esc-6,42,1,Is the first sound louder than the second sound?,data/paired_evidence/level-6-0-second.wav,data/paired_evidence/level-6-0-first.wav,donor_residual,1.5
+level,esc-6,42,1,Is the first sound louder than the second sound?,data/paired_evidence/level-6-0-second.wav,data/paired_evidence/level-6-0-first.wav,donor_pool,1.0
+level,esc-6,43,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-6-0-second.wav,data/paired_evidence/level-6-0-first.wav,own,1.0
+level,esc-6,43,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-6-0-second.wav,data/paired_evidence/level-6-0-first.wav,donor_residual,0.625
+level,esc-6,43,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-6-0-second.wav,data/paired_evidence/level-6-0-first.wav,donor_pool,0.75
+level,esc-6,43,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-6-0-first.wav,data/paired_evidence/level-6-0-second.wav,own,0.625
+level,esc-6,43,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-6-0-first.wav,data/paired_evidence/level-6-0-second.wav,donor_residual,0.75
+level,esc-6,43,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-6-0-first.wav,data/paired_evidence/level-6-0-second.wav,donor_pool,0.625
+level,esc-6,44,0,Is the first sound louder than the second sound?,data/paired_evidence/level-6-1-first.wav,data/paired_evidence/level-6-1-second.wav,own,1.75
+level,esc-6,44,0,Is the first sound louder than the second sound?,data/paired_evidence/level-6-1-first.wav,data/paired_evidence/level-6-1-second.wav,donor_residual,1.25
+level,esc-6,44,0,Is the first sound louder than the second sound?,data/paired_evidence/level-6-1-first.wav,data/paired_evidence/level-6-1-second.wav,donor_pool,1.25
+level,esc-6,44,1,Is the first sound louder than the second sound?,data/paired_evidence/level-6-1-second.wav,data/paired_evidence/level-6-1-first.wav,own,1.125
+level,esc-6,44,1,Is the first sound louder than the second sound?,data/paired_evidence/level-6-1-second.wav,data/paired_evidence/level-6-1-first.wav,donor_residual,1.25
+level,esc-6,44,1,Is the first sound louder than the second sound?,data/paired_evidence/level-6-1-second.wav,data/paired_evidence/level-6-1-first.wav,donor_pool,1.25
+level,esc-6,45,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-6-1-second.wav,data/paired_evidence/level-6-1-first.wav,own,0.875
+level,esc-6,45,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-6-1-second.wav,data/paired_evidence/level-6-1-first.wav,donor_residual,0.75
+level,esc-6,45,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-6-1-second.wav,data/paired_evidence/level-6-1-first.wav,donor_pool,0.875
+level,esc-6,45,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-6-1-first.wav,data/paired_evidence/level-6-1-second.wav,own,0.875
+level,esc-6,45,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-6-1-first.wav,data/paired_evidence/level-6-1-second.wav,donor_residual,0.875
+level,esc-6,45,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-6-1-first.wav,data/paired_evidence/level-6-1-second.wav,donor_pool,0.75
+level,esc-7,46,0,Is the first sound louder than the second sound?,data/paired_evidence/level-7-0-first.wav,data/paired_evidence/level-7-0-second.wav,own,2.625
+level,esc-7,46,0,Is the first sound louder than the second sound?,data/paired_evidence/level-7-0-first.wav,data/paired_evidence/level-7-0-second.wav,donor_residual,2.5
+level,esc-7,46,0,Is the first sound louder than the second sound?,data/paired_evidence/level-7-0-first.wav,data/paired_evidence/level-7-0-second.wav,donor_pool,2.375
+level,esc-7,46,1,Is the first sound louder than the second sound?,data/paired_evidence/level-7-0-second.wav,data/paired_evidence/level-7-0-first.wav,own,2.375
+level,esc-7,46,1,Is the first sound louder than the second sound?,data/paired_evidence/level-7-0-second.wav,data/paired_evidence/level-7-0-first.wav,donor_residual,2.375
+level,esc-7,46,1,Is the first sound louder than the second sound?,data/paired_evidence/level-7-0-second.wav,data/paired_evidence/level-7-0-first.wav,donor_pool,2.5
+level,esc-7,47,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-7-0-second.wav,data/paired_evidence/level-7-0-first.wav,own,1.375
+level,esc-7,47,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-7-0-second.wav,data/paired_evidence/level-7-0-first.wav,donor_residual,1.125
+level,esc-7,47,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-7-0-second.wav,data/paired_evidence/level-7-0-first.wav,donor_pool,1.375
+level,esc-7,47,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-7-0-first.wav,data/paired_evidence/level-7-0-second.wav,own,1.25
+level,esc-7,47,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-7-0-first.wav,data/paired_evidence/level-7-0-second.wav,donor_residual,1.375
+level,esc-7,47,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-7-0-first.wav,data/paired_evidence/level-7-0-second.wav,donor_pool,1.125
+level,esc-7,48,0,Is the first sound louder than the second sound?,data/paired_evidence/level-7-1-first.wav,data/paired_evidence/level-7-1-second.wav,own,2.875
+level,esc-7,48,0,Is the first sound louder than the second sound?,data/paired_evidence/level-7-1-first.wav,data/paired_evidence/level-7-1-second.wav,donor_residual,2.75
+level,esc-7,48,0,Is the first sound louder than the second sound?,data/paired_evidence/level-7-1-first.wav,data/paired_evidence/level-7-1-second.wav,donor_pool,2.875
+level,esc-7,48,1,Is the first sound louder than the second sound?,data/paired_evidence/level-7-1-second.wav,data/paired_evidence/level-7-1-first.wav,own,3.0
+level,esc-7,48,1,Is the first sound louder than the second sound?,data/paired_evidence/level-7-1-second.wav,data/paired_evidence/level-7-1-first.wav,donor_residual,2.875
+level,esc-7,48,1,Is the first sound louder than the second sound?,data/paired_evidence/level-7-1-second.wav,data/paired_evidence/level-7-1-first.wav,donor_pool,2.75
+level,esc-7,49,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-7-1-second.wav,data/paired_evidence/level-7-1-first.wav,own,2.0
+level,esc-7,49,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-7-1-second.wav,data/paired_evidence/level-7-1-first.wav,donor_residual,2.25
+level,esc-7,49,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-7-1-second.wav,data/paired_evidence/level-7-1-first.wav,donor_pool,1.875
+level,esc-7,49,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-7-1-first.wav,data/paired_evidence/level-7-1-second.wav,own,2.25
+level,esc-7,49,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-7-1-first.wav,data/paired_evidence/level-7-1-second.wav,donor_residual,1.875
+level,esc-7,49,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-7-1-first.wav,data/paired_evidence/level-7-1-second.wav,donor_pool,2.25
+level,esc-8,50,0,Is the first sound louder than the second sound?,data/paired_evidence/level-8-0-first.wav,data/paired_evidence/level-8-0-second.wav,own,1.5
+level,esc-8,50,0,Is the first sound louder than the second sound?,data/paired_evidence/level-8-0-first.wav,data/paired_evidence/level-8-0-second.wav,donor_residual,1.5
+level,esc-8,50,0,Is the first sound louder than the second sound?,data/paired_evidence/level-8-0-first.wav,data/paired_evidence/level-8-0-second.wav,donor_pool,1.0
+level,esc-8,50,1,Is the first sound louder than the second sound?,data/paired_evidence/level-8-0-second.wav,data/paired_evidence/level-8-0-first.wav,own,0.75
+level,esc-8,50,1,Is the first sound louder than the second sound?,data/paired_evidence/level-8-0-second.wav,data/paired_evidence/level-8-0-first.wav,donor_residual,1.0
+level,esc-8,50,1,Is the first sound louder than the second sound?,data/paired_evidence/level-8-0-second.wav,data/paired_evidence/level-8-0-first.wav,donor_pool,1.5
+level,esc-8,51,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-8-0-second.wav,data/paired_evidence/level-8-0-first.wav,own,0.625
+level,esc-8,51,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-8-0-second.wav,data/paired_evidence/level-8-0-first.wav,donor_residual,1.0
+level,esc-8,51,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-8-0-second.wav,data/paired_evidence/level-8-0-first.wav,donor_pool,1.0
+level,esc-8,51,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-8-0-first.wav,data/paired_evidence/level-8-0-second.wav,own,1.25
+level,esc-8,51,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-8-0-first.wav,data/paired_evidence/level-8-0-second.wav,donor_residual,1.0
+level,esc-8,51,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-8-0-first.wav,data/paired_evidence/level-8-0-second.wav,donor_pool,1.0
+level,esc-8,52,0,Is the first sound louder than the second sound?,data/paired_evidence/level-8-1-first.wav,data/paired_evidence/level-8-1-second.wav,own,1.375
+level,esc-8,52,0,Is the first sound louder than the second sound?,data/paired_evidence/level-8-1-first.wav,data/paired_evidence/level-8-1-second.wav,donor_residual,2.4375
+level,esc-8,52,0,Is the first sound louder than the second sound?,data/paired_evidence/level-8-1-first.wav,data/paired_evidence/level-8-1-second.wav,donor_pool,0.875
+level,esc-8,52,1,Is the first sound louder than the second sound?,data/paired_evidence/level-8-1-second.wav,data/paired_evidence/level-8-1-first.wav,own,1.75
+level,esc-8,52,1,Is the first sound louder than the second sound?,data/paired_evidence/level-8-1-second.wav,data/paired_evidence/level-8-1-first.wav,donor_residual,0.875
+level,esc-8,52,1,Is the first sound louder than the second sound?,data/paired_evidence/level-8-1-second.wav,data/paired_evidence/level-8-1-first.wav,donor_pool,2.4375
+level,esc-8,53,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-8-1-second.wav,data/paired_evidence/level-8-1-first.wav,own,0.75
+level,esc-8,53,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-8-1-second.wav,data/paired_evidence/level-8-1-first.wav,donor_residual,0.625
+level,esc-8,53,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-8-1-second.wav,data/paired_evidence/level-8-1-first.wav,donor_pool,0.625
+level,esc-8,53,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-8-1-first.wav,data/paired_evidence/level-8-1-second.wav,own,0.25
+level,esc-8,53,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-8-1-first.wav,data/paired_evidence/level-8-1-second.wav,donor_residual,0.625
+level,esc-8,53,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-8-1-first.wav,data/paired_evidence/level-8-1-second.wav,donor_pool,0.625
+level,esc-9,54,0,Is the first sound louder than the second sound?,data/paired_evidence/level-9-0-first.wav,data/paired_evidence/level-9-0-second.wav,own,2.5
+level,esc-9,54,0,Is the first sound louder than the second sound?,data/paired_evidence/level-9-0-first.wav,data/paired_evidence/level-9-0-second.wav,donor_residual,2.375
+level,esc-9,54,0,Is the first sound louder than the second sound?,data/paired_evidence/level-9-0-first.wav,data/paired_evidence/level-9-0-second.wav,donor_pool,2.5
+level,esc-9,54,1,Is the first sound louder than the second sound?,data/paired_evidence/level-9-0-second.wav,data/paired_evidence/level-9-0-first.wav,own,1.875
+level,esc-9,54,1,Is the first sound louder than the second sound?,data/paired_evidence/level-9-0-second.wav,data/paired_evidence/level-9-0-first.wav,donor_residual,2.5
+level,esc-9,54,1,Is the first sound louder than the second sound?,data/paired_evidence/level-9-0-second.wav,data/paired_evidence/level-9-0-first.wav,donor_pool,2.375
+level,esc-9,55,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-9-0-second.wav,data/paired_evidence/level-9-0-first.wav,own,0.25
+level,esc-9,55,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-9-0-second.wav,data/paired_evidence/level-9-0-first.wav,donor_residual,0.375
+level,esc-9,55,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-9-0-second.wav,data/paired_evidence/level-9-0-first.wav,donor_pool,0.75
+level,esc-9,55,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-9-0-first.wav,data/paired_evidence/level-9-0-second.wav,own,0.875
+level,esc-9,55,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-9-0-first.wav,data/paired_evidence/level-9-0-second.wav,donor_residual,0.75
+level,esc-9,55,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-9-0-first.wav,data/paired_evidence/level-9-0-second.wav,donor_pool,0.375
+level,esc-9,56,0,Is the first sound louder than the second sound?,data/paired_evidence/level-9-1-first.wav,data/paired_evidence/level-9-1-second.wav,own,2.0
+level,esc-9,56,0,Is the first sound louder than the second sound?,data/paired_evidence/level-9-1-first.wav,data/paired_evidence/level-9-1-second.wav,donor_residual,1.875
+level,esc-9,56,0,Is the first sound louder than the second sound?,data/paired_evidence/level-9-1-first.wav,data/paired_evidence/level-9-1-second.wav,donor_pool,2.75
+level,esc-9,56,1,Is the first sound louder than the second sound?,data/paired_evidence/level-9-1-second.wav,data/paired_evidence/level-9-1-first.wav,own,2.75
+level,esc-9,56,1,Is the first sound louder than the second sound?,data/paired_evidence/level-9-1-second.wav,data/paired_evidence/level-9-1-first.wav,donor_residual,2.75
+level,esc-9,56,1,Is the first sound louder than the second sound?,data/paired_evidence/level-9-1-second.wav,data/paired_evidence/level-9-1-first.wav,donor_pool,1.875
+level,esc-9,57,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-9-1-second.wav,data/paired_evidence/level-9-1-first.wav,own,1.0
+level,esc-9,57,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-9-1-second.wav,data/paired_evidence/level-9-1-first.wav,donor_residual,0.75
+level,esc-9,57,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-9-1-second.wav,data/paired_evidence/level-9-1-first.wav,donor_pool,0.25
+level,esc-9,57,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-9-1-first.wav,data/paired_evidence/level-9-1-second.wav,own,-0.125
+level,esc-9,57,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-9-1-first.wav,data/paired_evidence/level-9-1-second.wav,donor_residual,0.25
+level,esc-9,57,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-9-1-first.wav,data/paired_evidence/level-9-1-second.wav,donor_pool,0.75
+level,esc-10,58,0,Is the first sound louder than the second sound?,data/paired_evidence/level-10-0-first.wav,data/paired_evidence/level-10-0-second.wav,own,0.0
+level,esc-10,58,0,Is the first sound louder than the second sound?,data/paired_evidence/level-10-0-first.wav,data/paired_evidence/level-10-0-second.wav,donor_residual,2.0
+level,esc-10,58,0,Is the first sound louder than the second sound?,data/paired_evidence/level-10-0-first.wav,data/paired_evidence/level-10-0-second.wav,donor_pool,0.625
+level,esc-10,58,1,Is the first sound louder than the second sound?,data/paired_evidence/level-10-0-second.wav,data/paired_evidence/level-10-0-first.wav,own,1.625
+level,esc-10,58,1,Is the first sound louder than the second sound?,data/paired_evidence/level-10-0-second.wav,data/paired_evidence/level-10-0-first.wav,donor_residual,0.625
+level,esc-10,58,1,Is the first sound louder than the second sound?,data/paired_evidence/level-10-0-second.wav,data/paired_evidence/level-10-0-first.wav,donor_pool,2.0
+level,esc-10,59,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-10-0-second.wav,data/paired_evidence/level-10-0-first.wav,own,-0.125
+level,esc-10,59,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-10-0-second.wav,data/paired_evidence/level-10-0-first.wav,donor_residual,0.25
+level,esc-10,59,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-10-0-second.wav,data/paired_evidence/level-10-0-first.wav,donor_pool,-0.125
+level,esc-10,59,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-10-0-first.wav,data/paired_evidence/level-10-0-second.wav,own,-0.125
+level,esc-10,59,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-10-0-first.wav,data/paired_evidence/level-10-0-second.wav,donor_residual,-0.125
+level,esc-10,59,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-10-0-first.wav,data/paired_evidence/level-10-0-second.wav,donor_pool,0.25
+level,esc-10,60,0,Is the first sound louder than the second sound?,data/paired_evidence/level-10-1-first.wav,data/paired_evidence/level-10-1-second.wav,own,0.625
+level,esc-10,60,0,Is the first sound louder than the second sound?,data/paired_evidence/level-10-1-first.wav,data/paired_evidence/level-10-1-second.wav,donor_residual,0.0
+level,esc-10,60,0,Is the first sound louder than the second sound?,data/paired_evidence/level-10-1-first.wav,data/paired_evidence/level-10-1-second.wav,donor_pool,0.25
+level,esc-10,60,1,Is the first sound louder than the second sound?,data/paired_evidence/level-10-1-second.wav,data/paired_evidence/level-10-1-first.wav,own,-0.75
+level,esc-10,60,1,Is the first sound louder than the second sound?,data/paired_evidence/level-10-1-second.wav,data/paired_evidence/level-10-1-first.wav,donor_residual,0.25
+level,esc-10,60,1,Is the first sound louder than the second sound?,data/paired_evidence/level-10-1-second.wav,data/paired_evidence/level-10-1-first.wav,donor_pool,0.0
+level,esc-10,61,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-10-1-second.wav,data/paired_evidence/level-10-1-first.wav,own,-1.0
+level,esc-10,61,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-10-1-second.wav,data/paired_evidence/level-10-1-first.wav,donor_residual,-0.25
+level,esc-10,61,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-10-1-second.wav,data/paired_evidence/level-10-1-first.wav,donor_pool,-0.875
+level,esc-10,61,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-10-1-first.wav,data/paired_evidence/level-10-1-second.wav,own,-0.375
+level,esc-10,61,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-10-1-first.wav,data/paired_evidence/level-10-1-second.wav,donor_residual,-0.875
+level,esc-10,61,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-10-1-first.wav,data/paired_evidence/level-10-1-second.wav,donor_pool,-0.25
+level,esc-11,62,0,Is the first sound louder than the second sound?,data/paired_evidence/level-11-0-first.wav,data/paired_evidence/level-11-0-second.wav,own,2.375
+level,esc-11,62,0,Is the first sound louder than the second sound?,data/paired_evidence/level-11-0-first.wav,data/paired_evidence/level-11-0-second.wav,donor_residual,2.125
+level,esc-11,62,0,Is the first sound louder than the second sound?,data/paired_evidence/level-11-0-first.wav,data/paired_evidence/level-11-0-second.wav,donor_pool,2.25
+level,esc-11,62,1,Is the first sound louder than the second sound?,data/paired_evidence/level-11-0-second.wav,data/paired_evidence/level-11-0-first.wav,own,2.125
+level,esc-11,62,1,Is the first sound louder than the second sound?,data/paired_evidence/level-11-0-second.wav,data/paired_evidence/level-11-0-first.wav,donor_residual,2.25
+level,esc-11,62,1,Is the first sound louder than the second sound?,data/paired_evidence/level-11-0-second.wav,data/paired_evidence/level-11-0-first.wav,donor_pool,2.125
+level,esc-11,63,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-11-0-second.wav,data/paired_evidence/level-11-0-first.wav,own,1.125
+level,esc-11,63,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-11-0-second.wav,data/paired_evidence/level-11-0-first.wav,donor_residual,1.125
+level,esc-11,63,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-11-0-second.wav,data/paired_evidence/level-11-0-first.wav,donor_pool,0.625
+level,esc-11,63,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-11-0-first.wav,data/paired_evidence/level-11-0-second.wav,own,0.75
+level,esc-11,63,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-11-0-first.wav,data/paired_evidence/level-11-0-second.wav,donor_residual,0.625
+level,esc-11,63,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-11-0-first.wav,data/paired_evidence/level-11-0-second.wav,donor_pool,1.125
+level,esc-11,64,0,Is the first sound louder than the second sound?,data/paired_evidence/level-11-1-first.wav,data/paired_evidence/level-11-1-second.wav,own,0.625
+level,esc-11,64,0,Is the first sound louder than the second sound?,data/paired_evidence/level-11-1-first.wav,data/paired_evidence/level-11-1-second.wav,donor_residual,1.875
+level,esc-11,64,0,Is the first sound louder than the second sound?,data/paired_evidence/level-11-1-first.wav,data/paired_evidence/level-11-1-second.wav,donor_pool,-0.375
+level,esc-11,64,1,Is the first sound louder than the second sound?,data/paired_evidence/level-11-1-second.wav,data/paired_evidence/level-11-1-first.wav,own,0.875
+level,esc-11,64,1,Is the first sound louder than the second sound?,data/paired_evidence/level-11-1-second.wav,data/paired_evidence/level-11-1-first.wav,donor_residual,-0.375
+level,esc-11,64,1,Is the first sound louder than the second sound?,data/paired_evidence/level-11-1-second.wav,data/paired_evidence/level-11-1-first.wav,donor_pool,1.875
+level,esc-11,65,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-11-1-second.wav,data/paired_evidence/level-11-1-first.wav,own,0.25
+level,esc-11,65,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-11-1-second.wav,data/paired_evidence/level-11-1-first.wav,donor_residual,0.0
+level,esc-11,65,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-11-1-second.wav,data/paired_evidence/level-11-1-first.wav,donor_pool,1.0
+level,esc-11,65,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-11-1-first.wav,data/paired_evidence/level-11-1-second.wav,own,0.625
+level,esc-11,65,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-11-1-first.wav,data/paired_evidence/level-11-1-second.wav,donor_residual,1.0
+level,esc-11,65,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-11-1-first.wav,data/paired_evidence/level-11-1-second.wav,donor_pool,0.0
+level,esc-12,66,0,Is the first sound louder than the second sound?,data/paired_evidence/level-12-0-first.wav,data/paired_evidence/level-12-0-second.wav,own,1.625
+level,esc-12,66,0,Is the first sound louder than the second sound?,data/paired_evidence/level-12-0-first.wav,data/paired_evidence/level-12-0-second.wav,donor_residual,2.5
+level,esc-12,66,0,Is the first sound louder than the second sound?,data/paired_evidence/level-12-0-first.wav,data/paired_evidence/level-12-0-second.wav,donor_pool,1.75
+level,esc-12,66,1,Is the first sound louder than the second sound?,data/paired_evidence/level-12-0-second.wav,data/paired_evidence/level-12-0-first.wav,own,2.25
+level,esc-12,66,1,Is the first sound louder than the second sound?,data/paired_evidence/level-12-0-second.wav,data/paired_evidence/level-12-0-first.wav,donor_residual,1.75
+level,esc-12,66,1,Is the first sound louder than the second sound?,data/paired_evidence/level-12-0-second.wav,data/paired_evidence/level-12-0-first.wav,donor_pool,2.5
+level,esc-12,67,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-12-0-second.wav,data/paired_evidence/level-12-0-first.wav,own,1.0
+level,esc-12,67,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-12-0-second.wav,data/paired_evidence/level-12-0-first.wav,donor_residual,0.5
+level,esc-12,67,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-12-0-second.wav,data/paired_evidence/level-12-0-first.wav,donor_pool,1.125
+level,esc-12,67,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-12-0-first.wav,data/paired_evidence/level-12-0-second.wav,own,0.25
+level,esc-12,67,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-12-0-first.wav,data/paired_evidence/level-12-0-second.wav,donor_residual,1.125
+level,esc-12,67,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-12-0-first.wav,data/paired_evidence/level-12-0-second.wav,donor_pool,0.5
+level,esc-12,68,0,Is the first sound louder than the second sound?,data/paired_evidence/level-12-1-first.wav,data/paired_evidence/level-12-1-second.wav,own,1.875
+level,esc-12,68,0,Is the first sound louder than the second sound?,data/paired_evidence/level-12-1-first.wav,data/paired_evidence/level-12-1-second.wav,donor_residual,2.0
+level,esc-12,68,0,Is the first sound louder than the second sound?,data/paired_evidence/level-12-1-first.wav,data/paired_evidence/level-12-1-second.wav,donor_pool,2.0
+level,esc-12,68,1,Is the first sound louder than the second sound?,data/paired_evidence/level-12-1-second.wav,data/paired_evidence/level-12-1-first.wav,own,2.0
+level,esc-12,68,1,Is the first sound louder than the second sound?,data/paired_evidence/level-12-1-second.wav,data/paired_evidence/level-12-1-first.wav,donor_residual,2.0
+level,esc-12,68,1,Is the first sound louder than the second sound?,data/paired_evidence/level-12-1-second.wav,data/paired_evidence/level-12-1-first.wav,donor_pool,2.0
+level,esc-12,69,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-12-1-second.wav,data/paired_evidence/level-12-1-first.wav,own,0.625
+level,esc-12,69,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-12-1-second.wav,data/paired_evidence/level-12-1-first.wav,donor_residual,0.75
+level,esc-12,69,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-12-1-second.wav,data/paired_evidence/level-12-1-first.wav,donor_pool,0.625
+level,esc-12,69,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-12-1-first.wav,data/paired_evidence/level-12-1-second.wav,own,0.625
+level,esc-12,69,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-12-1-first.wav,data/paired_evidence/level-12-1-second.wav,donor_residual,0.625
+level,esc-12,69,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-12-1-first.wav,data/paired_evidence/level-12-1-second.wav,donor_pool,0.75
+level,esc-13,70,0,Is the first sound louder than the second sound?,data/paired_evidence/level-13-0-first.wav,data/paired_evidence/level-13-0-second.wav,own,1.75
+level,esc-13,70,0,Is the first sound louder than the second sound?,data/paired_evidence/level-13-0-first.wav,data/paired_evidence/level-13-0-second.wav,donor_residual,1.875
+level,esc-13,70,0,Is the first sound louder than the second sound?,data/paired_evidence/level-13-0-first.wav,data/paired_evidence/level-13-0-second.wav,donor_pool,1.75
+level,esc-13,70,1,Is the first sound louder than the second sound?,data/paired_evidence/level-13-0-second.wav,data/paired_evidence/level-13-0-first.wav,own,1.875
+level,esc-13,70,1,Is the first sound louder than the second sound?,data/paired_evidence/level-13-0-second.wav,data/paired_evidence/level-13-0-first.wav,donor_residual,1.75
+level,esc-13,70,1,Is the first sound louder than the second sound?,data/paired_evidence/level-13-0-second.wav,data/paired_evidence/level-13-0-first.wav,donor_pool,1.875
+level,esc-13,71,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-13-0-second.wav,data/paired_evidence/level-13-0-first.wav,own,1.0
+level,esc-13,71,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-13-0-second.wav,data/paired_evidence/level-13-0-first.wav,donor_residual,1.0
+level,esc-13,71,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-13-0-second.wav,data/paired_evidence/level-13-0-first.wav,donor_pool,0.875
+level,esc-13,71,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-13-0-first.wav,data/paired_evidence/level-13-0-second.wav,own,0.75
+level,esc-13,71,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-13-0-first.wav,data/paired_evidence/level-13-0-second.wav,donor_residual,0.875
+level,esc-13,71,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-13-0-first.wav,data/paired_evidence/level-13-0-second.wav,donor_pool,1.0
+level,esc-13,72,0,Is the first sound louder than the second sound?,data/paired_evidence/level-13-1-first.wav,data/paired_evidence/level-13-1-second.wav,own,2.125
+level,esc-13,72,0,Is the first sound louder than the second sound?,data/paired_evidence/level-13-1-first.wav,data/paired_evidence/level-13-1-second.wav,donor_residual,1.625
+level,esc-13,72,0,Is the first sound louder than the second sound?,data/paired_evidence/level-13-1-first.wav,data/paired_evidence/level-13-1-second.wav,donor_pool,1.75
+level,esc-13,72,1,Is the first sound louder than the second sound?,data/paired_evidence/level-13-1-second.wav,data/paired_evidence/level-13-1-first.wav,own,1.625
+level,esc-13,72,1,Is the first sound louder than the second sound?,data/paired_evidence/level-13-1-second.wav,data/paired_evidence/level-13-1-first.wav,donor_residual,1.75
+level,esc-13,72,1,Is the first sound louder than the second sound?,data/paired_evidence/level-13-1-second.wav,data/paired_evidence/level-13-1-first.wav,donor_pool,1.625
+level,esc-13,73,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-13-1-second.wav,data/paired_evidence/level-13-1-first.wav,own,0.75
+level,esc-13,73,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-13-1-second.wav,data/paired_evidence/level-13-1-first.wav,donor_residual,0.75
+level,esc-13,73,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-13-1-second.wav,data/paired_evidence/level-13-1-first.wav,donor_pool,1.125
+level,esc-13,73,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-13-1-first.wav,data/paired_evidence/level-13-1-second.wav,own,1.25
+level,esc-13,73,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-13-1-first.wav,data/paired_evidence/level-13-1-second.wav,donor_residual,1.125
+level,esc-13,73,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-13-1-first.wav,data/paired_evidence/level-13-1-second.wav,donor_pool,0.75
+level,esc-14,74,0,Is the first sound louder than the second sound?,data/paired_evidence/level-14-0-first.wav,data/paired_evidence/level-14-0-second.wav,own,2.75
+level,esc-14,74,0,Is the first sound louder than the second sound?,data/paired_evidence/level-14-0-first.wav,data/paired_evidence/level-14-0-second.wav,donor_residual,3.0
+level,esc-14,74,0,Is the first sound louder than the second sound?,data/paired_evidence/level-14-0-first.wav,data/paired_evidence/level-14-0-second.wav,donor_pool,3.125
+level,esc-14,74,1,Is the first sound louder than the second sound?,data/paired_evidence/level-14-0-second.wav,data/paired_evidence/level-14-0-first.wav,own,3.3125
+level,esc-14,74,1,Is the first sound louder than the second sound?,data/paired_evidence/level-14-0-second.wav,data/paired_evidence/level-14-0-first.wav,donor_residual,3.125
+level,esc-14,74,1,Is the first sound louder than the second sound?,data/paired_evidence/level-14-0-second.wav,data/paired_evidence/level-14-0-first.wav,donor_pool,3.0
+level,esc-14,75,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-14-0-second.wav,data/paired_evidence/level-14-0-first.wav,own,1.75
+level,esc-14,75,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-14-0-second.wav,data/paired_evidence/level-14-0-first.wav,donor_residual,1.75
+level,esc-14,75,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-14-0-second.wav,data/paired_evidence/level-14-0-first.wav,donor_pool,1.625
+level,esc-14,75,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-14-0-first.wav,data/paired_evidence/level-14-0-second.wav,own,1.75
+level,esc-14,75,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-14-0-first.wav,data/paired_evidence/level-14-0-second.wav,donor_residual,1.625
+level,esc-14,75,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-14-0-first.wav,data/paired_evidence/level-14-0-second.wav,donor_pool,1.75
+level,esc-14,76,0,Is the first sound louder than the second sound?,data/paired_evidence/level-14-1-first.wav,data/paired_evidence/level-14-1-second.wav,own,3.75
+level,esc-14,76,0,Is the first sound louder than the second sound?,data/paired_evidence/level-14-1-first.wav,data/paired_evidence/level-14-1-second.wav,donor_residual,2.75
+level,esc-14,76,0,Is the first sound louder than the second sound?,data/paired_evidence/level-14-1-first.wav,data/paired_evidence/level-14-1-second.wav,donor_pool,3.5
+level,esc-14,76,1,Is the first sound louder than the second sound?,data/paired_evidence/level-14-1-second.wav,data/paired_evidence/level-14-1-first.wav,own,2.75
+level,esc-14,76,1,Is the first sound louder than the second sound?,data/paired_evidence/level-14-1-second.wav,data/paired_evidence/level-14-1-first.wav,donor_residual,3.5
+level,esc-14,76,1,Is the first sound louder than the second sound?,data/paired_evidence/level-14-1-second.wav,data/paired_evidence/level-14-1-first.wav,donor_pool,2.75
+level,esc-14,77,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-14-1-second.wav,data/paired_evidence/level-14-1-first.wav,own,2.0
+level,esc-14,77,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-14-1-second.wav,data/paired_evidence/level-14-1-first.wav,donor_residual,2.125
+level,esc-14,77,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-14-1-second.wav,data/paired_evidence/level-14-1-first.wav,donor_pool,1.75
+level,esc-14,77,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-14-1-first.wav,data/paired_evidence/level-14-1-second.wav,own,2.0
+level,esc-14,77,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-14-1-first.wav,data/paired_evidence/level-14-1-second.wav,donor_residual,1.75
+level,esc-14,77,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-14-1-first.wav,data/paired_evidence/level-14-1-second.wav,donor_pool,2.125
+level,esc-15,78,0,Is the first sound louder than the second sound?,data/paired_evidence/level-15-0-first.wav,data/paired_evidence/level-15-0-second.wav,own,1.875
+level,esc-15,78,0,Is the first sound louder than the second sound?,data/paired_evidence/level-15-0-first.wav,data/paired_evidence/level-15-0-second.wav,donor_residual,1.625
+level,esc-15,78,0,Is the first sound louder than the second sound?,data/paired_evidence/level-15-0-first.wav,data/paired_evidence/level-15-0-second.wav,donor_pool,1.75
+level,esc-15,78,1,Is the first sound louder than the second sound?,data/paired_evidence/level-15-0-second.wav,data/paired_evidence/level-15-0-first.wav,own,1.5
+level,esc-15,78,1,Is the first sound louder than the second sound?,data/paired_evidence/level-15-0-second.wav,data/paired_evidence/level-15-0-first.wav,donor_residual,1.75
+level,esc-15,78,1,Is the first sound louder than the second sound?,data/paired_evidence/level-15-0-second.wav,data/paired_evidence/level-15-0-first.wav,donor_pool,1.625
+level,esc-15,79,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-15-0-second.wav,data/paired_evidence/level-15-0-first.wav,own,1.125
+level,esc-15,79,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-15-0-second.wav,data/paired_evidence/level-15-0-first.wav,donor_residual,1.125
+level,esc-15,79,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-15-0-second.wav,data/paired_evidence/level-15-0-first.wav,donor_pool,1.25
+level,esc-15,79,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-15-0-first.wav,data/paired_evidence/level-15-0-second.wav,own,1.25
+level,esc-15,79,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-15-0-first.wav,data/paired_evidence/level-15-0-second.wav,donor_residual,1.25
+level,esc-15,79,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-15-0-first.wav,data/paired_evidence/level-15-0-second.wav,donor_pool,1.125
+level,esc-15,80,0,Is the first sound louder than the second sound?,data/paired_evidence/level-15-1-first.wav,data/paired_evidence/level-15-1-second.wav,own,2.125
+level,esc-15,80,0,Is the first sound louder than the second sound?,data/paired_evidence/level-15-1-first.wav,data/paired_evidence/level-15-1-second.wav,donor_residual,2.25
+level,esc-15,80,0,Is the first sound louder than the second sound?,data/paired_evidence/level-15-1-first.wav,data/paired_evidence/level-15-1-second.wav,donor_pool,2.0
+level,esc-15,80,1,Is the first sound louder than the second sound?,data/paired_evidence/level-15-1-second.wav,data/paired_evidence/level-15-1-first.wav,own,2.25
+level,esc-15,80,1,Is the first sound louder than the second sound?,data/paired_evidence/level-15-1-second.wav,data/paired_evidence/level-15-1-first.wav,donor_residual,2.0
+level,esc-15,80,1,Is the first sound louder than the second sound?,data/paired_evidence/level-15-1-second.wav,data/paired_evidence/level-15-1-first.wav,donor_pool,2.25
+level,esc-15,81,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-15-1-second.wav,data/paired_evidence/level-15-1-first.wav,own,1.25
+level,esc-15,81,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-15-1-second.wav,data/paired_evidence/level-15-1-first.wav,donor_residual,1.125
+level,esc-15,81,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-15-1-second.wav,data/paired_evidence/level-15-1-first.wav,donor_pool,1.125
+level,esc-15,81,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-15-1-first.wav,data/paired_evidence/level-15-1-second.wav,own,1.125
+level,esc-15,81,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-15-1-first.wav,data/paired_evidence/level-15-1-second.wav,donor_residual,1.125
+level,esc-15,81,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-15-1-first.wav,data/paired_evidence/level-15-1-second.wav,donor_pool,1.125
+level,esc-16,82,0,Is the first sound louder than the second sound?,data/paired_evidence/level-16-0-first.wav,data/paired_evidence/level-16-0-second.wav,own,1.5
+level,esc-16,82,0,Is the first sound louder than the second sound?,data/paired_evidence/level-16-0-first.wav,data/paired_evidence/level-16-0-second.wav,donor_residual,1.375
+level,esc-16,82,0,Is the first sound louder than the second sound?,data/paired_evidence/level-16-0-first.wav,data/paired_evidence/level-16-0-second.wav,donor_pool,1.625
+level,esc-16,82,1,Is the first sound louder than the second sound?,data/paired_evidence/level-16-0-second.wav,data/paired_evidence/level-16-0-first.wav,own,1.375
+level,esc-16,82,1,Is the first sound louder than the second sound?,data/paired_evidence/level-16-0-second.wav,data/paired_evidence/level-16-0-first.wav,donor_residual,1.625
+level,esc-16,82,1,Is the first sound louder than the second sound?,data/paired_evidence/level-16-0-second.wav,data/paired_evidence/level-16-0-first.wav,donor_pool,1.375
+level,esc-16,83,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-16-0-second.wav,data/paired_evidence/level-16-0-first.wav,own,0.5
+level,esc-16,83,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-16-0-second.wav,data/paired_evidence/level-16-0-first.wav,donor_residual,0.375
+level,esc-16,83,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-16-0-second.wav,data/paired_evidence/level-16-0-first.wav,donor_pool,0.625
+level,esc-16,83,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-16-0-first.wav,data/paired_evidence/level-16-0-second.wav,own,0.625
+level,esc-16,83,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-16-0-first.wav,data/paired_evidence/level-16-0-second.wav,donor_residual,0.625
+level,esc-16,83,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-16-0-first.wav,data/paired_evidence/level-16-0-second.wav,donor_pool,0.375
+level,esc-16,84,0,Is the first sound louder than the second sound?,data/paired_evidence/level-16-1-first.wav,data/paired_evidence/level-16-1-second.wav,own,0.375
+level,esc-16,84,0,Is the first sound louder than the second sound?,data/paired_evidence/level-16-1-first.wav,data/paired_evidence/level-16-1-second.wav,donor_residual,1.125
+level,esc-16,84,0,Is the first sound louder than the second sound?,data/paired_evidence/level-16-1-first.wav,data/paired_evidence/level-16-1-second.wav,donor_pool,0.75
+level,esc-16,84,1,Is the first sound louder than the second sound?,data/paired_evidence/level-16-1-second.wav,data/paired_evidence/level-16-1-first.wav,own,1.375
+level,esc-16,84,1,Is the first sound louder than the second sound?,data/paired_evidence/level-16-1-second.wav,data/paired_evidence/level-16-1-first.wav,donor_residual,0.75
+level,esc-16,84,1,Is the first sound louder than the second sound?,data/paired_evidence/level-16-1-second.wav,data/paired_evidence/level-16-1-first.wav,donor_pool,1.125
+level,esc-16,85,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-16-1-second.wav,data/paired_evidence/level-16-1-first.wav,own,0.875
+level,esc-16,85,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-16-1-second.wav,data/paired_evidence/level-16-1-first.wav,donor_residual,0.875
+level,esc-16,85,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-16-1-second.wav,data/paired_evidence/level-16-1-first.wav,donor_pool,0.5
+level,esc-16,85,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-16-1-first.wav,data/paired_evidence/level-16-1-second.wav,own,0.625
+level,esc-16,85,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-16-1-first.wav,data/paired_evidence/level-16-1-second.wav,donor_residual,0.5
+level,esc-16,85,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-16-1-first.wav,data/paired_evidence/level-16-1-second.wav,donor_pool,0.875
+level,esc-17,86,0,Is the first sound louder than the second sound?,data/paired_evidence/level-17-0-first.wav,data/paired_evidence/level-17-0-second.wav,own,3.5625
+level,esc-17,86,0,Is the first sound louder than the second sound?,data/paired_evidence/level-17-0-first.wav,data/paired_evidence/level-17-0-second.wav,donor_residual,4.1875
+level,esc-17,86,0,Is the first sound louder than the second sound?,data/paired_evidence/level-17-0-first.wav,data/paired_evidence/level-17-0-second.wav,donor_pool,3.5
+level,esc-17,86,1,Is the first sound louder than the second sound?,data/paired_evidence/level-17-0-second.wav,data/paired_evidence/level-17-0-first.wav,own,4.0625
+level,esc-17,86,1,Is the first sound louder than the second sound?,data/paired_evidence/level-17-0-second.wav,data/paired_evidence/level-17-0-first.wav,donor_residual,3.5
+level,esc-17,86,1,Is the first sound louder than the second sound?,data/paired_evidence/level-17-0-second.wav,data/paired_evidence/level-17-0-first.wav,donor_pool,4.1875
+level,esc-17,87,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-17-0-second.wav,data/paired_evidence/level-17-0-first.wav,own,2.125
+level,esc-17,87,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-17-0-second.wav,data/paired_evidence/level-17-0-first.wav,donor_residual,1.5
+level,esc-17,87,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-17-0-second.wav,data/paired_evidence/level-17-0-first.wav,donor_pool,2.0
+level,esc-17,87,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-17-0-first.wav,data/paired_evidence/level-17-0-second.wav,own,1.5
+level,esc-17,87,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-17-0-first.wav,data/paired_evidence/level-17-0-second.wav,donor_residual,2.0
+level,esc-17,87,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-17-0-first.wav,data/paired_evidence/level-17-0-second.wav,donor_pool,1.5
+level,esc-17,88,0,Is the first sound louder than the second sound?,data/paired_evidence/level-17-1-first.wav,data/paired_evidence/level-17-1-second.wav,own,2.25
+level,esc-17,88,0,Is the first sound louder than the second sound?,data/paired_evidence/level-17-1-first.wav,data/paired_evidence/level-17-1-second.wav,donor_residual,2.125
+level,esc-17,88,0,Is the first sound louder than the second sound?,data/paired_evidence/level-17-1-first.wav,data/paired_evidence/level-17-1-second.wav,donor_pool,2.5
+level,esc-17,88,1,Is the first sound louder than the second sound?,data/paired_evidence/level-17-1-second.wav,data/paired_evidence/level-17-1-first.wav,own,2.375
+level,esc-17,88,1,Is the first sound louder than the second sound?,data/paired_evidence/level-17-1-second.wav,data/paired_evidence/level-17-1-first.wav,donor_residual,2.5
+level,esc-17,88,1,Is the first sound louder than the second sound?,data/paired_evidence/level-17-1-second.wav,data/paired_evidence/level-17-1-first.wav,donor_pool,2.125
+level,esc-17,89,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-17-1-second.wav,data/paired_evidence/level-17-1-first.wav,own,1.25
+level,esc-17,89,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-17-1-second.wav,data/paired_evidence/level-17-1-first.wav,donor_residual,1.25
+level,esc-17,89,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-17-1-second.wav,data/paired_evidence/level-17-1-first.wav,donor_pool,0.875
+level,esc-17,89,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-17-1-first.wav,data/paired_evidence/level-17-1-second.wav,own,1.0
+level,esc-17,89,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-17-1-first.wav,data/paired_evidence/level-17-1-second.wav,donor_residual,0.875
+level,esc-17,89,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-17-1-first.wav,data/paired_evidence/level-17-1-second.wav,donor_pool,1.25
+level,esc-18,90,0,Is the first sound louder than the second sound?,data/paired_evidence/level-18-0-first.wav,data/paired_evidence/level-18-0-second.wav,own,2.75
+level,esc-18,90,0,Is the first sound louder than the second sound?,data/paired_evidence/level-18-0-first.wav,data/paired_evidence/level-18-0-second.wav,donor_residual,3.0
+level,esc-18,90,0,Is the first sound louder than the second sound?,data/paired_evidence/level-18-0-first.wav,data/paired_evidence/level-18-0-second.wav,donor_pool,2.5
+level,esc-18,90,1,Is the first sound louder than the second sound?,data/paired_evidence/level-18-0-second.wav,data/paired_evidence/level-18-0-first.wav,own,2.625
+level,esc-18,90,1,Is the first sound louder than the second sound?,data/paired_evidence/level-18-0-second.wav,data/paired_evidence/level-18-0-first.wav,donor_residual,2.5
+level,esc-18,90,1,Is the first sound louder than the second sound?,data/paired_evidence/level-18-0-second.wav,data/paired_evidence/level-18-0-first.wav,donor_pool,3.0
+level,esc-18,91,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-18-0-second.wav,data/paired_evidence/level-18-0-first.wav,own,1.625
+level,esc-18,91,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-18-0-second.wav,data/paired_evidence/level-18-0-first.wav,donor_residual,1.625
+level,esc-18,91,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-18-0-second.wav,data/paired_evidence/level-18-0-first.wav,donor_pool,1.5
+level,esc-18,91,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-18-0-first.wav,data/paired_evidence/level-18-0-second.wav,own,1.625
+level,esc-18,91,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-18-0-first.wav,data/paired_evidence/level-18-0-second.wav,donor_residual,1.5
+level,esc-18,91,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-18-0-first.wav,data/paired_evidence/level-18-0-second.wav,donor_pool,1.625
+level,esc-18,92,0,Is the first sound louder than the second sound?,data/paired_evidence/level-18-1-first.wav,data/paired_evidence/level-18-1-second.wav,own,2.625
+level,esc-18,92,0,Is the first sound louder than the second sound?,data/paired_evidence/level-18-1-first.wav,data/paired_evidence/level-18-1-second.wav,donor_residual,2.625
+level,esc-18,92,0,Is the first sound louder than the second sound?,data/paired_evidence/level-18-1-first.wav,data/paired_evidence/level-18-1-second.wav,donor_pool,2.75
+level,esc-18,92,1,Is the first sound louder than the second sound?,data/paired_evidence/level-18-1-second.wav,data/paired_evidence/level-18-1-first.wav,own,2.75
+level,esc-18,92,1,Is the first sound louder than the second sound?,data/paired_evidence/level-18-1-second.wav,data/paired_evidence/level-18-1-first.wav,donor_residual,2.75
+level,esc-18,92,1,Is the first sound louder than the second sound?,data/paired_evidence/level-18-1-second.wav,data/paired_evidence/level-18-1-first.wav,donor_pool,2.625
+level,esc-18,93,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-18-1-second.wav,data/paired_evidence/level-18-1-first.wav,own,1.5
+level,esc-18,93,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-18-1-second.wav,data/paired_evidence/level-18-1-first.wav,donor_residual,1.375
+level,esc-18,93,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-18-1-second.wav,data/paired_evidence/level-18-1-first.wav,donor_pool,1.125
+level,esc-18,93,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-18-1-first.wav,data/paired_evidence/level-18-1-second.wav,own,1.0
+level,esc-18,93,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-18-1-first.wav,data/paired_evidence/level-18-1-second.wav,donor_residual,1.125
+level,esc-18,93,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-18-1-first.wav,data/paired_evidence/level-18-1-second.wav,donor_pool,1.375
+level,esc-19,94,0,Is the first sound louder than the second sound?,data/paired_evidence/level-19-0-first.wav,data/paired_evidence/level-19-0-second.wav,own,2.5
+level,esc-19,94,0,Is the first sound louder than the second sound?,data/paired_evidence/level-19-0-first.wav,data/paired_evidence/level-19-0-second.wav,donor_residual,2.125
+level,esc-19,94,0,Is the first sound louder than the second sound?,data/paired_evidence/level-19-0-first.wav,data/paired_evidence/level-19-0-second.wav,donor_pool,2.75
+level,esc-19,94,1,Is the first sound louder than the second sound?,data/paired_evidence/level-19-0-second.wav,data/paired_evidence/level-19-0-first.wav,own,2.125
+level,esc-19,94,1,Is the first sound louder than the second sound?,data/paired_evidence/level-19-0-second.wav,data/paired_evidence/level-19-0-first.wav,donor_residual,2.75
+level,esc-19,94,1,Is the first sound louder than the second sound?,data/paired_evidence/level-19-0-second.wav,data/paired_evidence/level-19-0-first.wav,donor_pool,2.125
+level,esc-19,95,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-19-0-second.wav,data/paired_evidence/level-19-0-first.wav,own,-0.75
+level,esc-19,95,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-19-0-second.wav,data/paired_evidence/level-19-0-first.wav,donor_residual,0.875
+level,esc-19,95,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-19-0-second.wav,data/paired_evidence/level-19-0-first.wav,donor_pool,-0.625
+level,esc-19,95,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-19-0-first.wav,data/paired_evidence/level-19-0-second.wav,own,1.0
+level,esc-19,95,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-19-0-first.wav,data/paired_evidence/level-19-0-second.wav,donor_residual,-0.625
+level,esc-19,95,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-19-0-first.wav,data/paired_evidence/level-19-0-second.wav,donor_pool,0.875
+level,esc-19,96,0,Is the first sound louder than the second sound?,data/paired_evidence/level-19-1-first.wav,data/paired_evidence/level-19-1-second.wav,own,1.375
+level,esc-19,96,0,Is the first sound louder than the second sound?,data/paired_evidence/level-19-1-first.wav,data/paired_evidence/level-19-1-second.wav,donor_residual,1.875
+level,esc-19,96,0,Is the first sound louder than the second sound?,data/paired_evidence/level-19-1-first.wav,data/paired_evidence/level-19-1-second.wav,donor_pool,1.25
+level,esc-19,96,1,Is the first sound louder than the second sound?,data/paired_evidence/level-19-1-second.wav,data/paired_evidence/level-19-1-first.wav,own,1.125
+level,esc-19,96,1,Is the first sound louder than the second sound?,data/paired_evidence/level-19-1-second.wav,data/paired_evidence/level-19-1-first.wav,donor_residual,1.25
+level,esc-19,96,1,Is the first sound louder than the second sound?,data/paired_evidence/level-19-1-second.wav,data/paired_evidence/level-19-1-first.wav,donor_pool,1.875
+level,esc-19,97,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-19-1-second.wav,data/paired_evidence/level-19-1-first.wav,own,0.5
+level,esc-19,97,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-19-1-second.wav,data/paired_evidence/level-19-1-first.wav,donor_residual,-0.5
+level,esc-19,97,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-19-1-second.wav,data/paired_evidence/level-19-1-first.wav,donor_pool,0.375
+level,esc-19,97,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-19-1-first.wav,data/paired_evidence/level-19-1-second.wav,own,-0.625
+level,esc-19,97,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-19-1-first.wav,data/paired_evidence/level-19-1-second.wav,donor_residual,0.375
+level,esc-19,97,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-19-1-first.wav,data/paired_evidence/level-19-1-second.wav,donor_pool,-0.5
+level,esc-20,98,0,Is the first sound louder than the second sound?,data/paired_evidence/level-20-0-first.wav,data/paired_evidence/level-20-0-second.wav,own,2.75
+level,esc-20,98,0,Is the first sound louder than the second sound?,data/paired_evidence/level-20-0-first.wav,data/paired_evidence/level-20-0-second.wav,donor_residual,2.0
+level,esc-20,98,0,Is the first sound louder than the second sound?,data/paired_evidence/level-20-0-first.wav,data/paired_evidence/level-20-0-second.wav,donor_pool,2.5
+level,esc-20,98,1,Is the first sound louder than the second sound?,data/paired_evidence/level-20-0-second.wav,data/paired_evidence/level-20-0-first.wav,own,1.875
+level,esc-20,98,1,Is the first sound louder than the second sound?,data/paired_evidence/level-20-0-second.wav,data/paired_evidence/level-20-0-first.wav,donor_residual,2.5
+level,esc-20,98,1,Is the first sound louder than the second sound?,data/paired_evidence/level-20-0-second.wav,data/paired_evidence/level-20-0-first.wav,donor_pool,2.0
+level,esc-20,99,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-20-0-second.wav,data/paired_evidence/level-20-0-first.wav,own,1.5
+level,esc-20,99,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-20-0-second.wav,data/paired_evidence/level-20-0-first.wav,donor_residual,1.625
+level,esc-20,99,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-20-0-second.wav,data/paired_evidence/level-20-0-first.wav,donor_pool,1.375
+level,esc-20,99,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-20-0-first.wav,data/paired_evidence/level-20-0-second.wav,own,1.75
+level,esc-20,99,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-20-0-first.wav,data/paired_evidence/level-20-0-second.wav,donor_residual,1.375
+level,esc-20,99,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-20-0-first.wav,data/paired_evidence/level-20-0-second.wav,donor_pool,1.625
+level,esc-20,100,0,Is the first sound louder than the second sound?,data/paired_evidence/level-20-1-first.wav,data/paired_evidence/level-20-1-second.wav,own,2.5
+level,esc-20,100,0,Is the first sound louder than the second sound?,data/paired_evidence/level-20-1-first.wav,data/paired_evidence/level-20-1-second.wav,donor_residual,2.875
+level,esc-20,100,0,Is the first sound louder than the second sound?,data/paired_evidence/level-20-1-first.wav,data/paired_evidence/level-20-1-second.wav,donor_pool,2.625
+level,esc-20,100,1,Is the first sound louder than the second sound?,data/paired_evidence/level-20-1-second.wav,data/paired_evidence/level-20-1-first.wav,own,3.0
+level,esc-20,100,1,Is the first sound louder than the second sound?,data/paired_evidence/level-20-1-second.wav,data/paired_evidence/level-20-1-first.wav,donor_residual,2.625
+level,esc-20,100,1,Is the first sound louder than the second sound?,data/paired_evidence/level-20-1-second.wav,data/paired_evidence/level-20-1-first.wav,donor_pool,2.875
+level,esc-20,101,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-20-1-second.wav,data/paired_evidence/level-20-1-first.wav,own,1.75
+level,esc-20,101,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-20-1-second.wav,data/paired_evidence/level-20-1-first.wav,donor_residual,1.625
+level,esc-20,101,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-20-1-second.wav,data/paired_evidence/level-20-1-first.wav,donor_pool,1.625
+level,esc-20,101,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-20-1-first.wav,data/paired_evidence/level-20-1-second.wav,own,1.625
+level,esc-20,101,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-20-1-first.wav,data/paired_evidence/level-20-1-second.wav,donor_residual,1.625
+level,esc-20,101,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-20-1-first.wav,data/paired_evidence/level-20-1-second.wav,donor_pool,1.625
+level,esc-21,102,0,Is the first sound louder than the second sound?,data/paired_evidence/level-21-0-first.wav,data/paired_evidence/level-21-0-second.wav,own,2.5
+level,esc-21,102,0,Is the first sound louder than the second sound?,data/paired_evidence/level-21-0-first.wav,data/paired_evidence/level-21-0-second.wav,donor_residual,3.3125
+level,esc-21,102,0,Is the first sound louder than the second sound?,data/paired_evidence/level-21-0-first.wav,data/paired_evidence/level-21-0-second.wav,donor_pool,2.625
+level,esc-21,102,1,Is the first sound louder than the second sound?,data/paired_evidence/level-21-0-second.wav,data/paired_evidence/level-21-0-first.wav,own,3.5
+level,esc-21,102,1,Is the first sound louder than the second sound?,data/paired_evidence/level-21-0-second.wav,data/paired_evidence/level-21-0-first.wav,donor_residual,2.625
+level,esc-21,102,1,Is the first sound louder than the second sound?,data/paired_evidence/level-21-0-second.wav,data/paired_evidence/level-21-0-first.wav,donor_pool,3.3125
+level,esc-21,103,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-21-0-second.wav,data/paired_evidence/level-21-0-first.wav,own,0.375
+level,esc-21,103,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-21-0-second.wav,data/paired_evidence/level-21-0-first.wav,donor_residual,1.375
+level,esc-21,103,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-21-0-second.wav,data/paired_evidence/level-21-0-first.wav,donor_pool,0.5
+level,esc-21,103,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-21-0-first.wav,data/paired_evidence/level-21-0-second.wav,own,1.5
+level,esc-21,103,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-21-0-first.wav,data/paired_evidence/level-21-0-second.wav,donor_residual,0.5
+level,esc-21,103,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-21-0-first.wav,data/paired_evidence/level-21-0-second.wav,donor_pool,1.375
+level,esc-21,104,0,Is the first sound louder than the second sound?,data/paired_evidence/level-21-1-first.wav,data/paired_evidence/level-21-1-second.wav,own,2.75
+level,esc-21,104,0,Is the first sound louder than the second sound?,data/paired_evidence/level-21-1-first.wav,data/paired_evidence/level-21-1-second.wav,donor_residual,2.8125
+level,esc-21,104,0,Is the first sound louder than the second sound?,data/paired_evidence/level-21-1-first.wav,data/paired_evidence/level-21-1-second.wav,donor_pool,2.625
+level,esc-21,104,1,Is the first sound louder than the second sound?,data/paired_evidence/level-21-1-second.wav,data/paired_evidence/level-21-1-first.wav,own,2.6875
+level,esc-21,104,1,Is the first sound louder than the second sound?,data/paired_evidence/level-21-1-second.wav,data/paired_evidence/level-21-1-first.wav,donor_residual,2.625
+level,esc-21,104,1,Is the first sound louder than the second sound?,data/paired_evidence/level-21-1-second.wav,data/paired_evidence/level-21-1-first.wav,donor_pool,2.8125
+level,esc-21,105,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-21-1-second.wav,data/paired_evidence/level-21-1-first.wav,own,0.375
+level,esc-21,105,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-21-1-second.wav,data/paired_evidence/level-21-1-first.wav,donor_residual,0.25
+level,esc-21,105,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-21-1-second.wav,data/paired_evidence/level-21-1-first.wav,donor_pool,0.5
+level,esc-21,105,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-21-1-first.wav,data/paired_evidence/level-21-1-second.wav,own,0.25
+level,esc-21,105,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-21-1-first.wav,data/paired_evidence/level-21-1-second.wav,donor_residual,0.5
+level,esc-21,105,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-21-1-first.wav,data/paired_evidence/level-21-1-second.wav,donor_pool,0.25
+level,esc-22,106,0,Is the first sound louder than the second sound?,data/paired_evidence/level-22-0-first.wav,data/paired_evidence/level-22-0-second.wav,own,1.625
+level,esc-22,106,0,Is the first sound louder than the second sound?,data/paired_evidence/level-22-0-first.wav,data/paired_evidence/level-22-0-second.wav,donor_residual,2.25
+level,esc-22,106,0,Is the first sound louder than the second sound?,data/paired_evidence/level-22-0-first.wav,data/paired_evidence/level-22-0-second.wav,donor_pool,1.625
+level,esc-22,106,1,Is the first sound louder than the second sound?,data/paired_evidence/level-22-0-second.wav,data/paired_evidence/level-22-0-first.wav,own,2.125
+level,esc-22,106,1,Is the first sound louder than the second sound?,data/paired_evidence/level-22-0-second.wav,data/paired_evidence/level-22-0-first.wav,donor_residual,1.625
+level,esc-22,106,1,Is the first sound louder than the second sound?,data/paired_evidence/level-22-0-second.wav,data/paired_evidence/level-22-0-first.wav,donor_pool,2.25
+level,esc-22,107,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-22-0-second.wav,data/paired_evidence/level-22-0-first.wav,own,0.625
+level,esc-22,107,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-22-0-second.wav,data/paired_evidence/level-22-0-first.wav,donor_residual,-0.375
+level,esc-22,107,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-22-0-second.wav,data/paired_evidence/level-22-0-first.wav,donor_pool,0.5
+level,esc-22,107,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-22-0-first.wav,data/paired_evidence/level-22-0-second.wav,own,-0.25
+level,esc-22,107,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-22-0-first.wav,data/paired_evidence/level-22-0-second.wav,donor_residual,0.5
+level,esc-22,107,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-22-0-first.wav,data/paired_evidence/level-22-0-second.wav,donor_pool,-0.375
+level,esc-22,108,0,Is the first sound louder than the second sound?,data/paired_evidence/level-22-1-first.wav,data/paired_evidence/level-22-1-second.wav,own,1.5
+level,esc-22,108,0,Is the first sound louder than the second sound?,data/paired_evidence/level-22-1-first.wav,data/paired_evidence/level-22-1-second.wav,donor_residual,1.5
+level,esc-22,108,0,Is the first sound louder than the second sound?,data/paired_evidence/level-22-1-first.wav,data/paired_evidence/level-22-1-second.wav,donor_pool,1.875
+level,esc-22,108,1,Is the first sound louder than the second sound?,data/paired_evidence/level-22-1-second.wav,data/paired_evidence/level-22-1-first.wav,own,1.75
+level,esc-22,108,1,Is the first sound louder than the second sound?,data/paired_evidence/level-22-1-second.wav,data/paired_evidence/level-22-1-first.wav,donor_residual,1.875
+level,esc-22,108,1,Is the first sound louder than the second sound?,data/paired_evidence/level-22-1-second.wav,data/paired_evidence/level-22-1-first.wav,donor_pool,1.5
+level,esc-22,109,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-22-1-second.wav,data/paired_evidence/level-22-1-first.wav,own,0.0
+level,esc-22,109,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-22-1-second.wav,data/paired_evidence/level-22-1-first.wav,donor_residual,0.875
+level,esc-22,109,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-22-1-second.wav,data/paired_evidence/level-22-1-first.wav,donor_pool,-0.125
+level,esc-22,109,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-22-1-first.wav,data/paired_evidence/level-22-1-second.wav,own,0.625
+level,esc-22,109,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-22-1-first.wav,data/paired_evidence/level-22-1-second.wav,donor_residual,-0.125
+level,esc-22,109,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-22-1-first.wav,data/paired_evidence/level-22-1-second.wav,donor_pool,0.875
+level,esc-23,110,0,Is the first sound louder than the second sound?,data/paired_evidence/level-23-0-first.wav,data/paired_evidence/level-23-0-second.wav,own,1.875
+level,esc-23,110,0,Is the first sound louder than the second sound?,data/paired_evidence/level-23-0-first.wav,data/paired_evidence/level-23-0-second.wav,donor_residual,2.0
+level,esc-23,110,0,Is the first sound louder than the second sound?,data/paired_evidence/level-23-0-first.wav,data/paired_evidence/level-23-0-second.wav,donor_pool,2.125
+level,esc-23,110,1,Is the first sound louder than the second sound?,data/paired_evidence/level-23-0-second.wav,data/paired_evidence/level-23-0-first.wav,own,2.0
+level,esc-23,110,1,Is the first sound louder than the second sound?,data/paired_evidence/level-23-0-second.wav,data/paired_evidence/level-23-0-first.wav,donor_residual,2.125
+level,esc-23,110,1,Is the first sound louder than the second sound?,data/paired_evidence/level-23-0-second.wav,data/paired_evidence/level-23-0-first.wav,donor_pool,2.0
+level,esc-23,111,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-23-0-second.wav,data/paired_evidence/level-23-0-first.wav,own,0.75
+level,esc-23,111,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-23-0-second.wav,data/paired_evidence/level-23-0-first.wav,donor_residual,0.5
+level,esc-23,111,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-23-0-second.wav,data/paired_evidence/level-23-0-first.wav,donor_pool,1.0
+level,esc-23,111,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-23-0-first.wav,data/paired_evidence/level-23-0-second.wav,own,0.625
+level,esc-23,111,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-23-0-first.wav,data/paired_evidence/level-23-0-second.wav,donor_residual,1.0
+level,esc-23,111,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-23-0-first.wav,data/paired_evidence/level-23-0-second.wav,donor_pool,0.5
+level,esc-23,112,0,Is the first sound louder than the second sound?,data/paired_evidence/level-23-1-first.wav,data/paired_evidence/level-23-1-second.wav,own,2.25
+level,esc-23,112,0,Is the first sound louder than the second sound?,data/paired_evidence/level-23-1-first.wav,data/paired_evidence/level-23-1-second.wav,donor_residual,2.0
+level,esc-23,112,0,Is the first sound louder than the second sound?,data/paired_evidence/level-23-1-first.wav,data/paired_evidence/level-23-1-second.wav,donor_pool,1.75
+level,esc-23,112,1,Is the first sound louder than the second sound?,data/paired_evidence/level-23-1-second.wav,data/paired_evidence/level-23-1-first.wav,own,1.125
+level,esc-23,112,1,Is the first sound louder than the second sound?,data/paired_evidence/level-23-1-second.wav,data/paired_evidence/level-23-1-first.wav,donor_residual,1.75
+level,esc-23,112,1,Is the first sound louder than the second sound?,data/paired_evidence/level-23-1-second.wav,data/paired_evidence/level-23-1-first.wav,donor_pool,2.0
+level,esc-23,113,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-23-1-second.wav,data/paired_evidence/level-23-1-first.wav,own,0.375
+level,esc-23,113,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-23-1-second.wav,data/paired_evidence/level-23-1-first.wav,donor_residual,0.75
+level,esc-23,113,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-23-1-second.wav,data/paired_evidence/level-23-1-first.wav,donor_pool,0.25
+level,esc-23,113,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-23-1-first.wav,data/paired_evidence/level-23-1-second.wav,own,1.0
+level,esc-23,113,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-23-1-first.wav,data/paired_evidence/level-23-1-second.wav,donor_residual,0.25
+level,esc-23,113,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-23-1-first.wav,data/paired_evidence/level-23-1-second.wav,donor_pool,0.75
+level,esc-24,114,0,Is the first sound louder than the second sound?,data/paired_evidence/level-24-0-first.wav,data/paired_evidence/level-24-0-second.wav,own,2.75
+level,esc-24,114,0,Is the first sound louder than the second sound?,data/paired_evidence/level-24-0-first.wav,data/paired_evidence/level-24-0-second.wav,donor_residual,3.0625
+level,esc-24,114,0,Is the first sound louder than the second sound?,data/paired_evidence/level-24-0-first.wav,data/paired_evidence/level-24-0-second.wav,donor_pool,2.9375
+level,esc-24,114,1,Is the first sound louder than the second sound?,data/paired_evidence/level-24-0-second.wav,data/paired_evidence/level-24-0-first.wav,own,3.0625
+level,esc-24,114,1,Is the first sound louder than the second sound?,data/paired_evidence/level-24-0-second.wav,data/paired_evidence/level-24-0-first.wav,donor_residual,2.9375
+level,esc-24,114,1,Is the first sound louder than the second sound?,data/paired_evidence/level-24-0-second.wav,data/paired_evidence/level-24-0-first.wav,donor_pool,3.0625
+level,esc-24,115,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-24-0-second.wav,data/paired_evidence/level-24-0-first.wav,own,2.0
+level,esc-24,115,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-24-0-second.wav,data/paired_evidence/level-24-0-first.wav,donor_residual,1.0
+level,esc-24,115,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-24-0-second.wav,data/paired_evidence/level-24-0-first.wav,donor_pool,1.75
+level,esc-24,115,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-24-0-first.wav,data/paired_evidence/level-24-0-second.wav,own,0.75
+level,esc-24,115,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-24-0-first.wav,data/paired_evidence/level-24-0-second.wav,donor_residual,1.75
+level,esc-24,115,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-24-0-first.wav,data/paired_evidence/level-24-0-second.wav,donor_pool,1.0
+level,esc-24,116,0,Is the first sound louder than the second sound?,data/paired_evidence/level-24-1-first.wav,data/paired_evidence/level-24-1-second.wav,own,1.875
+level,esc-24,116,0,Is the first sound louder than the second sound?,data/paired_evidence/level-24-1-first.wav,data/paired_evidence/level-24-1-second.wav,donor_residual,1.875
+level,esc-24,116,0,Is the first sound louder than the second sound?,data/paired_evidence/level-24-1-first.wav,data/paired_evidence/level-24-1-second.wav,donor_pool,2.375
+level,esc-24,116,1,Is the first sound louder than the second sound?,data/paired_evidence/level-24-1-second.wav,data/paired_evidence/level-24-1-first.wav,own,2.125
+level,esc-24,116,1,Is the first sound louder than the second sound?,data/paired_evidence/level-24-1-second.wav,data/paired_evidence/level-24-1-first.wav,donor_residual,2.375
+level,esc-24,116,1,Is the first sound louder than the second sound?,data/paired_evidence/level-24-1-second.wav,data/paired_evidence/level-24-1-first.wav,donor_pool,1.875
+level,esc-24,117,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-24-1-second.wav,data/paired_evidence/level-24-1-first.wav,own,0.25
+level,esc-24,117,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-24-1-second.wav,data/paired_evidence/level-24-1-first.wav,donor_residual,1.125
+level,esc-24,117,0,Is the first sound quieter than the second sound?,data/paired_evidence/level-24-1-second.wav,data/paired_evidence/level-24-1-first.wav,donor_pool,0.625
+level,esc-24,117,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-24-1-first.wav,data/paired_evidence/level-24-1-second.wav,own,1.0
+level,esc-24,117,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-24-1-first.wav,data/paired_evidence/level-24-1-second.wav,donor_residual,0.625
+level,esc-24,117,1,Is the first sound quieter than the second sound?,data/paired_evidence/level-24-1-first.wav,data/paired_evidence/level-24-1-second.wav,donor_pool,1.125

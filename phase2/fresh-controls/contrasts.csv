@@ -1,0 +1,25 @@
+group,contrast,gain_pp,low,high
+all,full minus text,32.35,27.06,37.65
+all,full minus unrelated,25.0,20.0,30.01
+all,full minus K16,3.63,0.39,6.96
+all,K16 minus K4,9.02,5.88,12.16
+acoustic_property,full minus text,23.53,5.88,43.75
+acoustic_property,full minus unrelated,29.41,10.0,53.33
+acoustic_property,full minus K16,9.8,0.0,24.44
+acoustic_property,K16 minus K4,-3.92,-22.22,14.05
+count_or_relation,full minus text,28.26,15.56,41.86
+count_or_relation,full minus unrelated,28.26,14.29,43.18
+count_or_relation,full minus K16,14.49,5.93,24.24
+count_or_relation,K16 minus K4,8.7,0.76,17.39
+scene_context,full minus text,40.0,25.0,54.84
+scene_context,full minus unrelated,20.0,3.33,35.71
+scene_context,full minus K16,-6.67,-17.24,0.0
+scene_context,K16 minus K4,-1.11,-3.57,0.0
+source_or_event,full minus text,35.1,28.43,42.03
+source_or_event,full minus unrelated,27.4,20.69,34.16
+source_or_event,full minus K16,2.72,-1.33,6.83
+source_or_event,K16 minus K4,10.74,6.7,15.2
+time_pattern,full minus text,20.51,2.5,39.47
+time_pattern,full minus unrelated,10.26,-7.14,27.5
+time_pattern,full minus K16,0.85,-10.83,13.89
+time_pattern,K16 minus K4,13.68,4.17,24.32

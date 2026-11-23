@@ -54,7 +54,7 @@ class Compressor(nn.Module):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("mode", choices=["train", "eval", "pool", "probe"])
+    parser.add_argument("mode", choices=["train", "eval", "pool", "probe", "fresh", "controls", "intervene", "opposite", "level-probe"])
     parser.add_argument("--out", type=Path, required=True)
     parser.add_argument("--steps", type=int, default=16)
     parser.add_argument("--k", type=int, default=16)
@@ -74,11 +74,19 @@ def main():
     parser.add_argument("--manifest", type=Path, default=Path("data/clotho/manifest.json"))
     parser.add_argument("--train-split", default="train", help="Manifest split used for training")
     parser.add_argument("--extra-split", help="Additional manifest split to evaluate, e.g. val_extra")
+    parser.add_argument("--extra-manifest", type=Path,
+                        help="Read --extra-split from this file instead, e.g. data/clotho/fresh_val.json with split val")
     parser.add_argument("--feature-cache", type=Path, help="Directory for cached projected audio features")
     parser.add_argument("--magnitudes", type=float, nargs="+", default=[0, 0.25, 0.5, 1, 2, 4, 8, 16],
                         help="probe: fixed norms of the question term, evaluated with correct and wrong stems")
     parser.add_argument("--pool-ks", type=int, nargs="+", default=[4, 16], help="Slot counts for the fixed pooling evaluation")
+    parser.add_argument("--intervention", choices=["swap","components","factorial"], default="swap")
+    parser.add_argument("--donor-seed", type=int, default=17)
+    parser.add_argument("--types", type=Path, default=Path("phase2/fresh-capacity/question_types.csv"))
+    parser.add_argument("--pair-manifest", type=Path, default=Path("data/paired_evidence/pairs.json"))
     args = parser.parse_args()
+    if args.mode in ("fresh","controls","intervene") and (not args.clotho or args.conditioned):
+        parser.error(f"{args.mode} requires --clotho and audio-only checkpoints")
     if args.mode == "pool" and (not args.clotho or args.conditioned or min(args.pool_ks) < 1):
         parser.error("pool requires --clotho and positive slot counts without --conditioned")
     if args.mode == "probe" and (not args.conditioned or args.condition != "gated"):
@@ -113,7 +121,17 @@ def main():
                 rows.append((item["path"], question, item["label"]))
             return rows
         train, test = samples(args.train_split), samples("val")
-        extra = samples(args.extra_split) if args.extra_split else []
+        if args.mode in ("fresh","controls","intervene"):
+            previous = {r[0] for r in train + test}
+            manifest = json.loads(Path("data/clotho/fresh_val.json").read_text())
+            test = samples("val")
+            assert test and not previous.intersection(r[0] for r in test)
+        extra = []
+        if args.extra_split:
+            if args.extra_manifest:
+                manifest = json.loads(args.extra_manifest.read_text())
+            extra = samples(args.extra_split)
+            assert not {r[0] for r in train + test}.intersection(r[0] for r in extra)
     else:
         with open("data/esc50.csv") as handle:
             metadata = list(csv.DictReader(handle))
@@ -203,7 +221,7 @@ def main():
         return comp(features(path), condition)
 
     @torch.no_grad()
-    def evaluate(samples, swap=False, full=False, text_only=False, pool_k=None, stem=None, conditioned=None):
+    def evaluate(samples, swap=False, full=False, text_only=False, pool_k=None, donors=None, stem=None, conditioned=None):
         rows = []
         for path, question, target in samples:
             if text_only:
@@ -216,13 +234,57 @@ def main():
                     audio = features(path)
                     latent = F.adaptive_avg_pool1d(audio.T.unsqueeze(0), pool_k)[0].T
                 else:
-                    latent = features(path) if full else compress(path, question, swap,
-                                                                  conditioned=conditioned, stem=stem)
+                    latent = features(donors[path] if donors else path) if full else compress(
+                        path, question, swap, conditioned=conditioned, stem=stem)
                 scores = decode(latent, question)
             rows.append(dict(path=path, question=question, target=target, prediction=scores.argmax().item(),
                              loss=F.cross_entropy(scores[None], torch.tensor([target],device="cuda")).item()))
         return dict(correct=sum(r["prediction"]==r["target"] for r in rows), n=len(rows),
                     loss=sum(r["loss"] for r in rows)/len(rows), rows=rows)
+
+    if args.mode == "level-probe":
+        from level_probe import probe
+        probe(args, comp, features)
+        return
+    if args.mode == "opposite":
+        from opposite_eval import measure
+        measure(args, comp, features, decode)
+        return
+
+    if args.mode == "intervene":
+        from latent_interventions import run_interventions
+        run_interventions(args, test, comp, features, decode)
+        return
+
+    if args.mode == "controls":
+        clips = sorted({row[0] for row in test})
+        random.Random(17).shuffle(clips)
+        donors = dict(zip(clips, clips[1:] + clips[:1]))
+        assert all(k != v for k,v in donors.items())
+        (args.out / "donors.json").write_text(json.dumps(donors))
+        for name, kwargs in (("text", {"text_only":True}), ("full", {"full":True}),
+                             ("unrelated", {"full":True, "donors":donors})):
+            scored = evaluate(test, **kwargs)
+            (args.out / (name+".json")).write_text(json.dumps(scored))
+            print(name, scored["correct"], scored["n"], flush=True)
+        return
+
+    if args.mode == "fresh":
+        print("Fresh validation:", len(test), "questions", flush=True)
+        results = {}
+        for seed in (17,23,41):
+            for k in (4,16):
+                name = f"capacity-k{k}-s{seed}-audio"
+                if (k,seed) == (16,17):
+                    name = "clotho-k16-s17-audio"
+                comp = Compressor(embed.embedding_dim,k).cuda()
+                comp.load_state_dict(torch.load(Path(name)/"compressor.pt", weights_only=True))
+                scored = evaluate(test)
+                (args.out / (name+".json")).write_text(json.dumps(scored))
+                results[name] = [scored["correct"],scored["n"]]
+                print(name, results[name], flush=True)
+        (args.out / "summary.json").write_text(json.dumps(results,indent=2))
+        return
 
     if args.mode == "pool":
         pooled = {str(k):evaluate(test, pool_k=k) for k in args.pool_ks}
@@ -334,7 +396,8 @@ def main():
         result["config"] = dict(condition=args.condition, center_question=args.center_question,
                                 question_repr=args.question_repr, question_layer=args.question_layer,
                                 gate_lr=args.gate_lr, manifest=str(args.manifest),
-                                train_split=args.train_split, extra_split=args.extra_split)
+                                train_split=args.train_split, extra_split=args.extra_split,
+                                extra_manifest=str(args.extra_manifest) if args.extra_manifest else None)
     if args.conditioned and (args.condition != "add" or args.center_question or args.question_repr != "embed"):
         if args.condition == "gated":
             result["gate"] = torch.tanh(comp.gate).item()

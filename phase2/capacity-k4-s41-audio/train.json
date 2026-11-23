@@ -1,0 +1,2732 @@
+{
+  "isolation_AB_logit_delta": 0.0,
+  "k": 4,
+  "seed": 41,
+  "gpu": "NVIDIA RTX 6000 Ada Generation",
+  "before": {
+    "correct": 47,
+    "n": 96,
+    "loss": 1.1443327834034183,
+    "rows": [
+      {
+        "path": "data/clotho/grifo goteando.wav",
+        "question": "Is something small  being dropped in a pool of water?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.005233753472566605
+      },
+      {
+        "path": "data/clotho/grifo goteando.wav",
+        "question": "Is there a parrot asking questions?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 0.8981232643127441
+      },
+      {
+        "path": "data/clotho/Uh, Hi, Mom. I Crashed the Car.wav",
+        "question": "Is there a man here?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 1,
+        "loss": 1.0537006855010986
+      },
+      {
+        "path": "data/clotho/Uh, Hi, Mom. I Crashed the Car.wav",
+        "question": "Are there several people talking?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 2.753335475921631
+      },
+      {
+        "path": "data/clotho/Rainstorm.wav",
+        "question": "Is the audio device being moved?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.28115010261535645
+      },
+      {
+        "path": "data/clotho/Rainstorm.wav",
+        "question": "Is this a sound typically made by animal vocalization?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 2.0176751613616943
+      },
+      {
+        "path": "data/clotho/Street cleaning.wav",
+        "question": "Is the sound source moving?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 1,
+        "loss": 1.5019290447235107
+      },
+      {
+        "path": "data/clotho/Street cleaning.wav",
+        "question": "Is a cat hissing?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 4.387509346008301
+      },
+      {
+        "path": "data/clotho/RG Railing Ring.wav",
+        "question": "Does something vibrate?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.020541900768876076
+      },
+      {
+        "path": "data/clotho/RG Railing Ring.wav",
+        "question": "Is there a piano being played?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 2.1821796894073486
+      },
+      {
+        "path": "data/clotho/Giant 1.wav",
+        "question": "Is there a person in the area?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 1,
+        "loss": 3.6513001918792725
+      },
+      {
+        "path": "data/clotho/Giant 1.wav",
+        "question": "Is there a car?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.575939416885376
+      },
+      {
+        "path": "data/clotho/keurigcoffee.wav",
+        "question": "Are there many different kinds of sounds?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.0006264869589358568
+      },
+      {
+        "path": "data/clotho/keurigcoffee.wav",
+        "question": "Did the person tap a wooden spoon?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 2.3502066135406494
+      },
+      {
+        "path": "data/clotho/Pouring Into Glass.wav",
+        "question": "Are receptacles of some kind being used?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.06993623077869415
+      },
+      {
+        "path": "data/clotho/Pouring Into Glass.wav",
+        "question": "Is bacon cooking?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 1.5019290447235107
+      },
+      {
+        "path": "data/clotho/CoinSpin.wav",
+        "question": "Is the item made of metal?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.042999111115932465
+      },
+      {
+        "path": "data/clotho/CoinSpin.wav",
+        "question": "Is someone counting bills?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 2.4069128036499023
+      },
+      {
+        "path": "data/clotho/20070819.fjord.beach.00.wav",
+        "question": "Does this sound involve motion?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.6325989961624146
+      },
+      {
+        "path": "data/clotho/20070819.fjord.beach.00.wav",
+        "question": "Does this sound occur indoors?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.42870065569877625
+      },
+      {
+        "path": "data/clotho/Night Sounds, Summer Country.wav",
+        "question": "Is this outside?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.3484445810317993
+      },
+      {
+        "path": "data/clotho/Night Sounds, Summer Country.wav",
+        "question": "Are people talking?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 1.094851016998291
+      },
+      {
+        "path": "data/clotho/Thorndale train stop underneath.wav",
+        "question": "Is the train slowing down?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 1,
+        "loss": 1.6004126071929932
+      },
+      {
+        "path": "data/clotho/Thorndale train stop underneath.wav",
+        "question": "Is it raining in the area?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 2.293837308883667
+      },
+      {
+        "path": "data/clotho/Village Morning Atmos.wav",
+        "question": "is there a rooster?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.6325989961624146
+      },
+      {
+        "path": "data/clotho/Village Morning Atmos.wav",
+        "question": "Are people talking?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 1.5019290447235107
+      },
+      {
+        "path": "data/clotho/Nord_Odal_Nyhus_04_juni_2011_quiet_forest_birds_insects_leaf_rustle_02.wav",
+        "question": "Is the white noise louder than the bird?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 1,
+        "loss": 1.0537006855010986
+      },
+      {
+        "path": "data/clotho/Nord_Odal_Nyhus_04_juni_2011_quiet_forest_birds_insects_leaf_rustle_02.wav",
+        "question": "Is this a human?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.16972702741622925
+      },
+      {
+        "path": "data/clotho/d0_drips_03.wav",
+        "question": "Is something tapping?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.04044583439826965
+      },
+      {
+        "path": "data/clotho/d0_drips_03.wav",
+        "question": "Is the TV on?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.06196761503815651
+      },
+      {
+        "path": "data/clotho/RowanMagennis_160019_SD100_RingingBell.wav",
+        "question": "Is a high pitched noise being made?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.06196761503815651
+      },
+      {
+        "path": "data/clotho/RowanMagennis_160019_SD100_RingingBell.wav",
+        "question": "Are there many people crying?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 2.0176751613616943
+      },
+      {
+        "path": "data/clotho/wind in the trees.wav",
+        "question": "Can static be heard?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 1,
+        "loss": 2.1269280910491943
+      },
+      {
+        "path": "data/clotho/wind in the trees.wav",
+        "question": "Is someone playing tennis?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 1.1368709802627563
+      },
+      {
+        "path": "data/clotho/Train left to right.wav",
+        "question": "Is a vehicle passing by?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.08377019315958023
+      },
+      {
+        "path": "data/clotho/Train left to right.wav",
+        "question": "Does a car honk?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 3.167999029159546
+      },
+      {
+        "path": "data/clotho/Door Handle and Lock.wav",
+        "question": "Is the noise repeated?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.2014133334159851
+      },
+      {
+        "path": "data/clotho/Door Handle and Lock.wav",
+        "question": "Is there a person talking?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.16972702741622925
+      },
+      {
+        "path": "data/clotho/marche1.wav",
+        "question": "Is movement involved?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.4740769863128662
+      },
+      {
+        "path": "data/clotho/marche1.wav",
+        "question": "are there any vehicles present?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 1.0537006855010986
+      },
+      {
+        "path": "data/clotho/Ambulance Siren.wav",
+        "question": "Is there an emergency taking place somewhere?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.06196761503815651
+      },
+      {
+        "path": "data/clotho/Ambulance Siren.wav",
+        "question": "Can ordinary cars make this sound?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.14267508685588837
+      },
+      {
+        "path": "data/clotho/Drawers opening and closing.wav",
+        "question": "Is the same noise being repeated?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.0658353641629219
+      },
+      {
+        "path": "data/clotho/Drawers opening and closing.wav",
+        "question": "Is it a water slide?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 1.0537006855010986
+      },
+      {
+        "path": "data/clotho/Hwy84Westbound2A.wav",
+        "question": "Are the cars passing through the wind?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 1,
+        "loss": 1.3132617473602295
+      },
+      {
+        "path": "data/clotho/Hwy84Westbound2A.wav",
+        "question": "Did a door bell ring ?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.25192904472351074
+      },
+      {
+        "path": "data/clotho/FR.BirdChatAmbience.26.wav",
+        "question": "Are the people outside?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.42870065569877625
+      },
+      {
+        "path": "data/clotho/FR.BirdChatAmbience.26.wav",
+        "question": "Are dogs barking at the birds?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.4740769863128662
+      },
+      {
+        "path": "data/clotho/in_cafe_4.wav",
+        "question": "Is there a group of people talking?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.1602240949869156
+      },
+      {
+        "path": "data/clotho/in_cafe_4.wav",
+        "question": "Are the clinking noises from toys?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 1.5019290447235107
+      },
+      {
+        "path": "data/clotho/medium clap.wav",
+        "question": "Is there a woman that is speaking?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.42870065569877625
+      },
+      {
+        "path": "data/clotho/medium clap.wav",
+        "question": "Is there a car horn honking?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 1.4536898136138916
+      },
+      {
+        "path": "data/clotho/Kids chatter Primary School Birmingham UK.wav",
+        "question": "Is there more than one person?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.3484445810317993
+      },
+      {
+        "path": "data/clotho/Kids chatter Primary School Birmingham UK.wav",
+        "question": "Are people singing a song?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 2.929882287979126
+      },
+      {
+        "path": "data/clotho/SamyeLing_Drain121102.wav",
+        "question": "Can liquid dripping be heard?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.0017021704697981477
+      },
+      {
+        "path": "data/clotho/SamyeLing_Drain121102.wav",
+        "question": "Can thunder be heard?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 2.4069128036499023
+      },
+      {
+        "path": "data/clotho/keurig-coffe-maker.wav",
+        "question": "Is something being blended?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.00040451448876410723
+      },
+      {
+        "path": "data/clotho/keurig-coffe-maker.wav",
+        "question": "Is a man cussing?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 1.9102240800857544
+      },
+      {
+        "path": "data/clotho/DH12_139_CentStat11_out.wav",
+        "question": "Is there an announcement for passengers?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.14267508685588837
+      },
+      {
+        "path": "data/clotho/DH12_139_CentStat11_out.wav",
+        "question": "Does a man a make the announcement?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 1.3132617473602295
+      },
+      {
+        "path": "data/clotho/westend 3.wav",
+        "question": "Is there more than one person talking?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.38687101006507874
+      },
+      {
+        "path": "data/clotho/westend 3.wav",
+        "question": "Are children singing?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 3.529750347137451
+      },
+      {
+        "path": "data/clotho/Bathtub_with_Foam.wav",
+        "question": "Is this indoors?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 1,
+        "loss": 1.752799153327942
+      },
+      {
+        "path": "data/clotho/Bathtub_with_Foam.wav",
+        "question": "Does an alarm go off?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.6325989961624146
+      },
+      {
+        "path": "data/clotho/Remix of 101980__pyr0x__growl_variants.wav",
+        "question": "Does the breathing or snoring get deeper and longer as time goes on?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.004917432088404894
+      },
+      {
+        "path": "data/clotho/Remix of 101980__pyr0x__growl_variants.wav",
+        "question": "Are there insects?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 2.6949362754821777
+      },
+      {
+        "path": "data/clotho/Tsaritsyno-Park. Spring.wav",
+        "question": "Is this in nature?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 1,
+        "loss": 0.9740769863128662
+      },
+      {
+        "path": "data/clotho/Tsaritsyno-Park. Spring.wav",
+        "question": "Are there humans?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.08893945813179016
+      },
+      {
+        "path": "data/clotho/Boom_Folie_PlayingWithCurtains.wav",
+        "question": "Is the metal scraping together?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.13458658754825592
+      },
+      {
+        "path": "data/clotho/Boom_Folie_PlayingWithCurtains.wav",
+        "question": "Is the person mumbling?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 1.6004126071929932
+      },
+      {
+        "path": "data/clotho/el sonido del arbol y la tierra yerlin .wav",
+        "question": "Is the voice distorted?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.024726316332817078
+      },
+      {
+        "path": "data/clotho/el sonido del arbol y la tierra yerlin .wav",
+        "question": "Is someone playing the saxophone?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 3.4691390991210938
+      },
+      {
+        "path": "data/clotho/bubbles 2 tall glass.wav",
+        "question": "Is someone breathing?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 1,
+        "loss": 1.7014133930206299
+      },
+      {
+        "path": "data/clotho/bubbles 2 tall glass.wav",
+        "question": "Are people fighting?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 3.529750347137451
+      },
+      {
+        "path": "data/clotho/static 770 kHz cycle zap.wav",
+        "question": "Is there no interference sound going on?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 1,
+        "loss": 3.590472936630249
+      },
+      {
+        "path": "data/clotho/static 770 kHz cycle zap.wav",
+        "question": "Does someone's phone ring?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.1797446459531784
+      },
+      {
+        "path": "data/clotho/EQUIP_expressoMaker_01.wav",
+        "question": "Is the sound made by a machine?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.06196761503815651
+      },
+      {
+        "path": "data/clotho/EQUIP_expressoMaker_01.wav",
+        "question": "Can human voices be heard?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.02630021423101425
+      },
+      {
+        "path": "data/clotho/Truck Brakes.wav",
+        "question": "Does the vehicle get farther away?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 1,
+        "loss": 1.0537006855010986
+      },
+      {
+        "path": "data/clotho/Truck Brakes.wav",
+        "question": "Is the man jogging?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 0.9740769863128662
+      },
+      {
+        "path": "data/clotho/egg beater.wav",
+        "question": "Is this a machine?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.575939416885376
+      },
+      {
+        "path": "data/clotho/egg beater.wav",
+        "question": "are animals heard?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 0.6931471824645996
+      },
+      {
+        "path": "data/clotho/Seagulls 1.wav",
+        "question": "Is there any pause in the squawking?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 1,
+        "loss": 0.8981232643127441
+      },
+      {
+        "path": "data/clotho/Seagulls 1.wav",
+        "question": "Are there panthers growling?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 1.1368709802627563
+      },
+      {
+        "path": "data/clotho/20060426.marsh.crikets.day.stereo.02.wav",
+        "question": "Is this outside?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.3304581940174103
+      },
+      {
+        "path": "data/clotho/20060426.marsh.crikets.day.stereo.02.wav",
+        "question": "Is it a car?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 0.8981232643127441
+      },
+      {
+        "path": "data/clotho/Washing Machine Water Filling Up.wav",
+        "question": "Could something be frying??\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.0020528212189674377
+      },
+      {
+        "path": "data/clotho/Washing Machine Water Filling Up.wav",
+        "question": "Are animals making noise?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 3.590472936630249
+      },
+      {
+        "path": "data/clotho/SummerFieldBirdSingingMay23rd2015.wav",
+        "question": "Are multiple types of birds heard?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.06196761503815651
+      },
+      {
+        "path": "data/clotho/SummerFieldBirdSingingMay23rd2015.wav",
+        "question": "Is a jackhammer making noise in the background?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 4.511047840118408
+      },
+      {
+        "path": "data/clotho/outdoors forest footsteps running jogging rustle.wav",
+        "question": "Does the loudness of the sound vary?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.04858732968568802
+      },
+      {
+        "path": "data/clotho/outdoors forest footsteps running jogging rustle.wav",
+        "question": "Is there a dog barking?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 0.6931471824645996
+      },
+      {
+        "path": "data/clotho/41_STEAM.wav",
+        "question": "Is something getting wet?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.0071468655951321125
+      },
+      {
+        "path": "data/clotho/41_STEAM.wav",
+        "question": "Is a choir singing?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 2.4069128036499023
+      },
+      {
+        "path": "data/clotho/Spring.wav",
+        "question": "Is this the sound of liquid?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.015070038847625256
+      },
+      {
+        "path": "data/clotho/Spring.wav",
+        "question": "Is something slithering through the grass?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 5.1309285163879395
+      }
+    ]
+  },
+  "first_grad_norm": 0.3545929193496704,
+  "first_update_max": 0.00100015290081501,
+  "train": {
+    "correct": 80,
+    "n": 96,
+    "loss": 0.4528385471500466,
+    "rows": [
+      {
+        "path": "data/clotho/Rainstorm.wav",
+        "question": "Is this a sound typically made by animal vocalization?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.16972702741622925
+      },
+      {
+        "path": "data/clotho/Bathtub_with_Foam.wav",
+        "question": "Is this indoors?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.6931471824645996
+      },
+      {
+        "path": "data/clotho/41_STEAM.wav",
+        "question": "Is something getting wet?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.01416344940662384
+      },
+      {
+        "path": "data/clotho/Village Morning Atmos.wav",
+        "question": "is there a rooster?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 1,
+        "loss": 1.2234445810317993
+      },
+      {
+        "path": "data/clotho/CoinSpin.wav",
+        "question": "Is the item made of metal?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.12692804634571075
+      },
+      {
+        "path": "data/clotho/Tsaritsyno-Park. Spring.wav",
+        "question": "Are there humans?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.017059607431292534
+      },
+      {
+        "path": "data/clotho/wind in the trees.wav",
+        "question": "Can static be heard?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.3484445810317993
+      },
+      {
+        "path": "data/clotho/Door Handle and Lock.wav",
+        "question": "Is there a person talking?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.02185230888426304
+      },
+      {
+        "path": "data/clotho/Truck Brakes.wav",
+        "question": "Does the vehicle get farther away?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.4740769863128662
+      },
+      {
+        "path": "data/clotho/marche1.wav",
+        "question": "are there any vehicles present?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.04858732968568802
+      },
+      {
+        "path": "data/clotho/DH12_139_CentStat11_out.wav",
+        "question": "Does a man a make the announcement?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.22541262209415436
+      },
+      {
+        "path": "data/clotho/Kids chatter Primary School Birmingham UK.wav",
+        "question": "Are people singing a song?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.13458658754825592
+      },
+      {
+        "path": "data/clotho/Truck Brakes.wav",
+        "question": "Is the man jogging?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.11282224208116531
+      },
+      {
+        "path": "data/clotho/Thorndale train stop underneath.wav",
+        "question": "Is it raining in the area?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.13458658754825592
+      },
+      {
+        "path": "data/clotho/Bathtub_with_Foam.wav",
+        "question": "Does an alarm go off?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.29683318734169006
+      },
+      {
+        "path": "data/clotho/Nord_Odal_Nyhus_04_juni_2011_quiet_forest_birds_insects_leaf_rustle_02.wav",
+        "question": "Is this a human?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.05832047387957573
+      },
+      {
+        "path": "data/clotho/20060426.marsh.crikets.day.stereo.02.wav",
+        "question": "Is it a car?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.03364565595984459
+      },
+      {
+        "path": "data/clotho/EQUIP_expressoMaker_01.wav",
+        "question": "Is the sound made by a machine?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.015070038847625256
+      },
+      {
+        "path": "data/clotho/Giant 1.wav",
+        "question": "Is there a person in the area?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 1,
+        "loss": 3.288041353225708
+      },
+      {
+        "path": "data/clotho/Night Sounds, Summer Country.wav",
+        "question": "Are people talking?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.03163906931877136
+      },
+      {
+        "path": "data/clotho/Street cleaning.wav",
+        "question": "Is a cat hissing?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 2.3502066135406494
+      },
+      {
+        "path": "data/clotho/in_cafe_4.wav",
+        "question": "Is there a group of people talking?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.012509571388363838
+      },
+      {
+        "path": "data/clotho/egg beater.wav",
+        "question": "are animals heard?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.4740769863128662
+      },
+      {
+        "path": "data/clotho/Night Sounds, Summer Country.wav",
+        "question": "Is this outside?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.11967968195676804
+      },
+      {
+        "path": "data/clotho/westend 3.wav",
+        "question": "Is there more than one person talking?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.2014133334159851
+      },
+      {
+        "path": "data/clotho/Drawers opening and closing.wav",
+        "question": "Is it a water slide?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.0944129079580307
+      },
+      {
+        "path": "data/clotho/Rainstorm.wav",
+        "question": "Is the audio device being moved?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.22541262209415436
+      },
+      {
+        "path": "data/clotho/CoinSpin.wav",
+        "question": "Is someone counting bills?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.5231232643127441
+      },
+      {
+        "path": "data/clotho/marche1.wav",
+        "question": "Is movement involved?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.3484445810317993
+      },
+      {
+        "path": "data/clotho/Street cleaning.wav",
+        "question": "Is the sound source moving?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.575939416885376
+      },
+      {
+        "path": "data/clotho/Remix of 101980__pyr0x__growl_variants.wav",
+        "question": "Does the breathing or snoring get deeper and longer as time goes on?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.02185230888426304
+      },
+      {
+        "path": "data/clotho/SummerFieldBirdSingingMay23rd2015.wav",
+        "question": "Are multiple types of birds heard?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.009755908511579037
+      },
+      {
+        "path": "data/clotho/Spring.wav",
+        "question": "Is something slithering through the grass?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 2.6949362754821777
+      },
+      {
+        "path": "data/clotho/Hwy84Westbound2A.wav",
+        "question": "Did a door bell ring ?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.019309287890791893
+      },
+      {
+        "path": "data/clotho/SamyeLing_Drain121102.wav",
+        "question": "Can liquid dripping be heard?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.001811888418160379
+      },
+      {
+        "path": "data/clotho/keurig-coffe-maker.wav",
+        "question": "Is something being blended?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.0005886013968847692
+      },
+      {
+        "path": "data/clotho/EQUIP_expressoMaker_01.wav",
+        "question": "Can human voices be heard?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.01038186065852642
+      },
+      {
+        "path": "data/clotho/RG Railing Ring.wav",
+        "question": "Does something vibrate?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.03577728569507599
+      },
+      {
+        "path": "data/clotho/Nord_Odal_Nyhus_04_juni_2011_quiet_forest_birds_insects_leaf_rustle_02.wav",
+        "question": "Is the white noise louder than the bird?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.3132617473602295
+      },
+      {
+        "path": "data/clotho/bubbles 2 tall glass.wav",
+        "question": "Is someone breathing?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.3132617473602295
+      },
+      {
+        "path": "data/clotho/Ambulance Siren.wav",
+        "question": "Is there an emergency taking place somewhere?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.016034230589866638
+      },
+      {
+        "path": "data/clotho/20070819.fjord.beach.00.wav",
+        "question": "Does this sound involve motion?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.07888974994421005
+      },
+      {
+        "path": "data/clotho/Spring.wav",
+        "question": "Is this the sound of liquid?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.012509571388363838
+      },
+      {
+        "path": "data/clotho/Seagulls 1.wav",
+        "question": "Are there panthers growling?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.023245446383953094
+      },
+      {
+        "path": "data/clotho/wind in the trees.wav",
+        "question": "Is someone playing tennis?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.02630021423101425
+      },
+      {
+        "path": "data/clotho/grifo goteando.wav",
+        "question": "Is something small  being dropped in a pool of water?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.009167483076453209
+      },
+      {
+        "path": "data/clotho/41_STEAM.wav",
+        "question": "Is a choir singing?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.1902991682291031
+      },
+      {
+        "path": "data/clotho/20060426.marsh.crikets.day.stereo.02.wav",
+        "question": "Is this outside?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.1902991682291031
+      },
+      {
+        "path": "data/clotho/RowanMagennis_160019_SD100_RingingBell.wav",
+        "question": "Are there many people crying?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.3132617473602295
+      },
+      {
+        "path": "data/clotho/Remix of 101980__pyr0x__growl_variants.wav",
+        "question": "Are there insects?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.6325989961624146
+      },
+      {
+        "path": "data/clotho/Washing Machine Water Filling Up.wav",
+        "question": "Are animals making noise?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 2.811967611312866
+      },
+      {
+        "path": "data/clotho/egg beater.wav",
+        "question": "Is this a machine?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.2014133334159851
+      },
+      {
+        "path": "data/clotho/medium clap.wav",
+        "question": "Is there a woman that is speaking?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.4740769863128662
+      },
+      {
+        "path": "data/clotho/in_cafe_4.wav",
+        "question": "Are the clinking noises from toys?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.3132617473602295
+      },
+      {
+        "path": "data/clotho/bubbles 2 tall glass.wav",
+        "question": "Are people fighting?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 2.0176751613616943
+      },
+      {
+        "path": "data/clotho/RG Railing Ring.wav",
+        "question": "Is there a piano being played?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.575939416885376
+      },
+      {
+        "path": "data/clotho/Drawers opening and closing.wav",
+        "question": "Is the same noise being repeated?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.02185230888426304
+      },
+      {
+        "path": "data/clotho/Village Morning Atmos.wav",
+        "question": "Are people talking?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.06196761503815651
+      },
+      {
+        "path": "data/clotho/static 770 kHz cycle zap.wav",
+        "question": "Does someone's phone ring?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.04044583439826965
+      },
+      {
+        "path": "data/clotho/FR.BirdChatAmbience.26.wav",
+        "question": "Are dogs barking at the birds?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 0.6931471824645996
+      },
+      {
+        "path": "data/clotho/d0_drips_03.wav",
+        "question": "Is something tapping?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.04044583439826965
+      },
+      {
+        "path": "data/clotho/Pouring Into Glass.wav",
+        "question": "Is bacon cooking?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.38687101006507874
+      },
+      {
+        "path": "data/clotho/grifo goteando.wav",
+        "question": "Is there a parrot asking questions?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.06196761503815651
+      },
+      {
+        "path": "data/clotho/RowanMagennis_160019_SD100_RingingBell.wav",
+        "question": "Is a high pitched noise being made?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.07888974994421005
+      },
+      {
+        "path": "data/clotho/FR.BirdChatAmbience.26.wav",
+        "question": "Are the people outside?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.06196761503815651
+      },
+      {
+        "path": "data/clotho/Ambulance Siren.wav",
+        "question": "Can ordinary cars make this sound?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.03804141283035278
+      },
+      {
+        "path": "data/clotho/Washing Machine Water Filling Up.wav",
+        "question": "Could something be frying??\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.003831784473732114
+      },
+      {
+        "path": "data/clotho/DH12_139_CentStat11_out.wav",
+        "question": "Is there an announcement for passengers?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.009755908511579037
+      },
+      {
+        "path": "data/clotho/medium clap.wav",
+        "question": "Is there a car horn honking?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.07428312301635742
+      },
+      {
+        "path": "data/clotho/keurigcoffee.wav",
+        "question": "Are there many different kinds of sounds?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.0011701886542141438
+      },
+      {
+        "path": "data/clotho/Tsaritsyno-Park. Spring.wav",
+        "question": "Is this in nature?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.0658353641629219
+      },
+      {
+        "path": "data/clotho/static 770 kHz cycle zap.wav",
+        "question": "Is there no interference sound going on?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 1,
+        "loss": 2.521270275115967
+      },
+      {
+        "path": "data/clotho/Thorndale train stop underneath.wav",
+        "question": "Is the train slowing down?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 1,
+        "loss": 3.1082098484039307
+      },
+      {
+        "path": "data/clotho/SamyeLing_Drain121102.wav",
+        "question": "Can thunder be heard?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 0.6931471824645996
+      },
+      {
+        "path": "data/clotho/outdoors forest footsteps running jogging rustle.wav",
+        "question": "Does the loudness of the sound vary?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.06993623077869415
+      },
+      {
+        "path": "data/clotho/Door Handle and Lock.wav",
+        "question": "Is the noise repeated?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.011047743260860443
+      },
+      {
+        "path": "data/clotho/Giant 1.wav",
+        "question": "Is there a car?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.06993623077869415
+      },
+      {
+        "path": "data/clotho/Seagulls 1.wav",
+        "question": "Is there any pause in the squawking?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 1,
+        "loss": 0.9740769863128662
+      },
+      {
+        "path": "data/clotho/Uh, Hi, Mom. I Crashed the Car.wav",
+        "question": "Is there a man here?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.4740769863128662
+      },
+      {
+        "path": "data/clotho/20070819.fjord.beach.00.wav",
+        "question": "Does this sound occur indoors?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.05832047387957573
+      },
+      {
+        "path": "data/clotho/westend 3.wav",
+        "question": "Are children singing?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.4073510468006134
+      },
+      {
+        "path": "data/clotho/Boom_Folie_PlayingWithCurtains.wav",
+        "question": "Is the person mumbling?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 1.5019290447235107
+      },
+      {
+        "path": "data/clotho/Train left to right.wav",
+        "question": "Does a car honk?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.42870065569877625
+      },
+      {
+        "path": "data/clotho/el sonido del arbol y la tierra yerlin .wav",
+        "question": "Is someone playing the saxophone?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 1.1368709802627563
+      },
+      {
+        "path": "data/clotho/keurigcoffee.wav",
+        "question": "Did the person tap a wooden spoon?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.42870065569877625
+      },
+      {
+        "path": "data/clotho/SummerFieldBirdSingingMay23rd2015.wav",
+        "question": "Is a jackhammer making noise in the background?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 2.2378222942352295
+      },
+      {
+        "path": "data/clotho/Kids chatter Primary School Birmingham UK.wav",
+        "question": "Is there more than one person?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.06993623077869415
+      },
+      {
+        "path": "data/clotho/outdoors forest footsteps running jogging rustle.wav",
+        "question": "Is there a dog barking?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.0658353641629219
+      },
+      {
+        "path": "data/clotho/Train left to right.wav",
+        "question": "Is a vehicle passing by?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.03364565595984459
+      },
+      {
+        "path": "data/clotho/keurig-coffe-maker.wav",
+        "question": "Is a man cussing?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 1.9102240800857544
+      },
+      {
+        "path": "data/clotho/Pouring Into Glass.wav",
+        "question": "Are receptacles of some kind being used?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.0658353641629219
+      },
+      {
+        "path": "data/clotho/el sonido del arbol y la tierra yerlin .wav",
+        "question": "Is the voice distorted?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.08893945813179016
+      },
+      {
+        "path": "data/clotho/Hwy84Westbound2A.wav",
+        "question": "Are the cars passing through the wind?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 1,
+        "loss": 1.2234445810317993
+      },
+      {
+        "path": "data/clotho/d0_drips_03.wav",
+        "question": "Is the TV on?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.03364565595984459
+      },
+      {
+        "path": "data/clotho/Boom_Folie_PlayingWithCurtains.wav",
+        "question": "Is the metal scraping together?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.08893945813179016
+      },
+      {
+        "path": "data/clotho/Uh, Hi, Mom. I Crashed the Car.wav",
+        "question": "Are there several people talking?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.42870065569877625
+      }
+    ]
+  },
+  "heldout": {
+    "correct": 42,
+    "n": 64,
+    "loss": 0.7502578877338237,
+    "rows": [
+      {
+        "path": "data/clotho/Night Frogs.wav",
+        "question": "Is this noise consistent?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 1,
+        "loss": 3.6513001918792725
+      },
+      {
+        "path": "data/clotho/Night Frogs.wav",
+        "question": "Does this sound come from a human?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.017059607431292534
+      },
+      {
+        "path": "data/clotho/Steam 20.wav",
+        "question": "Is the beat steady?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 1,
+        "loss": 4.264163494110107
+      },
+      {
+        "path": "data/clotho/Steam 20.wav",
+        "question": "Is a doctor talking to the patient?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.3484445810317993
+      },
+      {
+        "path": "data/clotho/carnival_parade_cologne_1.wav",
+        "question": "Is there music playing?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.6325989961624146
+      },
+      {
+        "path": "data/clotho/carnival_parade_cologne_1.wav",
+        "question": "Are there lots of animal sounds?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 2.6367831230163574
+      },
+      {
+        "path": "data/clotho/Babble of Frogs 001.wav",
+        "question": "Are there living things here?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.009167483076453209
+      },
+      {
+        "path": "data/clotho/Babble of Frogs 001.wav",
+        "question": "Is there a woman singing?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.04570977762341499
+      },
+      {
+        "path": "data/clotho/Walking in Grass in Evening with Loud Bird.wav",
+        "question": "Is the person outside?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.07888974994421005
+      },
+      {
+        "path": "data/clotho/Walking in Grass in Evening with Loud Bird.wav",
+        "question": "Could the person be in walking in a room?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.051641397178173065
+      },
+      {
+        "path": "data/clotho/Bathtub_Water-drain.wav",
+        "question": "is there water?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.6931471824645996
+      },
+      {
+        "path": "data/clotho/Bathtub_Water-drain.wav",
+        "question": "are there waves?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.04044583439826965
+      },
+      {
+        "path": "data/clotho/Walking on pebble beach.wav",
+        "question": "Does the person walk at the same speed as time goes on?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 1,
+        "loss": 3.4691390991210938
+      },
+      {
+        "path": "data/clotho/Walking on pebble beach.wav",
+        "question": "Is a cat hissing?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.4740769863128662
+      },
+      {
+        "path": "data/clotho/05769 carpenter&#39;s workshop ambience.wav",
+        "question": "Can voices be heard in this recording?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 1,
+        "loss": 2.578889846801758
+      },
+      {
+        "path": "data/clotho/05769 carpenter&#39;s workshop ambience.wav",
+        "question": "Is this a person?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.06993623077869415
+      },
+      {
+        "path": "data/clotho/DR0000_0020.wav",
+        "question": "Is it drizzling in the place?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.004917432088404894
+      },
+      {
+        "path": "data/clotho/DR0000_0020.wav",
+        "question": "is there a large storm?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 2.0176751613616943
+      },
+      {
+        "path": "data/clotho/bird in the Hague at dawn 5.wav",
+        "question": "Are some birds closer than others?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 1,
+        "loss": 1.4536898136138916
+      },
+      {
+        "path": "data/clotho/bird in the Hague at dawn 5.wav",
+        "question": "Is a snake slithering through dry leaves?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 2.2378222942352295
+      },
+      {
+        "path": "data/clotho/outdoors ambient  village bird distant neighbours children car.wav",
+        "question": "Are birds chirping?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.01038186065852642
+      },
+      {
+        "path": "data/clotho/outdoors ambient  village bird distant neighbours children car.wav",
+        "question": "Are people speaking?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.019309287890791893
+      },
+      {
+        "path": "data/clotho/amazon 04.wav",
+        "question": "Are there animals outside?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.11282224208116531
+      },
+      {
+        "path": "data/clotho/amazon 04.wav",
+        "question": "Is this in a church?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.05832047387957573
+      },
+      {
+        "path": "data/clotho/CoffeeShopChatter.wav",
+        "question": "Are the people in a very crowded place?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.003600069787353277
+      },
+      {
+        "path": "data/clotho/CoffeeShopChatter.wav",
+        "question": "Are the people in a nursery?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.04570977762341499
+      },
+      {
+        "path": "data/clotho/Streatham Railway Station and on a Train.wav",
+        "question": "Can humans be heard talking?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 1,
+        "loss": 1.6004126071929932
+      },
+      {
+        "path": "data/clotho/Streatham Railway Station and on a Train.wav",
+        "question": "Is a cat scratching something?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 2.929882287979126
+      },
+      {
+        "path": "data/clotho/T24_home_dishwasher_cycle change.wav",
+        "question": "Are multiple sounds heard?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.05832047387957573
+      },
+      {
+        "path": "data/clotho/T24_home_dishwasher_cycle change.wav",
+        "question": "Is anyone riding on a carousel?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.05832047387957573
+      },
+      {
+        "path": "data/clotho/windscreen wipers heavy rain.wav",
+        "question": "Is there windshield wipers wiping the rain off the car?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.003600069787353277
+      },
+      {
+        "path": "data/clotho/windscreen wipers heavy rain.wav",
+        "question": "Is there a turn signal on?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.042999111115932465
+      },
+      {
+        "path": "data/clotho/Walking On Dry Leaves Normalised.wav",
+        "question": "Does it sound crispy?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.38687101006507874
+      },
+      {
+        "path": "data/clotho/Walking On Dry Leaves Normalised.wav",
+        "question": "Can the ocean be heard?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.009167483076453209
+      },
+      {
+        "path": "data/clotho/Building Site.wav",
+        "question": "Is there a machine running?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.2014133334159851
+      },
+      {
+        "path": "data/clotho/Building Site.wav",
+        "question": "Is someone coughing?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 2.6949362754821777
+      },
+      {
+        "path": "data/clotho/Waterfall close.wav",
+        "question": "Is this loud?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.42870065569877625
+      },
+      {
+        "path": "data/clotho/Waterfall close.wav",
+        "question": "Is a person chopping wood?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 0.6931471824645996
+      },
+      {
+        "path": "data/clotho/Writing with Pen.wav",
+        "question": "Was a page flipped?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.38687101006507874
+      },
+      {
+        "path": "data/clotho/Writing with Pen.wav",
+        "question": "Is a dog barking in the background?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 0.6931471824645996
+      },
+      {
+        "path": "data/clotho/Tools .wav",
+        "question": "Are metallic objects being moved?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.04570977762341499
+      },
+      {
+        "path": "data/clotho/Tools .wav",
+        "question": "Are people singing?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.06993623077869415
+      },
+      {
+        "path": "data/clotho/slam.wav",
+        "question": "Is that sound of something being hit?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.011047743260860443
+      },
+      {
+        "path": "data/clotho/slam.wav",
+        "question": "Are children fighting?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 0.6931471824645996
+      },
+      {
+        "path": "data/clotho/100121.wav",
+        "question": "Is it raining in this place?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.024726316332817078
+      },
+      {
+        "path": "data/clotho/100121.wav",
+        "question": "Is it good weather in this area?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.051641397178173065
+      },
+      {
+        "path": "data/clotho/Kortedala, Gothenburg - By night - Police sirens and surroundings.wav",
+        "question": "Is the sound continuous?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 1,
+        "loss": 3.0485873222351074
+      },
+      {
+        "path": "data/clotho/Kortedala, Gothenburg - By night - Police sirens and surroundings.wav",
+        "question": "Is there a woman crying?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 1.3132617473602295
+      },
+      {
+        "path": "data/clotho/HeavyRain.wav",
+        "question": "Is the rain heavy?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.0017021704697981477
+      },
+      {
+        "path": "data/clotho/HeavyRain.wav",
+        "question": "Is a priest giving a sermon?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.42870065569877625
+      },
+      {
+        "path": "data/clotho/Conversacion Punjabi.wav",
+        "question": "are both people male?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 1,
+        "loss": 0.825939416885376
+      },
+      {
+        "path": "data/clotho/Conversacion Punjabi.wav",
+        "question": "Is only one person talking?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.25192904472351074
+      },
+      {
+        "path": "data/clotho/vague_sable.wav",
+        "question": "Is the hissing sound after each cycle cause by water receding from the sand?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.11282224208116531
+      },
+      {
+        "path": "data/clotho/vague_sable.wav",
+        "question": "Is this happening in a mountain stream?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.042999111115932465
+      },
+      {
+        "path": "data/clotho/Thunder Outside.wav",
+        "question": "Is there a large strike of thunder?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.28115010261535645
+      },
+      {
+        "path": "data/clotho/Thunder Outside.wav",
+        "question": "Are people running away from the thunder?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 0.825939416885376
+      },
+      {
+        "path": "data/clotho/More Amphitheatre Birds. Wav.wav",
+        "question": "Is there a series of squeaks?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.0944129079580307
+      },
+      {
+        "path": "data/clotho/More Amphitheatre Birds. Wav.wav",
+        "question": "Are the sounds low pitched?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 0.6931471824645996
+      },
+      {
+        "path": "data/clotho/Menziken Sawmill.wav",
+        "question": "Is there an engine?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 1,
+        "loss": 0.7575989961624146
+      },
+      {
+        "path": "data/clotho/Menziken Sawmill.wav",
+        "question": "Is the area crowded?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 1.7014133930206299
+      },
+      {
+        "path": "data/clotho/Evening Atmosphere #2.wav",
+        "question": "Is there more than one animal in the recording?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.10020658373832703
+      },
+      {
+        "path": "data/clotho/Evening Atmosphere #2.wav",
+        "question": "Is there a rainstorm?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 1.2234445810317993
+      },
+      {
+        "path": "data/clotho/20100515.park.ambiance.02.wav",
+        "question": "Are there birds around?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.013310973532497883
+      },
+      {
+        "path": "data/clotho/20100515.park.ambiance.02.wav",
+        "question": "Is this inside of a restaurant?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.1902991682291031
+      }
+    ]
+  },
+  "peak_allocated_GiB": 15.962997913360596,
+  "full_audio": {
+    "correct": 54,
+    "n": 64,
+    "loss": 0.5064198843592749,
+    "rows": [
+      {
+        "path": "data/clotho/Night Frogs.wav",
+        "question": "Is this noise consistent?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 1,
+        "loss": 1.6004126071929932
+      },
+      {
+        "path": "data/clotho/Night Frogs.wav",
+        "question": "Does this sound come from a human?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.004620233550667763
+      },
+      {
+        "path": "data/clotho/Steam 20.wav",
+        "question": "Is the beat steady?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 1,
+        "loss": 4.820594787597656
+      },
+      {
+        "path": "data/clotho/Steam 20.wav",
+        "question": "Is a doctor talking to the patient?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.023245446383953094
+      },
+      {
+        "path": "data/clotho/carnival_parade_cologne_1.wav",
+        "question": "Is there music playing?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.023245446383953094
+      },
+      {
+        "path": "data/clotho/carnival_parade_cologne_1.wav",
+        "question": "Are there lots of animal sounds?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.6325989961624146
+      },
+      {
+        "path": "data/clotho/Babble of Frogs 001.wav",
+        "question": "Are there living things here?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.006715348921716213
+      },
+      {
+        "path": "data/clotho/Babble of Frogs 001.wav",
+        "question": "Is there a woman singing?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.004078404977917671
+      },
+      {
+        "path": "data/clotho/Walking in Grass in Evening with Loud Bird.wav",
+        "question": "Is the person outside?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.007606116589158773
+      },
+      {
+        "path": "data/clotho/Walking in Grass in Evening with Loud Bird.wav",
+        "question": "Could the person be in walking in a room?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.016034230589866638
+      },
+      {
+        "path": "data/clotho/Bathtub_Water-drain.wav",
+        "question": "is there water?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.007606116589158773
+      },
+      {
+        "path": "data/clotho/Bathtub_Water-drain.wav",
+        "question": "are there waves?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.020541900768876076
+      },
+      {
+        "path": "data/clotho/Walking on pebble beach.wav",
+        "question": "Does the person walk at the same speed as time goes on?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 1,
+        "loss": 3.8955419063568115
+      },
+      {
+        "path": "data/clotho/Walking on pebble beach.wav",
+        "question": "Is a cat hissing?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.012509571388363838
+      },
+      {
+        "path": "data/clotho/05769 carpenter&#39;s workshop ambience.wav",
+        "question": "Can voices be heard in this recording?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 1,
+        "loss": 3.529750347137451
+      },
+      {
+        "path": "data/clotho/05769 carpenter&#39;s workshop ambience.wav",
+        "question": "Is this a person?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.06196761503815651
+      },
+      {
+        "path": "data/clotho/DR0000_0020.wav",
+        "question": "Is it drizzling in the place?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.001811888418160379
+      },
+      {
+        "path": "data/clotho/DR0000_0020.wav",
+        "question": "is there a large storm?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 2.578889846801758
+      },
+      {
+        "path": "data/clotho/bird in the Hague at dawn 5.wav",
+        "question": "Are some birds closer than others?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.1602240949869156
+      },
+      {
+        "path": "data/clotho/bird in the Hague at dawn 5.wav",
+        "question": "Is a snake slithering through dry leaves?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.051641397178173065
+      },
+      {
+        "path": "data/clotho/outdoors ambient  village bird distant neighbours children car.wav",
+        "question": "Are birds chirping?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.020541900768876076
+      },
+      {
+        "path": "data/clotho/outdoors ambient  village bird distant neighbours children car.wav",
+        "question": "Are people speaking?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.019309287890791893
+      },
+      {
+        "path": "data/clotho/amazon 04.wav",
+        "question": "Are there animals outside?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.01038186065852642
+      },
+      {
+        "path": "data/clotho/amazon 04.wav",
+        "question": "Is this in a church?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.005928550846874714
+      },
+      {
+        "path": "data/clotho/CoffeeShopChatter.wav",
+        "question": "Are the people in a very crowded place?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.003600069787353277
+      },
+      {
+        "path": "data/clotho/CoffeeShopChatter.wav",
+        "question": "Are the people in a nursery?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.06196761503815651
+      },
+      {
+        "path": "data/clotho/Streatham Railway Station and on a Train.wav",
+        "question": "Can humans be heard talking?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 1,
+        "loss": 1.7014133930206299
+      },
+      {
+        "path": "data/clotho/Streatham Railway Station and on a Train.wav",
+        "question": "Is a cat scratching something?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.3484445810317993
+      },
+      {
+        "path": "data/clotho/T24_home_dishwasher_cycle change.wav",
+        "question": "Are multiple sounds heard?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.004917432088404894
+      },
+      {
+        "path": "data/clotho/T24_home_dishwasher_cycle change.wav",
+        "question": "Is anyone riding on a carousel?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.03364565595984459
+      },
+      {
+        "path": "data/clotho/windscreen wipers heavy rain.wav",
+        "question": "Is there windshield wipers wiping the rain off the car?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.007606116589158773
+      },
+      {
+        "path": "data/clotho/windscreen wipers heavy rain.wav",
+        "question": "Is there a turn signal on?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.42870065569877625
+      },
+      {
+        "path": "data/clotho/Walking On Dry Leaves Normalised.wav",
+        "question": "Does it sound crispy?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.020541900768876076
+      },
+      {
+        "path": "data/clotho/Walking On Dry Leaves Normalised.wav",
+        "question": "Can the ocean be heard?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.006309825927019119
+      },
+      {
+        "path": "data/clotho/Building Site.wav",
+        "question": "Is there a machine running?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.006715348921716213
+      },
+      {
+        "path": "data/clotho/Building Site.wav",
+        "question": "Is someone coughing?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 2.811967611312866
+      },
+      {
+        "path": "data/clotho/Waterfall close.wav",
+        "question": "Is this loud?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.029750416055321693
+      },
+      {
+        "path": "data/clotho/Waterfall close.wav",
+        "question": "Is a person chopping wood?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.009167483076453209
+      },
+      {
+        "path": "data/clotho/Writing with Pen.wav",
+        "question": "Was a page flipped?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.42870065569877625
+      },
+      {
+        "path": "data/clotho/Writing with Pen.wav",
+        "question": "Is a dog barking in the background?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.12692804634571075
+      },
+      {
+        "path": "data/clotho/Tools .wav",
+        "question": "Are metallic objects being moved?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.005928550846874714
+      },
+      {
+        "path": "data/clotho/Tools .wav",
+        "question": "Are people singing?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.009755908511579037
+      },
+      {
+        "path": "data/clotho/slam.wav",
+        "question": "Is that sound of something being hit?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.005928550846874714
+      },
+      {
+        "path": "data/clotho/slam.wav",
+        "question": "Are children fighting?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.42870065569877625
+      },
+      {
+        "path": "data/clotho/100121.wav",
+        "question": "Is it raining in this place?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.10020658373832703
+      },
+      {
+        "path": "data/clotho/100121.wav",
+        "question": "Is it good weather in this area?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.006715348921716213
+      },
+      {
+        "path": "data/clotho/Kortedala, Gothenburg - By night - Police sirens and surroundings.wav",
+        "question": "Is the sound continuous?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 1,
+        "loss": 1.4061501026153564
+      },
+      {
+        "path": "data/clotho/Kortedala, Gothenburg - By night - Police sirens and surroundings.wav",
+        "question": "Is there a woman crying?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.22541262209415436
+      },
+      {
+        "path": "data/clotho/HeavyRain.wav",
+        "question": "Is the rain heavy?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.0031777145341038704
+      },
+      {
+        "path": "data/clotho/HeavyRain.wav",
+        "question": "Is a priest giving a sermon?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.006715348921716213
+      },
+      {
+        "path": "data/clotho/Conversacion Punjabi.wav",
+        "question": "are both people male?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.03364565595984459
+      },
+      {
+        "path": "data/clotho/Conversacion Punjabi.wav",
+        "question": "Is only one person talking?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.12692804634571075
+      },
+      {
+        "path": "data/clotho/vague_sable.wav",
+        "question": "Is the hissing sound after each cycle cause by water receding from the sand?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.10020658373832703
+      },
+      {
+        "path": "data/clotho/vague_sable.wav",
+        "question": "Is this happening in a mountain stream?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.01416344940662384
+      },
+      {
+        "path": "data/clotho/Thunder Outside.wav",
+        "question": "Is there a large strike of thunder?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.10020658373832703
+      },
+      {
+        "path": "data/clotho/Thunder Outside.wav",
+        "question": "Are people running away from the thunder?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.1797446459531784
+      },
+      {
+        "path": "data/clotho/More Amphitheatre Birds. Wav.wav",
+        "question": "Is there a series of squeaks?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.03364565595984459
+      },
+      {
+        "path": "data/clotho/More Amphitheatre Birds. Wav.wav",
+        "question": "Are the sounds low pitched?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 1.3132617473602295
+      },
+      {
+        "path": "data/clotho/Menziken Sawmill.wav",
+        "question": "Is there an engine?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.07888974994421005
+      },
+      {
+        "path": "data/clotho/Menziken Sawmill.wav",
+        "question": "Is the area crowded?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 3.8955419063568115
+      },
+      {
+        "path": "data/clotho/Evening Atmosphere #2.wav",
+        "question": "Is there more than one animal in the recording?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.03804141283035278
+      },
+      {
+        "path": "data/clotho/Evening Atmosphere #2.wav",
+        "question": "Is there a rainstorm?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.6325989961624146
+      },
+      {
+        "path": "data/clotho/20100515.park.ambiance.02.wav",
+        "question": "Are there birds around?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.006309825927019119
+      },
+      {
+        "path": "data/clotho/20100515.park.ambiance.02.wav",
+        "question": "Is this inside of a restaurant?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.11282224208116531
+      }
+    ]
+  },
+  "text_only": {
+    "correct": 29,
+    "n": 64,
+    "loss": 1.719478395430997,
+    "rows": [
+      {
+        "path": "data/clotho/Night Frogs.wav",
+        "question": "Is this noise consistent?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 1,
+        "loss": 5.006715297698975
+      },
+      {
+        "path": "data/clotho/Night Frogs.wav",
+        "question": "Does this sound come from a human?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.0658353641629219
+      },
+      {
+        "path": "data/clotho/Steam 20.wav",
+        "question": "Is the beat steady?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 1,
+        "loss": 2.4069128036499023
+      },
+      {
+        "path": "data/clotho/Steam 20.wav",
+        "question": "Is a doctor talking to the patient?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 5.2552337646484375
+      },
+      {
+        "path": "data/clotho/carnival_parade_cologne_1.wav",
+        "question": "Is there music playing?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 1,
+        "loss": 1.0537006855010986
+      },
+      {
+        "path": "data/clotho/carnival_parade_cologne_1.wav",
+        "question": "Are there lots of animal sounds?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 4.882606029510498
+      },
+      {
+        "path": "data/clotho/Babble of Frogs 001.wav",
+        "question": "Are there living things here?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 1,
+        "loss": 2.1269280910491943
+      },
+      {
+        "path": "data/clotho/Babble of Frogs 001.wav",
+        "question": "Is there a woman singing?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 2.293837308883667
+      },
+      {
+        "path": "data/clotho/Walking in Grass in Evening with Loud Bird.wav",
+        "question": "Is the person outside?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 1,
+        "loss": 2.4639394283294678
+      },
+      {
+        "path": "data/clotho/Walking in Grass in Evening with Loud Bird.wav",
+        "question": "Could the person be in walking in a room?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.04044583439826965
+      },
+      {
+        "path": "data/clotho/Bathtub_Water-drain.wav",
+        "question": "is there water?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.06196761503815651
+      },
+      {
+        "path": "data/clotho/Bathtub_Water-drain.wav",
+        "question": "are there waves?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 3.4691390991210938
+      },
+      {
+        "path": "data/clotho/Walking on pebble beach.wav",
+        "question": "Does the person walk at the same speed as time goes on?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 1,
+        "loss": 3.6513001918792725
+      },
+      {
+        "path": "data/clotho/Walking on pebble beach.wav",
+        "question": "Is a cat hissing?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 4.572881698608398
+      },
+      {
+        "path": "data/clotho/05769 carpenter&#39;s workshop ambience.wav",
+        "question": "Can voices be heard in this recording?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 1,
+        "loss": 2.578889846801758
+      },
+      {
+        "path": "data/clotho/05769 carpenter&#39;s workshop ambience.wav",
+        "question": "Is this a person?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.12692804634571075
+      },
+      {
+        "path": "data/clotho/DR0000_0020.wav",
+        "question": "Is it drizzling in the place?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.011047743260860443
+      },
+      {
+        "path": "data/clotho/DR0000_0020.wav",
+        "question": "is there a large storm?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 3.2279458045959473
+      },
+      {
+        "path": "data/clotho/bird in the Hague at dawn 5.wav",
+        "question": "Are some birds closer than others?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 1,
+        "loss": 1.2234445810317993
+      },
+      {
+        "path": "data/clotho/bird in the Hague at dawn 5.wav",
+        "question": "Is a snake slithering through dry leaves?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 5.504078388214111
+      },
+      {
+        "path": "data/clotho/outdoors ambient  village bird distant neighbours children car.wav",
+        "question": "Are birds chirping?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.001811888418160379
+      },
+      {
+        "path": "data/clotho/outdoors ambient  village bird distant neighbours children car.wav",
+        "question": "Are people speaking?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 0.8981232643127441
+      },
+      {
+        "path": "data/clotho/amazon 04.wav",
+        "question": "Are there animals outside?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.10020658373832703
+      },
+      {
+        "path": "data/clotho/amazon 04.wav",
+        "question": "Is this in a church?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.38687101006507874
+      },
+      {
+        "path": "data/clotho/CoffeeShopChatter.wav",
+        "question": "Are the people in a very crowded place?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.0006264869589358568
+      },
+      {
+        "path": "data/clotho/CoffeeShopChatter.wav",
+        "question": "Are the people in a nursery?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.42870065569877625
+      },
+      {
+        "path": "data/clotho/Streatham Railway Station and on a Train.wav",
+        "question": "Can humans be heard talking?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.07888974994421005
+      },
+      {
+        "path": "data/clotho/Streatham Railway Station and on a Train.wav",
+        "question": "Is a cat scratching something?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 4.511047840118408
+      },
+      {
+        "path": "data/clotho/T24_home_dishwasher_cycle change.wav",
+        "question": "Are multiple sounds heard?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.03364565595984459
+      },
+      {
+        "path": "data/clotho/T24_home_dishwasher_cycle change.wav",
+        "question": "Is anyone riding on a carousel?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 0.6931471824645996
+      },
+      {
+        "path": "data/clotho/windscreen wipers heavy rain.wav",
+        "question": "Is there windshield wipers wiping the rain off the car?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.0008562712464481592
+      },
+      {
+        "path": "data/clotho/windscreen wipers heavy rain.wav",
+        "question": "Is there a turn signal on?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.06196761503815651
+      },
+      {
+        "path": "data/clotho/Walking On Dry Leaves Normalised.wav",
+        "question": "Does it sound crispy?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.3484445810317993
+      },
+      {
+        "path": "data/clotho/Walking On Dry Leaves Normalised.wav",
+        "question": "Can the ocean be heard?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.005233753472566605
+      },
+      {
+        "path": "data/clotho/Building Site.wav",
+        "question": "Is there a machine running?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.6325989961624146
+      },
+      {
+        "path": "data/clotho/Building Site.wav",
+        "question": "Is someone coughing?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 5.37962007522583
+      },
+      {
+        "path": "data/clotho/Waterfall close.wav",
+        "question": "Is this loud?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.28115010261535645
+      },
+      {
+        "path": "data/clotho/Waterfall close.wav",
+        "question": "Is a person chopping wood?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 6.813599109649658
+      },
+      {
+        "path": "data/clotho/Writing with Pen.wav",
+        "question": "Was a page flipped?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 1,
+        "loss": 1.5019290447235107
+      },
+      {
+        "path": "data/clotho/Writing with Pen.wav",
+        "question": "Is a dog barking in the background?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 1.8047446012496948
+      },
+      {
+        "path": "data/clotho/Tools .wav",
+        "question": "Are metallic objects being moved?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 1,
+        "loss": 0.9740769863128662
+      },
+      {
+        "path": "data/clotho/Tools .wav",
+        "question": "Are people singing?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 4.696667671203613
+      },
+      {
+        "path": "data/clotho/slam.wav",
+        "question": "Is that sound of something being hit?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.009755908511579037
+      },
+      {
+        "path": "data/clotho/slam.wav",
+        "question": "Are children fighting?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 1.4061501026153564
+      },
+      {
+        "path": "data/clotho/100121.wav",
+        "question": "Is it raining in this place?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.2014133334159851
+      },
+      {
+        "path": "data/clotho/100121.wav",
+        "question": "Is it good weather in this area?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.6325989961624146
+      },
+      {
+        "path": "data/clotho/Kortedala, Gothenburg - By night - Police sirens and surroundings.wav",
+        "question": "Is the sound continuous?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 1,
+        "loss": 4.634756088256836
+      },
+      {
+        "path": "data/clotho/Kortedala, Gothenburg - By night - Police sirens and surroundings.wav",
+        "question": "Is there a woman crying?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 2.4639394283294678
+      },
+      {
+        "path": "data/clotho/HeavyRain.wav",
+        "question": "Is the rain heavy?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.004078404977917671
+      },
+      {
+        "path": "data/clotho/HeavyRain.wav",
+        "question": "Is a priest giving a sermon?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 4.820594787597656
+      },
+      {
+        "path": "data/clotho/Conversacion Punjabi.wav",
+        "question": "are both people male?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 1,
+        "loss": 2.578889846801758
+      },
+      {
+        "path": "data/clotho/Conversacion Punjabi.wav",
+        "question": "Is only one person talking?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.11967968195676804
+      },
+      {
+        "path": "data/clotho/vague_sable.wav",
+        "question": "Is the hissing sound after each cycle cause by water receding from the sand?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.12692804634571075
+      },
+      {
+        "path": "data/clotho/vague_sable.wav",
+        "question": "Is this happening in a mountain stream?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 1,
+        "loss": 0.4740769863128662
+      },
+      {
+        "path": "data/clotho/Thunder Outside.wav",
+        "question": "Is there a large strike of thunder?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.25192904472351074
+      },
+      {
+        "path": "data/clotho/Thunder Outside.wav",
+        "question": "Are people running away from the thunder?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 1.1368709802627563
+      },
+      {
+        "path": "data/clotho/More Amphitheatre Birds. Wav.wav",
+        "question": "Is there a series of squeaks?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.12692804634571075
+      },
+      {
+        "path": "data/clotho/More Amphitheatre Birds. Wav.wav",
+        "question": "Are the sounds low pitched?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 2.3502066135406494
+      },
+      {
+        "path": "data/clotho/Menziken Sawmill.wav",
+        "question": "Is there an engine?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 1,
+        "loss": 1.2234445810317993
+      },
+      {
+        "path": "data/clotho/Menziken Sawmill.wav",
+        "question": "Is the area crowded?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 2.0720865726470947
+      },
+      {
+        "path": "data/clotho/Evening Atmosphere #2.wav",
+        "question": "Is there more than one animal in the recording?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.12692804634571075
+      },
+      {
+        "path": "data/clotho/Evening Atmosphere #2.wav",
+        "question": "Is there a rainstorm?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 3.590472936630249
+      },
+      {
+        "path": "data/clotho/20100515.park.ambiance.02.wav",
+        "question": "Are there birds around?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 0,
+        "prediction": 0,
+        "loss": 0.12692804634571075
+      },
+      {
+        "path": "data/clotho/20100515.park.ambiance.02.wav",
+        "question": "Is this inside of a restaurant?\nA. yes\nB. no\nAnswer with only A or B.",
+        "target": 1,
+        "prediction": 0,
+        "loss": 1.9102240800857544
+      }
+    ]
+  }
+}
