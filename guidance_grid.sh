@@ -21,13 +21,17 @@ mkdir -p "$root"
 run() {
     local out=$1; shift
     if [[ $mode == eval ]]; then
-        [[ -f $out/eval.json || $out == *-parent || ! -f $out/compressor.pt ]] && return
+        [[ -f $out/eval.json || $out == *-parent ]] && return
+        [[ -f $out/compressor.pt ]] || { echo "Missing checkpoint: $out/compressor.pt" >&2; return 1; }
         echo "$(date +%T) eval $out" >&2
         "$py" -u bottleneck.py eval --out "$out" "$@" > "$out.eval.log" 2>&1
         return
     fi
     [[ -f $out/train.json ]] && return
-    rm -rf "$out"
+    if [[ -e $out ]]; then
+        echo "Incomplete run at $out; preserve it and choose a fresh output root or move it before retrying." >&2
+        return 1
+    fi
     echo "$(date +%T) start $out" >&2
     "$py" -u bottleneck.py train --out "$out" "$@" > "$out.log" 2>&1
 }
