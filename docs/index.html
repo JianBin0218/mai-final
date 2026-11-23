@@ -1,4 +1,5 @@
 <!doctype html>
+<!-- site-source: aad71dbf6ab8245fc3d2e57b2cfcd22d82c52973 -->
 <html lang="zh-Hant">
 <head>
 <meta charset="utf-8">
@@ -26,15 +27,15 @@
   ],
   "plans": [
     { "id": "j1", "track": "AB", "status": "active", "title": "提案投影片與 5 分鐘報告", "why": "11/25 23:59 前上傳提案投影片，11/26 報告 5 分鐘。用已完成的 pilot 與兩線結果說明動機和方法，共同起點之後的實驗標成後續計畫。", "todos": [["動機與架構圖", false], ["A 線：容量與題型結果一頁", false], ["B 線：題幹導引結果一頁", false], ["下一步規劃一頁", false], ["上傳投影片（11/25 23:59 前）", false], ["排練 5 分鐘報告", false]] },
-    { "id": "j2", "track": "AB", "status": "active", "title": "PR #1 review 與合併", "why": "把 track-b 分支（通用化設定、B 線題幹導引網格、在 fresh_val 上的對齊結果）合併進 main。", "todos": [["健賓 review", false], ["處理 review 意見", false], ["合併進 main", false]] },
+    { "id": "j2", "track": "AB", "status": "done", "title": "合併 B 線首輪結果", "why": "PR #1 已將 B 線題幹導引實驗與對齊結果合併進 main。", "todos": [["合併進 main", true]] },
     { "id": "j3", "track": "AB", "status": "idea", "title": "小容量下，正確題幹能否救回特定題型", "why": "兩線若在某類題目交會，就一起測：容量較小時（K = 1、4），正確題幹能否救回 A 線找到的容量敏感題型。", "todos": [["選定 A 線的容量敏感題型", false], ["在 K = 1、4 依題型比較正確與錯置題幹", false]] },
-    { "id": "j4", "track": "AB", "status": "planned", "title": "官方 test 最終評估", "why": "方法定案前保留官方 test。兩線使用相同樣本、逐題 ID 與錄音層級的配對比較，只評估一次。", "todos": [["兩線定案最終方法", false], ["產生官方 test manifest", false], ["一次性評估並寫進報告", false]] },
+    { "id": "j4", "track": "A", "status": "done", "title": "A 線官方 test 評估", "why": "鎖定方案後評估 257 段錄音、514 題，並保存逐題分數和錄音配對區間。", "todos": [["鎖定方案與題型規則", true], ["完成單次正式推論", true], ["離線重算與驗證", true]] },
     { "id": "b1", "track": "B", "status": "planned", "title": "slot 層級的題幹路由", "why": "目前所有 query 加的是同一個題幹向量。改成讓題幹 token 和音訊做 cross-attention，產生 K 個不同的 query，檢驗「選擇不同證據」是否需要 slot 層級的路由。", "todos": [["設計 per-slot 題幹 query，零初始化，確認起點和純音訊逐位元相同", false], ["加進 guidance_grid：K = 1/4/16 × seed 17/18/19", false], ["在 fresh_val 比較正確、錯置、關閉題幹", false]] },
     { "id": "b2", "track": "B", "status": "idea", "title": "需要時間定位的合成題", "why": "做「事件 A 是否在事件 B 之前」這類題，在 K = 1 測試題幹能否決定要保留錄音的哪一段。", "todos": [["拼接兩段事件錄音，生成順序題", false], ["確認完整音訊與只看文字的基準", false], ["K = 1 比較純音訊與題幹導引", false]] },
     { "id": "b3", "track": "B", "status": "planned", "title": "latent 線性探針：回答端讀得到嗎", "why": "在固定的純音訊 latent 上訓練線性 probe 預測各題答案。若 latent 已含答案資訊、回答端仍答錯，改進方向應放在回答端，而不是讓壓縮端讀題。", "todos": [["匯出 fresh_val 的 K = 1/4/16 latent", false], ["以錄音為單位交叉驗證 probe", false], ["和回答端準確率逐題對照", false]] },
     { "id": "a1", "track": "A", "status": "idea", "title": "音量讀出的泛化", "why": "固定 latent 的線性音量讀出達 84–90%，問答卻只有 51.5%。還沒測試讀出器能否泛化到其他聲源組或其他音量差。", "todos": [["設計泛化切分（新聲源組、不同音量差）", false], ["跑 level-probe 泛化評估", false]] },
     { "id": "a2", "track": "A", "status": "planned", "title": "重跑 counterbalanced-v1", "why": "完整原模型評測途中停止，只保存 manifest 與部分結果，目前不計入結論。", "todos": [["重跑完整原模型評測", false], ["和 opposite-v1 結果合併分析", false]] },
-    { "id": "a3", "track": "A", "status": "idea", "title": "關係題：壓縮後遺失了哪些證據", "why": "關係題的完整音訊比 K = 16 高 14.5 pp（+5.9 至 +24.2），適合優先研究固定長度壓縮後遺失了哪些可用的聲音證據。", "todos": [["挑出完整音訊答對、K = 16 答錯的關係題", false], ["逐題聽錄音並標註遺失的線索", false]] }
+    { "id": "a3", "track": "A", "status": "done", "title": "確認自然數量／關係題的差距", "why": "開發集的 14.5 點落差在官方 test 的主要選項順序未重現。完整音訊為 83.3%，K = 16 為 84.0%。", "todos": [["固定題型規則並在保留資料評估", true], ["保存整類結果與逐題失敗案例", true]] }
   ]
 }
 </script>
@@ -580,7 +581,7 @@ footer .links { display: flex; flex-wrap: wrap; gap: 6px 24px; }
     <div class="sec-head read">
       <p class="kicker"><span class="no">三</span>主要結果<span class="en">Findings</span></p>
       <h2>容量有用，<br>讀題目還看不出幫助。</h2>
-      <p class="lede">所有數字都在 fresh_val 的 340 題上，可以用 repo 裡已提交的逐題結果重算，不需要 GPU。滑過圖上的點可以看數值。</p>
+      <p class="lede">A 線同時報告 340 題開發集和 514 題官方 test。B 線圖表使用 340 題開發集。兩組結果皆可用 repo 裡的逐題分數重算。</p>
     </div>
     <div class="tabs" role="tablist" aria-label="結果分頁">
       <button class="tab" role="tab" id="tab-a" aria-controls="panel-a" aria-selected="true"><i class="swatch a"></i>容量與題型</button>
@@ -590,17 +591,17 @@ footer .links { display: flex; flex-wrap: wrap; gap: 6px 24px; }
 
     <div class="panel" id="panel-a" role="tabpanel" aria-labelledby="tab-a">
       <div class="figure">
-        <div class="fig-head"><span class="fig">圖二</span><h3>各題型的準確率</h3><span class="sub">三個 seed 平均，括號內為題數</span><button class="tbtn" data-table="a">表格</button></div>
+        <div class="fig-head"><span class="fig">圖二</span><h3>開發集各題型的準確率</h3><span class="sub">fresh_val，三個 seed 平均，括號內為題數</span><button class="tbtn" data-table="a">表格</button></div>
         <div class="legend"><span><i class="key dotk" style="background:var(--a)"></i>K = 4</span><span><i class="key dotk" style="background:var(--b)"></i>K = 16</span><span><i class="key dotk" style="background:var(--c)"></i>完整音訊</span><span><i class="key tick"></i>只看文字</span></div>
         <div class="chart" id="chart-a"></div>
         <div class="dtable" id="table-a" hidden></div>
       </div>
       <div class="take">
-        <h3>容量優勢在新錄音上重現</h3>
-        <p class="pull">K = 16 比 K = 4 多答對 <b>+9.0</b> pp，95% 區間 +5.9 至 +12.3，三個 seed 都成立。</p>
-        <p>增益主要在聲源／事件與數量／關係題。時間規律題連完整音訊都只有 53.8%，是原模型本身的弱點，不是壓縮造成的。</p>
-        <p>關係題的完整音訊比 K = 16 高 14.5 pp，是「壓縮後遺失了什麼」最值得追的地方。</p>
-        <p class="src">重算　<code>python analyze_fresh_types.py</code></p>
+        <h3>容量優勢在官方 test 重現</h3>
+        <p class="pull">514 題中，K = 4 答對 69.0%，K = 16 答對 79.6%，提升 <b>10.6</b> 個百分點（95% 區間 8.0 至 13.4）。完整音訊為 82.5%。</p>
+        <p>聲源／事件題提升 12.4 個百分點，占整體淨增答對約 84%。完整音訊領先 K = 16 的估計為 3.6 點，仍未通過事前設定的 5 點非劣性門檻。</p>
+        <p>數量／關係題在開發集觀察到的 14.5 點落差，未在官方 test 的主要選項順序重現。時間規律與聲學屬性題仍有較大的區間，需按各自條件判讀。</p>
+        <p class="src"><a href="https://github.com/JianBin0218/mai-final/tree/main/phase2/a-final-v1" target="_blank" rel="noopener">官方 test 方案、案例與逐題結果</a></p>
       </div>
     </div>
 
@@ -620,9 +621,9 @@ footer .links { display: flex; flex-wrap: wrap; gap: 6px 24px; }
         </div>
       </div>
       <div class="take">
-        <h3>干擾來自尺度，<br>不是題目內容</h3>
+        <h3>限制題幹尺度可減輕干擾</h3>
         <p class="pull">原版在 K = 16 少了 <b>15.7</b> pp，但正確題幹與錯置題幹只差 <b>−0.4</b> pp。</p>
-        <p>原版的題幹項訓練後是 query 的 90 倍，attention 飽和，模型其實沒有在讀題。加上 gate 限制尺度後，干擾消失，回到純音訊的水準。</p>
+        <p>原版的題幹項訓練後約為 query 的 90 倍。加入 gate 並減去平均題幹後，表現回到接近純音訊的水準。正確與錯置題幹的對照仍缺乏穩定差異。</p>
         <p>在模型自然學到的尺度下，三個 seed 平均的正確題幹與錯置題幹都在 ±1 pp 內；更多訓練資料、改用 LM hidden state 也一樣。目前的機制沒有觀察到穩定的題目專屬幫助。</p>
         <p class="src">重算　<code>python compare_guidance.py</code></p>
       </div>
@@ -709,10 +710,10 @@ footer .links { display: flex; flex-wrap: wrap; gap: 6px 24px; }
         </div>
       </details>
       <details>
-        <summary><span class="q">vi.</span><span>fresh_val 是什麼？為什麼還不用官方 test？</span><span class="pm" aria-hidden="true"></span></summary>
+        <summary><span class="q">vi.</span><span>開發集和官方 test 怎麼分開？</span><span class="pm" aria-hidden="true"></span></summary>
         <div class="ans">
           <p>fresh_val 是官方 validation 裡另外 170 段錄音、340 題，和 pilot 的訓練與驗證錄音互斥，每段一題 yes、一題 no。兩線都在這批題上報告，可以逐題比較。</p>
-          <p>官方 test 保留到方法定案後才做一次最終評估，避免在設計過程中被用掉。</p>
+          <p>A 線在固定樣本選取、題型與判讀規則後，才在 257 段官方 test 錄音上執行一次最終評估。</p>
         </div>
       </details>
     </div>
@@ -722,11 +723,11 @@ footer .links { display: flex; flex-wrap: wrap; gap: 6px 24px; }
 
 <footer>
   <div class="wrap">
-    <p class="colophon"><b>Colophon</b>內容整理自 PROJECT_HANDOFF.md（track-b 分支），更新於 2026 年 11 月 23 日。</p>
+    <p class="colophon"><b>Colophon</b>研究內容依據 main 的 PROJECT_HANDOFF.md，涵蓋 2026 年 11 月 23 日公布的 A 線最終結果。</p>
     <p class="links">
       <a href="https://github.com/JianBin0218/mai-final" target="_blank" rel="noopener">GitHub</a>
       <a href="https://github.com/JianBin0218/mai-final/pull/1" target="_blank" rel="noopener">PR #1</a>
-      <a href="https://github.com/JianBin0218/mai-final/blob/track-b/PROJECT_HANDOFF.md" target="_blank" rel="noopener">研究進度文件</a>
+      <a href="https://github.com/JianBin0218/mai-final/blob/main/PROJECT_HANDOFF.md" target="_blank" rel="noopener">研究進度文件</a>
     </p>
   </div>
 </footer>
@@ -1170,7 +1171,7 @@ const SHARED = [
   { s: "done", t: "瓶頸工程驗證", r: "凍結 backbone、只訓練壓縮器；重新解碼的 logit 差為 0，單卡峰值約 16 GiB。" },
   { s: "done", t: "Clotho-AQA pilot", r: "48 段訓練、32 段驗證錄音。K = 16 純音訊 53/64，完整音訊 54/64。" },
   { s: "done", t: "共用驗證集 fresh_val", r: "官方 validation 另外 170 段錄音、340 題，兩線逐題對齊。" },
-  { s: "active", t: "PR #1：B 線併入 main", r: "track-b 分支已和 main 對齊，等待 review。" },
+  { s: "done", t: "PR #1：B 線併入 main", r: "B 線的題幹導引網格和逐題對照已合併。" },
 ];
 const TRACKS = [
   { code: "A", name: "瓶頸容量與證據保留", owner: "負責　健賓", q: "瓶頸容量決定哪些聲音線索能被保留？", ms: [
@@ -1181,6 +1182,9 @@ const TRACKS = [
     { s: "done", t: "原模型與聲音置換對照", r: "完整音訊 292、只看文字 182、換成其他錄音 207（/340）；配對的聲音帶來 +25.0 pp。", f: "phase2/fresh-controls" },
     { s: "done", t: "關係題 latent 置換", r: "混合表示中，保留原錄音的學習式修正比只保留分段平均高 11.1 pp（+2.0 至 +20.3）。", f: "phase2/interventions-v1" },
     { s: "done", t: "相反正解配對與音量讀出", r: "交換學習式修正後 80.6% 跟著來源錄音的正解；latent 的線性音量讀出 84–90%，問答卻只有 51.5%。", f: "phase2/opposite-v1、level-probe-v1" },
+    { s: "done", t: "自然錄音容量確認", r: "30 組同題相反正解的自然配對，K = 16 比 K = 4 提高排序正確率 7.5 個百分點。", f: "phase2/a-natural-capacity-v1" },
+    { s: "done", t: "獨立聲源確認", r: "1.6 秒聲源配對的 K = 16 混合 latent 分數有 99.7% 跟著學習式修正來源。", f: "phase2/a-event-components-v1" },
+    { s: "done", t: "官方 test 最終評估", r: "257 段錄音、514 題，K = 16 比 K = 4 高 10.6 個百分點。", f: "phase2/a-final-v1" },
     { s: "paused", t: "平衡配對 counterbalanced-v1", r: "完整原模型評測途中停止，只保存 manifest 與部分結果，不計入結論。" },
     { s: "next", t: "音量讀出的泛化", r: "尚未執行。" },
   ] },
@@ -1445,13 +1449,23 @@ async function initRoadmap() {
     try { RM.canWrite = await RM.user.can("data.write"); } catch (e) { RM.canWrite = null; }
     try { RM.me = (await RM.user.id()) || null; } catch (e) { RM.me = null; }
   }
-  RM.readOnly = RM.canWrite === false;
+  RM.readOnly = RM.canWrite !== true;
   let settled = false;
   const timer = setTimeout(() => { if (!settled) loadStatic(); }, 10000);
   const ready = () => { if (RM.tracksReady && RM.plansReady && RM.mode === "live") { settled = true; clearTimeout(timer); renderRoadmap(); renderExtraTracks(); renderLiveCounts(); } };
   const fail = (err) => { if (err && err.code === "unavailable") return; settled = true; clearTimeout(timer); loadStatic(); };
-  db.collection("tracks").onSnapshot((snap) => { RM.tracks = new Map(snap.docs.map((d) => [d.id, d.data() || {}])); RM.tracksReady = true; ready(); }, fail);
-  db.collection("plans").onSnapshot((snap) => { RM.plans = snap.docs.map((d) => ({ id: d.id, ...(d.data() || {}) })); RM.plansReady = true; ready(); }, fail);
+  db.collection("tracks").onSnapshot((snap) => {
+    if (RM.mode !== "live") return;
+    RM.tracks = new Map(snap.docs.map((d) => [d.id, d.data() || {}]));
+    RM.tracksReady = true;
+    ready();
+  }, fail);
+  db.collection("plans").onSnapshot((snap) => {
+    if (RM.mode !== "live") return;
+    RM.plans = snap.docs.map((d) => ({ id: d.id, ...(d.data() || {}) }));
+    RM.plansReady = true;
+    ready();
+  }, fail);
 }
 function renderLiveCounts() {
   for (const code of ["A", "B"]) {

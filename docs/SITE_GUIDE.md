@@ -81,20 +81,19 @@
 
 **手動。** 直接改 `docs/index.html`，用瀏覽器打開檢查，再開 PR。
 
-**自動（選用）。** `.github/workflows/update-site.yml` 會在每次 push 到 `main` 後，請 Claude 依 `.github/site-update.md` 更新網頁，再開一個 PR 給人審。只改網頁本身的 push 不會觸發。使用前要設定兩件事：
+**自動（選用）。** 網頁可直接手動更新。啟用 `.github/workflows/update-site.yml` 後，相關研究檔案推進 `main` 時，也可以自動產生更新草稿。它以頁首 `site-source` 記錄研究來源提交，只改網頁本身不會觸發。使用前由管理員設定：
 
-1. Repo secret `CLAUDE_CODE_OAUTH_TOKEN`：主控網頁的人在自己電腦執行 `claude setup-token` 產生。每次執行會用掉這個帳號的訂閱額度，token 代表該帳號，不要貼在公開地方。
+1. 在 GitHub Actions Secrets 設定 `CLAUDE_CODE_OAUTH_TOKEN`。憑證持有人可以直接設定 secret。
 2. Settings → Actions → General，勾選「Allow GitHub Actions to create and approve pull requests」。
+3. 在 GitHub Actions Variables 設定 `MAI_SITE_UPDATES_ENABLED=true`，先從 `main` 手動執行一次，確認草稿內容。
 
-不想用自動更新的話，刪掉這個 workflow 即可，網頁本身不受影響。
+產生頁面的工作使用唯讀的 GitHub token。另一個工作只接收這個 HTML 檔，確認 `main` 仍指向同一個來源版本後開草稿 PR。組員審核數字和頁面後再合併。停用時將 `MAI_SITE_UPDATES_ENABLED` 改為 `false`。
 
 **線上版。** cshsieh 另外在 claude.ai 發布過一份可以共同編輯看板的副本。它不會跟著 repo 更新，以 repo 裡的這份為準。
 
 ## 六、目前待更新的內容
 
-截至 2026-11-24，網頁內容停在 PR #1（2026-11-23）。下列內容還沒放上去：
+網頁已整理 PR #1 的 B 線驗證結果和 `aad71db` 的 A 線官方 test。後續仍可補充：
 
-1. **A 線**：官方 Clotho-AQA test 最終評估、自然錄音容量確認、聲源身分確認等（`main` 的 aad71db）。
-2. **C 線**：讓回答端讀取壓縮證據（`codex/track-c-handoff` 分支）。版面已預留第三欄與苔綠色。
-3. **B 線**：B2 計劃與結果（`track-b-next` 分支），合併後更新 B 欄里程碑、看板，並可新增一個結果分頁。
-4. 看板中已經過期的計劃，例如提案投影片、PR #1 合併、已交給 C 線的「latent 線性探針」。
+1. **C 線**的讀取假說和實驗設計在 `codex/track-c-handoff` 分支。合併後可加到分工與規劃。
+2. **B 線**的 B2 計劃與結果在 `track-b-next` 分支。合併後更新 B 欄里程碑與看板。
