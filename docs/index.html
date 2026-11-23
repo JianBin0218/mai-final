@@ -255,6 +255,8 @@ h2 { font-size: clamp(26px, 2.2vw + 16px, 36px); line-height: 1.45; letter-spaci
 @media (max-width: 900px) { .tracks { grid-template-columns: 1fr; gap: 72px; } }
 .track { --tc: var(--a); min-width: 0; }
 .track[data-code="B"] { --tc: var(--b); }
+.track[data-code="C"] { --tc: var(--c); }
+.tracks .track:nth-child(3) { grid-column: 1 / -1; }
 .track-head { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 0 22px; align-items: start; padding-bottom: 26px; border-bottom: 1px solid var(--rule); }
 .letter { font: italic 500 76px/.8 var(--serif); color: var(--tc); margin-top: 4px; }
 .track-head .name { font-size: 22px; letter-spacing: .04em; }

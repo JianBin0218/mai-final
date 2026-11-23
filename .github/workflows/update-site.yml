@@ -1,0 +1,75 @@
+# Keep docs/index.html in step with the repo.
+# On every push to main (except pushes that only touch the page itself), Claude reads what changed
+# since the page was last updated, edits docs/index.html, and a pull request is opened for review.
+# Claude cannot commit or push; the create-pull-request step does that on a separate branch.
+#
+# Setup (once): repository secret CLAUDE_CODE_OAUTH_TOKEN from `claude setup-token`, and
+# Settings > Actions > General > "Allow GitHub Actions to create and approve pull requests".
+name: Update project site
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - docs/index.html
+  workflow_dispatch:
+
+concurrency:
+  group: update-site
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+  id-token: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Find changes since the page was last updated
+        id: range
+        run: |
+          base=$(git log -1 --format=%H -- docs/index.html)
+          echo "base=$base" >> "$GITHUB_OUTPUT"
+          if [ -z "$(git diff --name-only "$base" HEAD -- . ':(exclude)docs/index.html')" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            git log --format='%h %an %ad %s' --date=short "$base..HEAD"
+          fi
+
+      - name: Update the page with Claude
+        if: steps.range.outputs.changed == 'true'
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          prompt: |
+            Follow the instructions in .github/site-update.md.
+            The page was last updated at commit ${{ steps.range.outputs.base }}.
+            Review the changes in ${{ steps.range.outputs.base }}..HEAD and update docs/index.html.
+          claude_args: |
+            --max-turns 60
+            --allowedTools "Read,Edit,Write,Glob,Grep,Bash(git log:*),Bash(git diff:*),Bash(git show:*)"
+            --disallowedTools "Bash(git add:*),Bash(git commit:*),Bash(git push:*),Bash(git rm:*)"
+
+      - name: Open a pull request
+        if: steps.range.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: site/auto-update
+          add-paths: docs/index.html
+          commit-message: Update project site for ${{ steps.range.outputs.base }}..${{ github.sha }}
+          title: 更新專題總覽網頁
+          body: |
+            Claude 依據 `${{ steps.range.outputs.base }}..${{ github.sha }}` 之間的改動更新了 `docs/index.html`。
+            合併前請打開網頁確認內容與數字。
+
+            這個 PR 由 `.github/workflows/update-site.yml` 自動產生；之後的 push 會更新同一個 PR。
+          delete-branch: true
