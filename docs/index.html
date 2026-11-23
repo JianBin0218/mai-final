@@ -1,0 +1,1730 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>音訊 Latent 瓶頸</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="MAI 期末專題：音訊問答中的 latent 瓶頸。動機、架構、A/B 兩線進度、結果與研究規劃。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,500&family=Noto+Serif+TC:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap">
+
+<!--
+  研究規劃資料（靜態版）。
+  直接用瀏覽器打開這個檔案時，「研究規劃」區會顯示下面這份資料。
+  要更新：修改這段 JSON 後 commit。status 可用 idea / planned / active / done。
+  在 Claude 線上版裡，規劃區改用共用資料庫，組員可以直接在頁面上編輯。
+-->
+<script type="application/json" id="roadmap-seed">
+{
+  "updated": "2026-11-23",
+  "tracks": [
+    { "code": "A", "name": "瓶頸容量與證據保留", "owner": "健賓", "question": "瓶頸容量決定哪些聲音線索能被保留？", "slot": 1, "order": 1 },
+    { "code": "B", "name": "問題導引", "owner": "cshsieh", "question": "壓縮器先讀題目，能不能幫它挑對聲音證據？", "slot": 2, "order": 2 },
+    { "code": "AB", "name": "兩線整合與交付", "owner": "全組", "question": "兩線在哪裡交會？怎麼一起交付？", "slot": 3, "order": 3 }
+  ],
+  "plans": [
+    { "id": "j1", "track": "AB", "status": "active", "title": "提案投影片與 5 分鐘報告", "why": "11/25 23:59 前上傳提案投影片，11/26 報告 5 分鐘。用已完成的 pilot 與兩線結果說明動機和方法，共同起點之後的實驗標成後續計畫。", "todos": [["動機與架構圖", false], ["A 線：容量與題型結果一頁", false], ["B 線：題幹導引結果一頁", false], ["下一步規劃一頁", false], ["上傳投影片（11/25 23:59 前）", false], ["排練 5 分鐘報告", false]] },
+    { "id": "j2", "track": "AB", "status": "active", "title": "PR #1 review 與合併", "why": "把 track-b 分支（通用化設定、B 線題幹導引網格、在 fresh_val 上的對齊結果）合併進 main。", "todos": [["健賓 review", false], ["處理 review 意見", false], ["合併進 main", false]] },
+    { "id": "j3", "track": "AB", "status": "idea", "title": "小容量下，正確題幹能否救回特定題型", "why": "兩線若在某類題目交會，就一起測：容量較小時（K = 1、4），正確題幹能否救回 A 線找到的容量敏感題型。", "todos": [["選定 A 線的容量敏感題型", false], ["在 K = 1、4 依題型比較正確與錯置題幹", false]] },
+    { "id": "j4", "track": "AB", "status": "planned", "title": "官方 test 最終評估", "why": "方法定案前保留官方 test。兩線使用相同樣本、逐題 ID 與錄音層級的配對比較，只評估一次。", "todos": [["兩線定案最終方法", false], ["產生官方 test manifest", false], ["一次性評估並寫進報告", false]] },
+    { "id": "b1", "track": "B", "status": "planned", "title": "slot 層級的題幹路由", "why": "目前所有 query 加的是同一個題幹向量。改成讓題幹 token 和音訊做 cross-attention，產生 K 個不同的 query，檢驗「選擇不同證據」是否需要 slot 層級的路由。", "todos": [["設計 per-slot 題幹 query，零初始化，確認起點和純音訊逐位元相同", false], ["加進 guidance_grid：K = 1/4/16 × seed 17/18/19", false], ["在 fresh_val 比較正確、錯置、關閉題幹", false]] },
+    { "id": "b2", "track": "B", "status": "idea", "title": "需要時間定位的合成題", "why": "做「事件 A 是否在事件 B 之前」這類題，在 K = 1 測試題幹能否決定要保留錄音的哪一段。", "todos": [["拼接兩段事件錄音，生成順序題", false], ["確認完整音訊與只看文字的基準", false], ["K = 1 比較純音訊與題幹導引", false]] },
+    { "id": "b3", "track": "B", "status": "planned", "title": "latent 線性探針：回答端讀得到嗎", "why": "在固定的純音訊 latent 上訓練線性 probe 預測各題答案。若 latent 已含答案資訊、回答端仍答錯，改進方向應放在回答端，而不是讓壓縮端讀題。", "todos": [["匯出 fresh_val 的 K = 1/4/16 latent", false], ["以錄音為單位交叉驗證 probe", false], ["和回答端準確率逐題對照", false]] },
+    { "id": "a1", "track": "A", "status": "idea", "title": "音量讀出的泛化", "why": "固定 latent 的線性音量讀出達 84–90%，問答卻只有 51.5%。還沒測試讀出器能否泛化到其他聲源組或其他音量差。", "todos": [["設計泛化切分（新聲源組、不同音量差）", false], ["跑 level-probe 泛化評估", false]] },
+    { "id": "a2", "track": "A", "status": "planned", "title": "重跑 counterbalanced-v1", "why": "完整原模型評測途中停止，只保存 manifest 與部分結果，目前不計入結論。", "todos": [["重跑完整原模型評測", false], ["和 opposite-v1 結果合併分析", false]] },
+    { "id": "a3", "track": "A", "status": "idea", "title": "關係題：壓縮後遺失了哪些證據", "why": "關係題的完整音訊比 K = 16 高 14.5 pp（+5.9 至 +24.2），適合優先研究固定長度壓縮後遺失了哪些可用的聲音證據。", "todos": [["挑出完整音訊答對、K = 16 答錯的關係題", false], ["逐題聽錄音並標註遺失的線索", false]] }
+  ]
+}
+</script>
+
+<style>
+/* Layout: a quiet research monograph. A 680px reading column for prose, a 1040px measure for figures,
+   hairline rules instead of boxes, serif for words and figures, sans only for interface labels.
+   Indigo marks track A (the compressor), amber marks track B (the question), moss marks shared work. */
+:root {
+  --paper: #f3f3ef;
+  --paper-2: #e9e9e3;
+  --sheet: #fafaf7;
+  --ink: #1c1e1d;
+  --ink-2: #4a4d4b;
+  --ink-3: #7e827f;
+  --rule: #d6d6cf;
+  --rule-2: #bdbeb6;
+  --a: #2f5379;
+  --b: #a5672a;
+  --c: #5b7c50;
+  --ramp-1: #a3b7cf;
+  --ramp-2: #5a7ba3;
+  --ramp-3: #1f3a59;
+  --warn: #b98a1c;
+  --danger: #9b3b32;
+  --serif: "Cormorant Garamond", "Noto Serif TC", "Songti TC", "PMingLiU", serif;
+  --serif-tc: "Noto Serif TC", "Songti TC", "PMingLiU", serif;
+  --sans: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --read: 680px;
+  --wide: 1040px;
+  color-scheme: light;
+  interpolate-size: allow-keywords;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #141615; --paper-2: #1c1f1d; --sheet: #181a19; --ink: #e8e7e1; --ink-2: #b2b3ad; --ink-3: #848883;
+    --rule: #2c302d; --rule-2: #3d423e; --a: #8eabd0; --b: #d49a5d; --c: #98b68a;
+    --ramp-1: #3d5a7e; --ramp-2: #7f9fc7; --ramp-3: #c7d6ea; --warn: #d9b04a; --danger: #d9786c;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #141615; --paper-2: #1c1f1d; --sheet: #181a19; --ink: #e8e7e1; --ink-2: #b2b3ad; --ink-3: #848883;
+  --rule: #2c302d; --rule-2: #3d423e; --a: #8eabd0; --b: #d49a5d; --c: #98b68a;
+  --ramp-1: #3d5a7e; --ramp-2: #7f9fc7; --ramp-3: #c7d6ea; --warn: #d9b04a; --danger: #d9786c;
+  color-scheme: dark;
+}
+:root { padding: env(safe-area-inset-top, 0px) 0 env(safe-area-inset-bottom, 0px); }
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  margin: 0; background: var(--paper); color: var(--ink);
+  font: 400 16px/1.9 var(--serif-tc);
+  -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+  font-feature-settings: "palt" 0;
+}
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 30; background: var(--paper); }
+img { max-width: 100%; }
+.wrap { max-width: var(--wide); margin: 0 auto; padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); }
+.read { max-width: var(--read); }
+h1, h2, h3, h4 { margin: 0; font-family: var(--serif-tc); font-weight: 600; text-wrap: balance; color: var(--ink); }
+p { margin: 0; }
+a { color: inherit; text-decoration: underline; text-decoration-thickness: 1px; text-decoration-color: var(--rule-2); text-underline-offset: 4px; transition: text-decoration-color .3s; }
+a:hover { text-decoration-color: currentColor; }
+button { font: inherit; color: inherit; }
+code { font-family: var(--mono); font-size: .82em; color: var(--ink-2); }
+:focus-visible { outline: 1px solid var(--ink); outline-offset: 3px; }
+.num { font-family: var(--serif); font-variant-numeric: lining-nums tabular-nums; }
+.en { font-family: var(--serif); font-style: italic; font-weight: 400; letter-spacing: .01em; }
+.ui { font-family: var(--sans); }
+.muted { color: var(--ink-2); }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* ---------- masthead ---------- */
+.mast { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: color-mix(in oklab, var(--paper) 90%, transparent); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border-bottom: 1px solid transparent; transition: border-color .4s; }
+.mast.scrolled { border-bottom-color: var(--rule); }
+.mast .wrap { display: flex; align-items: center; gap: 24px; height: 58px; }
+.mark { display: flex; align-items: baseline; gap: 10px; text-decoration: none; white-space: nowrap; }
+.mark b { font: 600 17px/1 var(--serif-tc); letter-spacing: .06em; }
+.mark span { font: italic 400 15px/1 var(--serif); color: var(--ink-3); }
+.nav { margin-left: auto; display: flex; gap: 22px; overflow-x: auto; scrollbar-width: none; }
+.nav::-webkit-scrollbar { display: none; }
+.nav a { font: 400 13px/1 var(--sans); letter-spacing: .08em; color: var(--ink-3); text-decoration: none; padding: 6px 0; border-bottom: 1px solid transparent; white-space: nowrap; transition: color .3s, border-color .3s; }
+.nav a:hover, .nav a.on { color: var(--ink); border-bottom-color: var(--ink); }
+@media (max-width: 640px) { .mark span { display: none; } .nav { gap: 16px; } }
+
+/* ---------- section scaffolding ---------- */
+section { padding-block: 112px; scroll-margin-top: 58px; }
+section + section { border-top: 1px solid var(--rule); }
+.kicker { display: flex; align-items: baseline; gap: 14px; margin-bottom: 26px; font: 400 13px/1 var(--sans); letter-spacing: .2em; color: var(--ink-3); }
+.kicker .no { font: 500 15px/1 var(--serif-tc); letter-spacing: .1em; color: var(--ink-2); }
+.kicker .en { letter-spacing: .04em; font-size: 16px; }
+.kicker::after { content: ""; flex: 1; height: 1px; background: var(--rule); transform: translateY(-4px); max-width: 120px; }
+h2 { font-size: clamp(26px, 2.2vw + 16px, 36px); line-height: 1.45; letter-spacing: .03em; font-weight: 600; }
+.lede { margin-top: 22px; font-size: 17px; line-height: 2; color: var(--ink-2); }
+.sec-head { margin-bottom: 64px; }
+@media (max-width: 640px) { section { padding-block: 80px; } .sec-head { margin-bottom: 44px; } }
+
+/* ---------- hero ---------- */
+.hero { padding-block: 104px 96px; }
+.hero .eyebrow { font: 400 13px/1.6 var(--sans); letter-spacing: .22em; color: var(--ink-3); }
+.hero h1 { margin-top: 34px; font-size: clamp(34px, 4.4vw + 14px, 64px); line-height: 1.38; letter-spacing: .04em; font-weight: 600; }
+.hero h1 em { font-family: var(--serif); font-style: italic; font-weight: 500; color: var(--a); padding: 0 .06em; letter-spacing: 0; }
+.hero .sub { margin-top: 36px; font-size: 18px; line-height: 2.05; color: var(--ink-2); }
+.byline { margin-top: 40px; display: flex; flex-wrap: wrap; gap: 10px 32px; font: 400 13.5px/1.7 var(--sans); color: var(--ink-3); }
+.byline span { display: inline-flex; align-items: center; gap: 9px; }
+.byline b { font-weight: 500; color: var(--ink); }
+.swatch { width: 18px; height: 1.5px; background: var(--ink-3); display: inline-block; }
+.swatch.a { background: var(--a); } .swatch.b { background: var(--b); } .swatch.c { background: var(--c); }
+.byline .due b { color: var(--warn); }
+
+.plate { margin-top: 88px; }
+.plate-tools { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 28px; padding-bottom: 14px; border-bottom: 1px solid var(--rule); }
+.plate-tools .label { font: 400 12px/1 var(--sans); letter-spacing: .2em; color: var(--ink-3); }
+.choice { display: flex; flex-wrap: wrap; gap: 4px 22px; }
+.choice button { border: 0; background: none; padding: 4px 0; cursor: pointer; font: 400 14px/1.4 var(--sans); color: var(--ink-3); border-bottom: 1px solid transparent; transition: color .3s, border-color .3s; letter-spacing: .03em; white-space: nowrap; }
+.choice button:hover { color: var(--ink); }
+.choice button[aria-pressed="true"] { color: var(--ink); border-bottom-color: var(--ink); }
+#scope-canvas { display: block; width: 100%; height: 340px; margin-top: 8px; }
+@media (max-width: 619px) { #scope-canvas { height: 440px; } }
+.plate-foot { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 16px 40px; align-items: end; padding-top: 18px; border-top: 1px solid var(--rule); }
+.caption { font-size: 14.5px; line-height: 1.95; color: var(--ink-2); max-width: 36rem; min-width: 0; }
+.caption .fig { font: 500 13px/1 var(--sans); letter-spacing: .16em; color: var(--ink-3); margin-right: 12px; }
+.reading { text-align: right; white-space: nowrap; }
+.reading .big { font: 500 clamp(44px, 3vw + 26px, 64px)/1 var(--serif); font-variant-numeric: lining-nums tabular-nums; letter-spacing: -.01em; }
+.reading .of { font: italic 400 22px/1 var(--serif); color: var(--ink-3); margin-left: 6px; }
+.reading .unit { display: block; margin-top: 8px; font: 400 12px/1.6 var(--sans); letter-spacing: .12em; color: var(--ink-3); }
+@media (max-width: 560px) { .plate-foot { grid-template-columns: 1fr; } .reading { text-align: left; } }
+#strip { margin-top: 40px; }
+#strip svg { display: block; width: 100%; height: auto; overflow: visible; }
+.strip-note { margin-top: 10px; font: 400 12.5px/1.8 var(--sans); color: var(--ink-3); }
+
+/* ---------- architecture ---------- */
+.premise { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; margin-bottom: 80px; border-top: 1px solid var(--rule); }
+.premise > div { padding: 26px 28px 4px 0; display: grid; gap: 10px; align-content: start; min-width: 0; }
+.premise > div + div { padding-left: 28px; border-left: 1px solid var(--rule); }
+.premise .tag { font: 400 12px/1 var(--sans); letter-spacing: .18em; color: var(--ink-3); display: flex; align-items: center; gap: 10px; }
+.premise h3 { font-size: 20px; letter-spacing: .03em; }
+.premise p { font-size: 14.5px; line-height: 1.95; color: var(--ink-2); }
+@media (max-width: 800px) { .premise { grid-template-columns: 1fr; } .premise > div + div { padding-left: 0; border-left: 0; border-top: 1px solid var(--rule); } .premise > div { padding: 22px 0 18px; } }
+
+.arch-tools { display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px 30px; padding-bottom: 14px; border-bottom: 1px solid var(--rule); margin-bottom: 44px; }
+.arch-read { margin-left: auto; font: 400 13.5px/1.6 var(--sans); color: var(--ink-3); }
+.arch-read b { font: 500 20px/1 var(--serif); color: var(--ink); font-variant-numeric: lining-nums; margin: 0 2px; }
+.diagram-box { overflow-x: auto; padding-bottom: 6px; }
+.diagram { position: relative; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); grid-template-areas: ". . stem . prompt ." "audio enc comp lat dec out"; gap: 52px 26px; padding-bottom: 70px; min-width: 820px; }
+.diagram svg.edges { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; }
+.node { position: relative; z-index: 1; display: grid; gap: 4px; align-content: start; text-align: left; padding: 14px 14px 13px; background: var(--paper); border: 1px solid var(--rule-2); border-radius: 2px; cursor: pointer; transition: opacity .5s, border-color .3s, background .3s; min-width: 0; }
+.node:hover { border-color: var(--ink-2); }
+.node .tag { font: 400 11px/1.5 var(--sans); letter-spacing: .16em; color: var(--ink-3); }
+.node .t { font: 600 15.5px/1.5 var(--serif-tc); color: var(--ink); letter-spacing: .02em; }
+.node .s { font: 400 12px/1.6 var(--sans); color: var(--ink-3); }
+.node[data-kind="train"] { border-color: var(--a); box-shadow: inset 0 0 0 1px var(--a); }
+.node[data-kind="train"] .tag { color: var(--a); }
+.node[data-kind="b"] { border-style: dashed; border-color: var(--b); }
+.node[data-kind="b"] .tag { color: var(--b); }
+.node.sel { background: var(--sheet); }
+.node.sel::after { content: ""; position: absolute; left: 14px; right: 14px; bottom: -9px; height: 1px; background: var(--ink); }
+.node.off { opacity: .28; }
+.edges path { fill: none; stroke: var(--rule-2); stroke-width: 1; transition: opacity .5s, stroke .5s; }
+.edges path.on { stroke: var(--ink-2); stroke-dasharray: 2 6; animation: flow 1.6s linear infinite; }
+.edges path.on.b { stroke: var(--b); stroke-width: 1.4; }
+.edges path.on.bypass { stroke: var(--ink-3); }
+.edges path.off { opacity: .2; stroke-dasharray: none; animation: none; }
+.edges circle { fill: var(--ink-2); transition: opacity .5s; }
+.edges circle.b { fill: var(--b); }
+.edges circle.off { opacity: 0; }
+@keyframes flow { to { stroke-dashoffset: -16; } }
+@media (prefers-reduced-motion: reduce) { .edges path.on { animation: none; } }
+@media (max-width: 860px) {
+  .diagram { min-width: 0; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); grid-template-areas: "audio audio" "enc enc" "comp stem" "lat lat" "dec prompt" "out out"; gap: 34px 18px; padding-bottom: 0; padding-left: 26px; }
+}
+.detail { margin-top: 56px; display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 28px 56px; padding-top: 32px; border-top: 1px solid var(--rule); }
+.detail .body { display: grid; gap: 14px; align-content: start; min-width: 0; }
+.detail .tag { font: 400 12px/1 var(--sans); letter-spacing: .18em; color: var(--ink-3); }
+.detail h3 { font-size: 22px; letter-spacing: .03em; }
+.detail .body p { color: var(--ink-2); font-size: 15.5px; line-height: 2; }
+.detail dl { margin: 0; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 0; align-content: start; font-size: 13.5px; border-top: 1px solid var(--rule); }
+.detail dt, .detail dd { padding: 10px 0; border-bottom: 1px solid var(--rule); }
+.detail dt { font-family: var(--sans); color: var(--ink-3); padding-right: 20px; white-space: nowrap; letter-spacing: .04em; }
+.detail dd { margin: 0; color: var(--ink); font-family: var(--sans); min-width: 0; overflow-wrap: anywhere; }
+.formula { margin: 6px 0 0; padding: 16px 0 16px 18px; border-left: 1px solid var(--a); font: 400 13.5px/2 var(--mono); color: var(--ink); overflow-x: auto; white-space: pre; }
+.formula .cm { color: var(--ink-3); }
+.fade { animation: fade .5s ease; }
+@keyframes fade { from { opacity: .2; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+@media (max-width: 860px) { .detail { grid-template-columns: 1fr; } }
+
+/* ---------- tracks ---------- */
+.shared { margin-bottom: 88px; }
+.shared h3 { font-size: 13px; font-family: var(--sans); font-weight: 400; letter-spacing: .2em; color: var(--ink-3); margin-bottom: 26px; }
+.steps { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0 24px; }
+.step { position: relative; padding-top: 26px; min-width: 0; }
+.step::before { content: ""; position: absolute; top: 4px; left: 12px; right: -24px; height: 1px; background: var(--rule-2); transform-origin: left; animation: grow 1.4s cubic-bezier(.2,.7,.2,1) both; }
+.step:last-child::before { display: none; }
+.step:nth-child(2)::before { animation-delay: .15s; } .step:nth-child(3)::before { animation-delay: .3s; } .step:nth-child(4)::before { animation-delay: .45s; }
+.step .pin { position: absolute; top: 0; left: 0; width: 9px; height: 9px; border-radius: 50%; border: 1px solid var(--ink-2); background: var(--paper); }
+.step.done .pin { background: var(--ink-2); }
+.step.active .pin { border-color: var(--warn); }
+.step.active .pin::after { content: ""; position: absolute; inset: 1.5px; border-radius: 50%; background: var(--warn); animation: breathe 2.4s ease-in-out infinite; }
+.step h4 { font-size: 15px; line-height: 1.6; letter-spacing: .02em; }
+.step p { margin-top: 6px; font: 400 13px/1.85 var(--sans); color: var(--ink-2); }
+.step .st { display: block; margin-top: 8px; font: italic 400 14px/1 var(--serif); color: var(--ink-3); }
+@keyframes grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes breathe { 0%,100% { opacity: 1; } 50% { opacity: .25; } }
+@media (prefers-reduced-motion: reduce) { .step::before, .step.active .pin::after, .ms.active .mpin::after { animation: none; } }
+@media (max-width: 900px) {
+  .steps { grid-template-columns: 1fr; gap: 0; }
+  .step { padding: 0 0 26px 30px; }
+  .step::before { top: 14px; bottom: 0; left: 4px; right: auto; width: 1px; height: auto; transform-origin: top; animation-name: growy; }
+  .step:last-child { padding-bottom: 0; }
+}
+@keyframes growy { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+
+.tracks { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 64px; align-items: start; }
+@media (max-width: 900px) { .tracks { grid-template-columns: 1fr; gap: 72px; } }
+.track { --tc: var(--a); min-width: 0; }
+.track[data-code="B"] { --tc: var(--b); }
+.track-head { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 0 22px; align-items: start; padding-bottom: 26px; border-bottom: 1px solid var(--rule); }
+.letter { font: italic 500 76px/.8 var(--serif); color: var(--tc); margin-top: 4px; }
+.track-head .name { font-size: 22px; letter-spacing: .04em; }
+.track-head .owner { margin-top: 4px; font: 400 13px/1.6 var(--sans); color: var(--ink-3); letter-spacing: .06em; }
+.track-q { margin-top: 26px; font-size: 18px; line-height: 1.95; letter-spacing: .02em; }
+.progress { margin-top: 22px; display: flex; align-items: center; gap: 16px; font: 400 12.5px/1 var(--sans); color: var(--ink-3); letter-spacing: .06em; }
+.progress .bar { flex: 1; height: 1px; background: var(--rule); position: relative; }
+.progress .bar i { position: absolute; left: 0; top: -0.5px; height: 2px; background: var(--tc); width: 0; transition: width 1.6s cubic-bezier(.2,.7,.2,1); }
+.progress .num { font-size: 16px; color: var(--ink); letter-spacing: 0; }
+.live { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 4px 18px; min-height: 22px; font: 400 12.5px/1.7 var(--sans); color: var(--ink-3); }
+.live a { text-decoration: none; border-bottom: 1px solid var(--rule-2); }
+.live a:hover { color: var(--ink); border-bottom-color: var(--ink); }
+.live b { font-family: var(--serif); font-size: 15px; font-weight: 500; color: var(--ink); margin-left: 3px; }
+.mslist { list-style: none; margin: 30px 0 0; padding: 0; }
+.ms { position: relative; padding-left: 30px; }
+.ms::before { content: ""; position: absolute; left: 4px; top: 0; bottom: 0; width: 1px; background: var(--rule); }
+.ms:first-child::before { top: 20px; } .ms:last-child::before { bottom: calc(100% - 20px); }
+.mpin { position: absolute; left: 0; top: 16px; width: 9px; height: 9px; border-radius: 50%; border: 1px solid var(--tc); background: var(--paper); z-index: 1; }
+.ms.done .mpin { background: var(--tc); }
+.ms.paused .mpin, .ms.next .mpin { border-color: var(--ink-3); border-style: dashed; }
+.ms.active .mpin { border-color: var(--warn); }
+.ms.active .mpin::after { content: ""; position: absolute; inset: 1.5px; border-radius: 50%; background: var(--warn); animation: breathe 2.4s infinite; }
+.ms details { padding: 8px 0; }
+.ms summary { list-style: none; cursor: pointer; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 14px; padding: 4px 0; }
+.ms summary::-webkit-details-marker { display: none; }
+.ms .mt { font-size: 16px; line-height: 1.7; letter-spacing: .02em; transition: color .3s; }
+.ms summary:hover .mt { color: var(--tc); }
+.ms .st { font: italic 400 14px/1.9 var(--serif); color: var(--ink-3); white-space: nowrap; }
+.ms .mr { grid-column: 1 / -1; font: 400 13.5px/1.9 var(--sans); color: var(--ink-2); }
+.ms .more { padding: 6px 0 2px; font: 400 12.5px/1.8 var(--sans); color: var(--ink-3); }
+details::details-content { transition: height .45s ease, content-visibility .45s allow-discrete; height: 0; overflow: clip; }
+details[open]::details-content { height: auto; }
+@media (prefers-reduced-motion: reduce) { details::details-content { transition: none; } }
+.extra { margin-top: 88px; }
+.extra h3 { font: 400 13px/1 var(--sans); letter-spacing: .2em; color: var(--ink-3); margin-bottom: 26px; }
+.extra-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 0 48px; border-top: 1px solid var(--rule); }
+.xtrack { --tc: var(--c); padding: 22px 0; border-bottom: 1px solid var(--rule); display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 4px 18px; }
+.xtrack .letter { font-size: 40px; grid-row: span 3; }
+.xtrack b { font: 600 17px/1.5 var(--serif-tc); letter-spacing: .03em; }
+.xtrack p { font: 400 13.5px/1.85 var(--sans); color: var(--ink-2); }
+.xtrack .meta { font: 400 12px/1.6 var(--sans); color: var(--ink-3); letter-spacing: .04em; }
+
+/* ---------- results ---------- */
+.tabs { display: flex; flex-wrap: wrap; gap: 6px 32px; border-bottom: 1px solid var(--rule); margin-bottom: 52px; }
+.tab { border: 0; background: none; padding: 12px 0; cursor: pointer; font: 400 14px/1.4 var(--sans); letter-spacing: .04em; color: var(--ink-3); border-bottom: 1px solid transparent; margin-bottom: -1px; display: inline-flex; align-items: center; gap: 10px; transition: color .3s, border-color .3s; }
+.tab:hover { color: var(--ink); }
+.tab[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--ink); }
+.panel { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 17rem); gap: 40px 64px; }
+.panel.fade { animation: fade .5s ease; }
+@media (max-width: 920px) { .panel { grid-template-columns: 1fr; } }
+.figure { min-width: 0; display: grid; gap: 16px; }
+.figure + .figure { margin-top: 64px; }
+.fig-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 16px; }
+.fig-head .fig { font: 400 12px/1 var(--sans); letter-spacing: .18em; color: var(--ink-3); }
+.fig-head h3 { font-size: 17px; letter-spacing: .03em; }
+.fig-head .sub { font: 400 12.5px/1.6 var(--sans); color: var(--ink-3); }
+.fig-head .tbtn { margin-left: auto; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 22px; font: 400 12.5px/1.6 var(--sans); color: var(--ink-2); }
+.legend span { display: inline-flex; align-items: center; gap: 8px; }
+.key { width: 18px; height: 2px; background: var(--ink-3); }
+.key.dotk { width: 8px; height: 8px; border-radius: 50%; }
+.key.hollow { width: 8px; height: 8px; border-radius: 50%; background: transparent !important; border: 1.5px solid var(--b); }
+.key.tick { width: 1.5px; height: 12px; }
+.key.dash { height: 0; border-top: 1px dashed var(--ink-3); background: none; }
+.key.band { height: 10px; background: color-mix(in oklab, var(--c) 22%, transparent); }
+.chart svg { display: block; width: 100%; height: auto; overflow: visible; }
+.chart .grid line { stroke: var(--rule); stroke-width: 1; }
+.chart .zero { stroke: var(--ink-3); stroke-width: 1; }
+.chart text { fill: var(--ink-3); font: 400 11.5px var(--sans); }
+.chart text.lab { fill: var(--ink-2); font: 400 13px var(--serif-tc); }
+.chart text.val { fill: var(--ink); font: 500 14px var(--serif); }
+.chart text.dlab { fill: var(--ink-2); font: 400 12.5px var(--sans); }
+.chart text.grp { fill: var(--ink); font: italic 500 15px var(--serif); }
+.chart .refl { stroke: var(--ink-3); stroke-width: 1; stroke-dasharray: 3 4; }
+.chart .series { fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.chart .mk { stroke: var(--paper); stroke-width: 2; }
+.chart .hit { fill: transparent; cursor: crosshair; }
+.chart .xhair { stroke: var(--ink-3); stroke-width: 1; opacity: 0; transition: opacity .2s; }
+.chart .bandr { fill: color-mix(in oklab, var(--c) 12%, transparent); }
+.chart .connector { stroke: var(--rule-2); stroke-width: 1.5; }
+.draw { stroke-dasharray: var(--len); stroke-dashoffset: var(--len); animation: drawline 1.6s cubic-bezier(.3,.6,.2,1) forwards; }
+@keyframes drawline { to { stroke-dashoffset: 0; } }
+@media (prefers-reduced-motion: reduce) { .draw { animation: none; stroke-dashoffset: 0; } }
+.tbtn { border: 0; border-bottom: 1px solid var(--rule-2); background: none; padding: 2px 0; font: 400 12.5px/1.4 var(--sans); color: var(--ink-3); cursor: pointer; letter-spacing: .06em; }
+.tbtn:hover { color: var(--ink); border-bottom-color: var(--ink); }
+.dtable { overflow-x: auto; }
+.dtable table { border-collapse: collapse; width: 100%; font: 400 13px/1.6 var(--sans); font-variant-numeric: tabular-nums; }
+.dtable th, .dtable td { padding: 9px 12px; border-bottom: 1px solid var(--rule); text-align: right; white-space: nowrap; }
+.dtable th:first-child, .dtable td:first-child { text-align: left; padding-left: 0; }
+.dtable th { color: var(--ink-3); font-weight: 400; letter-spacing: .04em; border-bottom-color: var(--rule-2); }
+.take { display: grid; gap: 18px; align-content: start; }
+.take h3 { font-size: 20px; line-height: 1.6; letter-spacing: .03em; }
+.take .pull { font-size: 16px; line-height: 2; color: var(--ink); padding-left: 18px; border-left: 1px solid var(--ink); }
+.take .pull b { font: 500 19px/1 var(--serif); font-variant-numeric: lining-nums; }
+.take p { font: 400 14px/2 var(--sans); color: var(--ink-2); }
+.take .src { font: 400 12px/1.8 var(--sans); color: var(--ink-3); }
+
+#tip { position: fixed; z-index: 60; pointer-events: none; background: var(--sheet); color: var(--ink); border: 1px solid var(--rule-2); padding: 10px 12px; font: 400 12.5px/1.7 var(--sans); opacity: 0; transform: translateY(4px); transition: opacity .15s, transform .15s; max-width: 260px; box-shadow: 0 12px 30px -18px rgb(0 0 0 / .35); }
+#tip.on { opacity: 1; transform: none; }
+#tip .tr { display: flex; align-items: center; gap: 14px; justify-content: space-between; }
+#tip .tr span:first-child { display: inline-flex; align-items: center; gap: 8px; color: var(--ink-2); }
+#tip .tn { font: 500 14px/1.5 var(--serif); font-variant-numeric: lining-nums tabular-nums; }
+#tip .th { font: 600 13px/1.6 var(--serif-tc); margin-bottom: 4px; }
+#tip .dot { width: 7px; height: 7px; border-radius: 50%; display: inline-block; }
+
+/* ---------- roadmap ---------- */
+.rm-bar { display: flex; flex-wrap: wrap; align-items: baseline; gap: 14px 28px; padding-bottom: 14px; border-bottom: 1px solid var(--rule); margin-bottom: 40px; }
+.fchips { display: flex; flex-wrap: wrap; gap: 4px 22px; }
+.fchip { border: 0; background: none; padding: 4px 0; cursor: pointer; font: 400 13.5px/1.4 var(--sans); color: var(--ink-3); border-bottom: 1px solid transparent; display: inline-flex; align-items: center; gap: 8px; transition: color .3s, border-color .3s; }
+.fchip:hover { color: var(--ink); }
+.fchip[aria-pressed="true"] { color: var(--ink); border-bottom-color: var(--ink); }
+.fchip .n { font: 400 13px/1 var(--serif); color: var(--ink-3); }
+.fchip .sw { width: 12px; height: 1.5px; background: var(--tc); }
+.rm-actions { margin-left: auto; display: flex; gap: 22px; flex-wrap: wrap; }
+.link-btn { border: 0; background: none; padding: 4px 0; cursor: pointer; font: 400 13.5px/1.4 var(--sans); color: var(--ink); border-bottom: 1px solid var(--ink); letter-spacing: .04em; transition: opacity .3s; }
+.link-btn:hover { opacity: .65; }
+.link-btn.quiet { color: var(--ink-2); border-bottom-color: var(--rule-2); }
+.link-btn.danger { color: var(--danger); border-bottom-color: var(--danger); }
+.link-btn[disabled] { opacity: .4; cursor: default; }
+.board { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0 28px; align-items: start; }
+@media (max-width: 960px) { .board { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px 28px; } }
+@media (max-width: 560px) { .board { grid-template-columns: 1fr; } }
+.col { min-height: 120px; display: grid; gap: 0; align-content: start; min-width: 0; transition: background .3s; }
+.col.over { background: var(--paper-2); }
+.col-head { display: flex; align-items: baseline; gap: 10px; padding-bottom: 12px; border-bottom: 1px solid var(--ink); }
+.col-head b { font: 600 15px/1.4 var(--serif-tc); letter-spacing: .06em; }
+.col-head .en { font-size: 14px; color: var(--ink-3); }
+.col-head .n { margin-left: auto; font: 500 16px/1 var(--serif); color: var(--ink-3); }
+.card { --tc: var(--ink-3); text-align: left; width: 100%; display: grid; gap: 8px; padding: 18px 0 18px 16px; background: none; border: 0; border-bottom: 1px solid var(--rule); cursor: pointer; position: relative; min-width: 0; transition: background .3s; }
+.card::before { content: ""; position: absolute; left: 0; top: 22px; bottom: 22px; width: 1.5px; background: var(--tc); transition: top .3s, bottom .3s; }
+.card:hover::before { top: 14px; bottom: 14px; }
+.card:hover .ct { color: var(--tc); }
+.card.enter { animation: fade .5s ease both; }
+.card.dragging { opacity: .4; }
+.card[data-static="1"] { cursor: default; }
+.card .cm { display: flex; align-items: center; gap: 12px; font: 400 11.5px/1 var(--sans); color: var(--ink-3); letter-spacing: .08em; }
+.card .ct { font: 600 15px/1.65 var(--serif-tc); color: var(--ink); letter-spacing: .02em; transition: color .3s; }
+.card .cw { font: 400 12.5px/1.85 var(--sans); color: var(--ink-2); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.card .todo-lines { display: grid; gap: 2px; margin-top: 2px; }
+.card .todo-lines span { font: 400 12px/1.7 var(--sans); color: var(--ink-3); padding-left: 16px; position: relative; }
+.card .todo-lines span::before { content: ""; position: absolute; left: 0; top: .62em; width: 7px; height: 7px; border: 1px solid var(--rule-2); border-radius: 1px; }
+.card .todo-lines span.done { text-decoration: line-through; }
+.card .todo-lines span.done::before { background: var(--ink-3); border-color: var(--ink-3); }
+.pbar { flex: 1; height: 1px; background: var(--rule); position: relative; min-width: 30px; }
+.pbar i { position: absolute; left: 0; top: -.5px; height: 2px; background: var(--ink-2); transition: width .6s cubic-bezier(.2,.7,.2,1); }
+.empty-col { font: italic 400 15px/1.8 var(--serif); color: var(--ink-3); padding: 18px 0; }
+.rm-state { padding: 56px 0; display: grid; gap: 10px; justify-items: start; color: var(--ink-2); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+.rm-state b { color: var(--ink); font: 600 19px/1.5 var(--serif-tc); letter-spacing: .03em; }
+.rm-state p { max-width: 34rem; font: 400 14px/1.9 var(--sans); }
+.spinner { width: 18px; height: 18px; border-radius: 50%; border: 1px solid var(--rule-2); border-top-color: var(--ink); animation: spin 1.2s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.rm-note { margin-top: 28px; font: 400 12.5px/1.9 var(--sans); color: var(--ink-3); max-width: 46rem; }
+.rm-note code { font-size: 12px; }
+
+.scrim { position: fixed; inset: 0; z-index: 40; background: color-mix(in oklab, var(--ink) 22%, transparent); opacity: 0; pointer-events: none; transition: opacity .35s; }
+.scrim.on { opacity: 1; pointer-events: auto; }
+.drawer { position: fixed; z-index: 41; top: 0; right: 0; bottom: 0; width: min(500px, 100vw); background: var(--paper); border-left: 1px solid var(--rule-2); transform: translateX(104%); transition: transform .5s cubic-bezier(.2,.8,.2,1); display: flex; flex-direction: column; padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); padding-right: env(safe-area-inset-right, 0px); }
+.drawer.on { transform: none; }
+.dhead { display: flex; align-items: baseline; gap: 12px; padding: 22px 28px 16px; border-bottom: 1px solid var(--rule); }
+.dhead h3 { font-size: 18px; letter-spacing: .04em; }
+.dhead .x { margin-left: auto; }
+.dbody { flex: 1; overflow-y: auto; padding: 24px 28px 36px; display: grid; gap: 24px; align-content: start; }
+.field { display: grid; gap: 8px; }
+.field label, .field .fl { font: 400 12px/1 var(--sans); letter-spacing: .16em; color: var(--ink-3); }
+.field input[type="text"], .field textarea, .field select { width: 100%; font: 400 14.5px/1.8 var(--sans); color: var(--ink); background: transparent; border: 0; border-bottom: 1px solid var(--rule-2); border-radius: 0; padding: 6px 0; transition: border-color .3s; }
+.field input[type="text"]:focus, .field textarea:focus, .field select:focus { outline: none; border-bottom-color: var(--ink); }
+.field textarea { min-height: 96px; resize: vertical; }
+.field input.title-in { font: 600 20px/1.6 var(--serif-tc); letter-spacing: .03em; }
+.field select option { background: var(--paper); color: var(--ink); }
+.todos { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
+.todo { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 6px 0; border-bottom: 1px solid var(--rule); }
+.todo input[type="checkbox"] { width: 15px; height: 15px; accent-color: var(--ink-2); cursor: pointer; }
+.todo input[type="text"] { border: 0; background: transparent; padding: 4px 0; font: 400 14px/1.7 var(--sans); color: var(--ink); width: 100%; }
+.todo input[type="text"]:focus { outline: none; }
+.todo.done input[type="text"] { color: var(--ink-3); text-decoration: line-through; }
+.todo .del { border: 0; background: none; color: var(--ink-3); cursor: pointer; padding: 2px 4px; font-size: 16px; line-height: 1; opacity: 0; transition: opacity .3s; }
+.todo:hover .del, .todo .del:focus-visible { opacity: 1; }
+@media (hover: none) { .todo .del { opacity: 1; } }
+.addtodo { display: flex; gap: 16px; align-items: baseline; }
+.addtodo input { flex: 1; min-width: 0; }
+.stseg { display: flex; flex-wrap: wrap; gap: 4px 20px; }
+.stseg button { border: 0; background: none; padding: 4px 0; cursor: pointer; font: 400 14px/1.4 var(--sans); color: var(--ink-3); border-bottom: 1px solid transparent; }
+.stseg button[aria-pressed="true"] { color: var(--ink); border-bottom-color: var(--ink); }
+.dfoot { display: flex; flex-wrap: wrap; gap: 14px 22px; align-items: baseline; padding-top: 18px; border-top: 1px solid var(--rule); }
+.dfoot .who { font: 400 12px/1.6 var(--sans); color: var(--ink-3); margin-right: auto; }
+.ferr { font: 400 12.5px/1.6 var(--sans); color: var(--danger); }
+.toast { position: fixed; z-index: 70; left: 50%; bottom: calc(24px + env(safe-area-inset-bottom, 0px)); transform: translate(-50%, 14px); background: var(--ink); color: var(--paper); padding: 10px 20px; font: 400 13.5px/1.6 var(--sans); letter-spacing: .04em; opacity: 0; pointer-events: none; transition: opacity .3s, transform .3s; max-width: calc(100vw - 40px); }
+.toast.on { opacity: 1; transform: translate(-50%, 0); }
+
+/* ---------- faq ---------- */
+.faq { border-top: 1px solid var(--rule); }
+.faq details { border-bottom: 1px solid var(--rule); }
+.faq summary { list-style: none; cursor: pointer; padding: 26px 0; display: grid; grid-template-columns: 2.2em minmax(0, 1fr) auto; gap: 14px; align-items: baseline; font: 600 17.5px/1.7 var(--serif-tc); letter-spacing: .02em; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary .q { font: italic 500 20px/1 var(--serif); color: var(--ink-3); }
+.faq summary .pm { position: relative; width: 12px; height: 12px; }
+.faq summary .pm::before, .faq summary .pm::after { content: ""; position: absolute; left: 0; right: 0; top: 50%; height: 1px; background: var(--ink-2); transition: transform .4s; }
+.faq summary .pm::after { transform: rotate(90deg); }
+.faq details[open] summary .pm::after { transform: rotate(0deg); }
+.faq .ans { padding: 0 0 30px calc(2.2em + 14px); display: grid; gap: 14px; color: var(--ink-2); font-size: 15.5px; line-height: 2.05; max-width: calc(var(--read) + 3em); }
+.faq .ans b { color: var(--ink); font-weight: 600; }
+
+footer { border-top: 1px solid var(--rule); padding-block: 48px 72px; }
+footer .wrap { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 18px 40px; align-items: baseline; font: 400 12.5px/1.9 var(--sans); color: var(--ink-3); }
+footer .colophon b { font: italic 500 17px/1 var(--serif); color: var(--ink-2); margin-right: 10px; }
+footer .links { display: flex; flex-wrap: wrap; gap: 6px 24px; }
+@media (max-width: 640px) { footer .wrap { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<header class="mast" id="mast">
+  <div class="wrap">
+    <a class="mark" href="#overview"><b>音訊 Latent 瓶頸</b><span>MAI Final Project</span></a>
+    <nav class="nav" aria-label="頁面章節">
+      <a href="#architecture">架構</a>
+      <a href="#tracks">研究線</a>
+      <a href="#results">結果</a>
+      <a href="#roadmap">規劃</a>
+      <a href="#faq">疑問</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="overview">
+  <div class="wrap">
+    <div class="read">
+      <p class="eyebrow">MAI 期末專題　·　CLOTHO-AQA　·　QWEN2-AUDIO-7B</p>
+      <h1>只用 <em>K</em> 個向量聽一段錄音，<br>模型還答得對嗎？</h1>
+      <p class="sub">Qwen2-Audio 會把一段錄音變成數百個音訊向量交給語言模型。我們在中間放進一個瓶頸，把它們收成 K 個 latent，再請凍結的語言模型回答 yes/no 題。A 線研究容量 K 決定哪些聲音線索留得下來；B 線研究讓壓縮器先讀題目，能不能幫它挑對證據。</p>
+      <div class="byline">
+        <span><i class="swatch a"></i>A 線　瓶頸容量　<b>健賓</b></span>
+        <span><i class="swatch b"></i>B 線　問題導引　<b>cshsieh</b></span>
+        <span class="due" id="deadline" hidden></span>
+      </div>
+    </div>
+
+    <figure class="plate" aria-label="瓶頸示意動畫">
+      <div class="plate-tools">
+        <span class="label">壓縮端</span>
+        <div class="choice" id="scope-seg" role="group" aria-label="選擇回答端拿到的聲音資訊">
+          <button type="button" data-m="k1" aria-pressed="false">K = 1</button>
+          <button type="button" data-m="k4" aria-pressed="false">K = 4</button>
+          <button type="button" data-m="k16" aria-pressed="true">K = 16</button>
+          <button type="button" data-m="full" aria-pressed="false">完整音訊</button>
+          <button type="button" data-m="text" aria-pressed="false">只看文字</button>
+        </div>
+      </div>
+      <canvas id="scope-canvas" role="img" aria-label="音訊特徵流進 K 個 latent，再交給凍結的語言模型作答"></canvas>
+      <figcaption class="plate-foot">
+        <p class="caption"><span class="fig">圖一</span><span id="scope-cap"></span></p>
+        <div class="reading"><span class="big" id="scope-num">281.7</span><span class="of">/ 340</span><span class="unit">fresh_val 答對題數　三個 seed 平均</span></div>
+      </figcaption>
+    </figure>
+    <div id="strip"></div>
+    <p class="strip-note">同一台 GPU、同一批 340 題。K 為純音訊壓縮器（訓練 384 步），完整音訊與只看文字為原模型。刻度上的點也可以點選。</p>
+  </div>
+</section>
+
+<section id="architecture">
+  <div class="wrap">
+    <div class="sec-head read">
+      <p class="kicker"><span class="no">一</span>動機與架構<span class="en">Motivation</span></p>
+      <h2>回答端永遠不變，<br>我們只動壓縮端。</h2>
+      <p class="lede">把數百個音訊向量收成固定的 K 個，就能直接量兩件事：留下多少資訊才夠用，以及先看題目能不能留對資訊。其他條件全部固定，所以分數的差異只來自壓縮端。</p>
+    </div>
+    <div class="premise">
+      <div><p class="tag">固定不動</p><h3>凍結的 Qwen2-Audio</h3><p>音訊編碼器、投影層、7B 語言模型都不訓練。回答端永遠讀到完整題目與 A/B 選項，只比較第一個輸出 token 是 A 還是 B。</p></div>
+      <div><p class="tag"><i class="swatch a"></i>A 線的變因</p><h3>容量 K</h3><p>K = 1、4、16 個 latent，加上免訓練的平均池化對照。看哪些題型最先因為容量不足而答錯。</p></div>
+      <div><p class="tag"><i class="swatch b"></i>B 線的變因</p><h3>壓縮時讀不讀題目</h3><p>題幹（不含選項）加進壓縮器的 query。換成錯置題、通用句或關閉，檢查效果是否來自題目內容。</p></div>
+    </div>
+
+    <div class="arch-tools">
+      <div class="choice" id="arch-seg" role="group" aria-label="切換資訊流">
+        <button type="button" data-m="full" aria-pressed="false">完整音訊</button>
+        <button type="button" data-m="audio" aria-pressed="true">純音訊壓縮　A</button>
+        <button type="button" data-m="question" aria-pressed="false">題幹導引　B</button>
+        <button type="button" data-m="text" aria-pressed="false">只看文字</button>
+      </div>
+      <p class="arch-read" id="arch-read"></p>
+    </div>
+    <div class="diagram-box">
+      <div class="diagram" id="diagram">
+        <svg class="edges" id="edges" aria-hidden="true"></svg>
+        <button type="button" class="node" data-node="audio" data-kind="in" style="grid-area:audio"><span class="tag">輸入</span><span class="t">錄音</span><span class="s">Clotho · 15–30 秒</span></button>
+        <button type="button" class="node" data-node="enc" data-kind="frozen" style="grid-area:enc"><span class="tag">凍結</span><span class="t">音訊編碼器</span><span class="s">數百個 4096 維向量</span></button>
+        <button type="button" class="node" data-node="stem" data-kind="b" style="grid-area:stem"><span class="tag">B 線</span><span class="t">題幹</span><span class="s">不含選項</span></button>
+        <button type="button" class="node" data-node="comp" data-kind="train" style="grid-area:comp"><span class="tag">唯一可訓練</span><span class="t">壓縮器</span><span class="s">K 個 learned query</span></button>
+        <button type="button" class="node" data-node="lat" data-kind="frozen" style="grid-area:lat"><span class="tag">瓶頸</span><span class="t">K 個 latent</span><span class="s">放在音訊 token 的位置</span></button>
+        <button type="button" class="node" data-node="prompt" data-kind="in" style="grid-area:prompt"><span class="tag">輸入</span><span class="t">題目與選項</span><span class="s">A. yes / B. no</span></button>
+        <button type="button" class="node" data-node="dec" data-kind="frozen" style="grid-area:dec"><span class="tag">凍結</span><span class="t">Qwen 解碼器</span><span class="s">7B 語言模型</span></button>
+        <button type="button" class="node" data-node="out" data-kind="out" style="grid-area:out"><span class="tag">輸出</span><span class="t">A／B logit</span><span class="s">不生成文字</span></button>
+      </div>
+    </div>
+    <div class="detail" id="detail" aria-live="polite"></div>
+  </div>
+</section>
+
+<section id="tracks">
+  <div class="wrap">
+    <div class="sec-head read">
+      <p class="kicker"><span class="no">二</span>分工與進度<span class="en">Tracks</span></p>
+      <h2>兩條研究線，<br>同一個瓶頸。</h2>
+      <p class="lede">兩線共用模型、資料切分與評分，各自選假說和對照。點開任一里程碑，可以看到結果與對應的檔案。進度截至 2026 年 11 月 23 日。</p>
+    </div>
+    <div class="shared">
+      <h3>共同基礎</h3>
+      <div class="steps" id="shared-steps"></div>
+    </div>
+    <div class="tracks" id="track-grid"></div>
+    <div class="extra" id="extra-wrap" hidden>
+      <h3>其他研究線與共同工作</h3>
+      <div class="extra-list" id="extra-tracks"></div>
+    </div>
+  </div>
+</section>
+
+<section id="results">
+  <div class="wrap">
+    <div class="sec-head read">
+      <p class="kicker"><span class="no">三</span>主要結果<span class="en">Findings</span></p>
+      <h2>容量有用，<br>讀題目還看不出幫助。</h2>
+      <p class="lede">所有數字都在 fresh_val 的 340 題上，可以用 repo 裡已提交的逐題結果重算，不需要 GPU。滑過圖上的點可以看數值。</p>
+    </div>
+    <div class="tabs" role="tablist" aria-label="結果分頁">
+      <button class="tab" role="tab" id="tab-a" aria-controls="panel-a" aria-selected="true"><i class="swatch a"></i>容量與題型</button>
+      <button class="tab" role="tab" id="tab-b" aria-controls="panel-b" aria-selected="false" tabindex="-1"><i class="swatch b"></i>題幹導引</button>
+      <button class="tab" role="tab" id="tab-d" aria-controls="panel-d" aria-selected="false" tabindex="-1"><i class="swatch b"></i>劑量反應</button>
+    </div>
+
+    <div class="panel" id="panel-a" role="tabpanel" aria-labelledby="tab-a">
+      <div class="figure">
+        <div class="fig-head"><span class="fig">圖二</span><h3>各題型的準確率</h3><span class="sub">三個 seed 平均，括號內為題數</span><button class="tbtn" data-table="a">表格</button></div>
+        <div class="legend"><span><i class="key dotk" style="background:var(--a)"></i>K = 4</span><span><i class="key dotk" style="background:var(--b)"></i>K = 16</span><span><i class="key dotk" style="background:var(--c)"></i>完整音訊</span><span><i class="key tick"></i>只看文字</span></div>
+        <div class="chart" id="chart-a"></div>
+        <div class="dtable" id="table-a" hidden></div>
+      </div>
+      <div class="take">
+        <h3>容量優勢在新錄音上重現</h3>
+        <p class="pull">K = 16 比 K = 4 多答對 <b>+9.0</b> pp，95% 區間 +5.9 至 +12.3，三個 seed 都成立。</p>
+        <p>增益主要在聲源／事件與數量／關係題。時間規律題連完整音訊都只有 53.8%，是原模型本身的弱點，不是壓縮造成的。</p>
+        <p>關係題的完整音訊比 K = 16 高 14.5 pp，是「壓縮後遺失了什麼」最值得追的地方。</p>
+        <p class="src">重算　<code>python analyze_fresh_types.py</code></p>
+      </div>
+    </div>
+
+    <div class="panel" id="panel-b" role="tabpanel" aria-labelledby="tab-b" hidden>
+      <div>
+        <div class="figure">
+          <div class="fig-head"><span class="fig">圖三</span><h3>壓縮端讀題目的效果</h3><span class="sub">答對題數 / 340</span><button class="tbtn" data-table="b">表格</button></div>
+          <div class="legend"><span><i class="key" style="background:var(--a)"></i>純音訊</span><span><i class="key" style="background:var(--b)"></i>原版加法題幹</span><span><i class="key" style="background:var(--c)"></i>gated＋centered</span><span><i class="key dash"></i>完整音訊　只看文字</span></div>
+          <div class="chart" id="chart-b"></div>
+          <div class="dtable" id="table-b" hidden></div>
+        </div>
+        <div class="figure">
+          <div class="fig-head"><span class="fig">圖四</span><h3>差異從哪裡來</h3><span class="sub">百分點，以錄音配對 bootstrap 的 95% 區間</span><button class="tbtn" data-table="c">表格</button></div>
+          <div class="legend"><span><i class="key dotk" style="background:var(--b)"></i>原版加法 − 純音訊</span><span><i class="key hollow"></i>原版加法：正確 − 錯置題幹</span><span><i class="key dotk" style="background:var(--c)"></i>gated＋centered：正確 − 錯置題幹</span></div>
+          <div class="chart" id="chart-c"></div>
+          <div class="dtable" id="table-c" hidden></div>
+        </div>
+      </div>
+      <div class="take">
+        <h3>干擾來自尺度，<br>不是題目內容</h3>
+        <p class="pull">原版在 K = 16 少了 <b>15.7</b> pp，但正確題幹與錯置題幹只差 <b>−0.4</b> pp。</p>
+        <p>原版的題幹項訓練後是 query 的 90 倍，attention 飽和，模型其實沒有在讀題。加上 gate 限制尺度後，干擾消失，回到純音訊的水準。</p>
+        <p>在模型自然學到的尺度下，三個 seed 平均的正確題幹與錯置題幹都在 ±1 pp 內；更多訓練資料、改用 LM hidden state 也一樣。目前的機制沒有觀察到穩定的題目專屬幫助。</p>
+        <p class="src">重算　<code>python compare_guidance.py</code></p>
+      </div>
+    </div>
+
+    <div class="panel" id="panel-d" role="tabpanel" aria-labelledby="tab-d" hidden>
+      <div class="figure">
+        <div class="fig-head"><span class="fig">圖五</span><h3>把題幹項強制放大</h3><span class="sub">gated＋centered 模型，正確題幹答對數 / 340</span><button class="tbtn" data-table="d">表格</button></div>
+        <div class="legend"><span><i class="key" style="background:var(--ramp-1)"></i>K = 1</span><span><i class="key" style="background:var(--ramp-2)"></i>K = 4</span><span><i class="key" style="background:var(--ramp-3)"></i>K = 16</span><span><i class="key band"></i>模型學到的範圍</span></div>
+        <div class="chart" id="chart-d"></div>
+        <div class="dtable" id="table-d" hidden></div>
+      </div>
+      <div class="take">
+        <h3>越大越傷，<br>K 越大越敏感</h3>
+        <p class="pull">題幹項超過 query 範數約 <b>0.5</b> 倍就開始掉分；K = 16 最多少 <b>74</b> 題，K = 1 只少 11 題。</p>
+        <p>模型自己學到的 |tanh(gate)| 都在 0.02–0.39，停在無害區，所以 gated 版不傷也不幫。</p>
+        <p>放大到 2–16 倍時，seed 17、19 是正確題幹較差，seed 18 反而較好；方向不一致，不能解讀成題目內容有害。</p>
+        <p class="src">重算　<code>python compare_guidance.py --probe</code></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="roadmap">
+  <div class="wrap">
+    <div class="sec-head read">
+      <p class="kicker"><span class="no">四</span>研究規劃<span class="en">Roadmap</span></p>
+      <h2>接下來要做的事。</h2>
+      <p class="lede">每一項是一個實驗或想法，附自己的待辦清單。新的方向可以先開一條研究線，再把計畫掛上去。</p>
+    </div>
+    <div class="rm-bar" id="rm-bar" hidden>
+      <div class="fchips" id="fchips" role="group" aria-label="依研究線篩選"></div>
+      <div class="rm-actions" id="rm-actions" hidden>
+        <button class="link-btn quiet" type="button" id="btn-track">新增研究線</button>
+        <button class="link-btn" type="button" id="btn-plan">新增計畫</button>
+      </div>
+    </div>
+    <div id="rm-body">
+      <div class="rm-state"><div class="spinner" aria-hidden="true"></div><b>正在讀取研究規劃</b><p>規劃資料會依你開啟的方式，從共用資料庫或本檔內附的資料載入。</p></div>
+    </div>
+    <p class="rm-note" id="rm-note" hidden></p>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head read">
+      <p class="kicker"><span class="no">五</span>常見疑問<span class="en">Notes</span></p>
+      <h2>幾個容易混淆的概念。</h2>
+    </div>
+    <div class="faq read" style="max-width:820px">
+      <details>
+        <summary><span class="q">i.</span><span>MLLM 是在推論時吃多模態，還是在「推理」時？</span><span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">
+          <p>兩個說法指的是同一個過程。Qwen2-Audio 先用音訊編碼器把錄音轉成一串向量，投影到語言模型的 embedding 空間，再插進題目文字之間。之後語言模型就像處理一般 token 一樣，用同一套 Transformer 層一起處理聲音向量和文字。</p>
+          <p>所以<b>多模態發生在輸入端</b>：每次推論，模型都同時讀到聲音和文字，中間的運算不區分模態。在我們的專案裡，這個語言模型完全凍結，訓練時也不會改它。</p>
+        </div>
+      </details>
+      <details>
+        <summary><span class="q">ii.</span><span>latent 是什麼？</span><span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">
+          <p>這裡的 latent 指壓縮器輸出的 K 個向量。每個向量和語言模型的 token embedding 一樣是 4096 維，但不對應任何文字。它們被放在原本音訊 token 的位置，語言模型把它們當成 K 個「聲音 token」來讀。</p>
+          <p>原本一段錄音會給語言模型數百個音訊向量；瓶頸版只給 <b>K 個（1、4 或 16）</b>。每個 latent 等於「第 k 段的平均」加上「注意力挑出的修正」，A 線的置換實驗就是分別換掉這兩部分。</p>
+        </div>
+      </details>
+      <details>
+        <summary><span class="q">iii.</span><span>為什麼可以有「只看音訊」的 latent？</span><span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">
+          <p>壓縮器不需要知道題目也能工作。它有 K 個學出來的 query，每次都用同一組 query 去讀錄音，輸出這段錄音的摘要。</p>
+          <p>訓練時，回答端答錯的 loss 會傳回壓縮器，讓它學會保留<b>大部分題目都用得到</b>的資訊，就像不知道考題時，先把整段內容做成筆記。K 越小筆記越短，能保留的細節越少，這就是 A 線量的東西。</p>
+        </div>
+      </details>
+      <details>
+        <summary><span class="q">iv.</span><span>推論時，模型看得到題目嗎？</span><span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">
+          <p><b>回答端一直看得到。</b>所有版本的語言模型都讀到完整題目和 A/B 選項。</p>
+          <p>差別只在壓縮端：純音訊版做筆記時看不到題目；題幹版做筆記時另外讀題幹（不含選項），想藉此只留下跟題目有關的聲音。B 線測的就是這一步有沒有用。</p>
+        </div>
+      </details>
+      <details>
+        <summary><span class="q">v.</span><span>為什麼只比較 A、B 兩個 logit，不讓模型生成答案？</span><span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">
+          <p>題目都是 yes/no，我們把選項寫成「A. yes / B. no」，只看第一個輸出 token 是 A 還是 B 的分數比較高。不需要解析生成的文字，評分完全確定，也能直接用 logit 差做分析。</p>
+        </div>
+      </details>
+      <details>
+        <summary><span class="q">vi.</span><span>fresh_val 是什麼？為什麼還不用官方 test？</span><span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">
+          <p>fresh_val 是官方 validation 裡另外 170 段錄音、340 題，和 pilot 的訓練與驗證錄音互斥，每段一題 yes、一題 no。兩線都在這批題上報告，可以逐題比較。</p>
+          <p>官方 test 保留到方法定案後才做一次最終評估，避免在設計過程中被用掉。</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="colophon"><b>Colophon</b>內容整理自 PROJECT_HANDOFF.md（track-b 分支），更新於 2026 年 11 月 23 日。</p>
+    <p class="links">
+      <a href="https://github.com/JianBin0218/mai-final" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://github.com/JianBin0218/mai-final/pull/1" target="_blank" rel="noopener">PR #1</a>
+      <a href="https://github.com/JianBin0218/mai-final/blob/track-b/PROJECT_HANDOFF.md" target="_blank" rel="noopener">研究進度文件</a>
+    </p>
+  </div>
+</footer>
+
+<div id="tip" role="tooltip"></div>
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="dtitle" inert></aside>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+(() => {
+"use strict";
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const reduced = matchMedia("(prefers-reduced-motion: reduce)");
+const SVGNS = "http://www.w3.org/2000/svg";
+const cssv = (n) => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+function svg(tag, attrs, parent) {
+  const n = document.createElementNS(SVGNS, tag);
+  for (const k in attrs || {}) n.setAttribute(k, attrs[k]);
+  if (parent) parent.appendChild(n);
+  return n;
+}
+function txt(parent, attrs, text) { const t = svg("text", attrs, parent); t.textContent = text; return t; }
+function h(tag, attrs, ...kids) {
+  const n = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs || {})) {
+    if (v == null || v === false) continue;
+    if (k === "class") n.className = v;
+    else if (k === "text") n.textContent = v;
+    else if (k.startsWith("on")) n.addEventListener(k.slice(2), v);
+    else if (v === true) n.setAttribute(k, "");
+    else n.setAttribute(k, v);
+  }
+  for (const c of kids.flat()) {
+    if (c == null || c === false) continue;
+    n.append(c instanceof Node ? c : document.createTextNode(String(c)));
+  }
+  return n;
+}
+const fmt1 = (x) => (Math.round(x * 10) / 10).toFixed(1);
+const signed = (x) => (x > 0 ? "+" : x < 0 ? "−" : "") + Math.abs(x).toFixed(1);
+const themeHooks = [];
+const onTheme = (f) => themeHooks.push(f);
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => themeHooks.forEach((f) => f()));
+new MutationObserver(() => themeHooks.forEach((f) => f())).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+
+/* masthead rule on scroll */
+const mast = $("#mast");
+addEventListener("scroll", () => mast.classList.toggle("scrolled", scrollY > 8), { passive: true });
+
+/* tooltip */
+const tip = $("#tip");
+function showTip(html, x, y) {
+  tip.innerHTML = html;
+  tip.classList.add("on");
+  const r = tip.getBoundingClientRect();
+  let left = x + 16, top = y - r.height - 14;
+  if (left + r.width > innerWidth - 10) left = x - r.width - 16;
+  if (left < 10) left = 10;
+  if (top < 10) top = y + 18;
+  tip.style.left = left + "px";
+  tip.style.top = top + "px";
+}
+const hideTip = () => tip.classList.remove("on");
+const tipRow = (color, label, value) => `<div class="tr"><span><i class="dot" style="background:${color}"></i>${label}</span><span class="tn">${value}</span></div>`;
+
+/* deadline */
+(() => {
+  const due = Date.parse("2026-11-25T23:59:00+08:00"), talk = Date.parse("2026-11-26T23:59:00+08:00"), now = Date.now();
+  const el = $("#deadline");
+  let t = "";
+  if (now < due) {
+    const ms = due - now, d = Math.floor(ms / 864e5), hh = Math.floor((ms % 864e5) / 36e5);
+    t = `提案投影片　11/25 23:59 截止　<b>還有 ${d > 0 ? d + " 天 " : ""}${hh} 小時</b>`;
+  } else if (now < talk) t = "<b>11/26　五分鐘提案報告</b>";
+  if (t) { el.innerHTML = t; el.hidden = false; }
+})();
+
+/* ---------- figure 1: the bottleneck ---------- */
+const MODES = {
+  k1: { n: 213.0, K: 1, cap: "整段錄音只剩一個向量。比只看文字多答對 30 題，離完整音訊還差 81 題。" },
+  k4: { n: 250.3, K: 4, cap: "四個向量已經救回大部分的聲源題，比 K = 1 多答對 37 題。" },
+  k16: { n: 281.7, K: 16, cap: "十六個向量離完整音訊只差 12 題，剩下的落差主要在數量與相對關係題。" },
+  full: { n: 294, K: 16, cap: "原模型直接讀全部的音訊向量，不經過瓶頸。這是壓縮版的上限參考。" },
+  text: { n: 183, K: 16, cap: "拿掉所有聲音，只看題目與選項。每段錄音一題 yes、一題 no，亂猜約 170 題。" },
+};
+const STRIP = [
+  { m: "text", n: 183, l: "只看文字" }, { m: "k1", n: 213.0, l: "K = 1" }, { m: "k4", n: 250.3, l: "K = 4" },
+  { m: "k16", n: 281.7, l: "K = 16" }, { m: "full", n: 294, l: "完整音訊" },
+];
+const Scope = (() => {
+  const canvas = $("#scope-canvas");
+  const ctx = canvas.getContext("2d");
+  let W = 0, H = 0, horiz = true, mode = "k16", col = {};
+  let geo = {}, slots = [], glow = [], parts = [], outs = [], acc = 0, off = 0, last = 0, pulse = 0, running = false, inView = true;
+  const R = 16, TOTAL = 540;
+  const spec = (() => {
+    let seed = 17;
+    const rand = () => ((seed = (seed * 1664525 + 1013904223) >>> 0) / 4294967296);
+    const a = Array.from({ length: TOTAL }, () => new Float32Array(R));
+    for (let c = 0; c < TOTAL; c++) for (let r = 0; r < R; r++) a[c][r] = 0.06 + rand() * 0.1 + (r < 3 ? 0.24 + 0.08 * Math.sin(c * 0.21 + r) : 0);
+    for (let c = 6; c < TOTAL; c += 30 + Math.floor(rand() * 14)) for (let d = 0; d < 3; d++) for (let r = 0; r < 9; r++) { const cc = (c + d) % TOTAL; a[cc][r] = Math.max(a[cc][r], (0.85 - d * 0.25) * (1 - r / 11)); }
+    for (let n = 0; n < 30; n++) { const c0 = Math.floor(rand() * TOTAL), len = 5 + Math.floor(rand() * 6), r0 = 9 + Math.floor(rand() * 3); for (let d = 0; d < len; d++) { const cc = (c0 + d) % TOTAL, r = Math.min(R - 1, r0 + Math.round(d * 0.6)); a[cc][r] = Math.max(a[cc][r], 0.95); a[cc][r - 1] = Math.max(a[cc][r - 1], 0.45); } }
+    for (let c = 200; c < 330; c++) { const m = 0.5 + 0.5 * Math.sin(c * 0.55); for (const r of [4, 5, 7]) a[c][r] = Math.max(a[c][r], 0.3 + 0.5 * m * rand()); }
+    return a;
+  })();
+  function readColors() {
+    col = { ink: cssv("--ink"), ink2: cssv("--ink-2"), ink3: cssv("--ink-3"), rule: cssv("--rule-2"), paper: cssv("--paper"), a: cssv("--a"), serif: cssv("--serif"), tc: cssv("--serif-tc"), sans: cssv("--sans") };
+  }
+  const K = () => MODES[mode].K;
+  function layout() {
+    const rect = canvas.getBoundingClientRect();
+    W = rect.width; H = rect.height;
+    if (!W || !H) return;
+    const dpr = Math.min(2, window.devicePixelRatio || 1);
+    canvas.width = Math.round(W * dpr); canvas.height = Math.round(H * dpr);
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    horiz = W >= 620;
+    if (horiz) {
+      geo.spec = { x: 0, y: 58, w: W * 0.42, h: H - 118 };
+      geo.slot = { x: W * 0.59, y: H / 2 + 4 };
+      geo.llm = { x: W * 0.74, y: 58, w: W * 0.26, h: H - 118 };
+    } else {
+      geo.spec = { x: 0, y: 44, w: W, h: H * 0.26 };
+      geo.slot = { x: W / 2, y: H * 0.53 };
+      geo.llm = { x: 0, y: H * 0.69, w: W, h: H * 0.31 - 10 };
+    }
+    geo.cell = horiz ? 7 : 6;
+    geo.cols = Math.max(10, Math.floor(geo.spec.w / geo.cell));
+    geo.rowH = geo.spec.h / R;
+    computeSlots();
+  }
+  function computeSlots() {
+    const k = K();
+    const s = k === 1 ? 48 : k === 4 ? (horiz ? 28 : 34) : (horiz ? 20 : 22);
+    const gap = k === 1 ? 0 : k === 4 ? 12 : 8;
+    const cols = horiz ? (k === 16 ? 4 : 1) : (k === 16 ? 8 : k);
+    const rows = Math.ceil(k / cols);
+    const tw = cols * s + (cols - 1) * gap, th = rows * s + (rows - 1) * gap;
+    slots = [];
+    for (let i = 0; i < k; i++) {
+      const c = i % cols, r = Math.floor(i / cols);
+      slots.push({ x: geo.slot.x - tw / 2 + c * (s + gap), y: geo.slot.y - th / 2 + r * (s + gap), s });
+    }
+    geo.box = { x: geo.slot.x - tw / 2, y: geo.slot.y - th / 2, w: tw, h: th };
+    if (glow.length !== k) glow = new Array(k).fill(0);
+  }
+  const energy = (ci, r) => spec[(Math.floor(off) + ci) % TOTAL][r];
+  const cellC = (ci, r) => ({ x: geo.spec.x + ci * geo.cell + geo.cell / 2, y: geo.spec.y + geo.spec.h - (r + 0.5) * geo.rowH });
+  const slotC = (i) => ({ x: slots[i].x + slots[i].s / 2, y: slots[i].y + slots[i].s / 2 });
+  function llmIn() {
+    const L = geo.llm;
+    return horiz ? { x: L.x, y: L.y + L.h * (0.3 + 0.4 * Math.random()) } : { x: L.x + L.w * (0.25 + 0.5 * Math.random()), y: L.y };
+  }
+  function mk(p0, p1, dur, k, e) {
+    const c = horiz ? { x: (p0.x + p1.x) / 2, y: p0.y * 0.25 + p1.y * 0.75 } : { x: p0.x * 0.3 + p1.x * 0.7, y: (p0.y + p1.y) / 2 };
+    return { p0, p1, c, t: 0, dur, k, e };
+  }
+  function spawn(dt) {
+    if (mode === "text") return;
+    const k = K();
+    const rate = mode === "full" ? 70 : k === 1 ? 12 : k === 4 ? 20 : 30;
+    acc += rate * dt;
+    while (acc >= 1) {
+      acc -= 1;
+      let best = null;
+      for (let i = 0; i < 3; i++) {
+        const ci = Math.floor(Math.random() * geo.cols), r = Math.floor(Math.random() * R), e = energy(ci, r);
+        if (!best || e > best.e) best = { ci, r, e };
+      }
+      const p0 = cellC(best.ci, best.r);
+      if (mode === "full") parts.push(mk(p0, llmIn(), 1.7 + Math.random() * 0.5, -1, best.e));
+      else {
+        let s = Math.min(k - 1, Math.floor(best.ci / (geo.cols / k)));
+        if (k > 1 && Math.random() < 0.22) s = Math.floor(Math.random() * k);
+        parts.push(mk(p0, slotC(s), 1.3 + Math.random() * 0.5, s, best.e));
+      }
+    }
+  }
+  const ease = (t) => (t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2);
+  function bez(p, t) {
+    const u = 1 - t;
+    return { x: u * u * p.p0.x + 2 * u * t * p.c.x + t * t * p.p1.x, y: u * u * p.p0.y + 2 * u * t * p.c.y + t * t * p.p1.y };
+  }
+  function update(dt) {
+    for (let i = parts.length - 1; i >= 0; i--) {
+      const p = parts[i];
+      p.t += dt / p.dur;
+      if (p.t >= 1) {
+        parts.splice(i, 1);
+        if (p.k >= 0) {
+          glow[p.k] = Math.min(1, glow[p.k] + 0.28);
+          if (Math.random() < 0.3) outs.push(mk(slotC(p.k), llmIn(), 1.0, -2, 1));
+        } else pulse = Math.min(1, pulse + 0.03);
+      }
+    }
+    for (let i = outs.length - 1; i >= 0; i--) {
+      const p = outs[i];
+      p.t += dt / p.dur;
+      if (p.t >= 1) { outs.splice(i, 1); pulse = Math.min(1, pulse + 0.1); }
+    }
+    for (let i = 0; i < glow.length; i++) glow[i] = Math.max(0, glow[i] - dt * 0.9);
+    pulse = Math.max(0, pulse - dt * 0.7);
+  }
+  function label(text, x, y, align, color, font) {
+    ctx.font = font || `400 12px ${col.sans}`; ctx.fillStyle = color || col.ink3; ctx.textAlign = align || "left"; ctx.textBaseline = "alphabetic";
+    ctx.fillText(text, x, y);
+  }
+  function draw() {
+    if (!W) return;
+    ctx.globalAlpha = 1;
+    ctx.clearRect(0, 0, W, H);
+    const k = K(), S = geo.spec;
+    const dim = mode === "text" ? 0.2 : 1;
+    ctx.fillStyle = col.ink2;
+    const start = Math.floor(off), maxR = Math.min(geo.cell, geo.rowH) * 0.42;
+    for (let i = 0; i < geo.cols; i++) {
+      const c = spec[(start + i) % TOTAL];
+      for (let r = 0; r < R; r++) {
+        const e = Math.min(1, c[r]);
+        const rad = 0.5 + maxR * Math.sqrt(e);
+        ctx.globalAlpha = (0.18 + 0.62 * e) * dim;
+        ctx.beginPath(); ctx.arc(S.x + i * geo.cell + geo.cell / 2, S.y + S.h - (r + 0.5) * geo.rowH, rad, 0, 6.2832); ctx.fill();
+      }
+    }
+    ctx.globalAlpha = 1;
+    label(mode === "text" ? "音訊　不提供" : "音訊特徵　時間 →", S.x, S.y - 22, "left", col.ink3, `400 12px ${col.sans}`);
+    if (mode.startsWith("k") && k > 1) {
+      ctx.strokeStyle = col.rule; ctx.lineWidth = 1; ctx.setLineDash([1, 4]);
+      for (let s = 1; s < k; s++) {
+        const x = Math.round(S.x + (s * geo.cols / k) * geo.cell) + 0.5;
+        ctx.beginPath(); ctx.moveTo(x, S.y - 6); ctx.lineTo(x, S.y + S.h + 6); ctx.stroke();
+      }
+      ctx.setLineDash([]);
+      label(`切成 ${k} 段`, S.x + S.w, S.y + S.h + 26, "right", col.ink3, `italic 400 14px ${col.serif}`);
+    }
+    ctx.lineCap = "round";
+    const drawP = (p, color, alpha, wdt) => {
+      const q = bez(p, ease(Math.min(1, p.t))), pr = bez(p, ease(Math.max(0, p.t - 0.08)));
+      ctx.strokeStyle = color; ctx.globalAlpha = alpha; ctx.lineWidth = wdt;
+      ctx.beginPath(); ctx.moveTo(pr.x, pr.y); ctx.lineTo(q.x, q.y); ctx.stroke();
+    };
+    for (const p of parts) drawP(p, mode === "full" ? col.ink2 : col.a, (0.25 + 0.55 * p.e) * (mode === "full" ? 0.6 : 1), 1.2);
+    for (const p of outs) drawP(p, col.a, 0.85, 1.6);
+    ctx.globalAlpha = 1;
+    const ghost = mode === "full" || mode === "text";
+    for (let i = 0; i < slots.length; i++) {
+      const s = slots[i];
+      if (!ghost) { ctx.globalAlpha = 0.06 + 0.6 * glow[i]; ctx.fillStyle = col.a; ctx.fillRect(s.x, s.y, s.s, s.s); ctx.globalAlpha = 1; }
+      ctx.strokeStyle = ghost ? col.rule : col.a; ctx.lineWidth = 1;
+      if (ghost) ctx.setLineDash([2, 3]);
+      ctx.strokeRect(s.x + 0.5, s.y + 0.5, s.s - 1, s.s - 1);
+      ctx.setLineDash([]);
+    }
+    const B = geo.box;
+    const slotTxt = mode === "full" ? "不經過瓶頸" : mode === "text" ? "沒有聲音" : `${k} 個 latent`;
+    label(slotTxt, geo.slot.x, B.y - 18, "center", ghost ? col.ink3 : col.ink, `600 14px ${col.tc}`);
+    if (!ghost) label("可訓練的壓縮器", geo.slot.x, B.y + B.h + 28, "center", col.ink3, `400 12px ${col.sans}`);
+    const L = geo.llm;
+    ctx.strokeStyle = col.rule; ctx.lineWidth = 1;
+    ctx.strokeRect(L.x + 0.5, L.y + 0.5, L.w - 1, L.h - 1);
+    if (pulse > 0.01) { ctx.globalAlpha = Math.min(0.9, pulse); ctx.strokeStyle = col.a; ctx.beginPath(); ctx.moveTo(L.x, L.y + 0.5); ctx.lineTo(L.x + L.w * Math.min(1, pulse * 1.4), L.y + 0.5); ctx.stroke(); ctx.globalAlpha = 1; }
+    const px = L.x + 18;
+    label("Qwen 解碼器", px, L.y + 34, "left", col.ink, `600 16px ${col.tc}`);
+    label("凍結　7B", px, L.y + 56, "left", col.ink3, `400 12px ${col.sans}`);
+    const qy = horiz ? L.y + 98 : L.y + 86;
+    label("Is a bird chirping?", px, qy, "left", col.ink2, `italic 400 17px ${col.serif}`);
+    label("A. yes　　B. no", px, qy + 24, "left", col.ink3, `italic 400 15px ${col.serif}`);
+    const ans = mode === "text" ? "只能憑文字猜" : "A";
+    label(ans, L.x + L.w - 18, L.y + L.h - 20, "right", col.ink, mode === "text" ? `italic 400 15px ${col.serif}` : `italic 500 30px ${col.serif}`);
+  }
+  function frame(ts) {
+    if (!running) return;
+    const dt = Math.min(0.05, (ts - last) / 1000 || 0);
+    last = ts;
+    off = (off + dt * 8) % TOTAL;
+    spawn(dt); update(dt); draw();
+    requestAnimationFrame(frame);
+  }
+  function staticFrame() {
+    parts = []; outs = []; acc = 0;
+    spawn(1.2);
+    for (const p of parts) p.t = 0.15 + Math.random() * 0.8;
+    glow = glow.map(() => 0.45);
+    draw();
+  }
+  function start() {
+    if (reduced.matches) { running = false; staticFrame(); return; }
+    if (running || !inView || document.hidden) return;
+    running = true; last = performance.now();
+    requestAnimationFrame(frame);
+  }
+  const stop = () => { running = false; };
+  function setMode(m) {
+    mode = m; parts = []; outs = []; acc = 0; glow = [];
+    computeSlots();
+    if (!running) { if (reduced.matches) staticFrame(); else draw(); }
+    $("#scope-cap").textContent = MODES[m].cap;
+    animateNumber($("#scope-num"), MODES[m].n, m === "full" || m === "text" ? 0 : 1);
+    $$("#scope-seg button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.m === m)));
+    drawStrip();
+  }
+  readColors(); layout();
+  new ResizeObserver(() => { layout(); if (!running) { if (reduced.matches) staticFrame(); else draw(); } }).observe(canvas);
+  new IntersectionObserver((es) => { inView = es[0].isIntersecting; if (inView) start(); else stop(); }).observe(canvas);
+  document.addEventListener("visibilitychange", () => { if (document.hidden) stop(); else start(); });
+  reduced.addEventListener("change", () => { stop(); start(); });
+  onTheme(() => { readColors(); if (!running) draw(); });
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => { readColors(); if (!running) draw(); });
+  return { setMode, start, get mode() { return mode; } };
+})();
+function animateNumber(node, to, digits) {
+  const from = parseFloat(node.textContent) || 0;
+  if (reduced.matches) { node.textContent = to.toFixed(digits); return; }
+  const t0 = performance.now(), dur = 900;
+  const step = (t) => {
+    const k = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - k, 3);
+    node.textContent = (from + (to - from) * e).toFixed(digits);
+    if (k < 1) requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
+}
+function drawStrip() {
+  const host = $("#strip");
+  const w = Math.max(300, host.clientWidth), hh = 92, padL = 4, padR = 4;
+  const x = (v) => padL + ((v - 170) / (300 - 170)) * (w - padL - padR);
+  host.innerHTML = "";
+  const s = svg("svg", { viewBox: `0 0 ${w} ${hh}`, role: "img", "aria-label": "答對題數刻度：只看文字 183、K=1 213、K=4 250.3、K=16 281.7、完整音訊 294" }, host);
+  const axisY = 46;
+  svg("line", { x1: x(170), x2: x(300), y1: axisY, y2: axisY, stroke: "var(--rule-2)", "stroke-width": 1 }, s);
+  for (let v = 180; v <= 300; v += 20) {
+    svg("line", { x1: x(v), x2: x(v), y1: axisY - 3, y2: axisY + 3, stroke: "var(--rule-2)" }, s);
+    txt(s, { x: x(v), y: hh - 2, "text-anchor": "middle", fill: "var(--ink-3)", style: "font:italic 400 13px var(--serif)" }, String(v));
+  }
+  const cur = Scope.mode;
+  STRIP.forEach((p, i) => {
+    const on = p.m === cur, up = i % 2 === 1;
+    const g = svg("g", { style: "cursor:pointer", tabindex: 0, role: "button", "aria-label": `${p.l}：${p.n}` }, s);
+    svg("circle", { cx: x(p.n), cy: axisY, r: 16, fill: "transparent" }, g);
+    svg("circle", { cx: x(p.n), cy: axisY, r: on ? 5 : 3.5, fill: on ? "var(--ink)" : "var(--paper)", stroke: on ? "var(--ink)" : "var(--ink-3)", "stroke-width": 1 }, g);
+    const anchor = i === 0 ? "start" : i === STRIP.length - 1 ? "end" : "middle";
+    const lx = i === 0 ? x(p.n) - 4 : i === STRIP.length - 1 ? x(p.n) + 4 : x(p.n);
+    txt(g, { x: lx, y: up ? axisY - 16 : axisY + 26, "text-anchor": anchor, fill: on ? "var(--ink)" : "var(--ink-3)", style: `font:${on ? 500 : 400} 12.5px var(--sans)` }, `${p.l}　${p.n}`);
+    const go = () => Scope.setMode(p.m);
+    g.addEventListener("click", go);
+    g.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); go(); } });
+  });
+}
+$$("#scope-seg button").forEach((b) => b.addEventListener("click", () => Scope.setMode(b.dataset.m)));
+Scope.setMode("k16");
+Scope.start();
+new ResizeObserver(() => drawStrip()).observe($("#strip"));
+
+/* ---------- architecture ---------- */
+const NODES = {
+  audio: { tag: "輸入", title: "錄音", body: ["Clotho-AQA 的環境聲錄音，每段 15–30 秒。資料切分以錄音為單位：同一段錄音的題目不會同時出現在訓練和驗證。"], facts: [["資料集", "Clotho-AQA"], ["pilot", "48 段訓練、32 段驗證"], ["fresh_val", "170 段、340 題"]] },
+  enc: { tag: "凍結", title: "音訊編碼器與投影層", body: ["Qwen2-Audio 自帶的 Whisper 式編碼器，把錄音轉成一串時間步向量，再投影到語言模型的 4096 維 embedding 空間。", "原模型會把這整串向量直接放進語言模型。我們在這裡截住它，交給壓縮器。"], facts: [["輸出", "數百個 4096 維向量"], ["訓練", "不訓練"], ["快取", "cache/features"]] },
+  stem: { tag: "B 線", title: "題幹分支", body: ["只用題目文字（不含選項），取 token embedding 的平均，或凍結 LM 第 16 層的 hidden state，經過 4096 → 64 的線性投影，加到每一個 query 上。", "原版直接相加，訓練後題幹項是 query 的 90 倍。gated 版先單位化，再乘上從 0 開始的 tanh(gate)，所以起點和純音訊版逐位元相同。"], facts: [["投影", "4096 → 64"], ["gated 上限", "範數 ≤ 1"], ["gate 學習率", "0.01"], ["對照", "錯置題、通用句、關閉"]] },
+  comp: { tag: "唯一可訓練", title: "壓縮器", body: ["K 個 64 維的 learned query 對音訊做 attention。每個輸出等於「第 k 段的平均」加上「注意力加權的音訊減去全段平均」，所以 K = 1 時也至少保有整段的平均。"], formula: true, facts: [["參數量", "約 26 萬（題幹版另加 26 萬）"], ["K", "1、4、16"], ["訓練", "192 步，lr 1e-3，AdamW"], ["峰值記憶體", "約 16 GiB / 卡"]] },
+  lat: { tag: "瓶頸", title: "K 個 latent", body: ["壓縮器輸出的 K 個 4096 維向量，放在原本音訊 token 的位置。語言模型把它們當成 K 個聲音 token 讀，其他文字完全不變。", "A 線的置換實驗會把某段錄音的 latent（或其中的平均、修正部分）換成另一段錄音的，看答案跟著誰走。"], facts: [["維度", "4096，與 token embedding 相同"], ["數量", "K 個，取代原本數百個"]] },
+  prompt: { tag: "輸入", title: "題目與選項", body: ["回答端永遠看到完整題目和選項：「題目 ⏎ A. yes ⏎ B. no ⏎ Answer with only A or B.」所有版本在這裡完全相同。"], facts: [["題型", "yes / no"], ["每段錄音", "一題 yes、一題 no"]] },
+  dec: { tag: "凍結", title: "Qwen2-Audio 語言模型", body: ["Qwen2-Audio-7B-Instruct 的語言模型部分。它不知道收到的是壓縮過的 latent 還是原本的音訊向量，只是照常讀整個 token 序列。"], facts: [["模型", "Qwen2-Audio-7B-Instruct"], ["revision", "0a09522"], ["訓練", "不訓練"]] },
+  out: { tag: "輸出", title: "A／B logit", body: ["只看第一個輸出 token 中 A 和 B 的 logit，哪個大就選哪個。不生成文字，評分完全確定。", "所有比較都以錄音為單位做配對 bootstrap，三個 seed 先平均再重抽樣。"], facts: [["指標", "答對題數 / 340"], ["區間", "錄音配對 bootstrap 95%"]] },
+};
+const EDGES = [
+  ["audio", "enc", ""], ["enc", "comp", ""], ["stem", "comp", "b"], ["comp", "lat", ""], ["lat", "dec", ""],
+  ["prompt", "dec", ""], ["dec", "out", ""], ["enc", "dec", "bypass"],
+];
+const ARCH = {
+  full: { off: ["stem", "comp", "lat"], edges: (e) => !["stem", "comp", "lat"].includes(e[0]) && e[1] !== "comp", read: "完整音訊 <b>294</b> / 340　原模型，不壓縮" },
+  audio: { off: ["stem"], edges: (e) => e[0] !== "stem" && e[2] !== "bypass", read: "K = 16 純音訊 <b>281.7</b> / 340" },
+  question: { off: [], edges: (e) => e[2] !== "bypass", read: "K = 16　原版加法 <b>228.3</b>　gated＋centered <b>284.7</b>" },
+  text: { off: ["audio", "enc", "stem", "comp", "lat"], edges: (e) => ["prompt", "dec"].includes(e[0]), read: "只看文字 <b>183</b> / 340　下限參考" },
+};
+let archMode = "audio", archSel = "comp";
+function renderEdges() {
+  const dg = $("#diagram"), host = $("#edges");
+  const box = dg.getBoundingClientRect();
+  if (!box.width) return;
+  host.setAttribute("viewBox", `0 0 ${box.width} ${box.height}`);
+  host.innerHTML = "";
+  const rect = (id) => { const r = $(`.node[data-node="${id}"]`, dg).getBoundingClientRect(); return { l: r.left - box.left, t: r.top - box.top, r: r.right - box.left, b: r.bottom - box.top, cx: (r.left + r.right) / 2 - box.left, cy: (r.top + r.bottom) / 2 - box.top }; };
+  const mobile = matchMedia("(max-width: 860px)").matches;
+  for (const e of EDGES) {
+    const a = rect(e[0]), b = rect(e[1]);
+    let d, end;
+    if (e[2] === "bypass") {
+      if (!mobile) { const y = Math.max(a.b, b.b) + 50; d = `M${a.cx},${a.b} C${a.cx},${y} ${b.cx},${y} ${b.cx},${b.b + 6}`; end = { x: b.cx, y: b.b + 6 }; }
+      else { const xx = 6; d = `M${a.l},${a.cy} C${xx},${a.cy} ${xx},${b.cy} ${b.l - 6},${b.cy}`; end = { x: b.l - 6, y: b.cy }; }
+    } else {
+      const dx = b.cx - a.cx, dy = b.cy - a.cy;
+      if (Math.abs(dx) > Math.abs(dy)) {
+        const sx = dx > 0 ? a.r : a.l, ex = dx > 0 ? b.l - 6 : b.r + 6, m = (ex - sx) / 2;
+        d = `M${sx},${a.cy} C${sx + m},${a.cy} ${ex - m},${b.cy} ${ex},${b.cy}`; end = { x: ex, y: b.cy };
+      } else {
+        const sy = dy > 0 ? a.b : a.t, ey = dy > 0 ? b.t - 6 : b.b + 6, m = (ey - sy) / 2;
+        d = `M${a.cx},${sy} C${a.cx},${sy + m} ${b.cx},${ey - m} ${b.cx},${ey}`; end = { x: b.cx, y: ey };
+      }
+    }
+    const on = ARCH[archMode].edges(e);
+    const cls = (on ? "on" : "off") + (e[2] ? " " + e[2] : "");
+    svg("path", { d, class: cls }, host);
+    svg("circle", { cx: end.x, cy: end.y, r: 2.5, class: cls }, host);
+  }
+}
+function renderDetail() {
+  const n = NODES[archSel], box = $("#detail");
+  box.innerHTML = "";
+  const body = h("div", { class: "body" }, h("p", { class: "tag", text: n.tag }), h("h3", { text: n.title }), n.body.map((t) => h("p", { text: t })));
+  if (n.formula) {
+    const pre = h("pre", { class: "formula" });
+    pre.innerHTML = "z<sub>k</sub> = pool<sub>k</sub>(h) + Σ<sub>t</sub> α<sub>kt</sub>·h<sub>t</sub> − mean(h)\nα<sub>k</sub> = softmax( (q<sub>k</sub> + c) · W·LN(h)ᵀ / √64 )\n<span class=\"cm\">c = 0                          純音訊</span>\n<span class=\"cm\">c = W<sub>c</sub>·e(題幹)                原版加法</span>\n<span class=\"cm\">c = tanh(g)·normalize(W<sub>c</sub>·e)     gated</span>";
+    body.append(pre);
+  }
+  const dl = h("dl", {}, n.facts.flatMap(([k, v]) => [h("dt", { text: k }), h("dd", { text: v })]));
+  box.append(body, dl);
+  box.classList.remove("fade"); void box.offsetWidth; box.classList.add("fade");
+}
+function setArch(m) {
+  archMode = m;
+  $$("#arch-seg button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.m === m)));
+  $$("#diagram .node").forEach((n) => n.classList.toggle("off", ARCH[m].off.includes(n.dataset.node)));
+  $("#arch-read").innerHTML = ARCH[m].read;
+  renderEdges();
+}
+$$("#arch-seg button").forEach((b) => b.addEventListener("click", () => setArch(b.dataset.m)));
+$$("#diagram .node").forEach((n) => n.addEventListener("click", () => {
+  archSel = n.dataset.node;
+  $$("#diagram .node").forEach((x) => x.classList.toggle("sel", x === n));
+  renderDetail();
+}));
+$('.node[data-node="comp"]').classList.add("sel");
+setArch("audio"); renderDetail();
+new ResizeObserver(() => renderEdges()).observe($("#diagram"));
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(renderEdges);
+
+/* ---------- tracks ---------- */
+const SHARED = [
+  { s: "done", t: "原模型的聲音能力", r: "ESC-50 事件二選一 49/50；CompA 順序配對 404/724，時序是壓力測試。" },
+  { s: "done", t: "瓶頸工程驗證", r: "凍結 backbone、只訓練壓縮器；重新解碼的 logit 差為 0，單卡峰值約 16 GiB。" },
+  { s: "done", t: "Clotho-AQA pilot", r: "48 段訓練、32 段驗證錄音。K = 16 純音訊 53/64，完整音訊 54/64。" },
+  { s: "done", t: "共用驗證集 fresh_val", r: "官方 validation 另外 170 段錄音、340 題，兩線逐題對齊。" },
+  { s: "active", t: "PR #1：B 線併入 main", r: "track-b 分支已和 main 對齊，等待 review。" },
+];
+const TRACKS = [
+  { code: "A", name: "瓶頸容量與證據保留", owner: "負責　健賓", q: "瓶頸容量決定哪些聲音線索能被保留？", ms: [
+    { s: "done", t: "共同起點與控制組", r: "從同一個父 checkpoint 續訓 192 步，驗證 53 → 54/64，作為 B 線的音訊對照。", f: "phase2/warm-k16-s17-audio" },
+    { s: "done", t: "容量與固定池化", r: "學習式 K = 4 答對 44/64、K = 16 答對 53/64；免訓練的平均池化只有 30、32/64。", f: "compare_capacity.py" },
+    { s: "done", t: "三個 seed 與題型", r: "K = 16 − K = 4 平均 +13.5 pp（+5.7 至 +22.9），增益集中在聲源／事件題。", f: "analyze_capacity_types.py" },
+    { s: "done", t: "新錄音重現容量優勢", r: "fresh_val 上 K = 4 平均 249.0、K = 16 平均 279.7，差 +9.0 pp（+5.9 至 +12.3）。", f: "phase2/fresh-capacity" },
+    { s: "done", t: "原模型與聲音置換對照", r: "完整音訊 292、只看文字 182、換成其他錄音 207（/340）；配對的聲音帶來 +25.0 pp。", f: "phase2/fresh-controls" },
+    { s: "done", t: "關係題 latent 置換", r: "混合表示中，保留原錄音的學習式修正比只保留分段平均高 11.1 pp（+2.0 至 +20.3）。", f: "phase2/interventions-v1" },
+    { s: "done", t: "相反正解配對與音量讀出", r: "交換學習式修正後 80.6% 跟著來源錄音的正解；latent 的線性音量讀出 84–90%，問答卻只有 51.5%。", f: "phase2/opposite-v1、level-probe-v1" },
+    { s: "paused", t: "平衡配對 counterbalanced-v1", r: "完整原模型評測途中停止，只保存 manifest 與部分結果，不計入結論。" },
+    { s: "next", t: "音量讀出的泛化", r: "尚未執行。" },
+  ] },
+  { code: "B", name: "問題導引", owner: "負責　cshsieh", q: "壓縮器先讀題目，能不能幫它挑對聲音證據？", ms: [
+    { s: "done", t: "第一版題幹 pilot", r: "正確題幹 31/64，比純音訊低 34.4 pp；和錯置題幹只差 2 題。", f: "phase2/clotho-k16-s17-question" },
+    { s: "done", t: "共同起點續訓，找到失敗機制", r: "從同一父模型出發仍掉到 27/64。題幹項是 query 的 90 倍，attention 飽和，預測和題目無關。", f: "phase2/gpu3warm-k16-s17-question" },
+    { s: "done", t: "題幹導引網格", r: "K = 1/4/16 × 3 seed × 4 種分支。gated 限制尺度後干擾消失；在學到的尺度下，正確 − 錯置題幹都在 ±1 pp 內。", f: "guidance_grid.sh" },
+    { s: "done", t: "擴充資料與 LM hidden state", r: "768 題訓練時 K = 4 進步 +2.5 pp，推論時關閉題幹仍保留，無法分離是哪個訓練因素造成；改用 LM 第 16 層表示也沒有題目專屬效果。", f: "phase2/guidance-v1/runs.csv" },
+    { s: "done", t: "劑量反應探針", r: "題幹項超過 query 範數約 0.5 倍開始傷害，K = 16 最多少 74 題；模型學到的 gate 停在 0.02–0.39。", f: "compare_guidance.py --probe" },
+    { s: "done", t: "對齊 fresh_val 並合併 main", r: "66 個模型在 A 線的 340 題上重評，結論不變。", f: "phase2/guidance-v1" },
+    { s: "next", t: "下一輪候選", r: "slot 層級題幹路由、時序合成題、latent 線性探針，詳見研究規劃。" },
+  ] },
+];
+const ST_LABEL = { done: "完成", active: "進行中", paused: "暫停", next: "下一步" };
+function renderTracks() {
+  const ss = $("#shared-steps");
+  ss.innerHTML = "";
+  SHARED.forEach((m) => ss.append(h("div", { class: "step " + m.s }, h("span", { class: "pin", "aria-hidden": "true" }), h("h4", { text: m.t }), h("p", { text: m.r }), h("span", { class: "st", text: ST_LABEL[m.s] }))));
+  const grid = $("#track-grid");
+  grid.innerHTML = "";
+  for (const T of TRACKS) {
+    const done = T.ms.filter((m) => m.s === "done").length, total = T.ms.length;
+    const fill = h("i");
+    grid.append(h("article", { class: "track", "data-code": T.code },
+      h("div", { class: "track-head" }, h("span", { class: "letter", "aria-hidden": "true", text: T.code }), h("div", {}, h("h3", { class: "name", text: T.name }), h("p", { class: "owner", text: T.owner }))),
+      h("p", { class: "track-q", text: T.q }),
+      h("div", { class: "progress" }, h("span", {}, "里程碑"), h("span", { class: "bar" }, fill), h("span", { class: "num", text: `${done} / ${total}` })),
+      h("div", { class: "live", id: "live-" + T.code }),
+      h("ol", { class: "mslist" }, T.ms.map((m) => h("li", { class: "ms " + m.s },
+        h("span", { class: "mpin", "aria-hidden": "true" }),
+        h("details", {}, h("summary", {}, h("span", { class: "mt", text: m.t }), h("span", { class: "st", text: ST_LABEL[m.s] }), h("span", { class: "mr", text: m.r })),
+          h("div", { class: "more" }, m.f ? ["對應檔案　", h("code", { text: m.f })] : "尚無對應檔案。")))))));
+    requestAnimationFrame(() => requestAnimationFrame(() => { fill.style.width = (100 * done / total) + "%"; }));
+  }
+}
+renderTracks();
+
+/* ---------- charts ---------- */
+const A_TYPES = [
+  { t: "聲源／事件", n: 208, text: 55.3, other: 63.0, k4: 76.9, k16: 87.7, full: 90.4 },
+  { t: "數量／相對關係", n: 46, text: 60.9, other: 60.9, k4: 65.9, k16: 74.6, full: 89.1 },
+  { t: "時間規律", n: 39, text: 33.3, other: 43.6, k4: 39.3, k16: 53.0, full: 53.8 },
+  { t: "場景情境", n: 30, text: 50.0, other: 70.0, k4: 97.8, k16: 96.7, full: 90.0 },
+  { t: "聲學屬性", n: 17, text: 64.7, other: 58.8, k4: 82.4, k16: 78.4, full: 88.2 },
+];
+const B_ARMS = [
+  { id: "audio", l: "純音訊", c: "--a", v: [213.0, 250.3, 281.7] },
+  { id: "add", l: "原版加法題幹", c: "--b", v: [204.0, 204.0, 228.3] },
+  { id: "gatedc", l: "gated＋centered", c: "--c", v: [213.7, 253.0, 284.7] },
+];
+const B_EXTRA = [{ l: "gated", v: [204.7, 248.7, 285.3] }, { l: "gated，LM hidden", v: [209.7, 250.7, null] }];
+const KS = ["K = 1", "K = 4", "K = 16"];
+const C_ROWS = [
+  { l: "原版加法 − 純音訊", c: "--b", shape: "dot", v: [[-2.7, -4.2, -1.1], [-13.6, -17.0, -10.3], [-15.7, -18.4, -13.0]] },
+  { l: "原版加法：正確 − 錯置", c: "--b", shape: "ring", v: [[-0.4, -1.0, 0.2], [-0.1, -0.9, 0.7], [-0.4, -1.5, 0.7]] },
+  { l: "gated＋centered：正確 − 錯置", c: "--c", shape: "dot", v: [[0.7, -0.1, 1.5], [0.0, -0.8, 0.7], [0.4, -0.4, 1.2]] },
+];
+const D_X = [0, 0.5, 1, 2, 4, 16];
+const D_SER = [
+  { l: "K = 1", c: "--ramp-1", v: [212.0, 212.7, 207.7, 203.0, 202.3, 201.3], dy: 4 },
+  { l: "K = 4", c: "--ramp-2", v: [253.3, 248.0, 231.3, 219.3, 214.0, 211.7], dy: -7 },
+  { l: "K = 16", c: "--ramp-3", v: [284.0, 275.3, 248.0, 224.3, 214.7, 210.3], dy: 8 },
+];
+const drawn = new Set();
+const chartWidth = (host) => Math.max(300, host.clientWidth);
+function addPath(s, d, color, animate) {
+  const p = svg("path", { d, class: "series", stroke: `var(${color})` }, s);
+  if (animate && !reduced.matches) { const len = p.getTotalLength(); p.style.setProperty("--len", len); p.classList.add("draw"); }
+  return p;
+}
+function chartA() {
+  const host = $("#chart-a"); host.innerHTML = "";
+  const w = chartWidth(host), narrow = w < 560;
+  const left = narrow ? 0 : 150, right = 8, rowH = narrow ? 62 : 52, top = 6;
+  const hh = top + A_TYPES.length * rowH + 30;
+  const x = (v) => left + ((v - 30) / 70) * (w - left - right);
+  const s = svg("svg", { viewBox: `0 0 ${w} ${hh}`, role: "img", "aria-label": "各題型在 K=4、K=16、完整音訊與只看文字下的準確率" }, host);
+  const g = svg("g", { class: "grid" }, s);
+  for (let v = 30; v <= 100; v += 10) {
+    svg("line", { x1: x(v), x2: x(v), y1: top, y2: hh - 26 }, g);
+    txt(s, { x: x(v), y: hh - 6, "text-anchor": "middle" }, v + "%");
+  }
+  A_TYPES.forEach((d, i) => {
+    const cy = top + i * rowH + (narrow ? 42 : rowH / 2);
+    txt(s, { x: narrow ? left : left - 18, y: narrow ? cy - 16 : cy + 5, "text-anchor": narrow ? "start" : "end", class: "lab" }, `${d.t}（${d.n}）`);
+    svg("line", { x1: x(d.k4), x2: x(d.k16), y1: cy, y2: cy, class: "connector" }, s);
+    svg("line", { x1: x(d.text), x2: x(d.text), y1: cy - 9, y2: cy + 9, stroke: "var(--ink-3)", "stroke-width": 1.5 }, s);
+    [["k4", "--a"], ["k16", "--b"], ["full", "--c"]].forEach(([k, c]) => svg("circle", { cx: x(d[k]), cy, r: 5.5, fill: `var(${c})`, class: "mk" }, s));
+    const hit = svg("rect", { x: left, y: cy - rowH / 2 - (narrow ? 8 : 0), width: w - left - right, height: rowH, class: "hit" }, s);
+    hit.addEventListener("pointermove", (e) => showTip(`<div class="th">${d.t}（${d.n} 題）</div>` +
+      tipRow(cssv("--a"), "K = 4", d.k4.toFixed(1) + "%") + tipRow(cssv("--b"), "K = 16", d.k16.toFixed(1) + "%") +
+      tipRow(cssv("--c"), "完整音訊", d.full.toFixed(1) + "%") + tipRow(cssv("--ink-3"), "只看文字", d.text.toFixed(1) + "%") +
+      tipRow(cssv("--ink-3"), "換成其他錄音", d.other.toFixed(1) + "%"), e.clientX, e.clientY));
+    hit.addEventListener("pointerleave", hideTip);
+  });
+  $("#table-a").innerHTML = `<table><thead><tr><th>題型（題數）</th><th>只看文字</th><th>其他錄音</th><th>K = 4</th><th>K = 16</th><th>完整音訊</th></tr></thead><tbody>${A_TYPES.map((d) => `<tr><td>${d.t}（${d.n}）</td><td>${d.text.toFixed(1)}%</td><td>${d.other.toFixed(1)}%</td><td>${d.k4.toFixed(1)}%</td><td>${d.k16.toFixed(1)}%</td><td>${d.full.toFixed(1)}%</td></tr>`).join("")}</tbody></table>`;
+}
+function lineChart(host, opt) {
+  host.innerHTML = "";
+  const w = chartWidth(host), narrow = w < 520;
+  const left = 40, right = narrow ? 12 : 124, top = 18, bottom = 34, hh = 310;
+  const n = opt.x.length;
+  const x = (i) => left + (n === 1 ? 0 : (i / (n - 1)) * (w - left - right));
+  const y = (v) => top + (1 - (v - opt.y0) / (opt.y1 - opt.y0)) * (hh - top - bottom);
+  const s = svg("svg", { viewBox: `0 0 ${w} ${hh}`, role: "img", "aria-label": opt.aria }, host);
+  const g = svg("g", { class: "grid" }, s);
+  for (let v = opt.tick0; v <= opt.y1; v += opt.step) {
+    svg("line", { x1: left, x2: w - right, y1: y(v), y2: y(v) }, g);
+    txt(s, { x: left - 10, y: y(v) + 4, "text-anchor": "end" }, String(v));
+  }
+  opt.x.forEach((lbl, i) => txt(s, { x: x(i), y: hh - 8, "text-anchor": "middle" }, lbl));
+  if (opt.band) {
+    svg("rect", { x: x(opt.band[0]) - 12, y: top, width: x(opt.band[1]) - x(opt.band[0]) + 24, height: hh - top - bottom, class: "bandr" }, s);
+    txt(s, { x: x(opt.band[0]) - 6, y: hh - bottom - 10 }, opt.bandLabel || "");
+  }
+  (opt.refs || []).forEach((r) => {
+    svg("line", { x1: left, x2: w - right, y1: y(r.v), y2: y(r.v), class: "refl" }, s);
+    txt(s, { x: left + 8, y: y(r.v) - 7 }, `${r.l}　${r.v}`);
+  });
+  const anim = !drawn.has(host.id);
+  drawn.add(host.id);
+  opt.series.forEach((se) => {
+    const pts = se.v.map((v, i) => (v == null ? null : [x(i), y(v)])).filter(Boolean);
+    addPath(s, "M" + pts.map((p) => p.join(",")).join(" L"), se.c, anim);
+    pts.forEach((p) => svg("circle", { cx: p[0], cy: p[1], r: 4, fill: `var(${se.c})`, class: "mk" }, s));
+    if (!narrow) { const lp = pts[pts.length - 1]; txt(s, { x: lp[0] + 14, y: lp[1] + 4 + (se.dy || 0), class: "dlab" }, se.l); }
+  });
+  const xh = svg("line", { y1: top, y2: hh - bottom, class: "xhair" }, s);
+  const colW = n > 1 ? (w - left - right) / (n - 1) : w;
+  opt.x.forEach((lbl, i) => {
+    const hit = svg("rect", { x: x(i) - colW / 2, y: top, width: colW, height: hh - top - bottom, class: "hit" }, s);
+    hit.addEventListener("pointermove", (e) => {
+      xh.setAttribute("x1", x(i)); xh.setAttribute("x2", x(i)); xh.style.opacity = 1;
+      showTip(`<div class="th">${opt.tipHead(i)}</div>` + opt.tipRows(i), e.clientX, e.clientY);
+    });
+    hit.addEventListener("pointerleave", () => { xh.style.opacity = 0; hideTip(); });
+  });
+}
+function chartB() {
+  lineChart($("#chart-b"), {
+    x: KS, y0: 170, y1: 300, tick0: 180, step: 20, aria: "三種壓縮端在 K=1、4、16 的答對題數",
+    refs: [{ v: 294, l: "完整音訊" }, { v: 183, l: "只看文字" }],
+    series: B_ARMS.map((a) => ({ l: a.l, c: a.c, v: a.v, dy: a.id === "gatedc" ? -8 : a.id === "audio" ? 8 : 0 })),
+    tipHead: (i) => `${KS[i]}　答對題數 / 340`,
+    tipRows: (i) => B_ARMS.map((a) => tipRow(cssv(a.c), a.l, fmt1(a.v[i]))).join("") + B_EXTRA.filter((a) => a.v[i] != null).map((a) => tipRow(cssv("--ink-3"), a.l, fmt1(a.v[i]))).join(""),
+  });
+  $("#table-b").innerHTML = `<table><thead><tr><th>壓縮端</th>${KS.map((k) => `<th>${k}</th>`).join("")}</tr></thead><tbody>${[...B_ARMS, ...B_EXTRA].map((a) => `<tr><td>${a.l}</td>${a.v.map((v) => `<td>${v == null ? "—" : fmt1(v)}</td>`).join("")}</tr>`).join("")}<tr><td>完整音訊（參考）</td><td>294</td><td>294</td><td>294</td></tr><tr><td>只看文字（參考）</td><td>183</td><td>183</td><td>183</td></tr></tbody></table>`;
+}
+function chartC() {
+  const host = $("#chart-c"); host.innerHTML = "";
+  const w = chartWidth(host), narrow = w < 560;
+  const left = narrow ? 0 : 210, right = 60, rowH = narrow ? 44 : 30, groupGap = narrow ? 34 : 26, top = 4;
+  const rows = [];
+  KS.forEach((k, gi) => C_ROWS.forEach((r) => rows.push({ k, r, v: r.v[gi] })));
+  const yOf = (idx) => top + Math.floor(idx / 3) * (3 * rowH + groupGap) + groupGap + (idx % 3) * rowH + rowH / 2;
+  const hh = yOf(rows.length - 1) + rowH / 2 + 30;
+  const x = (v) => left + ((v + 20) / 24) * (w - left - right);
+  const s = svg("svg", { viewBox: `0 0 ${w} ${hh}`, role: "img", "aria-label": "原版加法與 gated 版的配對差異及 95% 區間" }, host);
+  const g = svg("g", { class: "grid" }, s);
+  for (let v = -20; v <= 4; v += 4) {
+    svg("line", { x1: x(v), x2: x(v), y1: top + 10, y2: hh - 26 }, g);
+    txt(s, { x: x(v), y: hh - 6, "text-anchor": "middle" }, (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v));
+  }
+  svg("line", { x1: x(0), x2: x(0), y1: top + 6, y2: hh - 26, class: "zero" }, s);
+  KS.forEach((k, gi) => txt(s, { x: 0, y: yOf(gi * 3) - rowH / 2 - 6, class: "grp" }, k));
+  rows.forEach((row, idx) => {
+    const cy0 = yOf(idx), cy = cy0 + (narrow ? 6 : 0), [m, lo, hi] = row.v, col = `var(${row.r.c})`;
+    if (!narrow) txt(s, { x: left - 18, y: cy + 4, "text-anchor": "end", class: "lab", style: "font-size:12.5px" }, row.r.l);
+    else txt(s, { x: x(-20), y: cy - 10, class: "dlab", style: "font-size:11.5px" }, row.r.l);
+    svg("line", { x1: x(lo), x2: x(hi), y1: cy, y2: cy, stroke: col, "stroke-width": 1.5, "stroke-linecap": "round" }, s);
+    if (row.r.shape === "ring") svg("circle", { cx: x(m), cy, r: 4.5, fill: "var(--paper)", stroke: col, "stroke-width": 1.5 }, s);
+    else svg("circle", { cx: x(m), cy, r: 5, fill: col, class: "mk" }, s);
+    txt(s, { x: w - right + 14, y: cy + 5, class: "val" }, signed(m));
+    const hit = svg("rect", { x: 0, y: cy0 - rowH / 2, width: w, height: rowH + (narrow ? 6 : 0), class: "hit" }, s);
+    hit.addEventListener("pointermove", (e) => showTip(`<div class="th">${row.k}　${row.r.l}</div>` + tipRow(cssv(row.r.c), "差異", signed(m) + " pp") + tipRow(cssv("--ink-3"), "95% 區間", `[${signed(lo)}, ${signed(hi)}]`), e.clientX, e.clientY));
+    hit.addEventListener("pointerleave", hideTip);
+  });
+  $("#table-c").innerHTML = `<table><thead><tr><th>對比（pp）</th>${KS.map((k) => `<th>${k}</th>`).join("")}</tr></thead><tbody>${C_ROWS.map((r) => `<tr><td>${r.l}</td>${r.v.map(([m, lo, hi]) => `<td>${signed(m)} [${signed(lo)}, ${signed(hi)}]</td>`).join("")}</tr>`).join("")}</tbody></table>`;
+}
+function chartD() {
+  lineChart($("#chart-d"), {
+    x: D_X.map((v) => v + "×"), y0: 195, y1: 290, tick0: 200, step: 20, band: [0, 1], bandLabel: "學到的範圍", aria: "題幹項範數放大時，K=1、4、16 的答對題數",
+    series: D_SER,
+    tipHead: (i) => `題幹項 = ${D_X[i]} × query 範數`,
+    tipRows: (i) => D_SER.map((se) => tipRow(cssv(se.c), se.l, fmt1(se.v[i]))).join(""),
+  });
+  $("#table-d").innerHTML = `<table><thead><tr><th>題幹項 / query 範數</th>${D_X.map((v) => `<th>${v}×</th>`).join("")}</tr></thead><tbody>${D_SER.map((se) => `<tr><td>${se.l}</td>${se.v.map((v) => `<td>${fmt1(v)}</td>`).join("")}</tr>`).join("")}</tbody></table>`;
+}
+const CHARTS = { a: [chartA], b: [chartB, chartC], d: [chartD] };
+let curTab = "a";
+const renderTab = () => CHARTS[curTab].forEach((f) => f());
+function selectTab(t) {
+  $$(".tab").forEach((x) => { const on = x === t; x.setAttribute("aria-selected", String(on)); x.tabIndex = on ? 0 : -1; $("#" + x.getAttribute("aria-controls")).hidden = !on; });
+  const panel = $("#" + t.getAttribute("aria-controls"));
+  panel.classList.remove("fade"); void panel.offsetWidth; panel.classList.add("fade");
+  curTab = t.id.slice(4);
+  renderTab();
+}
+$$(".tab").forEach((t) => t.addEventListener("click", () => selectTab(t)));
+$(".tabs").addEventListener("keydown", (e) => {
+  const tabs = $$(".tab"), i = tabs.indexOf(document.activeElement);
+  if (i < 0 || (e.key !== "ArrowRight" && e.key !== "ArrowLeft")) return;
+  e.preventDefault();
+  const n = tabs[(i + (e.key === "ArrowRight" ? 1 : tabs.length - 1)) % tabs.length];
+  n.focus(); selectTab(n);
+});
+$$(".tbtn[data-table]").forEach((b) => b.addEventListener("click", () => {
+  const tbl = $("#table-" + b.dataset.table), ch = $("#chart-" + b.dataset.table);
+  const show = tbl.hidden;
+  tbl.hidden = !show; ch.hidden = show;
+  b.textContent = show ? "圖表" : "表格";
+}));
+renderTab();
+let rtimer;
+new ResizeObserver(() => { clearTimeout(rtimer); rtimer = setTimeout(renderTab, 120); }).observe($("#results .wrap"));
+onTheme(renderTab);
+
+/* nav highlight */
+const navLinks = $$(".nav a");
+const secObs = new IntersectionObserver((es) => {
+  es.forEach((e) => { if (e.isIntersecting) navLinks.forEach((a) => a.classList.toggle("on", a.getAttribute("href") === "#" + e.target.id)); });
+}, { rootMargin: "-40% 0px -55% 0px" });
+["architecture", "tracks", "results", "roadmap", "faq"].forEach((id) => secObs.observe(document.getElementById(id)));
+
+/* ---------- roadmap ---------- */
+const STATUSES = [["idea", "想法", "Ideas"], ["planned", "計畫中", "Planned"], ["active", "進行中", "In progress"], ["done", "已完成", "Done"]];
+const SLOT_VARS = ["--a", "--b", "--c", "--ink-2", "--ramp-2", "--ink-3", "--ramp-1", "--warn"];
+const RM = { mode: "loading", db: null, user: null, me: null, canWrite: null, tracks: new Map(), plans: [], tracksReady: false, plansReady: false, filter: "all", queue: {}, readOnly: true, seen: new Set(), updated: "" };
+const toastEl = $("#toast");
+let toastT;
+function toast(msg) { toastEl.textContent = msg; toastEl.classList.add("on"); clearTimeout(toastT); toastT = setTimeout(() => toastEl.classList.remove("on"), 2600); }
+const trackColor = (tid) => { const t = RM.tracks.get(tid); return `var(${SLOT_VARS[(((t && t.slot) || 3) - 1) % 8]})`; };
+const sortedTracks = () => [...RM.tracks.entries()].sort((a, b) => ((a[1].order != null ? a[1].order : 99) - (b[1].order != null ? b[1].order : 99)) || a[0].localeCompare(b[0]));
+function rmState(kind) {
+  const msgs = {
+    loading: ["正在讀取研究規劃", "規劃資料會依你開啟的方式，從共用資料庫或本檔內附的資料載入。", true],
+    error: ["研究規劃無法載入", "這個檢視目前讀不到共用資料，請稍後重新整理。", false],
+  };
+  const [t, p, spin] = msgs[kind];
+  const body = $("#rm-body");
+  body.innerHTML = "";
+  body.append(h("div", { class: "rm-state" }, spin ? h("div", { class: "spinner", "aria-hidden": "true" }) : null, h("b", { text: t }), h("p", { text: p })));
+  $("#rm-bar").hidden = true;
+}
+function loadStatic() {
+  let seed = { tracks: [], plans: [] };
+  try { seed = JSON.parse($("#roadmap-seed").textContent); } catch (e) { /* keep empty */ }
+  RM.mode = "static"; RM.readOnly = true; RM.updated = seed.updated || "";
+  RM.tracks = new Map((seed.tracks || []).map((t) => [t.code, t]));
+  RM.plans = (seed.plans || []).map((p, i) => ({ ...p, order: i, todos: (p.todos || []).map((t, j) => (Array.isArray(t) ? { id: "t" + j, text: t[0], done: !!t[1] } : t)) }));
+  renderRoadmap(); renderExtraTracks(); renderLiveCounts();
+}
+async function initRoadmap() {
+  const inViewer = !!(window.claude && typeof window.claude.use === "function");
+  if (!inViewer) { loadStatic(); return; }
+  let db = null;
+  try { db = await window.claude.use("db"); } catch (e) { db = null; }
+  if (!db) { loadStatic(); return; }
+  RM.db = db; RM.mode = "live";
+  try { RM.user = await window.claude.use("user"); } catch (e) { RM.user = null; }
+  if (RM.user) {
+    try { RM.canWrite = await RM.user.can("data.write"); } catch (e) { RM.canWrite = null; }
+    try { RM.me = (await RM.user.id()) || null; } catch (e) { RM.me = null; }
+  }
+  RM.readOnly = RM.canWrite === false;
+  let settled = false;
+  const timer = setTimeout(() => { if (!settled) loadStatic(); }, 10000);
+  const ready = () => { if (RM.tracksReady && RM.plansReady && RM.mode === "live") { settled = true; clearTimeout(timer); renderRoadmap(); renderExtraTracks(); renderLiveCounts(); } };
+  const fail = (err) => { if (err && err.code === "unavailable") return; settled = true; clearTimeout(timer); loadStatic(); };
+  db.collection("tracks").onSnapshot((snap) => { RM.tracks = new Map(snap.docs.map((d) => [d.id, d.data() || {}])); RM.tracksReady = true; ready(); }, fail);
+  db.collection("plans").onSnapshot((snap) => { RM.plans = snap.docs.map((d) => ({ id: d.id, ...(d.data() || {}) })); RM.plansReady = true; ready(); }, fail);
+}
+function renderLiveCounts() {
+  for (const code of ["A", "B"]) {
+    const box = $("#live-" + code);
+    if (!box) continue;
+    box.innerHTML = "";
+    const mine = RM.plans.filter((p) => p.track === code);
+    if (!mine.length) continue;
+    box.append(h("span", { text: "規劃中的工作" }));
+    for (const [st, lbl] of STATUSES) {
+      const n = mine.filter((p) => (p.status || "idea") === st).length;
+      if (n) box.append(h("a", { href: "#roadmap", onclick: () => { RM.filter = code; renderRoadmap(); } }, lbl, h("b", { text: n })));
+    }
+  }
+}
+function renderExtraTracks() {
+  const list = sortedTracks().filter(([id]) => id !== "A" && id !== "B");
+  const wrap = $("#extra-wrap"), box = $("#extra-tracks");
+  wrap.hidden = !list.length;
+  box.innerHTML = "";
+  for (const [id, t] of list) {
+    const mine = RM.plans.filter((p) => p.track === id);
+    const active = mine.filter((p) => p.status === "active").length;
+    box.append(h("article", { class: "xtrack", style: `--tc:${trackColor(id)}` },
+      h("span", { class: "letter", "aria-hidden": "true", text: id }),
+      h("b", { text: t.name || "未命名研究線" }),
+      t.question ? h("p", { text: t.question }) : null,
+      h("span", { class: "meta", text: `${t.owner ? "負責　" + t.owner + "　·　" : ""}計畫 ${mine.length}${active ? "　·　進行中 " + active : ""}` })));
+  }
+}
+function renderRoadmap() {
+  const bar = $("#rm-bar"), body = $("#rm-body"), note = $("#rm-note");
+  bar.hidden = false;
+  $("#rm-actions").hidden = RM.readOnly;
+  if (RM.mode === "static") {
+    note.hidden = false;
+    note.innerHTML = `這是靜態版本${RM.updated ? "（資料更新於 " + RM.updated + "）" : ""}。要修改規劃，請編輯 <code>docs/index.html</code> 開頭的 <code>roadmap-seed</code> 資料並 commit；在 Claude 線上版裡，組員可以直接在頁面上新增與編輯。`;
+  } else if (RM.readOnly) {
+    note.hidden = false;
+    note.textContent = "你目前只能檢視研究規劃。需要編輯時，請擁有者把你的權限設為 Contributor 或以上。";
+  } else {
+    note.hidden = false;
+    note.textContent = "拖曳卡片可以換欄位，點開卡片可以編輯內容與待辦。所有變更會即時同步給其他組員。";
+  }
+  if (RM.filter !== "all" && !RM.tracks.has(RM.filter)) RM.filter = "all";
+  const fc = $("#fchips"); fc.innerHTML = "";
+  const mkChip = (id, label, n, color) => fc.append(h("button", { class: "fchip", type: "button", "aria-pressed": String(RM.filter === id), style: color ? `--tc:${color}` : null, onclick: () => { RM.filter = id; renderRoadmap(); } }, color ? h("i", { class: "sw" }) : null, label, h("span", { class: "n", text: n })));
+  mkChip("all", "全部", RM.plans.length);
+  for (const [id, t] of sortedTracks()) mkChip(id, `${id}　${t.name || "未命名"}`, RM.plans.filter((p) => p.track === id).length, trackColor(id));
+  if (RM.filter !== "all" && !RM.readOnly) fc.append(h("button", { class: "fchip", type: "button", onclick: () => openTrack(RM.filter) }, "編輯這條研究線"));
+  const plans = RM.plans.filter((p) => RM.filter === "all" || p.track === RM.filter)
+    .sort((a, b) => (a.order != null ? a.order : a.createdAt || 0) - (b.order != null ? b.order : b.createdAt || 0));
+  body.innerHTML = "";
+  if (!RM.plans.length && !RM.tracks.size) {
+    body.append(h("div", { class: "rm-state" }, h("b", { text: "還沒有任何研究規劃" }), h("p", { text: RM.readOnly ? "組員新增計畫後會顯示在這裡。" : "先新增一條研究線，再新增第一個計畫。" })));
+    return;
+  }
+  const board = h("div", { class: "board" });
+  for (const [st, lbl, en] of STATUSES) {
+    const items = plans.filter((p) => (p.status || "idea") === st);
+    const col = h("div", { class: "col", "data-status": st }, h("div", { class: "col-head" }, h("b", { text: lbl }), h("span", { class: "en", text: en }), h("span", { class: "n", text: items.length })));
+    if (!items.length) col.append(h("p", { class: "empty-col", text: RM.readOnly ? "目前沒有項目" : "把卡片拖到這裡" }));
+    items.forEach((p) => col.append(cardEl(p)));
+    if (!RM.readOnly) {
+      col.addEventListener("dragover", (e) => { e.preventDefault(); col.classList.add("over"); });
+      col.addEventListener("dragleave", (e) => { if (!col.contains(e.relatedTarget)) col.classList.remove("over"); });
+      col.addEventListener("drop", (e) => { e.preventDefault(); col.classList.remove("over"); const id = e.dataTransfer.getData("text/plain"); if (id) moveTo(id, st); });
+    }
+    board.append(col);
+  }
+  body.append(board);
+}
+function cardEl(p) {
+  const todos = Array.isArray(p.todos) ? p.todos : [];
+  const done = todos.filter((t) => t.done).length;
+  const t = RM.tracks.get(p.track);
+  const isStatic = RM.mode === "static";
+  const card = h(isStatic ? "div" : "button", {
+    class: "card", type: isStatic ? null : "button", "data-static": isStatic ? "1" : null, draggable: RM.readOnly ? null : "true",
+    style: `--tc:${trackColor(p.track)};view-transition-name:p${String(p.id).replace(/[^A-Za-z0-9_-]/g, "")}`,
+    onclick: isStatic ? null : () => openPlan(p.id),
+  },
+    h("span", { class: "cm" }, h("span", { title: t ? t.name : "", text: p.track || "?" }), todos.length ? h("span", { class: "pbar", "aria-hidden": "true" }, h("i", { style: `width:${(100 * done) / todos.length}%` })) : null, todos.length ? h("span", { text: `${done} / ${todos.length}` }) : null),
+    h("span", { class: "ct", text: p.title || "未命名計畫" }),
+    p.why ? h("span", { class: "cw", text: p.why }) : null,
+    isStatic && todos.length ? h("span", { class: "todo-lines" }, todos.map((x) => h("span", { class: x.done ? "done" : null, text: x.text }))) : null);
+  if (!RM.seen.has(p.id)) { RM.seen.add(p.id); card.classList.add("enter"); }
+  if (!RM.readOnly) {
+    card.addEventListener("dragstart", (e) => { e.dataTransfer.setData("text/plain", p.id); e.dataTransfer.effectAllowed = "move"; card.classList.add("dragging"); });
+    card.addEventListener("dragend", () => card.classList.remove("dragging"));
+  }
+  return card;
+}
+function writeDoc(path, data, mode) {
+  if (!RM.db) return Promise.resolve(false);
+  const ref = RM.db.doc(path);
+  const prev = RM.queue[path] || Promise.resolve();
+  const next = prev.then(() => (mode === "set" ? ref.set(data) : mode === "delete" ? ref.delete() : ref.update(data))).then(() => true, (err) => {
+    if (err && err.code === "invalid_argument" && RM.canWrite == null) { RM.readOnly = true; renderRoadmap(); toast("這個帳號不能修改研究規劃"); }
+    else if (err && err.code === "quota_exceeded") toast("共用資料已達上限，請先刪除一些項目");
+    else toast("沒有存到，請再試一次");
+    return false;
+  });
+  RM.queue[path] = next;
+  return next;
+}
+const stamp = () => ({ updatedAt: Date.now(), updatedBy: RM.me || null });
+function moveTo(id, st) {
+  const p = RM.plans.find((x) => x.id === id);
+  if (!p || p.status === st) return;
+  const apply = () => { p.status = st; p.order = Date.now(); renderRoadmap(); renderLiveCounts(); renderExtraTracks(); };
+  if (document.startViewTransition && !reduced.matches) document.startViewTransition(apply); else apply();
+  writeDoc("plans/" + id, { status: st, order: p.order, ...stamp() });
+}
+
+/* drawer */
+const drawer = $("#drawer"), scrim = $("#scrim");
+let lastFocus = null;
+function openDrawer(title, content) {
+  lastFocus = document.activeElement;
+  drawer.innerHTML = "";
+  drawer.append(h("div", { class: "dhead" }, h("h3", { id: "dtitle", text: title }), h("button", { class: "link-btn quiet x", type: "button", onclick: closeDrawer }, "關閉")), h("div", { class: "dbody" }, content));
+  drawer.inert = false; drawer.classList.add("on"); scrim.classList.add("on"); drawer.setAttribute("aria-hidden", "false");
+  setTimeout(() => { const f = $("input, textarea, select", drawer); if (f) f.focus(); }, 250);
+}
+function closeDrawer() {
+  drawer.classList.remove("on"); scrim.classList.remove("on"); drawer.setAttribute("aria-hidden", "true"); drawer.inert = true;
+  if (lastFocus && lastFocus.focus) lastFocus.focus();
+}
+scrim.addEventListener("click", closeDrawer);
+document.addEventListener("keydown", (e) => { if (e.key === "Escape" && drawer.classList.contains("on")) closeDrawer(); });
+const uid = () => Math.random().toString(36).slice(2, 9);
+function trackSelect(id, value) {
+  const sel = h("select", { id });
+  for (const [tid, t] of sortedTracks()) sel.append(h("option", { value: tid, selected: tid === value ? true : null, text: `${tid}　${t.name || "未命名"}` }));
+  return sel;
+}
+function statusSeg(value, onPick) {
+  const seg = h("div", { class: "stseg", role: "group", "aria-label": "狀態" });
+  for (const [st, lbl] of STATUSES) seg.append(h("button", { type: "button", "aria-pressed": String(st === value), onclick: (e) => { $$("button", seg).forEach((b) => b.setAttribute("aria-pressed", String(b === e.currentTarget))); onPick(st); } }, lbl));
+  return seg;
+}
+function newPlan() {
+  if (!RM.tracks.size) { toast("請先新增一條研究線"); openTrack(null); return; }
+  let status = "idea";
+  const track = trackSelect("np-track", RM.filter !== "all" ? RM.filter : sortedTracks()[0][0]);
+  const title = h("input", { type: "text", id: "np-title", class: "title-in", placeholder: "例如：slot 層級的題幹路由", maxlength: "120" });
+  const why = h("textarea", { id: "np-why", placeholder: "想驗證什麼？為什麼值得做？", maxlength: "2000" });
+  const todosIn = h("textarea", { id: "np-todos", placeholder: "一行一個待辦，可以先留空", maxlength: "4000", style: "min-height:80px" });
+  const err = h("p", { class: "ferr", hidden: true });
+  const submit = h("button", { class: "link-btn", type: "button", onclick: async () => {
+    const t = title.value.trim();
+    if (!t) { err.textContent = "請先填寫計畫名稱。"; err.hidden = false; title.focus(); return; }
+    submit.disabled = true;
+    const todos = todosIn.value.split("\n").map((s) => s.trim()).filter(Boolean).slice(0, 60).map((text) => ({ id: uid(), text, done: false }));
+    const id = "p" + Date.now().toString(36) + uid();
+    const ok = await writeDoc("plans/" + id, { track: track.value, title: t, why: why.value.trim(), status, todos, createdAt: Date.now(), order: Date.now(), createdBy: RM.me || null, ...stamp() }, "set");
+    submit.disabled = false;
+    if (ok) { closeDrawer(); toast("已新增計畫"); }
+  } }, "建立計畫");
+  openDrawer("新增計畫", [
+    h("div", { class: "field" }, h("label", { for: "np-track", text: "研究線" }), track),
+    h("div", { class: "field" }, h("label", { for: "np-title", text: "計畫名稱" }), title),
+    h("div", { class: "field" }, h("label", { for: "np-why", text: "動機與假說" }), why),
+    h("div", { class: "field" }, h("span", { class: "fl", text: "狀態" }), statusSeg(status, (s) => { status = s; })),
+    h("div", { class: "field" }, h("label", { for: "np-todos", text: "待辦清單" }), todosIn),
+    err, h("div", { class: "dfoot" }, h("span", { class: "who" }), h("button", { class: "link-btn quiet", type: "button", onclick: closeDrawer }, "取消"), submit),
+  ]);
+}
+async function whoText(p) {
+  if (!p.updatedAt) return "";
+  const when = new Date(p.updatedAt).toLocaleString("zh-TW", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" });
+  let name = "";
+  if (p.updatedBy && RM.user && RM.user.profiles) {
+    try { const ps = await RM.user.profiles([p.updatedBy]); name = (ps && ps[p.updatedBy] && ps[p.updatedBy].name) || ""; } catch (e) { name = ""; }
+  }
+  return `最後更新　${when}${name ? "　" + name : ""}`;
+}
+function openPlan(id) {
+  const src = RM.plans.find((x) => x.id === id);
+  if (!src) return;
+  const p = JSON.parse(JSON.stringify(src));
+  p.todos = Array.isArray(p.todos) ? p.todos : [];
+  const ro = RM.readOnly;
+  const path = "plans/" + id;
+  const save = (data) => { Object.assign(src, data); renderRoadmap(); renderLiveCounts(); return writeDoc(path, { ...data, ...stamp() }); };
+  const track = trackSelect("ep-track", p.track);
+  track.disabled = ro;
+  track.addEventListener("change", () => save({ track: track.value }));
+  const title = h("input", { type: "text", id: "ep-title", class: "title-in", value: p.title || "", maxlength: "120", readonly: ro ? true : null });
+  title.addEventListener("change", () => { const v = title.value.trim(); if (v && v !== src.title) save({ title: v }); });
+  const why = h("textarea", { id: "ep-why", maxlength: "2000", readonly: ro ? true : null });
+  why.value = p.why || "";
+  why.addEventListener("change", () => { if (why.value.trim() !== (src.why || "")) save({ why: why.value.trim() }); });
+  const list = h("ul", { class: "todos" });
+  const count = h("span", { class: "fl" });
+  const saveTodos = () => save({ todos: p.todos.map((t) => ({ id: t.id, text: t.text, done: !!t.done })) });
+  const drawTodos = () => {
+    list.innerHTML = "";
+    count.textContent = `待辦清單　${p.todos.filter((t) => t.done).length} / ${p.todos.length}`;
+    if (!p.todos.length) list.append(h("li", { class: "muted", style: "font:400 13px/1.8 var(--sans);padding:6px 0", text: "還沒有待辦事項。" }));
+    p.todos.forEach((t) => {
+      const cb = h("input", { type: "checkbox", checked: t.done ? true : null, disabled: ro ? true : null, "aria-label": "完成" });
+      const tx = h("input", { type: "text", value: t.text, maxlength: "300", readonly: ro ? true : null, "aria-label": "待辦內容" });
+      const li = h("li", { class: "todo" + (t.done ? " done" : "") }, cb, tx, ro ? h("span") : h("button", { class: "del", type: "button", "aria-label": "刪除待辦", onclick: () => { p.todos = p.todos.filter((x) => x !== t); drawTodos(); saveTodos(); } }, "×"));
+      cb.addEventListener("change", () => { t.done = cb.checked; li.classList.toggle("done", t.done); count.textContent = `待辦清單　${p.todos.filter((x) => x.done).length} / ${p.todos.length}`; saveTodos(); });
+      tx.addEventListener("change", () => { const v = tx.value.trim(); if (!v) { p.todos = p.todos.filter((x) => x !== t); drawTodos(); } else t.text = v; saveTodos(); });
+      list.append(li);
+    });
+  };
+  drawTodos();
+  const addIn = h("input", { type: "text", id: "ep-add", placeholder: "新增待辦，按 Enter", maxlength: "300" });
+  const add = () => { const v = addIn.value.trim(); if (!v) return; p.todos.push({ id: uid(), text: v, done: false }); addIn.value = ""; drawTodos(); saveTodos(); addIn.focus(); };
+  addIn.addEventListener("keydown", (e) => { if (e.key === "Enter" && !e.isComposing) { e.preventDefault(); add(); } });
+  const who = h("span", { class: "who" });
+  whoText(src).then((t) => { who.textContent = t; });
+  let armed = false;
+  const del = h("button", { class: "link-btn danger", type: "button", onclick: async () => {
+    if (!armed) { armed = true; del.textContent = "再按一次確定刪除"; setTimeout(() => { armed = false; del.textContent = "刪除計畫"; }, 4000); return; }
+    const ok = await writeDoc(path, null, "delete");
+    if (ok) { closeDrawer(); toast("已刪除計畫"); }
+  } }, "刪除計畫");
+  const stName = (STATUSES.find((s) => s[0] === p.status) || STATUSES[0])[1];
+  openDrawer(ro ? "計畫內容" : "編輯計畫", [
+    h("div", { class: "field" }, h("label", { for: "ep-track", text: "研究線" }), track),
+    h("div", { class: "field" }, h("label", { for: "ep-title", text: "計畫名稱" }), title),
+    h("div", { class: "field" }, h("label", { for: "ep-why", text: "動機與假說" }), why),
+    h("div", { class: "field" }, h("span", { class: "fl", text: "狀態" }), ro ? h("p", { text: stName }) : statusSeg(p.status || "idea", (s) => { src.order = Date.now(); save({ status: s, order: src.order }); })),
+    h("div", { class: "field" }, count, list, ro ? null : h("div", { class: "addtodo field" }, addIn, h("button", { class: "link-btn quiet", type: "button", onclick: add }, "新增"))),
+    h("div", { class: "dfoot" }, who, ro ? null : del),
+  ]);
+}
+function openTrack(id) {
+  const t = id ? RM.tracks.get(id) || {} : {};
+  const used = new Set(RM.tracks.keys());
+  let suggest = "C";
+  for (const c of "CDEFGHIJKLMNOPQRSTUVWXYZ") if (!used.has(c)) { suggest = c; break; }
+  const code = h("input", { type: "text", id: "tk-code", value: id || suggest, maxlength: "4", readonly: id ? true : null, style: "text-transform:uppercase" });
+  const name = h("input", { type: "text", id: "tk-name", value: t.name || "", placeholder: "例如：回答端讀取能力", maxlength: "60" });
+  const owner = h("input", { type: "text", id: "tk-owner", value: t.owner || "", placeholder: "負責人", maxlength: "40" });
+  const q = h("textarea", { id: "tk-q", placeholder: "這條線想回答的研究問題", maxlength: "500" });
+  q.value = t.question || "";
+  const err = h("p", { class: "ferr", hidden: true });
+  const save = h("button", { class: "link-btn", type: "button", onclick: async () => {
+    const c = code.value.trim().toUpperCase();
+    if (!/^[A-Z0-9]{1,4}$/.test(c)) { err.textContent = "代號請用 1–4 個英文字母或數字。"; err.hidden = false; return; }
+    if (!id && used.has(c)) { err.textContent = `代號 ${c} 已經有人用了。`; err.hidden = false; return; }
+    if (!name.value.trim()) { err.textContent = "請填寫研究線名稱。"; err.hidden = false; name.focus(); return; }
+    save.disabled = true;
+    let slot = t.slot;
+    if (!slot) { const taken = new Set([...RM.tracks.values()].map((x) => x.slot)); slot = [1, 2, 3, 4, 5, 6, 7, 8].find((s) => !taken.has(s)) || 3; }
+    const data = { code: c, name: name.value.trim(), owner: owner.value.trim(), question: q.value.trim(), slot, order: t.order != null ? t.order : RM.tracks.size + 1, createdAt: t.createdAt || Date.now(), ...stamp() };
+    const ok = await writeDoc("tracks/" + c, data, "set");
+    save.disabled = false;
+    if (ok) { closeDrawer(); toast(id ? "已更新研究線" : "已新增研究線"); RM.filter = c; renderRoadmap(); }
+  } }, id ? "儲存" : "建立研究線");
+  const n = id ? RM.plans.filter((p) => p.track === id).length : 0;
+  let armed = false;
+  const del = id ? h("button", { class: "link-btn danger", type: "button", disabled: n ? true : null, title: n ? "這條線還有計畫，先移走或刪除計畫" : null, onclick: async () => {
+    if (!armed) { armed = true; del.textContent = "再按一次確定刪除"; setTimeout(() => { armed = false; del.textContent = "刪除研究線"; }, 4000); return; }
+    const ok = await writeDoc("tracks/" + id, null, "delete");
+    if (ok) { RM.filter = "all"; closeDrawer(); toast("已刪除研究線"); }
+  } }, "刪除研究線") : null;
+  openDrawer(id ? "編輯研究線" : "新增研究線", [
+    h("div", { class: "field" }, h("label", { for: "tk-code", text: "代號" }), code),
+    h("div", { class: "field" }, h("label", { for: "tk-name", text: "名稱" }), name),
+    h("div", { class: "field" }, h("label", { for: "tk-owner", text: "負責人" }), owner),
+    h("div", { class: "field" }, h("label", { for: "tk-q", text: "研究問題" }), q),
+    err, h("div", { class: "dfoot" }, h("span", { class: "who", text: n ? `這條線有 ${n} 個計畫` : "" }), del, save),
+  ]);
+}
+$("#btn-plan").addEventListener("click", newPlan);
+$("#btn-track").addEventListener("click", () => openTrack(null));
+initRoadmap();
+})();
+</script>
+</body>
+</html>
