@@ -107,7 +107,8 @@ def score(arm, items, out, cache):
     conditions = {"correct": lambda x: x["question"]}
     if arm.arm != "audio":
         conditions.update(wrong=lambda x: x["donor"], generic=lambda x: GENERIC_STEM, none=lambda x: None)
-    with out.open("w", encoding="utf-8", newline="") as handle, torch.no_grad():
+    partial = out.with_suffix(".partial")
+    with partial.open("w", encoding="utf-8", newline="") as handle, torch.no_grad():
         writer = csv.writer(handle)
         writer.writerow(["item", "path", "n", "mixture", "label", "condition", "order", "yes_minus_no"])
         for i, x in enumerate(items):
@@ -118,6 +119,7 @@ def score(arm, items, out, cache):
                     logits = arm.model.decode(latent, x["question"] + suffix)
                     margin = float(logits[0] - logits[1]) * (1 if order == 0 else -1)
                     writer.writerow([i, x["path"], x.get("n", ""), x.get("mixture", ""), x["label"], name, order, f"{margin:.5f}"])
+    partial.replace(out)
 
 
 def main():

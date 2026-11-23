@@ -96,22 +96,24 @@ def prepare(args):
     source_dir = args.out / "sources"
     source_dir.mkdir(parents=True, exist_ok=True)
     by_split = pools(plan)
-    needed = [r["filename"] for split in ("train", "development") for r in by_split[split]]
+    plan_splits = (("confirmation", "confirm"),) if args.confirmation else (("train", "train"), ("development", "dev"))
+    needed = [r["filename"] for split, _ in plan_splits for r in by_split[split]]
     with ThreadPoolExecutor(max_workers=8) as workers:
         list(workers.map(lambda name: download(f"{ESC}/audio/{name}", source_dir / name), needed))
-    rng = random.Random(settings["generation_seed"])
+    # Confirmation mixtures follow phase2/b2-v2/plan.json: same rules, generation seed 20261125, 100 per N.
+    rng = random.Random(20261125 if args.confirmation else settings["generation_seed"])
     total = round(settings["duration_seconds"] * RATE)
     slot = total // settings["slots"]
     event_n = round(settings["event_seconds"] * RATE)
     manifest, sources = {}, {}
-    for split, prefix in (("train", "train"), ("development", "dev")):
+    for split, prefix in plan_splits:
         by_category = defaultdict(list)
         for r in sorted(by_split[split], key=lambda r: r["filename"]):
             by_category[r["category"]].append(r)
         categories = sorted(by_category)
         for n in settings["event_counts"]:
             items = []
-            for m in range(settings["mixtures_per_count"][split]):
+            for m in range(settings["mixtures_per_count"].get(split, 100)):
                 present = rng.sample(categories, n)
                 clips = [rng.choice(by_category[c]) for c in present]
                 positions = sorted(rng.sample(range(settings["slots"]), n))
@@ -130,7 +132,7 @@ def prepare(args):
                 sf.write(path, recording * gain, RATE, subtype="FLOAT")
                 blocked = set().union(*(g for g in groups if g & set(present)))
                 absent = [c for c in categories if c not in present and c not in blocked]
-                k = 1 if split == "development" else min(n, 3)
+                k = min(n, 3) if split == "train" else 1
                 yes = rng.sample(present, k)
                 no = rng.sample(absent, k)
                 asked = [(c, 0) for c in yes] + [(c, 1) for c in no]
@@ -141,8 +143,11 @@ def prepare(args):
             manifest[f"{prefix}_N{n}"] = items
             print(split, n, len(items), "questions", flush=True)
     manifest["plan_sha256"] = digest
-    manifest["train"] = [x for n in settings["event_counts"] for x in manifest[f"train_N{n}"]]
-    manifest["val"] = [x for n in settings["event_counts"] for x in manifest[f"dev_N{n}"]]
+    if args.confirmation:
+        manifest["val"] = [x for n in settings["event_counts"] for x in manifest[f"confirm_N{n}"]]
+    else:
+        manifest["train"] = [x for n in settings["event_counts"] for x in manifest[f"train_N{n}"]]
+        manifest["val"] = [x for n in settings["event_counts"] for x in manifest[f"dev_N{n}"]]
     (args.out / "manifest.json").write_text(json.dumps(manifest, indent=1), encoding="utf-8")
     used = {s: sorted({r["src_file"] for r in by_split[s]}) for s in by_split}
     assert not set(used["development"]) & set(used["confirmation"])
@@ -323,6 +328,7 @@ if __name__ == "__main__":
     parser.add_argument("action", choices=["prepare", "control", "report"])
     parser.add_argument("--plan", type=Path, required=True)
     parser.add_argument("--out", type=Path, default=Path("data/b2mix"))
+    parser.add_argument("--confirmation", action="store_true", help="Generate the held-out fold 2 confirmation half")
     parser.add_argument("--scores", type=Path)
     parser.add_argument("--manifest", type=Path, default=Path("data/b2mix/manifest.json"))
     parser.add_argument("--feature-cache", type=Path)
