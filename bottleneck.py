@@ -16,18 +16,37 @@ from baseline import MODEL_DIR, waveform
 from prepare import ESC, download
 
 
+GENERIC_STEM = "What can be heard in this recording?"
+
+
 class Compressor(nn.Module):
-    def __init__(self, width, k):
+    """K learned queries attend over projected audio features.
+
+    condition="add" adds a linear projection of the question to every query (the original pilot).
+    condition="gated" bounds that term: it is unit-normalized and scaled by tanh of a zero-initialized gate.
+    """
+    def __init__(self, width, k, condition="add"):
         super().__init__()
         self.keys = nn.Linear(width, 64, bias=False)
         self.queries = nn.Parameter(torch.randn(k, 64) * 0.1)
         self.condition = nn.Linear(width, 64, bias=False)
+        self.mode = condition
+        if condition == "gated":
+            self.gate = nn.Parameter(torch.zeros(()))
+        self.magnitude = None  # probe mode: replace tanh(gate) with a fixed norm for the question term
+
+    def question_term(self, question):
+        term = self.condition(question)
+        if self.mode == "gated":
+            scale = torch.tanh(self.gate) if self.magnitude is None else self.magnitude
+            term = scale * F.normalize(term, dim=-1)
+        return term
 
     def forward(self, audio, question=None):
         k = len(self.queries)
         queries = self.queries
         if question is not None:
-            queries = queries + self.condition(question)
+            queries = queries + self.question_term(question)
         weights = (queries @ self.keys(F.layer_norm(audio, audio.shape[-1:])).T / math.sqrt(64)).softmax(-1)
         pooled = F.adaptive_avg_pool1d(audio.T.unsqueeze(0), k)[0].T
         return pooled + weights @ audio - audio.mean(0)
@@ -35,7 +54,7 @@ class Compressor(nn.Module):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("mode", choices=["train", "eval", "pool"])
+    parser.add_argument("mode", choices=["train", "eval", "pool", "probe"])
     parser.add_argument("--out", type=Path, required=True)
     parser.add_argument("--steps", type=int, default=16)
     parser.add_argument("--k", type=int, default=16)
@@ -44,10 +63,26 @@ def main():
     parser.add_argument("--conditioned", action="store_true")
     parser.add_argument("--wandb", action="store_true")
     parser.add_argument("--init-from", type=Path, help="Warm-start from an audio-only compressor; reset AdamW and zero the question projection")
+    parser.add_argument("--condition", choices=["add", "gated"], default="add",
+                        help="Question term: original additive projection, or unit-normalized with a zero-init tanh gate")
+    parser.add_argument("--center-question", action="store_true",
+                        help="Subtract the mean training-stem embedding before normalizing the question vector")
+    parser.add_argument("--question-repr", choices=["embed", "hidden"], default="embed",
+                        help="Question vector: mean input token embedding, or mean hidden state of the frozen LM")
+    parser.add_argument("--question-layer", type=int, default=16, help="LM layer for --question-repr hidden")
+    parser.add_argument("--gate-lr", type=float, default=0.01, help="Learning rate of the gate in --condition gated")
+    parser.add_argument("--manifest", type=Path, default=Path("data/clotho/manifest.json"))
+    parser.add_argument("--train-split", default="train", help="Manifest split used for training")
+    parser.add_argument("--extra-split", help="Additional manifest split to evaluate, e.g. val_extra")
+    parser.add_argument("--feature-cache", type=Path, help="Directory for cached projected audio features")
+    parser.add_argument("--magnitudes", type=float, nargs="+", default=[0, 0.25, 0.5, 1, 2, 4, 8, 16],
+                        help="probe: fixed norms of the question term, evaluated with correct and wrong stems")
     parser.add_argument("--pool-ks", type=int, nargs="+", default=[4, 16], help="Slot counts for the fixed pooling evaluation")
     args = parser.parse_args()
     if args.mode == "pool" and (not args.clotho or args.conditioned or min(args.pool_ks) < 1):
         parser.error("pool requires --clotho and positive slot counts without --conditioned")
+    if args.mode == "probe" and (not args.conditioned or args.condition != "gated"):
+        parser.error("probe requires --conditioned --condition gated")
     if args.init_from and (args.mode != "train" or not args.clotho):
         parser.error("--init-from requires train --clotho")
     args.out.mkdir(exist_ok=True, parents=True)
@@ -61,7 +96,7 @@ def main():
                                                               device_map={"": 0}).eval().requires_grad_(False)
     lm = base.language_model
     embed = lm.get_input_embeddings()
-    comp = Compressor(embed.embedding_dim, args.k).cuda()
+    comp = Compressor(embed.embedding_dim, args.k, args.condition).cuda()
     choices = [proc.tokenizer.encode(x, add_special_tokens=False) for x in "AB"]
     assert all(len(x) == 1 for x in choices)
     ids = [x[0] for x in choices]
@@ -69,7 +104,7 @@ def main():
     donor_stems = {}
     suffix = "\nA. yes\nB. no\nAnswer with only A or B."
     if args.clotho:
-        manifest = json.loads(Path("data/clotho/manifest.json").read_text())
+        manifest = json.loads(args.manifest.read_text())
         def samples(split):
             rows = []
             for item in manifest[split]:
@@ -77,7 +112,8 @@ def main():
                 donor_stems[item["path"], question] = item["donor"]
                 rows.append((item["path"], question, item["label"]))
             return rows
-        train, test = samples("train"), samples("val")
+        train, test = samples(args.train_split), samples("val")
+        extra = samples(args.extra_split) if args.extra_split else []
     else:
         with open("data/esc50.csv") as handle:
             metadata = list(csv.DictReader(handle))
@@ -92,9 +128,15 @@ def main():
                 download(ESC + "/audio/" + row["filename"], path)
                 train.append((str(path), q, label))
                 test.append((heldout, q, label))
+        extra = []
+
+    def cache_file(path):
+        return args.feature_cache / (hashlib.sha1(path.encode()).hexdigest() + ".pt")
 
     @torch.no_grad()
     def features(path):
+        if path not in cache and args.feature_cache and cache_file(path).exists():
+            cache[path] = torch.load(cache_file(path), weights_only=True)
         if path not in cache:
             prompt = proc.apply_chat_template([{"role":"user","content":[{"type":"audio","audio_url":path}]}],
                                                 tokenize=False, add_generation_prompt=True)
@@ -109,6 +151,11 @@ def main():
             finally:
                 hook.remove()
             assert cache[path].shape[0] > 0
+            if args.feature_cache:
+                args.feature_cache.mkdir(parents=True, exist_ok=True)
+                tmp = cache_file(path).with_suffix(f".{torch.cuda.current_device()}.{id(cache)}.part")
+                torch.save(cache[path], tmp)
+                tmp.replace(cache_file(path))
         return cache[path].cuda().float()
 
     def decode(latent, question):
@@ -121,18 +168,42 @@ def main():
         sequence = torch.cat((text[:, :index], latent[None].to(text.dtype), text[:, index+1:]), dim=1)
         return lm(inputs_embeds=sequence, use_cache=False).logits[0,-1,ids].float()
 
-    def compress(path, question, swap=False, *, conditioned=None):
+    stem_cache = {}
+
+    def pooled_stem(stem):
+        tokens = proc.tokenizer(stem, add_special_tokens=False, return_tensors="pt").input_ids.cuda()
+        if args.question_repr == "embed":
+            return embed(tokens).float().mean(dim=1)
+        if stem not in stem_cache:
+            with torch.no_grad():
+                hidden = lm(input_ids=tokens, output_hidden_states=True, use_cache=False).hidden_states
+                stem_cache[stem] = hidden[args.question_layer].float().mean(dim=1)
+        return stem_cache[stem]
+
+    center = None
+    if args.center_question:
+        with torch.no_grad():
+            stems = sorted({q.split("\n")[0] for _, q, _ in train})
+            center = torch.cat([pooled_stem(stem) for stem in stems]).mean(0, keepdim=True)
+
+    def question_vector(stem):
+        vector = pooled_stem(stem)
+        if center is not None:
+            vector = vector - center
+        return F.layer_norm(vector, (embed.embedding_dim,))
+
+    def compress(path, question, swap=False, *, conditioned=None, stem=None):
         condition = None
         if conditioned is None:
             conditioned = args.conditioned
         if conditioned:
-            stem = donor_stems[path, question] if swap else question.split("\n")[0]
-            tokens = proc.tokenizer(stem, add_special_tokens=False, return_tensors="pt").input_ids.cuda()
-            condition = F.layer_norm(embed(tokens).float().mean(dim=1), (embed.embedding_dim,))
+            if stem is None:
+                stem = donor_stems[path, question] if swap else question.split("\n")[0]
+            condition = question_vector(stem)
         return comp(features(path), condition)
 
     @torch.no_grad()
-    def evaluate(samples, swap=False, full=False, text_only=False, pool_k=None):
+    def evaluate(samples, swap=False, full=False, text_only=False, pool_k=None, stem=None, conditioned=None):
         rows = []
         for path, question, target in samples:
             if text_only:
@@ -145,7 +216,8 @@ def main():
                     audio = features(path)
                     latent = F.adaptive_avg_pool1d(audio.T.unsqueeze(0), pool_k)[0].T
                 else:
-                    latent = features(path) if full else compress(path, question, swap)
+                    latent = features(path) if full else compress(path, question, swap,
+                                                                  conditioned=conditioned, stem=stem)
                 scores = decode(latent, question)
             rows.append(dict(path=path, question=question, target=target, prediction=scores.argmax().item(),
                              loss=F.cross_entropy(scores[None], torch.tensor([target],device="cuda")).item()))
@@ -166,10 +238,28 @@ def main():
         })
         print("RUN_URL",run.url,flush=True)
     if args.init_from:
-        comp.load_state_dict(torch.load(args.init_from, weights_only=True))
-        nn.init.zeros_(comp.condition.weight)
-    if args.mode == "eval":
+        missing, unexpected = comp.load_state_dict(torch.load(args.init_from, weights_only=True), strict=False)
+        assert not unexpected and set(missing) <= {"gate"}, (missing, unexpected)
+        if args.condition == "add":
+            nn.init.zeros_(comp.condition.weight)
+        # In gated mode the zero gate already silences the question term; the projection keeps the parent's init.
+    if args.mode in ("eval", "probe"):
         comp.load_state_dict(torch.load(checkpoint, weights_only=True))
+    if args.mode == "probe":
+        samples_ = extra or test
+        query_norm = comp.queries.norm(dim=-1).mean().item()
+        probe = dict(query_norm=query_norm, learned_gate=torch.tanh(comp.gate).item(),
+                     split=args.extra_split or "val", magnitudes=[])
+        for magnitude in args.magnitudes:
+            comp.magnitude = magnitude
+            right, wrong = evaluate(samples_), evaluate(samples_, swap=True)
+            probe["magnitudes"].append(dict(magnitude=magnitude, ratio_to_query=magnitude/query_norm,
+                correct_stem=right["correct"], wrong_stem=wrong["correct"], n=right["n"],
+                yes_rate=sum(r["prediction"] == 0 for r in right["rows"])/right["n"],
+                same_prediction=sum(a["prediction"] == b["prediction"] for a, b in zip(right["rows"], wrong["rows"]))))
+            print("PROBE", json.dumps(probe["magnitudes"][-1]), flush=True)
+        (args.out / "probe.json").write_text(json.dumps(probe, indent=2))
+        return
     for path, _, _ in train + test:
         features(path)
     with torch.no_grad():
@@ -194,15 +284,21 @@ def main():
             path, question, label = train[0]
             loss = F.cross_entropy(decode(compress(path, question, conditioned=True), question)[None],
                                    torch.tensor([label],device="cuda"))
-            grad, = torch.autograd.grad(loss, comp.condition.weight)
-            assert torch.isfinite(grad).all() and grad.norm().item() > 0
+            params = [comp.condition.weight] + ([comp.gate] if args.condition == "gated" else [])
+            grads = torch.autograd.grad(loss, params)
+            assert all(torch.isfinite(g).all() for g in grads) and sum(g.norm() for g in grads).item() > 0
             result["warm_start"] = dict(checkpoint=str(args.init_from),
                 sha256=hashlib.sha256(args.init_from.read_bytes()).hexdigest(),
                 steps=args.steps, checked_questions=len(test), max_logit_delta=max_delta,
-                question_grad_norm=grad.norm().item())
+                question_grad_norm=grads[0].norm().item())
+            if args.condition == "gated":
+                result["warm_start"]["gate_grad"] = grads[1].item()
             result["heldout_before"] = evaluate(test)
         result["before"] = evaluate(train)
-        opt = torch.optim.AdamW(comp.parameters(), lr=0.001)
+        groups = [dict(params=[p for n, p in comp.named_parameters() if n != "gate"])]
+        if args.condition == "gated":
+            groups.append(dict(params=[comp.gate], lr=args.gate_lr, weight_decay=0.0))
+        opt = torch.optim.AdamW(groups, lr=0.001)
         for step in range(args.steps):
             if step % len(train) == 0:
                 rng.shuffle(train)
@@ -218,7 +314,10 @@ def main():
                 old = comp.keys.weight.detach().clone()
             opt.step()
             if args.clotho:
-                print("METRIC", json.dumps(dict(step=step+1, loss=loss.item(), gradient_norm=norm.item())), flush=True)
+                metric = dict(step=step+1, loss=loss.item(), gradient_norm=norm.item())
+                if args.condition == "gated":
+                    metric["gate"] = torch.tanh(comp.gate).item()
+                print("METRIC", json.dumps(metric), flush=True)
             if run:
                 run.log({"train/loss":loss.item(), "train/gradient_norm":norm.item()},step=step+1)
             if step == 0:
@@ -231,6 +330,25 @@ def main():
     if args.clotho and not args.conditioned:
         result["full_audio"] = evaluate(test, full=True)
         result["text_only"] = evaluate(test, text_only=True)
+    if args.condition != "add" or args.center_question or args.extra_split or args.question_repr != "embed":
+        result["config"] = dict(condition=args.condition, center_question=args.center_question,
+                                question_repr=args.question_repr, question_layer=args.question_layer,
+                                gate_lr=args.gate_lr, manifest=str(args.manifest),
+                                train_split=args.train_split, extra_split=args.extra_split)
+    if args.conditioned and (args.condition != "add" or args.center_question or args.question_repr != "embed"):
+        if args.condition == "gated":
+            result["gate"] = torch.tanh(comp.gate).item()
+        result["generic_question"] = evaluate(test, stem=GENERIC_STEM)
+        result["no_question"] = evaluate(test, conditioned=False)
+    if extra:
+        result["extra"] = dict(heldout=evaluate(extra))
+        if args.conditioned:
+            result["extra"]["wrong_question"] = evaluate(extra, swap=True)
+            result["extra"]["generic_question"] = evaluate(extra, stem=GENERIC_STEM)
+            result["extra"]["no_question"] = evaluate(extra, conditioned=False)
+        else:
+            result["extra"]["full_audio"] = evaluate(extra, full=True)
+            result["extra"]["text_only"] = evaluate(extra, text_only=True)
     if run:
         for key in ("train","heldout","wrong_question","full_audio"):
             if key in result:
