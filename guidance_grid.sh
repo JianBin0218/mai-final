@@ -8,8 +8,11 @@
 # ARMS defaults to "audio add gated gatedc"; gatedh / gatedch use the LM's layer-16 hidden state
 # instead of mean token embeddings for the question.
 # Completed runs (train.json present) are skipped, so the script can be resumed.
+# MODE=eval rescores finished arms on data/clotho/fresh_val.json (split val, shared with track A)
+# and writes eval.json beside train.json; parents are not rescored.
 set -euo pipefail
 cd "$(dirname "$0")"
+mode=${MODE:-train}
 gpu=$1; ks=$2; seeds=$3; root=${4:-runs/guidance}; split=${5:-train}; steps=${6:-192}; arms=${7:-audio add gated gatedc}
 export CUDA_DEVICE_ORDER=PCI_BUS_ID CUDA_VISIBLE_DEVICES=$gpu OMP_NUM_THREADS=4 OPENBLAS_NUM_THREADS=4 MKL_NUM_THREADS=4
 py=${MAI_PYTHON:-.venv/bin/python}
@@ -17,6 +20,12 @@ common=(--clotho --steps "$steps" --manifest data/clotho/manifest_extended.json 
 mkdir -p "$root"
 run() {
     local out=$1; shift
+    if [[ $mode == eval ]]; then
+        [[ -f $out/eval.json || $out == *-parent || ! -f $out/compressor.pt ]] && return
+        echo "$(date +%T) eval $out" >&2
+        "$py" -u bottleneck.py eval --out "$out" "$@" > "$out.eval.log" 2>&1
+        return
+    fi
     [[ -f $out/train.json ]] && return
     rm -rf "$out"
     echo "$(date +%T) start $out" >&2
@@ -26,7 +35,12 @@ for k in $ks; do
     for seed in $seeds; do
         base=$root/k$k-s$seed
         run "$base-parent" "${common[@]}" --k "$k" --seed "$seed"
-        warm=("${common[@]}" --k "$k" --seed "$seed" --init-from "$base-parent/compressor.pt" --extra-split val_extra)
+        warm=("${common[@]}" --k "$k" --seed "$seed")
+        if [[ $mode == eval ]]; then
+            warm+=(--extra-manifest data/clotho/fresh_val.json --extra-split val)
+        else
+            warm+=(--init-from "$base-parent/compressor.pt" --extra-split val_extra)
+        fi
         for arm in $arms; do
             case $arm in
                 audio)   run "$base-audio" "${warm[@]}" ;;

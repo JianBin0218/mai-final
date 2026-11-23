@@ -133,3 +133,25 @@ Both arms decode the same question and A/B options. Only the conditioned compres
 ```
 
 將 fresh-controls 下四個 JSON 放入本機 phase2/fresh-controls，執行 `python analyze_controls.py`（NumPy）會生成逐題型 metrics.csv 與配對 contrasts.csv。yes/no recall 分別以各自正解數為分母；balanced accuracy 是兩者的平均。差異區間以錄音為單位配對 bootstrap，條件在本次三個固定訓練 seed 與單一 donor 排列。
+
+## Track B: question-guidance grid
+
+Prepare the extended manifest (adds `val_extra` and a 768-question `train_large`; `manifest.json` is unchanged) and Jianbin's shared `fresh_val.json`:
+
+```bash
+.venv/bin/python prepare_clotho.py --extended
+.venv/bin/python prepare_clotho.py --fresh-val
+```
+
+`guidance_grid.sh GPU "K..." "SEED..." [OUT_ROOT] [TRAIN_SPLIT] [STEPS] [ARMS]` trains an audio-only parent per K and seed, then warm-starts each arm from it: `audio`, `add` (original), `gated` (unit-normalized question term with a zero-init tanh gate), `gatedc` (gated, centered question embeddings), `gatedh`/`gatedch` (frozen-LM layer-16 hidden state). Features are cached under `cache/features`; finished runs are skipped. One GPU fits one run (16 GiB peak).
+
+```bash
+bash guidance_grid.sh 0 "1 4 16" "17 18 19"                                         # 96 training questions
+bash guidance_grid.sh 1 "1 4" "17 18 19" runs/guidance-large train_large 1536 "audio gated gatedc"
+MODE=eval bash guidance_grid.sh 0 "1 4 16" "17 18 19" runs/guidance train 192 "audio add gated gatedc gatedh gatedch"
+.venv/bin/python bottleneck.py probe --clotho --conditioned --condition gated --center-question --k 16 --seed 17 \
+    --out runs/guidance/k16-s17-gatedc --manifest data/clotho/manifest_extended.json \
+    --extra-manifest data/clotho/fresh_val.json --extra-split val --feature-cache cache/features
+python export_guidance.py      # writes phase2/guidance-v1 from runs/
+python compare_guidance.py     # --grid large, --split val, --probe
+```

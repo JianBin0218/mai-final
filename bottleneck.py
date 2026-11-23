@@ -311,7 +311,7 @@ def main():
         samples_ = extra or test
         query_norm = comp.queries.norm(dim=-1).mean().item()
         probe = dict(query_norm=query_norm, learned_gate=torch.tanh(comp.gate).item(),
-                     split=args.extra_split or "val", magnitudes=[])
+                     split=args.extra_split or "val", manifest=str(args.extra_manifest or args.manifest), magnitudes=[])
         for magnitude in args.magnitudes:
             comp.magnitude = magnitude
             right, wrong = evaluate(samples_), evaluate(samples_, swap=True)
@@ -320,7 +320,8 @@ def main():
                 yes_rate=sum(r["prediction"] == 0 for r in right["rows"])/right["n"],
                 same_prediction=sum(a["prediction"] == b["prediction"] for a, b in zip(right["rows"], wrong["rows"]))))
             print("PROBE", json.dumps(probe["magnitudes"][-1]), flush=True)
-        (args.out / "probe.json").write_text(json.dumps(probe, indent=2))
+        name = f"probe-{args.extra_manifest.stem}.json" if args.extra_manifest else "probe.json"
+        (args.out / name).write_text(json.dumps(probe, indent=2))
         return
     for path, _, _ in train + test:
         features(path)

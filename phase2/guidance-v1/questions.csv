@@ -1,0 +1,405 @@
+split,qid,path,stem,target
+val,0,data/clotho/Night Frogs.wav,Is this noise consistent?,0
+val,1,data/clotho/Night Frogs.wav,Does this sound come from a human?,1
+val,2,data/clotho/Steam 20.wav,Is the beat steady?,0
+val,3,data/clotho/Steam 20.wav,Is a doctor talking to the patient?,1
+val,4,data/clotho/carnival_parade_cologne_1.wav,Is there music playing?,0
+val,5,data/clotho/carnival_parade_cologne_1.wav,Are there lots of animal sounds?,1
+val,6,data/clotho/Babble of Frogs 001.wav,Are there living things here?,0
+val,7,data/clotho/Babble of Frogs 001.wav,Is there a woman singing?,1
+val,8,data/clotho/Walking in Grass in Evening with Loud Bird.wav,Is the person outside?,0
+val,9,data/clotho/Walking in Grass in Evening with Loud Bird.wav,Could the person be in walking in a room?,1
+val,10,data/clotho/Bathtub_Water-drain.wav,is there water?,0
+val,11,data/clotho/Bathtub_Water-drain.wav,are there waves?,1
+val,12,data/clotho/Walking on pebble beach.wav,Does the person walk at the same speed as time goes on?,0
+val,13,data/clotho/Walking on pebble beach.wav,Is a cat hissing?,1
+val,14,data/clotho/05769 carpenter&#39;s workshop ambience.wav,Can voices be heard in this recording?,0
+val,15,data/clotho/05769 carpenter&#39;s workshop ambience.wav,Is this a person?,1
+val,16,data/clotho/DR0000_0020.wav,Is it drizzling in the place?,0
+val,17,data/clotho/DR0000_0020.wav,is there a large storm?,1
+val,18,data/clotho/bird in the Hague at dawn 5.wav,Are some birds closer than others?,0
+val,19,data/clotho/bird in the Hague at dawn 5.wav,Is a snake slithering through dry leaves?,1
+val,20,data/clotho/outdoors ambient  village bird distant neighbours children car.wav,Are birds chirping?,0
+val,21,data/clotho/outdoors ambient  village bird distant neighbours children car.wav,Are people speaking?,1
+val,22,data/clotho/amazon 04.wav,Are there animals outside?,0
+val,23,data/clotho/amazon 04.wav,Is this in a church?,1
+val,24,data/clotho/CoffeeShopChatter.wav,Are the people in a very crowded place?,0
+val,25,data/clotho/CoffeeShopChatter.wav,Are the people in a nursery?,1
+val,26,data/clotho/Streatham Railway Station and on a Train.wav,Can humans be heard talking?,0
+val,27,data/clotho/Streatham Railway Station and on a Train.wav,Is a cat scratching something?,1
+val,28,data/clotho/T24_home_dishwasher_cycle change.wav,Are multiple sounds heard?,0
+val,29,data/clotho/T24_home_dishwasher_cycle change.wav,Is anyone riding on a carousel?,1
+val,30,data/clotho/windscreen wipers heavy rain.wav,Is there windshield wipers wiping the rain off the car?,0
+val,31,data/clotho/windscreen wipers heavy rain.wav,Is there a turn signal on?,1
+val,32,data/clotho/Walking On Dry Leaves Normalised.wav,Does it sound crispy?,0
+val,33,data/clotho/Walking On Dry Leaves Normalised.wav,Can the ocean be heard?,1
+val,34,data/clotho/Building Site.wav,Is there a machine running?,0
+val,35,data/clotho/Building Site.wav,Is someone coughing?,1
+val,36,data/clotho/Waterfall close.wav,Is this loud?,0
+val,37,data/clotho/Waterfall close.wav,Is a person chopping wood?,1
+val,38,data/clotho/Writing with Pen.wav,Was a page flipped?,0
+val,39,data/clotho/Writing with Pen.wav,Is a dog barking in the background?,1
+val,40,data/clotho/Tools .wav,Are metallic objects being moved?,0
+val,41,data/clotho/Tools .wav,Are people singing?,1
+val,42,data/clotho/slam.wav,Is that sound of something being hit?,0
+val,43,data/clotho/slam.wav,Are children fighting?,1
+val,44,data/clotho/100121.wav,Is it raining in this place?,0
+val,45,data/clotho/100121.wav,Is it good weather in this area?,1
+val,46,"data/clotho/Kortedala, Gothenburg - By night - Police sirens and surroundings.wav",Is the sound continuous?,0
+val,47,"data/clotho/Kortedala, Gothenburg - By night - Police sirens and surroundings.wav",Is there a woman crying?,1
+val,48,data/clotho/HeavyRain.wav,Is the rain heavy?,0
+val,49,data/clotho/HeavyRain.wav,Is a priest giving a sermon?,1
+val,50,data/clotho/Conversacion Punjabi.wav,are both people male?,0
+val,51,data/clotho/Conversacion Punjabi.wav,Is only one person talking?,1
+val,52,data/clotho/vague_sable.wav,Is the hissing sound after each cycle cause by water receding from the sand?,0
+val,53,data/clotho/vague_sable.wav,Is this happening in a mountain stream?,1
+val,54,data/clotho/Thunder Outside.wav,Is there a large strike of thunder?,0
+val,55,data/clotho/Thunder Outside.wav,Are people running away from the thunder?,1
+val,56,data/clotho/More Amphitheatre Birds. Wav.wav,Is there a series of squeaks?,0
+val,57,data/clotho/More Amphitheatre Birds. Wav.wav,Are the sounds low pitched?,1
+val,58,data/clotho/Menziken Sawmill.wav,Is there an engine?,0
+val,59,data/clotho/Menziken Sawmill.wav,Is the area crowded?,1
+val,60,data/clotho/Evening Atmosphere #2.wav,Is there more than one animal in the recording?,0
+val,61,data/clotho/Evening Atmosphere #2.wav,Is there a rainstorm?,1
+val,62,data/clotho/20100515.park.ambiance.02.wav,Are there birds around?,0
+val,63,data/clotho/20100515.park.ambiance.02.wav,Is this inside of a restaurant?,1
+fresh_val,64,data/clotho/fireworks1.wav,Is the popping sound happening outside?,0
+fresh_val,65,data/clotho/fireworks1.wav,Are there insects buzzing?,1
+fresh_val,66,data/clotho/Vending Machines - Room Tone.wav,Is there constant white noise?,0
+fresh_val,67,data/clotho/Vending Machines - Room Tone.wav,Is the beginning silent?,1
+fresh_val,68,data/clotho/Nord_Odal_Nyhus_04_juni_2011_quiet_forest_birds_insects_leaf_rustle_03.wav,Is it a rainy day?,0
+fresh_val,69,data/clotho/Nord_Odal_Nyhus_04_juni_2011_quiet_forest_birds_insects_leaf_rustle_03.wav,Are people talking?,1
+fresh_val,70,data/clotho/SinkWater.wav,Does water go down a drain?,0
+fresh_val,71,data/clotho/SinkWater.wav,Is it silent at the beginning?,1
+fresh_val,72,data/clotho/Motor boat.wav,Is the sound constant?,0
+fresh_val,73,data/clotho/Motor boat.wav,Does a teakettle whistle?,1
+fresh_val,74,data/clotho/Edit Radio .wav,Is someone changing stations in the radio?,0
+fresh_val,75,data/clotho/Edit Radio .wav,Is a person running?,1
+fresh_val,76,data/clotho/heating_far away.wav,Is the sound of water constant?,0
+fresh_val,77,data/clotho/heating_far away.wav,Is a parrot squawking?,1
+fresh_val,78,data/clotho/Machete vs frying pan 2.wav,Is someone using something metallic?,0
+fresh_val,79,data/clotho/Machete vs frying pan 2.wav,Is someone using something wooden?,1
+fresh_val,80,data/clotho/Birdsong2.wav,Are the birds outside?,0
+fresh_val,81,data/clotho/Birdsong2.wav,Is someone speaking?,1
+fresh_val,82,data/clotho/13_waiting_chitwan.wav,Is this in nature?,0
+fresh_val,83,data/clotho/13_waiting_chitwan.wav,are there any cats meowing?,1
+fresh_val,84,"data/clotho/Koeien, R4 en riet Lichterveldestraat.wav",Is this activity happening on a roadway?,0
+fresh_val,85,"data/clotho/Koeien, R4 en riet Lichterveldestraat.wav",Is it safe to cross this roadway on foot?,1
+fresh_val,86,data/clotho/St. Marks NWR Wind at the Marina.wav,Is this in nature?,0
+fresh_val,87,data/clotho/St. Marks NWR Wind at the Marina.wav,Is this inside?,1
+fresh_val,88,"data/clotho/Vomit, puking spilling water onto grass splat.wav",Is something being poured out?,0
+fresh_val,89,"data/clotho/Vomit, puking spilling water onto grass splat.wav",Was liquid nitrogen used?,1
+fresh_val,90,data/clotho/LOUD THUNDER - WITH RAIN HITTING UMBRELLA.wav,Can birds be heard chirping?,0
+fresh_val,91,data/clotho/LOUD THUNDER - WITH RAIN HITTING UMBRELLA.wav,Do the noises come from a machine?,1
+fresh_val,92,data/clotho/crumpleTissuePaper.wav,Is something being crinkled?,0
+fresh_val,93,data/clotho/crumpleTissuePaper.wav,Are glass marbles being dropped?,1
+fresh_val,94,data/clotho/Plane crash - black box.wav,are there two different voices?,0
+fresh_val,95,data/clotho/Plane crash - black box.wav,is it raining?,1
+fresh_val,96,data/clotho/Traffic Light.wav,Are there people talking in the background?,0
+fresh_val,97,data/clotho/Traffic Light.wav,Is there complete silence in the background?,1
+fresh_val,98,data/clotho/Centurion Suburb Evening.wav,Is there a bird chirping?,0
+fresh_val,99,data/clotho/Centurion Suburb Evening.wav,Is there an engine running?,1
+fresh_val,100,data/clotho/indoors house dorm dormitory ambient room tone distant motor.wav,Is an engine making a sound?,0
+fresh_val,101,data/clotho/indoors house dorm dormitory ambient room tone distant motor.wav,Are dogs barking?,1
+fresh_val,102,data/clotho/20141026 Bangkok House Traffic Thunder Bird 01.wav,Is there a bird?,0
+fresh_val,103,data/clotho/20141026 Bangkok House Traffic Thunder Bird 01.wav,Was there a lot of honking?,1
+fresh_val,104,data/clotho/paper_bag.wav,Is there a crumpling sound?,0
+fresh_val,105,data/clotho/paper_bag.wav,Is there a voice?,1
+fresh_val,106,data/clotho/Fuente Cotino 2.wav,Is the water hitting a man-made structure?,0
+fresh_val,107,data/clotho/Fuente Cotino 2.wav,Is this a person speaking?,1
+fresh_val,108,data/clotho/CityPark Evening Moerputten NL 130510_01.wav,Is there more than one bird chirping?,0
+fresh_val,109,data/clotho/CityPark Evening Moerputten NL 130510_01.wav,Is this in the city?,1
+fresh_val,110,data/clotho/greece_melanes_cofee_1.wav,Are there birds in the background?,0
+fresh_val,111,data/clotho/greece_melanes_cofee_1.wav,Is a girl laughing?,1
+fresh_val,112,data/clotho/laundry.machine.wav,Is a machine making the noises?,0
+fresh_val,113,data/clotho/laundry.machine.wav,Are there people talking?,1
+fresh_val,114,data/clotho/Hanoi street walking.wav,Is there more than one person around?,0
+fresh_val,115,data/clotho/Hanoi street walking.wav,is anyone laughing?,1
+fresh_val,116,data/clotho/Rain falling on a metal roof - 96 kHz _ 24 Bit.wav,Is the rain steady?,0
+fresh_val,117,data/clotho/Rain falling on a metal roof - 96 kHz _ 24 Bit.wav,Is someone chewing gum?,1
+fresh_val,118,data/clotho/traffic stereo.wav,Is there a car radio playing?,0
+fresh_val,119,data/clotho/traffic stereo.wav,Are birds chirping?,1
+fresh_val,120,data/clotho/Cable Car Ride Birds.wav,Is there a loud bang?,0
+fresh_val,121,data/clotho/Cable Car Ride Birds.wav,is there no creaking?,1
+fresh_val,122,data/clotho/AGFA_1.wav,Does the sound follow the same rhythm in sequence?,0
+fresh_val,123,data/clotho/AGFA_1.wav,Does the sound come from a human voice?,1
+fresh_val,124,data/clotho/Page turns and book close_open.wav,Do they ever stop flipping the pages?,0
+fresh_val,125,data/clotho/Page turns and book close_open.wav,Do they lick their thumbs in between page flips?,1
+fresh_val,126,data/clotho/UnionStation06OutBack_BusyOutside.wav,Are people talking?,0
+fresh_val,127,data/clotho/UnionStation06OutBack_BusyOutside.wav,Is the person alone?,1
+fresh_val,128,data/clotho/Basement Water Pump.wav,Is a machine making the sounds?,0
+fresh_val,129,data/clotho/Basement Water Pump.wav,Is anyone talking?,1
+fresh_val,130,data/clotho/diesel_train_comes.wav,Can a vehicle be heard pulling up?,0
+fresh_val,131,data/clotho/diesel_train_comes.wav,Can a person be heard over a speaker?,1
+fresh_val,132,data/clotho/birdy.wav,Are there any birds chirping?,0
+fresh_val,133,data/clotho/birdy.wav,Are there any dogs barking?,1
+fresh_val,134,data/clotho/Charleston Campus Summer.wav,Is there more than one person present?,0
+fresh_val,135,data/clotho/Charleston Campus Summer.wav,Can any cars be heard driving by?,1
+fresh_val,136,data/clotho/julies media.wav,Is there music playing?,0
+fresh_val,137,data/clotho/julies media.wav,Did the siren ever get any louder each time it played?,1
+fresh_val,138,data/clotho/metal-bell-percussion.wav,does the speed of the taps change?,0
+fresh_val,139,data/clotho/metal-bell-percussion.wav,can anyone be heard talking?,1
+fresh_val,140,data/clotho/Room tone for quiet bathroom.wav,Is the sound static?,0
+fresh_val,141,data/clotho/Room tone for quiet bathroom.wav,Is this slow moving mud?,1
+fresh_val,142,data/clotho/12 noon church-bell 140310_0121.wav,Are there birds?,0
+fresh_val,143,data/clotho/12 noon church-bell 140310_0121.wav,Is it inside?,1
+fresh_val,144,data/clotho/Walking alongside the road.wav,Does a vehicle drive by?,0
+fresh_val,145,data/clotho/Walking alongside the road.wav,Is the person eating something?,1
+fresh_val,146,data/clotho/Song Birds-Lighthouse Park-March.wav,Is singing of any kind taking place?,0
+fresh_val,147,data/clotho/Song Birds-Lighthouse Park-March.wav,Is there a child talking?,1
+fresh_val,148,data/clotho/2013-03-28 rain in the rainforest.wav,Is rain landing on the ground?,0
+fresh_val,149,data/clotho/2013-03-28 rain in the rainforest.wav,Is there a group of people?,1
+fresh_val,150,data/clotho/WavesOnTheShore.wav,Is someone sloshing water around?,0
+fresh_val,151,data/clotho/WavesOnTheShore.wav,Can more that a dozen people be heard?,1
+fresh_val,152,data/clotho/SpringPeepersMarch2012.wav,It the sound high pitched?,0
+fresh_val,153,data/clotho/SpringPeepersMarch2012.wav,Are dogs barking?,1
+fresh_val,154,data/clotho/Small growling dog.wav,Is there an animal around?,0
+fresh_val,155,data/clotho/Small growling dog.wav,Is there someone laughing?,1
+fresh_val,156,data/clotho/FOLEY_Ext_Garbage_Hauling_001.wav,Did it sound like there was something rolling around on a metal floor?,0
+fresh_val,157,data/clotho/FOLEY_Ext_Garbage_Hauling_001.wav,Is the moving object soft?,1
+fresh_val,158,data/clotho/street_ambience_day.wav,Is there a person around?,0
+fresh_val,159,data/clotho/street_ambience_day.wav,Is the person alone?,1
+fresh_val,160,data/clotho/Kitchen Noise From Distance.wav,Are these noises something one might hear in a kitchen?,0
+fresh_val,161,data/clotho/Kitchen Noise From Distance.wav,does a glass break?,1
+fresh_val,162,data/clotho/Flipping Coin Can.wav,Are objects colliding with each other?,0
+fresh_val,163,data/clotho/Flipping Coin Can.wav,Is this water flowing down a river?,1
+fresh_val,164,data/clotho/waterspalsh_in_glass_pitcher.wav,Is the water dripping?,0
+fresh_val,165,data/clotho/waterspalsh_in_glass_pitcher.wav,is the water dripping quickly?,1
+fresh_val,166,data/clotho/Strong wind in trees.wav,Do vehicles drive past?,0
+fresh_val,167,data/clotho/Strong wind in trees.wav,Do any horns beep?,1
+fresh_val,168,data/clotho/020220_00.wav,is there a welding machine present?,0
+fresh_val,169,data/clotho/020220_00.wav,does an alarm go off?,1
+fresh_val,170,data/clotho/Walking_on_tarmac.wav,Is someone walking?,0
+fresh_val,171,data/clotho/Walking_on_tarmac.wav,Is the person running?,1
+fresh_val,172,data/clotho/Gulls at beach.wav,Can calls from animals be heard?,0
+fresh_val,173,data/clotho/Gulls at beach.wav,Is this inside a house?,1
+fresh_val,174,data/clotho/CR FunnyMachine.wav,Is this machine in need of some WD-40?,0
+fresh_val,175,data/clotho/CR FunnyMachine.wav,Does the machine come to a stop?,1
+fresh_val,176,data/clotho/20130418_stream.09.wav,is there running water?,0
+fresh_val,177,data/clotho/20130418_stream.09.wav,Does the sound get louder as time goes on?,1
+fresh_val,178,data/clotho/thunder2.wav,Does it sound like wind blowing?,0
+fresh_val,179,data/clotho/thunder2.wav,Is there a woman screaming?,1
+fresh_val,180,data/clotho/Birds of Klein Profijt.wav,Are there animals around?,0
+fresh_val,181,data/clotho/Birds of Klein Profijt.wav,Can a bear be heard growling?,1
+fresh_val,182,data/clotho/open and close pen.wav,Is there a consistent rhythm to what is being clicked?,0
+fresh_val,183,data/clotho/open and close pen.wav,Is somebody playing bass guitar?,1
+fresh_val,184,data/clotho/Library with Light Chatter.wav,Are people murmuring?,0
+fresh_val,185,data/clotho/Library with Light Chatter.wav,Is someone screaming?,1
+fresh_val,186,data/clotho/Fence Hit_City ambience night.wav,Is there a repetitive sound?,0
+fresh_val,187,data/clotho/Fence Hit_City ambience night.wav,Is the door made of wood?,1
+fresh_val,188,data/clotho/160917-eichelherr000.wav,Are crickets chirping?,0
+fresh_val,189,data/clotho/160917-eichelherr000.wav,Are people talking?,1
+fresh_val,190,data/clotho/Car starting (open hood).wav,Is this the sound of a car?,0
+fresh_val,191,data/clotho/Car starting (open hood).wav,Is an animal making this sound?,1
+fresh_val,192,data/clotho/17-Year Cicada Mating Call.wav,Is it high pitched?,0
+fresh_val,193,data/clotho/17-Year Cicada Mating Call.wav,Is the television on ?,1
+fresh_val,194,data/clotho/Sukhapha anchor chain.wav,Are there people nearby?,0
+fresh_val,195,data/clotho/Sukhapha anchor chain.wav,does only one guy speak?,1
+fresh_val,196,data/clotho/nightinggale2.wav,Has the noise been processed?,0
+fresh_val,197,data/clotho/nightinggale2.wav,Is this sound in the ocean?,1
+fresh_val,198,data/clotho/Beer Pong Sounds ball table and cups.wav,Does the object fall at the beginning?,0
+fresh_val,199,data/clotho/Beer Pong Sounds ball table and cups.wav,Is someone peeling a banana?,1
+fresh_val,200,data/clotho/pixies&amp;fairies.wav,Is the sound electronic?,0
+fresh_val,201,data/clotho/pixies&amp;fairies.wav,Is someone playing the tuba?,1
+fresh_val,202,data/clotho/waves_1.wav,Is this the sound of water?,0
+fresh_val,203,data/clotho/waves_1.wav,Is someone taking bath?,1
+fresh_val,204,"data/clotho/Walla chatter, adults and children in auditorium.wav",Is there more than one person in the group?,0
+fresh_val,205,"data/clotho/Walla chatter, adults and children in auditorium.wav",Is there a strong wind blowing by creating a distortion?,1
+fresh_val,206,data/clotho/Lluvia agosto 2011.wav,is it raining?,0
+fresh_val,207,data/clotho/Lluvia agosto 2011.wav,Is it a dry sunny day?,1
+fresh_val,208,data/clotho/Los Angeles Bus Ride.wav,Is there more than one voice?,0
+fresh_val,209,data/clotho/Los Angeles Bus Ride.wav,Is there a horn?,1
+fresh_val,210,data/clotho/3trump.wav,Is this a trumpet?,0
+fresh_val,211,data/clotho/3trump.wav,Is this birdsong?,1
+fresh_val,212,data/clotho/Cafeteria Ambience.wav,Are ceramic dishes being put in to the kitchen sink ?,0
+fresh_val,213,data/clotho/Cafeteria Ambience.wav,Did a fire alarm go off ?,1
+fresh_val,214,data/clotho/medical car horn EGYPT Alexandria.wav,Does the siren travel further down the road as time goes on?,0
+fresh_val,215,data/clotho/medical car horn EGYPT Alexandria.wav,Does the emergency vehicle stop in front of the person?,1
+fresh_val,216,data/clotho/Coffeehouse Ambience Burlington VT 0112xx.wav,Are there both male and female voices?,0
+fresh_val,217,data/clotho/Coffeehouse Ambience Burlington VT 0112xx.wav,Is the sound coming from an outdoor environment?,1
+fresh_val,218,data/clotho/walking_on_snow_and_light_wind.wav,Is someone walking in snow?,0
+fresh_val,219,data/clotho/walking_on_snow_and_light_wind.wav,Are birds singing?,1
+fresh_val,220,data/clotho/Crunching sticks with feet.wav,Is that a crinkle noise?,0
+fresh_val,221,data/clotho/Crunching sticks with feet.wav,Is this an animal?,1
+fresh_val,222,data/clotho/Bath 01.wav,Is there something wet around?,0
+fresh_val,223,data/clotho/Bath 01.wav,Are people talking?,1
+fresh_val,224,data/clotho/Distorted AM Radio noise.wav,Is it annoying?,0
+fresh_val,225,data/clotho/Distorted AM Radio noise.wav,Is a person singing?,1
+fresh_val,226,data/clotho/20110422_shower.wav,Are a variety of birds singing?,0
+fresh_val,227,data/clotho/20110422_shower.wav,Is this in a bathroom?,1
+fresh_val,228,data/clotho/Morning Ride 2.wav,Is the sound constant?,0
+fresh_val,229,data/clotho/Morning Ride 2.wav,Does a man scream in pain?,1
+fresh_val,230,data/clotho/bathtub drain.wav,Is that  liquid falling?,0
+fresh_val,231,data/clotho/bathtub drain.wav,does the liquid stay at the same pressure?,1
+fresh_val,232,data/clotho/wind-sound-from-inside-car.wav,Is it windy?,0
+fresh_val,233,data/clotho/wind-sound-from-inside-car.wav,Are there cars honking?,1
+fresh_val,234,data/clotho/STE-031 italian road.wav,is there more than one car present?,0
+fresh_val,235,data/clotho/STE-031 italian road.wav,are any of the cars involved in an acident?,1
+fresh_val,236,data/clotho/0221 Bar_terrace.wav,Is the location crowded?,0
+fresh_val,237,data/clotho/0221 Bar_terrace.wav,Are there only males?,1
+fresh_val,238,data/clotho/car acceleration sequence.wav,Is a car being driven?,0
+fresh_val,239,data/clotho/car acceleration sequence.wav,is there a person talking in the car?,1
+fresh_val,240,data/clotho/Silencyo_CC_Field_Cicadas_French Children Playing_Wind_Dog_Distant Traffic.wav,Were locust being heard?,0
+fresh_val,241,data/clotho/Silencyo_CC_Field_Cicadas_French Children Playing_Wind_Dog_Distant Traffic.wav,Was this person inside?,1
+fresh_val,242,data/clotho/110422_village_dusk.wav,Are multiple species heard through?,0
+fresh_val,243,data/clotho/110422_village_dusk.wav,Is there a car honking?,1
+fresh_val,244,"data/clotho/INT Factory budimka, pozega.wav",Does it sound like a fan is running?,0
+fresh_val,245,"data/clotho/INT Factory budimka, pozega.wav",Does the flat slapping at the beginning happen more than once?,1
+fresh_val,246,data/clotho/Ronda - Fountain near the Town Hall (general) - Fuente cerca del Ayuntamiento (general).wav,Is water falling?,0
+fresh_val,247,data/clotho/Ronda - Fountain near the Town Hall (general) - Fuente cerca del Ayuntamiento (general).wav,Is it snowing?,1
+fresh_val,248,data/clotho/International Harvester Scout II.wav,Is a car making noise?,0
+fresh_val,249,data/clotho/International Harvester Scout II.wav,Is something being smacked?,1
+fresh_val,250,data/clotho/RBH_Household_shower 03.wav,Can a shower be heard?,0
+fresh_val,251,data/clotho/RBH_Household_shower 03.wav,Is the person brushing their teeth?,1
+fresh_val,252,data/clotho/Bicycle bell.wav,is there a pause between each ring?,0
+fresh_val,253,data/clotho/Bicycle bell.wav,Is anyone talking?,1
+fresh_val,254,data/clotho/watertab.wav,Is water being poured?,0
+fresh_val,255,data/clotho/watertab.wav,Is it being poured into a tea cup?,1
+fresh_val,256,data/clotho/CalmWaves SandBeach 03 EQ 130430_03.wav,Is the sound of the water crashing the only thing that can be heard?,0
+fresh_val,257,data/clotho/CalmWaves SandBeach 03 EQ 130430_03.wav,Is someone spraying some kind of aerosol?,1
+fresh_val,258,data/clotho/20080416.buzz.stereo.wav,Are there birds chirping in the background ?,0
+fresh_val,259,data/clotho/20080416.buzz.stereo.wav,Did any object fall on the floor and break ?,1
+fresh_val,260,data/clotho/Kocking door and open door.wav,Did someone open a door?,0
+fresh_val,261,data/clotho/Kocking door and open door.wav,Is the door slammed shut?,1
+fresh_val,262,data/clotho/People talking while waiting the bus.wav,Is the environment noisy?,0
+fresh_val,263,data/clotho/People talking while waiting the bus.wav,Are the people singing together?,1
+fresh_val,264,data/clotho/Walking across carpeted floor with slippers.wav,Is someone moving around?,0
+fresh_val,265,data/clotho/Walking across carpeted floor with slippers.wav,Does someone talk?,1
+fresh_val,266,data/clotho/indoors dorm dormitory ambient room tone distant traffic in street.wav,Is water running?,0
+fresh_val,267,data/clotho/indoors dorm dormitory ambient room tone distant traffic in street.wav,Are there people running?,1
+fresh_val,268,data/clotho/Wind moaning through gap in door and house noises.wav,Does it sound windy?,0
+fresh_val,269,data/clotho/Wind moaning through gap in door and house noises.wav,Is it silent at the beginning?,1
+fresh_val,270,data/clotho/bandung-taxiradio-1.wav,Is a voice coming from a walkie-talkie?,0
+fresh_val,271,data/clotho/bandung-taxiradio-1.wav,Can an explosion be heard?,1
+fresh_val,272,data/clotho/night in the countryside.wav,Are insects chirping?,0
+fresh_val,273,data/clotho/night in the countryside.wav,Is there a thunderstorm?,1
+fresh_val,274,data/clotho/Beach Wave Ambince .wav,Is there a person talking?,0
+fresh_val,275,data/clotho/Beach Wave Ambince .wav,Is there a woman?,1
+fresh_val,276,data/clotho/NY subway.wav,Are there people around?,0
+fresh_val,277,data/clotho/NY subway.wav,Are there any females?,1
+fresh_val,278,data/clotho/channel 2 now concludes its broadcast day.wav,Is this an electronic noise?,0
+fresh_val,279,data/clotho/channel 2 now concludes its broadcast day.wav,Is this a low-pitched sound?,1
+fresh_val,280,data/clotho/glass (2).wav,Is it loud?,0
+fresh_val,281,data/clotho/glass (2).wav,Is it soft and pleasant?,1
+fresh_val,282,data/clotho/Metal_On_Wood_Hits_Axe.wav,does it sound like a wooden object is present?,0
+fresh_val,283,data/clotho/Metal_On_Wood_Hits_Axe.wav,Is there the sound of thunder?,1
+fresh_val,284,data/clotho/Door Slam.wav,Did a door close?,0
+fresh_val,285,data/clotho/Door Slam.wav,Is there kids laughing?,1
+fresh_val,286,data/clotho/rain_on_a_roof_01.wav,Is this taking place outside?,0
+fresh_val,287,data/clotho/rain_on_a_roof_01.wav,Is it thundering?,1
+fresh_val,288,data/clotho/crowd booing.wav,do the women vastly outnumber the men?,0
+fresh_val,289,data/clotho/crowd booing.wav,Is the person alone?,1
+fresh_val,290,data/clotho/1122thrum.wav,Is something vibrating?,0
+fresh_val,291,data/clotho/1122thrum.wav,Is a man ordering a sandwich?,1
+fresh_val,292,data/clotho/london-st-james-park-feeding-the-birds.wav,Is this a sound that might be encountered near the ocean?,0
+fresh_val,293,data/clotho/london-st-james-park-feeding-the-birds.wav,Is this sound coming from one single source?,1
+fresh_val,294,data/clotho/Organic sound.wav,Is water running?,0
+fresh_val,295,data/clotho/Organic sound.wav,Is this at a concert?,1
+fresh_val,296,data/clotho/Atmosfera Miasto Spokojna dzielnica rano.wav,Are there vehicles speeding up and passing by?,0
+fresh_val,297,data/clotho/Atmosfera Miasto Spokojna dzielnica rano.wav,do all the cars remain quiet?,1
+fresh_val,298,data/clotho/LondonTraffic.wav,Is the trash truck moving down the road?,0
+fresh_val,299,data/clotho/LondonTraffic.wav,Are drivers yelling at one another?,1
+fresh_val,300,data/clotho/greece_naxos_cicadas_4.wav,is the sound constant?,0
+fresh_val,301,data/clotho/greece_naxos_cicadas_4.wav,are many people speaking?,1
+fresh_val,302,data/clotho/HammerDrill.wav,Are there multiple instruments?,0
+fresh_val,303,data/clotho/HammerDrill.wav,Is a child giggling?,1
+fresh_val,304,data/clotho/Heavy Wind on Microphone.wav,was it windy?,0
+fresh_val,305,data/clotho/Heavy Wind on Microphone.wav,was there anyone talking?,1
+fresh_val,306,data/clotho/20090407.cricket.real.close.wav,Is the noise constant?,0
+fresh_val,307,data/clotho/20090407.cricket.real.close.wav,Does the noise stop in the middle?,1
+fresh_val,308,data/clotho/Big_Roundabout_Traffic.wav,Is this a vehicle?,0
+fresh_val,309,data/clotho/Big_Roundabout_Traffic.wav,Is the vehicle a moped?,1
+fresh_val,310,data/clotho/13. Crushing tin can.wav,Are there clicking noises?,0
+fresh_val,311,data/clotho/13. Crushing tin can.wav,Is there a high toned bell sound?,1
+fresh_val,312,data/clotho/pencil on paper.wav,Is someone using a hand tool of some sort?,0
+fresh_val,313,data/clotho/pencil on paper.wav,Are they writing slowly?,1
+fresh_val,314,data/clotho/Heavy Rain 1.wav,Is the sound of rain constant?,0
+fresh_val,315,data/clotho/Heavy Rain 1.wav,Are there multiple people talking in the rain?,1
+fresh_val,316,data/clotho/Lambs.wav,Does the chirping become noticeably louder?,0
+fresh_val,317,data/clotho/Lambs.wav,Are people chatting in the background?,1
+fresh_val,318,data/clotho/cat_purr_1.wav,Is the animal purring?,0
+fresh_val,319,data/clotho/cat_purr_1.wav,Is a dog barking?,1
+fresh_val,320,data/clotho/street steps child car.wav,Is there a vehicle running?,0
+fresh_val,321,data/clotho/street steps child car.wav,Are the people isolated?,1
+fresh_val,322,data/clotho/creeeeek-GAIN_01.wav,Are the creaks more frequent at the beginning?,0
+fresh_val,323,data/clotho/creeeeek-GAIN_01.wav,Is a crisp packet squeezed?,1
+fresh_val,324,data/clotho/electric-screwdriver.wav,Is an object being dropped?,0
+fresh_val,325,data/clotho/electric-screwdriver.wav,Can a car be heard in the background?,1
+fresh_val,326,data/clotho/Hanoi streets.wav,Are people talking?,0
+fresh_val,327,data/clotho/Hanoi streets.wav,Is this an animal noise?,1
+fresh_val,328,data/clotho/WATER DRIP ECHO LOW PITCH COMPRESSED.wav,Is water being transferred cautiously?,0
+fresh_val,329,data/clotho/WATER DRIP ECHO LOW PITCH COMPRESSED.wav,Was water spilled on the floor?,1
+fresh_val,330,data/clotho/miniature goats and sheep.wav,Are children playing a game?,0
+fresh_val,331,data/clotho/miniature goats and sheep.wav,Is there a cat hissing?,1
+fresh_val,332,data/clotho/nxSample012.wav,Is the noise from an electronic device?,0
+fresh_val,333,data/clotho/nxSample012.wav,Is the object set up correctly?,1
+fresh_val,334,data/clotho/WasherSpinCycle.wav,Is the noise being made constant?,0
+fresh_val,335,data/clotho/WasherSpinCycle.wav,Can a group of people be heard speaking?,1
+fresh_val,336,data/clotho/helicopter.wav,Is a motor making this sound?,0
+fresh_val,337,data/clotho/helicopter.wav,Does a dog bark?,1
+fresh_val,338,data/clotho/Forest Birds .wav,Are there any birds singing?,0
+fresh_val,339,data/clotho/Forest Birds .wav,Is there conclusive evidence that there are multiple people heard?,1
+fresh_val,340,data/clotho/April dawn chorus Sydenham Hill.wav,Is there a chirping sound?,0
+fresh_val,341,data/clotho/April dawn chorus Sydenham Hill.wav,Is there a truck honking?,1
+fresh_val,342,data/clotho/Rain WashingtonSt 1.wav,Can a vehicle motor be heard?,0
+fresh_val,343,data/clotho/Rain WashingtonSt 1.wav,Is there a lot of thunder?,1
+fresh_val,344,data/clotho/rain_medium_thunders.wav,Is it raining?,0
+fresh_val,345,data/clotho/rain_medium_thunders.wav,Are birds whistling?,1
+fresh_val,346,data/clotho/t34t trafik[1].wav,Is car traffic heard?,0
+fresh_val,347,data/clotho/t34t trafik[1].wav,Is the dog barking?,1
+fresh_val,348,data/clotho/Truck starts and stops_edit.wav,When running is the engine at a constant speed?,0
+fresh_val,349,data/clotho/Truck starts and stops_edit.wav,Is a car horn beeped?,1
+fresh_val,350,data/clotho/espresso-maschine.wav,Is a motor running in the background ?,0
+fresh_val,351,data/clotho/espresso-maschine.wav,Is an owl screeching ?,1
+fresh_val,352,data/clotho/STE-027FIRE.wav,Is there someone talking on a speaker?,0
+fresh_val,353,data/clotho/STE-027FIRE.wav,Are there any insects making noise?,1
+fresh_val,354,data/clotho/auto-rickshaw-trip.wav,Is there more than one vehicle?,0
+fresh_val,355,data/clotho/auto-rickshaw-trip.wav,Is there an animal?,1
+fresh_val,356,data/clotho/Hyeres street voices ambience f.wav,Is someone walking?,0
+fresh_val,357,data/clotho/Hyeres street voices ambience f.wav,Is a drink being poured?,1
+fresh_val,358,data/clotho/rotatingdome.wav,Does the train come to a stop?,0
+fresh_val,359,data/clotho/rotatingdome.wav,Can a crowd be heard speaking in the background?,1
+fresh_val,360,data/clotho/Howling Storm.wav,is the sound chaotic?,0
+fresh_val,361,data/clotho/Howling Storm.wav,does the sound stop?,1
+fresh_val,362,data/clotho/Rusty old boat.wav,Is large machinery being used?,0
+fresh_val,363,data/clotho/Rusty old boat.wav,are any humans speaking?,1
+fresh_val,364,data/clotho/glas-bubbels-def01.wav,is there a sipping noise at the end?,0
+fresh_val,365,data/clotho/glas-bubbels-def01.wav,Is there a cow in the background?,1
+fresh_val,366,data/clotho/Squeaky Wood (Compilation).wav,Is something creaking?,0
+fresh_val,367,data/clotho/Squeaky Wood (Compilation).wav,Is someone chewing gum?,1
+fresh_val,368,data/clotho/car-radio-am-noise2.wav,Is the sound high pitched?,0
+fresh_val,369,data/clotho/car-radio-am-noise2.wav,Is this a bird?,1
+fresh_val,370,data/clotho/NYC Subway Train Approach Doors Announce Depart.wav,is there a subway train?,0
+fresh_val,371,data/clotho/NYC Subway Train Approach Doors Announce Depart.wav,does the train drive by quickly without stopping?,1
+fresh_val,372,data/clotho/Breaking Glass .wav,Is the glass breaking growing louder in intensity with each break?,0
+fresh_val,373,data/clotho/Breaking Glass .wav,Does the glass break four separate times?,1
+fresh_val,374,data/clotho/peanutFarmDawnShort.wav,Is there a quiet owl?,0
+fresh_val,375,data/clotho/peanutFarmDawnShort.wav,Is a lion roaring?,1
+fresh_val,376,data/clotho/CicadasAPedreira.wav,Does someone nearby have a pet?,0
+fresh_val,377,data/clotho/CicadasAPedreira.wav,Is this indoors?,1
+fresh_val,378,data/clotho/Frogs in town.wav,Are birds chirping?,0
+fresh_val,379,data/clotho/Frogs in town.wav,do any humans talk?,1
+fresh_val,380,data/clotho/Serving Water Quickly.wav,Are several glasses being poured?,0
+fresh_val,381,data/clotho/Serving Water Quickly.wav,Are there any human voices in this clip?,1
+fresh_val,382,data/clotho/windy rain.wav,Is it a wet day?,0
+fresh_val,383,data/clotho/windy rain.wav,Is it a good day to fly a kite?,1
+fresh_val,384,data/clotho/babbling brook 2.wav,is the water coming into contact with other water?,0
+fresh_val,385,data/clotho/babbling brook 2.wav,Is someone sipping from a cup?,1
+fresh_val,386,data/clotho/Uppsala Streetbusker accordion 1.wav,Is there music playing?,0
+fresh_val,387,data/clotho/Uppsala Streetbusker accordion 1.wav,Can any animals be heard?,1
+fresh_val,388,data/clotho/La Barca i La Tempesta.wav,Are there animals making sounds?,0
+fresh_val,389,data/clotho/La Barca i La Tempesta.wav,Is there a coyote howling?,1
+fresh_val,390,data/clotho/Tibetan Bells 192kHz Original.wav,Is the noise high pitched?,0
+fresh_val,391,data/clotho/Tibetan Bells 192kHz Original.wav,Does the high pitched noise only happen once ?,1
+fresh_val,392,data/clotho/bellaromani.wav,Is a bell being rung?,0
+fresh_val,393,data/clotho/bellaromani.wav,Is this an alarm clock?,1
+fresh_val,394,data/clotho/elevator going up open closed door 20161025.wav,Is the noise constant?,0
+fresh_val,395,data/clotho/elevator going up open closed door 20161025.wav,Is this noise outside?,1
+fresh_val,396,data/clotho/SheryT_mixdown.wav,Are there several people chatting?,0
+fresh_val,397,data/clotho/SheryT_mixdown.wav,Is this a stage show?,1
+fresh_val,398,data/clotho/20100801.wharf.silence.night.wav,Can the people hear an animal?,0
+fresh_val,399,data/clotho/20100801.wharf.silence.night.wav,Is the animal a cat?,1
+fresh_val,400,data/clotho/Bathroom.wav,Is it a constant sound?,0
+fresh_val,401,data/clotho/Bathroom.wav,does a car crash?,1
+fresh_val,402,data/clotho/Davis.wav,Is there precipitation today?,0
+fresh_val,403,data/clotho/Davis.wav,Is this a human voice?,1
