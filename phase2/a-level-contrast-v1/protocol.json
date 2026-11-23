@@ -1,0 +1,18 @@
+{
+  "esc50": "https://raw.githubusercontent.com/karolpiczak/ESC-50/33c8ce9eb2cf0b1c2f8bcf322eb349b6be34dbb6",
+  "segment_seconds": 1.75,
+  "gap_seconds": 0.5,
+  "development_db": [18, 24, 12, 6],
+  "prompt_order": ["which", "describe"],
+  "evaluation_fold": 2,
+  "sources_per_category": 2,
+  "selection_seed": 17,
+  "bootstrap_seed": 29,
+  "bootstrap_replicates": 10000,
+  "screen_gate": {"both_correct": 0.60, "ranking": 0.75},
+  "confirmation_gate": {"both_correct": 0.60, "ranking": 0.75, "both_correct_ci_lower": 0.50},
+  "compressors": ["K16-s17", "K16-s23", "K16-s41"],
+  "ridge_lambda": 1.0,
+  "readout_gate": {"accuracy": 0.75, "lower_ci": 0.65},
+  "minimum_ranking_gap": 0.10
+}

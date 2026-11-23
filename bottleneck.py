@@ -57,7 +57,7 @@ def main():
     parser.add_argument("mode", choices=["train", "eval", "pool", "probe", "fresh", "controls",
                                         "intervene", "opposite", "level-probe", "count-evidence",
                                         "count-prompts", "count-confirmation", "natural-capacity",
-                                        "natural-components", "event-components", "a-final"])
+                                        "natural-components", "event-components", "a-final", "level-contrast"])
     parser.add_argument("--out", type=Path, required=True)
     parser.add_argument("--steps", type=int, default=16)
     parser.add_argument("--k", type=int, default=16)
@@ -98,9 +98,12 @@ def main():
     parser.add_argument("--capacity-references", type=Path, help="Saved natural-capacity scores for natural-components")
     parser.add_argument("--event-plan", type=Path, help="Fixed plan for event-components")
     parser.add_argument("--final-plan", type=Path, help="Fixed A-line evaluation plan")
+    parser.add_argument("--level-stage", choices=("screen", "confirm"), help="Stage for level-contrast")
+    parser.add_argument("--level-lock", type=Path, help="Locked screen outcome for level-contrast confirmation")
     args = parser.parse_args()
     audio_only_modes = ("fresh", "controls", "intervene", "count-evidence", "count-prompts",
-                        "count-confirmation", "natural-capacity", "natural-components", "event-components", "a-final")
+                        "count-confirmation", "natural-capacity", "natural-components", "event-components", "a-final",
+                        "level-contrast")
     if args.mode in audio_only_modes and (not args.clotho or args.conditioned):
         parser.error(f"{args.mode} requires --clotho and audio-only checkpoints")
     if args.mode in ("count-prompts", "count-confirmation") and args.batch_size < 1:
@@ -115,6 +118,9 @@ def main():
         parser.error("event-components requires --event-plan")
     if args.mode == "a-final" and args.final_plan is None:
         parser.error("a-final requires --final-plan")
+    if args.mode == "level-contrast" and (args.level_stage is None or args.batch_size < 1
+                                         or (args.level_stage == "confirm") != (args.level_lock is not None)):
+        parser.error("level-contrast requires --level-stage, a positive --batch-size, and --level-lock only for confirm")
     if args.mode == "pool" and (not args.clotho or args.conditioned or min(args.pool_ks) < 1):
         parser.error("pool requires --clotho and positive slot counts without --conditioned")
     if args.mode == "probe" and (not args.conditioned or args.condition != "gated"):
@@ -198,7 +204,8 @@ def main():
             mask = inputs["input_ids"][0] == base.config.audio_token_index
             def capture(module, positional, kwargs):
                 cache[path] = kwargs["inputs_embeds"][0, mask].detach().cpu()
-                if args.mode in ("count-confirmation", "natural-capacity", "natural-components", "event-components", "a-final"):
+                if args.mode in ("count-confirmation", "natural-capacity", "natural-components", "event-components", "a-final",
+                                 "level-contrast"):
                     raise AudioFeaturesCaptured
             hook = lm.register_forward_pre_hook(capture, with_kwargs=True)
             try:
@@ -291,6 +298,10 @@ def main():
     if args.mode == "level-probe":
         from level_probe import probe
         probe(args, comp, features)
+        return
+    if args.mode == "level-contrast":
+        from level_contrast import measure
+        measure(args, comp, features, decode)
         return
     if args.mode == "opposite":
         from opposite_eval import measure

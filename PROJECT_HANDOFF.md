@@ -349,6 +349,38 @@ python bottleneck.py count-prompts --clotho --pair-manifest stimuli/pairs.json -
 
 18 組自然題對、K=16 中，限定兩段原本皆答對的題對，交換學習式修正後有 80.6% 的方向性測試跟隨來源錄音正解；只換分段平均為 19.4%（三個 seed 合計 36 個合格 pair-seed，雙向計分）。自然題以聲源辨識為主。受控音量差 18.06 dB 時 K=16 問答平均 51.5%；固定 latent、依聲源組留一交叉驗證的線性音量讀出為 84–90%。讀出器利用額外音量標籤。原始逐題／逐折結果：phase2/opposite-v1、identity-v1、level-probe-v1。counterbalanced-v1 於完整原模型評測途中停止，僅保存 manifest 與 partial，不計入結論；音量泛化尚未執行。重跑入口：run_opposite_phase.sh。
 
+### A 線後續｜音量資訊保留與作答使用
+
+**執行狀態。** 已在本機驗證 200 組開發刺激的音量差與片段交換、100 段確認聲源的選取與原始錄音 ID 隔離，以及以模擬分數執行的鎖定與評分流程。cml30 暫時無法登入，開發與確認階段的模型推論尚未執行。
+
+**探索性依據。** 重新分析 `opposite-v1` 的 100 組音量題對。完整音訊逐題為 51%，配對兩段皆答對為 2%，同題分數排序為 64%（平手計半）。完整音訊也很少把兩段都判對，舊結果無法將 K=16 的低作答率定位到壓縮後的讀取。
+
+**開發階段。** 使用舊實驗的 50 段原始錄音。每對以同一個 1.75 秒片段重複兩次，中間固定靜音 0.5 秒。兩個版本交換高低音量的位置，維持長度、片段、峰值及總能量。測兩種題目格式、兩種選項順序，依預定順序篩選 18、24、12、6 dB。在兩種選項順序下，完整音訊須各有至少 60% 題對兩段皆答對，且同題排序至少 75%。通過才鎖定音量差、題目及指標。這階段只跑完整音訊。
+
+**確認階段。** 固定抽取 ESC-50 fold 2 的每類兩段、共 100 段新原始錄音，與開發聲源的原始錄音 ID 互斥。只評估鎖定設定，沿用三個 K=16 checkpoint。相對音量讀出以舊聲源擬合 ridge、在新聲源評估。完整音訊須重現開發門檻，且兩種選項順序的配對兩段皆對率之 95% 區間下界都超過 50%，才比較 K=16 原回答端。主要對照是完整音訊減 K=16 的配對排序，要求至少 10 個百分點、配對 95% 區間下界高於零。並列 K=16 的讀出正確率、配對兩段皆對率與正解方向的 logit 變化。讀出門檻為平均至少 75%、區間下界高於 65%。區間以原始錄音配對重抽樣，固定這三個 checkpoint。確認資料用於這項受控相對音量任務。
+
+**重跑。** 在 cml30 專案根目錄，設定 `CUDA_VISIBLE_DEVICES` 為一張有空間的 GPU。評估輸出使用新路徑。若完整音訊沒有通過開發門檻，鎖定指令會停止，保留確認錄音。若確認階段的完整音訊門檻失敗，只報完整音訊及獨立讀出。摘要保存協定、刺激清單與確認用 checkpoint 的雜湊。
+
+```bash
+(
+  set -euo pipefail
+  : "${CUDA_VISIBLE_DEVICES:?Select one available GPU}"
+  [[ "$CUDA_VISIBLE_DEVICES" =~ ^[0-9]+$ ]]
+  export CUDA_DEVICE_ORDER=PCI_BUS_ID OMP_NUM_THREADS=4 OPENBLAS_NUM_THREADS=4 MKL_NUM_THREADS=4
+  run=data/a-level-contrast-v1
+  .venv/bin/python level_contrast.py prepare --stage screen --out "$run/screen-stimuli"
+  .venv/bin/python -u bottleneck.py level-contrast --clotho --level-stage screen --batch-size 12 \
+    --feature-cache "$run/features" --pair-manifest "$run/screen-stimuli/pairs.json" --out "$run/screen"
+  .venv/bin/python level_contrast.py lock --screen "$run/screen/summary.json" --out "$run/lock.json"
+  .venv/bin/python level_contrast.py prepare --stage confirm --lock "$run/lock.json" --out "$run/confirm-stimuli"
+  .venv/bin/python -u bottleneck.py level-contrast --clotho --level-stage confirm --batch-size 12 \
+    --level-lock "$run/lock.json" --feature-cache "$run/features" \
+    --pair-manifest "$run/confirm-stimuli/pairs.json" --out "$run/confirm"
+)
+```
+
+[事前協定](phase2/a-level-contrast-v1/protocol.json) · [音量刺激與評估程式](level_contrast.py)
+
 ## B 組更新：共同起點續訓已在 gpu3 完成
 
 cml30 上的父 checkpoint 無法從 gpu3 取得，因此在 gpu3（RTX 4090，torch 2.5.1+cu121、transformers 4.51.3）重訓父模型，再從它同時續訓 A、B 兩組，讓這組比較在同一台機器上完全配對。重訓的父模型驗證 54/64、訓練 85/96（cml30 版為 53/64、87/96）。兩組 `warm_start.sha256` 皆為 `b8be6dc0…`，起始時零初始化題幹投影的最大 A/B logit 差為 0。
