@@ -1,0 +1,61 @@
+{
+  "id": "b2-mixtures-v1",
+  "fixed_on": "2026-11-23",
+  "purpose": "Track B2.0. Synthetic multi-event recordings where one fixed-size latent must trade off evidence and different questions about the same recording need different evidence. This run only checks the full-audio positive control and whether audio-only bottlenecks lose accuracy as the number of events grows.",
+  "source": {
+    "dataset": "ESC-50 at the commit pinned in prepare.py",
+    "train_fold": 1,
+    "development_fold": 2,
+    "development_half": "Sort fold 2 src_file IDs, shuffle with split_seed, assign the first half to development and the rest to confirmation. Confirmation stimuli are not generated or evaluated in this run.",
+    "split_seed": 20261123,
+    "excluded_folds": "3, 4 and 5 were used by track A"
+  },
+  "stimuli": {
+    "event_counts": [1, 2, 4, 6],
+    "duration_seconds": 10,
+    "slots": 6,
+    "event_seconds": 1.5,
+    "event_window": "The 1.5 s window of the source clip with the highest mean energy, 50 ms hop, 10 ms fades, normalized to equal RMS.",
+    "event_rms": 0.05,
+    "placement": "Choose N of the 6 equal slots at random; jitter the event start uniformly within the slot.",
+    "peak_limit": 0.95,
+    "peak_rule": "Scale an event down only if its own peak exceeds peak_limit. Events never overlap, so the limit is applied per event and does not change the other events in the recording.",
+    "categories_per_recording": "N distinct categories, sampled uniformly.",
+    "mixtures_per_count": {"train": 200, "development": 100},
+    "generation_seed": 20261124
+  },
+  "questions": {
+    "template": "Can you hear {phrase}?",
+    "answer_suffix": "yes/no, both option orders",
+    "development": "Per recording one yes question about a random present category and one no question about a random absent category. Each is the other's wrong-stem donor.",
+    "train": "Per recording min(N, 3) yes questions and the same number of no questions.",
+    "negative_rule": "The absent category must not share a confusion group with any present category.",
+    "confusion_groups": [
+      ["rain", "water_drops", "pouring_water", "sea_waves", "toilet_flush", "thunderstorm", "crackling_fire"],
+      ["wind", "sea_waves", "airplane"],
+      ["crickets", "insects", "chirping_birds"],
+      ["mouse_click", "keyboard_typing", "clock_tick", "door_wood_knock", "footsteps"],
+      ["engine", "train", "airplane", "helicopter", "vacuum_cleaner", "washing_machine", "chainsaw", "hand_saw"],
+      ["hen", "rooster", "crow", "chirping_birds"],
+      ["coughing", "sneezing", "laughing", "breathing", "snoring"],
+      ["thunderstorm", "fireworks"],
+      ["crying_baby", "cat"],
+      ["church_bells", "clock_alarm", "siren", "car_horn"],
+      ["drinking_sipping", "brushing_teeth"],
+      ["can_opening", "glass_breaking"],
+      ["door_wood_creaks", "door_wood_knock"],
+      ["cow", "pig", "sheep", "frog"],
+      ["clapping", "footsteps"]
+    ]
+  },
+  "evaluation": {
+    "split": "development",
+    "models": "Full audio, text only, and the existing Clotho-trained audio-only compressors runs/guidance/k{1,4,16}-s{17,18,19}-audio as a preview. The B2 grid will retrain on the synthetic train split.",
+    "score": "yes logit minus no logit at the first answer token, per option order",
+    "gates": {
+      "full_audio_accuracy_minimum_each_count_each_order": 0.8,
+      "bottleneck_pressure": "Audio-only K=1 accuracy (mean of orders and seeds) at N=6 at least 10 points below N=1. Checked on the preview here and again on the synthetic-trained models."
+    },
+    "interval": "Bootstrap over recordings, seed 17, 10000 replicates. Source clips recur across recordings, so intervals are approximate."
+  }
+}
