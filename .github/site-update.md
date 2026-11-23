@@ -4,6 +4,9 @@ You maintain `docs/index.html`, a single-file overview of this project for the t
 the commit at which the page was last updated (`BASE`). Bring the page up to date with everything that
 changed in `BASE..HEAD`. Edit only `docs/index.html`. Do not commit, push, or run project code.
 
+Read `docs/SITE_GUIDE.md` first: it records the page's requirements, design rules and data layout, and takes
+precedence over this file where they differ.
+
 ## What to read
 
 1. `git log --format='%h %an %ad %s' --date=short BASE..HEAD` and `git diff --stat BASE..HEAD`.
