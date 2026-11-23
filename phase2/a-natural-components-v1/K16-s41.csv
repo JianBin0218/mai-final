@@ -1,0 +1,61 @@
+pair,question,order,own_yes,own_no,pool_yes_residual_no,pool_no_residual_yes,checkpoint
+0,Are many people talking?,yes_first,6.125,-3.125,-2.8125,2.125,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+0,Are many people talking?,no_first,5.375,-2.125,-1.5,2.0,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+1,Are there children's voices?,yes_first,4.5,-2.4375,1.5,2.375,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+1,Are there children's voices?,no_first,5.8125,1.625,3.625,4.5,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+2,Is there a person talking?,yes_first,0.5,-3.8125,-3.5,-2.3125,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+2,Is there a person talking?,no_first,0.5,-1.375,-1.6875,-1.625,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+3,Is an animal making noise?,yes_first,4.8125,0.875,1.4375,6.3125,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+3,Is an animal making noise?,no_first,5.5625,1.125,0.375,5.6875,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+4,Is there a vehicle?,yes_first,1.625,-2.5,0.75,-2.625,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+4,Is there a vehicle?,no_first,2.8125,-1.625,1.625,-0.375,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+5,Is the person outside?,yes_first,2.4375,-2.5,-0.875,1.75,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+5,Is the person outside?,no_first,0.625,-1.5,-2.25,0.5,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+6,Are birds chirping?,yes_first,7.375,-2.75,-1.75,6.6875,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+6,Are birds chirping?,no_first,7.6875,-1.0625,-0.5,7.5,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+7,Is it raining?,yes_first,4.375,0.125,0.9375,2.625,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+7,Is it raining?,no_first,4.625,0.25,-0.0,2.375,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+8,Is music playing?,yes_first,-3.375,-3.875,-4.5625,-2.0,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+8,Is music playing?,no_first,-2.375,-2.625,-2.375,-2.1875,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+9,Is there any music?,yes_first,-4.9375,-5.8125,-5.0625,-4.875,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+9,Is there any music?,no_first,-2.0625,-3.3125,-4.0,-2.4375,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+10,Is music being played?,yes_first,2.8125,-4.0,-1.5,0.125,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+10,Is music being played?,no_first,2.375,-1.125,-0.625,0.875,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+11,Does a person speak?,yes_first,-3.4375,-5.6875,-4.25,-5.0625,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+11,Does a person speak?,no_first,-0.625,-1.875,-1.25,-1.375,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+12,Can people be heard talking?,yes_first,2.625,-0.375,1.0,1.5,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+12,Can people be heard talking?,no_first,3.375,2.5,2.625,3.375,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+13,Is someone yelling?,yes_first,0.0,-0.375,-1.0625,0.625,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+13,Is someone yelling?,no_first,-0.375,0.125,-0.0,-0.125,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+14,Is water boiling?,yes_first,4.125,-2.875,-2.9375,1.75,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+14,Is water boiling?,no_first,3.375,-1.875,-3.6875,2.75,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+15,Are people speaking?,yes_first,-4.5,-4.5,-4.3125,-4.75,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+15,Are people speaking?,no_first,-1.0,-2.0625,-1.375,-1.625,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+16,Are there people laughing?,yes_first,0.375,-2.1875,-1.25,0.875,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+16,Are there people laughing?,no_first,3.4375,0.9375,2.5,3.3125,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+17,Is this inside?,yes_first,0.0,-1.5,-1.9375,1.375,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+17,Is this inside?,no_first,-0.25,-1.4375,-0.875,-1.125,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+18,Is someone using a hammer?,yes_first,6.9375,3.25,1.875,6.5,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+18,Is someone using a hammer?,no_first,5.75,4.0,3.5,5.875,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+19,Is the sound constant?,yes_first,-2.125,-2.5,-1.125,-2.75,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+19,Is the sound constant?,no_first,-0.375,-1.125,-0.375,-1.5,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+20,Is a clock ticking?,yes_first,2.375,-4.125,-3.5625,-0.5,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+20,Is a clock ticking?,no_first,1.375,-1.4375,-1.9375,0.25,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+21,Are people talking?,yes_first,-4.8125,-4.3125,-4.0,-5.0625,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+21,Are people talking?,no_first,-1.5,-2.5625,-2.0625,-2.375,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+22,Are there people talking?,yes_first,2.875,-3.1875,-1.75,-0.75,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+22,Are there people talking?,no_first,3.625,-1.0625,0.75,1.75,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+23,Is this outside?,yes_first,1.25,-3.375,-1.25,-0.3125,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+23,Is this outside?,no_first,4.125,-1.0625,0.875,1.125,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+24,Does this have a melody?,yes_first,-2.5625,-4.75,-3.625,-3.0,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+24,Does this have a melody?,no_first,-0.375,-3.875,-3.75,-0.625,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+25,Is there a storm?,yes_first,2.5625,2.75,3.75,2.6875,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+25,Is there a storm?,no_first,3.25,5.625,4.375,3.6875,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+26,Is this happening inside?,yes_first,0.25,1.0,0.5,-0.875,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+26,Is this happening inside?,no_first,0.125,1.25,1.875,-0.75,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+27,Is a dog barking?,yes_first,2.375,-3.625,-4.3125,1.5,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+27,Is a dog barking?,no_first,3.25,-1.125,-2.1875,2.25,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+28,Is someone playing the drums?,yes_first,0.125,2.0,1.4375,0.5,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+28,Is someone playing the drums?,no_first,-1.375,0.875,0.125,-0.375,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+29,Is this an animal?,yes_first,0.25,-2.25,-1.0625,-1.25,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+29,Is this an animal?,no_first,0.875,-2.8125,-1.25,-1.5,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5

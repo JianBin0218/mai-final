@@ -1,0 +1,5167 @@
+{
+  "split": "test",
+  "plan_sha256": "f6211cb309491bfb0c9e580ecc202dd7ce7aeca2c416590dba521b77959323f5",
+  "recordings": 257,
+  "question_types": {
+    "source_or_event": 367,
+    "scene_context": 35,
+    "count_or_relation": 54,
+    "time_pattern": 33,
+    "acoustic_property": 25
+  },
+  "type_methods": {
+    "rule": 463,
+    "exemplar": 51
+  },
+  "audit": {
+    "official_recordings": 473,
+    "previous_recordings": 1518,
+    "previous_recordings_without_source_id": 4,
+    "exclusions": {
+      "no_balanced_unanimous_questions": 213,
+      "unknown_source_id": 3
+    }
+  },
+  "rows": [
+    {
+      "qid": "6d4baab77bba028d50861f22",
+      "recording": "10_lightning_kohchang.wav",
+      "path": "a-final-test-stimuli/audio/10_lightning_kohchang.wav",
+      "source_id": "176021",
+      "question": "Is there thunder clapping?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "7bfefb1632597334fdf2137c",
+      "recording": "10_lightning_kohchang.wav",
+      "path": "a-final-test-stimuli/audio/10_lightning_kohchang.wav",
+      "source_id": "176021",
+      "question": "Are people singing?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "08793a7cd3d5c6fd60aad3ed",
+      "recording": "131227_strumyk_1.wav",
+      "path": "a-final-test-stimuli/audio/131227_strumyk_1.wav",
+      "source_id": "212761",
+      "question": "is the water falling lightly?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "341baecba7ff4dd9f4429679",
+      "recording": "131227_strumyk_1.wav",
+      "path": "a-final-test-stimuli/audio/131227_strumyk_1.wav",
+      "source_id": "212761",
+      "question": "Is this a dry sound?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "7ac113ef680a5c2cbfe304ca",
+      "recording": "20061124ParadeCHS.wav",
+      "path": "a-final-test-stimuli/audio/20061124ParadeCHS.wav",
+      "source_id": "26270",
+      "question": "Is this outside?",
+      "target": 0,
+      "type": "scene_context",
+      "type_method": "rule"
+    },
+    {
+      "qid": "c13065a6476bde75099af4dd",
+      "recording": "20061124ParadeCHS.wav",
+      "path": "a-final-test-stimuli/audio/20061124ParadeCHS.wav",
+      "source_id": "26270",
+      "question": "Is only one person around?",
+      "target": 1,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "b7e3a9b092cafb36d901dac9",
+      "recording": "20070303.duck.wav",
+      "path": "a-final-test-stimuli/audio/20070303.duck.wav",
+      "source_id": "31835",
+      "question": "Is this an animal sound?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "bfadd050e98ab21f82f25473",
+      "recording": "20070303.duck.wav",
+      "path": "a-final-test-stimuli/audio/20070303.duck.wav",
+      "source_id": "31835",
+      "question": "Is that a human?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "43014d0d4c0d4b7075d34205",
+      "recording": "20080505_1306playground01.wav",
+      "path": "a-final-test-stimuli/audio/20080505_1306playground01.wav",
+      "source_id": "52882",
+      "question": "Are there children playing?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "628b64814b4e5bcf1383cdeb",
+      "recording": "20080505_1306playground01.wav",
+      "path": "a-final-test-stimuli/audio/20080505_1306playground01.wav",
+      "source_id": "52882",
+      "question": "Is this indoors?",
+      "target": 1,
+      "type": "scene_context",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "a6d996bbfaf88ec382ad2918",
+      "recording": "20080918.boots.door.wav",
+      "path": "a-final-test-stimuli/audio/20080918.boots.door.wav",
+      "source_id": "60613",
+      "question": "Is there a person walking?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "9b07426dd97fbea282f0b475",
+      "recording": "20080918.boots.door.wav",
+      "path": "a-final-test-stimuli/audio/20080918.boots.door.wav",
+      "source_id": "60613",
+      "question": "Did the school children cheer?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "f1c14fad93bf551f52ae649d",
+      "recording": "20090407.airplane.wav",
+      "path": "a-final-test-stimuli/audio/20090407.airplane.wav",
+      "source_id": "70950",
+      "question": "Can a plane be heard?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "7ffadf33fab7ccd8d752db2e",
+      "recording": "20090407.airplane.wav",
+      "path": "a-final-test-stimuli/audio/20090407.airplane.wav",
+      "source_id": "70950",
+      "question": "Is anyone talking?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "8365b8020a322d233acc45fa",
+      "recording": "20090412.bell.strikes.12.wav",
+      "path": "a-final-test-stimuli/audio/20090412.bell.strikes.12.wav",
+      "source_id": "71333",
+      "question": "Is there a bell tower nearby?",
+      "target": 0,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "c42771d059ae0ee5594e28a9",
+      "recording": "20090412.bell.strikes.12.wav",
+      "path": "a-final-test-stimuli/audio/20090412.bell.strikes.12.wav",
+      "source_id": "71333",
+      "question": "Are the streets empty?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "3c35bd65a88191843a33b5fb",
+      "recording": "20091211.barking.stairs.wav",
+      "path": "a-final-test-stimuli/audio/20091211.barking.stairs.wav",
+      "source_id": "85362",
+      "question": "does the dog keep on barking continuously?",
+      "target": 0,
+      "type": "time_pattern",
+      "type_method": "rule"
+    },
+    {
+      "qid": "2103ca9789c075ca2e6448c9",
+      "recording": "20091211.barking.stairs.wav",
+      "path": "a-final-test-stimuli/audio/20091211.barking.stairs.wav",
+      "source_id": "85362",
+      "question": "Is the dog in a crowded area?",
+      "target": 1,
+      "type": "scene_context",
+      "type_method": "rule"
+    },
+    {
+      "qid": "15c7235f71914c66ce6fb93c",
+      "recording": "20091217.18.chains.wav",
+      "path": "a-final-test-stimuli/audio/20091217.18.chains.wav",
+      "source_id": "86956",
+      "question": "Is a metal object dropped?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "0834cbbd4985c39e8d2a6e35",
+      "recording": "20091217.18.chains.wav",
+      "path": "a-final-test-stimuli/audio/20091217.18.chains.wav",
+      "source_id": "86956",
+      "question": "Does a police car drive past?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "fa0fb7a5205702401029197d",
+      "recording": "20100110.kitchen.wav",
+      "path": "a-final-test-stimuli/audio/20100110.kitchen.wav",
+      "source_id": "87526",
+      "question": "is there a series of beeps?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "309772f9120305b71312834b",
+      "recording": "20100110.kitchen.wav",
+      "path": "a-final-test-stimuli/audio/20100110.kitchen.wav",
+      "source_id": "87526",
+      "question": "Are dogs barking?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "ddb6afc1f00fe388f870edbc",
+      "recording": "20110220_churchbell.wav",
+      "path": "a-final-test-stimuli/audio/20110220_churchbell.wav",
+      "source_id": "115409",
+      "question": "Are people chattering quietly?",
+      "target": 0,
+      "type": "acoustic_property",
+      "type_method": "rule"
+    },
+    {
+      "qid": "821e75bf4d7f20cfe0757281",
+      "recording": "20110220_churchbell.wav",
+      "path": "a-final-test-stimuli/audio/20110220_churchbell.wav",
+      "source_id": "115409",
+      "question": "Is there a train whistle?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "5aaf8cbaf62e1475ff3c2405",
+      "recording": "20110805_forest.crows.07.wav",
+      "path": "a-final-test-stimuli/audio/20110805_forest.crows.07.wav",
+      "source_id": "126283",
+      "question": "Is an animal making noise?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "a5b8839dd251201d95578581",
+      "recording": "20110805_forest.crows.07.wav",
+      "path": "a-final-test-stimuli/audio/20110805_forest.crows.07.wav",
+      "source_id": "126283",
+      "question": "Is a baby crying?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "c938b91df903b1c239d4745d",
+      "recording": "20130326_caged.birds.01.wav",
+      "path": "a-final-test-stimuli/audio/20130326_caged.birds.01.wav",
+      "source_id": "185120",
+      "question": "Are there multiple birds?",
+      "target": 0,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "8f87cd83b15fe56744e7dcc7",
+      "recording": "20130326_caged.birds.01.wav",
+      "path": "a-final-test-stimuli/audio/20130326_caged.birds.01.wav",
+      "source_id": "185120",
+      "question": "Is a car starting?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "b09deb14b5102f9d2f057a53",
+      "recording": "20130327_valparaiso.traffic.02.wav",
+      "path": "a-final-test-stimuli/audio/20130327_valparaiso.traffic.02.wav",
+      "source_id": "185118",
+      "question": "are cars driving?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "315e19ffcff26cc30462a21d",
+      "recording": "20130327_valparaiso.traffic.02.wav",
+      "path": "a-final-test-stimuli/audio/20130327_valparaiso.traffic.02.wav",
+      "source_id": "185118",
+      "question": "Is someone screaming?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "7e6e5bd9e7cf51e4ac438ecd",
+      "recording": "20130405_wooden.stairs.floor.01.wav",
+      "path": "a-final-test-stimuli/audio/20130405_wooden.stairs.floor.01.wav",
+      "source_id": "185139",
+      "question": "Is someone walking inside a building?",
+      "target": 0,
+      "type": "scene_context",
+      "type_method": "rule"
+    },
+    {
+      "qid": "0868b54a2178380560158082",
+      "recording": "20130405_wooden.stairs.floor.01.wav",
+      "path": "a-final-test-stimuli/audio/20130405_wooden.stairs.floor.01.wav",
+      "source_id": "185139",
+      "question": "Do the individuals speak as they walk?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "465f0ecfb8fad22838891d71",
+      "recording": "20130723_Rain1.wav",
+      "path": "a-final-test-stimuli/audio/20130723_Rain1.wav",
+      "source_id": "203956",
+      "question": "Do the cars sound their horns?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "78322a954601afebda92bfd4",
+      "recording": "20130723_Rain1.wav",
+      "path": "a-final-test-stimuli/audio/20130723_Rain1.wav",
+      "source_id": "203956",
+      "question": "Is the traffic waiting on a sunny day?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "aa7d401084019e6e7151ff98",
+      "recording": "20160506_sharpening.02.wav",
+      "path": "a-final-test-stimuli/audio/20160506_sharpening.02.wav",
+      "source_id": "345302",
+      "question": "Does the sound repeat itself?",
+      "target": 0,
+      "type": "time_pattern",
+      "type_method": "rule"
+    },
+    {
+      "qid": "3db1dd1ccdf50642c9e164c1",
+      "recording": "20160506_sharpening.02.wav",
+      "path": "a-final-test-stimuli/audio/20160506_sharpening.02.wav",
+      "source_id": "345302",
+      "question": "Are there people talking?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "cb90ce3551ff046f855cf533",
+      "recording": "20160922_passing.lorry.marshes.wav",
+      "path": "a-final-test-stimuli/audio/20160922_passing.lorry.marshes.wav",
+      "source_id": "360762",
+      "question": "Is there a train passing by?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "47eeb9ec98ae1c972dade88f",
+      "recording": "20160922_passing.lorry.marshes.wav",
+      "path": "a-final-test-stimuli/audio/20160922_passing.lorry.marshes.wav",
+      "source_id": "360762",
+      "question": "is only one bird chirping?",
+      "target": 1,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "f143e3aca9533285f5e7697c",
+      "recording": "53 blackhead_minifjord_closeup.wav",
+      "path": "a-final-test-stimuli/audio/53 blackhead_minifjord_closeup.wav",
+      "source_id": "75833",
+      "question": "Is a jet flying overhead?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "fb006d575c342070ee4dc7df",
+      "recording": "53 blackhead_minifjord_closeup.wav",
+      "path": "a-final-test-stimuli/audio/53 blackhead_minifjord_closeup.wav",
+      "source_id": "75833",
+      "question": "Dies it sound like a coin hits the ground at any point?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "25a33d26b78ccd0b66db71f5",
+      "recording": "Air raid siren_rising.wav",
+      "path": "a-final-test-stimuli/audio/Air raid siren_rising.wav",
+      "source_id": "153535",
+      "question": "Are the birds singing?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "36d8c0a0ceb3a8cd3cfe2b5d",
+      "recording": "Air raid siren_rising.wav",
+      "path": "a-final-test-stimuli/audio/Air raid siren_rising.wav",
+      "source_id": "153535",
+      "question": "Is it raining?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "f03d019ab40fab368f36e913",
+      "recording": "Ambience with Train.wav",
+      "path": "a-final-test-stimuli/audio/Ambience with Train.wav",
+      "source_id": "119708",
+      "question": "Is there air blowing?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "a631c07233492e3c78b51431",
+      "recording": "Ambience with Train.wav",
+      "path": "a-final-test-stimuli/audio/Ambience with Train.wav",
+      "source_id": "119708",
+      "question": "Is there music playing?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "9a3fa8127fe3be27bb5e530e",
+      "recording": "Anti Air Gun (3 Sounds).wav",
+      "path": "a-final-test-stimuli/audio/Anti Air Gun (3 Sounds).wav",
+      "source_id": "161429",
+      "question": "Does it sound like gun fire?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "59cd0eadcb3943b513f403ca",
+      "recording": "Anti Air Gun (3 Sounds).wav",
+      "path": "a-final-test-stimuli/audio/Anti Air Gun (3 Sounds).wav",
+      "source_id": "161429",
+      "question": "Are any animals injured?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "4f0706475ebcade536e19d06",
+      "recording": "Beach_SaintJeanDeLuz_France_Waves_Kids_People_xystereo.wav",
+      "path": "a-final-test-stimuli/audio/Beach_SaintJeanDeLuz_France_Waves_Kids_People_xystereo.wav",
+      "source_id": "351897",
+      "question": "Are there any kids playing?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "c60a7fde4499c5a4b2117d8e",
+      "recording": "Beach_SaintJeanDeLuz_France_Waves_Kids_People_xystereo.wav",
+      "path": "a-final-test-stimuli/audio/Beach_SaintJeanDeLuz_France_Waves_Kids_People_xystereo.wav",
+      "source_id": "351897",
+      "question": "Are they in class?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "84b4f7fe897d76a1cb1fd75a",
+      "recording": "Bicin_Diputacion_Day_22-03-2009.wav",
+      "path": "a-final-test-stimuli/audio/Bicin_Diputacion_Day_22-03-2009.wav",
+      "source_id": "69952",
+      "question": "Is there sound of vehicles?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "c4bd39d3de086daa54fb4f1a",
+      "recording": "Bicin_Diputacion_Day_22-03-2009.wav",
+      "path": "a-final-test-stimuli/audio/Bicin_Diputacion_Day_22-03-2009.wav",
+      "source_id": "69952",
+      "question": "Does a horn blow?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "adf5b809103dd723877b9bb6",
+      "recording": "Bird Ambience.wav",
+      "path": "a-final-test-stimuli/audio/Bird Ambience.wav",
+      "source_id": "119438",
+      "question": "Are there many birds chirping?",
+      "target": 0,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "95732f906c50d18e81501572",
+      "recording": "Bird Ambience.wav",
+      "path": "a-final-test-stimuli/audio/Bird Ambience.wav",
+      "source_id": "119438",
+      "question": "Is this happening inside of an office?",
+      "target": 1,
+      "type": "scene_context",
+      "type_method": "rule"
+    },
+    {
+      "qid": "aaba119f328043a9bca73ac0",
+      "recording": "Birds Singing in a Small Town During Morning.wav",
+      "path": "a-final-test-stimuli/audio/Birds Singing in a Small Town During Morning.wav",
+      "source_id": "232726",
+      "question": "The bird is in outside a building right?",
+      "target": 0,
+      "type": "scene_context",
+      "type_method": "rule"
+    },
+    {
+      "qid": "20560d91bdd0e6e800e95107",
+      "recording": "Birds Singing in a Small Town During Morning.wav",
+      "path": "a-final-test-stimuli/audio/Birds Singing in a Small Town During Morning.wav",
+      "source_id": "232726",
+      "question": "are people making human sounds?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "b107f87262cacbd93d30ee4f",
+      "recording": "Birds in the city 1.wav",
+      "path": "a-final-test-stimuli/audio/Birds in the city 1.wav",
+      "source_id": "142009",
+      "question": "Are animals making noise?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "8a41d51949e06ed9f713c76d",
+      "recording": "Birds in the city 1.wav",
+      "path": "a-final-test-stimuli/audio/Birds in the city 1.wav",
+      "source_id": "142009",
+      "question": "Is someone talking?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "107b11befcb66d2e4d2ad1c4",
+      "recording": "Blackbird sounds.wav",
+      "path": "a-final-test-stimuli/audio/Blackbird sounds.wav",
+      "source_id": "167302",
+      "question": "Is there variation in the pitch of the birdsong?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "6faaf45bedb8c007220dbf78",
+      "recording": "Blackbird sounds.wav",
+      "path": "a-final-test-stimuli/audio/Blackbird sounds.wav",
+      "source_id": "167302",
+      "question": "Is a violin being played?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "ebe154f3b82dfc2f36addb9e",
+      "recording": "BobKessler-Spinning Tin Top.wav",
+      "path": "a-final-test-stimuli/audio/BobKessler-Spinning Tin Top.wav",
+      "source_id": "32887",
+      "question": "Is something rolling down steps?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "c8278f9cd8f83052a8ea9964",
+      "recording": "BobKessler-Spinning Tin Top.wav",
+      "path": "a-final-test-stimuli/audio/BobKessler-Spinning Tin Top.wav",
+      "source_id": "32887",
+      "question": "Is someone washing clothes?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "1b30122c415e47693c07b50c",
+      "recording": "Boiling a cup of water.wav",
+      "path": "a-final-test-stimuli/audio/Boiling a cup of water.wav",
+      "source_id": "159383",
+      "question": "Is the liquid hot?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "be74974756457494d1fae959",
+      "recording": "Boiling a cup of water.wav",
+      "path": "a-final-test-stimuli/audio/Boiling a cup of water.wav",
+      "source_id": "159383",
+      "question": "Is a wolf howling?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "57557598b18b91b74bc8cd7b",
+      "recording": "Boulevard SummerRiver calm 01 NL 160905_0961 0962.wav",
+      "path": "a-final-test-stimuli/audio/Boulevard SummerRiver calm 01 NL 160905_0961 0962.wav",
+      "source_id": "355323",
+      "question": "Is there more than one person talking?",
+      "target": 0,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "e5c4c16ec5bf8ac84326f43b",
+      "recording": "Boulevard SummerRiver calm 01 NL 160905_0961 0962.wav",
+      "path": "a-final-test-stimuli/audio/Boulevard SummerRiver calm 01 NL 160905_0961 0962.wav",
+      "source_id": "355323",
+      "question": "Can sirens be heard in the background?",
+      "target": 1,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "eaf61df628f80250a8d04ab0",
+      "recording": "Box of sweets.wav",
+      "path": "a-final-test-stimuli/audio/Box of sweets.wav",
+      "source_id": "325608",
+      "question": "Is the action repeated over and over?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "bbeedc936ae74fec80cd33af",
+      "recording": "Box of sweets.wav",
+      "path": "a-final-test-stimuli/audio/Box of sweets.wav",
+      "source_id": "325608",
+      "question": "Is the person eating?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "1f24b90b2ca030384d34f778",
+      "recording": "BoyRacer.wav",
+      "path": "a-final-test-stimuli/audio/BoyRacer.wav",
+      "source_id": "40624",
+      "question": "Is someone driving?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "dc71f4470c943193a27a56b9",
+      "recording": "BoyRacer.wav",
+      "path": "a-final-test-stimuli/audio/BoyRacer.wav",
+      "source_id": "40624",
+      "question": "Is this in a library?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "31cc16d4bfd8c87cfc223b08",
+      "recording": "Brush 01.wav",
+      "path": "a-final-test-stimuli/audio/Brush 01.wav",
+      "source_id": "241351",
+      "question": "Does the person take a few steps?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "e0153a4176aa3f1c9004d991",
+      "recording": "Brush 01.wav",
+      "path": "a-final-test-stimuli/audio/Brush 01.wav",
+      "source_id": "241351",
+      "question": "Are children running?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "8e26b76cf410f3687ac505ad",
+      "recording": "Brushing teeth.wav",
+      "path": "a-final-test-stimuli/audio/Brushing teeth.wav",
+      "source_id": "271450",
+      "question": "Is someone brushing their teeth?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "dd01fe3f6e0207dc5b13b3e1",
+      "recording": "Brushing teeth.wav",
+      "path": "a-final-test-stimuli/audio/Brushing teeth.wav",
+      "source_id": "271450",
+      "question": "Do they flush the toilet?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "9b746dae814324d0ae78dbf2",
+      "recording": "Bubbles water.wav",
+      "path": "a-final-test-stimuli/audio/Bubbles water.wav",
+      "source_id": "325317",
+      "question": "Are there bubbles in the liquid?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "1fc9e9fba35d479ffe969a38",
+      "recording": "Bubbles water.wav",
+      "path": "a-final-test-stimuli/audio/Bubbles water.wav",
+      "source_id": "325317",
+      "question": "Is something burning?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "bac66c8f96279db2c829c566",
+      "recording": "Buddhist Bells.wav",
+      "path": "a-final-test-stimuli/audio/Buddhist Bells.wav",
+      "source_id": "189783",
+      "question": "Does the object make a high pitch when hit?",
+      "target": 0,
+      "type": "acoustic_property",
+      "type_method": "rule"
+    },
+    {
+      "qid": "386f0d09e14f780ce4c0df01",
+      "recording": "Buddhist Bells.wav",
+      "path": "a-final-test-stimuli/audio/Buddhist Bells.wav",
+      "source_id": "189783",
+      "question": "Does the object break after it is hit?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "7ef398b3f6e9729ce10ea5e2",
+      "recording": "BulletJuneEdited192012.wav",
+      "path": "a-final-test-stimuli/audio/BulletJuneEdited192012.wav",
+      "source_id": "158738",
+      "question": "Is there an animal present?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "2aa143252f13cae3de62e3a4",
+      "recording": "BulletJuneEdited192012.wav",
+      "path": "a-final-test-stimuli/audio/BulletJuneEdited192012.wav",
+      "source_id": "158738",
+      "question": "Is this a sound that is typically heard indoors?",
+      "target": 1,
+      "type": "scene_context",
+      "type_method": "rule"
+    },
+    {
+      "qid": "f888bd386d64b85492322b62",
+      "recording": "By ther blacksmith-002.wav",
+      "path": "a-final-test-stimuli/audio/By ther blacksmith-002.wav",
+      "source_id": "254370",
+      "question": "Is something metallic being hit?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "008f38f4ad3ea4b77be4bc7b",
+      "recording": "By ther blacksmith-002.wav",
+      "path": "a-final-test-stimuli/audio/By ther blacksmith-002.wav",
+      "source_id": "254370",
+      "question": "Is everyone silent in the area?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "447792c184c9cbaa329cee22",
+      "recording": "California morning birds singing.wav",
+      "path": "a-final-test-stimuli/audio/California morning birds singing.wav",
+      "source_id": "77623",
+      "question": "Does the sound take place outside?",
+      "target": 0,
+      "type": "scene_context",
+      "type_method": "rule"
+    },
+    {
+      "qid": "66c6584520ee9764a6fc4320",
+      "recording": "California morning birds singing.wav",
+      "path": "a-final-test-stimuli/audio/California morning birds singing.wav",
+      "source_id": "77623",
+      "question": "Is there a storm coming in?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "8fedb3919d7d34713ad597d2",
+      "recording": "Canada Geese Squawk on a Pond with a Fountain.wav",
+      "path": "a-final-test-stimuli/audio/Canada Geese Squawk on a Pond with a Fountain.wav",
+      "source_id": "234107",
+      "question": "Is this in nature?",
+      "target": 0,
+      "type": "scene_context",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "e1157e540e57f254db5090a3",
+      "recording": "Canada Geese Squawk on a Pond with a Fountain.wav",
+      "path": "a-final-test-stimuli/audio/Canada Geese Squawk on a Pond with a Fountain.wav",
+      "source_id": "234107",
+      "question": "Is this in the city?",
+      "target": 1,
+      "type": "scene_context",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "eaac095983be892cd3861e05",
+      "recording": "Car vs. Freight Train.wav",
+      "path": "a-final-test-stimuli/audio/Car vs. Freight Train.wav",
+      "source_id": "130864",
+      "question": "Can a car be heard revving its engine?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "efe95e3635df3ee0c6c8ac49",
+      "recording": "Car vs. Freight Train.wav",
+      "path": "a-final-test-stimuli/audio/Car vs. Freight Train.wav",
+      "source_id": "130864",
+      "question": "Can birds be heard chirping?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "65919f563bf162ae576b192a",
+      "recording": "CarInterior_RRx_WaitToTurn_FinalPark.wav",
+      "path": "a-final-test-stimuli/audio/CarInterior_RRx_WaitToTurn_FinalPark.wav",
+      "source_id": "203072",
+      "question": "is something turned on?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "6586f270bdf86edb170c7515",
+      "recording": "CarInterior_RRx_WaitToTurn_FinalPark.wav",
+      "path": "a-final-test-stimuli/audio/CarInterior_RRx_WaitToTurn_FinalPark.wav",
+      "source_id": "203072",
+      "question": "Is this an animal?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "bf74af5d432725a3504c2157",
+      "recording": "Carillon Zuiderkerk Amsterdam.wav",
+      "path": "a-final-test-stimuli/audio/Carillon Zuiderkerk Amsterdam.wav",
+      "source_id": "217714",
+      "question": "do the chimes play at the same time as the bell?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "8f2204bc82ad5d1908aa55c9",
+      "recording": "Carillon Zuiderkerk Amsterdam.wav",
+      "path": "a-final-test-stimuli/audio/Carillon Zuiderkerk Amsterdam.wav",
+      "source_id": "217714",
+      "question": "does the bell only sound once?",
+      "target": 1,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "7b1edda8b978aaf1b553d410",
+      "recording": "Cars_bridge.wav",
+      "path": "a-final-test-stimuli/audio/Cars_bridge.wav",
+      "source_id": "26239",
+      "question": "do the cars vary in degree of speed and engine noise?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "5a60bb27d33a693b8028d10e",
+      "recording": "Cars_bridge.wav",
+      "path": "a-final-test-stimuli/audio/Cars_bridge.wav",
+      "source_id": "26239",
+      "question": "are horns honking?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "e5253d4bdd790d2ed660f3b7",
+      "recording": "Cat Meowing.wav",
+      "path": "a-final-test-stimuli/audio/Cat Meowing.wav",
+      "source_id": "264311",
+      "question": "Is this the sound of a baby animal?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "ac1767f0370ca581c4d2b216",
+      "recording": "Cat Meowing.wav",
+      "path": "a-final-test-stimuli/audio/Cat Meowing.wav",
+      "source_id": "264311",
+      "question": "Does a person speak during the clip?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "2ef890d8fcf3d96a2f5979a5",
+      "recording": "Cicadas .wav",
+      "path": "a-final-test-stimuli/audio/Cicadas .wav",
+      "source_id": "272168",
+      "question": "Is the noise at a constant rhythm?",
+      "target": 0,
+      "type": "time_pattern",
+      "type_method": "rule"
+    },
+    {
+      "qid": "e7c3b473f5761783cd33ac9e",
+      "recording": "Cicadas .wav",
+      "path": "a-final-test-stimuli/audio/Cicadas .wav",
+      "source_id": "272168",
+      "question": "Is there a loud bang?",
+      "target": 1,
+      "type": "acoustic_property",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "d155f33ea74b7bffc17e9fb1",
+      "recording": "Cityscape construction site 2 100304.wav",
+      "path": "a-final-test-stimuli/audio/Cityscape construction site 2 100304.wav",
+      "source_id": "91289",
+      "question": "Can a car be heard in the background?",
+      "target": 0,
+      "type": "count_or_relation",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "b7502971589a3b018d971a14",
+      "recording": "Cityscape construction site 2 100304.wav",
+      "path": "a-final-test-stimuli/audio/Cityscape construction site 2 100304.wav",
+      "source_id": "91289",
+      "question": "Is someone playing the trumpet ?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "748ddd292eb759868d802ebf",
+      "recording": "Clatter.wav",
+      "path": "a-final-test-stimuli/audio/Clatter.wav",
+      "source_id": "204363",
+      "question": "Is there a tapping sound?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "0276fe998b8e63a3e43ebc02",
+      "recording": "Clatter.wav",
+      "path": "a-final-test-stimuli/audio/Clatter.wav",
+      "source_id": "204363",
+      "question": "Is the tapping at a steady beat?",
+      "target": 1,
+      "type": "time_pattern",
+      "type_method": "rule"
+    },
+    {
+      "qid": "becef179ae6539f41cb9ce24",
+      "recording": "Construction Sounds.wav",
+      "path": "a-final-test-stimuli/audio/Construction Sounds.wav",
+      "source_id": "326646",
+      "question": "Is this sound quiet?",
+      "target": 0,
+      "type": "acoustic_property",
+      "type_method": "rule"
+    },
+    {
+      "qid": "c01e47e6b1d1d27ecebfd159",
+      "recording": "Construction Sounds.wav",
+      "path": "a-final-test-stimuli/audio/Construction Sounds.wav",
+      "source_id": "326646",
+      "question": "Are there any human voices?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "93a8f7257a8276f05e7fd5b2",
+      "recording": "Cooking on Gas.wav",
+      "path": "a-final-test-stimuli/audio/Cooking on Gas.wav",
+      "source_id": "189623",
+      "question": "Is the noise continuous?",
+      "target": 0,
+      "type": "time_pattern",
+      "type_method": "rule"
+    },
+    {
+      "qid": "a551d828d8d89d28f09cadc3",
+      "recording": "Cooking on Gas.wav",
+      "path": "a-final-test-stimuli/audio/Cooking on Gas.wav",
+      "source_id": "189623",
+      "question": "Does it get louder?",
+      "target": 1,
+      "type": "time_pattern",
+      "type_method": "rule"
+    },
+    {
+      "qid": "73c3b1d1df098a6d3cb29c75",
+      "recording": "Corn Husking Sequence x2.wav",
+      "path": "a-final-test-stimuli/audio/Corn Husking Sequence x2.wav",
+      "source_id": "161231",
+      "question": "is something being torn?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "18176c2281aa25825676730c",
+      "recording": "Corn Husking Sequence x2.wav",
+      "path": "a-final-test-stimuli/audio/Corn Husking Sequence x2.wav",
+      "source_id": "161231",
+      "question": "does the sound stay the same pace?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "73d408e7b5407d655faa4aaa",
+      "recording": "Creacking Oak 6bft  SHORT 130418_00.wav",
+      "path": "a-final-test-stimuli/audio/Creacking Oak 6bft  SHORT 130418_00.wav",
+      "source_id": "191934",
+      "question": "Is it wood that is making the creaking sound?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "5d2035440d78030405896358",
+      "recording": "Creacking Oak 6bft  SHORT 130418_00.wav",
+      "path": "a-final-test-stimuli/audio/Creacking Oak 6bft  SHORT 130418_00.wav",
+      "source_id": "191934",
+      "question": "Does the rushing water sound stop at any time?",
+      "target": 1,
+      "type": "time_pattern",
+      "type_method": "rule"
+    },
+    {
+      "qid": "4c5176db432727c20dd72795",
+      "recording": "Crickets in the night.wav",
+      "path": "a-final-test-stimuli/audio/Crickets in the night.wav",
+      "source_id": "221164",
+      "question": "Is there an owl hooting?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "81523de876f63fb3fa4303eb",
+      "recording": "Crickets in the night.wav",
+      "path": "a-final-test-stimuli/audio/Crickets in the night.wav",
+      "source_id": "221164",
+      "question": "Is a zebra whinnying?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "b045ead7c2b86ec132cde262",
+      "recording": "Cualquiera.wav",
+      "path": "a-final-test-stimuli/audio/Cualquiera.wav",
+      "source_id": "238205",
+      "question": "Does the machine background noise intensify after the door opens?",
+      "target": 0,
+      "type": "time_pattern",
+      "type_method": "rule"
+    },
+    {
+      "qid": "e7d96fe469925596a744aed1",
+      "recording": "Cualquiera.wav",
+      "path": "a-final-test-stimuli/audio/Cualquiera.wav",
+      "source_id": "238205",
+      "question": "Can animals be heard?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "391ca4f3c82791ac0f74d204",
+      "recording": "Curtains.wav",
+      "path": "a-final-test-stimuli/audio/Curtains.wav",
+      "source_id": "365700",
+      "question": "Are the leaves crunching?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "39591d653e720d7dea6abae3",
+      "recording": "Curtains.wav",
+      "path": "a-final-test-stimuli/audio/Curtains.wav",
+      "source_id": "365700",
+      "question": "Is there heavy wind?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "1e47c4a1f49768f620a52e8b",
+      "recording": "Erny vs Deadman4.wav",
+      "path": "a-final-test-stimuli/audio/Erny vs Deadman4.wav",
+      "source_id": "5925",
+      "question": "Are the people talking over each other?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "1ec98a3326cd060074c8de07",
+      "recording": "Erny vs Deadman4.wav",
+      "path": "a-final-test-stimuli/audio/Erny vs Deadman4.wav",
+      "source_id": "5925",
+      "question": "Are dogs barking at the people talking?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "3701d5e14e737a69fc8d590b",
+      "recording": "F907 Church prayer f.wav",
+      "path": "a-final-test-stimuli/audio/F907 Church prayer f.wav",
+      "source_id": "50422",
+      "question": "Are there many people responding to one person?",
+      "target": 0,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "d7a5c7c639536f3077a1760f",
+      "recording": "F907 Church prayer f.wav",
+      "path": "a-final-test-stimuli/audio/F907 Church prayer f.wav",
+      "source_id": "50422",
+      "question": "does the woman's voice come before the man's?",
+      "target": 1,
+      "type": "time_pattern",
+      "type_method": "rule"
+    },
+    {
+      "qid": "f717982ba3631c8496bb3060",
+      "recording": "FOOTSTEPS_005.wav",
+      "path": "a-final-test-stimuli/audio/FOOTSTEPS_005.wav",
+      "source_id": "340454",
+      "question": "Is the person moving?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "110010571d22e83c297e2f51",
+      "recording": "FOOTSTEPS_005.wav",
+      "path": "a-final-test-stimuli/audio/FOOTSTEPS_005.wav",
+      "source_id": "340454",
+      "question": "Is the person humming a tune?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "aab56b13adbb4988e4b32bf0",
+      "recording": "FP_Refrigerator_Door_Squeak.wav",
+      "path": "a-final-test-stimuli/audio/FP_Refrigerator_Door_Squeak.wav",
+      "source_id": "72039",
+      "question": "Is a door creaking?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "597532752c6faa59f58393e1",
+      "recording": "FP_Refrigerator_Door_Squeak.wav",
+      "path": "a-final-test-stimuli/audio/FP_Refrigerator_Door_Squeak.wav",
+      "source_id": "72039",
+      "question": "Does someone ring the doorbell?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "f7abaecd4fbd9ef1b6d90b39",
+      "recording": "Fantasy Ambience.wav",
+      "path": "a-final-test-stimuli/audio/Fantasy Ambience.wav",
+      "source_id": "277297",
+      "question": "Are there many high pitched noises?",
+      "target": 0,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "b5af0aace850c391f23a2347",
+      "recording": "Fantasy Ambience.wav",
+      "path": "a-final-test-stimuli/audio/Fantasy Ambience.wav",
+      "source_id": "277297",
+      "question": "Is only one note played?",
+      "target": 1,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "88c604f459e7947e56020070",
+      "recording": "Fast food soda with ice, sip slurp straw.wav",
+      "path": "a-final-test-stimuli/audio/Fast food soda with ice, sip slurp straw.wav",
+      "source_id": "188191",
+      "question": "Did someone burp?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "bccbba0b71ac83ee2e410fe7",
+      "recording": "Fast food soda with ice, sip slurp straw.wav",
+      "path": "a-final-test-stimuli/audio/Fast food soda with ice, sip slurp straw.wav",
+      "source_id": "188191",
+      "question": "Is there someone tired?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "6a87755da54c15e8cc174c59",
+      "recording": "Filing Nails.wav",
+      "path": "a-final-test-stimuli/audio/Filing Nails.wav",
+      "source_id": "326162",
+      "question": "is something rubbing against another?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "f7c2fdfa3b480f7c14ec747e",
+      "recording": "Filing Nails.wav",
+      "path": "a-final-test-stimuli/audio/Filing Nails.wav",
+      "source_id": "326162",
+      "question": "is someone breathing audibly?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "d0c76ea07f686a722abf47ea",
+      "recording": "Forest with Squirrel.wav",
+      "path": "a-final-test-stimuli/audio/Forest with Squirrel.wav",
+      "source_id": "183499",
+      "question": "Is there white noise?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "73a23234e58e92e7938de365",
+      "recording": "Forest with Squirrel.wav",
+      "path": "a-final-test-stimuli/audio/Forest with Squirrel.wav",
+      "source_id": "183499",
+      "question": "are there human voices?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "952913e747a16f114c32a07b",
+      "recording": "Fowl - Chatter 1 - 96kHz.wav",
+      "path": "a-final-test-stimuli/audio/Fowl - Chatter 1 - 96kHz.wav",
+      "source_id": "233104",
+      "question": "Are there multiple animals?",
+      "target": 0,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "3c86388ce550e25a15ea52bb",
+      "recording": "Fowl - Chatter 1 - 96kHz.wav",
+      "path": "a-final-test-stimuli/audio/Fowl - Chatter 1 - 96kHz.wav",
+      "source_id": "233104",
+      "question": "Are there cows?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "0f7fd9663ced3f14eb147cfd",
+      "recording": "Gentle rain outside balcony street noise.wav",
+      "path": "a-final-test-stimuli/audio/Gentle rain outside balcony street noise.wav",
+      "source_id": "336271",
+      "question": "Does the engine slowly idle down?",
+      "target": 0,
+      "type": "time_pattern",
+      "type_method": "rule"
+    },
+    {
+      "qid": "a1ec3e2783ada8aac4396a25",
+      "recording": "Gentle rain outside balcony street noise.wav",
+      "path": "a-final-test-stimuli/audio/Gentle rain outside balcony street noise.wav",
+      "source_id": "336271",
+      "question": "Is the air rushing sound caused by a plane?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "85835ff6998b48ef2792b946",
+      "recording": "Glass bottles in and out of a basket.wav",
+      "path": "a-final-test-stimuli/audio/Glass bottles in and out of a basket.wav",
+      "source_id": "366259",
+      "question": "Is glass tapped on a hard surface?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "30bfea3805a472871b57d6f6",
+      "recording": "Glass bottles in and out of a basket.wav",
+      "path": "a-final-test-stimuli/audio/Glass bottles in and out of a basket.wav",
+      "source_id": "366259",
+      "question": "Is an object snapped?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "fbc2adeed574fb5347358ce1",
+      "recording": "Grackles.wav",
+      "path": "a-final-test-stimuli/audio/Grackles.wav",
+      "source_id": "334646",
+      "question": "Is there more than one animal present?",
+      "target": 0,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "2c63edc8cf85a0788f940b39",
+      "recording": "Grackles.wav",
+      "path": "a-final-test-stimuli/audio/Grackles.wav",
+      "source_id": "334646",
+      "question": "Are there people talking?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "e7b1181124fc0dadc4ffef84",
+      "recording": "Greek Habitues - (Evosmos - Salonika) 16.18 28.09.wav",
+      "path": "a-final-test-stimuli/audio/Greek Habitues - (Evosmos - Salonika) 16.18 28.09.wav",
+      "source_id": "130587",
+      "question": "is there a helicopter present?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "dc50914f819d6791d4fea3e2",
+      "recording": "Greek Habitues - (Evosmos - Salonika) 16.18 28.09.wav",
+      "path": "a-final-test-stimuli/audio/Greek Habitues - (Evosmos - Salonika) 16.18 28.09.wav",
+      "source_id": "130587",
+      "question": "Are there kids?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "50d7ea21d969b4940d582a09",
+      "recording": "House_kettle boil_whistle.wav",
+      "path": "a-final-test-stimuli/audio/House_kettle boil_whistle.wav",
+      "source_id": "119537",
+      "question": "Does the whistling quickly quieten?",
+      "target": 0,
+      "type": "time_pattern",
+      "type_method": "rule"
+    },
+    {
+      "qid": "010a0e384e86c37049bb400d",
+      "recording": "House_kettle boil_whistle.wav",
+      "path": "a-final-test-stimuli/audio/House_kettle boil_whistle.wav",
+      "source_id": "119537",
+      "question": "Are there people eating?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "4542fd4b934bad2058fbe2bc",
+      "recording": "Household - Atmos - Wind Through Window.wav",
+      "path": "a-final-test-stimuli/audio/Household - Atmos - Wind Through Window.wav",
+      "source_id": "240236",
+      "question": "Is the wind blowing?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "e0ebb751aa20c7ec5992b5f1",
+      "recording": "Household - Atmos - Wind Through Window.wav",
+      "path": "a-final-test-stimuli/audio/Household - Atmos - Wind Through Window.wav",
+      "source_id": "240236",
+      "question": "Can loud thunder be heard?",
+      "target": 1,
+      "type": "acoustic_property",
+      "type_method": "rule"
+    },
+    {
+      "qid": "9720b519842b4787920d5ba6",
+      "recording": "IKEA_Cafeteria.wav",
+      "path": "a-final-test-stimuli/audio/IKEA_Cafeteria.wav",
+      "source_id": "46068",
+      "question": "Are people eating?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "c34bf4f465b109c551ea14f5",
+      "recording": "IKEA_Cafeteria.wav",
+      "path": "a-final-test-stimuli/audio/IKEA_Cafeteria.wav",
+      "source_id": "46068",
+      "question": "Is someone in the car?",
+      "target": 1,
+      "type": "scene_context",
+      "type_method": "rule"
+    },
+    {
+      "qid": "9fec2b12a42d95780262565c",
+      "recording": "Icy rain.wav",
+      "path": "a-final-test-stimuli/audio/Icy rain.wav",
+      "source_id": "216741",
+      "question": "Does the dog sound far away?",
+      "target": 0,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "568dbb315d93113df6088072",
+      "recording": "Icy rain.wav",
+      "path": "a-final-test-stimuli/audio/Icy rain.wav",
+      "source_id": "216741",
+      "question": "Is there a cat hissing in the background?",
+      "target": 1,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "22abdf0fce352ea26f099fec",
+      "recording": "Idling Truck at Loading Dock.wav",
+      "path": "a-final-test-stimuli/audio/Idling Truck at Loading Dock.wav",
+      "source_id": "320244",
+      "question": "Are there people talking in the background?",
+      "target": 0,
+      "type": "count_or_relation",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "c902ea5f5739261eedf80799",
+      "recording": "Idling Truck at Loading Dock.wav",
+      "path": "a-final-test-stimuli/audio/Idling Truck at Loading Dock.wav",
+      "source_id": "320244",
+      "question": "is a dog barking?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "074ce37aa739208218f46f5f",
+      "recording": "Index Card Flips (handle business paper mvmt) 02.wav",
+      "path": "a-final-test-stimuli/audio/Index Card Flips (handle business paper mvmt) 02.wav",
+      "source_id": "319154",
+      "question": "Is something moving?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "7cd5fe46c852d6128c6adca5",
+      "recording": "Index Card Flips (handle business paper mvmt) 02.wav",
+      "path": "a-final-test-stimuli/audio/Index Card Flips (handle business paper mvmt) 02.wav",
+      "source_id": "319154",
+      "question": "Is this a jet engine?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "d7d2301cdc7f824982df24dd",
+      "recording": "Inner City Bees.wav",
+      "path": "a-final-test-stimuli/audio/Inner City Bees.wav",
+      "source_id": "344684",
+      "question": "Is this recorded out doors?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "829deef15cc565371030f446",
+      "recording": "Inner City Bees.wav",
+      "path": "a-final-test-stimuli/audio/Inner City Bees.wav",
+      "source_id": "344684",
+      "question": "Can a motor cycle be heard in the background?",
+      "target": 1,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "5d0aec5069042fc52fcb685b",
+      "recording": "Krankenwagen _ German Ambulances Passing by...wav",
+      "path": "a-final-test-stimuli/audio/Krankenwagen _ German Ambulances Passing by...wav",
+      "source_id": "200274",
+      "question": "Is this the sound of emergency transportation?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "d7bf414d381b1135184ae470",
+      "recording": "Krankenwagen _ German Ambulances Passing by...wav",
+      "path": "a-final-test-stimuli/audio/Krankenwagen _ German Ambulances Passing by...wav",
+      "source_id": "200274",
+      "question": "Are there emergency workers talking?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "6519d223cef8e1e2fd965289",
+      "recording": "Kung Fu Clothes Hits and Clothing Sounds.wav",
+      "path": "a-final-test-stimuli/audio/Kung Fu Clothes Hits and Clothing Sounds.wav",
+      "source_id": "275748",
+      "question": "Are there quiet periods between tapping sounds?",
+      "target": 0,
+      "type": "acoustic_property",
+      "type_method": "rule"
+    },
+    {
+      "qid": "148b78147f1cd01a2a95b31e",
+      "recording": "Kung Fu Clothes Hits and Clothing Sounds.wav",
+      "path": "a-final-test-stimuli/audio/Kung Fu Clothes Hits and Clothing Sounds.wav",
+      "source_id": "275748",
+      "question": "does a person speak?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "6e2304cad78cd99cf6a7ddbd",
+      "recording": "LA Rain.wav",
+      "path": "a-final-test-stimuli/audio/LA Rain.wav",
+      "source_id": "135490",
+      "question": "Is there no human activity in this clip?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "acef4d2c732ba4794ede403c",
+      "recording": "LA Rain.wav",
+      "path": "a-final-test-stimuli/audio/LA Rain.wav",
+      "source_id": "135490",
+      "question": "Can the sound of a human vehicle be heard?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "88d11cc998922bc4ade124b9",
+      "recording": "LakeSide2.wav",
+      "path": "a-final-test-stimuli/audio/LakeSide2.wav",
+      "source_id": "94914",
+      "question": "Is this in a jungle ?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "515cae4b0d8d24c49e447e2a",
+      "recording": "LakeSide2.wav",
+      "path": "a-final-test-stimuli/audio/LakeSide2.wav",
+      "source_id": "94914",
+      "question": "Did a train come to a stop ?",
+      "target": 1,
+      "type": "time_pattern",
+      "type_method": "rule"
+    },
+    {
+      "qid": "b9c144bf3e77f5c36e98572b",
+      "recording": "Library Ambience_large space.wav",
+      "path": "a-final-test-stimuli/audio/Library Ambience_large space.wav",
+      "source_id": "138259",
+      "question": "Is there laughter in the distance?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "463c615eb29614e9f4007b67",
+      "recording": "Library Ambience_large space.wav",
+      "path": "a-final-test-stimuli/audio/Library Ambience_large space.wav",
+      "source_id": "138259",
+      "question": "Can any animals be heard?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "7c4a825e1f6a9f379768ee60",
+      "recording": "Lincoln Nebraska Tornado 5 9 2016.wav",
+      "path": "a-final-test-stimuli/audio/Lincoln Nebraska Tornado 5 9 2016.wav",
+      "source_id": "345564",
+      "question": "Is there an unnatural sound?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "383959fde09c46763f6d79b2",
+      "recording": "Lincoln Nebraska Tornado 5 9 2016.wav",
+      "path": "a-final-test-stimuli/audio/Lincoln Nebraska Tornado 5 9 2016.wav",
+      "source_id": "345564",
+      "question": "Is it loudest at the beginning?",
+      "target": 1,
+      "type": "time_pattern",
+      "type_method": "rule"
+    },
+    {
+      "qid": "22c2cdacfb330c54e88c2cf2",
+      "recording": "Lluvia 1.wav",
+      "path": "a-final-test-stimuli/audio/Lluvia 1.wav",
+      "source_id": "234148",
+      "question": "Does the sound come from outside?",
+      "target": 0,
+      "type": "scene_context",
+      "type_method": "rule"
+    },
+    {
+      "qid": "843c525a8582f885a6aba71d",
+      "recording": "Lluvia 1.wav",
+      "path": "a-final-test-stimuli/audio/Lluvia 1.wav",
+      "source_id": "234148",
+      "question": "Would a person need to wear sunscreen on a day like this?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "ece5a832ee9b0bbf199aeb74",
+      "recording": "Lots of Geese.wav",
+      "path": "a-final-test-stimuli/audio/Lots of Geese.wav",
+      "source_id": "160685",
+      "question": "Are geese making noise?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "a261375609623fce9de34f50",
+      "recording": "Lots of Geese.wav",
+      "path": "a-final-test-stimuli/audio/Lots of Geese.wav",
+      "source_id": "160685",
+      "question": "Are people yelling?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "26107e67793c4ad8ebaebdb9",
+      "recording": "MVI_4002-B.wav",
+      "path": "a-final-test-stimuli/audio/MVI_4002-B.wav",
+      "source_id": "118398",
+      "question": "Did a train pass by ?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "bd29cf3302974145cca65fdd",
+      "recording": "MVI_4002-B.wav",
+      "path": "a-final-test-stimuli/audio/MVI_4002-B.wav",
+      "source_id": "118398",
+      "question": "Is a baby crying ?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "41be0ba25e99a540d29ca7a4",
+      "recording": "Mechanics_Old_Clock_Wind_And Work.wav",
+      "path": "a-final-test-stimuli/audio/Mechanics_Old_Clock_Wind_And Work.wav",
+      "source_id": "268172",
+      "question": "Is any source of water heard?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "03761ec95c9766a30e0a2427",
+      "recording": "Mechanics_Old_Clock_Wind_And Work.wav",
+      "path": "a-final-test-stimuli/audio/Mechanics_Old_Clock_Wind_And Work.wav",
+      "source_id": "268172",
+      "question": "Are people crying?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "c6e4e2a16ce9b9990645196f",
+      "recording": "Metal pipe hitting the ground.wav",
+      "path": "a-final-test-stimuli/audio/Metal pipe hitting the ground.wav",
+      "source_id": "93962",
+      "question": "Is something metallic dropped?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "a2f736797f1e59746e7e8546",
+      "recording": "Metal pipe hitting the ground.wav",
+      "path": "a-final-test-stimuli/audio/Metal pipe hitting the ground.wav",
+      "source_id": "93962",
+      "question": "Are dog nails hitting a hardwood floor?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "f9213d94431da8e40222989a",
+      "recording": "Metal_Hit_01.wav",
+      "path": "a-final-test-stimuli/audio/Metal_Hit_01.wav",
+      "source_id": "177781",
+      "question": "Is something making noise?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "8fcb5d1521dfe45123374067",
+      "recording": "Metal_Hit_01.wav",
+      "path": "a-final-test-stimuli/audio/Metal_Hit_01.wav",
+      "source_id": "177781",
+      "question": "Are dogs barking?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "b6480df909ae958a8d6cf52d",
+      "recording": "Metallic  Gate.wav",
+      "path": "a-final-test-stimuli/audio/Metallic  Gate.wav",
+      "source_id": "250652",
+      "question": "Does the sound happen in irregular intervals?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "75144957a43e698d68d44508",
+      "recording": "Metallic  Gate.wav",
+      "path": "a-final-test-stimuli/audio/Metallic  Gate.wav",
+      "source_id": "250652",
+      "question": "Are there any voices present?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "3001d66aea09bad93b0ecbaa",
+      "recording": "Morsecode - SOS MAYDAY - 988 Hz Tone.wav",
+      "path": "a-final-test-stimuli/audio/Morsecode - SOS MAYDAY - 988 Hz Tone.wav",
+      "source_id": "329436",
+      "question": "Is a machine making this noise?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "44300643ddb7dae5b2759a66",
+      "recording": "Morsecode - SOS MAYDAY - 988 Hz Tone.wav",
+      "path": "a-final-test-stimuli/audio/Morsecode - SOS MAYDAY - 988 Hz Tone.wav",
+      "source_id": "329436",
+      "question": "Are there lots of people whispering?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "ac5cd54f66f22a58f3c58b86",
+      "recording": "Muddy_steps_bush_birds_singing.wav",
+      "path": "a-final-test-stimuli/audio/Muddy_steps_bush_birds_singing.wav",
+      "source_id": "326548",
+      "question": "Is a person walking?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "d33e6316572783bf770d44a4",
+      "recording": "Muddy_steps_bush_birds_singing.wav",
+      "path": "a-final-test-stimuli/audio/Muddy_steps_bush_birds_singing.wav",
+      "source_id": "326548",
+      "question": "Is this person inside of a house?",
+      "target": 1,
+      "type": "scene_context",
+      "type_method": "rule"
+    },
+    {
+      "qid": "06249267b976f8952610aff0",
+      "recording": "Mug in sink.wav",
+      "path": "a-final-test-stimuli/audio/Mug in sink.wav",
+      "source_id": "327847",
+      "question": "Is water being poured?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "cdf905181f14564f313faabe",
+      "recording": "Mug in sink.wav",
+      "path": "a-final-test-stimuli/audio/Mug in sink.wav",
+      "source_id": "327847",
+      "question": "Is there a lighting strike?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "e6d0e97d91ac775059bcb449",
+      "recording": "Mulholland Memorial Fountain Los Angeles.wav",
+      "path": "a-final-test-stimuli/audio/Mulholland Memorial Fountain Los Angeles.wav",
+      "source_id": "235189",
+      "question": "Does this sound like static?",
+      "target": 0,
+      "type": "acoustic_property",
+      "type_method": "rule"
+    },
+    {
+      "qid": "82d8e9803d0eb12c6a902f99",
+      "recording": "Mulholland Memorial Fountain Los Angeles.wav",
+      "path": "a-final-test-stimuli/audio/Mulholland Memorial Fountain Los Angeles.wav",
+      "source_id": "235189",
+      "question": "Is this indoors?",
+      "target": 1,
+      "type": "scene_context",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "87501e467789c1c9f245ce0a",
+      "recording": "Naoshima-squeeking.wav",
+      "path": "a-final-test-stimuli/audio/Naoshima-squeeking.wav",
+      "source_id": "180735",
+      "question": "Does the motor run steadily?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "a1d30d2852f3ce1903b01749",
+      "recording": "Naoshima-squeeking.wav",
+      "path": "a-final-test-stimuli/audio/Naoshima-squeeking.wav",
+      "source_id": "180735",
+      "question": "Is anyone talking?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "96989d62c2126b093b1ffdb4",
+      "recording": "Neighbourhood evening ambience.wav",
+      "path": "a-final-test-stimuli/audio/Neighbourhood evening ambience.wav",
+      "source_id": "365675",
+      "question": "Is this outside?",
+      "target": 0,
+      "type": "scene_context",
+      "type_method": "rule"
+    },
+    {
+      "qid": "3f66c443e0f6b8a156c12736",
+      "recording": "Neighbourhood evening ambience.wav",
+      "path": "a-final-test-stimuli/audio/Neighbourhood evening ambience.wav",
+      "source_id": "365675",
+      "question": "Is this a dog?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "d7ab62d177075b335164ada3",
+      "recording": "Night Sounds in Orissa Village.wav",
+      "path": "a-final-test-stimuli/audio/Night Sounds in Orissa Village.wav",
+      "source_id": "186698",
+      "question": "Is a man singing in the background ?",
+      "target": 0,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "171382c6f2f19502e3258230",
+      "recording": "Night Sounds in Orissa Village.wav",
+      "path": "a-final-test-stimuli/audio/Night Sounds in Orissa Village.wav",
+      "source_id": "186698",
+      "question": "Can loud thunder be heard ?",
+      "target": 1,
+      "type": "acoustic_property",
+      "type_method": "rule"
+    },
+    {
+      "qid": "404cd42581baaf05b57075a0",
+      "recording": "Nightingale.wav",
+      "path": "a-final-test-stimuli/audio/Nightingale.wav",
+      "source_id": "73731",
+      "question": "Are there many bird sounds in the clip?",
+      "target": 0,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "76cb81b1bc5800734b6fbcf5",
+      "recording": "Nightingale.wav",
+      "path": "a-final-test-stimuli/audio/Nightingale.wav",
+      "source_id": "73731",
+      "question": "Does anyone speak?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "cd6ec1612086f643aee7c1b9",
+      "recording": "OiseauNuit1.wav",
+      "path": "a-final-test-stimuli/audio/OiseauNuit1.wav",
+      "source_id": "203517",
+      "question": "Is the source of the chirping up above?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "1e648049d28d5fcfb1f17f46",
+      "recording": "OiseauNuit1.wav",
+      "path": "a-final-test-stimuli/audio/OiseauNuit1.wav",
+      "source_id": "203517",
+      "question": "Is there running?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "bd351286a9d07d01ea1c249d",
+      "recording": "Old moped.wav",
+      "path": "a-final-test-stimuli/audio/Old moped.wav",
+      "source_id": "161399",
+      "question": "Is the sound made by the machine constant?",
+      "target": 0,
+      "type": "time_pattern",
+      "type_method": "rule"
+    },
+    {
+      "qid": "e3917b77a55ecbc4eadcdd52",
+      "recording": "Old moped.wav",
+      "path": "a-final-test-stimuli/audio/Old moped.wav",
+      "source_id": "161399",
+      "question": "Did someone close the door ?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "92bf0f57fd6082574aede6b3",
+      "recording": "OrchestraTuning2.wav",
+      "path": "a-final-test-stimuli/audio/OrchestraTuning2.wav",
+      "source_id": "24205",
+      "question": "Is there music playing?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "72225e669bc1a0df85a0912a",
+      "recording": "OrchestraTuning2.wav",
+      "path": "a-final-test-stimuli/audio/OrchestraTuning2.wav",
+      "source_id": "24205",
+      "question": "Is someone playing the harmonica?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "cba5471f93a5f3d3214f8b42",
+      "recording": "Outside wind.wav",
+      "path": "a-final-test-stimuli/audio/Outside wind.wav",
+      "source_id": "137023",
+      "question": "Is this outside?",
+      "target": 0,
+      "type": "scene_context",
+      "type_method": "rule"
+    },
+    {
+      "qid": "9940e0f1559612e60632a988",
+      "recording": "Outside wind.wav",
+      "path": "a-final-test-stimuli/audio/Outside wind.wav",
+      "source_id": "137023",
+      "question": "Is the chair squeaking?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "6bdc76128fcef1c7c9d6736f",
+      "recording": "PIT-ROIG 0.12-0.17.wav",
+      "path": "a-final-test-stimuli/audio/PIT-ROIG 0.12-0.17.wav",
+      "source_id": "207459",
+      "question": "Is there water?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "da0918add041331fd8b7adda",
+      "recording": "PIT-ROIG 0.12-0.17.wav",
+      "path": "a-final-test-stimuli/audio/PIT-ROIG 0.12-0.17.wav",
+      "source_id": "207459",
+      "question": "Is there a dog barking?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "0f96c0f49d3ea77922554829",
+      "recording": "Pag_Starigrad_crickets_birds_2.wav",
+      "path": "a-final-test-stimuli/audio/Pag_Starigrad_crickets_birds_2.wav",
+      "source_id": "58340",
+      "question": "Is there running water nearby?",
+      "target": 0,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "277142f4835549f7e49acbb5",
+      "recording": "Pag_Starigrad_crickets_birds_2.wav",
+      "path": "a-final-test-stimuli/audio/Pag_Starigrad_crickets_birds_2.wav",
+      "source_id": "58340",
+      "question": "Are people talking here?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "7819a3955ca7394e6822bdaf",
+      "recording": "Parking Garage - Ambiance, Electrical Hum 1.wav",
+      "path": "a-final-test-stimuli/audio/Parking Garage - Ambiance, Electrical Hum 1.wav",
+      "source_id": "187288",
+      "question": "Is the sound constant?",
+      "target": 0,
+      "type": "time_pattern",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "f528f9a15c6f18832cb488c2",
+      "recording": "Parking Garage - Ambiance, Electrical Hum 1.wav",
+      "path": "a-final-test-stimuli/audio/Parking Garage - Ambiance, Electrical Hum 1.wav",
+      "source_id": "187288",
+      "question": "Are children laughing?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "38e78ef7c14fa274c1f79e37",
+      "recording": "PauseConference_youngerPeople.wav",
+      "path": "a-final-test-stimuli/audio/PauseConference_youngerPeople.wav",
+      "source_id": "244602",
+      "question": "Are there many people talking at once?",
+      "target": 0,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "e9a0da193f073bdbb5dbccfe",
+      "recording": "PauseConference_youngerPeople.wav",
+      "path": "a-final-test-stimuli/audio/PauseConference_youngerPeople.wav",
+      "source_id": "244602",
+      "question": "Is there only one person in the area?",
+      "target": 1,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "a7bc23120358c91ad768177a",
+      "recording": "RKeaton_EMF366_12_Tearing Thick Paper.wav",
+      "path": "a-final-test-stimuli/audio/RKeaton_EMF366_12_Tearing Thick Paper.wav",
+      "source_id": "118049",
+      "question": "Is the paper being changed physically?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "e58fee711ce1c485d0b644c2",
+      "recording": "RKeaton_EMF366_12_Tearing Thick Paper.wav",
+      "path": "a-final-test-stimuli/audio/RKeaton_EMF366_12_Tearing Thick Paper.wav",
+      "source_id": "118049",
+      "question": "Is there someone complaining about the paper?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "6c8bf32704c69a4f37032e96",
+      "recording": "ROLDAN_ANDRES_GEO_FONIA_AGUA_DUCHA.wav",
+      "path": "a-final-test-stimuli/audio/ROLDAN_ANDRES_GEO_FONIA_AGUA_DUCHA.wav",
+      "source_id": "335381",
+      "question": "Is there a liquid around?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "b711841b883bd73bd0852bb0",
+      "recording": "ROLDAN_ANDRES_GEO_FONIA_AGUA_DUCHA.wav",
+      "path": "a-final-test-stimuli/audio/ROLDAN_ANDRES_GEO_FONIA_AGUA_DUCHA.wav",
+      "source_id": "335381",
+      "question": "Are there birds in the audio?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "9400db9deb06f04260040426",
+      "recording": "RadioFan.wav",
+      "path": "a-final-test-stimuli/audio/RadioFan.wav",
+      "source_id": "62519",
+      "question": "Can more than one voice be heard?",
+      "target": 0,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "a5f7075cfc898721d07769a8",
+      "recording": "RadioFan.wav",
+      "path": "a-final-test-stimuli/audio/RadioFan.wav",
+      "source_id": "62519",
+      "question": "Does a car honk?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "188a6d025c5bcd1d6f8401c8",
+      "recording": "Rain - 1.wav",
+      "path": "a-final-test-stimuli/audio/Rain - 1.wav",
+      "source_id": "198856",
+      "question": "does the noise come from water?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "0da3bfcd3c757c09148bf8b9",
+      "recording": "Rain - 1.wav",
+      "path": "a-final-test-stimuli/audio/Rain - 1.wav",
+      "source_id": "198856",
+      "question": "does the water sound get louder?",
+      "target": 1,
+      "type": "time_pattern",
+      "type_method": "rule"
+    },
+    {
+      "qid": "7b120a8c32e4956679cb1946",
+      "recording": "Rain and Storm.wav",
+      "path": "a-final-test-stimuli/audio/Rain and Storm.wav",
+      "source_id": "177250",
+      "question": "Does it sound like it's raining hard there?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "e9e7290b0242ea8159adf817",
+      "recording": "Rain and Storm.wav",
+      "path": "a-final-test-stimuli/audio/Rain and Storm.wav",
+      "source_id": "177250",
+      "question": "Does the rain stop at any point?",
+      "target": 1,
+      "type": "time_pattern",
+      "type_method": "rule"
+    },
+    {
+      "qid": "acee60eb5b06c381926bf150",
+      "recording": "Rain_inside_of_a_Car.wav",
+      "path": "a-final-test-stimuli/audio/Rain_inside_of_a_Car.wav",
+      "source_id": "143120",
+      "question": "Does the sound stay constant?",
+      "target": 0,
+      "type": "time_pattern",
+      "type_method": "rule"
+    },
+    {
+      "qid": "bf1db53edb54ff2cbe3cab76",
+      "recording": "Rain_inside_of_a_Car.wav",
+      "path": "a-final-test-stimuli/audio/Rain_inside_of_a_Car.wav",
+      "source_id": "143120",
+      "question": "Does the sound get quieter?",
+      "target": 1,
+      "type": "time_pattern",
+      "type_method": "rule"
+    },
+    {
+      "qid": "acea9105955de9be67ae9a74",
+      "recording": "Rainforest Morning Chorus.wav",
+      "path": "a-final-test-stimuli/audio/Rainforest Morning Chorus.wav",
+      "source_id": "57608",
+      "question": "Do many creatures live in this place?",
+      "target": 0,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "0d6e5f99c03f35bb3b027aed",
+      "recording": "Rainforest Morning Chorus.wav",
+      "path": "a-final-test-stimuli/audio/Rainforest Morning Chorus.wav",
+      "source_id": "57608",
+      "question": "Is there a train whistle?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "d5a0c84d636d05b4c0f47732",
+      "recording": "RemoteControl.Antique.Zenith.wav",
+      "path": "a-final-test-stimuli/audio/RemoteControl.Antique.Zenith.wav",
+      "source_id": "139965",
+      "question": "Does it tick?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "73fbcc94dfe64228668c6575",
+      "recording": "RemoteControl.Antique.Zenith.wav",
+      "path": "a-final-test-stimuli/audio/RemoteControl.Antique.Zenith.wav",
+      "source_id": "139965",
+      "question": "Is an animal growling?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "2b4e3ddfcf4659bbba40baf8",
+      "recording": "Rishikesh Aarati.wav",
+      "path": "a-final-test-stimuli/audio/Rishikesh Aarati.wav",
+      "source_id": "237540",
+      "question": "Are cars driving past?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "2b5b9c6bedc745593a761174",
+      "recording": "Rishikesh Aarati.wav",
+      "path": "a-final-test-stimuli/audio/Rishikesh Aarati.wav",
+      "source_id": "237540",
+      "question": "Are there many people screaming?",
+      "target": 1,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "51d14fd2a7d9d57221932252",
+      "recording": "Rocks - hits.wav",
+      "path": "a-final-test-stimuli/audio/Rocks - hits.wav",
+      "source_id": "328926",
+      "question": "Are there objects being moved?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "2d2b6148547fe8b968a27144",
+      "recording": "Rocks - hits.wav",
+      "path": "a-final-test-stimuli/audio/Rocks - hits.wav",
+      "source_id": "328926",
+      "question": "Is a dog barking at an intruder?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "9f1c269a5e57d675a7a8ea65",
+      "recording": "Room-tone rain-drips 1m 161015_1013.wav",
+      "path": "a-final-test-stimuli/audio/Room-tone rain-drips 1m 161015_1013.wav",
+      "source_id": "366691",
+      "question": "Is the sound quiet?",
+      "target": 0,
+      "type": "acoustic_property",
+      "type_method": "rule"
+    },
+    {
+      "qid": "47342ac61fc620dc8e6f6426",
+      "recording": "Room-tone rain-drips 1m 161015_1013.wav",
+      "path": "a-final-test-stimuli/audio/Room-tone rain-drips 1m 161015_1013.wav",
+      "source_id": "366691",
+      "question": "Are there animals around?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "2192e2a86b0981fae459a43f",
+      "recording": "SCC CLAPTER 20101210.wav",
+      "path": "a-final-test-stimuli/audio/SCC CLAPTER 20101210.wav",
+      "source_id": "110426",
+      "question": "Are people cheering?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "31ed63a21a7cb76cb91bdc0f",
+      "recording": "SCC CLAPTER 20101210.wav",
+      "path": "a-final-test-stimuli/audio/SCC CLAPTER 20101210.wav",
+      "source_id": "110426",
+      "question": "Are they at the beach?",
+      "target": 1,
+      "type": "scene_context",
+      "type_method": "rule"
+    },
+    {
+      "qid": "279cbc9397aed91f8babdb46",
+      "recording": "STE-017 traffic bus stop.wav",
+      "path": "a-final-test-stimuli/audio/STE-017 traffic bus stop.wav",
+      "source_id": "182892",
+      "question": "Are cars passing by?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "37c23998d4ffab2c5c4e15d7",
+      "recording": "STE-017 traffic bus stop.wav",
+      "path": "a-final-test-stimuli/audio/STE-017 traffic bus stop.wav",
+      "source_id": "182892",
+      "question": "Is there a baby crying?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "d0f039604b33255e0e54e9fc",
+      "recording": "Ship Fender.wav",
+      "path": "a-final-test-stimuli/audio/Ship Fender.wav",
+      "source_id": "233702",
+      "question": "Does the engine keep cutting out?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "cf0739b33bb23415be3aae26",
+      "recording": "Ship Fender.wav",
+      "path": "a-final-test-stimuli/audio/Ship Fender.wav",
+      "source_id": "233702",
+      "question": "Is the man driving a bus?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "2faa9e10eb8f4a976b248ad7",
+      "recording": "Short Hailstorm.wav",
+      "path": "a-final-test-stimuli/audio/Short Hailstorm.wav",
+      "source_id": "63802",
+      "question": "Does the rain let up first, and then pick up steam?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "cfb56ccd011f92759e8a4540",
+      "recording": "Short Hailstorm.wav",
+      "path": "a-final-test-stimuli/audio/Short Hailstorm.wav",
+      "source_id": "63802",
+      "question": "Are kids splashing in puddles?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "f66f4a74f34de0cb2fe0618e",
+      "recording": "Shower 2.wav",
+      "path": "a-final-test-stimuli/audio/Shower 2.wav",
+      "source_id": "85872",
+      "question": "Is the drain open?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "a76c5fcab2e615fabd4f5c69",
+      "recording": "Shower 2.wav",
+      "path": "a-final-test-stimuli/audio/Shower 2.wav",
+      "source_id": "85872",
+      "question": "Are several children yelling in the background?",
+      "target": 1,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "2cb268c8db417642f33875ea",
+      "recording": "Shower Running 02.wav",
+      "path": "a-final-test-stimuli/audio/Shower Running 02.wav",
+      "source_id": "237393",
+      "question": "Does the noise belong to the dripping water?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "7125bf87c1572fcbc8440faf",
+      "recording": "Shower Running 02.wav",
+      "path": "a-final-test-stimuli/audio/Shower Running 02.wav",
+      "source_id": "237393",
+      "question": "Is the water flow turbulent?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "2ecc0760a5ced69285a5c8be",
+      "recording": "Silencyo_RAIN_NIGHT_Village_CloseUp_Drips_Gutter_MSd.wav",
+      "path": "a-final-test-stimuli/audio/Silencyo_RAIN_NIGHT_Village_CloseUp_Drips_Gutter_MSd.wav",
+      "source_id": "81729",
+      "question": "Does the knocking sound repeat?",
+      "target": 0,
+      "type": "time_pattern",
+      "type_method": "rule"
+    },
+    {
+      "qid": "a50d4dc26ecd67b5f0ffdefe",
+      "recording": "Silencyo_RAIN_NIGHT_Village_CloseUp_Drips_Gutter_MSd.wav",
+      "path": "a-final-test-stimuli/audio/Silencyo_RAIN_NIGHT_Village_CloseUp_Drips_Gutter_MSd.wav",
+      "source_id": "81729",
+      "question": "Are people talking?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "b34ac866e8b66e946fb3c9fb",
+      "recording": "SilverStarSearchAndRescue.wav",
+      "path": "a-final-test-stimuli/audio/SilverStarSearchAndRescue.wav",
+      "source_id": "43805",
+      "question": "Does the buzzing get louder before dying off?",
+      "target": 0,
+      "type": "time_pattern",
+      "type_method": "rule"
+    },
+    {
+      "qid": "c6521bf94fa708da8792e76d",
+      "recording": "SilverStarSearchAndRescue.wav",
+      "path": "a-final-test-stimuli/audio/SilverStarSearchAndRescue.wav",
+      "source_id": "43805",
+      "question": "Is this an animal?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "243994dcdbeb0403ebac6e3e",
+      "recording": "Slushing in mouth.wav",
+      "path": "a-final-test-stimuli/audio/Slushing in mouth.wav",
+      "source_id": "367837",
+      "question": "Is the person holding something?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "a86e35a1378ae531f3f44964",
+      "recording": "Slushing in mouth.wav",
+      "path": "a-final-test-stimuli/audio/Slushing in mouth.wav",
+      "source_id": "367837",
+      "question": "Is the person eating something crunchy?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "42dcc91357143a94fba51064",
+      "recording": "So_little_time_so_many_frequencies.wav",
+      "path": "a-final-test-stimuli/audio/So_little_time_so_many_frequencies.wav",
+      "source_id": "331153",
+      "question": "Are there voices in the sound?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "60965b3613cbfbe5977e178b",
+      "recording": "So_little_time_so_many_frequencies.wav",
+      "path": "a-final-test-stimuli/audio/So_little_time_so_many_frequencies.wav",
+      "source_id": "331153",
+      "question": "Is someone playing the piano?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "070fa1e179e47ff78bb16ee6",
+      "recording": "SonicSnap_GPSUK_Cockerel.wav",
+      "path": "a-final-test-stimuli/audio/SonicSnap_GPSUK_Cockerel.wav",
+      "source_id": "156105",
+      "question": "Is there a siren?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "874d6ccd04b2daf864050af0",
+      "recording": "SonicSnap_GPSUK_Cockerel.wav",
+      "path": "a-final-test-stimuli/audio/SonicSnap_GPSUK_Cockerel.wav",
+      "source_id": "156105",
+      "question": "Is a pig squealing?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "628ab0407ab4035c490f85f4",
+      "recording": "Sound_FX_Ambient_Street_cars+passing_by.wav",
+      "path": "a-final-test-stimuli/audio/Sound_FX_Ambient_Street_cars+passing_by.wav",
+      "source_id": "321187",
+      "question": "Can a child be heard?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "7c6426128b8bc7de9c160406",
+      "recording": "Sound_FX_Ambient_Street_cars+passing_by.wav",
+      "path": "a-final-test-stimuli/audio/Sound_FX_Ambient_Street_cars+passing_by.wav",
+      "source_id": "321187",
+      "question": "Is this happening inside?",
+      "target": 1,
+      "type": "scene_context",
+      "type_method": "rule"
+    },
+    {
+      "qid": "96f7ac4591934877a1eb5c8f",
+      "recording": "Storm sirens with dog bark at end 050627 24 bit.wav",
+      "path": "a-final-test-stimuli/audio/Storm sirens with dog bark at end 050627 24 bit.wav",
+      "source_id": "49770",
+      "question": "Is it raining?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "556f9627476a20e6998f1a4f",
+      "recording": "Storm sirens with dog bark at end 050627 24 bit.wav",
+      "path": "a-final-test-stimuli/audio/Storm sirens with dog bark at end 050627 24 bit.wav",
+      "source_id": "49770",
+      "question": "Does the tone get lower?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "6cbc78f1fa2814f0ab1515ab",
+      "recording": "Street Noise - Cars - Ball Bouncing indistinct voices.wav",
+      "path": "a-final-test-stimuli/audio/Street Noise - Cars - Ball Bouncing indistinct voices.wav",
+      "source_id": "118572",
+      "question": "Is it a helicopter?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "524a4c9a5dcdaeb3d83161ea",
+      "recording": "Street Noise - Cars - Ball Bouncing indistinct voices.wav",
+      "path": "a-final-test-stimuli/audio/Street Noise - Cars - Ball Bouncing indistinct voices.wav",
+      "source_id": "118572",
+      "question": "Did a dog bark?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "f518e0565adec1dd3d978b15",
+      "recording": "Street market.wav",
+      "path": "a-final-test-stimuli/audio/Street market.wav",
+      "source_id": "316666",
+      "question": "are the people outdoors?",
+      "target": 0,
+      "type": "scene_context",
+      "type_method": "rule"
+    },
+    {
+      "qid": "d300ff2bb2ae653c7dab1acc",
+      "recording": "Street market.wav",
+      "path": "a-final-test-stimuli/audio/Street market.wav",
+      "source_id": "316666",
+      "question": "Is there a dog?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "4edab7b6a87811491338a6db",
+      "recording": "Subway-Moscow-013.wav",
+      "path": "a-final-test-stimuli/audio/Subway-Moscow-013.wav",
+      "source_id": "166015",
+      "question": "Is this loud?",
+      "target": 0,
+      "type": "acoustic_property",
+      "type_method": "rule"
+    },
+    {
+      "qid": "894f8db3cf25ad0d1495a3d6",
+      "recording": "Subway-Moscow-013.wav",
+      "path": "a-final-test-stimuli/audio/Subway-Moscow-013.wav",
+      "source_id": "166015",
+      "question": "Is there a tractor in the background?",
+      "target": 1,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "95e4049c23eaa219df37025b",
+      "recording": "Swings in Mauerpark, Berlin.wav",
+      "path": "a-final-test-stimuli/audio/Swings in Mauerpark, Berlin.wav",
+      "source_id": "164157",
+      "question": "Does the object continue to make noise?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "c08f6ed1bd4ce5724f8ab96c",
+      "recording": "Swings in Mauerpark, Berlin.wav",
+      "path": "a-final-test-stimuli/audio/Swings in Mauerpark, Berlin.wav",
+      "source_id": "164157",
+      "question": "Is the object quiet?",
+      "target": 1,
+      "type": "acoustic_property",
+      "type_method": "rule"
+    },
+    {
+      "qid": "926356c12856766674d98b27",
+      "recording": "TIKTOK_1.wav",
+      "path": "a-final-test-stimuli/audio/TIKTOK_1.wav",
+      "source_id": "94398",
+      "question": "Is something keeping time?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "f90cffa04b5a7e428acc720d",
+      "recording": "TIKTOK_1.wav",
+      "path": "a-final-test-stimuli/audio/TIKTOK_1.wav",
+      "source_id": "94398",
+      "question": "Is a cat meowing?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "c2cf8fbdf2ccf7e577370175",
+      "recording": "Thunder 03.wav",
+      "path": "a-final-test-stimuli/audio/Thunder 03.wav",
+      "source_id": "237412",
+      "question": "Is the sound a rumble?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "2bde8e2e32e97e7f4959bc4c",
+      "recording": "Thunder 03.wav",
+      "path": "a-final-test-stimuli/audio/Thunder 03.wav",
+      "source_id": "237412",
+      "question": "Are people talking?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "3fdeeff397c6bf7a6f296425",
+      "recording": "Thunder Rain Cars Driving By.wav",
+      "path": "a-final-test-stimuli/audio/Thunder Rain Cars Driving By.wav",
+      "source_id": "238775",
+      "question": "Is it wet outside?",
+      "target": 0,
+      "type": "scene_context",
+      "type_method": "rule"
+    },
+    {
+      "qid": "899aad44f4796b1d6a7705c5",
+      "recording": "Thunder Rain Cars Driving By.wav",
+      "path": "a-final-test-stimuli/audio/Thunder Rain Cars Driving By.wav",
+      "source_id": "238775",
+      "question": "Is the ground dry?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "a459f64e9c96086dba72c414",
+      "recording": "Thunder_01.wav",
+      "path": "a-final-test-stimuli/audio/Thunder_01.wav",
+      "source_id": "150181",
+      "question": "is there a space before the thunder?",
+      "target": 0,
+      "type": "time_pattern",
+      "type_method": "rule"
+    },
+    {
+      "qid": "e4b0d158a9a549629a455a7e",
+      "recording": "Thunder_01.wav",
+      "path": "a-final-test-stimuli/audio/Thunder_01.wav",
+      "source_id": "150181",
+      "question": "Are people whispering?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "9ed3e71477e935140e43b2ae",
+      "recording": "Toilet Shuffling.wav",
+      "path": "a-final-test-stimuli/audio/Toilet Shuffling.wav",
+      "source_id": "349360",
+      "question": "Is there water?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "4df9a21163717489fc182b05",
+      "recording": "Toilet Shuffling.wav",
+      "path": "a-final-test-stimuli/audio/Toilet Shuffling.wav",
+      "source_id": "349360",
+      "question": "Is someone speaking?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "071683a2c9186a43a36ad58f",
+      "recording": "Train Pass Koln.wav",
+      "path": "a-final-test-stimuli/audio/Train Pass Koln.wav",
+      "source_id": "193790",
+      "question": "Is this at the airport?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "6ec41e38b8b1a1d3dfe50560",
+      "recording": "Train Pass Koln.wav",
+      "path": "a-final-test-stimuli/audio/Train Pass Koln.wav",
+      "source_id": "193790",
+      "question": "is there a dog barking?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "1b18e76f1e2305936a48f41d",
+      "recording": "Tree Bark Cracks.wav",
+      "path": "a-final-test-stimuli/audio/Tree Bark Cracks.wav",
+      "source_id": "367952",
+      "question": "Is the person outside?",
+      "target": 0,
+      "type": "scene_context",
+      "type_method": "rule"
+    },
+    {
+      "qid": "9fb32c61b1812ac0051423b6",
+      "recording": "Tree Bark Cracks.wav",
+      "path": "a-final-test-stimuli/audio/Tree Bark Cracks.wav",
+      "source_id": "367952",
+      "question": "Is there a lot of people?",
+      "target": 1,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "067df9018ef86b2090fdfe5f",
+      "recording": "Trompetistas.wav",
+      "path": "a-final-test-stimuli/audio/Trompetistas.wav",
+      "source_id": "232144",
+      "question": "Is there more than one person playing a trumpet?",
+      "target": 0,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "98c6601d3642f0cd285141ee",
+      "recording": "Trompetistas.wav",
+      "path": "a-final-test-stimuli/audio/Trompetistas.wav",
+      "source_id": "232144",
+      "question": "Does a car horn honk?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "8c3f6c377bbfcc89620e24d5",
+      "recording": "Tube - 1 stop to brixton.wav",
+      "path": "a-final-test-stimuli/audio/Tube - 1 stop to brixton.wav",
+      "source_id": "60290",
+      "question": "Is the vehicle fast?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "3783f8cefc261173221330d4",
+      "recording": "Tube - 1 stop to brixton.wav",
+      "path": "a-final-test-stimuli/audio/Tube - 1 stop to brixton.wav",
+      "source_id": "60290",
+      "question": "Are there many people aboard?",
+      "target": 1,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "c7bf44ee916dfc28ecfc23cb",
+      "recording": "WM_switch_fill_to_wash_cycle_24_96_mono.wav",
+      "path": "a-final-test-stimuli/audio/WM_switch_fill_to_wash_cycle_24_96_mono.wav",
+      "source_id": "94290",
+      "question": "Is there water?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "4090e90c209296ca55a54541",
+      "recording": "WM_switch_fill_to_wash_cycle_24_96_mono.wav",
+      "path": "a-final-test-stimuli/audio/WM_switch_fill_to_wash_cycle_24_96_mono.wav",
+      "source_id": "94290",
+      "question": "Are people discussing?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "832fe8786da6d4b8ab4556fd",
+      "recording": "WOOD CHOPPING_ Chopping hard wood with metal Axe (SFX).wav",
+      "path": "a-final-test-stimuli/audio/WOOD CHOPPING_ Chopping hard wood with metal Axe (SFX).wav",
+      "source_id": "328076",
+      "question": "Is something being hit?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "f19f53f0b043de08f4f12689",
+      "recording": "WOOD CHOPPING_ Chopping hard wood with metal Axe (SFX).wav",
+      "path": "a-final-test-stimuli/audio/WOOD CHOPPING_ Chopping hard wood with metal Axe (SFX).wav",
+      "source_id": "328076",
+      "question": "Is a boy whimpering?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "2330715e83fd76e96a5f357a",
+      "recording": "Waiting at a Montreal Subway Station.wav",
+      "path": "a-final-test-stimuli/audio/Waiting at a Montreal Subway Station.wav",
+      "source_id": "27705",
+      "question": "Does transportation make this sound?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "ce86c117d786844ef067dd36",
+      "recording": "Waiting at a Montreal Subway Station.wav",
+      "path": "a-final-test-stimuli/audio/Waiting at a Montreal Subway Station.wav",
+      "source_id": "27705",
+      "question": "Is it played by musical instruments?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "373575ee1690965bbb7e9d9d",
+      "recording": "WalkingGravelTrailAugust2015.wav",
+      "path": "a-final-test-stimuli/audio/WalkingGravelTrailAugust2015.wav",
+      "source_id": "320896",
+      "question": "Is someone speaking quietly?",
+      "target": 0,
+      "type": "acoustic_property",
+      "type_method": "rule"
+    },
+    {
+      "qid": "61bfcddd6a8271c012956b47",
+      "recording": "WalkingGravelTrailAugust2015.wav",
+      "path": "a-final-test-stimuli/audio/WalkingGravelTrailAugust2015.wav",
+      "source_id": "320896",
+      "question": "Is the person running?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "01da98833fba3a35f1d602b7",
+      "recording": "WalkingInSnowCrunchingIce.wav",
+      "path": "a-final-test-stimuli/audio/WalkingInSnowCrunchingIce.wav",
+      "source_id": "210825",
+      "question": "Is someone walking in the snow?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "10b0e7e927ba69d8ca534e4c",
+      "recording": "WalkingInSnowCrunchingIce.wav",
+      "path": "a-final-test-stimuli/audio/WalkingInSnowCrunchingIce.wav",
+      "source_id": "210825",
+      "question": "Does the person speak?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "9cd08cc4855560b4b67298fe",
+      "recording": "WasherEndofRestCycleStartFill-WashCycle.wav",
+      "path": "a-final-test-stimuli/audio/WasherEndofRestCycleStartFill-WashCycle.wav",
+      "source_id": "87246",
+      "question": "Is there water?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "691f80674899bbf6ecf715c4",
+      "recording": "WasherEndofRestCycleStartFill-WashCycle.wav",
+      "path": "a-final-test-stimuli/audio/WasherEndofRestCycleStartFill-WashCycle.wav",
+      "source_id": "87246",
+      "question": "Is there a voice?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "99fdd490d3567c459b07c865",
+      "recording": "Water Faucet HQ Stereo.wav",
+      "path": "a-final-test-stimuli/audio/Water Faucet HQ Stereo.wav",
+      "source_id": "246250",
+      "question": "Is water running?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "926666c9f741296a51a7e295",
+      "recording": "Water Faucet HQ Stereo.wav",
+      "path": "a-final-test-stimuli/audio/Water Faucet HQ Stereo.wav",
+      "source_id": "246250",
+      "question": "Is this sound typically caused by machinery running?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "12eb4581613032869fdc9e00",
+      "recording": "WaterBottle.wav",
+      "path": "a-final-test-stimuli/audio/WaterBottle.wav",
+      "source_id": "108354",
+      "question": "Is there only one person making noise?",
+      "target": 0,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "f3470178218e781539aadf1b",
+      "recording": "WaterBottle.wav",
+      "path": "a-final-test-stimuli/audio/WaterBottle.wav",
+      "source_id": "108354",
+      "question": "Is the person making music?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "30ae20f1e65eab29f3c73e30",
+      "recording": "WaterOnMetal.wav",
+      "path": "a-final-test-stimuli/audio/WaterOnMetal.wav",
+      "source_id": "124441",
+      "question": "Is something moving?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "6790e32198923a631fb9341b",
+      "recording": "WaterOnMetal.wav",
+      "path": "a-final-test-stimuli/audio/WaterOnMetal.wav",
+      "source_id": "124441",
+      "question": "Is a person causing the noise to happen?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "fc695956c86cfbb59ef07e6e",
+      "recording": "Waterfalls_00216.wav",
+      "path": "a-final-test-stimuli/audio/Waterfalls_00216.wav",
+      "source_id": "69240",
+      "question": "Is the spraying sound loud?",
+      "target": 0,
+      "type": "acoustic_property",
+      "type_method": "rule"
+    },
+    {
+      "qid": "702378720594900a83d34053",
+      "recording": "Waterfalls_00216.wav",
+      "path": "a-final-test-stimuli/audio/Waterfalls_00216.wav",
+      "source_id": "69240",
+      "question": "Is there a car?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "b0842ea5af78f0bc028bb479",
+      "recording": "Watering Can.wav",
+      "path": "a-final-test-stimuli/audio/Watering Can.wav",
+      "source_id": "25901",
+      "question": "Is something filling up?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "4947ffc88af3f887226aa95d",
+      "recording": "Watering Can.wav",
+      "path": "a-final-test-stimuli/audio/Watering Can.wav",
+      "source_id": "25901",
+      "question": "Did the cat miaow in the background?",
+      "target": 1,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "9ba4dc691adbb46276b1c0a5",
+      "recording": "WeddingClap.wav",
+      "path": "a-final-test-stimuli/audio/WeddingClap.wav",
+      "source_id": "324103",
+      "question": "Are people applauding?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "ecdc018cf44a7145addef0ef",
+      "recording": "WeddingClap.wav",
+      "path": "a-final-test-stimuli/audio/WeddingClap.wav",
+      "source_id": "324103",
+      "question": "Is there singing  in the background?",
+      "target": 1,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "b733e2df24e39cc2670f8a6d",
+      "recording": "Wet_Soggy_Squishy_Footsteps.wav",
+      "path": "a-final-test-stimuli/audio/Wet_Soggy_Squishy_Footsteps.wav",
+      "source_id": "187617",
+      "question": "Is something being squished?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "cfabc381c692ac17107f3a9f",
+      "recording": "Wet_Soggy_Squishy_Footsteps.wav",
+      "path": "a-final-test-stimuli/audio/Wet_Soggy_Squishy_Footsteps.wav",
+      "source_id": "187617",
+      "question": "Is a baby crying?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "0dccf1b08a299806703f22d6",
+      "recording": "Wind-up Crank.wav",
+      "path": "a-final-test-stimuli/audio/Wind-up Crank.wav",
+      "source_id": "265614",
+      "question": "Is the squealing noise unnatural?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "a59ad2015dac20b0be6e6358",
+      "recording": "Wind-up Crank.wav",
+      "path": "a-final-test-stimuli/audio/Wind-up Crank.wav",
+      "source_id": "265614",
+      "question": "Is someone shaking a box of cookies?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "2e3b86dba942319bc65cfb78",
+      "recording": "Wind-up Toy Motorbike SFX.wav",
+      "path": "a-final-test-stimuli/audio/Wind-up Toy Motorbike SFX.wav",
+      "source_id": "325436",
+      "question": "Is the sound mechanical?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "e3f89f95203a66ba39bd2202",
+      "recording": "Wind-up Toy Motorbike SFX.wav",
+      "path": "a-final-test-stimuli/audio/Wind-up Toy Motorbike SFX.wav",
+      "source_id": "325436",
+      "question": "Is a man sneezing?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "970e8f3cf90a35a08ccf2f64",
+      "recording": "Wind_Whistling_Dorm_Window.wav",
+      "path": "a-final-test-stimuli/audio/Wind_Whistling_Dorm_Window.wav",
+      "source_id": "67707",
+      "question": "Does the pitch of the humming change?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "d88e5a3038d5b33c86d28e78",
+      "recording": "Wind_Whistling_Dorm_Window.wav",
+      "path": "a-final-test-stimuli/audio/Wind_Whistling_Dorm_Window.wav",
+      "source_id": "67707",
+      "question": "Is this a person?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "d53014398fb4dafdda756983",
+      "recording": "Wisper1.wav",
+      "path": "a-final-test-stimuli/audio/Wisper1.wav",
+      "source_id": "213924",
+      "question": "Is someone whispering?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "8a8bd2367f88d918ceb5f57a",
+      "recording": "Wisper1.wav",
+      "path": "a-final-test-stimuli/audio/Wisper1.wav",
+      "source_id": "213924",
+      "question": "Is someone blowing a whistle?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "e43b0dd82552359457f98d3f",
+      "recording": "aftertherain.wav",
+      "path": "a-final-test-stimuli/audio/aftertherain.wav",
+      "source_id": "33247",
+      "question": "Are these outside noises?",
+      "target": 0,
+      "type": "scene_context",
+      "type_method": "rule"
+    },
+    {
+      "qid": "b94f1f3fe96c8ffd812170eb",
+      "recording": "aftertherain.wav",
+      "path": "a-final-test-stimuli/audio/aftertherain.wav",
+      "source_id": "33247",
+      "question": "Is this in a quiet environment?",
+      "target": 1,
+      "type": "acoustic_property",
+      "type_method": "rule"
+    },
+    {
+      "qid": "d40aa8faae31bbeebf90b72c",
+      "recording": "air bubbles on the surface of the water.wav",
+      "path": "a-final-test-stimuli/audio/air bubbles on the surface of the water.wav",
+      "source_id": "194590",
+      "question": "Can bubbles be heard?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "3aab4fe25e15d990f78f6c8a",
+      "recording": "air bubbles on the surface of the water.wav",
+      "path": "a-final-test-stimuli/audio/air bubbles on the surface of the water.wav",
+      "source_id": "194590",
+      "question": "Are people talking?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "4ce9b443ae001fcc8d132909",
+      "recording": "alarm_clock_ringing_01.wav",
+      "path": "a-final-test-stimuli/audio/alarm_clock_ringing_01.wav",
+      "source_id": "78562",
+      "question": "Is the sound constant?",
+      "target": 0,
+      "type": "time_pattern",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "82575df260cafa5b42b79d51",
+      "recording": "alarm_clock_ringing_01.wav",
+      "path": "a-final-test-stimuli/audio/alarm_clock_ringing_01.wav",
+      "source_id": "78562",
+      "question": "does the ringing stop?",
+      "target": 1,
+      "type": "time_pattern",
+      "type_method": "rule"
+    },
+    {
+      "qid": "e1bb9a9b0d69698469eb2725",
+      "recording": "at the edge of the forest.wav",
+      "path": "a-final-test-stimuli/audio/at the edge of the forest.wav",
+      "source_id": "135135",
+      "question": "Is there wind?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "d91e394349ab8961a8f0d78d",
+      "recording": "at the edge of the forest.wav",
+      "path": "a-final-test-stimuli/audio/at the edge of the forest.wav",
+      "source_id": "135135",
+      "question": "Is someone stepping in snow?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "fd718d32b3e129b1241c17a0",
+      "recording": "atmo_kenting_national_park.wav",
+      "path": "a-final-test-stimuli/audio/atmo_kenting_national_park.wav",
+      "source_id": "193608",
+      "question": "Are bugs chirping in the background?",
+      "target": 0,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "f26fe7475e193814d614fdb0",
+      "recording": "atmo_kenting_national_park.wav",
+      "path": "a-final-test-stimuli/audio/atmo_kenting_national_park.wav",
+      "source_id": "193608",
+      "question": "Does the main animal heard have 4 legs?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "94360b327e948d202079245c",
+      "recording": "autospasandociudadnoche1.wav",
+      "path": "a-final-test-stimuli/audio/autospasandociudadnoche1.wav",
+      "source_id": "329019",
+      "question": "Is a car heard coming closer?",
+      "target": 0,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "a43f0bf16115a40f4c358532",
+      "recording": "autospasandociudadnoche1.wav",
+      "path": "a-final-test-stimuli/audio/autospasandociudadnoche1.wav",
+      "source_id": "329019",
+      "question": "Are people in a restaurant?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "86dfcfb94c827ef58384b050",
+      "recording": "bar crowd.wav",
+      "path": "a-final-test-stimuli/audio/bar crowd.wav",
+      "source_id": "57595",
+      "question": "are many people talking?",
+      "target": 0,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "4c2aab4e15266c958d08a23f",
+      "recording": "bar crowd.wav",
+      "path": "a-final-test-stimuli/audio/bar crowd.wav",
+      "source_id": "57595",
+      "question": "Is this a child care center?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "ea853e0b22d43cd4bc90b6d4",
+      "recording": "birds chirping 03 short.wav",
+      "path": "a-final-test-stimuli/audio/birds chirping 03 short.wav",
+      "source_id": "276470",
+      "question": "Are the birds chirping quietly?",
+      "target": 0,
+      "type": "acoustic_property",
+      "type_method": "rule"
+    },
+    {
+      "qid": "e123cef6d2e0c07abe2d8469",
+      "recording": "birds chirping 03 short.wav",
+      "path": "a-final-test-stimuli/audio/birds chirping 03 short.wav",
+      "source_id": "276470",
+      "question": "Is there people?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "4a0c77f04c02eac3b48b4474",
+      "recording": "bombolles.wav",
+      "path": "a-final-test-stimuli/audio/bombolles.wav",
+      "source_id": "66421",
+      "question": "Does the bubbling noise change volume?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "e1973df92d8252f134cfaa55",
+      "recording": "bombolles.wav",
+      "path": "a-final-test-stimuli/audio/bombolles.wav",
+      "source_id": "66421",
+      "question": "Is this noise being heard caused by a waterfall?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "37e4f77fd671a625b492133b",
+      "recording": "branch and wind in wood 1.wav",
+      "path": "a-final-test-stimuli/audio/branch and wind in wood 1.wav",
+      "source_id": "91443",
+      "question": "Are there animals around?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "357d650154f2f8aca4851b74",
+      "recording": "branch and wind in wood 1.wav",
+      "path": "a-final-test-stimuli/audio/branch and wind in wood 1.wav",
+      "source_id": "91443",
+      "question": "is a person making the sound?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "542f535f4afd74bbdf0e2b39",
+      "recording": "broken comms2.wav",
+      "path": "a-final-test-stimuli/audio/broken comms2.wav",
+      "source_id": "209001",
+      "question": "Is the voice broken and choppy?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "b319e15e0500d67f0afede6e",
+      "recording": "broken comms2.wav",
+      "path": "a-final-test-stimuli/audio/broken comms2.wav",
+      "source_id": "209001",
+      "question": "Is the reception of the voice excellent?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "617d7b9b15561739253134e5",
+      "recording": "campanas.wav",
+      "path": "a-final-test-stimuli/audio/campanas.wav",
+      "source_id": "241144",
+      "question": "Is the sound repititious?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "a50f638d4d331efdc29b7bf6",
+      "recording": "campanas.wav",
+      "path": "a-final-test-stimuli/audio/campanas.wav",
+      "source_id": "241144",
+      "question": "does a bell break?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "1f4b1bea72de91b933af8eb8",
+      "recording": "car alarm 130603.wav",
+      "path": "a-final-test-stimuli/audio/car alarm 130603.wav",
+      "source_id": "190647",
+      "question": "Does the sound come from a car?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "6f07190cdd871a0503d2bce0",
+      "recording": "car alarm 130603.wav",
+      "path": "a-final-test-stimuli/audio/car alarm 130603.wav",
+      "source_id": "190647",
+      "question": "Are children screaming?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "3629c297fc0f3a9f63caa973",
+      "recording": "circuitbend03.wav",
+      "path": "a-final-test-stimuli/audio/circuitbend03.wav",
+      "source_id": "3498",
+      "question": "Does the frequency of the buzzing change?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "f0a5e4d111e422e4e61f7157",
+      "recording": "circuitbend03.wav",
+      "path": "a-final-test-stimuli/audio/circuitbend03.wav",
+      "source_id": "3498",
+      "question": "Does the buzzing go on continuously?",
+      "target": 1,
+      "type": "time_pattern",
+      "type_method": "rule"
+    },
+    {
+      "qid": "9bec4b7d13d7ea31839ce635",
+      "recording": "cookieSheetWiping.wav",
+      "path": "a-final-test-stimuli/audio/cookieSheetWiping.wav",
+      "source_id": "362772",
+      "question": "are the taps mostly random?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "186b369f7747e8770cee1421",
+      "recording": "cookieSheetWiping.wav",
+      "path": "a-final-test-stimuli/audio/cookieSheetWiping.wav",
+      "source_id": "362772",
+      "question": "are many people around?",
+      "target": 1,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "5d3c577afede6b0f1d11a3ca",
+      "recording": "cricket chirp.wav",
+      "path": "a-final-test-stimuli/audio/cricket chirp.wav",
+      "source_id": "353073",
+      "question": "Is it night time?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "e79bfd1a7cf63f253cd8bbb5",
+      "recording": "cricket chirp.wav",
+      "path": "a-final-test-stimuli/audio/cricket chirp.wav",
+      "source_id": "353073",
+      "question": "Can running water be heard?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "8799dcadddbd677761b63e3d",
+      "recording": "crowdfree.wav",
+      "path": "a-final-test-stimuli/audio/crowdfree.wav",
+      "source_id": "20698",
+      "question": "Is there honking?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "7a58417ce42efc008f58a9f4",
+      "recording": "crowdfree.wav",
+      "path": "a-final-test-stimuli/audio/crowdfree.wav",
+      "source_id": "20698",
+      "question": "Are there birds chirping?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "c3fdb08e05a543dbbea5d208",
+      "recording": "d0_drips_04.wav",
+      "path": "a-final-test-stimuli/audio/d0_drips_04.wav",
+      "source_id": "176750",
+      "question": "Does the fluid drip more than once?",
+      "target": 0,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "95602e70e5ab6a501d61b5c7",
+      "recording": "d0_drips_04.wav",
+      "path": "a-final-test-stimuli/audio/d0_drips_04.wav",
+      "source_id": "176750",
+      "question": "Does someone sneeze?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "eb2d1025746f32159d50be8c",
+      "recording": "divide lake.wav",
+      "path": "a-final-test-stimuli/audio/divide lake.wav",
+      "source_id": "164897",
+      "question": "Is it outside?",
+      "target": 0,
+      "type": "scene_context",
+      "type_method": "rule"
+    },
+    {
+      "qid": "91132c41cfbf0680333cc3de",
+      "recording": "divide lake.wav",
+      "path": "a-final-test-stimuli/audio/divide lake.wav",
+      "source_id": "164897",
+      "question": "Are there several dogs?",
+      "target": 1,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "fb664773524eaf191dc296c0",
+      "recording": "door.of.bar.raining2.wav",
+      "path": "a-final-test-stimuli/audio/door.of.bar.raining2.wav",
+      "source_id": "16211",
+      "question": "Are people talking?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "9f399c3b975fc262f31107ed",
+      "recording": "door.of.bar.raining2.wav",
+      "path": "a-final-test-stimuli/audio/door.of.bar.raining2.wav",
+      "source_id": "16211",
+      "question": "Is this animal noises?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "9bc3b106daef37d9d966f444",
+      "recording": "drip rhythm1.wav",
+      "path": "a-final-test-stimuli/audio/drip rhythm1.wav",
+      "source_id": "221638",
+      "question": "Does the drop fall in water?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "a829422579fa9add282d395a",
+      "recording": "drip rhythm1.wav",
+      "path": "a-final-test-stimuli/audio/drip rhythm1.wav",
+      "source_id": "221638",
+      "question": "Is it thundering?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "06c3bc2209a3f4f81bd44d8f",
+      "recording": "dripping.wav",
+      "path": "a-final-test-stimuli/audio/dripping.wav",
+      "source_id": "271090",
+      "question": "Is this the sound of fluid?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "c2683366fff1274dfdfce3e0",
+      "recording": "dripping.wav",
+      "path": "a-final-test-stimuli/audio/dripping.wav",
+      "source_id": "271090",
+      "question": "Is this a dog?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "57052bf6d2b79506814edfee",
+      "recording": "drunk_teenagers_1.wav",
+      "path": "a-final-test-stimuli/audio/drunk_teenagers_1.wav",
+      "source_id": "195721",
+      "question": "are many people talking?",
+      "target": 0,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "4361a2cf8fba25088e75a7d3",
+      "recording": "drunk_teenagers_1.wav",
+      "path": "a-final-test-stimuli/audio/drunk_teenagers_1.wav",
+      "source_id": "195721",
+      "question": "Are birds chirping?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "08c687a1a333ad1d36ba3972",
+      "recording": "earth_movement.wav",
+      "path": "a-final-test-stimuli/audio/earth_movement.wav",
+      "source_id": "320899",
+      "question": "Is this a manmade sound?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "789ac82a5a8bed72a7c5c5fd",
+      "recording": "earth_movement.wav",
+      "path": "a-final-test-stimuli/audio/earth_movement.wav",
+      "source_id": "320899",
+      "question": "Does the motor ever have a uptick in how fast it is going?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "b3f3455f3f7a65b12c62a2f5",
+      "recording": "fallingrice2.wav",
+      "path": "a-final-test-stimuli/audio/fallingrice2.wav",
+      "source_id": "59889",
+      "question": "Is there more than one object being dropped?",
+      "target": 0,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "b83a98a330fa0bb94ff09d5f",
+      "recording": "fallingrice2.wav",
+      "path": "a-final-test-stimuli/audio/fallingrice2.wav",
+      "source_id": "59889",
+      "question": "Do all objects fall at the same time?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "80e40105c30989d995b919ef",
+      "recording": "fan_2_300513.wav",
+      "path": "a-final-test-stimuli/audio/fan_2_300513.wav",
+      "source_id": "189999",
+      "question": "Is there constant air blowing by?",
+      "target": 0,
+      "type": "time_pattern",
+      "type_method": "rule"
+    },
+    {
+      "qid": "bd857ff670c62c5967aabf3e",
+      "recording": "fan_2_300513.wav",
+      "path": "a-final-test-stimuli/audio/fan_2_300513.wav",
+      "source_id": "189999",
+      "question": "Are there people chatting?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "5a4fba9d362fce247ca29fff",
+      "recording": "faucet3.wav",
+      "path": "a-final-test-stimuli/audio/faucet3.wav",
+      "source_id": "65172",
+      "question": "is there more than one sound happening?",
+      "target": 0,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "9b5794ef17b56cc4504d9919",
+      "recording": "faucet3.wav",
+      "path": "a-final-test-stimuli/audio/faucet3.wav",
+      "source_id": "65172",
+      "question": "Is anything being broken?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "c4dbd6dad92e4705e3025078",
+      "recording": "fdv_orage_26082011.wav",
+      "path": "a-final-test-stimuli/audio/fdv_orage_26082011.wav",
+      "source_id": "127269",
+      "question": "Does it keep raining?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "7368ccb6a463db2ff6fe2799",
+      "recording": "fdv_orage_26082011.wav",
+      "path": "a-final-test-stimuli/audio/fdv_orage_26082011.wav",
+      "source_id": "127269",
+      "question": "Is outside sunny?",
+      "target": 1,
+      "type": "scene_context",
+      "type_method": "rule"
+    },
+    {
+      "qid": "c2c907f971939369650730a2",
+      "recording": "folding and crumpling paper.wav",
+      "path": "a-final-test-stimuli/audio/folding and crumpling paper.wav",
+      "source_id": "94645",
+      "question": "Is there a piece of paper?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "dda3a710437aa20addb68d60",
+      "recording": "folding and crumpling paper.wav",
+      "path": "a-final-test-stimuli/audio/folding and crumpling paper.wav",
+      "source_id": "94645",
+      "question": "Is this an animal?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "74f725ea49d50ea8e431dcec",
+      "recording": "foley footsteps - raw.wav",
+      "path": "a-final-test-stimuli/audio/foley footsteps - raw.wav",
+      "source_id": "248171",
+      "question": "Is the person speaking a male?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "b77369591bfad897751d7bc5",
+      "recording": "foley footsteps - raw.wav",
+      "path": "a-final-test-stimuli/audio/foley footsteps - raw.wav",
+      "source_id": "248171",
+      "question": "Are there multiple people present?",
+      "target": 1,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "bbe16bd84606f3a51503d2e0",
+      "recording": "forest_ambience_chepachet_spring_1.wav",
+      "path": "a-final-test-stimuli/audio/forest_ambience_chepachet_spring_1.wav",
+      "source_id": "95404",
+      "question": "Is the bird singing tranquil?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "84c1d8c3bfd477a11a6c7f32",
+      "recording": "forest_ambience_chepachet_spring_1.wav",
+      "path": "a-final-test-stimuli/audio/forest_ambience_chepachet_spring_1.wav",
+      "source_id": "95404",
+      "question": "Is the person at a loud house party?",
+      "target": 1,
+      "type": "acoustic_property",
+      "type_method": "rule"
+    },
+    {
+      "qid": "c1793332baabb37b9c6bee9f",
+      "recording": "fountains-Udaipur-Saheliyon-Ki-Bari-4.wav",
+      "path": "a-final-test-stimuli/audio/fountains-Udaipur-Saheliyon-Ki-Bari-4.wav",
+      "source_id": "93988",
+      "question": "Is the ground wet?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "04cf37bf8f6d29006cefba94",
+      "recording": "fountains-Udaipur-Saheliyon-Ki-Bari-4.wav",
+      "path": "a-final-test-stimuli/audio/fountains-Udaipur-Saheliyon-Ki-Bari-4.wav",
+      "source_id": "93988",
+      "question": "Are there no people nearby?",
+      "target": 1,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "381bc1e8524c94a237a2836a",
+      "recording": "futuristic_1-2.wav",
+      "path": "a-final-test-stimuli/audio/futuristic_1-2.wav",
+      "source_id": "234400",
+      "question": "Is the sound painful to human ears?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "8d10072d7b0ccad8e07df65c",
+      "recording": "futuristic_1-2.wav",
+      "path": "a-final-test-stimuli/audio/futuristic_1-2.wav",
+      "source_id": "234400",
+      "question": "Is it an animal?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "92b0f3f2e0b96bf35e547acd",
+      "recording": "gargnano-sounds.wav",
+      "path": "a-final-test-stimuli/audio/gargnano-sounds.wav",
+      "source_id": "80553",
+      "question": "Is someone walking?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "ef259bf0c66628539285d3a4",
+      "recording": "gargnano-sounds.wav",
+      "path": "a-final-test-stimuli/audio/gargnano-sounds.wav",
+      "source_id": "80553",
+      "question": "Is there a dog?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "414a5fce0bfd13e65c851a48",
+      "recording": "h907 boules pologna clap f.wav",
+      "path": "a-final-test-stimuli/audio/h907 boules pologna clap f.wav",
+      "source_id": "48160",
+      "question": "Is someone addressing a crowd?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "b164bf8a5c38b9be41ef7db4",
+      "recording": "h907 boules pologna clap f.wav",
+      "path": "a-final-test-stimuli/audio/h907 boules pologna clap f.wav",
+      "source_id": "48160",
+      "question": "Is only one person talking?",
+      "target": 1,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "36f6d663ee4eb5dc5633e9dc",
+      "recording": "hamlet Haanwijk autumn NL 03 151003_0804 ST.wav",
+      "path": "a-final-test-stimuli/audio/hamlet Haanwijk autumn NL 03 151003_0804 ST.wav",
+      "source_id": "329581",
+      "question": "Is someone breaking branches?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "ac992fb8829fdd4c7ed1f440",
+      "recording": "hamlet Haanwijk autumn NL 03 151003_0804 ST.wav",
+      "path": "a-final-test-stimuli/audio/hamlet Haanwijk autumn NL 03 151003_0804 ST.wav",
+      "source_id": "329581",
+      "question": "Is this indoors?",
+      "target": 1,
+      "type": "scene_context",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "2c18836df7a56e27970260c2",
+      "recording": "hissy fizz.wav",
+      "path": "a-final-test-stimuli/audio/hissy fizz.wav",
+      "source_id": "39872",
+      "question": "Did the static have multiple tone level?",
+      "target": 0,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "71f9b6e1d7172ece06474828",
+      "recording": "hissy fizz.wav",
+      "path": "a-final-test-stimuli/audio/hissy fizz.wav",
+      "source_id": "39872",
+      "question": "Is someone heard coughing?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "cb792362bf320de49ded5e97",
+      "recording": "je_campuswalk.wav",
+      "path": "a-final-test-stimuli/audio/je_campuswalk.wav",
+      "source_id": "71966",
+      "question": "Are there any vehicles in the distance?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "1587af1d018deab7f2a36a6e",
+      "recording": "je_campuswalk.wav",
+      "path": "a-final-test-stimuli/audio/je_campuswalk.wav",
+      "source_id": "71966",
+      "question": "Is there a door being closed?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "8a46c1778b0bcced1623f034",
+      "recording": "knocking on a window or glass.wav",
+      "path": "a-final-test-stimuli/audio/knocking on a window or glass.wav",
+      "source_id": "249932",
+      "question": "Is something knocking?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "f51efe036499324d1081094a",
+      "recording": "knocking on a window or glass.wav",
+      "path": "a-final-test-stimuli/audio/knocking on a window or glass.wav",
+      "source_id": "249932",
+      "question": "Is the sound loud?",
+      "target": 1,
+      "type": "acoustic_property",
+      "type_method": "rule"
+    },
+    {
+      "qid": "0f5175216704bb7a0c56bbde",
+      "recording": "light suburban ambiance.wav",
+      "path": "a-final-test-stimuli/audio/light suburban ambiance.wav",
+      "source_id": "121287",
+      "question": "Is there more than one noise?",
+      "target": 0,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "9a01aa646998c7d8030069d2",
+      "recording": "light suburban ambiance.wav",
+      "path": "a-final-test-stimuli/audio/light suburban ambiance.wav",
+      "source_id": "121287",
+      "question": "Would these sounds typically occur indoors?",
+      "target": 1,
+      "type": "scene_context",
+      "type_method": "rule"
+    },
+    {
+      "qid": "5f45e63aac1a531d7180d200",
+      "recording": "luffy_wind5.wav",
+      "path": "a-final-test-stimuli/audio/luffy_wind5.wav",
+      "source_id": "17581",
+      "question": "would this item be found on a farm?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "4a3b34feb30715fec685d412",
+      "recording": "luffy_wind5.wav",
+      "path": "a-final-test-stimuli/audio/luffy_wind5.wav",
+      "source_id": "17581",
+      "question": "Can any animals be heard?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "5aefe161c7774b17afff8260",
+      "recording": "mab-kite-spool-20080727.wav",
+      "path": "a-final-test-stimuli/audio/mab-kite-spool-20080727.wav",
+      "source_id": "58485",
+      "question": "Is a device whistling?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "85e72a3660768fb61e7f4532",
+      "recording": "mab-kite-spool-20080727.wav",
+      "path": "a-final-test-stimuli/audio/mab-kite-spool-20080727.wav",
+      "source_id": "58485",
+      "question": "Is the sound soft?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "7d2d92262fcfb7adbe8abbd4",
+      "recording": "market.wav",
+      "path": "a-final-test-stimuli/audio/market.wav",
+      "source_id": "173013",
+      "question": "Is this a busy environment?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "79a49ee28456a32690ba2dc0",
+      "recording": "market.wav",
+      "path": "a-final-test-stimuli/audio/market.wav",
+      "source_id": "173013",
+      "question": "Is this area quiet?",
+      "target": 1,
+      "type": "acoustic_property",
+      "type_method": "rule"
+    },
+    {
+      "qid": "ca592f69dadd2573e2426180",
+      "recording": "md1trk33-34.wav",
+      "path": "a-final-test-stimuli/audio/md1trk33-34.wav",
+      "source_id": "123468",
+      "question": "Is there a quick fix to remedy this sound?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "5c3aae16a3e42c62d56e16d8",
+      "recording": "md1trk33-34.wav",
+      "path": "a-final-test-stimuli/audio/md1trk33-34.wav",
+      "source_id": "123468",
+      "question": "Is this a musical stringed instrument?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "9afb19c8bef90a283f3f086a",
+      "recording": "md3trk2.wav",
+      "path": "a-final-test-stimuli/audio/md3trk2.wav",
+      "source_id": "123614",
+      "question": "Does the sound fluctuate in length?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "1f0662fa442552fc210587a2",
+      "recording": "md3trk2.wav",
+      "path": "a-final-test-stimuli/audio/md3trk2.wav",
+      "source_id": "123614",
+      "question": "Are the people greeting customers?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "e0b77f3daa8aca1419034b7c",
+      "recording": "mechanical.wav",
+      "path": "a-final-test-stimuli/audio/mechanical.wav",
+      "source_id": "210863",
+      "question": "Can something be heard spinning?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "d5463eb82771b9984981a35f",
+      "recording": "mechanical.wav",
+      "path": "a-final-test-stimuli/audio/mechanical.wav",
+      "source_id": "210863",
+      "question": "Are there a lot of animals?",
+      "target": 1,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "6179bfc969e7784f118ae704",
+      "recording": "mercury topaz starting.wav",
+      "path": "a-final-test-stimuli/audio/mercury topaz starting.wav",
+      "source_id": "67147",
+      "question": "Does the car start?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "d46b2cfb758f5db7d959b197",
+      "recording": "mercury topaz starting.wav",
+      "path": "a-final-test-stimuli/audio/mercury topaz starting.wav",
+      "source_id": "67147",
+      "question": "Did anything hit the fan?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "bb344ae2d28865939012c6bc",
+      "recording": "metal plate striking wall.wav",
+      "path": "a-final-test-stimuli/audio/metal plate striking wall.wav",
+      "source_id": "231405",
+      "question": "does the metal seem to be picked up and dropped again?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "5f41ab392bf068e898d66f90",
+      "recording": "metal plate striking wall.wav",
+      "path": "a-final-test-stimuli/audio/metal plate striking wall.wav",
+      "source_id": "231405",
+      "question": "Does the person say anything while working with the metal object?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "6ae21b303610c07079c70d83",
+      "recording": "microphonecontact_stereo.wav",
+      "path": "a-final-test-stimuli/audio/microphonecontact_stereo.wav",
+      "source_id": "109861",
+      "question": "Are two or more objects physically interacting with each other?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "c94da38a17883b91851769ff",
+      "recording": "microphonecontact_stereo.wav",
+      "path": "a-final-test-stimuli/audio/microphonecontact_stereo.wav",
+      "source_id": "109861",
+      "question": "Are there dogs growling?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "e94ce1978b09b31faf3349d2",
+      "recording": "morning breeze and birds.wav",
+      "path": "a-final-test-stimuli/audio/morning breeze and birds.wav",
+      "source_id": "118511",
+      "question": "Is this area outside?",
+      "target": 0,
+      "type": "scene_context",
+      "type_method": "rule"
+    },
+    {
+      "qid": "46b3ef02253e899f328f3276",
+      "recording": "morning breeze and birds.wav",
+      "path": "a-final-test-stimuli/audio/morning breeze and birds.wav",
+      "source_id": "118511",
+      "question": "Can a dog be heard barking?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "7af4079612526603816b4175",
+      "recording": "night ambient crickets bugs white noise.wav",
+      "path": "a-final-test-stimuli/audio/night ambient crickets bugs white noise.wav",
+      "source_id": "127023",
+      "question": "Is this outdoors?",
+      "target": 0,
+      "type": "scene_context",
+      "type_method": "rule"
+    },
+    {
+      "qid": "a12b9feaa82231822b8182eb",
+      "recording": "night ambient crickets bugs white noise.wav",
+      "path": "a-final-test-stimuli/audio/night ambient crickets bugs white noise.wav",
+      "source_id": "127023",
+      "question": "Is that sound from inside?",
+      "target": 1,
+      "type": "scene_context",
+      "type_method": "rule"
+    },
+    {
+      "qid": "3dd8cb733cfbf0815b587b01",
+      "recording": "nxSample010.wav",
+      "path": "a-final-test-stimuli/audio/nxSample010.wav",
+      "source_id": "78239",
+      "question": "Is water running?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "a2672cd28b55d93cf0bfadeb",
+      "recording": "nxSample010.wav",
+      "path": "a-final-test-stimuli/audio/nxSample010.wav",
+      "source_id": "78239",
+      "question": "Are people talking?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "265fee5a7455efe1f23f1b2b",
+      "recording": "obresAranyo_trepant2.wav",
+      "path": "a-final-test-stimuli/audio/obresAranyo_trepant2.wav",
+      "source_id": "66622",
+      "question": "Is a person working?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "368297b228507e5724b3ee3e",
+      "recording": "obresAranyo_trepant2.wav",
+      "path": "a-final-test-stimuli/audio/obresAranyo_trepant2.wav",
+      "source_id": "66622",
+      "question": "Is this object likely safe for children?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "7d35c1ed6b41586ff729968a",
+      "recording": "outdoors ambient distant village 3.wav",
+      "path": "a-final-test-stimuli/audio/outdoors ambient distant village 3.wav",
+      "source_id": "126963",
+      "question": "Are people talking?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "c12c5f6a2e3162e0adcf5bbd",
+      "recording": "outdoors ambient distant village 3.wav",
+      "path": "a-final-test-stimuli/audio/outdoors ambient distant village 3.wav",
+      "source_id": "126963",
+      "question": "Is there an ambulance siren heard?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "1ed4dc60039b60bc741f5ccc",
+      "recording": "paper01.wav",
+      "path": "a-final-test-stimuli/audio/paper01.wav",
+      "source_id": "110451",
+      "question": "Is someone looking through a book?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "2642e4e8d0580949b22c0978",
+      "recording": "paper01.wav",
+      "path": "a-final-test-stimuli/audio/paper01.wav",
+      "source_id": "110451",
+      "question": "Does a switch click?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "3c243ebbf87f7d1d8af35939",
+      "recording": "plastic-straw-whistles.wav",
+      "path": "a-final-test-stimuli/audio/plastic-straw-whistles.wav",
+      "source_id": "127947",
+      "question": "Is a mouth involved in making this sound?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "1b8132c565e50a953b0951ba",
+      "recording": "plastic-straw-whistles.wav",
+      "path": "a-final-test-stimuli/audio/plastic-straw-whistles.wav",
+      "source_id": "127947",
+      "question": "Is something playing guitar?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "56d60527a49e115d6d059be3",
+      "recording": "police_car_siren-esp.wav",
+      "path": "a-final-test-stimuli/audio/police_car_siren-esp.wav",
+      "source_id": "264408",
+      "question": "Is the siren sound loud?",
+      "target": 0,
+      "type": "acoustic_property",
+      "type_method": "rule"
+    },
+    {
+      "qid": "0212c1fdbf086993be710298",
+      "recording": "police_car_siren-esp.wav",
+      "path": "a-final-test-stimuli/audio/police_car_siren-esp.wav",
+      "source_id": "264408",
+      "question": "Is there a duck quacking?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "5b366478c0ad51746fad4629",
+      "recording": "porto_morning_tropical_birds_market_20.wav",
+      "path": "a-final-test-stimuli/audio/porto_morning_tropical_birds_market_20.wav",
+      "source_id": "76435",
+      "question": "Are there any birds?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "92e124a7205678a0c5a98bfd",
+      "recording": "porto_morning_tropical_birds_market_20.wav",
+      "path": "a-final-test-stimuli/audio/porto_morning_tropical_birds_market_20.wav",
+      "source_id": "76435",
+      "question": "Is there only one person?",
+      "target": 1,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "cb02a7c2b5824a2c5f9ca186",
+      "recording": "public.wav",
+      "path": "a-final-test-stimuli/audio/public.wav",
+      "source_id": "93023",
+      "question": "Are the people in the crowd excited?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "be92f6289d69a66ce4087f12",
+      "recording": "public.wav",
+      "path": "a-final-test-stimuli/audio/public.wav",
+      "source_id": "93023",
+      "question": "Is this a quiet place?",
+      "target": 1,
+      "type": "acoustic_property",
+      "type_method": "rule"
+    },
+    {
+      "qid": "a114896ab2dc7f72a101de02",
+      "recording": "quick walk.wav",
+      "path": "a-final-test-stimuli/audio/quick walk.wav",
+      "source_id": "102666",
+      "question": "is the person walking in a group?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "886a23474c6d6ff1655e0892",
+      "recording": "quick walk.wav",
+      "path": "a-final-test-stimuli/audio/quick walk.wav",
+      "source_id": "102666",
+      "question": "Is there a dog growling?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "5e94dd49b1b7f5c122b03ebc",
+      "recording": "radio tuning 2.wav",
+      "path": "a-final-test-stimuli/audio/radio tuning 2.wav",
+      "source_id": "126982",
+      "question": "Can this device play music?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "dfe986068a2efb69b239e1a1",
+      "recording": "radio tuning 2.wav",
+      "path": "a-final-test-stimuli/audio/radio tuning 2.wav",
+      "source_id": "126982",
+      "question": "Is this a musical instrument?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "207e916749648f8e97e4a2ce",
+      "recording": "radio_static.wav",
+      "path": "a-final-test-stimuli/audio/radio_static.wav",
+      "source_id": "161083",
+      "question": "Is the frequency changing?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "36fca42bb5d8ff649c2b7194",
+      "recording": "radio_static.wav",
+      "path": "a-final-test-stimuli/audio/radio_static.wav",
+      "source_id": "161083",
+      "question": "Are people talking?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "f86faadad031f344626ee271",
+      "recording": "rain in tent.wav",
+      "path": "a-final-test-stimuli/audio/rain in tent.wav",
+      "source_id": "174874",
+      "question": "Is it wet outside?",
+      "target": 0,
+      "type": "scene_context",
+      "type_method": "rule"
+    },
+    {
+      "qid": "4171182d70946bb39fb09df5",
+      "recording": "rain in tent.wav",
+      "path": "a-final-test-stimuli/audio/rain in tent.wav",
+      "source_id": "174874",
+      "question": "Is this in a building?",
+      "target": 1,
+      "type": "scene_context",
+      "type_method": "rule"
+    },
+    {
+      "qid": "021aa8d94009d8189434cd1a",
+      "recording": "rain2.wav",
+      "path": "a-final-test-stimuli/audio/rain2.wav",
+      "source_id": "198324",
+      "question": "Is the weather bad?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "2699c94624a1c5e199f8e211",
+      "recording": "rain2.wav",
+      "path": "a-final-test-stimuli/audio/rain2.wav",
+      "source_id": "198324",
+      "question": "Is there a train in the background?",
+      "target": 1,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "f0465e5406822d0f6d4bfa68",
+      "recording": "rain_near_smooth.wav",
+      "path": "a-final-test-stimuli/audio/rain_near_smooth.wav",
+      "source_id": "157487",
+      "question": "Is it raining?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "c1a6654d9a465b401dd8c1b9",
+      "recording": "rain_near_smooth.wav",
+      "path": "a-final-test-stimuli/audio/rain_near_smooth.wav",
+      "source_id": "157487",
+      "question": "Can anyone be heard talking?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "e00dea133a459a05ea72bb94",
+      "recording": "rainy stream 22 sec.wav",
+      "path": "a-final-test-stimuli/audio/rainy stream 22 sec.wav",
+      "source_id": "215178",
+      "question": "Is it raining?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "7b3ac9fc858e73dc41c22143",
+      "recording": "rainy stream 22 sec.wav",
+      "path": "a-final-test-stimuli/audio/rainy stream 22 sec.wav",
+      "source_id": "215178",
+      "question": "Are people talking?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "3da29227e411bcfbda289ba2",
+      "recording": "remix of 130879__frederic-font__05-hang-song-1.wav",
+      "path": "a-final-test-stimuli/audio/remix of 130879__frederic-font__05-hang-song-1.wav",
+      "source_id": "130882",
+      "question": "Is that music playing?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "c961ee0d21dc1c4e18c7ffa1",
+      "recording": "remix of 130879__frederic-font__05-hang-song-1.wav",
+      "path": "a-final-test-stimuli/audio/remix of 130879__frederic-font__05-hang-song-1.wav",
+      "source_id": "130882",
+      "question": "Is there a drum playing?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "5ba17863e025187dc77a37a5",
+      "recording": "river + waterfall 2 .wav",
+      "path": "a-final-test-stimuli/audio/river + waterfall 2 .wav",
+      "source_id": "250770",
+      "question": "Is the water falling constant?",
+      "target": 0,
+      "type": "time_pattern",
+      "type_method": "rule"
+    },
+    {
+      "qid": "9b7b2933b949fe62896a7564",
+      "recording": "river + waterfall 2 .wav",
+      "path": "a-final-test-stimuli/audio/river + waterfall 2 .wav",
+      "source_id": "250770",
+      "question": "are any animals making noises?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "817a855f4adce1a4cdb9acf3",
+      "recording": "river_mouth3.wav",
+      "path": "a-final-test-stimuli/audio/river_mouth3.wav",
+      "source_id": "150177",
+      "question": "Are there waves?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "548a1ff9f4add34dfc89beed",
+      "recording": "river_mouth3.wav",
+      "path": "a-final-test-stimuli/audio/river_mouth3.wav",
+      "source_id": "150177",
+      "question": "Is the area dry?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "25dcaf876f5b8173ae470165",
+      "recording": "room-tone theater with silent woman 130525_07.wav",
+      "path": "a-final-test-stimuli/audio/room-tone theater with silent woman 130525_07.wav",
+      "source_id": "210882",
+      "question": "Is the humming constant?",
+      "target": 0,
+      "type": "time_pattern",
+      "type_method": "rule"
+    },
+    {
+      "qid": "a61631a9629e2909d383fba8",
+      "recording": "room-tone theater with silent woman 130525_07.wav",
+      "path": "a-final-test-stimuli/audio/room-tone theater with silent woman 130525_07.wav",
+      "source_id": "210882",
+      "question": "does a person speak?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "e1c820267887b380a68517ff",
+      "recording": "spring rain in the woods.wav",
+      "path": "a-final-test-stimuli/audio/spring rain in the woods.wav",
+      "source_id": "150195",
+      "question": "Is water dripping?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "ae2a2ecc37d78ee75c0c1220",
+      "recording": "spring rain in the woods.wav",
+      "path": "a-final-test-stimuli/audio/spring rain in the woods.wav",
+      "source_id": "150195",
+      "question": "Is there a dog barking?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "4a70437ce2e48480ba542fb4",
+      "recording": "spring, road.wav",
+      "path": "a-final-test-stimuli/audio/spring, road.wav",
+      "source_id": "150855",
+      "question": "is there dripping going on?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "b55b5cc6c85db4a441e64b68",
+      "recording": "spring, road.wav",
+      "path": "a-final-test-stimuli/audio/spring, road.wav",
+      "source_id": "150855",
+      "question": "Is there loud music ?",
+      "target": 1,
+      "type": "acoustic_property",
+      "type_method": "rule"
+    },
+    {
+      "qid": "6cace593e38d8c11d54aa6e0",
+      "recording": "squeaky metal swing.wav",
+      "path": "a-final-test-stimuli/audio/squeaky metal swing.wav",
+      "source_id": "201949",
+      "question": "Is it a high pitched noise?",
+      "target": 0,
+      "type": "acoustic_property",
+      "type_method": "rule"
+    },
+    {
+      "qid": "7937fe81d6d2353d4f0d440d",
+      "recording": "squeaky metal swing.wav",
+      "path": "a-final-test-stimuli/audio/squeaky metal swing.wav",
+      "source_id": "201949",
+      "question": "Did someone slam on the brakes?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "f72d979b5ae994865b1df048",
+      "recording": "steam engine at museum.wav",
+      "path": "a-final-test-stimuli/audio/steam engine at museum.wav",
+      "source_id": "73416",
+      "question": "Is the machine keeping the same rhythm?",
+      "target": 0,
+      "type": "time_pattern",
+      "type_method": "rule"
+    },
+    {
+      "qid": "9ef43b0b5a712646210a6a0b",
+      "recording": "steam engine at museum.wav",
+      "path": "a-final-test-stimuli/audio/steam engine at museum.wav",
+      "source_id": "73416",
+      "question": "Are there tree leaves being raked up?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "6abc4bc2b457280f1641084d",
+      "recording": "street works_pressure_low rumble.wav",
+      "path": "a-final-test-stimuli/audio/street works_pressure_low rumble.wav",
+      "source_id": "223620",
+      "question": "Does anyone speak?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "50192862548cd626fa357ffb",
+      "recording": "street works_pressure_low rumble.wav",
+      "path": "a-final-test-stimuli/audio/street works_pressure_low rumble.wav",
+      "source_id": "223620",
+      "question": "are there no people present?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "402021431754a6a7507dbea6",
+      "recording": "tentrain.wav",
+      "path": "a-final-test-stimuli/audio/tentrain.wav",
+      "source_id": "20129",
+      "question": "Is this outside?",
+      "target": 0,
+      "type": "scene_context",
+      "type_method": "rule"
+    },
+    {
+      "qid": "d7052d3f937eb2a5af9e976f",
+      "recording": "tentrain.wav",
+      "path": "a-final-test-stimuli/audio/tentrain.wav",
+      "source_id": "20129",
+      "question": "Is thunder booming?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "8e37b287ed81643863a7b303",
+      "recording": "the swarm v31m3.wav",
+      "path": "a-final-test-stimuli/audio/the swarm v31m3.wav",
+      "source_id": "130695",
+      "question": "Does the sound fade towards the end?",
+      "target": 0,
+      "type": "time_pattern",
+      "type_method": "rule"
+    },
+    {
+      "qid": "de8a5ea1a5da6dd54446d193",
+      "recording": "the swarm v31m3.wav",
+      "path": "a-final-test-stimuli/audio/the swarm v31m3.wav",
+      "source_id": "130695",
+      "question": "Is the cow mooing?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "863c4de0e42c1306ba86db16",
+      "recording": "thunderstorm_2.wav",
+      "path": "a-final-test-stimuli/audio/thunderstorm_2.wav",
+      "source_id": "360340",
+      "question": "Is there a rainstorm?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "23993e5cb45a7c53e3e81a7d",
+      "recording": "thunderstorm_2.wav",
+      "path": "a-final-test-stimuli/audio/thunderstorm_2.wav",
+      "source_id": "360340",
+      "question": "Does the rain get more intense?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "13b5c3b70ad87753258c805c",
+      "recording": "tornado day 1.wav",
+      "path": "a-final-test-stimuli/audio/tornado day 1.wav",
+      "source_id": "120710",
+      "question": "Is the machine in constant operation?",
+      "target": 0,
+      "type": "time_pattern",
+      "type_method": "rule"
+    },
+    {
+      "qid": "9deb622c0fb768f9c25f16b4",
+      "recording": "tornado day 1.wav",
+      "path": "a-final-test-stimuli/audio/tornado day 1.wav",
+      "source_id": "120710",
+      "question": "Is the machine heard starting up and shutting down?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "b23cc6be65a33f08ba761d90",
+      "recording": "trail_footsteps_1_0725_102951.wav",
+      "path": "a-final-test-stimuli/audio/trail_footsteps_1_0725_102951.wav",
+      "source_id": "77372",
+      "question": "Are leaves on the ground?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "6ff20e12490b065a0b7c587a",
+      "recording": "trail_footsteps_1_0725_102951.wav",
+      "path": "a-final-test-stimuli/audio/trail_footsteps_1_0725_102951.wav",
+      "source_id": "77372",
+      "question": "Does a vacuum cleaner make sound in the background?",
+      "target": 1,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "30218fb419bd822f9e393f5d",
+      "recording": "train screech.wav",
+      "path": "a-final-test-stimuli/audio/train screech.wav",
+      "source_id": "82827",
+      "question": "Is this a public place?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "7bafca02e1182327f9dfc464",
+      "recording": "train screech.wav",
+      "path": "a-final-test-stimuli/audio/train screech.wav",
+      "source_id": "82827",
+      "question": "Are people arguing?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "804da156eaec0d1a15e02e5e",
+      "recording": "trump.wav",
+      "path": "a-final-test-stimuli/audio/trump.wav",
+      "source_id": "352434",
+      "question": "Is there a screeching noise?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "120add997a26e8d44ec67099",
+      "recording": "trump.wav",
+      "path": "a-final-test-stimuli/audio/trump.wav",
+      "source_id": "352434",
+      "question": "Are there men arguing?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "254fb677d6f5e736ee6b0029",
+      "recording": "tua-mirandela_train_arrival_march2007.wav",
+      "path": "a-final-test-stimuli/audio/tua-mirandela_train_arrival_march2007.wav",
+      "source_id": "41306",
+      "question": "Is there a vehicle around?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "62a8c7489e40c7eead1e7609",
+      "recording": "tua-mirandela_train_arrival_march2007.wav",
+      "path": "a-final-test-stimuli/audio/tua-mirandela_train_arrival_march2007.wav",
+      "source_id": "41306",
+      "question": "Is the person talking?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "ff0450bb17aeb53a06f97b78",
+      "recording": "turning pages book slow quickly.wav",
+      "path": "a-final-test-stimuli/audio/turning pages book slow quickly.wav",
+      "source_id": "318615",
+      "question": "Are the page being turned quickly?",
+      "target": 0,
+      "type": "time_pattern",
+      "type_method": "rule"
+    },
+    {
+      "qid": "6ef13856e4b36e837fa774da",
+      "recording": "turning pages book slow quickly.wav",
+      "path": "a-final-test-stimuli/audio/turning pages book slow quickly.wav",
+      "source_id": "318615",
+      "question": "Is someone banging on metal?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "ee68b82a69d8184d5c5b7c82",
+      "recording": "urinating on a wall.wav",
+      "path": "a-final-test-stimuli/audio/urinating on a wall.wav",
+      "source_id": "249926",
+      "question": "is the hose dripping onto a surface?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "60277a0db57f694d18ba316b",
+      "recording": "urinating on a wall.wav",
+      "path": "a-final-test-stimuli/audio/urinating on a wall.wav",
+      "source_id": "249926",
+      "question": "Are there animal noises in the background ?",
+      "target": 1,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "b4ce393621eeb6297e33ba5e",
+      "recording": "walking in gravel 2.wav",
+      "path": "a-final-test-stimuli/audio/walking in gravel 2.wav",
+      "source_id": "62659",
+      "question": "Is the wind blowing?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "9639c91d5d9d107e43b38208",
+      "recording": "walking in gravel 2.wav",
+      "path": "a-final-test-stimuli/audio/walking in gravel 2.wav",
+      "source_id": "62659",
+      "question": "Is there jumping?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "a3dcbc7205db1d047d1a4f24",
+      "recording": "walking indoors footsteps tap tap tapping foley.wav",
+      "path": "a-final-test-stimuli/audio/walking indoors footsteps tap tap tapping foley.wav",
+      "source_id": "127002",
+      "question": "Does the person walking have shoes on?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "82b2f8dc9c160f207d1e35a6",
+      "recording": "walking indoors footsteps tap tap tapping foley.wav",
+      "path": "a-final-test-stimuli/audio/walking indoors footsteps tap tap tapping foley.wav",
+      "source_id": "127002",
+      "question": "Is there frantic running?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "fb67baf6b65bad3d30a02c4c",
+      "recording": "washcloth.wav",
+      "path": "a-final-test-stimuli/audio/washcloth.wav",
+      "source_id": "98155",
+      "question": "Does this sound involve something that is going back and forth?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "a0c1898d8a7bc7a54925c920",
+      "recording": "washcloth.wav",
+      "path": "a-final-test-stimuli/audio/washcloth.wav",
+      "source_id": "98155",
+      "question": "Is the microwave beeping?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "fd30e5d91702541794ee087e",
+      "recording": "water dripping 2.wav",
+      "path": "a-final-test-stimuli/audio/water dripping 2.wav",
+      "source_id": "139749",
+      "question": "Is water dripping?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "b7a40144322975cc27004845",
+      "recording": "water dripping 2.wav",
+      "path": "a-final-test-stimuli/audio/water dripping 2.wav",
+      "source_id": "139749",
+      "question": "Is it raining?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "1f9cea5b7d5ef72ccf3ef9a6",
+      "recording": "water fountian-hollow sm med pitch.wav",
+      "path": "a-final-test-stimuli/audio/water fountian-hollow sm med pitch.wav",
+      "source_id": "33871",
+      "question": "Is the water flow constant?",
+      "target": 0,
+      "type": "time_pattern",
+      "type_method": "rule"
+    },
+    {
+      "qid": "244acba6c3b7ffae8f9564eb",
+      "recording": "water fountian-hollow sm med pitch.wav",
+      "path": "a-final-test-stimuli/audio/water fountian-hollow sm med pitch.wav",
+      "source_id": "33871",
+      "question": "Did the kettle whistle?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "f565da14152ac77cbab0c86a",
+      "recording": "water_boil_pour_stir-96.wav",
+      "path": "a-final-test-stimuli/audio/water_boil_pour_stir-96.wav",
+      "source_id": "258225",
+      "question": "Is there more than one sound being made?",
+      "target": 0,
+      "type": "count_or_relation",
+      "type_method": "rule"
+    },
+    {
+      "qid": "9bb08720b8b2b8c481791525",
+      "recording": "water_boil_pour_stir-96.wav",
+      "path": "a-final-test-stimuli/audio/water_boil_pour_stir-96.wav",
+      "source_id": "258225",
+      "question": "Is this a noise that usually can be heard in nature?",
+      "target": 1,
+      "type": "scene_context",
+      "type_method": "rule"
+    },
+    {
+      "qid": "1335398b2150c894ad0136d6",
+      "recording": "wheaten field.wav",
+      "path": "a-final-test-stimuli/audio/wheaten field.wav",
+      "source_id": "58560",
+      "question": "Is the hissing very quiet?",
+      "target": 0,
+      "type": "acoustic_property",
+      "type_method": "rule"
+    },
+    {
+      "qid": "96144c6a0b5010740ef38d32",
+      "recording": "wheaten field.wav",
+      "path": "a-final-test-stimuli/audio/wheaten field.wav",
+      "source_id": "58560",
+      "question": "Can people be heard yelling?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "55afaa205113ffadf47559a0",
+      "recording": "wind and birds in the delta of the River Po 2.wav",
+      "path": "a-final-test-stimuli/audio/wind and birds in the delta of the River Po 2.wav",
+      "source_id": "100260",
+      "question": "Is this outside?",
+      "target": 0,
+      "type": "scene_context",
+      "type_method": "rule"
+    },
+    {
+      "qid": "bb3bcac65b2f2f1b2f11a71c",
+      "recording": "wind and birds in the delta of the River Po 2.wav",
+      "path": "a-final-test-stimuli/audio/wind and birds in the delta of the River Po 2.wav",
+      "source_id": "100260",
+      "question": "Are there dogs around?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "ab0472a5e27542755337a4c4",
+      "recording": "windup_dino_slow.wav",
+      "path": "a-final-test-stimuli/audio/windup_dino_slow.wav",
+      "source_id": "19372",
+      "question": "Is the sound repititious?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "d2e5bf646858ca2e15276bd8",
+      "recording": "windup_dino_slow.wav",
+      "path": "a-final-test-stimuli/audio/windup_dino_slow.wav",
+      "source_id": "19372",
+      "question": "Does it sound like something found in nature?",
+      "target": 1,
+      "type": "scene_context",
+      "type_method": "rule"
+    },
+    {
+      "qid": "457cea7fab27be7f5d36cb29",
+      "recording": "winter wren wind leaves.wav",
+      "path": "a-final-test-stimuli/audio/winter wren wind leaves.wav",
+      "source_id": "265633",
+      "question": "Is the bird chirping loudly?",
+      "target": 0,
+      "type": "acoustic_property",
+      "type_method": "rule"
+    },
+    {
+      "qid": "215615aa8d91cd1f07f99372",
+      "recording": "winter wren wind leaves.wav",
+      "path": "a-final-test-stimuli/audio/winter wren wind leaves.wav",
+      "source_id": "265633",
+      "question": "Are the people chattering?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "ee7e8ad0382c8eb48704a34a",
+      "recording": "wooden barndoor.wav",
+      "path": "a-final-test-stimuli/audio/wooden barndoor.wav",
+      "source_id": "344987",
+      "question": "Can high pitched squeaking be heard?",
+      "target": 0,
+      "type": "acoustic_property",
+      "type_method": "rule"
+    },
+    {
+      "qid": "9f3e8087f329a3ee81760270",
+      "recording": "wooden barndoor.wav",
+      "path": "a-final-test-stimuli/audio/wooden barndoor.wav",
+      "source_id": "344987",
+      "question": "Is this device powered by gasoline?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "91947f9831a9b30c739be94e",
+      "recording": "worktoilet.wav",
+      "path": "a-final-test-stimuli/audio/worktoilet.wav",
+      "source_id": "39322",
+      "question": "Is there water?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "rule"
+    },
+    {
+      "qid": "aa6dd71321e62356ce5d1024",
+      "recording": "worktoilet.wav",
+      "path": "a-final-test-stimuli/audio/worktoilet.wav",
+      "source_id": "39322",
+      "question": "Is the air conditioner humming?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "rule"
+    }
+  ]
+}

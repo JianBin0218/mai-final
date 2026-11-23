@@ -1,0 +1,930 @@
+{
+  "plan_sha256": "35a3dab409c0766d4f06f304ab8de969881536366dd18f0db192d8d681568528",
+  "pairs": [
+    {
+      "group": 0,
+      "categories": [
+        "door wood creaks",
+        "clock alarm"
+      ],
+      "original_sources": [
+        {
+          "filename": "3-103401-C-33.wav",
+          "fold": "3",
+          "target": "33",
+          "category": "door_wood_creaks",
+          "esc10": "False",
+          "src_file": "103401",
+          "take": "C"
+        },
+        {
+          "filename": "3-148297-A-37.wav",
+          "fold": "3",
+          "target": "37",
+          "category": "clock_alarm",
+          "esc10": "False",
+          "src_file": "148297",
+          "take": "A"
+        }
+      ],
+      "center_samples": 39077,
+      "active_rms": 0.08,
+      "long": [
+        "a-event-components-stimuli/long-00-0.wav",
+        "a-event-components-stimuli/long-00-1.wav"
+      ],
+      "short": [
+        "a-event-components-stimuli/short-00-0.wav",
+        "a-event-components-stimuli/short-00-1.wav"
+      ]
+    },
+    {
+      "group": 1,
+      "categories": [
+        "airplane",
+        "crickets"
+      ],
+      "original_sources": [
+        {
+          "filename": "3-115387-A-47.wav",
+          "fold": "3",
+          "target": "47",
+          "category": "airplane",
+          "esc10": "False",
+          "src_file": "115387",
+          "take": "A"
+        },
+        {
+          "filename": "3-163607-A-13.wav",
+          "fold": "3",
+          "target": "13",
+          "category": "crickets",
+          "esc10": "False",
+          "src_file": "163607",
+          "take": "A"
+        }
+      ],
+      "center_samples": 31183,
+      "active_rms": 0.08,
+      "long": [
+        "a-event-components-stimuli/long-01-0.wav",
+        "a-event-components-stimuli/long-01-1.wav"
+      ],
+      "short": [
+        "a-event-components-stimuli/short-01-0.wav",
+        "a-event-components-stimuli/short-01-1.wav"
+      ]
+    },
+    {
+      "group": 2,
+      "categories": [
+        "door wood knock",
+        "pig"
+      ],
+      "original_sources": [
+        {
+          "filename": "3-152594-A-30.wav",
+          "fold": "3",
+          "target": "30",
+          "category": "door_wood_knock",
+          "esc10": "False",
+          "src_file": "152594",
+          "take": "A"
+        },
+        {
+          "filename": "3-253084-D-2.wav",
+          "fold": "3",
+          "target": "2",
+          "category": "pig",
+          "esc10": "False",
+          "src_file": "253084",
+          "take": "D"
+        }
+      ],
+      "center_samples": 40333,
+      "active_rms": 0.05415491759777069,
+      "long": [
+        "a-event-components-stimuli/long-02-0.wav",
+        "a-event-components-stimuli/long-02-1.wav"
+      ],
+      "short": [
+        "a-event-components-stimuli/short-02-0.wav",
+        "a-event-components-stimuli/short-02-1.wav"
+      ]
+    },
+    {
+      "group": 3,
+      "categories": [
+        "train",
+        "clock tick"
+      ],
+      "original_sources": [
+        {
+          "filename": "3-159445-A-45.wav",
+          "fold": "3",
+          "target": "45",
+          "category": "train",
+          "esc10": "False",
+          "src_file": "159445",
+          "take": "A"
+        },
+        {
+          "filename": "3-150363-A-38.wav",
+          "fold": "3",
+          "target": "38",
+          "category": "clock_tick",
+          "esc10": "True",
+          "src_file": "150363",
+          "take": "A"
+        }
+      ],
+      "center_samples": 22533,
+      "active_rms": 0.06888065487146378,
+      "long": [
+        "a-event-components-stimuli/long-03-0.wav",
+        "a-event-components-stimuli/long-03-1.wav"
+      ],
+      "short": [
+        "a-event-components-stimuli/short-03-0.wav",
+        "a-event-components-stimuli/short-03-1.wav"
+      ]
+    },
+    {
+      "group": 4,
+      "categories": [
+        "brushing teeth",
+        "chirping birds"
+      ],
+      "original_sources": [
+        {
+          "filename": "3-139331-A-27.wav",
+          "fold": "3",
+          "target": "27",
+          "category": "brushing_teeth",
+          "esc10": "False",
+          "src_file": "139331",
+          "take": "A"
+        },
+        {
+          "filename": "3-181132-A-14.wav",
+          "fold": "3",
+          "target": "14",
+          "category": "chirping_birds",
+          "esc10": "False",
+          "src_file": "181132",
+          "take": "A"
+        }
+      ],
+      "center_samples": 39133,
+      "active_rms": 0.08,
+      "long": [
+        "a-event-components-stimuli/long-04-0.wav",
+        "a-event-components-stimuli/long-04-1.wav"
+      ],
+      "short": [
+        "a-event-components-stimuli/short-04-0.wav",
+        "a-event-components-stimuli/short-04-1.wav"
+      ]
+    },
+    {
+      "group": 5,
+      "categories": [
+        "wind",
+        "snoring"
+      ],
+      "original_sources": [
+        {
+          "filename": "3-246513-A-16.wav",
+          "fold": "3",
+          "target": "16",
+          "category": "wind",
+          "esc10": "False",
+          "src_file": "246513",
+          "take": "A"
+        },
+        {
+          "filename": "3-123086-A-28.wav",
+          "fold": "3",
+          "target": "28",
+          "category": "snoring",
+          "esc10": "False",
+          "src_file": "123086",
+          "take": "A"
+        }
+      ],
+      "center_samples": 31681,
+      "active_rms": 0.08,
+      "long": [
+        "a-event-components-stimuli/long-05-0.wav",
+        "a-event-components-stimuli/long-05-1.wav"
+      ],
+      "short": [
+        "a-event-components-stimuli/short-05-0.wav",
+        "a-event-components-stimuli/short-05-1.wav"
+      ]
+    },
+    {
+      "group": 6,
+      "categories": [
+        "glass breaking",
+        "rain"
+      ],
+      "original_sources": [
+        {
+          "filename": "3-203375-A-39.wav",
+          "fold": "3",
+          "target": "39",
+          "category": "glass_breaking",
+          "esc10": "False",
+          "src_file": "203375",
+          "take": "A"
+        },
+        {
+          "filename": "3-140774-A-10.wav",
+          "fold": "3",
+          "target": "10",
+          "category": "rain",
+          "esc10": "True",
+          "src_file": "140774",
+          "take": "A"
+        }
+      ],
+      "center_samples": 40142,
+      "active_rms": 0.08,
+      "long": [
+        "a-event-components-stimuli/long-06-0.wav",
+        "a-event-components-stimuli/long-06-1.wav"
+      ],
+      "short": [
+        "a-event-components-stimuli/short-06-0.wav",
+        "a-event-components-stimuli/short-06-1.wav"
+      ]
+    },
+    {
+      "group": 7,
+      "categories": [
+        "insects",
+        "breathing"
+      ],
+      "original_sources": [
+        {
+          "filename": "3-110913-B-7.wav",
+          "fold": "3",
+          "target": "7",
+          "category": "insects",
+          "esc10": "False",
+          "src_file": "110913",
+          "take": "B"
+        },
+        {
+          "filename": "3-108160-A-23.wav",
+          "fold": "3",
+          "target": "23",
+          "category": "breathing",
+          "esc10": "False",
+          "src_file": "108160",
+          "take": "A"
+        }
+      ],
+      "center_samples": 39308,
+      "active_rms": 0.08,
+      "long": [
+        "a-event-components-stimuli/long-07-0.wav",
+        "a-event-components-stimuli/long-07-1.wav"
+      ],
+      "short": [
+        "a-event-components-stimuli/short-07-0.wav",
+        "a-event-components-stimuli/short-07-1.wav"
+      ]
+    },
+    {
+      "group": 8,
+      "categories": [
+        "mouse click",
+        "thunderstorm"
+      ],
+      "original_sources": [
+        {
+          "filename": "3-170312-A-31.wav",
+          "fold": "3",
+          "target": "31",
+          "category": "mouse_click",
+          "esc10": "False",
+          "src_file": "170312",
+          "take": "A"
+        },
+        {
+          "filename": "3-144891-B-19.wav",
+          "fold": "3",
+          "target": "19",
+          "category": "thunderstorm",
+          "esc10": "False",
+          "src_file": "144891",
+          "take": "B"
+        }
+      ],
+      "center_samples": 39788,
+      "active_rms": 0.03589317202568054,
+      "long": [
+        "a-event-components-stimuli/long-08-0.wav",
+        "a-event-components-stimuli/long-08-1.wav"
+      ],
+      "short": [
+        "a-event-components-stimuli/short-08-0.wav",
+        "a-event-components-stimuli/short-08-1.wav"
+      ]
+    },
+    {
+      "group": 9,
+      "categories": [
+        "car horn",
+        "dog"
+      ],
+      "original_sources": [
+        {
+          "filename": "3-155130-A-43.wav",
+          "fold": "3",
+          "target": "43",
+          "category": "car_horn",
+          "esc10": "False",
+          "src_file": "155130",
+          "take": "A"
+        },
+        {
+          "filename": "3-180256-A-0.wav",
+          "fold": "3",
+          "target": "0",
+          "category": "dog",
+          "esc10": "True",
+          "src_file": "180256",
+          "take": "A"
+        }
+      ],
+      "center_samples": 32668,
+      "active_rms": 0.08,
+      "long": [
+        "a-event-components-stimuli/long-09-0.wav",
+        "a-event-components-stimuli/long-09-1.wav"
+      ],
+      "short": [
+        "a-event-components-stimuli/short-09-0.wav",
+        "a-event-components-stimuli/short-09-1.wav"
+      ]
+    },
+    {
+      "group": 10,
+      "categories": [
+        "laughing",
+        "vacuum cleaner"
+      ],
+      "original_sources": [
+        {
+          "filename": "3-126113-A-26.wav",
+          "fold": "3",
+          "target": "26",
+          "category": "laughing",
+          "esc10": "False",
+          "src_file": "126113",
+          "take": "A"
+        },
+        {
+          "filename": "3-159346-B-36.wav",
+          "fold": "3",
+          "target": "36",
+          "category": "vacuum_cleaner",
+          "esc10": "False",
+          "src_file": "159346",
+          "take": "B"
+        }
+      ],
+      "center_samples": 23240,
+      "active_rms": 0.08,
+      "long": [
+        "a-event-components-stimuli/long-10-0.wav",
+        "a-event-components-stimuli/long-10-1.wav"
+      ],
+      "short": [
+        "a-event-components-stimuli/short-10-0.wav",
+        "a-event-components-stimuli/short-10-1.wav"
+      ]
+    },
+    {
+      "group": 11,
+      "categories": [
+        "church bells",
+        "coughing"
+      ],
+      "original_sources": [
+        {
+          "filename": "3-98193-A-46.wav",
+          "fold": "3",
+          "target": "46",
+          "category": "church_bells",
+          "esc10": "False",
+          "src_file": "98193",
+          "take": "A"
+        },
+        {
+          "filename": "3-145487-A-24.wav",
+          "fold": "3",
+          "target": "24",
+          "category": "coughing",
+          "esc10": "False",
+          "src_file": "145487",
+          "take": "A"
+        }
+      ],
+      "center_samples": 37049,
+      "active_rms": 0.08,
+      "long": [
+        "a-event-components-stimuli/long-11-0.wav",
+        "a-event-components-stimuli/long-11-1.wav"
+      ],
+      "short": [
+        "a-event-components-stimuli/short-11-0.wav",
+        "a-event-components-stimuli/short-11-1.wav"
+      ]
+    },
+    {
+      "group": 12,
+      "categories": [
+        "footsteps",
+        "drinking sipping"
+      ],
+      "original_sources": [
+        {
+          "filename": "3-94342-A-25.wav",
+          "fold": "3",
+          "target": "25",
+          "category": "footsteps",
+          "esc10": "False",
+          "src_file": "94342",
+          "take": "A"
+        },
+        {
+          "filename": "3-174866-A-29.wav",
+          "fold": "3",
+          "target": "29",
+          "category": "drinking_sipping",
+          "esc10": "False",
+          "src_file": "174866",
+          "take": "A"
+        }
+      ],
+      "center_samples": 35863,
+      "active_rms": 0.044699884951114655,
+      "long": [
+        "a-event-components-stimuli/long-12-0.wav",
+        "a-event-components-stimuli/long-12-1.wav"
+      ],
+      "short": [
+        "a-event-components-stimuli/short-12-0.wav",
+        "a-event-components-stimuli/short-12-1.wav"
+      ]
+    },
+    {
+      "group": 13,
+      "categories": [
+        "clapping",
+        "sneezing"
+      ],
+      "original_sources": [
+        {
+          "filename": "3-177083-A-22.wav",
+          "fold": "3",
+          "target": "22",
+          "category": "clapping",
+          "esc10": "False",
+          "src_file": "177083",
+          "take": "A"
+        },
+        {
+          "filename": "3-144692-A-21.wav",
+          "fold": "3",
+          "target": "21",
+          "category": "sneezing",
+          "esc10": "True",
+          "src_file": "144692",
+          "take": "A"
+        }
+      ],
+      "center_samples": 40489,
+      "active_rms": 0.08,
+      "long": [
+        "a-event-components-stimuli/long-13-0.wav",
+        "a-event-components-stimuli/long-13-1.wav"
+      ],
+      "short": [
+        "a-event-components-stimuli/short-13-0.wav",
+        "a-event-components-stimuli/short-13-1.wav"
+      ]
+    },
+    {
+      "group": 14,
+      "categories": [
+        "cat",
+        "hen"
+      ],
+      "original_sources": [
+        {
+          "filename": "3-146965-A-5.wav",
+          "fold": "3",
+          "target": "5",
+          "category": "cat",
+          "esc10": "False",
+          "src_file": "146965",
+          "take": "A"
+        },
+        {
+          "filename": "3-187549-A-6.wav",
+          "fold": "3",
+          "target": "6",
+          "category": "hen",
+          "esc10": "False",
+          "src_file": "187549",
+          "take": "A"
+        }
+      ],
+      "center_samples": 37616,
+      "active_rms": 0.08,
+      "long": [
+        "a-event-components-stimuli/long-14-0.wav",
+        "a-event-components-stimuli/long-14-1.wav"
+      ],
+      "short": [
+        "a-event-components-stimuli/short-14-0.wav",
+        "a-event-components-stimuli/short-14-1.wav"
+      ]
+    },
+    {
+      "group": 15,
+      "categories": [
+        "sheep",
+        "engine"
+      ],
+      "original_sources": [
+        {
+          "filename": "3-140199-D-8.wav",
+          "fold": "3",
+          "target": "8",
+          "category": "sheep",
+          "esc10": "False",
+          "src_file": "140199",
+          "take": "D"
+        },
+        {
+          "filename": "3-141240-B-44.wav",
+          "fold": "3",
+          "target": "44",
+          "category": "engine",
+          "esc10": "False",
+          "src_file": "141240",
+          "take": "B"
+        }
+      ],
+      "center_samples": 34783,
+      "active_rms": 0.08,
+      "long": [
+        "a-event-components-stimuli/long-15-0.wav",
+        "a-event-components-stimuli/long-15-1.wav"
+      ],
+      "short": [
+        "a-event-components-stimuli/short-15-0.wav",
+        "a-event-components-stimuli/short-15-1.wav"
+      ]
+    },
+    {
+      "group": 16,
+      "categories": [
+        "chainsaw",
+        "helicopter"
+      ],
+      "original_sources": [
+        {
+          "filename": "3-118657-A-41.wav",
+          "fold": "3",
+          "target": "41",
+          "category": "chainsaw",
+          "esc10": "True",
+          "src_file": "118657",
+          "take": "A"
+        },
+        {
+          "filename": "3-150979-A-40.wav",
+          "fold": "3",
+          "target": "40",
+          "category": "helicopter",
+          "esc10": "True",
+          "src_file": "150979",
+          "take": "A"
+        }
+      ],
+      "center_samples": 29800,
+      "active_rms": 0.08,
+      "long": [
+        "a-event-components-stimuli/long-16-0.wav",
+        "a-event-components-stimuli/long-16-1.wav"
+      ],
+      "short": [
+        "a-event-components-stimuli/short-16-0.wav",
+        "a-event-components-stimuli/short-16-1.wav"
+      ]
+    },
+    {
+      "group": 17,
+      "categories": [
+        "crow",
+        "can opening"
+      ],
+      "original_sources": [
+        {
+          "filename": "3-121348-A-9.wav",
+          "fold": "3",
+          "target": "9",
+          "category": "crow",
+          "esc10": "False",
+          "src_file": "121348",
+          "take": "A"
+        },
+        {
+          "filename": "3-155659-A-34.wav",
+          "fold": "3",
+          "target": "34",
+          "category": "can_opening",
+          "esc10": "False",
+          "src_file": "155659",
+          "take": "A"
+        }
+      ],
+      "center_samples": 40532,
+      "active_rms": 0.08,
+      "long": [
+        "a-event-components-stimuli/long-17-0.wav",
+        "a-event-components-stimuli/long-17-1.wav"
+      ],
+      "short": [
+        "a-event-components-stimuli/short-17-0.wav",
+        "a-event-components-stimuli/short-17-1.wav"
+      ]
+    },
+    {
+      "group": 18,
+      "categories": [
+        "frog",
+        "cow"
+      ],
+      "original_sources": [
+        {
+          "filename": "3-71964-A-4.wav",
+          "fold": "3",
+          "target": "4",
+          "category": "frog",
+          "esc10": "False",
+          "src_file": "71964",
+          "take": "A"
+        },
+        {
+          "filename": "3-160993-A-3.wav",
+          "fold": "3",
+          "target": "3",
+          "category": "cow",
+          "esc10": "False",
+          "src_file": "160993",
+          "take": "A"
+        }
+      ],
+      "center_samples": 37936,
+      "active_rms": 0.07535182684659958,
+      "long": [
+        "a-event-components-stimuli/long-18-0.wav",
+        "a-event-components-stimuli/long-18-1.wav"
+      ],
+      "short": [
+        "a-event-components-stimuli/short-18-0.wav",
+        "a-event-components-stimuli/short-18-1.wav"
+      ]
+    },
+    {
+      "group": 19,
+      "categories": [
+        "keyboard typing",
+        "washing machine"
+      ],
+      "original_sources": [
+        {
+          "filename": "3-132830-A-32.wav",
+          "fold": "3",
+          "target": "32",
+          "category": "keyboard_typing",
+          "esc10": "False",
+          "src_file": "132830",
+          "take": "A"
+        },
+        {
+          "filename": "3-156391-A-35.wav",
+          "fold": "3",
+          "target": "35",
+          "category": "washing_machine",
+          "esc10": "False",
+          "src_file": "156391",
+          "take": "A"
+        }
+      ],
+      "center_samples": 27999,
+      "active_rms": 0.04306071624159813,
+      "long": [
+        "a-event-components-stimuli/long-19-0.wav",
+        "a-event-components-stimuli/long-19-1.wav"
+      ],
+      "short": [
+        "a-event-components-stimuli/short-19-0.wav",
+        "a-event-components-stimuli/short-19-1.wav"
+      ]
+    },
+    {
+      "group": 20,
+      "categories": [
+        "rooster",
+        "crying baby"
+      ],
+      "original_sources": [
+        {
+          "filename": "3-163288-A-1.wav",
+          "fold": "3",
+          "target": "1",
+          "category": "rooster",
+          "esc10": "True",
+          "src_file": "163288",
+          "take": "A"
+        },
+        {
+          "filename": "3-151081-A-20.wav",
+          "fold": "3",
+          "target": "20",
+          "category": "crying_baby",
+          "esc10": "True",
+          "src_file": "151081",
+          "take": "A"
+        }
+      ],
+      "center_samples": 24465,
+      "active_rms": 0.08,
+      "long": [
+        "a-event-components-stimuli/long-20-0.wav",
+        "a-event-components-stimuli/long-20-1.wav"
+      ],
+      "short": [
+        "a-event-components-stimuli/short-20-0.wav",
+        "a-event-components-stimuli/short-20-1.wav"
+      ]
+    },
+    {
+      "group": 21,
+      "categories": [
+        "pouring water",
+        "siren"
+      ],
+      "original_sources": [
+        {
+          "filename": "3-108451-B-17.wav",
+          "fold": "3",
+          "target": "17",
+          "category": "pouring_water",
+          "esc10": "False",
+          "src_file": "108451",
+          "take": "B"
+        },
+        {
+          "filename": "3-51731-B-42.wav",
+          "fold": "3",
+          "target": "42",
+          "category": "siren",
+          "esc10": "False",
+          "src_file": "51731",
+          "take": "B"
+        }
+      ],
+      "center_samples": 36149,
+      "active_rms": 0.04904372990131378,
+      "long": [
+        "a-event-components-stimuli/long-21-0.wav",
+        "a-event-components-stimuli/long-21-1.wav"
+      ],
+      "short": [
+        "a-event-components-stimuli/short-21-0.wav",
+        "a-event-components-stimuli/short-21-1.wav"
+      ]
+    },
+    {
+      "group": 22,
+      "categories": [
+        "crackling fire",
+        "water drops"
+      ],
+      "original_sources": [
+        {
+          "filename": "3-65748-A-12.wav",
+          "fold": "3",
+          "target": "12",
+          "category": "crackling_fire",
+          "esc10": "True",
+          "src_file": "65748",
+          "take": "A"
+        },
+        {
+          "filename": "3-156907-A-15.wav",
+          "fold": "3",
+          "target": "15",
+          "category": "water_drops",
+          "esc10": "False",
+          "src_file": "156907",
+          "take": "A"
+        }
+      ],
+      "center_samples": 24782,
+      "active_rms": 0.05794817954301834,
+      "long": [
+        "a-event-components-stimuli/long-22-0.wav",
+        "a-event-components-stimuli/long-22-1.wav"
+      ],
+      "short": [
+        "a-event-components-stimuli/short-22-0.wav",
+        "a-event-components-stimuli/short-22-1.wav"
+      ]
+    },
+    {
+      "group": 23,
+      "categories": [
+        "toilet flush",
+        "hand saw"
+      ],
+      "original_sources": [
+        {
+          "filename": "3-92637-A-18.wav",
+          "fold": "3",
+          "target": "18",
+          "category": "toilet_flush",
+          "esc10": "False",
+          "src_file": "92637",
+          "take": "A"
+        },
+        {
+          "filename": "3-96606-A-49.wav",
+          "fold": "3",
+          "target": "49",
+          "category": "hand_saw",
+          "esc10": "False",
+          "src_file": "96606",
+          "take": "A"
+        }
+      ],
+      "center_samples": 34329,
+      "active_rms": 0.07556033879518509,
+      "long": [
+        "a-event-components-stimuli/long-23-0.wav",
+        "a-event-components-stimuli/long-23-1.wav"
+      ],
+      "short": [
+        "a-event-components-stimuli/short-23-0.wav",
+        "a-event-components-stimuli/short-23-1.wav"
+      ]
+    },
+    {
+      "group": 24,
+      "categories": [
+        "fireworks",
+        "sea waves"
+      ],
+      "original_sources": [
+        {
+          "filename": "3-119120-A-48.wav",
+          "fold": "3",
+          "target": "48",
+          "category": "fireworks",
+          "esc10": "False",
+          "src_file": "119120",
+          "take": "A"
+        },
+        {
+          "filename": "3-164630-A-11.wav",
+          "fold": "3",
+          "target": "11",
+          "category": "sea_waves",
+          "esc10": "True",
+          "src_file": "164630",
+          "take": "A"
+        }
+      ],
+      "center_samples": 35196,
+      "active_rms": 0.050738319754600525,
+      "long": [
+        "a-event-components-stimuli/long-24-0.wav",
+        "a-event-components-stimuli/long-24-1.wav"
+      ],
+      "short": [
+        "a-event-components-stimuli/short-24-0.wav",
+        "a-event-components-stimuli/short-24-1.wav"
+      ]
+    }
+  ]
+}

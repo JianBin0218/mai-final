@@ -1,0 +1,28 @@
+{
+  "id": "a-event-components-v1",
+  "fixed_on": "2026-11-23",
+  "source_fold": 3,
+  "source_selection_seed": 31415,
+  "target_pairs": 25,
+  "source_pairs": "Use the 25 clean event category pairs already listed in data/pairs.json. Replace all source recordings with independently sampled fold 3 recordings.",
+  "source_exclusions": "Exclude original recording IDs used by the fold 5 development and fold 4 confirmation manifests.",
+  "stimuli": {
+    "duration_seconds": 4,
+    "event_seconds": {"long": 1.6, "short": 0.4},
+    "active_rms": 0.08,
+    "position_rule": "Same event-window center for both categories and both profiles of a pair, randomized between 1.4 and 2.6 seconds. Equal active-window RMS within each pair and across profiles; integrated energy varies with duration."
+  },
+  "prompt": "Which sound is in the recording?",
+  "model_seeds": [17, 23, 41],
+  "primary": {
+    "profile": "long",
+    "capacity": 16,
+    "full_audio_both_correct_minimum_each_order": 0.6,
+    "residual_hybrid_preference_minimum": 0.6,
+    "residual_hybrid_preference_ci_lower_strictly_above": 0.5,
+    "metric": "Within the two hybrids, fraction of cases where the answer margin follows the learned residual rather than the matched-duration pooled component, averaging both answer orders and all fixed seeds within a category pair. Half credit for ties.",
+    "bootstrap_seed": 17,
+    "bootstrap_replicates": 10000
+  },
+  "secondary": ["K=4 component preference", "Natural own-latent response", "Fixed mean pooling", "Effect of reducing target duration and integrated energy, conditional on the full-audio reference"]
+}

@@ -1,0 +1,76 @@
+{
+  "pairs": 50,
+  "groups": 25,
+  "models": {
+    "full": {
+      "qa": {
+        "accuracy": 0.5,
+        "both_correct": 0.0,
+        "preference": 0.62
+      },
+      "probe": {
+        "accuracy": 0.88,
+        "both_correct": 0.78,
+        "preference": 0.96
+      },
+      "probe_permutation_p": 0.001,
+      "checkpoint": null
+    },
+    "pool16": {
+      "qa": {
+        "accuracy": 0.5,
+        "both_correct": 0.0,
+        "preference": 0.42
+      },
+      "probe": {
+        "accuracy": 0.88,
+        "both_correct": 0.78,
+        "preference": 0.96
+      },
+      "probe_permutation_p": 0.001,
+      "checkpoint": null
+    },
+    "K16-s17": {
+      "qa": {
+        "accuracy": 0.5,
+        "both_correct": 0.0,
+        "preference": 0.41
+      },
+      "probe": {
+        "accuracy": 0.89,
+        "both_correct": 0.78,
+        "preference": 0.96
+      },
+      "probe_permutation_p": 0.001,
+      "checkpoint": "9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d"
+    },
+    "K16-s23": {
+      "qa": {
+        "accuracy": 0.5,
+        "both_correct": 0.0,
+        "preference": 0.31
+      },
+      "probe": {
+        "accuracy": 0.89,
+        "both_correct": 0.78,
+        "preference": 0.96
+      },
+      "probe_permutation_p": 0.001,
+      "checkpoint": "8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735"
+    },
+    "K16-s41": {
+      "qa": {
+        "accuracy": 0.5,
+        "both_correct": 0.0,
+        "preference": 0.43
+      },
+      "probe": {
+        "accuracy": 0.9,
+        "both_correct": 0.8,
+        "preference": 0.96
+      },
+      "probe_permutation_p": 0.001,
+      "checkpoint": "481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5"
+    }
+  }
+}

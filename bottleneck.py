@@ -54,7 +54,10 @@ class Compressor(nn.Module):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("mode", choices=["train", "eval", "pool", "probe", "fresh", "controls", "intervene", "opposite", "level-probe"])
+    parser.add_argument("mode", choices=["train", "eval", "pool", "probe", "fresh", "controls",
+                                        "intervene", "opposite", "level-probe", "count-evidence",
+                                        "count-prompts", "count-confirmation", "natural-capacity",
+                                        "natural-components", "event-components", "a-final"])
     parser.add_argument("--out", type=Path, required=True)
     parser.add_argument("--steps", type=int, default=16)
     parser.add_argument("--k", type=int, default=16)
@@ -77,6 +80,8 @@ def main():
     parser.add_argument("--extra-manifest", type=Path,
                         help="Read --extra-split from this file instead, e.g. data/clotho/fresh_val.json with split val")
     parser.add_argument("--feature-cache", type=Path, help="Directory for cached projected audio features")
+    parser.add_argument("--model-gpu-memory-gib", type=int,
+                        help="GPU weight budget in GiB when keeping some model weights in CPU memory")
     parser.add_argument("--magnitudes", type=float, nargs="+", default=[0, 0.25, 0.5, 1, 2, 4, 8, 16],
                         help="probe: fixed norms of the question term, evaluated with correct and wrong stems")
     parser.add_argument("--pool-ks", type=int, nargs="+", default=[4, 16], help="Slot counts for the fixed pooling evaluation")
@@ -84,9 +89,32 @@ def main():
     parser.add_argument("--donor-seed", type=int, default=17)
     parser.add_argument("--types", type=Path, default=Path("phase2/fresh-capacity/question_types.csv"))
     parser.add_argument("--pair-manifest", type=Path, default=Path("data/paired_evidence/pairs.json"))
+    parser.add_argument("--batch-size", type=int, default=20, help="Number of clips per count-prompts batch")
+    parser.add_argument("--count-prompt-format", choices=["yes-no", "descriptions"], default="yes-no",
+                        help="Answer choice format for count-prompts")
+    parser.add_argument("--confirmation-plan", type=Path, help="Fixed plan for count-confirmation")
+    parser.add_argument("--confirmation-stimuli", type=Path, help="Held-out stimuli root for count-confirmation")
+    parser.add_argument("--capacity-plan", type=Path, help="Fixed plan for natural-capacity")
+    parser.add_argument("--capacity-references", type=Path, help="Saved natural-capacity scores for natural-components")
+    parser.add_argument("--event-plan", type=Path, help="Fixed plan for event-components")
+    parser.add_argument("--final-plan", type=Path, help="Fixed A-line evaluation plan")
     args = parser.parse_args()
-    if args.mode in ("fresh","controls","intervene") and (not args.clotho or args.conditioned):
+    audio_only_modes = ("fresh", "controls", "intervene", "count-evidence", "count-prompts",
+                        "count-confirmation", "natural-capacity", "natural-components", "event-components", "a-final")
+    if args.mode in audio_only_modes and (not args.clotho or args.conditioned):
         parser.error(f"{args.mode} requires --clotho and audio-only checkpoints")
+    if args.mode in ("count-prompts", "count-confirmation") and args.batch_size < 1:
+        parser.error(f"{args.mode} requires a positive --batch-size")
+    if args.mode == "count-confirmation" and (args.confirmation_plan is None or args.confirmation_stimuli is None):
+        parser.error("count-confirmation requires --confirmation-plan and --confirmation-stimuli")
+    if args.mode == "natural-capacity" and args.capacity_plan is None:
+        parser.error("natural-capacity requires --capacity-plan")
+    if args.mode == "natural-components" and args.capacity_references is None:
+        parser.error("natural-components requires --capacity-references")
+    if args.mode == "event-components" and args.event_plan is None:
+        parser.error("event-components requires --event-plan")
+    if args.mode == "a-final" and args.final_plan is None:
+        parser.error("a-final requires --final-plan")
     if args.mode == "pool" and (not args.clotho or args.conditioned or min(args.pool_ks) < 1):
         parser.error("pool requires --clotho and positive slot counts without --conditioned")
     if args.mode == "probe" and (not args.conditioned or args.condition != "gated"):
@@ -100,8 +128,12 @@ def main():
     torch.manual_seed(args.seed)
     rng = random.Random(args.seed)
     proc = AutoProcessor.from_pretrained(MODEL_DIR)
-    base = Qwen2AudioForConditionalGeneration.from_pretrained(MODEL_DIR, torch_dtype=torch.bfloat16,
-                                                              device_map={"": 0}).eval().requires_grad_(False)
+    placement = {"device_map": {"": 0}}
+    if args.model_gpu_memory_gib is not None:
+        placement = {"device_map": "auto", "max_memory": {0: f"{args.model_gpu_memory_gib}GiB", "cpu": "20GiB"}}
+    base = Qwen2AudioForConditionalGeneration.from_pretrained(
+        MODEL_DIR, torch_dtype=torch.bfloat16, **placement
+    ).eval().requires_grad_(False)
     lm = base.language_model
     embed = lm.get_input_embeddings()
     comp = Compressor(embed.embedding_dim, args.k, args.condition).cuda()
@@ -151,6 +183,9 @@ def main():
     def cache_file(path):
         return args.feature_cache / (hashlib.sha1(path.encode()).hexdigest() + ".pt")
 
+    class AudioFeaturesCaptured(Exception):
+        pass
+
     @torch.no_grad()
     def features(path):
         if path not in cache and args.feature_cache and cache_file(path).exists():
@@ -163,9 +198,13 @@ def main():
             mask = inputs["input_ids"][0] == base.config.audio_token_index
             def capture(module, positional, kwargs):
                 cache[path] = kwargs["inputs_embeds"][0, mask].detach().cpu()
+                if args.mode in ("count-confirmation", "natural-capacity", "natural-components", "event-components", "a-final"):
+                    raise AudioFeaturesCaptured
             hook = lm.register_forward_pre_hook(capture, with_kwargs=True)
             try:
                 base(**inputs, use_cache=False)
+            except AudioFeaturesCaptured:
+                pass
             finally:
                 hook.remove()
             assert cache[path].shape[0] > 0
@@ -183,6 +222,10 @@ def main():
         tokens = proc.tokenizer(template, return_tensors="pt").input_ids.cuda()
         index = (tokens[0] == base.config.audio_token_index).nonzero().item()
         text = embed(tokens)
+        if latent.ndim == 3:
+            text = text.expand(latent.shape[0], -1, -1)
+            sequence = torch.cat((text[:, :index], latent.to(text.dtype), text[:, index+1:]), dim=1)
+            return lm(inputs_embeds=sequence, use_cache=False, logits_to_keep=1).logits[:, -1, ids].float()
         sequence = torch.cat((text[:, :index], latent[None].to(text.dtype), text[:, index+1:]), dim=1)
         return lm(inputs_embeds=sequence, use_cache=False).logits[0,-1,ids].float()
 
@@ -220,15 +263,18 @@ def main():
             condition = question_vector(stem)
         return comp(features(path), condition)
 
+    def decode_text(question):
+        template = proc.apply_chat_template([{"role":"user","content":[{"type":"text","text":question}]}],
+                                            tokenize=False, add_generation_prompt=True)
+        tokens = proc.tokenizer(template, return_tensors="pt").input_ids.cuda()
+        return lm(input_ids=tokens, use_cache=False).logits[0, -1, ids].float()
+
     @torch.no_grad()
     def evaluate(samples, swap=False, full=False, text_only=False, pool_k=None, donors=None, stem=None, conditioned=None):
         rows = []
         for path, question, target in samples:
             if text_only:
-                template = proc.apply_chat_template([{"role":"user","content":[{"type":"text","text":question}]}],
-                                                    tokenize=False, add_generation_prompt=True)
-                tokens = proc.tokenizer(template, return_tensors="pt").input_ids.cuda()
-                scores = lm(input_ids=tokens,use_cache=False).logits[0,-1,ids].float()
+                scores = decode_text(question)
             else:
                 if pool_k is not None:
                     audio = features(path)
@@ -249,6 +295,41 @@ def main():
     if args.mode == "opposite":
         from opposite_eval import measure
         measure(args, comp, features, decode)
+        return
+
+    if args.mode == "count-evidence":
+        from count_evidence import measure
+        measure(args, comp, features, decode)
+        return
+
+    if args.mode == "count-prompts":
+        from count_prompt_eval import measure
+        measure(args, comp, features, decode)
+        return
+
+    if args.mode == "count-confirmation":
+        from count_confirmation import measure
+        measure(args, comp, features, decode)
+        return
+
+    if args.mode == "natural-capacity":
+        from natural_capacity import measure
+        measure(args, comp, features, decode)
+        return
+
+    if args.mode == "natural-components":
+        from natural_components import measure
+        measure(args, comp, features, decode)
+        return
+
+    if args.mode == "event-components":
+        from event_components import measure
+        measure(args, comp, features, decode)
+        return
+
+    if args.mode == "a-final":
+        from a_final_test import measure
+        measure(args, comp, features, decode, decode_text)
         return
 
     if args.mode == "intervene":

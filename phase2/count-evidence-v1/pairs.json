@@ -1,0 +1,502 @@
+[
+  {
+    "group": 0,
+    "source": "data/5-173568-A-33.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 13600,
+    "start_one": 10760,
+    "start_two": 10760,
+    "yes": "stimuli/00-yes.wav",
+    "no": "stimuli/00-no.wav"
+  },
+  {
+    "group": 0,
+    "source": "data/5-234247-A-37.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 7200,
+    "start_one": 12487,
+    "start_two": 5287,
+    "yes": "stimuli/01-yes.wav",
+    "no": "stimuli/01-no.wav"
+  },
+  {
+    "group": 1,
+    "source": "data/5-251957-A-47.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 10400,
+    "start_one": 8461,
+    "start_two": 8461,
+    "yes": "stimuli/02-yes.wav",
+    "no": "stimuli/02-no.wav"
+  },
+  {
+    "group": 1,
+    "source": "data/5-210540-A-13.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 13600,
+    "start_one": 20544,
+    "start_two": 6944,
+    "yes": "stimuli/03-yes.wav",
+    "no": "stimuli/03-no.wav"
+  },
+  {
+    "group": 2,
+    "source": "data/5-218981-A-30.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 7200,
+    "start_one": 5719,
+    "start_two": 5719,
+    "yes": "stimuli/04-yes.wav",
+    "no": "stimuli/04-no.wav"
+  },
+  {
+    "group": 2,
+    "source": "data/5-117250-A-2.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 10400,
+    "start_one": 17486,
+    "start_two": 7086,
+    "yes": "stimuli/05-yes.wav",
+    "no": "stimuli/05-no.wav"
+  },
+  {
+    "group": 3,
+    "source": "data/5-197121-B-45.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 13600,
+    "start_one": 7425,
+    "start_two": 7425,
+    "yes": "stimuli/06-yes.wav",
+    "no": "stimuli/06-no.wav"
+  },
+  {
+    "group": 3,
+    "source": "data/5-208624-A-38.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 10400,
+    "start_one": 19290,
+    "start_two": 8890,
+    "yes": "stimuli/07-yes.wav",
+    "no": "stimuli/07-no.wav"
+  },
+  {
+    "group": 4,
+    "source": "data/5-185516-A-27.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 7200,
+    "start_one": 9891,
+    "start_two": 9891,
+    "yes": "stimuli/08-yes.wav",
+    "no": "stimuli/08-no.wav"
+  },
+  {
+    "group": 4,
+    "source": "data/5-243459-B-14.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 7200,
+    "start_one": 11322,
+    "start_two": 4122,
+    "yes": "stimuli/09-yes.wav",
+    "no": "stimuli/09-no.wav"
+  },
+  {
+    "group": 5,
+    "source": "data/5-179496-B-16.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 10400,
+    "start_one": 6032,
+    "start_two": 6032,
+    "yes": "stimuli/10-yes.wav",
+    "no": "stimuli/10-no.wav"
+  },
+  {
+    "group": 5,
+    "source": "data/5-249748-A-28.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 10400,
+    "start_one": 19233,
+    "start_two": 8833,
+    "yes": "stimuli/11-yes.wav",
+    "no": "stimuli/11-no.wav"
+  },
+  {
+    "group": 6,
+    "source": "data/5-260434-A-39.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 7200,
+    "start_one": 4669,
+    "start_two": 4669,
+    "yes": "stimuli/12-yes.wav",
+    "no": "stimuli/12-no.wav"
+  },
+  {
+    "group": 6,
+    "source": "data/5-194892-A-10.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 13600,
+    "start_one": 25582,
+    "start_two": 11982,
+    "yes": "stimuli/13-yes.wav",
+    "no": "stimuli/13-no.wav"
+  },
+  {
+    "group": 7,
+    "source": "data/5-195518-A-7.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 13600,
+    "start_one": 10658,
+    "start_two": 10658,
+    "yes": "stimuli/14-yes.wav",
+    "no": "stimuli/14-no.wav"
+  },
+  {
+    "group": 7,
+    "source": "data/5-234335-A-23.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 10400,
+    "start_one": 14694,
+    "start_two": 4294,
+    "yes": "stimuli/15-yes.wav",
+    "no": "stimuli/15-no.wav"
+  },
+  {
+    "group": 8,
+    "source": "data/5-238926-A-31.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 10400,
+    "start_one": 8540,
+    "start_two": 8540,
+    "yes": "stimuli/16-yes.wav",
+    "no": "stimuli/16-no.wav"
+  },
+  {
+    "group": 8,
+    "source": "data/5-156999-C-19.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 13600,
+    "start_one": 22474,
+    "start_two": 8874,
+    "yes": "stimuli/17-yes.wav",
+    "no": "stimuli/17-no.wav"
+  },
+  {
+    "group": 9,
+    "source": "data/5-179865-A-43.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 10400,
+    "start_one": 4055,
+    "start_two": 4055,
+    "yes": "stimuli/18-yes.wav",
+    "no": "stimuli/18-no.wav"
+  },
+  {
+    "group": 9,
+    "source": "data/5-208030-A-0.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 13600,
+    "start_one": 19032,
+    "start_two": 5432,
+    "yes": "stimuli/19-yes.wav",
+    "no": "stimuli/19-no.wav"
+  },
+  {
+    "group": 10,
+    "source": "data/5-259514-A-26.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 10400,
+    "start_one": 5319,
+    "start_two": 5319,
+    "yes": "stimuli/20-yes.wav",
+    "no": "stimuli/20-no.wav"
+  },
+  {
+    "group": 10,
+    "source": "data/5-263902-A-36.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 10400,
+    "start_one": 18095,
+    "start_two": 7695,
+    "yes": "stimuli/21-yes.wav",
+    "no": "stimuli/21-no.wav"
+  },
+  {
+    "group": 11,
+    "source": "data/5-188716-A-46.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 10400,
+    "start_one": 8536,
+    "start_two": 8536,
+    "yes": "stimuli/22-yes.wav",
+    "no": "stimuli/22-no.wav"
+  },
+  {
+    "group": 11,
+    "source": "data/5-184871-A-24.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 7200,
+    "start_one": 14815,
+    "start_two": 7615,
+    "yes": "stimuli/23-yes.wav",
+    "no": "stimuli/23-no.wav"
+  },
+  {
+    "group": 12,
+    "source": "data/5-263490-A-25.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 13600,
+    "start_one": 11358,
+    "start_two": 11358,
+    "yes": "stimuli/24-yes.wav",
+    "no": "stimuli/24-no.wav"
+  },
+  {
+    "group": 12,
+    "source": "data/5-243635-A-29.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 7200,
+    "start_one": 17719,
+    "start_two": 10519,
+    "yes": "stimuli/25-yes.wav",
+    "no": "stimuli/25-no.wav"
+  },
+  {
+    "group": 13,
+    "source": "data/5-218494-A-22.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 10400,
+    "start_one": 7209,
+    "start_two": 7209,
+    "yes": "stimuli/26-yes.wav",
+    "no": "stimuli/26-no.wav"
+  },
+  {
+    "group": 13,
+    "source": "data/5-202220-A-21.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 13600,
+    "start_one": 19225,
+    "start_two": 5625,
+    "yes": "stimuli/27-yes.wav",
+    "no": "stimuli/27-no.wav"
+  },
+  {
+    "group": 14,
+    "source": "data/5-172299-A-5.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 7200,
+    "start_one": 6866,
+    "start_two": 6866,
+    "yes": "stimuli/28-yes.wav",
+    "no": "stimuli/28-no.wav"
+  },
+  {
+    "group": 14,
+    "source": "data/5-248341-B-6.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 10400,
+    "start_one": 21296,
+    "start_two": 10896,
+    "yes": "stimuli/29-yes.wav",
+    "no": "stimuli/29-no.wav"
+  },
+  {
+    "group": 15,
+    "source": "data/5-198891-B-8.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 7200,
+    "start_one": 6790,
+    "start_two": 6790,
+    "yes": "stimuli/30-yes.wav",
+    "no": "stimuli/30-no.wav"
+  },
+  {
+    "group": 15,
+    "source": "data/5-243773-B-44.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 13600,
+    "start_one": 25528,
+    "start_two": 11928,
+    "yes": "stimuli/31-yes.wav",
+    "no": "stimuli/31-no.wav"
+  },
+  {
+    "group": 16,
+    "source": "data/5-185579-A-41.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 13600,
+    "start_one": 8526,
+    "start_two": 8526,
+    "yes": "stimuli/32-yes.wav",
+    "no": "stimuli/32-no.wav"
+  },
+  {
+    "group": 16,
+    "source": "data/5-177957-D-40.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 13600,
+    "start_one": 19494,
+    "start_two": 5894,
+    "yes": "stimuli/33-yes.wav",
+    "no": "stimuli/33-no.wav"
+  },
+  {
+    "group": 17,
+    "source": "data/5-213836-D-9.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 7200,
+    "start_one": 9269,
+    "start_two": 9269,
+    "yes": "stimuli/34-yes.wav",
+    "no": "stimuli/34-no.wav"
+  },
+  {
+    "group": 17,
+    "source": "data/5-260011-A-34.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 7200,
+    "start_one": 16481,
+    "start_two": 9281,
+    "yes": "stimuli/35-yes.wav",
+    "no": "stimuli/35-no.wav"
+  },
+  {
+    "group": 18,
+    "source": "data/5-187201-B-4.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 7200,
+    "start_one": 8116,
+    "start_two": 8116,
+    "yes": "stimuli/36-yes.wav",
+    "no": "stimuli/36-no.wav"
+  },
+  {
+    "group": 18,
+    "source": "data/5-194899-C-3.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 13600,
+    "start_one": 19832,
+    "start_two": 6232,
+    "yes": "stimuli/37-yes.wav",
+    "no": "stimuli/37-no.wav"
+  },
+  {
+    "group": 19,
+    "source": "data/5-234923-A-32.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 10400,
+    "start_one": 9039,
+    "start_two": 9039,
+    "yes": "stimuli/38-yes.wav",
+    "no": "stimuli/38-no.wav"
+  },
+  {
+    "group": 19,
+    "source": "data/5-141683-A-35.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 7200,
+    "start_one": 15033,
+    "start_two": 7833,
+    "yes": "stimuli/39-yes.wav",
+    "no": "stimuli/39-no.wav"
+  },
+  {
+    "group": 20,
+    "source": "data/5-200334-B-1.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 13600,
+    "start_one": 9226,
+    "start_two": 9226,
+    "yes": "stimuli/40-yes.wav",
+    "no": "stimuli/40-no.wav"
+  },
+  {
+    "group": 20,
+    "source": "data/5-198411-G-20.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 13600,
+    "start_one": 21937,
+    "start_two": 8337,
+    "yes": "stimuli/41-yes.wav",
+    "no": "stimuli/41-no.wav"
+  },
+  {
+    "group": 21,
+    "source": "data/5-212736-A-17.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 13600,
+    "start_one": 4969,
+    "start_two": 4969,
+    "yes": "stimuli/42-yes.wav",
+    "no": "stimuli/42-no.wav"
+  },
+  {
+    "group": 21,
+    "source": "data/5-117120-A-42.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 10400,
+    "start_one": 21669,
+    "start_two": 11269,
+    "yes": "stimuli/43-yes.wav",
+    "no": "stimuli/43-no.wav"
+  },
+  {
+    "group": 22,
+    "source": "data/5-215658-A-12.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 10400,
+    "start_one": 4137,
+    "start_two": 4137,
+    "yes": "stimuli/44-yes.wav",
+    "no": "stimuli/44-no.wav"
+  },
+  {
+    "group": 22,
+    "source": "data/5-261439-A-15.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 13600,
+    "start_one": 20086,
+    "start_two": 6486,
+    "yes": "stimuli/45-yes.wav",
+    "no": "stimuli/45-no.wav"
+  },
+  {
+    "group": 23,
+    "source": "data/5-156698-A-18.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 7200,
+    "start_one": 5370,
+    "start_two": 5370,
+    "yes": "stimuli/46-yes.wav",
+    "no": "stimuli/46-no.wav"
+  },
+  {
+    "group": 23,
+    "source": "data/5-253094-D-49.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 13600,
+    "start_one": 20344,
+    "start_two": 6744,
+    "yes": "stimuli/47-yes.wav",
+    "no": "stimuli/47-no.wav"
+  },
+  {
+    "group": 24,
+    "source": "data/5-160614-D-48.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 7200,
+    "start_one": 8940,
+    "start_two": 8940,
+    "yes": "stimuli/48-yes.wav",
+    "no": "stimuli/48-no.wav"
+  },
+  {
+    "group": 24,
+    "source": "data/5-219379-C-11.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 7200,
+    "start_one": 15606,
+    "start_two": 8406,
+    "yes": "stimuli/49-yes.wav",
+    "no": "stimuli/49-no.wav"
+  }
+]

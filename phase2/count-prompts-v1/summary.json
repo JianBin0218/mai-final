@@ -1,0 +1,203 @@
+{
+  "pairs": 50,
+  "groups": 25,
+  "prompts": {
+    "count_yes_first": "Are there two separate bursts of sound with a quiet gap between them?\nA. yes\nB. no\nAnswer with only A or B.",
+    "count_no_first": "Are there two separate bursts of sound with a quiet gap between them?\nA. no\nB. yes\nAnswer with only A or B.",
+    "pause_yes_first": "Is there a quiet pause with audible sound both before and after it?\nA. yes\nB. no\nAnswer with only A or B.",
+    "pause_no_first": "Is there a quiet pause with audible sound both before and after it?\nA. no\nB. yes\nAnswer with only A or B."
+  },
+  "batch_size": 20,
+  "models": {
+    "full": {
+      "count_yes_first": {
+        "accuracy": 0.5,
+        "both_correct": 0.0,
+        "preference": 0.64,
+        "yes_rate": 1.0
+      },
+      "count_no_first": {
+        "accuracy": 0.5,
+        "both_correct": 0.0,
+        "preference": 0.37,
+        "yes_rate": 1.0
+      },
+      "pause_yes_first": {
+        "accuracy": 0.5,
+        "both_correct": 0.0,
+        "preference": 0.48,
+        "yes_rate": 1.0
+      },
+      "pause_no_first": {
+        "accuracy": 0.5,
+        "both_correct": 0.0,
+        "preference": 0.35,
+        "yes_rate": 1.0
+      },
+      "count_balanced": {
+        "accuracy": 0.5,
+        "both_correct": 0.0,
+        "preference": 0.5,
+        "yes_rate": 1.0
+      },
+      "pause_balanced": {
+        "accuracy": 0.5,
+        "both_correct": 0.0,
+        "preference": 0.42,
+        "yes_rate": 1.0
+      }
+    },
+    "pool16": {
+      "count_yes_first": {
+        "accuracy": 0.5,
+        "both_correct": 0.0,
+        "preference": 0.48,
+        "yes_rate": 1.0
+      },
+      "count_no_first": {
+        "accuracy": 0.5,
+        "both_correct": 0.0,
+        "preference": 0.33,
+        "yes_rate": 1.0
+      },
+      "pause_yes_first": {
+        "accuracy": 0.5,
+        "both_correct": 0.0,
+        "preference": 0.47,
+        "yes_rate": 1.0
+      },
+      "pause_no_first": {
+        "accuracy": 0.5,
+        "both_correct": 0.0,
+        "preference": 0.49,
+        "yes_rate": 1.0
+      },
+      "count_balanced": {
+        "accuracy": 0.5,
+        "both_correct": 0.0,
+        "preference": 0.34,
+        "yes_rate": 1.0
+      },
+      "pause_balanced": {
+        "accuracy": 0.5,
+        "both_correct": 0.0,
+        "preference": 0.45,
+        "yes_rate": 1.0
+      }
+    },
+    "K16-s17": {
+      "count_yes_first": {
+        "accuracy": 0.5,
+        "both_correct": 0.0,
+        "preference": 0.45,
+        "yes_rate": 1.0
+      },
+      "count_no_first": {
+        "accuracy": 0.5,
+        "both_correct": 0.0,
+        "preference": 0.45,
+        "yes_rate": 1.0
+      },
+      "pause_yes_first": {
+        "accuracy": 0.52,
+        "both_correct": 0.06,
+        "preference": 0.41,
+        "yes_rate": 0.92
+      },
+      "pause_no_first": {
+        "accuracy": 0.5,
+        "both_correct": 0.0,
+        "preference": 0.54,
+        "yes_rate": 0.98
+      },
+      "count_balanced": {
+        "accuracy": 0.5,
+        "both_correct": 0.0,
+        "preference": 0.44,
+        "yes_rate": 1.0
+      },
+      "pause_balanced": {
+        "accuracy": 0.5,
+        "both_correct": 0.0,
+        "preference": 0.45,
+        "yes_rate": 1.0
+      }
+    },
+    "K16-s23": {
+      "count_yes_first": {
+        "accuracy": 0.5,
+        "both_correct": 0.0,
+        "preference": 0.37,
+        "yes_rate": 1.0
+      },
+      "count_no_first": {
+        "accuracy": 0.5,
+        "both_correct": 0.0,
+        "preference": 0.45,
+        "yes_rate": 1.0
+      },
+      "pause_yes_first": {
+        "accuracy": 0.51,
+        "both_correct": 0.04,
+        "preference": 0.38,
+        "yes_rate": 0.91
+      },
+      "pause_no_first": {
+        "accuracy": 0.5,
+        "both_correct": 0.0,
+        "preference": 0.51,
+        "yes_rate": 0.98
+      },
+      "count_balanced": {
+        "accuracy": 0.5,
+        "both_correct": 0.0,
+        "preference": 0.39,
+        "yes_rate": 1.0
+      },
+      "pause_balanced": {
+        "accuracy": 0.5,
+        "both_correct": 0.0,
+        "preference": 0.44,
+        "yes_rate": 1.0
+      }
+    },
+    "K16-s41": {
+      "count_yes_first": {
+        "accuracy": 0.5,
+        "both_correct": 0.0,
+        "preference": 0.4,
+        "yes_rate": 1.0
+      },
+      "count_no_first": {
+        "accuracy": 0.5,
+        "both_correct": 0.0,
+        "preference": 0.44,
+        "yes_rate": 1.0
+      },
+      "pause_yes_first": {
+        "accuracy": 0.5,
+        "both_correct": 0.0,
+        "preference": 0.46,
+        "yes_rate": 1.0
+      },
+      "pause_no_first": {
+        "accuracy": 0.51,
+        "both_correct": 0.02,
+        "preference": 0.52,
+        "yes_rate": 0.99
+      },
+      "count_balanced": {
+        "accuracy": 0.5,
+        "both_correct": 0.0,
+        "preference": 0.35,
+        "yes_rate": 1.0
+      },
+      "pause_balanced": {
+        "accuracy": 0.5,
+        "both_correct": 0.0,
+        "preference": 0.51,
+        "yes_rate": 1.0
+      }
+    }
+  }
+}

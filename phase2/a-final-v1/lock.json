@@ -1,0 +1,94 @@
+{
+  "smoke_passed": true,
+  "smoke_check_sha256": "27646356c4dd66df57f17503f016aa168b91bef45956fb63942afdbcb0a8756e",
+  "files": {
+    "a_final_test.py": "ecfc2f5218bc215c8b5862fa1ce7f99ac7f36845916ee2a26ef5edac0be289bd",
+    "a_final_types.py": "2d5bf1a774eb519c7fa1e04b251bc7c2254df3edd1f42d515f9ab83bf99f8e4c",
+    "baseline.py": "cba30e6f9952bedcaba2b87f06f1a91beceebfe189ee9b9d19dcc82f0e76aa70",
+    "bottleneck.py": "c9fc5cad859d72586aa5fa533d9990cd6ce59640d5f659de79a3c1e08c6afce8",
+    "prepare.py": "d12d0e5d64c109e98f858932cd785eaa5c01e3e42da12b6e7edecec133eb4e80",
+    "plan.json": "f6211cb309491bfb0c9e580ecc202dd7ce7aeca2c416590dba521b77959323f5",
+    "question_types.csv": "2b77c463ff69be374d7188a28ba3799e9583ef19a8ea2b30fcb250bd1fd59b6e"
+  },
+  "source_ids_sha256": "944214b7b6de65b9a5360552f06f6ea0d8e0814b88d360d09e2943650a5814f4",
+  "source_ids_derivation": "Verified official metadata MD5. Sort rows by file_name. Write UTF-8 CSV file_name,source_id with LF line endings. Extract digits after /sounds/ from sound_link, blank for missing.",
+  "model_files_sha256": {
+    "config.json": "ab122e112e2450f10cec59216185bd519ccd7529c79d4c1c00255d43b97a037d",
+    "model-00001-of-00005.safetensors": "383de5b5b06f7e7f276850a065d9164641c93009f79a377352a7c949d17c1d7a",
+    "model-00002-of-00005.safetensors": "610e59a23cdf1f78d7e3b42e69f2e1a08578f29726391a1772aecac95db3c59c",
+    "model-00003-of-00005.safetensors": "b9ea76e97226524a12b6acc5e896bebf01a01018fbcad20a72eb13c7950f6916",
+    "model-00004-of-00005.safetensors": "d68dee591619e26e3d0af23a07e181c70134fbc3aa33e24d872224607aae2c62",
+    "model-00005-of-00005.safetensors": "a447dab3e72f9debd37a0c4ae0b9179a1bad2b06357092a77c066a0405bbc7d2",
+    "generation_config.json": "8d9ef5bcbf4f16db89ef19828420d69546680e2ae413411523688090b40f337a",
+    "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+    "model.safetensors.index.json": "b6cc05302d1bd25fbab6915e3a033603c524416b984f661d213f9a1f8e3b3895",
+    "preprocessor_config.json": "4cd7c6c061fe79244c57b0c320b2873f3ee5acce2277f7cc3aced042725680f2",
+    "tokenizer_config.json": "c738158e70eeecf25736a6c4d8e5f34cfce683079980757edfb0665a7b2457ed",
+    "tokenizer.json": "f7c9b2dba4a296b1aa76c16a34b8225c0c118978400d4bb66bff0902d702f5b8",
+    "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+  },
+  "compressor_sha256": {
+    "K4-s17": "35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab",
+    "K4-s23": "4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659",
+    "K4-s41": "5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7",
+    "K16-s17": "9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d",
+    "K16-s23": "8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735",
+    "K16-s41": "481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5"
+  },
+  "runtime": {
+    "python": "3.10.12",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "soundfile": "0.14.0",
+    "torch": "2.5.1+cu121",
+    "transformers": "4.51.3"
+  },
+  "development_rule_audit": {
+    "order": [
+      "source_or_event",
+      "count_or_relation",
+      "time_pattern",
+      "scene_context",
+      "acoustic_property"
+    ],
+    "ordered_confusion": [
+      [
+        206,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        45,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        39,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        28,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        17
+      ]
+    ],
+    "n": 340,
+    "accuracy": 0.9852941176470589
+  }
+}

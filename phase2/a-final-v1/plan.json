@@ -1,0 +1,38 @@
+{
+  "id": "a-final-v1",
+  "dataset": {
+    "record": "https://zenodo.org/records/6473207",
+    "test_url": "https://zenodo.org/records/6473207/files/clotho_aqa_test.csv?download=1",
+    "test_md5": "6fd0e75dffba561805fa37c668ce99a4",
+    "train_md5": "508513b91001ab17e641eaaa162ca045",
+    "val_md5": "41b8f6d906a57d7a5a4ee02bbcdefcc9",
+    "metadata_md5": "e555d8a5a4b275ca7c437a33c0739d65",
+    "audio_md5": "48c2c46ccd71dc06121228e2ed68d6b9"
+  },
+  "sampling": "Official test only. Require at least three unanimous votes for each selected yes/no question. Among eligible recordings sorted by filename, retain one recording per known Freesound original ID and ZIP CRC32 plus uncompressed size. Exclude unknown test original IDs and any original ID, filename, or audio fingerprint seen in official train or val. Record missing train/val IDs. Choose one yes and one no question per recording by minimum SHA-256 of plan ID, filename, answer label, and verbatim stem separated by ASCII NUL.",
+  "qid": "First 24 hexadecimal digits of SHA-256 over UTF-8 filename, ASCII NUL, and stripped verbatim question.",
+  "taxonomy": "Question-only classification before inference. Use identical unambiguous fresh_val exemplars, then the fixed ordered rules in a_final_types.py. Treat type assignments as an operational textual taxonomy; report method counts.",
+  "models": {
+    "base": "Qwen/Qwen2-Audio-7B-Instruct",
+    "project_revision": "0a095220c30b7b31434169c3086508ef3ea5bf0a",
+    "seeds": [17, 23, 41],
+    "conditions": ["text", "K4", "K16", "full"],
+    "dtype": "bfloat16",
+    "option_orders": ["yes_first", "no_first"],
+    "primary_order": "yes_first"
+  },
+  "bootstrap": {"unit": "recording", "replicates": 10000, "seed": 17},
+  "primary": {"contrast": "K16 minus K4 overall accuracy", "confidence_level": 0.95, "minimum_point_gain_pp": 5, "minimum_lower_pp_strict": 0},
+  "secondary_confirmatory": {
+    "confidence_level_each": 0.975,
+    "minimum_questions": 20,
+    "minimum_recordings": 15,
+    "minimum_each_answer": 5,
+    "source_noninferiority_margin_pp": 5,
+    "relation_loss_minimum_lower_pp_strict": 0,
+    "rules": "Source preservation supported if the upper bound of full minus K16 is less than 5 pp. Count/relation gap supported if its lower bound of full minus K16 is greater than zero. Both use the primary order; Bonferroni over these two contrasts."
+  },
+  "descriptive": "Both option orders, overall and all five types: accuracy, balanced accuracy, yes/no recall, recording count, full minus text, K16 minus K4, full minus K16. Seed average within question before pairing. Intervals for descriptive contrasts are nominal 95%.",
+  "exemplars": "In primary order, choose the lowest QID for each available prespecified pattern: source full and all K16 correct, all K4 wrong; relation full correct, all K16 wrong; timing full and all K16 wrong. Do not replace missing patterns.",
+  "screen": "Before official inference, reproduce saved fresh_val decisions on a 12-recording filename-sorted smoke subset. Require identical full/text decisions and at least 95% agreement for each compressed checkpoint. Verify data provenance and lock executable files before opening the official evaluation."
+}
