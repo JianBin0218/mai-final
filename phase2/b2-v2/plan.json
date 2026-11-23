@@ -1,0 +1,38 @@
+{
+  "id": "b2-v2",
+  "fixed_on": "2026-11-24",
+  "fixed_before": "Any synthetic or Clotho training in this plan, and any generation or evaluation of the fold 2 confirmation half.",
+  "history": "v1 (phase2/b2-mixtures-v1) failed its full-audio accuracy gate because of a yes bias. The v1 development mixtures were then used to choose this plan, so they are design data. Claims rest on the confirmation half.",
+  "stimuli": "Unchanged from phase2/b2-mixtures-v1/plan.json (same generator, same train and development manifests). Confirmation mixtures use the same rules on the fold 2 confirmation half with generation_seed 20261125, 100 recordings per N.",
+  "primary_metric": "Within-recording ranking: for each recording, 1 if the question about the present category gets a higher yes-minus-no score than the question about the absent category, else 0. Average the two option orders' scores first, then the seeds, per recording. Bootstrap over recordings, seed 17, 10000 replicates.",
+  "full_audio_gate": {
+    "rule": "Full-audio within-recording ranking at least 0.80 in each option order.",
+    "applied_to_v1_development": {"N1": [0.95, 0.93], "N2": [0.89, 0.89], "N4": [0.83, 0.85], "N6": [0.75, 0.81]},
+    "event_counts_used": [1, 2, 4],
+    "note": "0.80 is the same number as the v1 accuracy gate. N=6 fails and is reported as secondary only."
+  },
+  "training": {
+    "parents": "runs/guidance/k{K}-s{seed}-parent (audio-only, trained on Clotho in B1), K in 1, 4, 16, seeds 17, 18, 19.",
+    "data": "Synthetic train split (fold 1), all N, 3600 questions.",
+    "steps": 3600,
+    "optimizer": "Same as bottleneck.py: AdamW lr 1e-3, batch 1, gradient clipping 1.0, gate lr 1e-2 without weight decay, decoder prompt 'A. yes / B. no'.",
+    "arms": {
+      "audio": "audio-only control, same warm start and steps",
+      "gatedc": "B1 gated + centered: unit-normalized projection of the centered, layer-normed mean stem embedding, times tanh(gate), added to every query",
+      "route": "slot-level routing: each learned query attends over the stem's layer-normed token embeddings (own 64-d key and value projections); each slot's offset is unit-normalized and scaled by tanh(gate). Different slots can receive different offsets."
+    },
+    "start_check": "With the gate at zero, guided and audio-only logits must be identical on every development question; the gate must receive a nonzero gradient."
+  },
+  "evaluation": {
+    "conditions": "correct stem, wrong stem (the other question about the same recording), generic stem 'What can be heard in this recording?', no question; both option orders",
+    "pressure_cells": "A (K, N) cell with N in {1, 2, 4} is a pressure cell if the trained audio-only control's development ranking (mean of seeds) is at least 5 points below full audio. Chosen from the audio-only control only, before looking at guided arms.",
+    "primary_contrasts": "For each guided arm (gatedc, route), averaged over pressure cells: (1) correct stem minus audio-only control, (2) correct stem minus wrong stem, on the same trained model.",
+    "success": "Both contrasts at least +5 points with the lower bound of the 97.5% interval (two arms) above zero, on the confirmation half.",
+    "development_role": "Development results decide whether to run the confirmation and which arm leads. If no arm reaches +5 on both contrasts on development, the confirmation still runs for the leading arm so the null is measured on fresh recordings."
+  },
+  "clotho": {
+    "data": "All unanimous (3 of 3 annotators) yes/no questions on the 384 official-train recordings present locally (1125 questions); disjoint from fresh_val, the pilot validation recordings and track A's natural-capacity pairs.",
+    "grid": "Same three arms, K in 1, 4, 16, seeds 17-19, warm start from the same Clotho parents, 2250 steps (two epochs).",
+    "evaluation": "fresh_val 340 questions with the four stem conditions and the B1 contrasts; reported as development evidence only. The official test stays reserved."
+  }
+}
