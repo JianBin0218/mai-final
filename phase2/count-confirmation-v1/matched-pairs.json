@@ -1,0 +1,502 @@
+[
+  {
+    "group": 0,
+    "source": "confirmation-stimuli/sources/4-108352-A-33.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 13600,
+    "start_one": 10760,
+    "start_two": 10760,
+    "yes": "confirmation-stimuli/matched/00-yes.wav",
+    "no": "confirmation-stimuli/matched/00-no.wav"
+  },
+  {
+    "group": 0,
+    "source": "confirmation-stimuli/sources/4-151242-A-37.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 7200,
+    "start_one": 12487,
+    "start_two": 5287,
+    "yes": "confirmation-stimuli/matched/01-yes.wav",
+    "no": "confirmation-stimuli/matched/01-no.wav"
+  },
+  {
+    "group": 1,
+    "source": "confirmation-stimuli/sources/4-161105-B-47.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 10400,
+    "start_one": 8461,
+    "start_two": 8461,
+    "yes": "confirmation-stimuli/matched/02-yes.wav",
+    "no": "confirmation-stimuli/matched/02-no.wav"
+  },
+  {
+    "group": 1,
+    "source": "confirmation-stimuli/sources/4-194246-A-13.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 13600,
+    "start_one": 20544,
+    "start_two": 6944,
+    "yes": "confirmation-stimuli/matched/03-yes.wav",
+    "no": "confirmation-stimuli/matched/03-no.wav"
+  },
+  {
+    "group": 2,
+    "source": "confirmation-stimuli/sources/4-186518-A-30.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 7200,
+    "start_one": 5719,
+    "start_two": 5719,
+    "yes": "confirmation-stimuli/matched/04-yes.wav",
+    "no": "confirmation-stimuli/matched/04-no.wav"
+  },
+  {
+    "group": 2,
+    "source": "confirmation-stimuli/sources/4-147240-B-2.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 10400,
+    "start_one": 17486,
+    "start_two": 7086,
+    "yes": "confirmation-stimuli/matched/05-yes.wav",
+    "no": "confirmation-stimuli/matched/05-no.wav"
+  },
+  {
+    "group": 3,
+    "source": "confirmation-stimuli/sources/4-165606-A-45.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 13600,
+    "start_one": 7425,
+    "start_two": 7425,
+    "yes": "confirmation-stimuli/matched/06-yes.wav",
+    "no": "confirmation-stimuli/matched/06-no.wav"
+  },
+  {
+    "group": 3,
+    "source": "confirmation-stimuli/sources/4-191327-A-38.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 10400,
+    "start_one": 19290,
+    "start_two": 8890,
+    "yes": "confirmation-stimuli/matched/07-yes.wav",
+    "no": "confirmation-stimuli/matched/07-no.wav"
+  },
+  {
+    "group": 4,
+    "source": "confirmation-stimuli/sources/4-144468-B-27.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 7200,
+    "start_one": 9891,
+    "start_two": 9891,
+    "yes": "confirmation-stimuli/matched/08-yes.wav",
+    "no": "confirmation-stimuli/matched/08-no.wav"
+  },
+  {
+    "group": 4,
+    "source": "confirmation-stimuli/sources/4-187769-A-14.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 7200,
+    "start_one": 11322,
+    "start_two": 4122,
+    "yes": "confirmation-stimuli/matched/09-yes.wav",
+    "no": "confirmation-stimuli/matched/09-no.wav"
+  },
+  {
+    "group": 5,
+    "source": "confirmation-stimuli/sources/4-144083-A-16.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 10400,
+    "start_one": 6032,
+    "start_two": 6032,
+    "yes": "confirmation-stimuli/matched/10-yes.wav",
+    "no": "confirmation-stimuli/matched/10-no.wav"
+  },
+  {
+    "group": 5,
+    "source": "confirmation-stimuli/sources/4-197454-B-28.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 10400,
+    "start_one": 19233,
+    "start_two": 8833,
+    "yes": "confirmation-stimuli/matched/11-yes.wav",
+    "no": "confirmation-stimuli/matched/11-no.wav"
+  },
+  {
+    "group": 6,
+    "source": "confirmation-stimuli/sources/4-204777-A-39.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 7200,
+    "start_one": 4669,
+    "start_two": 4669,
+    "yes": "confirmation-stimuli/matched/12-yes.wav",
+    "no": "confirmation-stimuli/matched/12-no.wav"
+  },
+  {
+    "group": 6,
+    "source": "confirmation-stimuli/sources/4-163264-A-10.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 13600,
+    "start_one": 25582,
+    "start_two": 11982,
+    "yes": "confirmation-stimuli/matched/13-yes.wav",
+    "no": "confirmation-stimuli/matched/13-no.wav"
+  },
+  {
+    "group": 7,
+    "source": "confirmation-stimuli/sources/4-143118-A-7.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 13600,
+    "start_one": 10658,
+    "start_two": 10658,
+    "yes": "confirmation-stimuli/matched/14-yes.wav",
+    "no": "confirmation-stimuli/matched/14-no.wav"
+  },
+  {
+    "group": 7,
+    "source": "confirmation-stimuli/sources/4-198025-A-23.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 10400,
+    "start_one": 14694,
+    "start_two": 4294,
+    "yes": "confirmation-stimuli/matched/15-yes.wav",
+    "no": "confirmation-stimuli/matched/15-no.wav"
+  },
+  {
+    "group": 8,
+    "source": "confirmation-stimuli/sources/4-201300-A-31.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 10400,
+    "start_one": 8540,
+    "start_two": 8540,
+    "yes": "confirmation-stimuli/matched/16-yes.wav",
+    "no": "confirmation-stimuli/matched/16-no.wav"
+  },
+  {
+    "group": 8,
+    "source": "confirmation-stimuli/sources/4-125071-A-19.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 13600,
+    "start_one": 22474,
+    "start_two": 8874,
+    "yes": "confirmation-stimuli/matched/17-yes.wav",
+    "no": "confirmation-stimuli/matched/17-no.wav"
+  },
+  {
+    "group": 9,
+    "source": "confirmation-stimuli/sources/4-175845-A-43.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 10400,
+    "start_one": 4055,
+    "start_two": 4055,
+    "yes": "confirmation-stimuli/matched/18-yes.wav",
+    "no": "confirmation-stimuli/matched/18-no.wav"
+  },
+  {
+    "group": 9,
+    "source": "confirmation-stimuli/sources/4-184575-A-0.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 13600,
+    "start_one": 19032,
+    "start_two": 5432,
+    "yes": "confirmation-stimuli/matched/19-yes.wav",
+    "no": "confirmation-stimuli/matched/19-no.wav"
+  },
+  {
+    "group": 10,
+    "source": "confirmation-stimuli/sources/4-132810-A-26.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 10400,
+    "start_one": 5319,
+    "start_two": 5319,
+    "yes": "confirmation-stimuli/matched/20-yes.wav",
+    "no": "confirmation-stimuli/matched/20-no.wav"
+  },
+  {
+    "group": 10,
+    "source": "confirmation-stimuli/sources/4-181999-A-36.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 10400,
+    "start_one": 18095,
+    "start_two": 7695,
+    "yes": "confirmation-stimuli/matched/21-yes.wav",
+    "no": "confirmation-stimuli/matched/21-no.wav"
+  },
+  {
+    "group": 11,
+    "source": "confirmation-stimuli/sources/4-125825-B-46.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 10400,
+    "start_one": 8536,
+    "start_two": 8536,
+    "yes": "confirmation-stimuli/matched/22-yes.wav",
+    "no": "confirmation-stimuli/matched/22-no.wav"
+  },
+  {
+    "group": 11,
+    "source": "confirmation-stimuli/sources/4-152995-A-24.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 7200,
+    "start_one": 14815,
+    "start_two": 7615,
+    "yes": "confirmation-stimuli/matched/23-yes.wav",
+    "no": "confirmation-stimuli/matched/23-no.wav"
+  },
+  {
+    "group": 12,
+    "source": "confirmation-stimuli/sources/4-198962-B-25.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 13600,
+    "start_one": 11358,
+    "start_two": 11358,
+    "yes": "confirmation-stimuli/matched/24-yes.wav",
+    "no": "confirmation-stimuli/matched/24-no.wav"
+  },
+  {
+    "group": 12,
+    "source": "confirmation-stimuli/sources/4-188191-A-29.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 7200,
+    "start_one": 17719,
+    "start_two": 10519,
+    "yes": "confirmation-stimuli/matched/25-yes.wav",
+    "no": "confirmation-stimuli/matched/25-no.wav"
+  },
+  {
+    "group": 13,
+    "source": "confirmation-stimuli/sources/4-189832-B-22.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 10400,
+    "start_one": 7209,
+    "start_two": 7209,
+    "yes": "confirmation-stimuli/matched/26-yes.wav",
+    "no": "confirmation-stimuli/matched/26-no.wav"
+  },
+  {
+    "group": 13,
+    "source": "confirmation-stimuli/sources/4-171519-A-21.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 13600,
+    "start_one": 19225,
+    "start_two": 5625,
+    "yes": "confirmation-stimuli/matched/27-yes.wav",
+    "no": "confirmation-stimuli/matched/27-no.wav"
+  },
+  {
+    "group": 14,
+    "source": "confirmation-stimuli/sources/4-149940-B-5.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 7200,
+    "start_one": 6866,
+    "start_two": 6866,
+    "yes": "confirmation-stimuli/matched/28-yes.wav",
+    "no": "confirmation-stimuli/matched/28-no.wav"
+  },
+  {
+    "group": 14,
+    "source": "confirmation-stimuli/sources/4-244318-A-6.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 10400,
+    "start_one": 21296,
+    "start_two": 10896,
+    "yes": "confirmation-stimuli/matched/29-yes.wav",
+    "no": "confirmation-stimuli/matched/29-no.wav"
+  },
+  {
+    "group": 15,
+    "source": "confirmation-stimuli/sources/4-196671-A-8.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 7200,
+    "start_one": 6790,
+    "start_two": 6790,
+    "yes": "confirmation-stimuli/matched/30-yes.wav",
+    "no": "confirmation-stimuli/matched/30-no.wav"
+  },
+  {
+    "group": 15,
+    "source": "confirmation-stimuli/sources/4-186936-A-44.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 13600,
+    "start_one": 25528,
+    "start_two": 11928,
+    "yes": "confirmation-stimuli/matched/31-yes.wav",
+    "no": "confirmation-stimuli/matched/31-no.wav"
+  },
+  {
+    "group": 16,
+    "source": "confirmation-stimuli/sources/4-149294-A-41.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 13600,
+    "start_one": 8526,
+    "start_two": 8526,
+    "yes": "confirmation-stimuli/matched/32-yes.wav",
+    "no": "confirmation-stimuli/matched/32-no.wav"
+  },
+  {
+    "group": 16,
+    "source": "confirmation-stimuli/sources/4-175000-B-40.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 13600,
+    "start_one": 19494,
+    "start_two": 5894,
+    "yes": "confirmation-stimuli/matched/33-yes.wav",
+    "no": "confirmation-stimuli/matched/33-no.wav"
+  },
+  {
+    "group": 17,
+    "source": "confirmation-stimuli/sources/4-138344-A-9.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 7200,
+    "start_one": 9269,
+    "start_two": 9269,
+    "yes": "confirmation-stimuli/matched/34-yes.wav",
+    "no": "confirmation-stimuli/matched/34-no.wav"
+  },
+  {
+    "group": 17,
+    "source": "confirmation-stimuli/sources/4-212728-A-34.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 7200,
+    "start_one": 16481,
+    "start_two": 9281,
+    "yes": "confirmation-stimuli/matched/35-yes.wav",
+    "no": "confirmation-stimuli/matched/35-no.wav"
+  },
+  {
+    "group": 18,
+    "source": "confirmation-stimuli/sources/4-130584-A-4.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 7200,
+    "start_one": 8116,
+    "start_two": 8116,
+    "yes": "confirmation-stimuli/matched/36-yes.wav",
+    "no": "confirmation-stimuli/matched/36-no.wav"
+  },
+  {
+    "group": 18,
+    "source": "confirmation-stimuli/sources/4-213915-C-3.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 13600,
+    "start_one": 19832,
+    "start_two": 6232,
+    "yes": "confirmation-stimuli/matched/37-yes.wav",
+    "no": "confirmation-stimuli/matched/37-no.wav"
+  },
+  {
+    "group": 19,
+    "source": "confirmation-stimuli/sources/4-158653-A-32.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 10400,
+    "start_one": 9039,
+    "start_two": 9039,
+    "yes": "confirmation-stimuli/matched/38-yes.wav",
+    "no": "confirmation-stimuli/matched/38-no.wav"
+  },
+  {
+    "group": 19,
+    "source": "confirmation-stimuli/sources/4-218199-C-35.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 7200,
+    "start_one": 15033,
+    "start_two": 7833,
+    "yes": "confirmation-stimuli/matched/39-yes.wav",
+    "no": "confirmation-stimuli/matched/39-no.wav"
+  },
+  {
+    "group": 20,
+    "source": "confirmation-stimuli/sources/4-170078-A-1.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 13600,
+    "start_one": 9226,
+    "start_two": 9226,
+    "yes": "confirmation-stimuli/matched/40-yes.wav",
+    "no": "confirmation-stimuli/matched/40-no.wav"
+  },
+  {
+    "group": 20,
+    "source": "confirmation-stimuli/sources/4-167077-C-20.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 13600,
+    "start_one": 21937,
+    "start_two": 8337,
+    "yes": "confirmation-stimuli/matched/41-yes.wav",
+    "no": "confirmation-stimuli/matched/41-no.wav"
+  },
+  {
+    "group": 21,
+    "source": "confirmation-stimuli/sources/4-186693-A-17.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 13600,
+    "start_one": 4969,
+    "start_two": 4969,
+    "yes": "confirmation-stimuli/matched/42-yes.wav",
+    "no": "confirmation-stimuli/matched/42-no.wav"
+  },
+  {
+    "group": 21,
+    "source": "confirmation-stimuli/sources/4-80761-A-42.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 10400,
+    "start_one": 21669,
+    "start_two": 11269,
+    "yes": "confirmation-stimuli/matched/43-yes.wav",
+    "no": "confirmation-stimuli/matched/43-no.wav"
+  },
+  {
+    "group": 22,
+    "source": "confirmation-stimuli/sources/4-171207-A-12.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 10400,
+    "start_one": 4137,
+    "start_two": 4137,
+    "yes": "confirmation-stimuli/matched/44-yes.wav",
+    "no": "confirmation-stimuli/matched/44-no.wav"
+  },
+  {
+    "group": 22,
+    "source": "confirmation-stimuli/sources/4-197871-A-15.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 13600,
+    "start_one": 20086,
+    "start_two": 6486,
+    "yes": "confirmation-stimuli/matched/45-yes.wav",
+    "no": "confirmation-stimuli/matched/45-no.wav"
+  },
+  {
+    "group": 23,
+    "source": "confirmation-stimuli/sources/4-145006-A-18.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 7200,
+    "start_one": 5370,
+    "start_two": 5370,
+    "yes": "confirmation-stimuli/matched/46-yes.wav",
+    "no": "confirmation-stimuli/matched/46-no.wav"
+  },
+  {
+    "group": 23,
+    "source": "confirmation-stimuli/sources/4-251645-B-49.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 13600,
+    "start_one": 20344,
+    "start_two": 6744,
+    "yes": "confirmation-stimuli/matched/47-yes.wav",
+    "no": "confirmation-stimuli/matched/47-no.wav"
+  },
+  {
+    "group": 24,
+    "source": "confirmation-stimuli/sources/4-119648-C-48.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 7200,
+    "start_one": 8940,
+    "start_two": 8940,
+    "yes": "confirmation-stimuli/matched/48-yes.wav",
+    "no": "confirmation-stimuli/matched/48-no.wav"
+  },
+  {
+    "group": 24,
+    "source": "confirmation-stimuli/sources/4-167063-C-11.wav",
+    "question": "Are there two separate bursts of sound with a quiet gap between them?",
+    "gap_samples": 7200,
+    "start_one": 15606,
+    "start_two": 8406,
+    "yes": "confirmation-stimuli/matched/49-yes.wav",
+    "no": "confirmation-stimuli/matched/49-no.wav"
+  }
+]

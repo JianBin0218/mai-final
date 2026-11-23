@@ -1,0 +1,49 @@
+qid,recording,order,type,target,text,full,K4-s17,K4-s23,K4-s41,K16-s17,K16-s23,K16-s41
+baab57ae57ac32118473cd5f,13_waiting_chitwan.wav,yes_first,scene_context,0,-0.625,5.1875,4.375,4.375,3.9375,4.5625,5.125,5.125
+baab57ae57ac32118473cd5f,13_waiting_chitwan.wav,no_first,scene_context,0,-0.5,6.0,3.6875,4.375,3.5625,4.625,4.6875,5.0
+033655920c3b5ff350f76007,13_waiting_chitwan.wav,yes_first,source_or_event,1,2.125,-2.625,-3.75,-3.9375,-3.875,-3.6875,-4.0625,-4.0625
+033655920c3b5ff350f76007,13_waiting_chitwan.wav,no_first,source_or_event,1,3.25,-1.625,-1.375,-1.0,-1.0,-0.5,-1.375,-0.625
+fd95b05bb863375dd2e0d086,12 noon church-bell 140310_0121.wav,yes_first,source_or_event,0,3.125,2.875,0.0,0.375,-1.5,2.625,0.25,2.5
+fd95b05bb863375dd2e0d086,12 noon church-bell 140310_0121.wav,no_first,source_or_event,0,5.1875,6.5625,2.5,2.625,1.625,3.625,3.0,4.4375
+46a948be4879087f18ad68f8,12 noon church-bell 140310_0121.wav,yes_first,scene_context,1,-1.9375,-4.25,-3.75,-3.8125,-3.5,-3.6875,-4.5,-3.6875
+46a948be4879087f18ad68f8,12 noon church-bell 140310_0121.wav,no_first,scene_context,1,-0.0,0.75,-0.125,-0.125,-0.25,-0.625,-0.25,-0.375
+ae3193d553bc95471c314e95,020220_00.wav,yes_first,source_or_event,0,-1.875,3.125,1.625,1.75,1.25,2.25,2.25,2.0
+ae3193d553bc95471c314e95,020220_00.wav,no_first,source_or_event,0,1.25,3.625,2.125,2.375,2.5,2.75,2.625,2.25
+0b642a4c0ba7e8f80582be4d,020220_00.wav,yes_first,source_or_event,1,0.375,-1.875,-0.8125,-1.0625,-0.75,-2.8125,-3.25,-2.8125
+0b642a4c0ba7e8f80582be4d,020220_00.wav,no_first,source_or_event,1,2.0,-1.125,-0.125,-0.25,0.25,-0.5,-0.625,-0.75
+c8a58ba02ad58211c1da2a0d,160917-eichelherr000.wav,yes_first,source_or_event,0,5.5,4.375,1.9375,2.0,2.875,-0.6875,-1.1875,0.875
+c8a58ba02ad58211c1da2a0d,160917-eichelherr000.wav,no_first,source_or_event,0,7.9375,4.375,2.5625,2.6875,2.9375,0.75,0.5,2.25
+19df3c53e94ef82ce0e34232,160917-eichelherr000.wav,yes_first,source_or_event,1,2.0625,-3.125,-0.75,-0.5625,0.125,-1.875,-1.6875,-2.0
+19df3c53e94ef82ce0e34232,160917-eichelherr000.wav,no_first,source_or_event,1,3.8125,-2.5,-1.0,-0.9375,-0.5,-1.5,-1.75,-1.5625
+5eaf3692d0c6c89b969f8fb7,17-Year Cicada Mating Call.wav,yes_first,acoustic_property,0,1.375,4.125,3.0,3.25,3.0625,3.25,3.625,3.9375
+5eaf3692d0c6c89b969f8fb7,17-Year Cicada Mating Call.wav,no_first,acoustic_property,0,1.8125,3.5,2.125,2.375,1.875,2.25,2.625,2.25
+9e95527dc61946865e2185fb,17-Year Cicada Mating Call.wav,yes_first,source_or_event,1,-3.75,-5.0625,-4.0,-4.0625,-3.8125,-4.1875,-4.625,-4.4375
+9e95527dc61946865e2185fb,17-Year Cicada Mating Call.wav,no_first,source_or_event,1,-1.25,-0.875,-0.0,0.25,0.5,0.125,-0.5,-0.0
+4a8f47bbd808a1b2fbcbc29c,0221 Bar_terrace.wav,yes_first,scene_context,0,2.0625,6.25,4.4375,4.25,4.4375,4.25,5.25,4.625
+4a8f47bbd808a1b2fbcbc29c,0221 Bar_terrace.wav,no_first,scene_context,0,1.25,5.375,3.875,4.125,4.0,4.125,4.75,3.75
+a3235bfa3bced442fdaf15af,0221 Bar_terrace.wav,yes_first,count_or_relation,1,-6.0,-6.0625,-5.625,-6.0625,-5.75,-6.25,-6.875,-6.1875
+a3235bfa3bced442fdaf15af,0221 Bar_terrace.wav,no_first,count_or_relation,1,-2.125,-3.0,-1.5,-1.375,-1.5,-1.75,-2.0,-1.875
+f35f729d85f7776c44dff889,110422_village_dusk.wav,yes_first,count_or_relation,0,1.0625,5.8125,4.375,4.25,4.3125,4.8125,5.0,4.6875
+f35f729d85f7776c44dff889,110422_village_dusk.wav,no_first,count_or_relation,0,5.125,6.9375,4.8125,4.4375,4.4375,6.5,6.0625,6.25
+b433c4876cbd6405493cd972,110422_village_dusk.wav,yes_first,source_or_event,1,2.625,-0.625,-3.125,-3.3125,-3.0625,-4.125,-4.25,-3.25
+b433c4876cbd6405493cd972,110422_village_dusk.wav,no_first,source_or_event,1,3.8125,1.25,-0.25,-0.5,-0.125,-0.25,-0.5,-0.0
+5ac4b1a07a038035a81a816e,20080416.buzz.stereo.wav,yes_first,count_or_relation,0,3.375,5.0,3.875,4.5625,2.9375,4.625,3.75,5.0625
+5ac4b1a07a038035a81a816e,20080416.buzz.stereo.wav,no_first,count_or_relation,0,4.3125,7.75,5.0625,6.0625,4.375,6.1875,5.125,7.0
+55bc3d0420038e4cb7e81605,20080416.buzz.stereo.wav,yes_first,source_or_event,1,-0.25,-2.6875,-2.375,-3.125,-2.5,-2.375,-2.6875,-3.4375
+55bc3d0420038e4cb7e81605,20080416.buzz.stereo.wav,no_first,source_or_event,1,6.3125,1.0,4.0625,4.25,4.625,2.5625,2.375,2.625
+7f5b094952a779980fc23f7f,1122thrum.wav,yes_first,source_or_event,0,4.9375,3.875,1.5625,1.375,1.6875,-0.5,-0.25,-0.625
+7f5b094952a779980fc23f7f,1122thrum.wav,no_first,source_or_event,0,6.5625,4.375,3.5,3.4375,3.5,2.8125,3.25,2.875
+33751cd479d9460e8cbeed27,1122thrum.wav,yes_first,source_or_event,1,5.5625,-2.5625,1.0,1.0,1.625,-1.5,-2.3125,-0.75
+33751cd479d9460e8cbeed27,1122thrum.wav,no_first,source_or_event,1,4.625,-0.875,1.125,1.375,1.75,-0.375,-0.75,-0.0
+4c8b519f8545e33c98886d86,20090407.cricket.real.close.wav,yes_first,time_pattern,0,-6.9375,-0.75,-3.75,-4.0,-4.1875,-2.625,-3.0,-2.625
+4c8b519f8545e33c98886d86,20090407.cricket.real.close.wav,no_first,time_pattern,0,-1.625,2.875,-0.25,-0.25,-0.25,0.125,-0.0,0.25
+472767de0a2e42929f3f9818,20090407.cricket.real.close.wav,yes_first,time_pattern,1,-6.375,-3.375,-3.375,-3.4375,-3.4375,-3.5,-3.375,-3.0
+472767de0a2e42929f3f9818,20090407.cricket.real.close.wav,no_first,time_pattern,1,-1.75,0.5,-1.25,-1.375,-1.25,-0.125,-0.25,-0.375
+8d1f22a4d89f2c77f357f8a1,13. Crushing tin can.wav,yes_first,source_or_event,0,2.1875,4.875,3.5,3.625,3.5,3.375,3.75,3.625
+8d1f22a4d89f2c77f357f8a1,13. Crushing tin can.wav,no_first,source_or_event,0,3.3125,4.0,2.875,3.0,3.0,2.875,3.0,3.125
+0b16609c03da731bd75c6da3,13. Crushing tin can.wav,yes_first,acoustic_property,1,2.875,-0.5,-2.4375,-2.4375,-1.75,-2.375,-3.0625,-1.875
+0b16609c03da731bd75c6da3,13. Crushing tin can.wav,no_first,acoustic_property,1,4.6875,0.375,-0.5,-0.375,-0.0,-0.75,-0.875,-0.5
+64ad65b1f0fb1f995e30fd12,20100801.wharf.silence.night.wav,yes_first,scene_context,0,-2.5,1.25,1.25,2.5,1.625,0.875,2.625,1.75
+64ad65b1f0fb1f995e30fd12,20100801.wharf.silence.night.wav,no_first,scene_context,0,2.75,3.125,0.5,2.375,0.625,0.75,2.25,1.625
+228825b311915bd6f45d10dc,20100801.wharf.silence.night.wav,yes_first,source_or_event,1,3.5,-4.875,-3.1875,-4.625,-3.0,-2.8125,-4.0625,-4.0625
+228825b311915bd6f45d10dc,20100801.wharf.silence.night.wav,no_first,source_or_event,1,2.375,-2.625,-3.875,-3.4375,-3.9375,-3.6875,-3.4375,-3.625

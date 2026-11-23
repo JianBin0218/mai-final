@@ -1,0 +1,652 @@
+[
+  {
+    "group": 0,
+    "development": "5-173568-A-33.wav",
+    "evaluation": {
+      "filename": "4-108352-A-33.wav",
+      "fold": "4",
+      "target": "33",
+      "category": "door_wood_creaks",
+      "esc10": "False",
+      "src_file": "108352",
+      "take": "A"
+    }
+  },
+  {
+    "group": 0,
+    "development": "5-234247-A-37.wav",
+    "evaluation": {
+      "filename": "4-151242-A-37.wav",
+      "fold": "4",
+      "target": "37",
+      "category": "clock_alarm",
+      "esc10": "False",
+      "src_file": "151242",
+      "take": "A"
+    }
+  },
+  {
+    "group": 1,
+    "development": "5-251957-A-47.wav",
+    "evaluation": {
+      "filename": "4-161105-B-47.wav",
+      "fold": "4",
+      "target": "47",
+      "category": "airplane",
+      "esc10": "False",
+      "src_file": "161105",
+      "take": "B"
+    }
+  },
+  {
+    "group": 1,
+    "development": "5-210540-A-13.wav",
+    "evaluation": {
+      "filename": "4-194246-A-13.wav",
+      "fold": "4",
+      "target": "13",
+      "category": "crickets",
+      "esc10": "False",
+      "src_file": "194246",
+      "take": "A"
+    }
+  },
+  {
+    "group": 2,
+    "development": "5-218981-A-30.wav",
+    "evaluation": {
+      "filename": "4-186518-A-30.wav",
+      "fold": "4",
+      "target": "30",
+      "category": "door_wood_knock",
+      "esc10": "False",
+      "src_file": "186518",
+      "take": "A"
+    }
+  },
+  {
+    "group": 2,
+    "development": "5-117250-A-2.wav",
+    "evaluation": {
+      "filename": "4-147240-B-2.wav",
+      "fold": "4",
+      "target": "2",
+      "category": "pig",
+      "esc10": "False",
+      "src_file": "147240",
+      "take": "B"
+    }
+  },
+  {
+    "group": 3,
+    "development": "5-197121-B-45.wav",
+    "evaluation": {
+      "filename": "4-165606-A-45.wav",
+      "fold": "4",
+      "target": "45",
+      "category": "train",
+      "esc10": "False",
+      "src_file": "165606",
+      "take": "A"
+    }
+  },
+  {
+    "group": 3,
+    "development": "5-208624-A-38.wav",
+    "evaluation": {
+      "filename": "4-191327-A-38.wav",
+      "fold": "4",
+      "target": "38",
+      "category": "clock_tick",
+      "esc10": "True",
+      "src_file": "191327",
+      "take": "A"
+    }
+  },
+  {
+    "group": 4,
+    "development": "5-185516-A-27.wav",
+    "evaluation": {
+      "filename": "4-144468-B-27.wav",
+      "fold": "4",
+      "target": "27",
+      "category": "brushing_teeth",
+      "esc10": "False",
+      "src_file": "144468",
+      "take": "B"
+    }
+  },
+  {
+    "group": 4,
+    "development": "5-243459-B-14.wav",
+    "evaluation": {
+      "filename": "4-187769-A-14.wav",
+      "fold": "4",
+      "target": "14",
+      "category": "chirping_birds",
+      "esc10": "False",
+      "src_file": "187769",
+      "take": "A"
+    }
+  },
+  {
+    "group": 5,
+    "development": "5-179496-B-16.wav",
+    "evaluation": {
+      "filename": "4-144083-A-16.wav",
+      "fold": "4",
+      "target": "16",
+      "category": "wind",
+      "esc10": "False",
+      "src_file": "144083",
+      "take": "A"
+    }
+  },
+  {
+    "group": 5,
+    "development": "5-249748-A-28.wav",
+    "evaluation": {
+      "filename": "4-197454-B-28.wav",
+      "fold": "4",
+      "target": "28",
+      "category": "snoring",
+      "esc10": "False",
+      "src_file": "197454",
+      "take": "B"
+    }
+  },
+  {
+    "group": 6,
+    "development": "5-260434-A-39.wav",
+    "evaluation": {
+      "filename": "4-204777-A-39.wav",
+      "fold": "4",
+      "target": "39",
+      "category": "glass_breaking",
+      "esc10": "False",
+      "src_file": "204777",
+      "take": "A"
+    }
+  },
+  {
+    "group": 6,
+    "development": "5-194892-A-10.wav",
+    "evaluation": {
+      "filename": "4-163264-A-10.wav",
+      "fold": "4",
+      "target": "10",
+      "category": "rain",
+      "esc10": "True",
+      "src_file": "163264",
+      "take": "A"
+    }
+  },
+  {
+    "group": 7,
+    "development": "5-195518-A-7.wav",
+    "evaluation": {
+      "filename": "4-143118-A-7.wav",
+      "fold": "4",
+      "target": "7",
+      "category": "insects",
+      "esc10": "False",
+      "src_file": "143118",
+      "take": "A"
+    }
+  },
+  {
+    "group": 7,
+    "development": "5-234335-A-23.wav",
+    "evaluation": {
+      "filename": "4-198025-A-23.wav",
+      "fold": "4",
+      "target": "23",
+      "category": "breathing",
+      "esc10": "False",
+      "src_file": "198025",
+      "take": "A"
+    }
+  },
+  {
+    "group": 8,
+    "development": "5-238926-A-31.wav",
+    "evaluation": {
+      "filename": "4-201300-A-31.wav",
+      "fold": "4",
+      "target": "31",
+      "category": "mouse_click",
+      "esc10": "False",
+      "src_file": "201300",
+      "take": "A"
+    }
+  },
+  {
+    "group": 8,
+    "development": "5-156999-C-19.wav",
+    "evaluation": {
+      "filename": "4-125071-A-19.wav",
+      "fold": "4",
+      "target": "19",
+      "category": "thunderstorm",
+      "esc10": "False",
+      "src_file": "125071",
+      "take": "A"
+    }
+  },
+  {
+    "group": 9,
+    "development": "5-179865-A-43.wav",
+    "evaluation": {
+      "filename": "4-175845-A-43.wav",
+      "fold": "4",
+      "target": "43",
+      "category": "car_horn",
+      "esc10": "False",
+      "src_file": "175845",
+      "take": "A"
+    }
+  },
+  {
+    "group": 9,
+    "development": "5-208030-A-0.wav",
+    "evaluation": {
+      "filename": "4-184575-A-0.wav",
+      "fold": "4",
+      "target": "0",
+      "category": "dog",
+      "esc10": "True",
+      "src_file": "184575",
+      "take": "A"
+    }
+  },
+  {
+    "group": 10,
+    "development": "5-259514-A-26.wav",
+    "evaluation": {
+      "filename": "4-132810-A-26.wav",
+      "fold": "4",
+      "target": "26",
+      "category": "laughing",
+      "esc10": "False",
+      "src_file": "132810",
+      "take": "A"
+    }
+  },
+  {
+    "group": 10,
+    "development": "5-263902-A-36.wav",
+    "evaluation": {
+      "filename": "4-181999-A-36.wav",
+      "fold": "4",
+      "target": "36",
+      "category": "vacuum_cleaner",
+      "esc10": "False",
+      "src_file": "181999",
+      "take": "A"
+    }
+  },
+  {
+    "group": 11,
+    "development": "5-188716-A-46.wav",
+    "evaluation": {
+      "filename": "4-125825-B-46.wav",
+      "fold": "4",
+      "target": "46",
+      "category": "church_bells",
+      "esc10": "False",
+      "src_file": "125825",
+      "take": "B"
+    }
+  },
+  {
+    "group": 11,
+    "development": "5-184871-A-24.wav",
+    "evaluation": {
+      "filename": "4-152995-A-24.wav",
+      "fold": "4",
+      "target": "24",
+      "category": "coughing",
+      "esc10": "False",
+      "src_file": "152995",
+      "take": "A"
+    }
+  },
+  {
+    "group": 12,
+    "development": "5-263490-A-25.wav",
+    "evaluation": {
+      "filename": "4-198962-B-25.wav",
+      "fold": "4",
+      "target": "25",
+      "category": "footsteps",
+      "esc10": "False",
+      "src_file": "198962",
+      "take": "B"
+    }
+  },
+  {
+    "group": 12,
+    "development": "5-243635-A-29.wav",
+    "evaluation": {
+      "filename": "4-188191-A-29.wav",
+      "fold": "4",
+      "target": "29",
+      "category": "drinking_sipping",
+      "esc10": "False",
+      "src_file": "188191",
+      "take": "A"
+    }
+  },
+  {
+    "group": 13,
+    "development": "5-218494-A-22.wav",
+    "evaluation": {
+      "filename": "4-189832-B-22.wav",
+      "fold": "4",
+      "target": "22",
+      "category": "clapping",
+      "esc10": "False",
+      "src_file": "189832",
+      "take": "B"
+    }
+  },
+  {
+    "group": 13,
+    "development": "5-202220-A-21.wav",
+    "evaluation": {
+      "filename": "4-171519-A-21.wav",
+      "fold": "4",
+      "target": "21",
+      "category": "sneezing",
+      "esc10": "True",
+      "src_file": "171519",
+      "take": "A"
+    }
+  },
+  {
+    "group": 14,
+    "development": "5-172299-A-5.wav",
+    "evaluation": {
+      "filename": "4-149940-B-5.wav",
+      "fold": "4",
+      "target": "5",
+      "category": "cat",
+      "esc10": "False",
+      "src_file": "149940",
+      "take": "B"
+    }
+  },
+  {
+    "group": 14,
+    "development": "5-248341-B-6.wav",
+    "evaluation": {
+      "filename": "4-244318-A-6.wav",
+      "fold": "4",
+      "target": "6",
+      "category": "hen",
+      "esc10": "False",
+      "src_file": "244318",
+      "take": "A"
+    }
+  },
+  {
+    "group": 15,
+    "development": "5-198891-B-8.wav",
+    "evaluation": {
+      "filename": "4-196671-A-8.wav",
+      "fold": "4",
+      "target": "8",
+      "category": "sheep",
+      "esc10": "False",
+      "src_file": "196671",
+      "take": "A"
+    }
+  },
+  {
+    "group": 15,
+    "development": "5-243773-B-44.wav",
+    "evaluation": {
+      "filename": "4-186936-A-44.wav",
+      "fold": "4",
+      "target": "44",
+      "category": "engine",
+      "esc10": "False",
+      "src_file": "186936",
+      "take": "A"
+    }
+  },
+  {
+    "group": 16,
+    "development": "5-185579-A-41.wav",
+    "evaluation": {
+      "filename": "4-149294-A-41.wav",
+      "fold": "4",
+      "target": "41",
+      "category": "chainsaw",
+      "esc10": "True",
+      "src_file": "149294",
+      "take": "A"
+    }
+  },
+  {
+    "group": 16,
+    "development": "5-177957-D-40.wav",
+    "evaluation": {
+      "filename": "4-175000-B-40.wav",
+      "fold": "4",
+      "target": "40",
+      "category": "helicopter",
+      "esc10": "True",
+      "src_file": "175000",
+      "take": "B"
+    }
+  },
+  {
+    "group": 17,
+    "development": "5-213836-D-9.wav",
+    "evaluation": {
+      "filename": "4-138344-A-9.wav",
+      "fold": "4",
+      "target": "9",
+      "category": "crow",
+      "esc10": "False",
+      "src_file": "138344",
+      "take": "A"
+    }
+  },
+  {
+    "group": 17,
+    "development": "5-260011-A-34.wav",
+    "evaluation": {
+      "filename": "4-212728-A-34.wav",
+      "fold": "4",
+      "target": "34",
+      "category": "can_opening",
+      "esc10": "False",
+      "src_file": "212728",
+      "take": "A"
+    }
+  },
+  {
+    "group": 18,
+    "development": "5-187201-B-4.wav",
+    "evaluation": {
+      "filename": "4-130584-A-4.wav",
+      "fold": "4",
+      "target": "4",
+      "category": "frog",
+      "esc10": "False",
+      "src_file": "130584",
+      "take": "A"
+    }
+  },
+  {
+    "group": 18,
+    "development": "5-194899-C-3.wav",
+    "evaluation": {
+      "filename": "4-213915-C-3.wav",
+      "fold": "4",
+      "target": "3",
+      "category": "cow",
+      "esc10": "False",
+      "src_file": "213915",
+      "take": "C"
+    }
+  },
+  {
+    "group": 19,
+    "development": "5-234923-A-32.wav",
+    "evaluation": {
+      "filename": "4-158653-A-32.wav",
+      "fold": "4",
+      "target": "32",
+      "category": "keyboard_typing",
+      "esc10": "False",
+      "src_file": "158653",
+      "take": "A"
+    }
+  },
+  {
+    "group": 19,
+    "development": "5-141683-A-35.wav",
+    "evaluation": {
+      "filename": "4-218199-C-35.wav",
+      "fold": "4",
+      "target": "35",
+      "category": "washing_machine",
+      "esc10": "False",
+      "src_file": "218199",
+      "take": "C"
+    }
+  },
+  {
+    "group": 20,
+    "development": "5-200334-B-1.wav",
+    "evaluation": {
+      "filename": "4-170078-A-1.wav",
+      "fold": "4",
+      "target": "1",
+      "category": "rooster",
+      "esc10": "True",
+      "src_file": "170078",
+      "take": "A"
+    }
+  },
+  {
+    "group": 20,
+    "development": "5-198411-G-20.wav",
+    "evaluation": {
+      "filename": "4-167077-C-20.wav",
+      "fold": "4",
+      "target": "20",
+      "category": "crying_baby",
+      "esc10": "True",
+      "src_file": "167077",
+      "take": "C"
+    }
+  },
+  {
+    "group": 21,
+    "development": "5-212736-A-17.wav",
+    "evaluation": {
+      "filename": "4-186693-A-17.wav",
+      "fold": "4",
+      "target": "17",
+      "category": "pouring_water",
+      "esc10": "False",
+      "src_file": "186693",
+      "take": "A"
+    }
+  },
+  {
+    "group": 21,
+    "development": "5-117120-A-42.wav",
+    "evaluation": {
+      "filename": "4-80761-A-42.wav",
+      "fold": "4",
+      "target": "42",
+      "category": "siren",
+      "esc10": "False",
+      "src_file": "80761",
+      "take": "A"
+    }
+  },
+  {
+    "group": 22,
+    "development": "5-215658-A-12.wav",
+    "evaluation": {
+      "filename": "4-171207-A-12.wav",
+      "fold": "4",
+      "target": "12",
+      "category": "crackling_fire",
+      "esc10": "True",
+      "src_file": "171207",
+      "take": "A"
+    }
+  },
+  {
+    "group": 22,
+    "development": "5-261439-A-15.wav",
+    "evaluation": {
+      "filename": "4-197871-A-15.wav",
+      "fold": "4",
+      "target": "15",
+      "category": "water_drops",
+      "esc10": "False",
+      "src_file": "197871",
+      "take": "A"
+    }
+  },
+  {
+    "group": 23,
+    "development": "5-156698-A-18.wav",
+    "evaluation": {
+      "filename": "4-145006-A-18.wav",
+      "fold": "4",
+      "target": "18",
+      "category": "toilet_flush",
+      "esc10": "False",
+      "src_file": "145006",
+      "take": "A"
+    }
+  },
+  {
+    "group": 23,
+    "development": "5-253094-D-49.wav",
+    "evaluation": {
+      "filename": "4-251645-B-49.wav",
+      "fold": "4",
+      "target": "49",
+      "category": "hand_saw",
+      "esc10": "False",
+      "src_file": "251645",
+      "take": "B"
+    }
+  },
+  {
+    "group": 24,
+    "development": "5-160614-D-48.wav",
+    "evaluation": {
+      "filename": "4-119648-C-48.wav",
+      "fold": "4",
+      "target": "48",
+      "category": "fireworks",
+      "esc10": "False",
+      "src_file": "119648",
+      "take": "C"
+    }
+  },
+  {
+    "group": 24,
+    "development": "5-219379-C-11.wav",
+    "evaluation": {
+      "filename": "4-167063-C-11.wav",
+      "fold": "4",
+      "target": "11",
+      "category": "sea_waves",
+      "esc10": "True",
+      "src_file": "167063",
+      "take": "C"
+    }
+  }
+]

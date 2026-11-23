@@ -1,0 +1,61 @@
+question,clip,label,yes_first,no_first,checkpoint
+Are many people talking?,a-natural-capacity-stimuli/audio/Atmo Wartehalle2.wav,yes,5.5625,5.25,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Are many people talking?,a-natural-capacity-stimuli/audio/lackey070329_11_52_am_jackhammer.wav,no,-3.375,-2.0,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Are there children's voices?,a-natural-capacity-stimuli/audio/Interior Plane Taking Off.wav,yes,4.125,5.375,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Are there children's voices?,a-natural-capacity-stimuli/audio/mijo + folk och skotrar 1.wav,no,-2.3125,1.25,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Is there a person talking?,a-natural-capacity-stimuli/audio/Ambience Urban park fountain early evening.wav,yes,-1.75,-1.3125,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Is there a person talking?,a-natural-capacity-stimuli/audio/INT Bedroom tone 1.wav,no,-4.0,-1.5,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Is an animal making noise?,a-natural-capacity-stimuli/audio/turtledove sounds.wav,yes,4.625,4.875,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Is an animal making noise?,a-natural-capacity-stimuli/audio/Rattly metal elevator [binaural recording].wav,no,1.0,0.875,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Is there a vehicle?,a-natural-capacity-stimuli/audio/SuburbRain_Indoor.wav,yes,1.0,2.1875,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Is there a vehicle?,a-natural-capacity-stimuli/audio/20061208.waves.02.wav,no,-1.9375,-2.0,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Is the person outside?,"a-natural-capacity-stimuli/audio/Early morning in back garden (birds, faint traffic) - DR-100 (omni) - amplified in audacity.wav",yes,1.5,0.125,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Is the person outside?,a-natural-capacity-stimuli/audio/CuttingOnion.wav,no,-2.375,-1.75,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Are birds chirping?,a-natural-capacity-stimuli/audio/0232 Street_birds_2.wav,yes,7.25,7.0625,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Are birds chirping?,a-natural-capacity-stimuli/audio/The Big Circle.wav,no,-3.25,-1.9375,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Is it raining?,a-natural-capacity-stimuli/audio/tg_on windshield from inside car.wav,yes,4.25,4.0625,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Is it raining?,a-natural-capacity-stimuli/audio/Air condition running.wav,no,0.0,0.125,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Is music playing?,a-natural-capacity-stimuli/audio/lounge bar.wav,yes,-3.25,-2.25,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Is music playing?,a-natural-capacity-stimuli/audio/nature-waterfall-Blaafarveverket-090721.wav,no,-3.625,-2.75,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Is there any music?,a-natural-capacity-stimuli/audio/Show Opener - LiftOff.wav,yes,-4.1875,-1.6875,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Is there any music?,a-natural-capacity-stimuli/audio/Footsteps outside - Including ambience.wav,no,-5.9375,-3.25,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Is music being played?,a-natural-capacity-stimuli/audio/a walk throught the woods 75bom.wav,yes,3.125,2.5,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Is music being played?,a-natural-capacity-stimuli/audio/WasherEndofSpinCycleStartFillCycle.wav,no,-4.75,-1.5,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Does a person speak?,a-natural-capacity-stimuli/audio/Skwer Starszych Panow Piatek Popoudniu.wav,yes,-2.5625,-0.375,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Does a person speak?,a-natural-capacity-stimuli/audio/Old Phone_01.wav,no,-5.8125,-1.375,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Can people be heard talking?,a-natural-capacity-stimuli/audio/20101228.street.wav,yes,3.0,3.125,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Can people be heard talking?,a-natural-capacity-stimuli/audio/tramway_gnashing.wav,no,-1.0,2.25,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Is someone yelling?,a-natural-capacity-stimuli/audio/Tortured Apple 01.wav,yes,-1.0625,-1.0625,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Is someone yelling?,a-natural-capacity-stimuli/audio/writing_pencil_2.wav,no,-1.3125,-0.5,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Is water boiling?,"a-natural-capacity-stimuli/audio/Copper Tea Kettle, water, boil, whistle_1.wav",yes,4.375,2.75,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Is water boiling?,a-natural-capacity-stimuli/audio/Walking shingle beach.wav,no,-3.8125,-3.1875,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Are people speaking?,a-natural-capacity-stimuli/audio/FlyingOnAPlane.wav,yes,-4.375,-1.0,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Are people speaking?,a-natural-capacity-stimuli/audio/Paper shredder.wav,no,-4.3125,-1.9375,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Are there people laughing?,a-natural-capacity-stimuli/audio/airport_ambiance_01.wav,yes,0.5,3.4375,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Are there people laughing?,a-natural-capacity-stimuli/audio/Car passing.wav,no,-2.0,1.5,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Is this inside?,a-natural-capacity-stimuli/audio/Water_Running_Down_Drain.wav,yes,-0.625,-0.125,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Is this inside?,a-natural-capacity-stimuli/audio/Park Szczubeka Ulica Powsinska.wav,no,-1.8125,-1.4375,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Is someone using a hammer?,a-natural-capacity-stimuli/audio/contact_floor_lamp.wav,yes,6.4375,5.5,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Is someone using a hammer?,a-natural-capacity-stimuli/audio/wood_saw_01.wav,no,3.125,3.875,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Is the sound constant?,a-natural-capacity-stimuli/audio/Rain_Falling_On_Umbrella.wav,yes,-1.625,-0.0,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Is the sound constant?,a-natural-capacity-stimuli/audio/Shanghai Traffic Near Peoples Square.wav,no,-2.125,-0.25,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Is a clock ticking?,a-natural-capacity-stimuli/audio/traffic_light_night.wav,yes,2.375,1.375,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Is a clock ticking?,a-natural-capacity-stimuli/audio/wind turbine blades.wav,no,-4.1875,-1.9375,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Are people talking?,a-natural-capacity-stimuli/audio/Bag.wav,yes,-4.4375,-1.25,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Are people talking?,a-natural-capacity-stimuli/audio/shufflingdirt.L.wav,no,-4.6875,-2.75,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Are there people talking?,a-natural-capacity-stimuli/audio/01058 main street walk.wav,yes,0.75,2.375,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Are there people talking?,a-natural-capacity-stimuli/audio/drive by moped.wav,no,-3.625,-1.0625,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Is this outside?,a-natural-capacity-stimuli/audio/120720loudestthunder.wav,yes,1.25,4.0,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Is this outside?,a-natural-capacity-stimuli/audio/Wall Clock Ticking.wav,no,-3.1875,-1.0625,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Does this have a melody?,a-natural-capacity-stimuli/audio/Untitled-13.wav,yes,-2.625,-0.75,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Does this have a melody?,a-natural-capacity-stimuli/audio/kitchen metal.wav,no,-4.9375,-3.875,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Is there a storm?,a-natural-capacity-stimuli/audio/shaking and opening a water bottle.wav,yes,2.875,3.0,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Is there a storm?,a-natural-capacity-stimuli/audio/20092007.strike.wav,no,2.625,5.75,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Is this happening inside?,a-natural-capacity-stimuli/audio/Metal_Workshop_3.wav,yes,0.25,-0.0,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Is this happening inside?,a-natural-capacity-stimuli/audio/buzzing bee 3 multi.wav,no,0.25,0.375,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Is a dog barking?,a-natural-capacity-stimuli/audio/Trevi noon.wav,yes,1.5,1.375,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Is a dog barking?,a-natural-capacity-stimuli/audio/Landstraenverkehr bei Regen 3.wav,no,-4.125,-1.4375,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Is someone playing the drums?,a-natural-capacity-stimuli/audio/lxxxxtvc.wav,yes,0.125,-1.125,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Is someone playing the drums?,a-natural-capacity-stimuli/audio/Eerie Shimmer.wav,no,1.125,-0.0,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Is this an animal?,a-natural-capacity-stimuli/audio/Shaking and dragging of jar with stones.wav,yes,-1.875,0.25,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+Is this an animal?,a-natural-capacity-stimuli/audio/The dishwasher.wav,no,-2.9375,-2.875,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d

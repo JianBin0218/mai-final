@@ -1,0 +1,95 @@
+{
+  "plan_sha256": "1a53d2978f05542ead03628e2fc9561d6ca77b9c5f08527e6058df7bb5d491e7",
+  "n_pairs": 50,
+  "n_source_groups": 25,
+  "readout": {
+    "pool16": {
+      "accuracy": 0.96,
+      "both_correct": 0.92,
+      "preference": 1.0,
+      "accuracy_ci": [
+        0.92,
+        0.99
+      ]
+    },
+    "K16-s17": {
+      "accuracy": 0.97,
+      "both_correct": 0.94,
+      "preference": 1.0,
+      "accuracy_ci": [
+        0.93,
+        1.0
+      ]
+    },
+    "K16-s23": {
+      "accuracy": 0.97,
+      "both_correct": 0.94,
+      "preference": 1.0,
+      "accuracy_ci": [
+        0.93,
+        1.0
+      ]
+    },
+    "K16-s41": {
+      "accuracy": 0.97,
+      "both_correct": 0.94,
+      "preference": 1.0,
+      "accuracy_ci": [
+        0.93,
+        1.0
+      ]
+    },
+    "K16_mean": {
+      "accuracy": 0.97,
+      "accuracy_ci": [
+        0.93,
+        1.0
+      ],
+      "passes": true
+    }
+  },
+  "full_audio": {
+    "matched": {
+      "positive_first": {
+        "accuracy": 0.5,
+        "both_correct": 0.0,
+        "preference": 0.53,
+        "both_correct_ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "negative_first": {
+        "accuracy": 0.5,
+        "both_correct": 0.0,
+        "preference": 0.5,
+        "both_correct_ci": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "clear": {
+      "positive_first": {
+        "accuracy": 0.5,
+        "both_correct": 0.0,
+        "preference": 0.66,
+        "both_correct_ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "negative_first": {
+        "accuracy": 0.5,
+        "both_correct": 0.0,
+        "preference": 0.49,
+        "both_correct_ci": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  "compressed_native": {},
+  "native_gate_passed": false
+}

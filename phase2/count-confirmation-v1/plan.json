@@ -1,0 +1,35 @@
+{
+  "id": "count-confirmation-v1",
+  "fixed_on": "2026-11-23",
+  "development_manifest": "stimuli/pairs.json",
+  "evaluation_fold": 4,
+  "previously_used_esc_files": ["4-119647-C-48.wav"],
+  "selection_seed": 2718,
+  "bootstrap_seed": 17,
+  "bootstrap_replicates": 10000,
+  "profiles": {
+    "matched": {"duration_seconds": 3, "gaps_seconds": [0.45, 0.65, 0.85]},
+    "clear": {"duration_seconds": 3.6, "gaps_seconds": [1.05, 1.2, 1.35]}
+  },
+  "prompt": {
+    "stem": "Which description best matches the audible sound in this recording?",
+    "positive": "Two sound bursts with a quiet pause between them.",
+    "negative": "One continuous sound burst with no quiet pause inside it."
+  },
+  "readout": {
+    "training": "Fit only on the 50 previous ESC-50 fold-5 pairs, with no validation-based tuning.",
+    "features": "Flatten the 16 slots and normalize each recording vector to unit L2 norm.",
+    "ridge_lambda": 1.0,
+    "test_profile": "matched",
+    "checkpoint_names": ["K16-s17", "K16-s23", "K16-s41"],
+    "minimum_mean_accuracy": 0.75,
+    "minimum_lower_ci": 0.65
+  },
+  "native_gate": {
+    "profile": "clear",
+    "minimum_both_correct_each_order": 0.5,
+    "minimum_lower_ci_each_order": 0.25,
+    "if_pass": "Evaluate full minus seed-averaged K=16 on the same pairs and orders. Main metric: both-correct pair rate averaged across orders.",
+    "if_fail": "Report the full-audio control alone. Do not evaluate or infer a K=16 native compression loss on this task."
+  }
+}

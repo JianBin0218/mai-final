@@ -1,0 +1,22 @@
+{
+  "id": "a-natural-capacity-v1",
+  "fixed_on": "2026-11-23",
+  "source_split": "train",
+  "annotation_rule": "At least three answers and unanimous yes/no for a recording and exact source question.",
+  "exclusion_rule": "Exclude all pilot and fresh-validation recordings, plus the 336 added training recordings reconstructed from the released train_large selection.",
+  "large_training_seed": 1017,
+  "large_training_recordings": 384,
+  "pair_seed": 2817,
+  "pair_rule": "Lowercase, normalize whitespace, and strip terminal punctuation. Drop recording/stem combinations with both labels after normalization. Select one opposite-label recording pair per stem in seeded shuffled order without reusing recordings.",
+  "minimum_pairs": 24,
+  "model_seeds": [17, 23, 41],
+  "prompt_orders": ["yes_first", "no_first"],
+  "primary": {
+    "contrast": "Learned K=16 minus learned K=4 within-stem pair preference, averaging fixed checkpoint seeds and both answer orders within each pair. Ties score one half.",
+    "minimum_gain": 0.05,
+    "minimum_lower_ci": 0.0,
+    "bootstrap_seed": 17,
+    "bootstrap_replicates": 10000
+  },
+  "secondary": ["Full audio", "Fixed mean pooling at K=4 and K=16", "Both clips correct", "Accuracy", "Per-answer-order preference"]
+}

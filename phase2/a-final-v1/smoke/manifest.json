@@ -1,0 +1,258 @@
+{
+  "split": "smoke",
+  "plan_sha256": "f6211cb309491bfb0c9e580ecc202dd7ce7aeca2c416590dba521b77959323f5",
+  "recordings": 12,
+  "question_types": {
+    "scene_context": 4,
+    "source_or_event": 13,
+    "acoustic_property": 2,
+    "count_or_relation": 3,
+    "time_pattern": 2
+  },
+  "type_methods": {
+    "exemplar": 24
+  },
+  "audit": {},
+  "rows": [
+    {
+      "qid": "baab57ae57ac32118473cd5f",
+      "recording": "13_waiting_chitwan.wav",
+      "path": "data/clotho/13_waiting_chitwan.wav",
+      "source_id": null,
+      "question": "Is this in nature?",
+      "target": 0,
+      "type": "scene_context",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "033655920c3b5ff350f76007",
+      "recording": "13_waiting_chitwan.wav",
+      "path": "data/clotho/13_waiting_chitwan.wav",
+      "source_id": null,
+      "question": "are there any cats meowing?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "fd95b05bb863375dd2e0d086",
+      "recording": "12 noon church-bell 140310_0121.wav",
+      "path": "data/clotho/12 noon church-bell 140310_0121.wav",
+      "source_id": null,
+      "question": "Are there birds?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "46a948be4879087f18ad68f8",
+      "recording": "12 noon church-bell 140310_0121.wav",
+      "path": "data/clotho/12 noon church-bell 140310_0121.wav",
+      "source_id": null,
+      "question": "Is it inside?",
+      "target": 1,
+      "type": "scene_context",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "ae3193d553bc95471c314e95",
+      "recording": "020220_00.wav",
+      "path": "data/clotho/020220_00.wav",
+      "source_id": null,
+      "question": "is there a welding machine present?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "0b642a4c0ba7e8f80582be4d",
+      "recording": "020220_00.wav",
+      "path": "data/clotho/020220_00.wav",
+      "source_id": null,
+      "question": "does an alarm go off?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "c8a58ba02ad58211c1da2a0d",
+      "recording": "160917-eichelherr000.wav",
+      "path": "data/clotho/160917-eichelherr000.wav",
+      "source_id": null,
+      "question": "Are crickets chirping?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "19df3c53e94ef82ce0e34232",
+      "recording": "160917-eichelherr000.wav",
+      "path": "data/clotho/160917-eichelherr000.wav",
+      "source_id": null,
+      "question": "Are people talking?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "5eaf3692d0c6c89b969f8fb7",
+      "recording": "17-Year Cicada Mating Call.wav",
+      "path": "data/clotho/17-Year Cicada Mating Call.wav",
+      "source_id": null,
+      "question": "Is it high pitched?",
+      "target": 0,
+      "type": "acoustic_property",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "9e95527dc61946865e2185fb",
+      "recording": "17-Year Cicada Mating Call.wav",
+      "path": "data/clotho/17-Year Cicada Mating Call.wav",
+      "source_id": null,
+      "question": "Is the television on ?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "4a8f47bbd808a1b2fbcbc29c",
+      "recording": "0221 Bar_terrace.wav",
+      "path": "data/clotho/0221 Bar_terrace.wav",
+      "source_id": null,
+      "question": "Is the location crowded?",
+      "target": 0,
+      "type": "scene_context",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "a3235bfa3bced442fdaf15af",
+      "recording": "0221 Bar_terrace.wav",
+      "path": "data/clotho/0221 Bar_terrace.wav",
+      "source_id": null,
+      "question": "Are there only males?",
+      "target": 1,
+      "type": "count_or_relation",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "f35f729d85f7776c44dff889",
+      "recording": "110422_village_dusk.wav",
+      "path": "data/clotho/110422_village_dusk.wav",
+      "source_id": null,
+      "question": "Are multiple species heard through?",
+      "target": 0,
+      "type": "count_or_relation",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "b433c4876cbd6405493cd972",
+      "recording": "110422_village_dusk.wav",
+      "path": "data/clotho/110422_village_dusk.wav",
+      "source_id": null,
+      "question": "Is there a car honking?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "5ac4b1a07a038035a81a816e",
+      "recording": "20080416.buzz.stereo.wav",
+      "path": "data/clotho/20080416.buzz.stereo.wav",
+      "source_id": null,
+      "question": "Are there birds chirping in the background ?",
+      "target": 0,
+      "type": "count_or_relation",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "55bc3d0420038e4cb7e81605",
+      "recording": "20080416.buzz.stereo.wav",
+      "path": "data/clotho/20080416.buzz.stereo.wav",
+      "source_id": null,
+      "question": "Did any object fall on the floor and break ?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "7f5b094952a779980fc23f7f",
+      "recording": "1122thrum.wav",
+      "path": "data/clotho/1122thrum.wav",
+      "source_id": null,
+      "question": "Is something vibrating?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "33751cd479d9460e8cbeed27",
+      "recording": "1122thrum.wav",
+      "path": "data/clotho/1122thrum.wav",
+      "source_id": null,
+      "question": "Is a man ordering a sandwich?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "4c8b519f8545e33c98886d86",
+      "recording": "20090407.cricket.real.close.wav",
+      "path": "data/clotho/20090407.cricket.real.close.wav",
+      "source_id": null,
+      "question": "Is the noise constant?",
+      "target": 0,
+      "type": "time_pattern",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "472767de0a2e42929f3f9818",
+      "recording": "20090407.cricket.real.close.wav",
+      "path": "data/clotho/20090407.cricket.real.close.wav",
+      "source_id": null,
+      "question": "Does the noise stop in the middle?",
+      "target": 1,
+      "type": "time_pattern",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "8d1f22a4d89f2c77f357f8a1",
+      "recording": "13. Crushing tin can.wav",
+      "path": "data/clotho/13. Crushing tin can.wav",
+      "source_id": null,
+      "question": "Are there clicking noises?",
+      "target": 0,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "0b16609c03da731bd75c6da3",
+      "recording": "13. Crushing tin can.wav",
+      "path": "data/clotho/13. Crushing tin can.wav",
+      "source_id": null,
+      "question": "Is there a high toned bell sound?",
+      "target": 1,
+      "type": "acoustic_property",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "64ad65b1f0fb1f995e30fd12",
+      "recording": "20100801.wharf.silence.night.wav",
+      "path": "data/clotho/20100801.wharf.silence.night.wav",
+      "source_id": null,
+      "question": "Can the people hear an animal?",
+      "target": 0,
+      "type": "scene_context",
+      "type_method": "exemplar"
+    },
+    {
+      "qid": "228825b311915bd6f45d10dc",
+      "recording": "20100801.wharf.silence.night.wav",
+      "path": "data/clotho/20100801.wharf.silence.night.wav",
+      "source_id": null,
+      "question": "Is the animal a cat?",
+      "target": 1,
+      "type": "source_or_event",
+      "type_method": "exemplar"
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "plan_sha256": "35a3dab409c0766d4f06f304ab8de969881536366dd18f0db192d8d681568528",
+  "pairs": 25,
+  "conditions": {
+    "full": {
+      "long": {
+        "both_by_order": [
+          0.84,
+          0.76
+        ],
+        "own_preference": 1.0
+      },
+      "short": {
+        "both_by_order": [
+          0.56,
+          0.36
+        ],
+        "own_preference": 0.9
+      }
+    },
+    "pool4": {
+      "long": {
+        "both_by_order": [
+          0.04,
+          0.12
+        ],
+        "own_preference": 0.91
+      },
+      "short": {
+        "both_by_order": [
+          0.0,
+          0.04
+        ],
+        "own_preference": 0.64
+      }
+    },
+    "pool16": {
+      "long": {
+        "both_by_order": [
+          0.32,
+          0.36
+        ],
+        "own_preference": 0.96
+      },
+      "short": {
+        "both_by_order": [
+          0.24,
+          0.16
+        ],
+        "own_preference": 0.84
+      }
+    },
+    "K4-s17": {
+      "long": {
+        "both_by_order": [
+          0.76,
+          0.68
+        ],
+        "own_preference": 1.0,
+        "residual_preference": 1.0
+      },
+      "short": {
+        "both_by_order": [
+          0.52,
+          0.24
+        ],
+        "own_preference": 0.87,
+        "residual_preference": 0.88
+      }
+    },
+    "K4-s23": {
+      "long": {
+        "both_by_order": [
+          0.8,
+          0.68
+        ],
+        "own_preference": 1.0,
+        "residual_preference": 1.0
+      },
+      "short": {
+        "both_by_order": [
+          0.52,
+          0.24
+        ],
+        "own_preference": 0.88,
+        "residual_preference": 0.9
+      }
+    },
+    "K4-s41": {
+      "long": {
+        "both_by_order": [
+          0.76,
+          0.68
+        ],
+        "own_preference": 1.0,
+        "residual_preference": 1.0
+      },
+      "short": {
+        "both_by_order": [
+          0.48,
+          0.24
+        ],
+        "own_preference": 0.93,
+        "residual_preference": 0.93
+      }
+    },
+    "K16-s17": {
+      "long": {
+        "both_by_order": [
+          0.8,
+          0.72
+        ],
+        "own_preference": 1.0,
+        "residual_preference": 1.0
+      },
+      "short": {
+        "both_by_order": [
+          0.56,
+          0.28
+        ],
+        "own_preference": 0.9,
+        "residual_preference": 0.88
+      }
+    },
+    "K16-s23": {
+      "long": {
+        "both_by_order": [
+          0.8,
+          0.68
+        ],
+        "own_preference": 1.0,
+        "residual_preference": 1.0
+      },
+      "short": {
+        "both_by_order": [
+          0.56,
+          0.28
+        ],
+        "own_preference": 0.84,
+        "residual_preference": 0.82
+      }
+    },
+    "K16-s41": {
+      "long": {
+        "both_by_order": [
+          0.8,
+          0.72
+        ],
+        "own_preference": 1.0,
+        "residual_preference": 0.99
+      },
+      "short": {
+        "both_by_order": [
+          0.56,
+          0.32
+        ],
+        "own_preference": 0.84,
+        "residual_preference": 0.84
+      }
+    }
+  },
+  "primary": {
+    "full_audio_gate": true,
+    "residual_preference": 0.9966666666666666,
+    "ci": [
+      0.99,
+      1.0
+    ],
+    "passes": true
+  }
+}

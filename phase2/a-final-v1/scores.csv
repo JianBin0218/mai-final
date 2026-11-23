@@ -1,0 +1,1029 @@
+qid,recording,order,type,target,text,full,K4-s17,K4-s23,K4-s41,K16-s17,K16-s23,K16-s41
+6d4baab77bba028d50861f22,10_lightning_kohchang.wav,yes_first,source_or_event,0,-0.625,3.875,-4.25,-4.375,-3.9375,-5.0625,-4.25,-4.5625
+6d4baab77bba028d50861f22,10_lightning_kohchang.wav,no_first,source_or_event,0,3.5,7.5,-0.75,-0.625,-0.375,-1.0,-0.5,-0.625
+7bfefb1632597334fdf2137c,10_lightning_kohchang.wav,yes_first,source_or_event,1,4.6875,-5.75,-4.0,-3.9375,-3.5625,-5.4375,-5.375,-5.3125
+7bfefb1632597334fdf2137c,10_lightning_kohchang.wav,no_first,source_or_event,1,4.5625,-1.0,-1.125,-1.0,-0.75,-1.625,-1.75,-1.625
+08793a7cd3d5c6fd60aad3ed,131227_strumyk_1.wav,yes_first,source_or_event,0,-2.0625,1.75,0.0,0.0,-0.125,-0.5,-0.25,0.0
+08793a7cd3d5c6fd60aad3ed,131227_strumyk_1.wav,no_first,source_or_event,0,-1.25,3.125,2.0,1.875,1.5625,1.75,1.875,2.25
+341baecba7ff4dd9f4429679,131227_strumyk_1.wav,yes_first,source_or_event,1,0.25,-3.875,-2.5625,-2.1875,-1.5625,-3.0,-3.25,-3.3125
+341baecba7ff4dd9f4429679,131227_strumyk_1.wav,no_first,source_or_event,1,2.75,1.75,1.875,1.625,1.5,1.75,1.625,1.875
+7ac113ef680a5c2cbfe304ca,20061124ParadeCHS.wav,yes_first,scene_context,0,1.0,3.125,1.5,1.5,1.75,1.25,1.5,1.0
+7ac113ef680a5c2cbfe304ca,20061124ParadeCHS.wav,no_first,scene_context,0,1.25,4.5,2.1875,2.0,1.625,2.625,2.75,2.5
+c13065a6476bde75099af4dd,20061124ParadeCHS.wav,yes_first,count_or_relation,1,-5.25,-6.3125,-5.6875,-5.6875,-5.5625,-6.125,-6.3125,-5.75
+c13065a6476bde75099af4dd,20061124ParadeCHS.wav,no_first,count_or_relation,1,2.375,1.25,1.875,2.125,2.125,1.125,1.25,1.375
+b7e3a9b092cafb36d901dac9,20070303.duck.wav,yes_first,source_or_event,0,0.4375,7.25,7.3125,7.3125,7.1875,7.625,7.5,7.3125
+b7e3a9b092cafb36d901dac9,20070303.duck.wav,no_first,source_or_event,0,2.75,7.25,4.75,4.8125,4.6875,5.875,6.125,6.25
+bfadd050e98ab21f82f25473,20070303.duck.wav,yes_first,source_or_event,1,-1.875,-2.875,-5.0,-5.0625,-4.9375,-5.5,-5.375,-5.0625
+bfadd050e98ab21f82f25473,20070303.duck.wav,no_first,source_or_event,1,0.5,-1.625,-2.125,-2.0,-1.75,-3.5,-3.25,-2.25
+43014d0d4c0d4b7075d34205,20080505_1306playground01.wav,yes_first,source_or_event,0,0.625,6.375,5.25,5.1875,4.6875,5.5625,6.0625,6.1875
+43014d0d4c0d4b7075d34205,20080505_1306playground01.wav,no_first,source_or_event,0,4.0625,7.8125,6.5625,6.625,6.125,7.0,7.0625,7.1875
+628b64814b4e5bcf1383cdeb,20080505_1306playground01.wav,yes_first,scene_context,1,-1.125,-0.5,-2.8125,-3.3125,-3.125,-1.25,-1.875,-2.75
+628b64814b4e5bcf1383cdeb,20080505_1306playground01.wav,no_first,scene_context,1,1.375,2.0,2.5,1.875,1.625,2.0,2.25,1.75
+a6d996bbfaf88ec382ad2918,20080918.boots.door.wav,yes_first,source_or_event,0,-1.875,4.625,1.625,1.5,0.875,3.25,3.25,3.125
+a6d996bbfaf88ec382ad2918,20080918.boots.door.wav,no_first,source_or_event,0,3.875,7.125,5.25,5.3125,4.75,6.875,6.875,7.0625
+9b07426dd97fbea282f0b475,20080918.boots.door.wav,yes_first,source_or_event,1,1.25,-6.6875,-4.875,-4.875,-4.375,-6.75,-7.0,-6.375
+9b07426dd97fbea282f0b475,20080918.boots.door.wav,no_first,source_or_event,1,6.1875,-0.5,2.9375,2.9375,3.1875,1.25,1.125,1.5
+f1c14fad93bf551f52ae649d,20090407.airplane.wav,yes_first,source_or_event,0,-4.75,3.5,3.5,2.0,2.5,2.75,2.125,-0.25
+f1c14fad93bf551f52ae649d,20090407.airplane.wav,no_first,source_or_event,0,5.5,8.5625,6.125,4.75,5.1875,5.625,5.25,4.375
+7ffadf33fab7ccd8d752db2e,20090407.airplane.wav,yes_first,source_or_event,1,-3.875,-6.125,-4.0625,-4.0,-3.875,-5.0,-4.8125,-4.6875
+7ffadf33fab7ccd8d752db2e,20090407.airplane.wav,no_first,source_or_event,1,0.625,-1.375,-0.625,-0.875,-0.625,-1.25,-1.5,-1.125
+8365b8020a322d233acc45fa,20090412.bell.strikes.12.wav,yes_first,count_or_relation,0,-2.0625,2.875,0.125,0.5,-0.875,2.375,2.375,1.5
+8365b8020a322d233acc45fa,20090412.bell.strikes.12.wav,no_first,count_or_relation,0,1.75,5.9375,3.5625,4.0,3.0,3.75,3.75,3.0
+c42771d059ae0ee5594e28a9,20090412.bell.strikes.12.wav,yes_first,source_or_event,1,-4.4375,-3.875,-3.9375,-4.125,-3.875,-3.5,-3.75,-3.9375
+c42771d059ae0ee5594e28a9,20090412.bell.strikes.12.wav,no_first,source_or_event,1,-0.5,-1.875,1.125,1.25,1.125,-0.375,-0.625,-0.25
+3c35bd65a88191843a33b5fb,20091211.barking.stairs.wav,yes_first,time_pattern,0,-3.9375,1.25,0.0,0.5,0.625,-1.875,-0.875,-3.9375
+3c35bd65a88191843a33b5fb,20091211.barking.stairs.wav,no_first,time_pattern,0,2.875,5.25,2.75,3.625,3.25,1.5,2.625,-0.5
+2103ca9789c075ca2e6448c9,20091211.barking.stairs.wav,yes_first,scene_context,1,0.25,1.0,0.375,-0.125,0.125,0.75,0.75,0.625
+2103ca9789c075ca2e6448c9,20091211.barking.stairs.wav,no_first,scene_context,1,2.375,2.0,1.125,1.875,1.625,1.25,1.625,1.125
+15c7235f71914c66ce6fb93c,20091217.18.chains.wav,yes_first,source_or_event,0,-1.875,3.0,-0.375,-1.625,-1.9375,0.75,0.375,1.375
+15c7235f71914c66ce6fb93c,20091217.18.chains.wav,no_first,source_or_event,0,3.0,2.375,1.625,1.0625,1.0625,1.0,1.25,1.5625
+0834cbbd4985c39e8d2a6e35,20091217.18.chains.wav,yes_first,source_or_event,1,2.0625,1.875,3.125,3.1875,2.9375,3.125,3.3125,2.875
+0834cbbd4985c39e8d2a6e35,20091217.18.chains.wav,no_first,source_or_event,1,4.5625,4.1875,4.25,4.5625,4.5,4.125,4.6875,4.5
+fa0fb7a5205702401029197d,20100110.kitchen.wav,yes_first,source_or_event,0,2.125,5.625,1.125,3.75,3.1875,2.8125,2.5,3.4375
+fa0fb7a5205702401029197d,20100110.kitchen.wav,no_first,source_or_event,0,3.125,7.6875,1.125,3.8125,3.375,2.875,2.875,3.625
+309772f9120305b71312834b,20100110.kitchen.wav,yes_first,source_or_event,1,2.25,-1.375,-0.3125,0.625,0.5,-1.375,-1.625,-1.375
+309772f9120305b71312834b,20100110.kitchen.wav,no_first,source_or_event,1,4.25,-1.125,-0.5625,0.75,0.5,-1.625,-1.625,-1.5625
+ddb6afc1f00fe388f870edbc,20110220_churchbell.wav,yes_first,acoustic_property,0,0.25,1.0,-0.625,-1.125,-0.875,-1.25,-2.375,-1.875
+ddb6afc1f00fe388f870edbc,20110220_churchbell.wav,no_first,acoustic_property,0,2.875,1.625,-0.125,-0.375,0.125,-0.5,-1.25,-1.0
+821e75bf4d7f20cfe0757281,20110220_churchbell.wav,yes_first,source_or_event,1,-0.875,-2.375,-3.5625,-3.75,-3.3125,-3.4375,-3.875,-3.4375
+821e75bf4d7f20cfe0757281,20110220_churchbell.wav,no_first,source_or_event,1,3.1875,-1.125,-0.75,-0.75,-0.375,-1.25,-1.625,-1.5
+5aaf8cbaf62e1475ff3c2405,20110805_forest.crows.07.wav,yes_first,source_or_event,0,3.25,4.75,4.75,5.125,3.9375,4.3125,5.375,4.9375
+5aaf8cbaf62e1475ff3c2405,20110805_forest.crows.07.wav,no_first,source_or_event,0,5.0625,7.1875,6.0,7.0625,4.875,4.625,6.0,5.4375
+a5b8839dd251201d95578581,20110805_forest.crows.07.wav,yes_first,source_or_event,1,5.125,-4.375,0.625,-0.75,1.25,-3.0,-4.1875,-3.8125
+a5b8839dd251201d95578581,20110805_forest.crows.07.wav,no_first,source_or_event,1,6.875,-0.0,2.0625,1.5,2.5625,-0.5,-1.25,-0.375
+c938b91df903b1c239d4745d,20130326_caged.birds.01.wav,yes_first,count_or_relation,0,5.4375,6.0625,4.875,5.1875,5.125,5.125,4.9375,5.6875
+c938b91df903b1c239d4745d,20130326_caged.birds.01.wav,no_first,count_or_relation,0,7.6875,7.8125,5.75,6.25,6.1875,6.1875,6.0,6.6875
+8f87cd83b15fe56744e7dcc7,20130326_caged.birds.01.wav,yes_first,source_or_event,1,0.5,-4.25,-1.75,-2.375,-1.625,-3.125,-3.5,-2.8125
+8f87cd83b15fe56744e7dcc7,20130326_caged.birds.01.wav,no_first,source_or_event,1,1.0,-0.25,-0.0,0.25,0.375,-0.625,-0.875,-0.375
+b09deb14b5102f9d2f057a53,20130327_valparaiso.traffic.02.wav,yes_first,source_or_event,0,1.5,6.5,2.25,2.4375,2.375,4.0625,3.1875,3.4375
+b09deb14b5102f9d2f057a53,20130327_valparaiso.traffic.02.wav,no_first,source_or_event,0,3.6875,5.9375,1.125,1.9375,1.875,2.625,1.75,1.625
+315e19ffcff26cc30462a21d,20130327_valparaiso.traffic.02.wav,yes_first,source_or_event,1,3.875,-1.875,-0.3125,-0.125,0.125,-2.6875,-2.75,-2.875
+315e19ffcff26cc30462a21d,20130327_valparaiso.traffic.02.wav,no_first,source_or_event,1,2.375,-0.375,0.125,0.25,0.5,-0.625,-0.6875,-0.8125
+7e6e5bd9e7cf51e4ac438ecd,20130405_wooden.stairs.floor.01.wav,yes_first,scene_context,0,-1.375,4.75,2.25,2.25,1.875,3.125,3.375,3.375
+7e6e5bd9e7cf51e4ac438ecd,20130405_wooden.stairs.floor.01.wav,no_first,scene_context,0,3.375,6.625,2.5,2.5,2.25,3.75,3.875,4.0
+0868b54a2178380560158082,20130405_wooden.stairs.floor.01.wav,yes_first,source_or_event,1,-3.25,-3.625,1.625,1.75,1.375,1.25,1.625,2.25
+0868b54a2178380560158082,20130405_wooden.stairs.floor.01.wav,no_first,source_or_event,1,0.375,-0.125,2.25,2.375,2.375,2.625,2.75,3.125
+465f0ecfb8fad22838891d71,20130723_Rain1.wav,yes_first,source_or_event,0,2.75,4.0,-3.25,-3.0,-2.1875,-3.1875,-3.6875,-3.75
+465f0ecfb8fad22838891d71,20130723_Rain1.wav,no_first,source_or_event,0,2.75,3.0,-1.25,-1.125,-0.625,-1.125,-1.75,-1.625
+78322a954601afebda92bfd4,20130723_Rain1.wav,yes_first,source_or_event,1,-2.625,-5.5625,-7.1875,-7.0,-6.4375,-6.1875,-6.75,-7.0625
+78322a954601afebda92bfd4,20130723_Rain1.wav,no_first,source_or_event,1,2.25,-1.25,-3.0625,-3.0,-2.625,-2.75,-2.625,-2.375
+aa7d401084019e6e7151ff98,20160506_sharpening.02.wav,yes_first,time_pattern,0,-0.375,3.5,0.5,0.5,0.25,1.75,1.25,1.25
+aa7d401084019e6e7151ff98,20160506_sharpening.02.wav,no_first,time_pattern,0,1.625,3.0,1.125,1.375,1.125,1.75,1.875,1.625
+3db1dd1ccdf50642c9e164c1,20160506_sharpening.02.wav,yes_first,source_or_event,1,1.0,-4.0625,-2.375,-2.375,-2.0625,-3.75,-3.8125,-4.0
+3db1dd1ccdf50642c9e164c1,20160506_sharpening.02.wav,no_first,source_or_event,1,3.875,-2.375,-1.5,-1.3125,-1.0,-2.1875,-2.0625,-2.25
+cb90ce3551ff046f855cf533,20160922_passing.lorry.marshes.wav,yes_first,source_or_event,0,-0.25,5.375,-1.0,-1.0,1.625,2.375,3.0,1.875
+cb90ce3551ff046f855cf533,20160922_passing.lorry.marshes.wav,no_first,source_or_event,0,4.0625,6.6875,2.875,2.875,4.0625,4.0,4.375,3.625
+47eeb9ec98ae1c972dade88f,20160922_passing.lorry.marshes.wav,yes_first,count_or_relation,1,-5.9375,-6.375,-3.25,-3.125,-3.375,-5.625,-6.0,-4.75
+47eeb9ec98ae1c972dade88f,20160922_passing.lorry.marshes.wav,no_first,count_or_relation,1,0.625,-1.75,-0.375,-0.375,0.375,-1.25,-1.5,-0.75
+f143e3aca9533285f5e7697c,53 blackhead_minifjord_closeup.wav,yes_first,source_or_event,0,3.375,2.75,-1.375,-0.25,0.625,-3.125,-2.8125,-2.5
+f143e3aca9533285f5e7697c,53 blackhead_minifjord_closeup.wav,no_first,source_or_event,0,5.375,5.75,-0.75,0.875,1.625,-2.25,-1.875,-1.0
+fb006d575c342070ee4dc7df,53 blackhead_minifjord_closeup.wav,yes_first,source_or_event,1,-2.5625,-3.3125,-4.625,-4.375,-4.5,-5.0625,-4.8125,-4.625
+fb006d575c342070ee4dc7df,53 blackhead_minifjord_closeup.wav,no_first,source_or_event,1,1.0,-2.125,-2.0,-1.75,-1.625,-2.25,-2.5,-1.875
+25a33d26b78ccd0b66db71f5,Air raid siren_rising.wav,yes_first,source_or_event,0,2.8125,1.0,-2.9375,-3.4375,-2.8125,-3.3125,-4.3125,-4.25
+25a33d26b78ccd0b66db71f5,Air raid siren_rising.wav,no_first,source_or_event,0,3.4375,2.875,0.5,0.5,1.1875,0.25,-0.4375,-0.5
+36d8c0a0ceb3a8cd3cfe2b5d,Air raid siren_rising.wav,yes_first,source_or_event,1,4.375,0.875,1.375,1.375,1.8125,1.0,0.25,1.0
+36d8c0a0ceb3a8cd3cfe2b5d,Air raid siren_rising.wav,no_first,source_or_event,1,1.8125,2.125,2.5625,3.0,2.9375,2.5625,2.4375,2.3125
+f03d019ab40fab368f36e913,Ambience with Train.wav,yes_first,source_or_event,0,0.5,1.25,-0.875,-0.875,-0.75,-0.625,-1.125,-0.875
+f03d019ab40fab368f36e913,Ambience with Train.wav,no_first,source_or_event,0,1.25,2.5,-1.0,-1.25,-1.125,-0.75,-0.875,-0.75
+a631c07233492e3c78b51431,Ambience with Train.wav,yes_first,source_or_event,1,-0.625,-4.9375,-2.875,-2.9375,-2.8125,-4.0625,-4.5,-4.125
+a631c07233492e3c78b51431,Ambience with Train.wav,no_first,source_or_event,1,1.0,-1.875,-2.1875,-2.375,-2.1875,-2.4375,-2.375,-2.1875
+9a3fa8127fe3be27bb5e530e,Anti Air Gun (3 Sounds).wav,yes_first,source_or_event,0,4.0625,7.0,7.125,6.875,6.4375,8.4375,8.25,8.375
+9a3fa8127fe3be27bb5e530e,Anti Air Gun (3 Sounds).wav,no_first,source_or_event,0,0.25,6.1875,3.25,2.875,2.5,4.625,4.375,4.25
+59cd0eadcb3943b513f403ca,Anti Air Gun (3 Sounds).wav,yes_first,source_or_event,1,0.3125,-4.0,-1.25,-0.625,0.0,-3.75,-3.9375,-3.4375
+59cd0eadcb3943b513f403ca,Anti Air Gun (3 Sounds).wav,no_first,source_or_event,1,5.625,1.125,2.9375,2.5625,2.75,1.375,1.25,1.75
+4f0706475ebcade536e19d06,Beach_SaintJeanDeLuz_France_Waves_Kids_People_xystereo.wav,yes_first,source_or_event,0,-1.625,5.6875,1.5,1.625,0.5,4.6875,5.0,5.0625
+4f0706475ebcade536e19d06,Beach_SaintJeanDeLuz_France_Waves_Kids_People_xystereo.wav,no_first,source_or_event,0,3.5,8.6875,3.0625,3.1875,2.75,5.8125,5.9375,6.1875
+c60a7fde4499c5a4b2117d8e,Beach_SaintJeanDeLuz_France_Waves_Kids_People_xystereo.wav,yes_first,source_or_event,1,-2.6875,-9.25,-4.1875,-4.1875,-3.875,-7.125,-7.375,-7.25
+c60a7fde4499c5a4b2117d8e,Beach_SaintJeanDeLuz_France_Waves_Kids_People_xystereo.wav,no_first,source_or_event,1,0.375,-2.5,-3.4375,-3.25,-2.6875,-4.125,-4.4375,-4.1875
+84b4f7fe897d76a1cb1fd75a,Bicin_Diputacion_Day_22-03-2009.wav,yes_first,source_or_event,0,1.25,3.125,0.625,0.875,1.0,1.875,2.0625,1.8125
+84b4f7fe897d76a1cb1fd75a,Bicin_Diputacion_Day_22-03-2009.wav,no_first,source_or_event,0,3.75,4.8125,2.8125,2.9375,2.9375,3.1875,3.25,3.0625
+c4bd39d3de086daa54fb4f1a,Bicin_Diputacion_Day_22-03-2009.wav,yes_first,source_or_event,1,-0.625,-1.4375,-2.375,-2.1875,-1.75,-2.875,-3.375,-3.125
+c4bd39d3de086daa54fb4f1a,Bicin_Diputacion_Day_22-03-2009.wav,no_first,source_or_event,1,1.375,-0.5,-0.8125,-0.625,-0.4375,-2.0625,-2.375,-2.125
+adf5b809103dd723877b9bb6,Bird Ambience.wav,yes_first,count_or_relation,0,4.25,5.375,5.3125,6.0,5.0625,5.6875,5.875,6.0
+adf5b809103dd723877b9bb6,Bird Ambience.wav,no_first,count_or_relation,0,3.6875,7.5625,5.6875,6.75,5.5625,6.5625,6.875,7.0
+95732f906c50d18e81501572,Bird Ambience.wav,yes_first,scene_context,1,-0.5,-5.125,-1.4375,-1.6875,-1.8125,-2.625,-3.0,-2.875
+95732f906c50d18e81501572,Bird Ambience.wav,no_first,scene_context,1,1.875,-1.75,-1.125,-0.75,-1.1875,-2.125,-2.0625,-2.25
+aaba119f328043a9bca73ac0,Birds Singing in a Small Town During Morning.wav,yes_first,scene_context,0,2.5,1.625,2.0,2.625,2.0,2.25,2.125,2.875
+aaba119f328043a9bca73ac0,Birds Singing in a Small Town During Morning.wav,no_first,scene_context,0,2.25,2.0,0.75,1.25,0.875,0.75,0.875,1.0
+20560d91bdd0e6e800e95107,Birds Singing in a Small Town During Morning.wav,yes_first,source_or_event,1,2.125,-2.625,0.0,-0.625,0.4375,-1.8125,-2.0,-1.625
+20560d91bdd0e6e800e95107,Birds Singing in a Small Town During Morning.wav,no_first,source_or_event,1,3.25,-0.25,1.625,1.375,1.9375,0.625,0.75,0.75
+b107f87262cacbd93d30ee4f,Birds in the city 1.wav,yes_first,source_or_event,0,4.25,6.375,4.1875,4.1875,3.5,5.0,5.3125,5.5625
+b107f87262cacbd93d30ee4f,Birds in the city 1.wav,no_first,source_or_event,0,5.75,7.375,6.5,6.875,5.25,5.625,6.25,6.9375
+8a41d51949e06ed9f713c76d,Birds in the city 1.wav,yes_first,source_or_event,1,-1.125,-4.375,-3.6875,-3.875,-2.6875,-5.0,-4.875,-5.0625
+8a41d51949e06ed9f713c76d,Birds in the city 1.wav,no_first,source_or_event,1,2.375,-1.75,-1.0,-1.125,-1.0625,-1.75,-1.875,-1.9375
+107b11befcb66d2e4d2ad1c4,Blackbird sounds.wav,yes_first,source_or_event,0,4.5625,5.4375,4.1875,4.375,3.4375,4.125,3.3125,4.625
+107b11befcb66d2e4d2ad1c4,Blackbird sounds.wav,no_first,source_or_event,0,6.4375,6.125,5.0,5.3125,4.3125,4.5,3.9375,4.9375
+6faaf45bedb8c007220dbf78,Blackbird sounds.wav,yes_first,source_or_event,1,6.0,-1.625,1.75,1.8125,2.5,-1.8125,-1.625,-1.375
+6faaf45bedb8c007220dbf78,Blackbird sounds.wav,no_first,source_or_event,1,2.5625,-2.5,0.375,0.375,0.375,-2.0625,-2.0625,-1.5
+ebe154f3b82dfc2f36addb9e,BobKessler-Spinning Tin Top.wav,yes_first,source_or_event,0,2.0,2.5,1.375,1.625,1.875,1.625,1.375,1.625
+ebe154f3b82dfc2f36addb9e,BobKessler-Spinning Tin Top.wav,no_first,source_or_event,0,5.375,4.0,3.625,3.5625,3.625,3.25,3.0,3.1875
+c8278f9cd8f83052a8ea9964,BobKessler-Spinning Tin Top.wav,yes_first,source_or_event,1,8.1875,-2.75,-0.625,0.125,0.75,-2.75,-2.75,-2.6875
+c8278f9cd8f83052a8ea9964,BobKessler-Spinning Tin Top.wav,no_first,source_or_event,1,1.625,-1.125,-0.625,-0.375,-0.25,-1.625,-1.375,-1.5
+1b30122c415e47693c07b50c,Boiling a cup of water.wav,yes_first,source_or_event,0,2.125,-1.375,-0.875,-0.625,0.0,-0.5,-0.875,-0.25
+1b30122c415e47693c07b50c,Boiling a cup of water.wav,no_first,source_or_event,0,-0.375,-0.5,0.5,0.25,0.75,0.875,0.625,0.875
+be74974756457494d1fae959,Boiling a cup of water.wav,yes_first,source_or_event,1,3.125,-6.0,-4.375,-4.25,-3.375,-5.875,-5.875,-5.4375
+be74974756457494d1fae959,Boiling a cup of water.wav,no_first,source_or_event,1,5.75,-0.625,0.25,-0.375,1.0625,-1.4375,-1.25,-1.0625
+57557598b18b91b74bc8cd7b,Boulevard SummerRiver calm 01 NL 160905_0961 0962.wav,yes_first,count_or_relation,0,1.875,2.875,-1.5,-1.75,-1.125,-0.625,-1.0,-0.75
+57557598b18b91b74bc8cd7b,Boulevard SummerRiver calm 01 NL 160905_0961 0962.wav,no_first,count_or_relation,0,4.1875,4.1875,1.625,1.25,1.75,1.375,1.375,1.625
+e5c4c16ec5bf8ac84326f43b,Boulevard SummerRiver calm 01 NL 160905_0961 0962.wav,yes_first,count_or_relation,1,3.25,0.125,1.5,1.125,1.125,0.75,0.625,-0.875
+e5c4c16ec5bf8ac84326f43b,Boulevard SummerRiver calm 01 NL 160905_0961 0962.wav,no_first,count_or_relation,1,3.25,1.25,2.625,2.4375,2.25,1.875,1.875,0.875
+eaf61df628f80250a8d04ab0,Box of sweets.wav,yes_first,source_or_event,0,5.1875,5.5,4.6875,4.125,4.0625,5.1875,5.125,5.75
+eaf61df628f80250a8d04ab0,Box of sweets.wav,no_first,source_or_event,0,1.5,5.8125,3.25,3.1875,3.0625,4.75,4.8125,4.5625
+bbeedc936ae74fec80cd33af,Box of sweets.wav,yes_first,source_or_event,1,2.5,-2.625,-0.75,-0.875,-0.75,-1.625,-1.125,-1.125
+bbeedc936ae74fec80cd33af,Box of sweets.wav,no_first,source_or_event,1,0.875,-0.75,-1.25,-1.0,-0.875,-1.25,-1.25,-1.625
+1f24b90b2ca030384d34f778,BoyRacer.wav,yes_first,source_or_event,0,1.0,2.625,2.375,2.375,2.0,3.5,3.5,3.125
+1f24b90b2ca030384d34f778,BoyRacer.wav,no_first,source_or_event,0,2.125,4.0,3.9375,4.0,3.5,4.75,4.8125,4.125
+dc71f4470c943193a27a56b9,BoyRacer.wav,yes_first,source_or_event,1,-4.0,-8.0,-6.0,-5.875,-5.4375,-7.6875,-7.8125,-7.1875
+dc71f4470c943193a27a56b9,BoyRacer.wav,no_first,source_or_event,1,1.0,-2.125,-1.5,-1.375,-1.1875,-1.75,-1.875,-1.875
+31cc16d4bfd8c87cfc223b08,Brush 01.wav,yes_first,source_or_event,0,4.125,2.5,1.25,1.625,2.0,2.25,1.75,1.625
+31cc16d4bfd8c87cfc223b08,Brush 01.wav,no_first,source_or_event,0,0.5,1.875,-0.25,-0.0,0.25,0.625,0.5,0.625
+e0153a4176aa3f1c9004d991,Brush 01.wav,yes_first,source_or_event,1,3.0,0.875,-1.0625,-0.875,0.0,-2.8125,-3.3125,-3.1875
+e0153a4176aa3f1c9004d991,Brush 01.wav,no_first,source_or_event,1,4.1875,2.5,0.875,1.125,1.625,0.25,0.125,-0.375
+8e26b76cf410f3687ac505ad,Brushing teeth.wav,yes_first,source_or_event,0,5.625,4.5,3.875,4.0,4.75,2.625,2.125,3.625
+8e26b76cf410f3687ac505ad,Brushing teeth.wav,no_first,source_or_event,0,0.75,3.0,1.625,1.875,2.125,1.25,1.625,1.875
+dd01fe3f6e0207dc5b13b3e1,Brushing teeth.wav,yes_first,source_or_event,1,2.625,3.625,3.375,3.375,3.125,2.875,2.5,2.875
+dd01fe3f6e0207dc5b13b3e1,Brushing teeth.wav,no_first,source_or_event,1,-0.375,2.375,0.75,0.75,0.625,1.125,0.75,0.75
+9b746dae814324d0ae78dbf2,Bubbles water.wav,yes_first,source_or_event,0,1.625,3.625,2.875,2.875,2.75,3.5,3.75,3.375
+9b746dae814324d0ae78dbf2,Bubbles water.wav,no_first,source_or_event,0,0.375,4.0,2.0,2.0,1.75,3.375,4.0,3.875
+1fc9e9fba35d479ffe969a38,Bubbles water.wav,yes_first,source_or_event,1,4.375,-1.75,1.625,1.75,2.0,-1.25,-2.0,-1.375
+1fc9e9fba35d479ffe969a38,Bubbles water.wav,no_first,source_or_event,1,5.8125,-0.25,2.375,2.5,2.5625,0.75,0.25,1.25
+bac66c8f96279db2c829c566,Buddhist Bells.wav,yes_first,acoustic_property,0,0.75,7.8125,5.0625,4.5625,4.5,6.1875,6.25,6.1875
+bac66c8f96279db2c829c566,Buddhist Bells.wav,no_first,acoustic_property,0,2.25,5.875,6.9375,6.1875,5.9375,7.0,7.25,6.9375
+386f0d09e14f780ce4c0df01,Buddhist Bells.wav,yes_first,source_or_event,1,-0.625,-3.375,-2.75,-2.375,-2.0,-4.25,-4.625,-3.875
+386f0d09e14f780ce4c0df01,Buddhist Bells.wav,no_first,source_or_event,1,4.125,1.5,2.875,2.75,2.875,1.375,2.0,1.875
+7ef398b3f6e9729ce10ea5e2,BulletJuneEdited192012.wav,yes_first,source_or_event,0,0.5,-1.5,0.75,0.375,0.625,-2.375,-2.4375,-1.375
+7ef398b3f6e9729ce10ea5e2,BulletJuneEdited192012.wav,no_first,source_or_event,0,2.8125,3.875,3.1875,3.3125,3.25,1.625,1.75,1.75
+2aa143252f13cae3de62e3a4,BulletJuneEdited192012.wav,yes_first,scene_context,1,-0.75,-5.6875,-3.5625,-4.0625,-3.875,-5.3125,-5.5625,-4.5625
+2aa143252f13cae3de62e3a4,BulletJuneEdited192012.wav,no_first,scene_context,1,2.0,-1.375,-1.25,-0.75,-0.875,-2.375,-1.75,-2.25
+f888bd386d64b85492322b62,By ther blacksmith-002.wav,yes_first,source_or_event,0,4.3125,8.0,6.9375,6.9375,6.5625,7.9375,8.0,7.9375
+f888bd386d64b85492322b62,By ther blacksmith-002.wav,no_first,source_or_event,0,5.5,7.5,4.4375,4.5,4.3125,6.0,6.0625,5.75
+008f38f4ad3ea4b77be4bc7b,By ther blacksmith-002.wav,yes_first,source_or_event,1,-7.75,-5.4375,-4.8125,-5.0,-5.0625,-6.4375,-5.625,-5.75
+008f38f4ad3ea4b77be4bc7b,By ther blacksmith-002.wav,no_first,source_or_event,1,1.875,-2.5,1.25,1.375,1.75,-0.625,-0.75,-0.125
+447792c184c9cbaa329cee22,California morning birds singing.wav,yes_first,scene_context,0,1.0,7.0625,5.6875,5.875,5.3125,6.3125,6.5625,6.375
+447792c184c9cbaa329cee22,California morning birds singing.wav,no_first,scene_context,0,0.25,5.9375,3.375,3.625,2.8125,4.0,4.25,4.3125
+66c6584520ee9764a6fc4320,California morning birds singing.wav,yes_first,source_or_event,1,4.0625,0.375,1.25,0.0,2.125,-2.4375,-2.6875,-2.9375
+66c6584520ee9764a6fc4320,California morning birds singing.wav,no_first,source_or_event,1,2.625,1.75,1.9375,1.875,2.25,0.125,0.125,0.125
+8fedb3919d7d34713ad597d2,Canada Geese Squawk on a Pond with a Fountain.wav,yes_first,scene_context,0,-0.625,5.75,5.1875,4.5625,2.6875,6.625,6.8125,6.1875
+8fedb3919d7d34713ad597d2,Canada Geese Squawk on a Pond with a Fountain.wav,no_first,scene_context,0,-0.5,6.1875,1.25,0.9375,0.25,2.875,2.875,3.375
+e1157e540e57f254db5090a3,Canada Geese Squawk on a Pond with a Fountain.wav,yes_first,scene_context,1,0.4375,-5.25,-4.125,-3.75,-2.9375,-5.125,-5.25,-4.9375
+e1157e540e57f254db5090a3,Canada Geese Squawk on a Pond with a Fountain.wav,no_first,scene_context,1,-2.6875,-3.0,-5.0625,-4.5,-4.1875,-5.1875,-5.25,-4.8125
+eaac095983be892cd3861e05,Car vs. Freight Train.wav,yes_first,source_or_event,0,8.9375,3.875,4.25,4.875,3.9375,2.4375,2.125,2.375
+eaac095983be892cd3861e05,Car vs. Freight Train.wav,no_first,source_or_event,0,7.3125,5.8125,5.4375,5.75,5.3125,4.5,4.4375,4.75
+efe95e3635df3ee0c6c8ac49,Car vs. Freight Train.wav,yes_first,source_or_event,1,9.5625,-1.375,2.0,2.125,2.9375,-1.25,-2.0,-2.6875
+efe95e3635df3ee0c6c8ac49,Car vs. Freight Train.wav,no_first,source_or_event,1,9.5625,3.25,4.8125,4.6875,5.25,1.75,1.375,0.375
+65919f563bf162ae576b192a,CarInterior_RRx_WaitToTurn_FinalPark.wav,yes_first,source_or_event,0,1.0,1.25,-0.375,-0.5,-0.25,-0.75,-1.1875,-0.5
+65919f563bf162ae576b192a,CarInterior_RRx_WaitToTurn_FinalPark.wav,no_first,source_or_event,0,2.0,2.75,1.75,1.875,1.875,2.0625,2.0625,2.0625
+6586f270bdf86edb170c7515,CarInterior_RRx_WaitToTurn_FinalPark.wav,yes_first,source_or_event,1,-1.0,-3.125,-1.375,-1.9375,-1.5,-2.1875,-2.375,-1.9375
+6586f270bdf86edb170c7515,CarInterior_RRx_WaitToTurn_FinalPark.wav,no_first,source_or_event,1,-0.0,-0.75,-0.5,-0.75,-0.375,-1.125,-1.125,-1.1875
+bf74af5d432725a3504c2157,Carillon Zuiderkerk Amsterdam.wav,yes_first,source_or_event,0,-0.875,2.25,0.25,0.25,0.0,1.25,1.125,1.25
+bf74af5d432725a3504c2157,Carillon Zuiderkerk Amsterdam.wav,no_first,source_or_event,0,1.625,2.0,1.625,1.75,1.75,1.875,1.625,1.75
+8f2204bc82ad5d1908aa55c9,Carillon Zuiderkerk Amsterdam.wav,yes_first,count_or_relation,1,-0.875,-4.75,-2.125,-2.0,-1.875,-3.0,-3.0,-3.125
+8f2204bc82ad5d1908aa55c9,Carillon Zuiderkerk Amsterdam.wav,no_first,count_or_relation,1,0.375,-1.875,-1.0,-0.75,-0.875,-1.875,-2.0,-2.25
+7b1edda8b978aaf1b553d410,Cars_bridge.wav,yes_first,source_or_event,0,4.875,4.125,3.125,3.5,3.5625,2.5,2.125,2.125
+7b1edda8b978aaf1b553d410,Cars_bridge.wav,no_first,source_or_event,0,5.0625,4.125,3.375,3.9375,4.0625,3.0,3.0,3.0
+5a60bb27d33a693b8028d10e,Cars_bridge.wav,yes_first,source_or_event,1,5.0625,-1.875,2.0625,2.8125,3.0625,-2.8125,-2.5625,-1.6875
+5a60bb27d33a693b8028d10e,Cars_bridge.wav,no_first,source_or_event,1,4.0625,1.125,3.0,3.5625,3.6875,1.375,1.25,1.75
+e5253d4bdd790d2ed660f3b7,Cat Meowing.wav,yes_first,source_or_event,0,0.625,2.0,1.125,1.0,1.125,1.5,1.5,1.75
+e5253d4bdd790d2ed660f3b7,Cat Meowing.wav,no_first,source_or_event,0,4.0,4.5,2.4375,2.3125,2.375,2.5,2.25,2.8125
+ac1767f0370ca581c4d2b216,Cat Meowing.wav,yes_first,source_or_event,1,-2.9375,-4.9375,-3.5625,-3.4375,-3.4375,-4.8125,-4.75,-5.125
+ac1767f0370ca581c4d2b216,Cat Meowing.wav,no_first,source_or_event,1,-2.4375,-2.25,-2.9375,-2.875,-2.6875,-3.0,-3.5625,-3.375
+2ef890d8fcf3d96a2f5979a5,Cicadas .wav,yes_first,time_pattern,0,-4.8125,0.875,-0.875,-0.625,-0.75,1.125,1.375,0.0
+2ef890d8fcf3d96a2f5979a5,Cicadas .wav,no_first,time_pattern,0,-1.375,0.875,-0.625,0.125,-0.0,1.125,1.5,0.75
+e7c3b473f5761783cd33ac9e,Cicadas .wav,yes_first,acoustic_property,1,1.875,0.0,1.625,1.375,1.625,-1.25,-1.125,-0.625
+e7c3b473f5761783cd33ac9e,Cicadas .wav,no_first,acoustic_property,1,4.0,1.375,2.0,2.25,2.5,0.625,0.75,1.25
+d155f33ea74b7bffc17e9fb1,Cityscape construction site 2 100304.wav,yes_first,count_or_relation,0,1.5,0.625,0.125,0.25,0.25,1.75,0.75,1.0
+d155f33ea74b7bffc17e9fb1,Cityscape construction site 2 100304.wav,no_first,count_or_relation,0,2.9375,4.125,1.8125,2.1875,1.875,3.1875,2.875,3.125
+b7502971589a3b018d971a14,Cityscape construction site 2 100304.wav,yes_first,source_or_event,1,3.5625,-3.4375,-0.5625,-0.25,0.0,-1.6875,-2.625,-1.5
+b7502971589a3b018d971a14,Cityscape construction site 2 100304.wav,no_first,source_or_event,1,2.5625,-1.25,-0.25,0.125,0.125,-0.875,-1.0625,-0.75
+748ddd292eb759868d802ebf,Clatter.wav,yes_first,source_or_event,0,1.625,2.375,2.5,2.375,2.25,2.875,2.625,2.875
+748ddd292eb759868d802ebf,Clatter.wav,no_first,source_or_event,0,3.25,5.8125,4.5,4.4375,4.25,5.375,5.625,5.4375
+0276fe998b8e63a3e43ebc02,Clatter.wav,yes_first,time_pattern,1,-2.125,-4.5625,-4.875,-4.75,-4.4375,-4.75,-4.9375,-5.125
+0276fe998b8e63a3e43ebc02,Clatter.wav,no_first,time_pattern,1,-0.0,-1.75,-3.4375,-3.375,-3.0625,-3.4375,-3.25,-3.375
+becef179ae6539f41cb9ce24,Construction Sounds.wav,yes_first,acoustic_property,0,-4.8125,-5.1875,-4.0,-4.0625,-3.9375,-3.8125,-4.0625,-4.25
+becef179ae6539f41cb9ce24,Construction Sounds.wav,no_first,acoustic_property,0,-0.0,-1.0,0.375,0.75,0.625,-0.25,-0.125,0.125
+c01e47e6b1d1d27ecebfd159,Construction Sounds.wav,yes_first,source_or_event,1,-4.6875,-3.9375,-3.875,-3.875,-3.9375,-4.4375,-4.1875,-4.25
+c01e47e6b1d1d27ecebfd159,Construction Sounds.wav,no_first,source_or_event,1,-0.25,-2.5625,-2.125,-2.0625,-2.0625,-2.625,-2.3125,-2.4375
+93a8f7257a8276f05e7fd5b2,Cooking on Gas.wav,yes_first,time_pattern,0,-4.8125,2.75,-0.625,-0.75,-1.5,1.875,2.125,1.625
+93a8f7257a8276f05e7fd5b2,Cooking on Gas.wav,no_first,time_pattern,0,-1.5,3.75,2.625,2.625,2.375,2.625,3.625,2.875
+a551d828d8d89d28f09cadc3,Cooking on Gas.wav,yes_first,time_pattern,1,2.375,1.0,0.125,-0.125,0.625,0.0,-1.5,-0.625
+a551d828d8d89d28f09cadc3,Cooking on Gas.wav,no_first,time_pattern,1,2.5625,1.25,1.8125,1.75,1.9375,1.125,1.625,1.125
+73c3b1d1df098a6d3cb29c75,Corn Husking Sequence x2.wav,yes_first,source_or_event,0,3.6875,6.0625,6.9375,7.0,6.625,7.4375,7.5,7.5625
+73c3b1d1df098a6d3cb29c75,Corn Husking Sequence x2.wav,no_first,source_or_event,0,3.3125,6.875,2.625,2.75,2.625,2.9375,3.0,3.125
+18176c2281aa25825676730c,Corn Husking Sequence x2.wav,yes_first,source_or_event,1,-3.9375,-4.0,-1.75,-1.75,-2.125,-1.125,-1.25,-1.375
+18176c2281aa25825676730c,Corn Husking Sequence x2.wav,no_first,source_or_event,1,-4.625,-3.0,-4.625,-4.6875,-4.5625,-5.1875,-5.3125,-5.25
+73d408e7b5407d655faa4aaa,Creacking Oak 6bft  SHORT 130418_00.wav,yes_first,source_or_event,0,0.375,0.625,-1.0,-1.25,-1.0,-0.75,-0.625,-0.625
+73d408e7b5407d655faa4aaa,Creacking Oak 6bft  SHORT 130418_00.wav,no_first,source_or_event,0,2.5,3.125,2.0,2.0,2.0,2.125,2.0,2.25
+5d2035440d78030405896358,Creacking Oak 6bft  SHORT 130418_00.wav,yes_first,time_pattern,1,-2.125,-2.25,-3.125,-3.1875,-3.125,-3.1875,-3.125,-3.125
+5d2035440d78030405896358,Creacking Oak 6bft  SHORT 130418_00.wav,no_first,time_pattern,1,-1.375,-1.0,-1.25,-1.125,-1.125,-0.875,-1.0,-1.0
+4c5176db432727c20dd72795,Crickets in the night.wav,yes_first,source_or_event,0,-3.3125,-2.75,-4.0,-4.3125,-4.4375,-4.875,-4.875,-3.8125
+4c5176db432727c20dd72795,Crickets in the night.wav,no_first,source_or_event,0,7.0625,1.25,4.75,4.5625,4.3125,2.0,2.25,3.0
+81523de876f63fb3fa4303eb,Crickets in the night.wav,yes_first,source_or_event,1,-8.0,-5.875,-5.9375,-6.1875,-6.0625,-6.4375,-6.625,-6.375
+81523de876f63fb3fa4303eb,Crickets in the night.wav,no_first,source_or_event,1,-1.9375,-0.625,-1.75,-1.875,-1.75,-2.0,-2.0,-1.5
+b045ead7c2b86ec132cde262,Cualquiera.wav,yes_first,time_pattern,0,1.125,4.125,3.375,3.25,2.75,3.375,3.5,3.125
+b045ead7c2b86ec132cde262,Cualquiera.wav,no_first,time_pattern,0,2.0,4.0,2.5,2.125,2.25,2.625,2.5,2.125
+e7d96fe469925596a744aed1,Cualquiera.wav,yes_first,source_or_event,1,1.875,-1.0,-0.125,-1.375,-0.6875,-1.375,-2.5625,-2.3125
+e7d96fe469925596a744aed1,Cualquiera.wav,no_first,source_or_event,1,4.375,1.25,1.5,1.3125,1.625,0.5,-0.125,-0.75
+391ca4f3c82791ac0f74d204,Curtains.wav,yes_first,source_or_event,0,3.25,5.3125,4.375,4.0625,4.0,4.25,4.0625,3.9375
+391ca4f3c82791ac0f74d204,Curtains.wav,no_first,source_or_event,0,3.375,3.875,3.0625,3.0625,3.3125,2.375,2.625,2.25
+39591d653e720d7dea6abae3,Curtains.wav,yes_first,source_or_event,1,2.25,1.375,0.375,0.375,0.625,-0.375,0.0,-0.25
+39591d653e720d7dea6abae3,Curtains.wav,no_first,source_or_event,1,4.9375,3.125,2.625,2.625,2.875,1.875,2.25,2.125
+1e47c4a1f49768f620a52e8b,Erny vs Deadman4.wav,yes_first,source_or_event,0,4.75,4.75,4.1875,4.5,4.5625,4.0625,4.0,3.5625
+1e47c4a1f49768f620a52e8b,Erny vs Deadman4.wav,no_first,source_or_event,0,2.25,2.375,1.75,2.125,2.125,2.0,2.0,1.875
+1ec98a3326cd060074c8de07,Erny vs Deadman4.wav,yes_first,source_or_event,1,0.0,-1.125,0.0,0.125,0.25,-0.625,-0.875,-0.75
+1ec98a3326cd060074c8de07,Erny vs Deadman4.wav,no_first,source_or_event,1,2.0,0.625,1.0,1.125,1.125,0.75,0.25,0.5
+3701d5e14e737a69fc8d590b,F907 Church prayer f.wav,yes_first,count_or_relation,0,1.625,2.25,1.875,1.875,1.875,1.625,1.625,1.5
+3701d5e14e737a69fc8d590b,F907 Church prayer f.wav,no_first,count_or_relation,0,2.75,3.375,2.0,1.875,2.0,2.25,2.5,2.375
+d7a5c7c639536f3077a1760f,F907 Church prayer f.wav,yes_first,time_pattern,1,0.0,-0.5,-0.625,-0.625,-0.5,-1.125,-1.125,-1.25
+d7a5c7c639536f3077a1760f,F907 Church prayer f.wav,no_first,time_pattern,1,-0.875,-0.25,-0.625,-0.5,-0.25,-0.5,-0.625,-0.75
+f717982ba3631c8496bb3060,FOOTSTEPS_005.wav,yes_first,source_or_event,0,0.875,2.5,0.125,0.0,-0.25,1.375,1.375,1.75
+f717982ba3631c8496bb3060,FOOTSTEPS_005.wav,no_first,source_or_event,0,2.0625,3.875,1.0,0.75,0.75,1.375,1.375,1.875
+110010571d22e83c297e2f51,FOOTSTEPS_005.wav,yes_first,source_or_event,1,2.375,-4.0,-3.5,-3.625,-3.25,-3.6875,-3.5625,-3.75
+110010571d22e83c297e2f51,FOOTSTEPS_005.wav,no_first,source_or_event,1,2.875,-0.875,-1.25,-0.875,-0.25,-1.9375,-1.75,-1.6875
+aab56b13adbb4988e4b32bf0,FP_Refrigerator_Door_Squeak.wav,yes_first,source_or_event,0,3.625,7.125,5.9375,6.125,5.8125,6.0,6.375,6.4375
+aab56b13adbb4988e4b32bf0,FP_Refrigerator_Door_Squeak.wav,no_first,source_or_event,0,4.5,8.3125,5.4375,5.25,5.25,6.125,6.4375,5.9375
+597532752c6faa59f58393e1,FP_Refrigerator_Door_Squeak.wav,yes_first,source_or_event,1,0.375,-2.5,0.125,0.0,0.125,-0.375,-0.125,0.0
+597532752c6faa59f58393e1,FP_Refrigerator_Door_Squeak.wav,no_first,source_or_event,1,4.125,0.625,2.875,2.75,3.125,1.875,2.125,2.125
+f7abaecd4fbd9ef1b6d90b39,Fantasy Ambience.wav,yes_first,count_or_relation,0,3.125,4.6875,5.0,4.75,4.8125,5.125,5.1875,5.1875
+f7abaecd4fbd9ef1b6d90b39,Fantasy Ambience.wav,no_first,count_or_relation,0,4.4375,4.375,2.8125,3.0625,3.25,3.25,3.375,3.125
+b5af0aace850c391f23a2347,Fantasy Ambience.wav,yes_first,count_or_relation,1,-3.75,-4.4375,-0.625,-0.875,-1.125,-2.0625,-2.0,-1.0
+b5af0aace850c391f23a2347,Fantasy Ambience.wav,no_first,count_or_relation,1,0.375,0.875,-0.875,-0.75,-0.625,-0.875,-1.5,-0.875
+88c604f459e7947e56020070,"Fast food soda with ice, sip slurp straw.wav",yes_first,source_or_event,0,2.6875,3.625,3.25,3.375,3.375,4.0,4.4375,4.1875
+88c604f459e7947e56020070,"Fast food soda with ice, sip slurp straw.wav",no_first,source_or_event,0,4.1875,4.4375,4.25,4.3125,4.3125,5.375,5.0,5.3125
+bccbba0b71ac83ee2e410fe7,"Fast food soda with ice, sip slurp straw.wav",yes_first,source_or_event,1,2.625,2.75,1.125,1.25,1.3125,1.875,1.25,1.75
+bccbba0b71ac83ee2e410fe7,"Fast food soda with ice, sip slurp straw.wav",no_first,source_or_event,1,4.5625,4.1875,3.1875,3.0,3.0625,3.375,3.125,3.125
+6a87755da54c15e8cc174c59,Filing Nails.wav,yes_first,source_or_event,0,2.8125,5.9375,4.75,5.0,4.625,5.5625,5.9375,5.6875
+6a87755da54c15e8cc174c59,Filing Nails.wav,no_first,source_or_event,0,6.1875,7.3125,4.625,4.6875,4.8125,5.375,5.875,5.5
+f7c2fdfa3b480f7c14ec747e,Filing Nails.wav,yes_first,source_or_event,1,-2.125,-1.375,-1.5,-1.5,-1.375,-2.5,-2.25,-1.875
+f7c2fdfa3b480f7c14ec747e,Filing Nails.wav,no_first,source_or_event,1,1.875,2.125,0.75,0.75,0.875,0.25,0.625,0.75
+d0c76ea07f686a722abf47ea,Forest with Squirrel.wav,yes_first,source_or_event,0,0.25,2.625,1.5,1.5,1.5,1.625,1.5,1.5
+d0c76ea07f686a722abf47ea,Forest with Squirrel.wav,no_first,source_or_event,0,4.125,3.625,2.1875,2.1875,2.1875,2.25,2.5,2.5
+73a23234e58e92e7938de365,Forest with Squirrel.wav,yes_first,source_or_event,1,-4.0,-3.5,-3.25,-3.25,-3.0625,-4.4375,-4.375,-4.0625
+73a23234e58e92e7938de365,Forest with Squirrel.wav,no_first,source_or_event,1,1.6875,-1.875,-2.125,-2.25,-2.0625,-2.625,-2.75,-2.5
+952913e747a16f114c32a07b,Fowl - Chatter 1 - 96kHz.wav,yes_first,count_or_relation,0,3.5,6.625,5.75,5.75,5.4375,5.8125,6.0,5.9375
+952913e747a16f114c32a07b,Fowl - Chatter 1 - 96kHz.wav,no_first,count_or_relation,0,6.5625,6.6875,3.75,4.0,2.0,4.4375,4.625,4.125
+3c86388ce550e25a15ea52bb,Fowl - Chatter 1 - 96kHz.wav,yes_first,source_or_event,1,4.0,-2.0,-0.375,-0.375,2.625,-2.625,-3.125,-1.375
+3c86388ce550e25a15ea52bb,Fowl - Chatter 1 - 96kHz.wav,no_first,source_or_event,1,2.5,-1.125,-1.25,-1.25,-0.25,-3.0,-3.625,-2.5
+0f7fd9663ced3f14eb147cfd,Gentle rain outside balcony street noise.wav,yes_first,time_pattern,0,0.25,-1.5,0.0,-0.125,0.375,-0.375,-0.75,-0.875
+0f7fd9663ced3f14eb147cfd,Gentle rain outside balcony street noise.wav,no_first,time_pattern,0,3.75,-0.25,0.25,0.375,0.75,-0.125,-0.625,-0.125
+a1ec3e2783ada8aac4396a25,Gentle rain outside balcony street noise.wav,yes_first,source_or_event,1,3.375,-2.375,-4.0625,-4.25,-3.4375,-4.25,-5.4375,-4.875
+a1ec3e2783ada8aac4396a25,Gentle rain outside balcony street noise.wav,no_first,source_or_event,1,6.375,-1.125,-2.5,-2.5,-1.75,-1.75,-2.625,-2.25
+85835ff6998b48ef2792b946,Glass bottles in and out of a basket.wav,yes_first,source_or_event,0,0.625,1.875,1.625,1.375,1.125,1.625,1.375,1.875
+85835ff6998b48ef2792b946,Glass bottles in and out of a basket.wav,no_first,source_or_event,0,4.375,5.0,4.8125,4.5625,4.3125,4.75,4.5,5.0625
+30bfea3805a472871b57d6f6,Glass bottles in and out of a basket.wav,yes_first,source_or_event,1,-0.375,-1.625,-0.25,0.0,0.0,-0.25,-0.5,-0.375
+30bfea3805a472871b57d6f6,Glass bottles in and out of a basket.wav,no_first,source_or_event,1,1.75,2.375,2.9375,2.625,2.375,2.25,2.5,2.625
+fbc2adeed574fb5347358ce1,Grackles.wav,yes_first,count_or_relation,0,3.875,4.5625,2.75,2.75,2.25,3.25,3.125,3.0
+fbc2adeed574fb5347358ce1,Grackles.wav,no_first,count_or_relation,0,4.6875,7.1875,4.125,4.125,4.0,4.875,5.3125,5.0
+2c63edc8cf85a0788f940b39,Grackles.wav,yes_first,source_or_event,1,1.0,-3.3125,-1.25,-1.25,-1.5625,-2.5,-2.5,-2.4375
+2c63edc8cf85a0788f940b39,Grackles.wav,no_first,source_or_event,1,3.875,-1.125,-0.0,0.125,-0.25,-1.1875,-1.3125,-1.1875
+e7b1181124fc0dadc4ffef84,Greek Habitues - (Evosmos - Salonika) 16.18 28.09.wav,yes_first,source_or_event,0,-0.75,4.125,3.25,2.875,2.625,3.625,2.75,3.0
+e7b1181124fc0dadc4ffef84,Greek Habitues - (Evosmos - Salonika) 16.18 28.09.wav,no_first,source_or_event,0,1.0,6.5625,3.375,3.125,3.0,4.0,3.0,2.625
+dc50914f819d6791d4fea3e2,Greek Habitues - (Evosmos - Salonika) 16.18 28.09.wav,yes_first,source_or_event,1,0.0,-1.125,-0.625,-0.75,-0.75,-1.6875,-2.3125,-1.75
+dc50914f819d6791d4fea3e2,Greek Habitues - (Evosmos - Salonika) 16.18 28.09.wav,no_first,source_or_event,1,3.125,1.875,2.3125,2.375,2.6875,2.25,1.625,2.125
+50d7ea21d969b4940d582a09,House_kettle boil_whistle.wav,yes_first,time_pattern,0,-0.875,0.0,-0.375,-0.5,-0.5,-0.25,-0.25,-0.5
+50d7ea21d969b4940d582a09,House_kettle boil_whistle.wav,no_first,time_pattern,0,0.125,0.75,-0.875,-0.875,-0.75,-0.25,-0.5,-0.5
+010a0e384e86c37049bb400d,House_kettle boil_whistle.wav,yes_first,source_or_event,1,5.1875,-1.75,2.375,2.25,2.5,0.75,0.75,0.75
+010a0e384e86c37049bb400d,House_kettle boil_whistle.wav,no_first,source_or_event,1,3.75,-0.625,1.875,2.0,2.0,1.75,1.5,1.375
+4542fd4b934bad2058fbe2bc,Household - Atmos - Wind Through Window.wav,yes_first,source_or_event,0,3.3125,1.125,1.625,1.125,1.375,1.625,1.5,1.75
+4542fd4b934bad2058fbe2bc,Household - Atmos - Wind Through Window.wav,no_first,source_or_event,0,3.125,2.875,2.5,2.4375,2.5,2.375,2.3125,2.5
+e0ebb751aa20c7ec5992b5f1,Household - Atmos - Wind Through Window.wav,yes_first,acoustic_property,1,5.3125,0.375,2.8125,2.5,2.6875,1.875,1.75,1.625
+e0ebb751aa20c7ec5992b5f1,Household - Atmos - Wind Through Window.wav,no_first,acoustic_property,1,6.4375,3.75,3.875,3.625,3.6875,3.375,3.4375,3.625
+9720b519842b4787920d5ba6,IKEA_Cafeteria.wav,yes_first,source_or_event,0,6.1875,1.75,5.1875,4.5,4.4375,4.125,3.875,4.25
+9720b519842b4787920d5ba6,IKEA_Cafeteria.wav,no_first,source_or_event,0,3.375,1.625,2.375,2.375,1.875,1.625,1.625,1.5
+c34bf4f465b109c551ea14f5,IKEA_Cafeteria.wav,yes_first,scene_context,1,-2.0,-0.875,-1.4375,-1.9375,-1.5625,-1.5625,-1.75,-1.375
+c34bf4f465b109c551ea14f5,IKEA_Cafeteria.wav,no_first,scene_context,1,2.0,-0.25,0.125,0.625,0.25,-0.75,-0.875,-0.875
+9fec2b12a42d95780262565c,Icy rain.wav,yes_first,count_or_relation,0,1.125,0.25,0.25,0.125,0.375,-0.5,-0.75,-0.625
+9fec2b12a42d95780262565c,Icy rain.wav,no_first,count_or_relation,0,1.875,-0.25,0.125,0.25,0.375,-0.25,-0.375,-0.25
+568dbb315d93113df6088072,Icy rain.wav,yes_first,count_or_relation,1,-0.75,0.25,-0.875,-0.9375,-0.375,-2.3125,-2.4375,-1.6875
+568dbb315d93113df6088072,Icy rain.wav,no_first,count_or_relation,1,0.375,2.75,1.125,1.125,1.4375,0.625,0.375,1.375
+22abdf0fce352ea26f099fec,Idling Truck at Loading Dock.wav,yes_first,count_or_relation,0,2.0,-0.75,-1.125,-1.1875,-0.875,-2.0,-2.25,-2.5
+22abdf0fce352ea26f099fec,Idling Truck at Loading Dock.wav,no_first,count_or_relation,0,3.125,2.125,0.5,0.25,0.875,-0.125,-0.5,-0.375
+c902ea5f5739261eedf80799,Idling Truck at Loading Dock.wav,yes_first,source_or_event,1,1.625,-4.0,-2.5,-2.625,-2.25,-3.9375,-4.0,-3.4375
+c902ea5f5739261eedf80799,Idling Truck at Loading Dock.wav,no_first,source_or_event,1,4.625,-0.625,-0.25,-0.375,-0.0,-1.3125,-1.5,-1.0625
+074ce37aa739208218f46f5f,Index Card Flips (handle business paper mvmt) 02.wav,yes_first,source_or_event,0,1.125,-2.375,-3.8125,-3.6875,-3.4375,-4.0,-4.25,-3.8125
+074ce37aa739208218f46f5f,Index Card Flips (handle business paper mvmt) 02.wav,no_first,source_or_event,0,5.0625,1.75,-0.125,0.5,1.0,-0.25,-0.5,-1.125
+7cd5fe46c852d6128c6adca5,Index Card Flips (handle business paper mvmt) 02.wav,yes_first,source_or_event,1,1.0,-4.75,-3.5,-3.625,-3.5,-4.875,-5.0625,-4.375
+7cd5fe46c852d6128c6adca5,Index Card Flips (handle business paper mvmt) 02.wav,no_first,source_or_event,1,1.625,-2.375,-2.25,-1.875,-1.25,-2.5,-2.875,-3.25
+d7d2301cdc7f824982df24dd,Inner City Bees.wav,yes_first,source_or_event,0,-3.25,3.625,1.625,1.5,0.875,3.0,2.875,2.625
+d7d2301cdc7f824982df24dd,Inner City Bees.wav,no_first,source_or_event,0,0.875,3.625,1.625,1.5,1.125,2.25,2.375,2.375
+829deef15cc565371030f446,Inner City Bees.wav,yes_first,count_or_relation,1,3.0625,1.625,0.875,0.875,0.875,0.25,0.0,-0.125
+829deef15cc565371030f446,Inner City Bees.wav,no_first,count_or_relation,1,3.6875,3.125,1.875,1.875,2.125,1.5,1.25,1.375
+5d0aec5069042fc52fcb685b,Krankenwagen _ German Ambulances Passing by...wav,yes_first,source_or_event,0,4.25,5.0,5.375,5.625,5.8125,5.0625,5.0625,5.125
+5d0aec5069042fc52fcb685b,Krankenwagen _ German Ambulances Passing by...wav,no_first,source_or_event,0,3.75,6.8125,5.3125,5.9375,5.75,5.5,6.0,5.6875
+d7bf414d381b1135184ae470,Krankenwagen _ German Ambulances Passing by...wav,yes_first,source_or_event,1,1.375,-2.625,2.0625,1.9375,2.0625,-0.375,-0.75,-0.625
+d7bf414d381b1135184ae470,Krankenwagen _ German Ambulances Passing by...wav,no_first,source_or_event,1,5.375,0.75,4.9375,5.0,5.1875,3.875,3.9375,4.125
+6519d223cef8e1e2fd965289,Kung Fu Clothes Hits and Clothing Sounds.wav,yes_first,acoustic_property,0,-1.25,-0.375,-1.75,-1.75,-1.75,-1.375,-2.0,-1.75
+6519d223cef8e1e2fd965289,Kung Fu Clothes Hits and Clothing Sounds.wav,no_first,acoustic_property,0,3.0,2.75,2.125,2.125,2.125,2.5,2.375,2.125
+148b78147f1cd01a2a95b31e,Kung Fu Clothes Hits and Clothing Sounds.wav,yes_first,source_or_event,1,1.875,-5.9375,-4.5625,-4.9375,-4.5,-5.5625,-6.0,-5.875
+148b78147f1cd01a2a95b31e,Kung Fu Clothes Hits and Clothing Sounds.wav,no_first,source_or_event,1,3.5625,-1.5,-1.0,-1.0,-1.0,-1.25,-1.5,-1.625
+6e2304cad78cd99cf6a7ddbd,LA Rain.wav,yes_first,source_or_event,0,-3.25,-1.125,-2.875,-2.75,-3.0625,-2.375,-2.375,-2.6875
+6e2304cad78cd99cf6a7ddbd,LA Rain.wav,no_first,source_or_event,0,-1.0,0.25,-2.0,-2.0,-1.9375,-2.125,-2.125,-1.875
+acef4d2c732ba4794ede403c,LA Rain.wav,yes_first,source_or_event,1,4.25,-1.125,0.375,0.25,0.125,-0.75,-1.3125,-0.75
+acef4d2c732ba4794ede403c,LA Rain.wav,no_first,source_or_event,1,4.8125,2.125,1.375,1.125,1.5,0.875,0.375,1.375
+88d11cc998922bc4ade124b9,LakeSide2.wav,yes_first,source_or_event,0,-0.875,-1.125,-1.625,-1.8125,-1.625,-1.5,-2.5,-0.875
+88d11cc998922bc4ade124b9,LakeSide2.wav,no_first,source_or_event,0,-0.0,1.125,-1.125,-1.125,-1.25,-0.625,-1.5,-0.625
+515cae4b0d8d24c49e447e2a,LakeSide2.wav,yes_first,time_pattern,1,-1.1875,-4.5625,-2.75,-2.75,-2.5625,-2.5,-2.5,-2.5
+515cae4b0d8d24c49e447e2a,LakeSide2.wav,no_first,time_pattern,1,5.9375,0.25,2.3125,2.3125,2.5,1.75,1.5,1.75
+b9c144bf3e77f5c36e98572b,Library Ambience_large space.wav,yes_first,source_or_event,0,-2.0625,-0.875,-3.375,-3.1875,-3.0,-3.375,-3.375,-3.375
+b9c144bf3e77f5c36e98572b,Library Ambience_large space.wav,no_first,source_or_event,0,4.625,2.75,1.375,1.875,2.0625,1.25,1.125,1.375
+463c615eb29614e9f4007b67,Library Ambience_large space.wav,yes_first,source_or_event,1,1.25,-4.25,-4.0625,-4.375,-4.375,-4.25,-4.6875,-4.5
+463c615eb29614e9f4007b67,Library Ambience_large space.wav,no_first,source_or_event,1,5.1875,-0.75,1.75,2.0,1.875,0.25,-0.375,0.25
+7c4a825e1f6a9f379768ee60,Lincoln Nebraska Tornado 5 9 2016.wav,yes_first,source_or_event,0,1.875,3.75,3.125,3.125,3.1875,3.3125,3.375,3.25
+7c4a825e1f6a9f379768ee60,Lincoln Nebraska Tornado 5 9 2016.wav,no_first,source_or_event,0,5.0625,5.25,5.125,5.0,4.9375,5.25,5.4375,5.25
+383959fde09c46763f6d79b2,Lincoln Nebraska Tornado 5 9 2016.wav,yes_first,time_pattern,1,-2.1875,-2.25,-0.625,-0.75,-0.625,-0.625,-0.75,-1.0
+383959fde09c46763f6d79b2,Lincoln Nebraska Tornado 5 9 2016.wav,no_first,time_pattern,1,-0.5,-0.375,-0.0,0.125,-0.0,-0.0,0.125,-0.25
+22c2cdacfb330c54e88c2cf2,Lluvia 1.wav,yes_first,scene_context,0,1.4375,6.0625,4.0,3.875,3.75,4.75,4.9375,4.9375
+22c2cdacfb330c54e88c2cf2,Lluvia 1.wav,no_first,scene_context,0,0.875,5.9375,2.0,2.0,1.625,2.75,3.125,3.125
+843c525a8582f885a6aba71d,Lluvia 1.wav,yes_first,source_or_event,1,1.875,2.5,2.125,2.25,2.5,3.0,2.875,2.75
+843c525a8582f885a6aba71d,Lluvia 1.wav,no_first,source_or_event,1,4.5,3.75,3.125,3.25,3.625,3.0,3.125,3.25
+ece5a832ee9b0bbf199aeb74,Lots of Geese.wav,yes_first,source_or_event,0,2.25,5.75,6.875,6.875,5.875,6.8125,6.8125,7.125
+ece5a832ee9b0bbf199aeb74,Lots of Geese.wav,no_first,source_or_event,0,6.25,7.25,8.0625,7.9375,7.0625,6.9375,7.25,7.6875
+a261375609623fce9de34f50,Lots of Geese.wav,yes_first,source_or_event,1,5.5625,1.875,3.4375,3.0625,3.5625,0.625,0.75,1.4375
+a261375609623fce9de34f50,Lots of Geese.wav,no_first,source_or_event,1,3.25,1.75,0.4375,0.1875,0.625,-0.875,-0.625,-0.625
+26107e67793c4ad8ebaebdb9,MVI_4002-B.wav,yes_first,source_or_event,0,0.0,6.8125,3.4375,3.5,3.25,4.3125,4.75,5.3125
+26107e67793c4ad8ebaebdb9,MVI_4002-B.wav,no_first,source_or_event,0,4.6875,9.25,6.375,6.5625,6.25,7.75,7.875,7.75
+bd29cf3302974145cca65fdd,MVI_4002-B.wav,yes_first,source_or_event,1,5.0625,-4.1875,-1.25,-1.375,-0.375,-3.8125,-3.8125,-3.5
+bd29cf3302974145cca65fdd,MVI_4002-B.wav,no_first,source_or_event,1,6.75,1.25,2.9375,3.0625,3.5625,1.25,1.125,1.5625
+41be0ba25e99a540d29ca7a4,Mechanics_Old_Clock_Wind_And Work.wav,yes_first,source_or_event,0,-3.4375,-2.375,-2.4375,-2.375,-2.1875,-2.5,-2.25,-2.375
+41be0ba25e99a540d29ca7a4,Mechanics_Old_Clock_Wind_And Work.wav,no_first,source_or_event,0,-3.375,-1.625,-1.75,-1.6875,-1.5625,-1.5,-1.125,-1.375
+03761ec95c9766a30e0a2427,Mechanics_Old_Clock_Wind_And Work.wav,yes_first,source_or_event,1,5.6875,-2.25,2.25,2.0,2.25,-0.375,0.5,0.25
+03761ec95c9766a30e0a2427,Mechanics_Old_Clock_Wind_And Work.wav,no_first,source_or_event,1,5.0,-0.375,2.3125,2.3125,2.625,0.625,1.0,1.125
+c6e4e2a16ce9b9990645196f,Metal pipe hitting the ground.wav,yes_first,source_or_event,0,2.0,5.1875,4.3125,4.0,4.25,4.75,4.75,5.0
+c6e4e2a16ce9b9990645196f,Metal pipe hitting the ground.wav,no_first,source_or_event,0,4.1875,6.0,4.5,4.5625,4.9375,5.125,5.375,4.9375
+a2f736797f1e59746e7e8546,Metal pipe hitting the ground.wav,yes_first,source_or_event,1,0.125,1.25,0.0,-0.125,-0.25,0.0,-0.75,-0.25
+a2f736797f1e59746e7e8546,Metal pipe hitting the ground.wav,no_first,source_or_event,1,2.125,2.75,2.375,2.375,2.25,1.875,1.75,1.625
+f9213d94431da8e40222989a,Metal_Hit_01.wav,yes_first,source_or_event,0,3.1875,4.8125,4.5625,4.375,4.25,5.25,5.0625,5.3125
+f9213d94431da8e40222989a,Metal_Hit_01.wav,no_first,source_or_event,0,4.9375,6.1875,5.75,5.6875,5.0,6.9375,7.125,6.6875
+8fcb5d1521dfe45123374067,Metal_Hit_01.wav,yes_first,source_or_event,1,2.25,-2.75,0.0,0.25,0.75,-3.5625,-2.9375,-3.0
+8fcb5d1521dfe45123374067,Metal_Hit_01.wav,no_first,source_or_event,1,4.25,-1.0,-0.0,0.125,0.5,-1.125,-1.0,-1.0625
+b6480df909ae958a8d6cf52d,Metallic  Gate.wav,yes_first,source_or_event,0,3.625,4.9375,2.25,2.625,2.75,2.625,2.625,2.5
+b6480df909ae958a8d6cf52d,Metallic  Gate.wav,no_first,source_or_event,0,2.125,2.375,1.0,1.125,1.375,1.0,1.125,1.0
+75144957a43e698d68d44508,Metallic  Gate.wav,yes_first,source_or_event,1,-3.75,-3.8125,-3.6875,-3.6875,-3.6875,-4.25,-4.1875,-4.375
+75144957a43e698d68d44508,Metallic  Gate.wav,no_first,source_or_event,1,0.625,-3.375,-3.75,-3.75,-3.4375,-3.75,-3.875,-4.0625
+3001d66aea09bad93b0ecbaa,Morsecode - SOS MAYDAY - 988 Hz Tone.wav,yes_first,source_or_event,0,0.625,1.75,0.375,0.25,0.25,0.75,0.25,0.5
+3001d66aea09bad93b0ecbaa,Morsecode - SOS MAYDAY - 988 Hz Tone.wav,no_first,source_or_event,0,2.0,3.8125,2.5,2.5,2.6875,3.25,3.3125,2.875
+44300643ddb7dae5b2759a66,Morsecode - SOS MAYDAY - 988 Hz Tone.wav,yes_first,source_or_event,1,2.125,-3.875,-0.375,-0.5,-0.125,-2.625,-3.0,-2.125
+44300643ddb7dae5b2759a66,Morsecode - SOS MAYDAY - 988 Hz Tone.wav,no_first,source_or_event,1,3.5,-0.625,2.5,2.625,2.75,1.375,1.25,1.25
+ac5cd54f66f22a58f3c58b86,Muddy_steps_bush_birds_singing.wav,yes_first,source_or_event,0,5.0625,5.75,3.25,3.875,3.75,3.75,4.4375,4.875
+ac5cd54f66f22a58f3c58b86,Muddy_steps_bush_birds_singing.wav,no_first,source_or_event,0,5.75,7.3125,2.5,2.75,2.75,2.625,2.375,3.375
+d33e6316572783bf770d44a4,Muddy_steps_bush_birds_singing.wav,yes_first,scene_context,1,-1.375,-3.0,-2.3125,-2.3125,-1.9375,-2.8125,-2.75,-3.125
+d33e6316572783bf770d44a4,Muddy_steps_bush_birds_singing.wav,no_first,scene_context,1,1.25,-4.25,-3.5625,-3.5625,-3.0625,-3.9375,-4.75,-4.3125
+06249267b976f8952610aff0,Mug in sink.wav,yes_first,source_or_event,0,4.6875,6.125,4.5625,4.875,5.1875,5.875,5.6875,5.9375
+06249267b976f8952610aff0,Mug in sink.wav,no_first,source_or_event,0,0.5,3.75,0.875,1.375,1.375,2.75,2.125,2.5
+cdf905181f14564f313faabe,Mug in sink.wav,yes_first,source_or_event,1,-2.8125,-1.75,-3.625,-3.5625,-3.4375,-4.625,-4.8125,-4.375
+cdf905181f14564f313faabe,Mug in sink.wav,no_first,source_or_event,1,4.6875,-0.375,0.125,0.375,0.5,-1.0,-1.125,-1.0625
+e6d0e97d91ac775059bcb449,Mulholland Memorial Fountain Los Angeles.wav,yes_first,acoustic_property,0,3.25,3.625,2.75,2.75,3.1875,1.5625,1.125,1.25
+e6d0e97d91ac775059bcb449,Mulholland Memorial Fountain Los Angeles.wav,no_first,acoustic_property,0,3.4375,2.625,1.9375,1.9375,2.1875,1.1875,1.1875,1.5
+82d8e9803d0eb12c6a902f99,Mulholland Memorial Fountain Los Angeles.wav,yes_first,scene_context,1,-1.125,-3.875,-2.5625,-2.5625,-2.375,-3.5,-3.125,-3.1875
+82d8e9803d0eb12c6a902f99,Mulholland Memorial Fountain Los Angeles.wav,no_first,scene_context,1,1.375,-0.625,-0.5625,-0.625,-0.625,-1.5,-1.125,-1.125
+87501e467789c1c9f245ce0a,Naoshima-squeeking.wav,yes_first,source_or_event,0,-2.25,0.75,-2.0,-2.0,-2.25,-1.875,-1.625,-1.625
+87501e467789c1c9f245ce0a,Naoshima-squeeking.wav,no_first,source_or_event,0,-2.75,-0.875,-4.0,-3.875,-3.75,-4.5,-4.375,-4.125
+a1d30d2852f3ce1903b01749,Naoshima-squeeking.wav,yes_first,source_or_event,1,-3.875,-4.625,-4.1875,-4.25,-4.25,-4.9375,-4.625,-4.4375
+a1d30d2852f3ce1903b01749,Naoshima-squeeking.wav,no_first,source_or_event,1,0.625,-2.375,-1.375,-1.375,-1.125,-2.25,-2.25,-2.25
+96989d62c2126b093b1ffdb4,Neighbourhood evening ambience.wav,yes_first,scene_context,0,1.0,5.4375,2.8125,3.1875,3.1875,5.125,5.5,5.125
+96989d62c2126b093b1ffdb4,Neighbourhood evening ambience.wav,no_first,scene_context,0,1.25,5.375,1.75,2.625,2.8125,3.875,4.5,3.8125
+3f66c443e0f6b8a156c12736,Neighbourhood evening ambience.wav,yes_first,source_or_event,1,0.5,-3.5,-4.625,-4.6875,-4.3125,-5.1875,-5.375,-5.0625
+3f66c443e0f6b8a156c12736,Neighbourhood evening ambience.wav,no_first,source_or_event,1,1.5,-1.375,-2.75,-3.0,-2.75,-3.4375,-3.75,-3.375
+d7ab62d177075b335164ada3,Night Sounds in Orissa Village.wav,yes_first,count_or_relation,0,0.125,-3.875,-2.8125,-3.0,-2.5,-4.3125,-4.6875,-4.25
+d7ab62d177075b335164ada3,Night Sounds in Orissa Village.wav,no_first,count_or_relation,0,1.875,-1.5,-0.625,-0.6875,-0.625,-1.6875,-1.875,-1.5
+171382c6f2f19502e3258230,Night Sounds in Orissa Village.wav,yes_first,acoustic_property,1,4.9375,-2.0,1.0,0.875,1.25,-2.0625,-2.6875,-1.875
+171382c6f2f19502e3258230,Night Sounds in Orissa Village.wav,no_first,acoustic_property,1,6.0625,1.25,3.0625,3.125,3.1875,1.875,1.75,2.5
+404cd42581baaf05b57075a0,Nightingale.wav,yes_first,count_or_relation,0,3.5625,5.5625,4.875,5.0,4.875,4.75,4.9375,5.0625
+404cd42581baaf05b57075a0,Nightingale.wav,no_first,count_or_relation,0,3.875,7.6875,6.0625,6.1875,5.75,6.875,6.875,6.6875
+76cb81b1bc5800734b6fbcf5,Nightingale.wav,yes_first,source_or_event,1,-3.0625,-7.0,-3.5,-3.4375,-3.25,-6.125,-6.0,-5.125
+76cb81b1bc5800734b6fbcf5,Nightingale.wav,no_first,source_or_event,1,1.75,-2.875,1.625,2.0,1.375,-1.375,-0.875,-0.25
+cd6ec1612086f643aee7c1b9,OiseauNuit1.wav,yes_first,source_or_event,0,-2.75,3.125,1.25,1.25,-0.125,1.25,1.0,1.125
+cd6ec1612086f643aee7c1b9,OiseauNuit1.wav,no_first,source_or_event,0,2.375,3.5,2.5,2.9375,2.125,2.75,3.0,3.125
+1e648049d28d5fcfb1f17f46,OiseauNuit1.wav,yes_first,source_or_event,1,-1.875,-2.3125,-2.1875,-2.4375,-2.125,-3.5,-3.75,-3.125
+1e648049d28d5fcfb1f17f46,OiseauNuit1.wav,no_first,source_or_event,1,3.0625,-0.0,0.875,1.0625,1.25,-0.0,-0.125,-0.25
+bd351286a9d07d01ea1c249d,Old moped.wav,yes_first,time_pattern,0,-3.8125,2.625,0.25,-1.375,-2.875,3.5,3.125,3.75
+bd351286a9d07d01ea1c249d,Old moped.wav,no_first,time_pattern,0,-3.4375,3.625,0.375,-0.75,-2.125,2.5,2.25,2.375
+e3917b77a55ecbc4eadcdd52,Old moped.wav,yes_first,source_or_event,1,-1.125,-1.125,-2.125,-2.125,-2.0,-2.25,-2.375,-2.25
+e3917b77a55ecbc4eadcdd52,Old moped.wav,no_first,source_or_event,1,2.75,0.625,1.75,1.75,2.0,1.5,1.375,1.375
+92bf0f57fd6082574aede6b3,OrchestraTuning2.wav,yes_first,source_or_event,0,-0.625,3.875,0.75,1.25,1.0,2.375,2.25,2.5
+92bf0f57fd6082574aede6b3,OrchestraTuning2.wav,no_first,source_or_event,0,1.0,6.75,2.75,3.0,2.4375,4.0625,4.125,3.875
+72225e669bc1a0df85a0912a,OrchestraTuning2.wav,yes_first,source_or_event,1,3.5625,-2.625,-0.6875,-1.0625,0.0,-1.4375,-2.4375,-1.5625
+72225e669bc1a0df85a0912a,OrchestraTuning2.wav,no_first,source_or_event,1,2.0625,0.625,0.875,0.625,1.125,-0.125,-0.125,-0.125
+cba5471f93a5f3d3214f8b42,Outside wind.wav,yes_first,scene_context,0,1.0,6.1875,2.3125,2.625,2.5,3.25,3.5,3.3125
+cba5471f93a5f3d3214f8b42,Outside wind.wav,no_first,scene_context,0,1.25,5.75,1.875,1.8125,1.5625,2.75,3.0625,3.0
+9940e0f1559612e60632a988,Outside wind.wav,yes_first,source_or_event,1,3.0625,1.5,0.125,0.0,0.5,-1.5625,-1.5625,-1.125
+9940e0f1559612e60632a988,Outside wind.wav,no_first,source_or_event,1,4.3125,1.75,1.625,1.75,2.0,0.125,0.25,0.75
+6bdc76128fcef1c7c9d6736f,PIT-ROIG 0.12-0.17.wav,yes_first,source_or_event,0,2.5,3.875,3.625,2.375,1.875,3.5625,3.5,2.375
+6bdc76128fcef1c7c9d6736f,PIT-ROIG 0.12-0.17.wav,no_first,source_or_event,0,2.625,6.0625,3.3125,3.375,3.125,4.4375,4.5625,4.125
+da0918add041331fd8b7adda,PIT-ROIG 0.12-0.17.wav,yes_first,source_or_event,1,0.25,-1.875,-3.125,-3.1875,-3.0625,-3.375,-4.0,-3.9375
+da0918add041331fd8b7adda,PIT-ROIG 0.12-0.17.wav,no_first,source_or_event,1,3.5,-0.25,-1.75,-1.6875,-1.25,-1.875,-2.125,-1.75
+0f96c0f49d3ea77922554829,Pag_Starigrad_crickets_birds_2.wav,yes_first,count_or_relation,0,0.0,2.75,-0.25,-0.25,-0.125,0.375,0.0,1.0
+0f96c0f49d3ea77922554829,Pag_Starigrad_crickets_birds_2.wav,no_first,count_or_relation,0,1.75,2.875,0.625,0.75,0.5,0.75,0.875,1.125
+277142f4835549f7e49acbb5,Pag_Starigrad_crickets_birds_2.wav,yes_first,source_or_event,1,0.625,-4.0,-1.5,-1.625,-1.0625,-3.375,-3.125,-3.1875
+277142f4835549f7e49acbb5,Pag_Starigrad_crickets_birds_2.wav,no_first,source_or_event,1,3.5625,-2.5,0.1875,0.1875,0.625,-2.4375,-2.3125,-2.125
+7819a3955ca7394e6822bdaf,"Parking Garage - Ambiance, Electrical Hum 1.wav",yes_first,time_pattern,0,-5.75,3.875,-1.875,-2.125,-2.5625,1.75,1.125,0.5
+7819a3955ca7394e6822bdaf,"Parking Garage - Ambiance, Electrical Hum 1.wav",no_first,time_pattern,0,-3.125,3.75,0.25,0.375,-0.25,1.75,1.75,1.125
+f528f9a15c6f18832cb488c2,"Parking Garage - Ambiance, Electrical Hum 1.wav",yes_first,source_or_event,1,2.5625,-5.125,-2.125,-2.125,-1.5625,-3.375,-3.5,-3.3125
+f528f9a15c6f18832cb488c2,"Parking Garage - Ambiance, Electrical Hum 1.wav",no_first,source_or_event,1,6.3125,-1.25,1.3125,1.5,1.9375,0.125,0.125,-0.0
+38e78ef7c14fa274c1f79e37,PauseConference_youngerPeople.wav,yes_first,count_or_relation,0,3.375,7.5625,6.875,6.9375,6.625,6.5625,6.9375,6.875
+38e78ef7c14fa274c1f79e37,PauseConference_youngerPeople.wav,no_first,count_or_relation,0,3.9375,8.1875,5.5,6.125,5.6875,6.5,6.9375,6.3125
+e9a0da193f073bdbb5dbccfe,PauseConference_youngerPeople.wav,yes_first,count_or_relation,1,-6.75,-8.5625,-6.9375,-7.5,-6.75,-8.1875,-8.375,-7.6875
+e9a0da193f073bdbb5dbccfe,PauseConference_youngerPeople.wav,no_first,count_or_relation,1,-0.875,-2.375,-0.5,-0.625,-0.25,-0.875,-1.25,-1.0
+a7bc23120358c91ad768177a,RKeaton_EMF366_12_Tearing Thick Paper.wav,yes_first,source_or_event,0,1.25,3.125,2.625,2.625,2.625,3.0,2.75,2.875
+a7bc23120358c91ad768177a,RKeaton_EMF366_12_Tearing Thick Paper.wav,no_first,source_or_event,0,0.75,4.125,1.875,1.75,1.625,2.875,2.875,2.5
+e58fee711ce1c485d0b644c2,RKeaton_EMF366_12_Tearing Thick Paper.wav,yes_first,source_or_event,1,3.6875,1.75,3.5625,3.5,3.5625,2.1875,2.3125,2.75
+e58fee711ce1c485d0b644c2,RKeaton_EMF366_12_Tearing Thick Paper.wav,no_first,source_or_event,1,4.4375,3.25,3.4375,3.3125,3.4375,3.3125,3.0,3.0625
+6c8bf32704c69a4f37032e96,ROLDAN_ANDRES_GEO_FONIA_AGUA_DUCHA.wav,yes_first,source_or_event,0,0.875,3.375,2.0,1.75,2.0,2.75,2.375,2.625
+6c8bf32704c69a4f37032e96,ROLDAN_ANDRES_GEO_FONIA_AGUA_DUCHA.wav,no_first,source_or_event,0,2.375,4.375,2.75,3.1875,3.0,4.4375,4.75,5.0625
+b711841b883bd73bd0852bb0,ROLDAN_ANDRES_GEO_FONIA_AGUA_DUCHA.wav,yes_first,source_or_event,1,-1.125,-2.9375,-1.625,-1.5625,-1.375,-3.25,-3.125,-3.1875
+b711841b883bd73bd0852bb0,ROLDAN_ANDRES_GEO_FONIA_AGUA_DUCHA.wav,no_first,source_or_event,1,2.25,0.25,-1.0,-0.75,-0.75,-1.875,-1.8125,-1.625
+9400db9deb06f04260040426,RadioFan.wav,yes_first,count_or_relation,0,2.5625,3.875,3.4375,4.0625,3.875,3.875,4.6875,4.25
+9400db9deb06f04260040426,RadioFan.wav,no_first,count_or_relation,0,5.1875,6.0625,4.125,4.8125,4.6875,3.875,4.9375,4.625
+a5f7075cfc898721d07769a8,RadioFan.wav,yes_first,source_or_event,1,3.625,-0.125,-1.25,-1.375,-0.375,-2.75,-2.8125,-2.4375
+a5f7075cfc898721d07769a8,RadioFan.wav,no_first,source_or_event,1,6.125,2.125,2.6875,3.375,3.5,-0.125,0.375,0.875
+188a6d025c5bcd1d6f8401c8,Rain - 1.wav,yes_first,source_or_event,0,0.75,7.3125,5.625,5.5625,5.5625,6.4375,6.375,6.1875
+188a6d025c5bcd1d6f8401c8,Rain - 1.wav,no_first,source_or_event,0,1.0,6.375,3.9375,4.0625,3.8125,4.3125,4.5,4.4375
+0da3bfcd3c757c09148bf8b9,Rain - 1.wav,yes_first,time_pattern,1,4.75,4.5,3.0,3.0,3.1875,3.625,3.375,3.25
+0da3bfcd3c757c09148bf8b9,Rain - 1.wav,no_first,time_pattern,1,1.0,2.5,1.625,1.625,1.625,1.5,1.625,1.75
+7b120a8c32e4956679cb1946,Rain and Storm.wav,yes_first,source_or_event,0,5.0625,7.0625,5.375,5.5625,5.5,5.25,5.8125,5.4375
+7b120a8c32e4956679cb1946,Rain and Storm.wav,no_first,source_or_event,0,3.125,6.75,4.6875,4.6875,4.5625,5.125,5.4375,5.375
+e9e7290b0242ea8159adf817,Rain and Storm.wav,yes_first,time_pattern,1,-5.0,-4.75,-4.9375,-4.9375,-4.6875,-4.8125,-5.25,-5.5
+e9e7290b0242ea8159adf817,Rain and Storm.wav,no_first,time_pattern,1,0.625,-0.5,-1.375,-1.5,-1.625,-1.25,-1.375,-1.5
+acee60eb5b06c381926bf150,Rain_inside_of_a_Car.wav,yes_first,time_pattern,0,-5.625,-3.625,-3.4375,-3.5,-3.5625,-1.875,-2.25,-2.625
+acee60eb5b06c381926bf150,Rain_inside_of_a_Car.wav,no_first,time_pattern,0,-4.4375,-1.875,-3.25,-3.375,-3.75,-2.0,-1.75,-2.0
+bf1db53edb54ff2cbe3cab76,Rain_inside_of_a_Car.wav,yes_first,time_pattern,1,0.125,0.5,1.75,1.5,1.75,1.875,1.5,1.75
+bf1db53edb54ff2cbe3cab76,Rain_inside_of_a_Car.wav,no_first,time_pattern,1,1.375,1.75,1.0,1.125,1.125,1.0,1.0,1.125
+acea9105955de9be67ae9a74,Rainforest Morning Chorus.wav,yes_first,count_or_relation,0,2.875,4.25,4.0625,4.125,3.9375,3.875,3.625,3.75
+acea9105955de9be67ae9a74,Rainforest Morning Chorus.wav,no_first,count_or_relation,0,2.9375,8.6875,3.875,4.5625,3.875,5.0625,5.25,5.125
+0d6e5f99c03f35bb3b027aed,Rainforest Morning Chorus.wav,yes_first,source_or_event,1,-0.875,-2.875,-3.0625,-3.0625,-2.5625,-3.4375,-3.75,-3.8125
+0d6e5f99c03f35bb3b027aed,Rainforest Morning Chorus.wav,no_first,source_or_event,1,3.1875,-0.375,0.375,0.75,0.625,-0.375,-0.625,-0.875
+d5a0c84d636d05b4c0f47732,RemoteControl.Antique.Zenith.wav,yes_first,source_or_event,0,-0.75,1.875,-0.875,-0.375,-0.75,0.25,0.375,0.375
+d5a0c84d636d05b4c0f47732,RemoteControl.Antique.Zenith.wav,no_first,source_or_event,0,-1.0,1.875,1.5,1.625,1.375,1.125,1.125,1.25
+73fbcc94dfe64228668c6575,RemoteControl.Antique.Zenith.wav,yes_first,source_or_event,1,4.6875,-2.0,-0.375,-0.375,0.75,-2.5,-2.625,-2.1875
+73fbcc94dfe64228668c6575,RemoteControl.Antique.Zenith.wav,no_first,source_or_event,1,4.5625,-0.0,2.125,2.25,2.5625,1.0,0.75,0.625
+2b4e3ddfcf4659bbba40baf8,Rishikesh Aarati.wav,yes_first,source_or_event,0,4.1875,7.1875,4.8125,4.9375,4.625,4.9375,5.125,4.375
+2b4e3ddfcf4659bbba40baf8,Rishikesh Aarati.wav,no_first,source_or_event,0,4.3125,4.5,2.125,2.5625,2.625,2.1875,2.1875,1.75
+2b5b9c6bedc745593a761174,Rishikesh Aarati.wav,yes_first,count_or_relation,1,3.6875,-3.125,-1.8125,-1.8125,-1.5625,-3.5,-3.625,-3.9375
+2b5b9c6bedc745593a761174,Rishikesh Aarati.wav,no_first,count_or_relation,1,2.625,-1.0,-0.875,-0.75,-0.375,-2.0,-2.0,-2.125
+51d14fd2a7d9d57221932252,Rocks - hits.wav,yes_first,source_or_event,0,2.25,3.5,1.125,0.875,1.0,1.75,1.875,2.0
+51d14fd2a7d9d57221932252,Rocks - hits.wav,no_first,source_or_event,0,4.1875,5.3125,3.625,3.625,3.8125,4.375,4.5625,4.125
+2d2b6148547fe8b968a27144,Rocks - hits.wav,yes_first,source_or_event,1,1.375,-4.25,-1.75,-1.875,-1.375,-4.25,-4.6875,-3.9375
+2d2b6148547fe8b968a27144,Rocks - hits.wav,no_first,source_or_event,1,5.6875,-0.125,2.25,2.25,2.75,0.5,0.5,0.375
+9f1c269a5e57d675a7a8ea65,Room-tone rain-drips 1m 161015_1013.wav,yes_first,acoustic_property,0,-3.3125,-5.0,-2.125,-1.9375,-2.1875,-2.5,-2.25,-2.25
+9f1c269a5e57d675a7a8ea65,Room-tone rain-drips 1m 161015_1013.wav,no_first,acoustic_property,0,0.5,-0.0,1.875,1.875,1.875,1.625,1.75,2.0
+47342ac61fc620dc8e6f6426,Room-tone rain-drips 1m 161015_1013.wav,yes_first,source_or_event,1,2.0,0.375,-0.125,-0.125,0.25,-0.25,-1.0,-0.375
+47342ac61fc620dc8e6f6426,Room-tone rain-drips 1m 161015_1013.wav,no_first,source_or_event,1,4.125,3.5625,1.5625,1.625,1.875,1.0,0.875,1.5
+2192e2a86b0981fae459a43f,SCC CLAPTER 20101210.wav,yes_first,source_or_event,0,5.125,5.75,6.0,5.5,5.125,4.375,5.25,5.625
+2192e2a86b0981fae459a43f,SCC CLAPTER 20101210.wav,no_first,source_or_event,0,4.75,7.0,5.1875,5.25,4.6875,4.625,4.9375,5.25
+31ed63a21a7cb76cb91bdc0f,SCC CLAPTER 20101210.wav,yes_first,scene_context,1,2.0,-1.25,-0.5,-0.5,0.0,-0.875,-1.25,-1.25
+31ed63a21a7cb76cb91bdc0f,SCC CLAPTER 20101210.wav,no_first,scene_context,1,-0.0,1.25,-0.75,-0.5,-0.625,-0.25,-0.125,-0.625
+279cbc9397aed91f8babdb46,STE-017 traffic bus stop.wav,yes_first,source_or_event,0,4.125,7.0625,5.5,5.8125,5.75,6.6875,5.8125,5.75
+279cbc9397aed91f8babdb46,STE-017 traffic bus stop.wav,no_first,source_or_event,0,4.3125,7.1875,4.25,4.75,4.875,5.0625,3.9375,4.25
+37c23998d4ffab2c5c4e15d7,STE-017 traffic bus stop.wav,yes_first,source_or_event,1,3.5,-1.5,-1.0625,-1.75,-1.5625,-2.125,-1.9375,-1.75
+37c23998d4ffab2c5c4e15d7,STE-017 traffic bus stop.wav,no_first,source_or_event,1,5.75,1.875,2.3125,2.0,2.5625,1.125,1.0,1.625
+d0f039604b33255e0e54e9fc,Ship Fender.wav,yes_first,source_or_event,0,4.125,4.375,4.75,5.0625,4.8125,5.25,5.1875,5.1875
+d0f039604b33255e0e54e9fc,Ship Fender.wav,no_first,source_or_event,0,4.125,2.5,3.125,3.0625,3.1875,2.0,2.25,2.125
+cf0739b33bb23415be3aae26,Ship Fender.wav,yes_first,source_or_event,1,-1.5,-3.125,0.125,-0.125,0.375,0.5,-0.25,-0.25
+cf0739b33bb23415be3aae26,Ship Fender.wav,no_first,source_or_event,1,-4.3125,-4.125,-4.125,-4.375,-3.9375,-4.25,-4.5,-4.5
+2faa9e10eb8f4a976b248ad7,Short Hailstorm.wav,yes_first,source_or_event,0,-0.75,-1.125,-0.375,-0.25,-0.375,-0.375,-0.625,-0.25
+2faa9e10eb8f4a976b248ad7,Short Hailstorm.wav,no_first,source_or_event,0,1.125,1.0,1.125,1.125,1.125,1.125,1.25,1.25
+cfb56ccd011f92759e8a4540,Short Hailstorm.wav,yes_first,source_or_event,1,7.5,1.25,3.25,3.125,3.5,1.625,1.625,1.625
+cfb56ccd011f92759e8a4540,Short Hailstorm.wav,no_first,source_or_event,1,7.4375,4.375,5.4375,5.3125,5.6875,2.75,3.125,3.375
+f66f4a74f34de0cb2fe0618e,Shower 2.wav,yes_first,source_or_event,0,-2.5,0.25,-2.1875,-1.875,-1.875,-1.375,-1.5,-1.625
+f66f4a74f34de0cb2fe0618e,Shower 2.wav,no_first,source_or_event,0,-3.375,0.25,-2.5,-2.5,-2.75,-2.0,-1.875,-2.125
+a76c5fcab2e615fabd4f5c69,Shower 2.wav,yes_first,count_or_relation,1,3.8125,0.125,2.25,2.375,2.625,-0.625,-0.875,-0.5
+a76c5fcab2e615fabd4f5c69,Shower 2.wav,no_first,count_or_relation,1,4.0,3.25,2.375,2.5,2.875,1.375,1.25,1.75
+2cb268c8db417642f33875ea,Shower Running 02.wav,yes_first,source_or_event,0,3.5625,6.5625,5.875,6.125,5.6875,5.9375,5.9375,6.1875
+2cb268c8db417642f33875ea,Shower Running 02.wav,no_first,source_or_event,0,0.125,4.375,1.875,2.0,1.875,2.0,1.625,2.125
+7125bf87c1572fcbc8440faf,Shower Running 02.wav,yes_first,source_or_event,1,0.125,-2.0,-2.3125,-2.5,-2.0,-3.6875,-3.375,-3.5
+7125bf87c1572fcbc8440faf,Shower Running 02.wav,no_first,source_or_event,1,-0.25,0.125,-1.125,-1.125,-1.0,-1.625,-1.625,-1.5
+2ecc0760a5ced69285a5c8be,Silencyo_RAIN_NIGHT_Village_CloseUp_Drips_Gutter_MSd.wav,yes_first,time_pattern,0,0.375,4.125,0.25,0.5,0.375,2.125,2.25,2.375
+2ecc0760a5ced69285a5c8be,Silencyo_RAIN_NIGHT_Village_CloseUp_Drips_Gutter_MSd.wav,no_first,time_pattern,0,1.75,3.75,2.25,2.25,2.125,3.0,2.625,2.875
+a50d4dc26ecd67b5f0ffdefe,Silencyo_RAIN_NIGHT_Village_CloseUp_Drips_Gutter_MSd.wav,yes_first,source_or_event,1,2.0625,-3.0625,-2.0625,-2.125,-1.5625,-3.0,-3.3125,-3.125
+a50d4dc26ecd67b5f0ffdefe,Silencyo_RAIN_NIGHT_Village_CloseUp_Drips_Gutter_MSd.wav,no_first,source_or_event,1,3.8125,-0.875,-0.0,0.25,0.5,-1.25,-1.5,-1.375
+b34ac866e8b66e946fb3c9fb,SilverStarSearchAndRescue.wav,yes_first,time_pattern,0,2.875,4.375,3.25,3.125,3.125,3.375,3.5,3.375
+b34ac866e8b66e946fb3c9fb,SilverStarSearchAndRescue.wav,no_first,time_pattern,0,1.0,2.125,0.625,0.625,0.75,0.75,0.875,0.75
+c6521bf94fa708da8792e76d,SilverStarSearchAndRescue.wav,yes_first,source_or_event,1,-1.0,-2.75,-2.8125,-3.25,-2.5,-4.375,-4.8125,-3.6875
+c6521bf94fa708da8792e76d,SilverStarSearchAndRescue.wav,no_first,source_or_event,1,-0.0,-1.5,-1.625,-1.875,-1.6875,-2.75,-2.875,-2.375
+243994dcdbeb0403ebac6e3e,Slushing in mouth.wav,yes_first,source_or_event,0,3.4375,4.875,2.875,2.75,2.625,3.125,2.875,2.875
+243994dcdbeb0403ebac6e3e,Slushing in mouth.wav,no_first,source_or_event,0,1.375,2.125,1.0,1.0,0.875,1.375,1.5,1.625
+a86e35a1378ae531f3f44964,Slushing in mouth.wav,yes_first,source_or_event,1,6.8125,4.75,4.5625,4.375,4.5,4.125,4.125,4.875
+a86e35a1378ae531f3f44964,Slushing in mouth.wav,no_first,source_or_event,1,1.25,-1.25,-0.625,-0.875,-0.875,-0.625,-0.625,0.5
+42dcc91357143a94fba51064,So_little_time_so_many_frequencies.wav,yes_first,source_or_event,0,-1.875,-0.5,-2.0,-2.125,-2.375,-1.0,-1.8125,-1.5625
+42dcc91357143a94fba51064,So_little_time_so_many_frequencies.wav,no_first,source_or_event,0,1.4375,2.625,-1.25,-1.875,-1.6875,-0.625,-1.375,-0.75
+60965b3613cbfbe5977e178b,So_little_time_so_many_frequencies.wav,yes_first,source_or_event,1,4.125,0.75,0.9375,0.8125,0.625,0.875,0.5625,0.9375
+60965b3613cbfbe5977e178b,So_little_time_so_many_frequencies.wav,no_first,source_or_event,1,3.1875,1.25,1.0625,0.875,1.1875,-0.375,-0.5,0.25
+070fa1e179e47ff78bb16ee6,SonicSnap_GPSUK_Cockerel.wav,yes_first,source_or_event,0,0.25,-2.25,-2.5,-2.625,-2.0,-5.0625,-5.125,-5.3125
+070fa1e179e47ff78bb16ee6,SonicSnap_GPSUK_Cockerel.wav,no_first,source_or_event,0,0.9375,-0.125,-0.625,-0.5,-0.8125,-1.25,-1.625,-2.1875
+874d6ccd04b2daf864050af0,SonicSnap_GPSUK_Cockerel.wav,yes_first,source_or_event,1,3.0,2.0,-1.125,0.0,0.75,-1.875,-2.625,-2.1875
+874d6ccd04b2daf864050af0,SonicSnap_GPSUK_Cockerel.wav,no_first,source_or_event,1,2.625,3.75,0.25,0.75,0.875,0.75,0.125,-0.625
+628ab0407ab4035c490f85f4,Sound_FX_Ambient_Street_cars+passing_by.wav,yes_first,source_or_event,0,-0.375,1.25,-1.0,-1.875,-2.5625,0.875,0.875,0.625
+628ab0407ab4035c490f85f4,Sound_FX_Ambient_Street_cars+passing_by.wav,no_first,source_or_event,0,6.5,5.75,3.375,2.75,2.875,4.0625,4.125,4.1875
+7c6426128b8bc7de9c160406,Sound_FX_Ambient_Street_cars+passing_by.wav,yes_first,scene_context,1,0.5,-2.25,-0.5625,-1.25,-1.375,-0.25,-0.25,-0.5
+7c6426128b8bc7de9c160406,Sound_FX_Ambient_Street_cars+passing_by.wav,no_first,scene_context,1,-0.25,1.25,1.375,1.375,1.0,1.125,1.375,0.5
+96f7ac4591934877a1eb5c8f,Storm sirens with dog bark at end 050627 24 bit.wav,yes_first,source_or_event,0,4.375,4.125,3.125,2.8125,3.5,3.375,2.9375,3.25
+96f7ac4591934877a1eb5c8f,Storm sirens with dog bark at end 050627 24 bit.wav,no_first,source_or_event,0,1.8125,3.625,2.0,2.0,1.8125,2.0,2.0625,2.0
+556f9627476a20e6998f1a4f,Storm sirens with dog bark at end 050627 24 bit.wav,yes_first,source_or_event,1,0.0,0.75,0.5,0.25,0.75,1.375,0.375,0.875
+556f9627476a20e6998f1a4f,Storm sirens with dog bark at end 050627 24 bit.wav,no_first,source_or_event,1,3.6875,1.5,1.75,1.6875,1.875,1.625,1.375,1.75
+6cbc78f1fa2814f0ab1515ab,Street Noise - Cars - Ball Bouncing indistinct voices.wav,yes_first,source_or_event,0,0.5,0.125,-2.875,-2.875,-2.0,-3.375,-1.875,-3.875
+6cbc78f1fa2814f0ab1515ab,Street Noise - Cars - Ball Bouncing indistinct voices.wav,no_first,source_or_event,0,-1.0,-0.25,-3.125,-3.0,-2.25,-3.5,-2.25,-3.75
+524a4c9a5dcdaeb3d83161ea,Street Noise - Cars - Ball Bouncing indistinct voices.wav,yes_first,source_or_event,1,0.875,-1.25,-3.4375,-3.5,-0.5,-3.9375,-4.0625,-5.375
+524a4c9a5dcdaeb3d83161ea,Street Noise - Cars - Ball Bouncing indistinct voices.wav,no_first,source_or_event,1,3.625,0.25,-0.875,-0.625,1.5,-1.375,-1.5,-1.875
+f518e0565adec1dd3d978b15,Street market.wav,yes_first,scene_context,0,3.375,4.5,3.375,3.375,3.0,3.5,3.625,3.875
+f518e0565adec1dd3d978b15,Street market.wav,no_first,scene_context,0,4.375,5.0,3.75,4.25,4.0625,3.75,3.875,4.0
+d300ff2bb2ae653c7dab1acc,Street market.wav,yes_first,source_or_event,1,1.0,-3.25,-3.6875,-4.1875,-4.0,-3.875,-4.3125,-4.0625
+d300ff2bb2ae653c7dab1acc,Street market.wav,no_first,source_or_event,1,2.5,0.125,0.875,1.0,1.375,-0.5,-0.625,-0.25
+4edab7b6a87811491338a6db,Subway-Moscow-013.wav,yes_first,acoustic_property,0,1.125,2.75,0.875,1.125,1.125,1.375,1.75,1.375
+4edab7b6a87811491338a6db,Subway-Moscow-013.wav,no_first,acoustic_property,0,3.0625,4.625,3.75,3.6875,3.625,3.3125,3.75,3.75
+894f8db3cf25ad0d1495a3d6,Subway-Moscow-013.wav,yes_first,count_or_relation,1,0.0,2.0,0.375,0.25,0.375,1.125,0.875,0.875
+894f8db3cf25ad0d1495a3d6,Subway-Moscow-013.wav,no_first,count_or_relation,1,0.5,4.25,1.625,1.625,1.75,2.0,1.875,2.0
+95e4049c23eaa219df37025b,"Swings in Mauerpark, Berlin.wav",yes_first,source_or_event,0,0.0,7.625,5.75,5.5625,5.5625,6.0625,6.4375,6.5625
+95e4049c23eaa219df37025b,"Swings in Mauerpark, Berlin.wav",no_first,source_or_event,0,2.5,4.75,2.5,2.5,2.75,3.25,3.25,3.125
+c08f6ed1bd4ce5724f8ab96c,"Swings in Mauerpark, Berlin.wav",yes_first,acoustic_property,1,-3.9375,-5.625,-5.0,-4.9375,-5.3125,-5.0,-5.0,-4.375
+c08f6ed1bd4ce5724f8ab96c,"Swings in Mauerpark, Berlin.wav",no_first,acoustic_property,1,1.6875,-3.125,-3.5,-3.25,-3.125,-3.125,-3.0,-3.0
+926356c12856766674d98b27,TIKTOK_1.wav,yes_first,source_or_event,0,2.125,6.75,3.625,3.625,3.0,6.1875,6.0,6.125
+926356c12856766674d98b27,TIKTOK_1.wav,no_first,source_or_event,0,2.875,7.4375,4.375,4.375,4.125,5.75,5.8125,5.8125
+f90cffa04b5a7e428acc720d,TIKTOK_1.wav,yes_first,source_or_event,1,7.8125,-4.25,1.75,1.6875,2.875,-1.125,-1.625,-0.375
+f90cffa04b5a7e428acc720d,TIKTOK_1.wav,no_first,source_or_event,1,7.1875,-0.75,1.0,1.0,1.625,-1.375,-1.5625,-0.5
+c2cf8fbdf2ccf7e577370175,Thunder 03.wav,yes_first,source_or_event,0,3.75,2.5,1.625,1.625,2.125,0.75,0.625,0.75
+c2cf8fbdf2ccf7e577370175,Thunder 03.wav,no_first,source_or_event,0,3.0625,4.25,3.125,3.1875,3.3125,3.4375,3.5,3.0625
+2bde8e2e32e97e7f4959bc4c,Thunder 03.wav,yes_first,source_or_event,1,2.0625,-4.375,-3.0625,-3.0,-2.125,-4.3125,-4.875,-4.4375
+2bde8e2e32e97e7f4959bc4c,Thunder 03.wav,no_first,source_or_event,1,3.8125,-0.125,1.1875,1.25,1.875,0.25,-0.125,-0.375
+3fdeeff397c6bf7a6f296425,Thunder Rain Cars Driving By.wav,yes_first,scene_context,0,5.125,6.0625,6.5,6.625,6.5,6.25,6.5,6.125
+3fdeeff397c6bf7a6f296425,Thunder Rain Cars Driving By.wav,no_first,scene_context,0,3.4375,7.1875,4.6875,5.0,4.875,5.4375,5.75,5.75
+899aad44f4796b1d6a7705c5,Thunder Rain Cars Driving By.wav,yes_first,source_or_event,1,-0.5,-6.375,-5.75,-6.0625,-5.5,-6.4375,-6.5,-6.4375
+899aad44f4796b1d6a7705c5,Thunder Rain Cars Driving By.wav,no_first,source_or_event,1,2.25,-1.75,-4.625,-4.875,-4.9375,-4.0,-3.8125,-3.5
+a459f64e9c96086dba72c414,Thunder_01.wav,yes_first,time_pattern,0,-1.375,-0.125,-1.375,-1.25,-1.0,-0.625,-0.625,-0.875
+a459f64e9c96086dba72c414,Thunder_01.wav,no_first,time_pattern,0,2.125,1.625,2.125,2.375,2.25,2.375,2.5,2.375
+e4b0d158a9a549629a455a7e,Thunder_01.wav,yes_first,source_or_event,1,3.5625,-1.5,-0.25,-0.625,0.375,-3.1875,-3.5625,-3.0625
+e4b0d158a9a549629a455a7e,Thunder_01.wav,no_first,source_or_event,1,3.3125,2.5,1.375,1.5625,1.875,0.375,0.375,0.75
+9ed3e71477e935140e43b2ae,Toilet Shuffling.wav,yes_first,source_or_event,0,2.5,2.25,-1.25,-1.0,-1.0,0.625,0.375,0.0
+9ed3e71477e935140e43b2ae,Toilet Shuffling.wav,no_first,source_or_event,0,2.625,4.5625,-1.0,-0.875,-0.5,1.0,0.625,0.125
+4df9a21163717489fc182b05,Toilet Shuffling.wav,yes_first,source_or_event,1,-1.3125,-3.875,-3.25,-3.0,-2.5625,-4.1875,-4.0,-4.3125
+4df9a21163717489fc182b05,Toilet Shuffling.wav,no_first,source_or_event,1,2.0,-0.875,-1.75,-1.75,-1.375,-1.875,-2.0,-1.625
+071683a2c9186a43a36ad58f,Train Pass Koln.wav,yes_first,source_or_event,0,0.25,-1.75,0.75,1.0,1.0,0.375,-0.5,0.0
+071683a2c9186a43a36ad58f,Train Pass Koln.wav,no_first,source_or_event,0,-0.375,0.5,0.75,1.125,1.25,0.125,0.5,0.5
+6ec41e38b8b1a1d3dfe50560,Train Pass Koln.wav,yes_first,source_or_event,1,0.125,-4.125,-1.8125,-2.1875,-1.875,-3.875,-4.375,-3.625
+6ec41e38b8b1a1d3dfe50560,Train Pass Koln.wav,no_first,source_or_event,1,3.4375,-0.5,1.5,1.125,1.75,-0.375,-0.75,-0.0
+1b18e76f1e2305936a48f41d,Tree Bark Cracks.wav,yes_first,scene_context,0,-2.375,2.875,-1.0625,-0.9375,-1.1875,-0.25,0.375,1.0
+1b18e76f1e2305936a48f41d,Tree Bark Cracks.wav,no_first,scene_context,0,2.0,2.75,-0.5,-0.25,0.125,-1.25,-0.875,0.125
+9fb32c61b1812ac0051423b6,Tree Bark Cracks.wav,yes_first,count_or_relation,1,4.0,-5.25,-2.75,-2.6875,-2.4375,-4.5625,-4.875,-5.5625
+9fb32c61b1812ac0051423b6,Tree Bark Cracks.wav,no_first,count_or_relation,1,3.0625,-2.0,-1.375,-1.1875,-0.375,-3.125,-3.3125,-2.9375
+067df9018ef86b2090fdfe5f,Trompetistas.wav,yes_first,count_or_relation,0,2.875,4.6875,2.875,2.8125,2.875,2.125,2.6875,3.1875
+067df9018ef86b2090fdfe5f,Trompetistas.wav,no_first,count_or_relation,0,2.8125,4.4375,1.875,1.875,2.125,1.875,2.0,2.0
+98c6601d3642f0cd285141ee,Trompetistas.wav,yes_first,source_or_event,1,5.25,1.0,2.625,2.25,2.125,-0.25,-0.25,-0.1875
+98c6601d3642f0cd285141ee,Trompetistas.wav,no_first,source_or_event,1,6.0,4.8125,5.5625,5.25,5.125,2.75,2.875,2.75
+8c3f6c377bbfcc89620e24d5,Tube - 1 stop to brixton.wav,yes_first,source_or_event,0,0.5,0.125,-3.375,-4.125,-4.125,-3.375,-4.1875,-2.5
+8c3f6c377bbfcc89620e24d5,Tube - 1 stop to brixton.wav,no_first,source_or_event,0,2.0625,0.25,-0.25,-0.625,-0.5,-0.375,-0.375,-0.0
+3783f8cefc261173221330d4,Tube - 1 stop to brixton.wav,yes_first,count_or_relation,1,1.5,-2.75,-1.375,-1.625,-0.875,-2.75,-3.4375,-3.125
+3783f8cefc261173221330d4,Tube - 1 stop to brixton.wav,no_first,count_or_relation,1,1.625,-0.625,1.25,1.875,1.625,1.0,0.5,0.75
+c7bf44ee916dfc28ecfc23cb,WM_switch_fill_to_wash_cycle_24_96_mono.wav,yes_first,source_or_event,0,2.5,2.125,-0.125,-0.875,-0.625,-0.375,-1.25,-0.875
+c7bf44ee916dfc28ecfc23cb,WM_switch_fill_to_wash_cycle_24_96_mono.wav,no_first,source_or_event,0,2.625,3.75,0.5,0.125,0.375,0.375,-0.375,0.125
+4090e90c209296ca55a54541,WM_switch_fill_to_wash_cycle_24_96_mono.wav,yes_first,source_or_event,1,5.875,-1.875,3.1875,2.8125,3.0625,0.875,1.125,1.75
+4090e90c209296ca55a54541,WM_switch_fill_to_wash_cycle_24_96_mono.wav,no_first,source_or_event,1,6.9375,0.875,3.3125,3.375,3.75,2.625,2.5625,2.9375
+832fe8786da6d4b8ab4556fd,WOOD CHOPPING_ Chopping hard wood with metal Axe (SFX).wav,yes_first,source_or_event,0,2.9375,5.125,5.9375,6.0,5.5,5.75,6.0,6.3125
+832fe8786da6d4b8ab4556fd,WOOD CHOPPING_ Chopping hard wood with metal Axe (SFX).wav,no_first,source_or_event,0,2.75,6.0625,3.125,3.125,2.75,4.6875,4.8125,4.8125
+f19f53f0b043de08f4f12689,WOOD CHOPPING_ Chopping hard wood with metal Axe (SFX).wav,yes_first,source_or_event,1,-0.125,-2.375,-0.125,-0.5,0.125,-1.625,-1.625,-1.5
+f19f53f0b043de08f4f12689,WOOD CHOPPING_ Chopping hard wood with metal Axe (SFX).wav,no_first,source_or_event,1,2.625,0.375,0.75,0.25,1.25,-0.75,-0.75,-0.625
+2330715e83fd76e96a5f357a,Waiting at a Montreal Subway Station.wav,yes_first,source_or_event,0,-2.0625,2.375,-0.125,-0.125,-0.0625,0.625,0.625,0.25
+2330715e83fd76e96a5f357a,Waiting at a Montreal Subway Station.wav,no_first,source_or_event,0,3.4375,4.625,4.0625,4.1875,4.0,4.6875,5.1875,4.875
+ce86c117d786844ef067dd36,Waiting at a Montreal Subway Station.wav,yes_first,source_or_event,1,0.8125,-4.375,-3.0625,-3.625,-3.0625,-4.3125,-5.125,-3.8125
+ce86c117d786844ef067dd36,Waiting at a Montreal Subway Station.wav,no_first,source_or_event,1,2.125,-1.9375,-0.0625,-0.3125,0.0625,-1.5,-1.9375,-1.4375
+373575ee1690965bbb7e9d9d,WalkingGravelTrailAugust2015.wav,yes_first,acoustic_property,0,1.0,2.625,-2.5625,-2.625,-2.4375,-4.375,-4.1875,-3.875
+373575ee1690965bbb7e9d9d,WalkingGravelTrailAugust2015.wav,no_first,acoustic_property,0,3.125,3.375,0.5,0.625,0.875,-0.875,-0.625,-0.5
+61bfcddd6a8271c012956b47,WalkingGravelTrailAugust2015.wav,yes_first,source_or_event,1,0.75,-2.875,0.0,-0.375,-0.25,-1.25,-1.375,-1.25
+61bfcddd6a8271c012956b47,WalkingGravelTrailAugust2015.wav,no_first,source_or_event,1,0.875,-0.75,-0.125,-0.25,-0.0,-0.5,-0.375,-0.5
+01da98833fba3a35f1d602b7,WalkingInSnowCrunchingIce.wav,yes_first,source_or_event,0,6.0625,7.5625,5.9375,5.9375,5.625,7.3125,7.5,7.6875
+01da98833fba3a35f1d602b7,WalkingInSnowCrunchingIce.wav,no_first,source_or_event,0,7.0,9.1875,6.1875,6.0625,5.6875,7.5,7.75,8.0
+10b0e7e927ba69d8ca534e4c,WalkingInSnowCrunchingIce.wav,yes_first,source_or_event,1,-1.9375,-4.0625,-2.8125,-2.8125,-2.4375,-3.9375,-3.9375,-4.1875
+10b0e7e927ba69d8ca534e4c,WalkingInSnowCrunchingIce.wav,no_first,source_or_event,1,-1.0,-2.0,-1.5,-1.625,-1.5,-3.0,-2.5,-2.25
+9cd08cc4855560b4b67298fe,WasherEndofRestCycleStartFill-WashCycle.wav,yes_first,source_or_event,0,2.5,0.75,-0.75,-0.75,-0.75,-2.0,-2.0,-2.5
+9cd08cc4855560b4b67298fe,WasherEndofRestCycleStartFill-WashCycle.wav,no_first,source_or_event,0,2.625,3.25,0.625,0.75,0.875,0.5,0.875,0.125
+691f80674899bbf6ecf715c4,WasherEndofRestCycleStartFill-WashCycle.wav,yes_first,source_or_event,1,-5.1875,-4.25,-4.875,-4.875,-4.9375,-5.6875,-5.625,-5.625
+691f80674899bbf6ecf715c4,WasherEndofRestCycleStartFill-WashCycle.wav,no_first,source_or_event,1,0.5,-1.625,-2.1875,-2.125,-1.8125,-2.125,-2.0,-1.75
+99fdd490d3567c459b07c865,Water Faucet HQ Stereo.wav,yes_first,source_or_event,0,1.375,6.3125,4.75,4.9375,4.3125,5.8125,6.0625,6.25
+99fdd490d3567c459b07c865,Water Faucet HQ Stereo.wav,no_first,source_or_event,0,0.75,5.75,2.625,2.625,2.25,4.0625,3.875,3.6875
+926666c9f741296a51a7e295,Water Faucet HQ Stereo.wav,yes_first,source_or_event,1,4.8125,0.625,2.375,2.75,2.875,2.125,2.5,2.625
+926666c9f741296a51a7e295,Water Faucet HQ Stereo.wav,no_first,source_or_event,1,4.875,2.375,1.875,2.125,2.125,1.875,2.0,1.875
+12eb4581613032869fdc9e00,WaterBottle.wav,yes_first,count_or_relation,0,-5.0625,-2.875,-2.25,-2.25,-2.125,-2.875,-2.375,-1.875
+12eb4581613032869fdc9e00,WaterBottle.wav,no_first,count_or_relation,0,1.25,-1.75,-1.25,-1.375,-1.25,-1.75,-2.25,-2.125
+f3470178218e781539aadf1b,WaterBottle.wav,yes_first,source_or_event,1,3.5625,-1.875,-1.5625,-0.75,0.625,-2.625,-2.0625,-2.4375
+f3470178218e781539aadf1b,WaterBottle.wav,no_first,source_or_event,1,2.75,-1.5,-1.0,-0.375,0.375,-1.375,-1.375,-1.25
+30ae20f1e65eab29f3c73e30,WaterOnMetal.wav,yes_first,source_or_event,0,1.125,4.375,2.1875,2.5625,2.5625,2.25,2.6875,2.1875
+30ae20f1e65eab29f3c73e30,WaterOnMetal.wav,no_first,source_or_event,0,5.0625,4.0,1.5,1.8125,1.9375,1.875,2.125,1.875
+6790e32198923a631fb9341b,WaterOnMetal.wav,yes_first,source_or_event,1,2.1875,1.125,2.25,1.875,2.125,1.875,1.75,1.875
+6790e32198923a631fb9341b,WaterOnMetal.wav,no_first,source_or_event,1,2.5625,0.5,-0.5,-0.375,-0.25,-0.5,-0.375,-0.75
+fc695956c86cfbb59ef07e6e,Waterfalls_00216.wav,yes_first,acoustic_property,0,3.0625,4.0,3.8125,3.8125,3.9375,3.6875,4.0,3.6875
+fc695956c86cfbb59ef07e6e,Waterfalls_00216.wav,no_first,acoustic_property,0,1.875,4.125,2.0,2.0,2.0,2.375,2.75,2.875
+702378720594900a83d34053,Waterfalls_00216.wav,yes_first,source_or_event,1,1.0,-3.0625,-2.6875,-2.5625,-2.4375,-3.9375,-3.8125,-3.4375
+702378720594900a83d34053,Waterfalls_00216.wav,no_first,source_or_event,1,2.125,-1.5,-0.625,-0.625,-0.5,-1.375,-1.75,-1.25
+b0842ea5af78f0bc028bb479,Watering Can.wav,yes_first,source_or_event,0,4.6875,4.625,5.125,5.125,4.875,6.375,6.125,4.9375
+b0842ea5af78f0bc028bb479,Watering Can.wav,no_first,source_or_event,0,1.75,5.125,2.75,2.8125,2.0625,4.5,4.625,4.125
+4947ffc88af3f887226aa95d,Watering Can.wav,yes_first,count_or_relation,1,-0.75,-0.875,-0.25,-0.625,-0.375,-0.875,-1.625,-1.25
+4947ffc88af3f887226aa95d,Watering Can.wav,no_first,count_or_relation,1,1.0,0.625,0.125,-0.25,0.5,0.125,-0.875,-0.125
+9ba4dc691adbb46276b1c0a5,WeddingClap.wav,yes_first,source_or_event,0,6.0625,8.4375,6.75,7.0625,7.0,7.0,7.125,7.0625
+9ba4dc691adbb46276b1c0a5,WeddingClap.wav,no_first,source_or_event,0,3.9375,6.5,5.1875,5.875,5.9375,5.75,6.125,6.0625
+ecdc018cf44a7145addef0ef,WeddingClap.wav,yes_first,count_or_relation,1,0.875,-2.0,-1.75,-2.875,-2.5625,-3.4375,-3.6875,-3.75
+ecdc018cf44a7145addef0ef,WeddingClap.wav,no_first,count_or_relation,1,3.5625,-0.375,0.875,-0.125,0.75,-1.5,-1.875,-1.875
+b733e2df24e39cc2670f8a6d,Wet_Soggy_Squishy_Footsteps.wav,yes_first,source_or_event,0,4.1875,6.625,6.0,5.75,5.5625,6.5,6.875,6.0
+b733e2df24e39cc2670f8a6d,Wet_Soggy_Squishy_Footsteps.wav,no_first,source_or_event,0,4.5,5.6875,3.5625,3.375,3.3125,4.125,4.3125,4.0625
+cfabc381c692ac17107f3a9f,Wet_Soggy_Squishy_Footsteps.wav,yes_first,source_or_event,1,5.125,-3.875,1.375,1.25,1.625,-2.4375,-1.875,-2.3125
+cfabc381c692ac17107f3a9f,Wet_Soggy_Squishy_Footsteps.wav,no_first,source_or_event,1,6.875,0.375,2.875,2.9375,3.3125,1.25,1.125,1.5
+0dccf1b08a299806703f22d6,Wind-up Crank.wav,yes_first,source_or_event,0,-0.5,2.0,2.5625,2.625,2.5,2.4375,2.875,3.0
+0dccf1b08a299806703f22d6,Wind-up Crank.wav,no_first,source_or_event,0,3.25,2.125,3.125,3.0625,3.0625,2.5,2.75,2.875
+a59ad2015dac20b0be6e6358,Wind-up Crank.wav,yes_first,source_or_event,1,4.3125,0.875,2.75,2.625,2.875,1.125,1.5,2.125
+a59ad2015dac20b0be6e6358,Wind-up Crank.wav,no_first,source_or_event,1,4.75,3.75,3.625,3.6875,3.75,2.75,3.125,3.375
+2e3b86dba942319bc65cfb78,Wind-up Toy Motorbike SFX.wav,yes_first,source_or_event,0,0.625,5.75,3.6875,3.625,3.5,4.5625,4.625,4.6875
+2e3b86dba942319bc65cfb78,Wind-up Toy Motorbike SFX.wav,no_first,source_or_event,0,1.5,6.0,3.5,3.375,3.375,3.9375,4.125,3.8125
+e3f89f95203a66ba39bd2202,Wind-up Toy Motorbike SFX.wav,yes_first,source_or_event,1,3.6875,-3.9375,0.5,0.5,1.0,-1.8125,-1.3125,-1.0625
+e3f89f95203a66ba39bd2202,Wind-up Toy Motorbike SFX.wav,no_first,source_or_event,1,2.25,-1.375,0.625,0.625,0.875,-1.125,-0.875,-0.75
+970e8f3cf90a35a08ccf2f64,Wind_Whistling_Dorm_Window.wav,yes_first,source_or_event,0,-0.75,6.75,-0.375,-0.25,-0.5,2.0,2.0,2.25
+970e8f3cf90a35a08ccf2f64,Wind_Whistling_Dorm_Window.wav,no_first,source_or_event,0,2.8125,2.75,2.125,2.0,2.125,2.375,2.5,3.125
+d88e5a3038d5b33c86d28e78,Wind_Whistling_Dorm_Window.wav,yes_first,source_or_event,1,-1.875,-4.875,-4.4375,-4.3125,-4.375,-4.875,-5.1875,-4.625
+d88e5a3038d5b33c86d28e78,Wind_Whistling_Dorm_Window.wav,no_first,source_or_event,1,-0.375,-1.75,-2.3125,-2.1875,-1.9375,-2.9375,-3.1875,-2.9375
+d53014398fb4dafdda756983,Wisper1.wav,yes_first,source_or_event,0,2.125,3.8125,1.5,1.125,1.5,3.0625,4.3125,2.9375
+d53014398fb4dafdda756983,Wisper1.wav,no_first,source_or_event,0,3.75,3.0,2.125,2.0,2.375,2.25,2.75,2.375
+8a8bd2367f88d918ceb5f57a,Wisper1.wav,yes_first,source_or_event,1,4.0,-0.375,-0.5,-0.75,0.25,-2.25,-2.375,-2.25
+8a8bd2367f88d918ceb5f57a,Wisper1.wav,no_first,source_or_event,1,2.0,-0.375,-0.375,-0.625,0.125,-1.5625,-1.625,-1.625
+e43b0dd82552359457f98d3f,aftertherain.wav,yes_first,scene_context,0,0.375,6.1875,3.375,3.0,2.3125,4.375,4.75,4.125
+e43b0dd82552359457f98d3f,aftertherain.wav,no_first,scene_context,0,4.0625,6.5625,4.5625,4.25,4.125,5.125,5.25,5.0
+b94f1f3fe96c8ffd812170eb,aftertherain.wav,yes_first,acoustic_property,1,-5.1875,-6.625,-6.125,-5.9375,-6.0,-6.25,-6.3125,-6.5
+b94f1f3fe96c8ffd812170eb,aftertherain.wav,no_first,acoustic_property,1,-2.3125,-1.5,-2.3125,-2.0,-2.125,-2.4375,-2.1875,-2.0
+d40aa8faae31bbeebf90b72c,air bubbles on the surface of the water.wav,yes_first,source_or_event,0,-4.625,4.0,2.875,2.625,2.125,3.0,3.125,2.75
+d40aa8faae31bbeebf90b72c,air bubbles on the surface of the water.wav,no_first,source_or_event,0,0.875,5.25,3.9375,3.75,3.5,4.4375,4.375,4.25
+3aab4fe25e15d990f78f6c8a,air bubbles on the surface of the water.wav,yes_first,source_or_event,1,2.0625,-3.9375,-2.25,-2.4375,-1.25,-4.0625,-4.625,-4.1875
+3aab4fe25e15d990f78f6c8a,air bubbles on the surface of the water.wav,no_first,source_or_event,1,3.8125,-1.5,-0.75,-0.625,0.375,-1.625,-2.125,-1.625
+4ce9b443ae001fcc8d132909,alarm_clock_ringing_01.wav,yes_first,time_pattern,0,-5.75,-0.375,-1.0,-1.125,-1.625,1.0,0.75,0.125
+4ce9b443ae001fcc8d132909,alarm_clock_ringing_01.wav,no_first,time_pattern,0,-3.125,2.0,-0.5,-0.25,-0.625,0.375,0.625,-0.375
+82575df260cafa5b42b79d51,alarm_clock_ringing_01.wav,yes_first,time_pattern,1,-4.875,-2.25,-2.75,-2.75,-3.0,-1.875,-2.125,-2.0
+82575df260cafa5b42b79d51,alarm_clock_ringing_01.wav,no_first,time_pattern,1,-0.125,1.875,0.375,0.375,0.375,0.625,0.375,0.25
+e1bb9a9b0d69698469eb2725,at the edge of the forest.wav,yes_first,source_or_event,0,1.75,3.5,0.875,1.25,0.875,1.875,1.875,1.625
+e1bb9a9b0d69698469eb2725,at the edge of the forest.wav,no_first,source_or_event,0,6.5625,6.375,4.8125,4.75,4.75,4.8125,5.0,5.0
+d91e394349ab8961a8f0d78d,at the edge of the forest.wav,yes_first,source_or_event,1,5.4375,1.0,2.25,2.625,2.75,1.875,1.75,1.875
+d91e394349ab8961a8f0d78d,at the edge of the forest.wav,no_first,source_or_event,1,5.1875,2.5,3.25,3.1875,3.1875,3.0,2.875,3.0
+fd718d32b3e129b1241c17a0,atmo_kenting_national_park.wav,yes_first,count_or_relation,0,4.125,5.25,4.8125,4.8125,4.5625,5.4375,5.375,5.75
+fd718d32b3e129b1241c17a0,atmo_kenting_national_park.wav,no_first,count_or_relation,0,4.125,5.25,4.0625,3.8125,3.8125,4.1875,4.4375,4.4375
+f26fe7475e193814d614fdb0,atmo_kenting_national_park.wav,yes_first,source_or_event,1,1.75,2.625,2.875,3.0,3.0,3.0,3.25,3.375
+f26fe7475e193814d614fdb0,atmo_kenting_national_park.wav,no_first,source_or_event,1,-0.625,-0.5,-1.25,-1.25,-1.25,-1.125,-1.25,-1.25
+94360b327e948d202079245c,autospasandociudadnoche1.wav,yes_first,count_or_relation,0,4.1875,5.1875,4.125,4.375,3.9375,3.875,4.125,3.75
+94360b327e948d202079245c,autospasandociudadnoche1.wav,no_first,count_or_relation,0,3.625,4.875,3.0,3.125,2.875,3.25,3.25,3.375
+a43f0bf16115a40f4c358532,autospasandociudadnoche1.wav,yes_first,source_or_event,1,8.0625,-2.5625,1.625,0.375,1.375,-0.875,-1.8125,-0.375
+a43f0bf16115a40f4c358532,autospasandociudadnoche1.wav,no_first,source_or_event,1,4.75,-2.0,1.75,1.75,2.125,0.375,-0.5,0.375
+86dfcfb94c827ef58384b050,bar crowd.wav,yes_first,count_or_relation,0,3.5625,7.8125,6.3125,6.5625,6.625,6.125,6.5625,6.3125
+86dfcfb94c827ef58384b050,bar crowd.wav,no_first,count_or_relation,0,3.9375,8.125,5.125,5.25,5.0,6.0625,6.3125,6.0625
+4c2aab4e15266c958d08a23f,bar crowd.wav,yes_first,source_or_event,1,-0.875,-2.5,-1.375,-1.6875,-1.375,-0.875,-1.625,-1.625
+4c2aab4e15266c958d08a23f,bar crowd.wav,no_first,source_or_event,1,-0.25,-0.0,-0.0,-0.25,-0.0,1.0,0.375,0.25
+ea853e0b22d43cd4bc90b6d4,birds chirping 03 short.wav,yes_first,acoustic_property,0,-4.375,-3.25,-2.9375,-3.3125,-1.75,-3.875,-3.875,-4.0
+ea853e0b22d43cd4bc90b6d4,birds chirping 03 short.wav,no_first,acoustic_property,0,0.375,-0.375,0.625,0.75,1.5,-0.125,-0.75,-0.875
+e123cef6d2e0c07abe2d8469,birds chirping 03 short.wav,yes_first,source_or_event,1,2.125,-4.0,-3.0,-3.0,-2.25,-4.5,-3.9375,-3.5
+e123cef6d2e0c07abe2d8469,birds chirping 03 short.wav,no_first,source_or_event,1,4.375,-1.625,1.9375,2.0625,1.875,-0.625,-0.5,-0.375
+4a0c77f04c02eac3b48b4474,bombolles.wav,yes_first,source_or_event,0,0.25,3.375,0.25,0.25,0.625,1.0,1.125,0.375
+4a0c77f04c02eac3b48b4474,bombolles.wav,no_first,source_or_event,0,0.5,1.75,0.625,0.625,0.5,1.0,1.125,1.0
+e1973df92d8252f134cfaa55,bombolles.wav,yes_first,source_or_event,1,-0.875,-1.25,-2.75,-2.625,-2.0,-2.875,-3.25,-3.0625
+e1973df92d8252f134cfaa55,bombolles.wav,no_first,source_or_event,1,2.0,0.125,-1.125,-0.875,-0.375,-1.0,-1.25,-1.375
+37e4f77fd671a625b492133b,branch and wind in wood 1.wav,yes_first,source_or_event,0,2.0,3.875,1.5625,2.3125,1.5,1.875,0.0,1.75
+37e4f77fd671a625b492133b,branch and wind in wood 1.wav,no_first,source_or_event,0,4.125,6.375,2.6875,3.0,2.4375,2.9375,2.5625,3.3125
+357d650154f2f8aca4851b74,branch and wind in wood 1.wav,yes_first,source_or_event,1,-0.5,-4.125,-2.4375,-2.6875,-1.875,-3.5,-3.75,-3.375
+357d650154f2f8aca4851b74,branch and wind in wood 1.wav,no_first,source_or_event,1,-0.8125,-1.0,-1.625,-1.625,-1.4375,-1.8125,-2.0,-1.5625
+542f535f4afd74bbdf0e2b39,broken comms2.wav,yes_first,source_or_event,0,3.125,7.0,5.25,5.6875,5.875,5.5625,5.9375,6.1875
+542f535f4afd74bbdf0e2b39,broken comms2.wav,no_first,source_or_event,0,2.0,4.1875,2.8125,2.9375,3.1875,2.6875,3.125,3.125
+b319e15e0500d67f0afede6e,broken comms2.wav,yes_first,source_or_event,1,-1.5,-7.3125,-6.375,-6.1875,-5.8125,-6.625,-7.0,-7.0625
+b319e15e0500d67f0afede6e,broken comms2.wav,no_first,source_or_event,1,-0.5,-3.5,-4.375,-4.1875,-3.5625,-3.75,-4.125,-4.125
+617d7b9b15561739253134e5,campanas.wav,yes_first,source_or_event,0,3.8125,5.125,5.0625,4.9375,4.8125,5.6875,5.4375,5.4375
+617d7b9b15561739253134e5,campanas.wav,no_first,source_or_event,0,3.5625,5.25,3.875,4.125,3.875,5.4375,5.25,5.3125
+a50f638d4d331efdc29b7bf6,campanas.wav,yes_first,source_or_event,1,-3.25,0.125,-2.75,-3.125,-2.875,-2.75,-3.25,-3.125
+a50f638d4d331efdc29b7bf6,campanas.wav,no_first,source_or_event,1,1.75,2.375,1.625,1.75,1.75,1.875,1.625,1.5
+1f4b1bea72de91b933af8eb8,car alarm 130603.wav,yes_first,source_or_event,0,1.5,4.125,2.25,2.25,2.375,2.5,2.125,2.125
+1f4b1bea72de91b933af8eb8,car alarm 130603.wav,no_first,source_or_event,0,1.0,3.375,1.25,1.625,1.625,1.5,1.625,0.875
+6f07190cdd871a0503d2bce0,car alarm 130603.wav,yes_first,source_or_event,1,4.375,-0.875,2.125,1.875,2.0625,-0.375,-0.5,-0.5625
+6f07190cdd871a0503d2bce0,car alarm 130603.wav,no_first,source_or_event,1,3.4375,2.125,2.625,2.875,3.0,2.0,2.0,1.6875
+3629c297fc0f3a9f63caa973,circuitbend03.wav,yes_first,source_or_event,0,-1.375,3.0,-0.25,-0.375,-0.375,0.875,0.0,-0.5
+3629c297fc0f3a9f63caa973,circuitbend03.wav,no_first,source_or_event,0,2.4375,4.0,3.4375,3.5625,3.5,3.5,3.375,3.25
+f0a5e4d111e422e4e61f7157,circuitbend03.wav,yes_first,time_pattern,1,1.75,0.875,1.125,1.0,1.25,1.375,0.625,1.0
+f0a5e4d111e422e4e61f7157,circuitbend03.wav,no_first,time_pattern,1,0.125,3.875,1.75,2.125,1.875,2.375,2.375,2.5
+9bec4b7d13d7ea31839ce635,cookieSheetWiping.wav,yes_first,source_or_event,0,0.0,-0.75,0.875,1.0,0.875,0.25,0.75,0.875
+9bec4b7d13d7ea31839ce635,cookieSheetWiping.wav,no_first,source_or_event,0,2.75,0.75,1.375,1.375,1.5,1.25,1.375,1.375
+186b369f7747e8770cee1421,cookieSheetWiping.wav,yes_first,count_or_relation,1,1.875,-3.875,-2.0,-1.875,-1.25,-3.5,-3.625,-2.75
+186b369f7747e8770cee1421,cookieSheetWiping.wav,no_first,count_or_relation,1,3.25,-0.25,0.75,0.75,1.375,0.25,0.125,0.625
+5d3c577afede6b0f1d11a3ca,cricket chirp.wav,yes_first,source_or_event,0,-2.0625,2.5,2.25,1.875,1.25,3.5,3.375,3.375
+5d3c577afede6b0f1d11a3ca,cricket chirp.wav,no_first,source_or_event,0,0.5,3.875,3.5,3.25,2.8125,3.75,4.1875,3.25
+e79bfd1a7cf63f253cd8bbb5,cricket chirp.wav,yes_first,source_or_event,1,2.875,-0.125,1.0,1.125,1.1875,-0.25,-0.375,0.25
+e79bfd1a7cf63f253cd8bbb5,cricket chirp.wav,no_first,source_or_event,1,4.0625,1.5,2.125,2.25,2.1875,1.375,1.625,1.375
+8799dcadddbd677761b63e3d,crowdfree.wav,yes_first,source_or_event,0,1.625,0.75,-2.4375,-2.6875,-1.375,-4.5,-4.6875,-4.75
+8799dcadddbd677761b63e3d,crowdfree.wav,no_first,source_or_event,0,5.3125,3.625,2.0625,1.875,2.6875,0.375,-0.0,-0.25
+7a58417ce42efc008f58a9f4,crowdfree.wav,yes_first,source_or_event,1,3.75,-1.125,-0.125,0.0,0.625,-2.5625,-2.375,-2.25
+7a58417ce42efc008f58a9f4,crowdfree.wav,no_first,source_or_event,1,4.75,1.375,2.75,2.5625,3.125,0.25,0.375,0.375
+c3fdb08e05a543dbbea5d208,d0_drips_04.wav,yes_first,count_or_relation,0,1.875,4.0,3.25,2.875,2.875,3.875,3.625,3.5
+c3fdb08e05a543dbbea5d208,d0_drips_04.wav,no_first,count_or_relation,0,0.375,2.125,1.875,1.75,1.625,2.375,2.25,2.0
+95602e70e5ab6a501d61b5c7,d0_drips_04.wav,yes_first,source_or_event,1,5.4375,-2.0,1.25,0.75,1.5,-0.75,-1.0,-0.5
+95602e70e5ab6a501d61b5c7,d0_drips_04.wav,no_first,source_or_event,1,5.625,0.25,2.6875,2.6875,2.8125,1.4375,1.25,1.5625
+eb2d1025746f32159d50be8c,divide lake.wav,yes_first,scene_context,0,1.0,4.625,2.0625,2.125,2.625,3.0625,3.5625,3.5625
+eb2d1025746f32159d50be8c,divide lake.wav,no_first,scene_context,0,2.1875,4.125,1.9375,2.25,1.625,1.375,1.875,1.625
+91132c41cfbf0680333cc3de,divide lake.wav,yes_first,count_or_relation,1,5.3125,-3.5,-1.375,-2.0625,-0.25,-2.5,-2.75,-2.375
+91132c41cfbf0680333cc3de,divide lake.wav,no_first,count_or_relation,1,5.1875,-0.125,0.125,-0.375,0.25,-1.875,-2.0,-2.0
+fb664773524eaf191dc296c0,door.of.bar.raining2.wav,yes_first,source_or_event,0,2.0625,4.5,-1.375,-1.375,-0.5,3.25,4.0625,4.25
+fb664773524eaf191dc296c0,door.of.bar.raining2.wav,no_first,source_or_event,0,3.8125,6.375,0.125,0.125,0.5,3.25,4.375,4.5625
+9f399c3b975fc262f31107ed,door.of.bar.raining2.wav,yes_first,source_or_event,1,0.8125,1.25,2.1875,2.25,2.25,1.25,0.25,1.0625
+9f399c3b975fc262f31107ed,door.of.bar.raining2.wav,no_first,source_or_event,1,3.875,1.5,1.3125,1.25,1.375,1.0,1.1875,1.375
+9bc3b106daef37d9d966f444,drip rhythm1.wav,yes_first,source_or_event,0,1.875,0.375,-0.75,-0.75,-0.625,-0.625,-1.25,-0.875
+9bc3b106daef37d9d966f444,drip rhythm1.wav,no_first,source_or_event,0,0.875,0.625,-0.125,-0.375,-0.0,-0.625,-0.875,-0.375
+a829422579fa9add282d395a,drip rhythm1.wav,yes_first,source_or_event,1,1.6875,-4.0,-2.9375,-2.625,-1.9375,-4.5,-4.75,-4.0625
+a829422579fa9add282d395a,drip rhythm1.wav,no_first,source_or_event,1,3.3125,-1.25,-0.25,0.0625,0.5625,-1.5,-2.0625,-1.0625
+06c3bc2209a3f4f81bd44d8f,dripping.wav,yes_first,source_or_event,0,2.5,5.125,4.0625,4.375,4.125,4.3125,4.625,4.4375
+06c3bc2209a3f4f81bd44d8f,dripping.wav,no_first,source_or_event,0,1.625,5.75,4.0,4.125,4.125,4.1875,4.625,4.4375
+c2683366fff1274dfdfce3e0,dripping.wav,yes_first,source_or_event,1,0.5,-3.75,-2.5625,-2.625,-2.6875,-3.25,-3.625,-2.5625
+c2683366fff1274dfdfce3e0,dripping.wav,no_first,source_or_event,1,1.5,-2.125,-2.5625,-2.8125,-2.75,-3.375,-3.5625,-3.0
+57052bf6d2b79506814edfee,drunk_teenagers_1.wav,yes_first,count_or_relation,0,3.5625,8.25,6.0,6.375,6.125,6.0,6.6875,6.1875
+57052bf6d2b79506814edfee,drunk_teenagers_1.wav,no_first,count_or_relation,0,3.9375,8.4375,5.6875,6.625,6.375,5.5,6.0625,5.9375
+4361a2cf8fba25088e75a7d3,drunk_teenagers_1.wav,yes_first,source_or_event,1,6.375,1.375,3.375,3.4375,3.75,-0.5,0.75,1.5
+4361a2cf8fba25088e75a7d3,drunk_teenagers_1.wav,no_first,source_or_event,1,6.3125,2.25,4.0,4.25,4.5,1.75,2.125,2.875
+08c687a1a333ad1d36ba3972,earth_movement.wav,yes_first,source_or_event,0,-0.8125,1.375,-0.125,-0.375,-0.5,0.125,0.0,0.375
+08c687a1a333ad1d36ba3972,earth_movement.wav,no_first,source_or_event,0,1.0,2.375,1.125,1.0,0.875,2.0,1.625,0.75
+789ac82a5a8bed72a7c5c5fd,earth_movement.wav,yes_first,source_or_event,1,0.625,-2.75,-3.5,-3.75,-3.5625,-3.75,-4.125,-3.625
+789ac82a5a8bed72a7c5c5fd,earth_movement.wav,no_first,source_or_event,1,2.5,-1.25,-1.5,-1.5,-1.25,-1.0,-1.25,-1.0
+b3f3455f3f7a65b12c62a2f5,fallingrice2.wav,yes_first,count_or_relation,0,0.875,3.25,1.875,1.75,1.875,1.75,2.125,1.75
+b3f3455f3f7a65b12c62a2f5,fallingrice2.wav,no_first,count_or_relation,0,2.75,3.875,2.375,2.375,2.375,2.0,2.375,1.875
+b83a98a330fa0bb94ff09d5f,fallingrice2.wav,yes_first,source_or_event,1,-5.1875,-4.125,-5.625,-5.4375,-5.5,-5.5625,-5.5625,-6.0625
+b83a98a330fa0bb94ff09d5f,fallingrice2.wav,no_first,source_or_event,1,0.375,-2.75,-1.25,-1.25,-1.125,-2.5,-2.25,-2.125
+80e40105c30989d995b919ef,fan_2_300513.wav,yes_first,time_pattern,0,-1.625,4.75,0.625,1.0,0.5,2.0,2.0,0.875
+80e40105c30989d995b919ef,fan_2_300513.wav,no_first,time_pattern,0,1.5,4.75,1.75,1.875,1.75,1.625,1.875,1.625
+bd857ff670c62c5967aabf3e,fan_2_300513.wav,yes_first,source_or_event,1,2.875,-3.5625,-1.125,-1.5,-1.0,-2.5625,-2.8125,-2.625
+bd857ff670c62c5967aabf3e,fan_2_300513.wav,no_first,source_or_event,1,5.125,-1.5,2.25,2.0625,2.4375,0.25,-0.25,0.5
+5a4fba9d362fce247ca29fff,faucet3.wav,yes_first,count_or_relation,0,1.875,2.75,1.25,1.25,1.125,0.125,1.125,1.5
+5a4fba9d362fce247ca29fff,faucet3.wav,no_first,count_or_relation,0,5.9375,6.25,3.625,3.6875,3.6875,3.9375,4.4375,4.25
+9b5794ef17b56cc4504d9919,faucet3.wav,yes_first,source_or_event,1,0.5,-2.8125,-0.9375,-0.375,0.125,-3.375,-3.125,-2.375
+9b5794ef17b56cc4504d9919,faucet3.wav,no_first,source_or_event,1,1.125,0.125,0.625,0.875,0.9375,-0.375,0.25,0.125
+c4dbd6dad92e4705e3025078,fdv_orage_26082011.wav,yes_first,source_or_event,0,5.375,5.125,5.4375,5.375,5.1875,5.375,5.4375,5.1875
+c4dbd6dad92e4705e3025078,fdv_orage_26082011.wav,no_first,source_or_event,0,2.125,5.875,3.375,3.375,3.3125,4.0,4.25,4.375
+7368ccb6a463db2ff6fe2799,fdv_orage_26082011.wav,yes_first,scene_context,1,4.9375,-7.1875,-5.375,-5.5625,-5.125,-6.0625,-6.1875,-6.1875
+7368ccb6a463db2ff6fe2799,fdv_orage_26082011.wav,no_first,scene_context,1,3.25,-0.75,-4.25,-4.1875,-4.0625,-3.25,-3.25,-3.125
+c2c907f971939369650730a2,folding and crumpling paper.wav,yes_first,source_or_event,0,2.375,3.125,2.25,2.3125,2.25,2.875,3.125,2.875
+c2c907f971939369650730a2,folding and crumpling paper.wav,no_first,source_or_event,0,4.375,4.9375,3.375,3.375,3.4375,3.875,3.8125,3.75
+dda3a710437aa20addb68d60,folding and crumpling paper.wav,yes_first,source_or_event,1,-1.0,-3.0625,-3.375,-3.5625,-3.25,-3.5,-3.625,-3.5
+dda3a710437aa20addb68d60,folding and crumpling paper.wav,no_first,source_or_event,1,-0.0,-2.75,-3.0625,-3.0625,-2.875,-3.0,-3.1875,-3.1875
+74f725ea49d50ea8e431dcec,foley footsteps - raw.wav,yes_first,source_or_event,0,0.625,2.25,0.25,1.0,1.0,0.625,0.625,0.5
+74f725ea49d50ea8e431dcec,foley footsteps - raw.wav,no_first,source_or_event,0,-0.0,1.125,-0.5,-0.25,-0.625,-0.125,0.25,-0.375
+b77369591bfad897751d7bc5,foley footsteps - raw.wav,yes_first,count_or_relation,1,0.375,-1.875,-2.625,-1.625,-0.375,0.0,-0.375,-0.875
+b77369591bfad897751d7bc5,foley footsteps - raw.wav,no_first,count_or_relation,1,4.3125,-2.75,-1.3125,0.125,0.75,1.375,1.125,-0.375
+bbe16bd84606f3a51503d2e0,forest_ambience_chepachet_spring_1.wav,yes_first,source_or_event,0,2.5625,3.75,3.1875,4.25,3.1875,4.1875,4.5625,5.25
+bbe16bd84606f3a51503d2e0,forest_ambience_chepachet_spring_1.wav,no_first,source_or_event,0,5.5,4.0,2.8125,3.5,2.8125,2.875,3.1875,4.0
+84c1d8c3bfd477a11a6c7f32,forest_ambience_chepachet_spring_1.wav,yes_first,acoustic_property,1,3.25,-5.6875,-2.0,-2.4375,-1.25,-3.9375,-4.625,-4.625
+84c1d8c3bfd477a11a6c7f32,forest_ambience_chepachet_spring_1.wav,no_first,acoustic_property,1,4.375,-1.625,0.25,-0.125,0.75,-1.125,-1.875,-1.25
+c1793332baabb37b9c6bee9f,fountains-Udaipur-Saheliyon-Ki-Bari-4.wav,yes_first,source_or_event,0,5.5,7.0625,6.375,6.125,6.125,6.4375,6.5,6.4375
+c1793332baabb37b9c6bee9f,fountains-Udaipur-Saheliyon-Ki-Bari-4.wav,no_first,source_or_event,0,4.1875,7.5,5.0625,5.1875,5.25,5.6875,6.125,6.1875
+04cf37bf8f6d29006cefba94,fountains-Udaipur-Saheliyon-Ki-Bari-4.wav,yes_first,count_or_relation,1,-6.375,-2.375,-3.625,-3.75,-3.75,-3.5,-3.5625,-3.625
+04cf37bf8f6d29006cefba94,fountains-Udaipur-Saheliyon-Ki-Bari-4.wav,no_first,count_or_relation,1,3.0625,1.875,0.25,0.25,0.125,1.0,0.875,0.75
+381bc1e8524c94a237a2836a,futuristic_1-2.wav,yes_first,source_or_event,0,0.125,-3.125,-4.1875,-4.6875,-4.1875,-4.625,-5.0625,-4.4375
+381bc1e8524c94a237a2836a,futuristic_1-2.wav,no_first,source_or_event,0,1.875,-0.875,1.0,0.75,1.125,-0.0,-0.375,-0.125
+8d10072d7b0ccad8e07df65c,futuristic_1-2.wav,yes_first,source_or_event,1,-0.875,-2.25,-3.1875,-3.375,-3.0,-2.5625,-2.9375,-2.1875
+8d10072d7b0ccad8e07df65c,futuristic_1-2.wav,no_first,source_or_event,1,-1.4375,-1.75,-2.0,-2.0,-2.125,-1.875,-2.125,-2.125
+92b0f3f2e0b96bf35e547acd,gargnano-sounds.wav,yes_first,source_or_event,0,1.75,1.75,0.875,-0.625,0.625,2.5,2.125,3.8125
+92b0f3f2e0b96bf35e547acd,gargnano-sounds.wav,no_first,source_or_event,0,5.25,4.625,1.625,1.625,1.75,2.25,2.375,3.875
+ef259bf0c66628539285d3a4,gargnano-sounds.wav,yes_first,source_or_event,1,1.0,-2.5625,-3.875,-4.875,-3.5625,-3.375,-4.1875,-3.75
+ef259bf0c66628539285d3a4,gargnano-sounds.wav,no_first,source_or_event,1,2.5,0.125,-0.25,-0.875,0.5,-0.75,-1.0,-0.875
+414a5fce0bfd13e65c851a48,h907 boules pologna clap f.wav,yes_first,source_or_event,0,4.8125,5.3125,4.5,5.0625,5.125,4.75,5.0625,4.5
+414a5fce0bfd13e65c851a48,h907 boules pologna clap f.wav,no_first,source_or_event,0,4.3125,4.9375,3.8125,4.75,4.625,4.0,4.5,4.125
+b164bf8a5c38b9be41ef7db4,h907 boules pologna clap f.wav,yes_first,count_or_relation,1,-2.125,-2.125,-2.625,-3.6875,-3.375,-3.375,-4.25,-3.25
+b164bf8a5c38b9be41ef7db4,h907 boules pologna clap f.wav,no_first,count_or_relation,1,0.75,-0.625,0.25,0.125,-0.0,-0.125,-0.0,0.125
+36f6d663ee4eb5dc5633e9dc,hamlet Haanwijk autumn NL 03 151003_0804 ST.wav,yes_first,source_or_event,0,4.5,2.125,2.75,2.25,3.125,1.125,0.875,1.75
+36f6d663ee4eb5dc5633e9dc,hamlet Haanwijk autumn NL 03 151003_0804 ST.wav,no_first,source_or_event,0,4.4375,2.25,2.5,2.5,2.5,1.875,1.625,1.75
+ac992fb8829fdd4c7ed1f440,hamlet Haanwijk autumn NL 03 151003_0804 ST.wav,yes_first,scene_context,1,-1.125,-3.5625,-2.625,-2.8125,-2.375,-2.875,-2.5625,-2.8125
+ac992fb8829fdd4c7ed1f440,hamlet Haanwijk autumn NL 03 151003_0804 ST.wav,no_first,scene_context,1,1.375,0.375,-0.125,-0.0,-0.3125,-1.3125,-0.375,-1.25
+2c18836df7a56e27970260c2,hissy fizz.wav,yes_first,count_or_relation,0,-1.375,2.375,0.125,0.375,0.25,1.75,1.5,0.625
+2c18836df7a56e27970260c2,hissy fizz.wav,no_first,count_or_relation,0,1.5,3.875,1.9375,2.1875,2.125,2.0,2.5,2.0
+71f9b6e1d7172ece06474828,hissy fizz.wav,yes_first,source_or_event,1,3.9375,1.875,2.75,2.8125,2.6875,2.875,2.625,2.9375
+71f9b6e1d7172ece06474828,hissy fizz.wav,no_first,source_or_event,1,5.4375,3.4375,3.4375,3.5,3.625,3.25,3.25,3.375
+cb792362bf320de49ded5e97,je_campuswalk.wav,yes_first,source_or_event,0,-2.125,1.5,-1.625,-1.875,-1.875,-1.375,-1.5,-1.375
+cb792362bf320de49ded5e97,je_campuswalk.wav,no_first,source_or_event,0,2.375,3.625,1.5,1.625,1.875,1.5,1.5,1.5
+1587af1d018deab7f2a36a6e,je_campuswalk.wav,yes_first,source_or_event,1,-0.375,-0.25,-1.5625,-1.4375,-1.125,-1.875,-1.875,-1.625
+1587af1d018deab7f2a36a6e,je_campuswalk.wav,no_first,source_or_event,1,0.875,1.5,0.375,0.125,0.375,0.125,0.125,0.25
+8a46c1778b0bcced1623f034,knocking on a window or glass.wav,yes_first,source_or_event,0,2.375,4.75,3.5,3.0,3.0,3.875,4.375,4.125
+8a46c1778b0bcced1623f034,knocking on a window or glass.wav,no_first,source_or_event,0,4.1875,7.0,4.125,4.375,4.0,4.75,5.375,4.5
+f51efe036499324d1081094a,knocking on a window or glass.wav,yes_first,acoustic_property,1,1.4375,3.625,1.375,1.25,1.25,0.875,1.25,1.375
+f51efe036499324d1081094a,knocking on a window or glass.wav,no_first,acoustic_property,1,2.4375,4.5,2.0,1.875,2.125,1.5,2.0,1.375
+0f5175216704bb7a0c56bbde,light suburban ambiance.wav,yes_first,count_or_relation,0,0.125,2.875,1.875,1.375,1.5,2.0,2.125,1.625
+0f5175216704bb7a0c56bbde,light suburban ambiance.wav,no_first,count_or_relation,0,6.0,5.5,3.625,3.9375,4.125,4.0,4.25,4.0625
+9a01aa646998c7d8030069d2,light suburban ambiance.wav,yes_first,scene_context,1,-2.25,-7.3125,-5.0625,-5.6875,-5.5,-5.8125,-6.3125,-5.75
+9a01aa646998c7d8030069d2,light suburban ambiance.wav,no_first,scene_context,1,1.625,-2.75,-2.625,-2.6875,-2.5,-3.1875,-3.0,-2.75
+5f45e63aac1a531d7180d200,luffy_wind5.wav,yes_first,source_or_event,0,4.375,-1.0,-0.875,-1.0,-0.75,0.0,-1.125,-0.375
+5f45e63aac1a531d7180d200,luffy_wind5.wav,no_first,source_or_event,0,-0.25,1.375,-1.875,-2.0,-1.875,-0.25,-0.875,0.125
+4a3b34feb30715fec685d412,luffy_wind5.wav,yes_first,source_or_event,1,1.25,-3.5,-2.375,-2.375,-2.3125,-2.8125,-2.6875,-2.75
+4a3b34feb30715fec685d412,luffy_wind5.wav,no_first,source_or_event,1,5.1875,1.125,-0.25,-0.125,-0.125,-1.25,-1.0,-0.625
+5aefe161c7774b17afff8260,mab-kite-spool-20080727.wav,yes_first,source_or_event,0,-0.125,5.6875,2.5625,2.625,1.75,4.1875,4.375,4.125
+5aefe161c7774b17afff8260,mab-kite-spool-20080727.wav,no_first,source_or_event,0,1.5,5.0,2.0,2.0,1.75,2.75,3.0,2.625
+85e72a3660768fb61e7f4532,mab-kite-spool-20080727.wav,yes_first,source_or_event,1,-0.875,-3.75,-2.5,-2.375,-2.375,-2.875,-3.25,-3.0
+85e72a3660768fb61e7f4532,mab-kite-spool-20080727.wav,no_first,source_or_event,1,1.9375,-0.5,0.375,0.5,0.5,-0.25,-0.25,-0.375
+7d2d92262fcfb7adbe8abbd4,market.wav,yes_first,source_or_event,0,2.5,8.0625,6.25,6.375,6.125,6.875,7.25,6.5625
+7d2d92262fcfb7adbe8abbd4,market.wav,no_first,source_or_event,0,3.0,7.5,5.125,5.5,5.3125,5.6875,6.3125,5.6875
+79a49ee28456a32690ba2dc0,market.wav,yes_first,acoustic_property,1,-2.75,-8.4375,-7.1875,-7.4375,-7.0,-7.5,-8.125,-7.625
+79a49ee28456a32690ba2dc0,market.wav,no_first,acoustic_property,1,2.1875,-2.75,-2.875,-2.375,-2.625,-2.125,-2.125,-2.75
+ca592f69dadd2573e2426180,md1trk33-34.wav,yes_first,source_or_event,0,-4.75,-5.875,-3.625,-3.625,-3.375,-4.125,-3.875,-3.75
+ca592f69dadd2573e2426180,md1trk33-34.wav,no_first,source_or_event,0,-1.875,-0.125,-1.25,-1.25,-1.25,-1.125,-0.875,-1.0
+5c3aae16a3e42c62d56e16d8,md1trk33-34.wav,yes_first,source_or_event,1,2.4375,-7.375,-4.125,-4.375,-3.75,-5.875,-6.0,-5.6875
+5c3aae16a3e42c62d56e16d8,md1trk33-34.wav,no_first,source_or_event,1,3.1875,-3.375,-1.625,-1.5,-1.125,-3.125,-2.75,-3.0
+9afb19c8bef90a283f3f086a,md3trk2.wav,yes_first,source_or_event,0,-0.25,4.875,2.8125,2.25,2.25,2.875,2.5,2.25
+9afb19c8bef90a283f3f086a,md3trk2.wav,no_first,source_or_event,0,3.1875,2.875,0.625,0.75,0.875,1.25,0.875,0.625
+1f0662fa442552fc210587a2,md3trk2.wav,yes_first,source_or_event,1,5.8125,-2.5625,1.5,1.375,1.875,-0.375,-0.375,-0.375
+1f0662fa442552fc210587a2,md3trk2.wav,no_first,source_or_event,1,3.125,-1.75,0.5,0.5,0.75,-0.625,-0.5,-0.625
+e0b77f3daa8aca1419034b7c,mechanical.wav,yes_first,source_or_event,0,3.75,5.0,2.125,2.25,2.5,3.25,3.4375,2.625
+e0b77f3daa8aca1419034b7c,mechanical.wav,no_first,source_or_event,0,5.125,5.6875,2.375,2.6875,3.125,2.75,3.0,2.8125
+d5463eb82771b9984981a35f,mechanical.wav,yes_first,count_or_relation,1,1.625,-3.625,-1.375,-1.6875,-1.25,-2.5625,-3.25,-3.3125
+d5463eb82771b9984981a35f,mechanical.wav,no_first,count_or_relation,1,3.5,-0.75,-0.25,-0.5,-0.375,-1.625,-1.75,-2.25
+6179bfc969e7784f118ae704,mercury topaz starting.wav,yes_first,source_or_event,0,-0.5,2.0,1.25,2.25,1.0,3.125,4.0,2.125
+6179bfc969e7784f118ae704,mercury topaz starting.wav,no_first,source_or_event,0,-2.625,5.5,2.75,4.0,3.125,3.25,5.4375,2.75
+d46b2cfb758f5db7d959b197,mercury topaz starting.wav,yes_first,source_or_event,1,3.0,1.625,1.875,1.6875,2.125,1.125,0.75,2.1875
+d46b2cfb758f5db7d959b197,mercury topaz starting.wav,no_first,source_or_event,1,3.0,2.5,2.6875,2.5,2.25,2.75,3.0625,2.5625
+bb344ae2d28865939012c6bc,metal plate striking wall.wav,yes_first,source_or_event,0,3.0625,5.625,3.75,3.375,3.375,4.0,3.875,4.75
+bb344ae2d28865939012c6bc,metal plate striking wall.wav,no_first,source_or_event,0,1.75,3.375,2.625,2.625,2.5,2.5,2.625,2.875
+5f41ab392bf068e898d66f90,metal plate striking wall.wav,yes_first,source_or_event,1,-4.625,-2.25,-2.25,-2.375,-2.5,-3.125,-2.875,-3.0
+5f41ab392bf068e898d66f90,metal plate striking wall.wav,no_first,source_or_event,1,0.5,-0.625,-0.25,-0.375,-0.5,-2.0,-1.125,-2.0
+6ae21b303610c07079c70d83,microphonecontact_stereo.wav,yes_first,source_or_event,0,3.0625,5.3125,3.375,3.25,3.1875,3.5625,3.875,3.875
+6ae21b303610c07079c70d83,microphonecontact_stereo.wav,no_first,source_or_event,0,9.1875,9.9375,8.125,8.0625,7.9375,7.0,7.25,7.0625
+c94da38a17883b91851769ff,microphonecontact_stereo.wav,yes_first,source_or_event,1,2.625,-1.875,1.5,1.625,1.625,0.25,0.375,0.25
+c94da38a17883b91851769ff,microphonecontact_stereo.wav,no_first,source_or_event,1,3.8125,0.5,1.875,1.75,1.875,0.25,0.75,0.625
+e94ce1978b09b31faf3349d2,morning breeze and birds.wav,yes_first,scene_context,0,1.125,5.9375,3.6875,4.125,3.3125,6.0625,6.0,5.875
+e94ce1978b09b31faf3349d2,morning breeze and birds.wav,no_first,scene_context,0,0.875,5.0,3.0625,3.625,2.25,3.8125,4.25,4.25
+46b3ef02253e899f328f3276,morning breeze and birds.wav,yes_first,source_or_event,1,4.0,-3.1875,-4.4375,-4.5,-2.9375,-5.0625,-4.75,-5.1875
+46b3ef02253e899f328f3276,morning breeze and birds.wav,no_first,source_or_event,1,7.5625,-1.125,-2.4375,-2.8125,-1.5,-2.875,-2.75,-2.875
+7af4079612526603816b4175,night ambient crickets bugs white noise.wav,yes_first,scene_context,0,1.25,5.25,4.0,4.25,4.0,6.0,6.375,5.5625
+7af4079612526603816b4175,night ambient crickets bugs white noise.wav,no_first,scene_context,0,1.125,6.5,3.0,3.5,3.1875,4.1875,5.0625,4.5
+a12b9feaa82231822b8182eb,night ambient crickets bugs white noise.wav,yes_first,scene_context,1,-0.5,-4.125,-1.375,-1.4375,-1.3125,-2.9375,-3.125,-2.4375
+a12b9feaa82231822b8182eb,night ambient crickets bugs white noise.wav,no_first,scene_context,1,1.125,-0.875,0.5,0.8125,0.625,-1.0625,-1.0,-1.0
+3dd8cb733cfbf0815b587b01,nxSample010.wav,yes_first,source_or_event,0,1.375,5.125,-0.375,0.125,0.75,4.5625,3.125,3.625
+3dd8cb733cfbf0815b587b01,nxSample010.wav,no_first,source_or_event,0,0.75,3.75,0.25,0.375,0.625,1.25,0.875,1.125
+a2672cd28b55d93cf0bfadeb,nxSample010.wav,yes_first,source_or_event,1,2.0625,-3.0625,0.125,0.625,1.125,-3.125,-3.1875,-3.25
+a2672cd28b55d93cf0bfadeb,nxSample010.wav,no_first,source_or_event,1,3.8125,-1.375,1.0,1.25,1.25,-2.0625,-2.0,-1.75
+265fee5a7455efe1f23f1b2b,obresAranyo_trepant2.wav,yes_first,source_or_event,0,1.625,2.875,2.25,2.1875,1.875,2.625,2.875,2.5
+265fee5a7455efe1f23f1b2b,obresAranyo_trepant2.wav,no_first,source_or_event,0,2.25,3.5,0.375,0.375,0.5,1.25,1.125,1.0
+368297b228507e5724b3ee3e,obresAranyo_trepant2.wav,yes_first,source_or_event,1,-3.4375,-2.375,-3.625,-3.75,-3.6875,-2.625,-3.0,-3.0
+368297b228507e5724b3ee3e,obresAranyo_trepant2.wav,no_first,source_or_event,1,-0.125,-3.5,-2.125,-2.125,-2.0,-2.5,-2.625,-2.5
+7d35c1ed6b41586ff729968a,outdoors ambient distant village 3.wav,yes_first,source_or_event,0,2.0625,2.125,-0.9375,-2.3125,-2.0,-1.375,-0.625,-1.75
+7d35c1ed6b41586ff729968a,outdoors ambient distant village 3.wav,no_first,source_or_event,0,3.8125,3.25,0.875,-0.25,0.125,1.125,1.25,0.625
+c12c5f6a2e3162e0adcf5bbd,outdoors ambient distant village 3.wav,yes_first,source_or_event,1,0.9375,1.5,0.75,1.125,1.875,1.0,-0.375,-0.625
+c12c5f6a2e3162e0adcf5bbd,outdoors ambient distant village 3.wav,no_first,source_or_event,1,3.0625,2.25,2.0,2.5,2.625,2.5,1.625,1.375
+1ed4dc60039b60bc741f5ccc,paper01.wav,yes_first,source_or_event,0,5.3125,5.9375,5.625,5.125,5.25,5.0,5.0,4.5
+1ed4dc60039b60bc741f5ccc,paper01.wav,no_first,source_or_event,0,4.0,7.25,4.875,4.5,4.5,4.75,4.875,4.5
+2642e4e8d0580949b22c0978,paper01.wav,yes_first,source_or_event,1,-0.375,-1.25,-0.875,-1.0,-1.0,-0.625,-0.375,-0.625
+2642e4e8d0580949b22c0978,paper01.wav,no_first,source_or_event,1,2.0,-0.5,0.375,0.375,0.5,-0.125,-0.0,-0.0
+3c243ebbf87f7d1d8af35939,plastic-straw-whistles.wav,yes_first,source_or_event,0,2.25,2.625,2.375,2.0,2.0,3.375,3.125,3.375
+3c243ebbf87f7d1d8af35939,plastic-straw-whistles.wav,no_first,source_or_event,0,2.375,3.0,2.0,2.0,2.125,2.25,2.125,2.125
+1b8132c565e50a953b0951ba,plastic-straw-whistles.wav,yes_first,source_or_event,1,1.8125,-2.875,-1.3125,-1.3125,-0.875,-1.75,-2.25,-1.75
+1b8132c565e50a953b0951ba,plastic-straw-whistles.wav,no_first,source_or_event,1,1.875,-0.875,-0.75,-0.875,-0.375,-1.125,-1.5,-1.25
+56d60527a49e115d6d059be3,police_car_siren-esp.wav,yes_first,acoustic_property,0,3.375,4.75,4.625,4.625,4.4375,5.0,5.25,5.5
+56d60527a49e115d6d059be3,police_car_siren-esp.wav,no_first,acoustic_property,0,2.875,5.0625,4.5625,4.5625,4.6875,4.6875,5.0625,4.9375
+0212c1fdbf086993be710298,police_car_siren-esp.wav,yes_first,source_or_event,1,1.875,-4.25,-3.3125,-3.3125,-2.6875,-5.25,-5.625,-4.9375
+0212c1fdbf086993be710298,police_car_siren-esp.wav,no_first,source_or_event,1,3.4375,-2.0,0.625,0.4375,0.875,-1.4375,-1.6875,-1.4375
+5b366478c0ad51746fad4629,porto_morning_tropical_birds_market_20.wav,yes_first,source_or_event,0,0.625,5.0,3.625,3.8125,3.0,4.3125,4.4375,4.8125
+5b366478c0ad51746fad4629,porto_morning_tropical_birds_market_20.wav,no_first,source_or_event,0,3.0625,7.5625,4.3125,5.0,3.75,5.3125,5.3125,6.125
+92e124a7205678a0c5a98bfd,porto_morning_tropical_birds_market_20.wav,yes_first,count_or_relation,1,-6.4375,-3.25,-4.4375,-4.625,-4.4375,-4.0625,-4.25,-4.0
+92e124a7205678a0c5a98bfd,porto_morning_tropical_birds_market_20.wav,no_first,count_or_relation,1,0.25,-1.375,-1.625,-1.375,-1.625,-1.125,-1.5,-1.25
+cb02a7c2b5824a2c5f9ca186,public.wav,yes_first,source_or_event,0,5.875,7.4375,5.375,5.8125,5.5625,6.3125,6.4375,6.375
+cb02a7c2b5824a2c5f9ca186,public.wav,no_first,source_or_event,0,5.75,8.625,5.5625,6.6875,6.6875,6.9375,7.125,7.0625
+be92f6289d69a66ce4087f12,public.wav,yes_first,acoustic_property,1,-3.75,-6.8125,-5.75,-6.125,-5.8125,-6.625,-6.625,-6.5625
+be92f6289d69a66ce4087f12,public.wav,no_first,acoustic_property,1,0.125,-2.125,-1.25,-0.625,-0.625,-1.875,-2.0,-1.875
+a114896ab2dc7f72a101de02,quick walk.wav,yes_first,source_or_event,0,-0.875,-3.5,-3.25,-3.5,-3.3125,-3.5,-3.8125,-4.0625
+a114896ab2dc7f72a101de02,quick walk.wav,no_first,source_or_event,0,2.25,-1.625,-0.375,-0.375,-0.25,-0.75,-0.75,-1.0
+886a23474c6d6ff1655e0892,quick walk.wav,yes_first,source_or_event,1,3.6875,0.625,1.625,1.5625,1.75,-0.125,0.75,1.125
+886a23474c6d6ff1655e0892,quick walk.wav,no_first,source_or_event,1,4.25,0.75,1.625,1.6875,1.8125,0.5,0.875,1.5
+5e94dd49b1b7f5c122b03ebc,radio tuning 2.wav,yes_first,source_or_event,0,2.25,-4.1875,-1.875,-2.0,-1.125,-2.125,-3.5,-4.0625
+5e94dd49b1b7f5c122b03ebc,radio tuning 2.wav,no_first,source_or_event,0,4.6875,-2.0,3.6875,3.6875,4.1875,2.875,2.25,2.25
+dfe986068a2efb69b239e1a1,radio tuning 2.wav,yes_first,source_or_event,1,-0.375,-4.5,-3.6875,-3.6875,-3.1875,-4.625,-5.125,-4.875
+dfe986068a2efb69b239e1a1,radio tuning 2.wav,no_first,source_or_event,1,0.625,-2.0,-1.5,-1.5,-1.1875,-2.25,-2.375,-2.1875
+207e916749648f8e97e4a2ce,radio_static.wav,yes_first,source_or_event,0,-1.0,4.25,0.125,0.125,-0.125,2.0,1.25,1.0
+207e916749648f8e97e4a2ce,radio_static.wav,no_first,source_or_event,0,3.625,3.75,2.375,2.375,2.25,1.875,2.125,2.25
+36fca42bb5d8ff649c2b7194,radio_static.wav,yes_first,source_or_event,1,2.0625,-3.1875,-1.0,-1.0,-0.6875,-2.75,-2.625,-3.0625
+36fca42bb5d8ff649c2b7194,radio_static.wav,no_first,source_or_event,1,3.8125,-1.875,-0.0,-0.0,0.25,-1.625,-1.5,-1.625
+f86faadad031f344626ee271,rain in tent.wav,yes_first,scene_context,0,5.125,5.8125,5.0,4.875,4.8125,4.625,4.625,4.625
+f86faadad031f344626ee271,rain in tent.wav,no_first,scene_context,0,3.4375,6.125,4.1875,4.125,4.0625,4.6875,4.875,5.0
+4171182d70946bb39fb09df5,rain in tent.wav,yes_first,scene_context,1,-1.125,-3.0625,-2.1875,-2.0,-1.75,-2.125,-2.3125,-2.375
+4171182d70946bb39fb09df5,rain in tent.wav,no_first,scene_context,1,-0.25,-1.25,-1.5,-1.375,-1.375,-1.5,-1.625,-1.5
+021aa8d94009d8189434cd1a,rain2.wav,yes_first,source_or_event,0,3.375,2.875,3.5,3.5,3.5625,2.9375,2.9375,2.5625
+021aa8d94009d8189434cd1a,rain2.wav,no_first,source_or_event,0,1.75,3.375,1.4375,1.5625,1.375,1.5,1.75,1.75
+2699c94624a1c5e199f8e211,rain2.wav,yes_first,count_or_relation,1,-1.375,-2.0,-1.125,-1.0,-0.625,-2.0,-2.125,-2.25
+2699c94624a1c5e199f8e211,rain2.wav,no_first,count_or_relation,1,1.25,-0.0,0.375,0.5,0.875,0.125,-0.375,-0.25
+f0465e5406822d0f6d4bfa68,rain_near_smooth.wav,yes_first,source_or_event,0,4.375,5.5625,5.3125,5.5,5.25,5.25,5.5,5.25
+f0465e5406822d0f6d4bfa68,rain_near_smooth.wav,no_first,source_or_event,0,1.8125,6.625,4.0625,4.3125,4.0625,5.1875,5.4375,5.375
+c1a6654d9a465b401dd8c1b9,rain_near_smooth.wav,yes_first,source_or_event,1,-2.6875,-4.9375,-2.5,-2.4375,-2.4375,-4.3125,-4.25,-4.1875
+c1a6654d9a465b401dd8c1b9,rain_near_smooth.wav,no_first,source_or_event,1,3.0625,-1.375,-0.875,-0.875,-0.625,-2.0625,-2.125,-2.0625
+e00dea133a459a05ea72bb94,rainy stream 22 sec.wav,yes_first,source_or_event,0,4.375,4.6875,5.125,5.125,4.875,4.875,4.875,5.0625
+e00dea133a459a05ea72bb94,rainy stream 22 sec.wav,no_first,source_or_event,0,1.8125,4.5625,3.0,2.875,2.5625,3.5,3.5625,3.9375
+7b3ac9fc858e73dc41c22143,rainy stream 22 sec.wav,yes_first,source_or_event,1,2.0625,-3.75,-0.375,-0.375,0.375,-3.5625,-3.5625,-3.5625
+7b3ac9fc858e73dc41c22143,rainy stream 22 sec.wav,no_first,source_or_event,1,3.8125,-1.75,0.375,0.125,0.625,-2.6875,-2.6875,-2.4375
+3da29227e411bcfbda289ba2,remix of 130879__frederic-font__05-hang-song-1.wav,yes_first,source_or_event,0,2.875,3.625,1.125,0.375,0.125,0.125,0.3125,0.6875
+3da29227e411bcfbda289ba2,remix of 130879__frederic-font__05-hang-song-1.wav,no_first,source_or_event,0,1.625,5.8125,1.625,1.625,1.875,2.5625,2.4375,1.875
+c961ee0d21dc1c4e18c7ffa1,remix of 130879__frederic-font__05-hang-song-1.wav,yes_first,source_or_event,1,2.875,4.25,1.625,0.0,0.0,-1.0,-1.8125,0.0
+c961ee0d21dc1c4e18c7ffa1,remix of 130879__frederic-font__05-hang-song-1.wav,no_first,source_or_event,1,0.625,6.1875,1.5,0.875,0.875,0.125,-0.625,0.25
+5ba17863e025187dc77a37a5,river + waterfall 2 .wav,yes_first,time_pattern,0,-3.9375,1.625,-2.125,-2.125,-2.375,-1.125,-2.0,-2.0
+5ba17863e025187dc77a37a5,river + waterfall 2 .wav,no_first,time_pattern,0,-2.875,2.75,-0.5,-0.5,-0.875,0.375,-0.25,-0.125
+9b7b2933b949fe62896a7564,river + waterfall 2 .wav,yes_first,source_or_event,1,2.3125,-1.5,0.875,0.625,1.125,-1.875,-1.625,-0.25
+9b7b2933b949fe62896a7564,river + waterfall 2 .wav,no_first,source_or_event,1,4.8125,1.375,2.625,2.4375,2.5,1.625,2.0,2.375
+817a855f4adce1a4cdb9acf3,river_mouth3.wav,yes_first,source_or_event,0,3.75,2.125,0.5,0.375,0.625,0.25,-0.125,0.375
+817a855f4adce1a4cdb9acf3,river_mouth3.wav,no_first,source_or_event,0,6.25,3.625,1.875,2.0,1.875,1.5,1.5,1.75
+548a1ff9f4add34dfc89beed,river_mouth3.wav,yes_first,source_or_event,1,-1.25,-5.25,-2.8125,-3.0,-2.6875,-4.125,-4.5,-4.0625
+548a1ff9f4add34dfc89beed,river_mouth3.wav,no_first,source_or_event,1,-0.5,-2.75,-3.5625,-3.375,-3.375,-4.125,-3.625,-3.75
+25dcaf876f5b8173ae470165,room-tone theater with silent woman 130525_07.wav,yes_first,time_pattern,0,-4.625,-0.125,-1.5,-2.0,-2.25,1.25,1.125,0.0
+25dcaf876f5b8173ae470165,room-tone theater with silent woman 130525_07.wav,no_first,time_pattern,0,-0.125,2.25,0.875,0.25,0.125,1.875,2.0,1.25
+a61631a9629e2909d383fba8,room-tone theater with silent woman 130525_07.wav,yes_first,source_or_event,1,1.875,-5.0625,-3.8125,-3.75,-3.4375,-4.8125,-5.1875,-5.0625
+a61631a9629e2909d383fba8,room-tone theater with silent woman 130525_07.wav,no_first,source_or_event,1,3.5625,-1.0,-2.0625,-2.0,-1.875,-2.25,-2.375,-2.25
+e1c820267887b380a68517ff,spring rain in the woods.wav,yes_first,source_or_event,0,4.8125,4.8125,4.9375,4.8125,4.75,4.875,4.875,5.1875
+e1c820267887b380a68517ff,spring rain in the woods.wav,no_first,source_or_event,0,2.75,3.875,2.625,2.6875,2.6875,2.875,3.0,3.25
+ae2a2ecc37d78ee75c0c1220,spring rain in the woods.wav,yes_first,source_or_event,1,0.25,-3.5625,-4.1875,-4.1875,-3.6875,-4.3125,-4.3125,-4.3125
+ae2a2ecc37d78ee75c0c1220,spring rain in the woods.wav,no_first,source_or_event,1,3.5,-0.75,-1.5,-1.5625,-1.125,-1.875,-2.0,-2.0625
+4a70437ce2e48480ba542fb4,"spring, road.wav",yes_first,source_or_event,0,2.625,4.25,4.4375,4.25,4.25,4.5625,4.625,4.75
+4a70437ce2e48480ba542fb4,"spring, road.wav",no_first,source_or_event,0,1.75,4.75,2.8125,2.75,2.1875,3.4375,3.5625,3.875
+b55b5cc6c85db4a441e64b68,"spring, road.wav",yes_first,acoustic_property,1,3.0625,-3.9375,-0.5,-0.625,1.0,-3.4375,-2.9375,-3.0
+b55b5cc6c85db4a441e64b68,"spring, road.wav",no_first,acoustic_property,1,3.75,-1.125,0.625,0.375,1.1875,-1.75,-1.75,-1.125
+6cace593e38d8c11d54aa6e0,squeaky metal swing.wav,yes_first,acoustic_property,0,2.375,6.9375,4.5,4.5625,4.375,4.75,5.125,4.8125
+6cace593e38d8c11d54aa6e0,squeaky metal swing.wav,no_first,acoustic_property,0,3.0625,5.5,3.0,3.125,3.0,2.875,3.125,3.25
+7937fe81d6d2353d4f0d440d,squeaky metal swing.wav,yes_first,source_or_event,1,3.625,1.25,2.875,2.8125,2.75,1.5,1.875,1.75
+7937fe81d6d2353d4f0d440d,squeaky metal swing.wav,no_first,source_or_event,1,5.0625,3.125,3.625,3.6875,3.8125,2.75,2.875,3.3125
+f72d979b5ae994865b1df048,steam engine at museum.wav,yes_first,time_pattern,0,-1.1875,-2.875,-3.125,-3.0625,-3.0,-3.25,-3.375,-2.875
+f72d979b5ae994865b1df048,steam engine at museum.wav,no_first,time_pattern,0,-1.8125,-1.75,-1.75,-1.75,-1.5,-1.875,-2.125,-2.0
+9ef43b0b5a712646210a6a0b,steam engine at museum.wav,yes_first,source_or_event,1,1.625,-3.4375,0.125,0.125,0.25,-1.0,-1.0,-0.75
+9ef43b0b5a712646210a6a0b,steam engine at museum.wav,no_first,source_or_event,1,2.625,-0.125,2.25,2.375,2.5,1.625,1.625,1.625
+6abc4bc2b457280f1641084d,street works_pressure_low rumble.wav,yes_first,source_or_event,0,-3.0625,-3.0,-2.875,-2.6875,-2.8125,-4.125,-3.875,-4.0625
+6abc4bc2b457280f1641084d,street works_pressure_low rumble.wav,no_first,source_or_event,0,1.75,-1.5,-2.1875,-2.375,-1.875,-3.125,-2.875,-2.125
+50192862548cd626fa357ffb,street works_pressure_low rumble.wav,yes_first,source_or_event,1,-6.1875,-2.375,-2.375,-2.125,-2.5,-1.75,-1.875,-2.5
+50192862548cd626fa357ffb,street works_pressure_low rumble.wav,no_first,source_or_event,1,-2.125,0.5,-2.5,-2.5,-2.25,-1.75,-1.375,-1.125
+402021431754a6a7507dbea6,tentrain.wav,yes_first,scene_context,0,1.0,3.8125,1.125,1.1875,1.0,2.1875,2.375,2.0625
+402021431754a6a7507dbea6,tentrain.wav,no_first,scene_context,0,1.25,4.75,1.75,1.6875,1.75,1.375,2.0,1.75
+d7052d3f937eb2a5af9e976f,tentrain.wav,yes_first,source_or_event,1,2.25,0.25,1.5,1.5,1.6875,0.125,1.0,1.25
+d7052d3f937eb2a5af9e976f,tentrain.wav,no_first,source_or_event,1,3.0,2.25,2.375,2.5,2.8125,-0.125,0.75,1.25
+8e37b287ed81643863a7b303,the swarm v31m3.wav,yes_first,time_pattern,0,0.875,0.5,1.875,1.75,1.875,1.875,1.625,1.5
+8e37b287ed81643863a7b303,the swarm v31m3.wav,no_first,time_pattern,0,-0.625,1.375,0.125,0.25,0.25,0.25,0.625,0.375
+de8a5ea1a5da6dd54446d193,the swarm v31m3.wav,yes_first,source_or_event,1,4.375,-4.3125,-2.3125,-2.75,-1.6875,-4.625,-4.625,-4.375
+de8a5ea1a5da6dd54446d193,the swarm v31m3.wav,no_first,source_or_event,1,3.0,-2.125,-1.5,-1.875,-0.5,-3.0625,-3.0,-3.4375
+863c4de0e42c1306ba86db16,thunderstorm_2.wav,yes_first,source_or_event,0,3.625,3.375,3.375,3.5625,3.4375,2.75,3.125,3.125
+863c4de0e42c1306ba86db16,thunderstorm_2.wav,no_first,source_or_event,0,3.875,5.25,4.125,3.9375,3.9375,4.3125,4.5625,4.5
+23993e5cb45a7c53e3e81a7d,thunderstorm_2.wav,yes_first,source_or_event,1,4.5625,3.0,3.75,3.8125,3.6875,3.0,3.125,3.0
+23993e5cb45a7c53e3e81a7d,thunderstorm_2.wav,no_first,source_or_event,1,3.75,4.625,3.625,3.5,3.5,3.875,3.75,3.75
+13b5c3b70ad87753258c805c,tornado day 1.wav,yes_first,time_pattern,0,-3.875,-1.75,-1.375,-1.25,-1.1875,-0.5,-1.5,-1.4375
+13b5c3b70ad87753258c805c,tornado day 1.wav,no_first,time_pattern,0,-3.0,-0.375,-2.1875,-2.25,-1.9375,-1.5,-1.9375,-1.75
+9deb622c0fb768f9c25f16b4,tornado day 1.wav,yes_first,source_or_event,1,2.25,0.125,1.25,1.125,1.75,0.875,0.125,0.375
+9deb622c0fb768f9c25f16b4,tornado day 1.wav,no_first,source_or_event,1,1.625,0.125,-0.375,-0.625,-0.25,-0.875,-1.125,-0.75
+b23cc6be65a33f08ba761d90,trail_footsteps_1_0725_102951.wav,yes_first,source_or_event,0,1.125,-0.875,-1.9375,-2.125,-1.375,-3.25,-3.5,-3.1875
+b23cc6be65a33f08ba761d90,trail_footsteps_1_0725_102951.wav,no_first,source_or_event,0,1.875,0.75,1.375,1.25,1.625,-1.125,-1.25,-0.875
+6ff20e12490b065a0b7c587a,trail_footsteps_1_0725_102951.wav,yes_first,count_or_relation,1,0.75,-2.0,-1.0,-1.25,-1.0,-2.625,-2.625,-2.5625
+6ff20e12490b065a0b7c587a,trail_footsteps_1_0725_102951.wav,no_first,count_or_relation,1,2.625,-0.0,2.25,2.0,2.125,0.125,-0.25,0.375
+30218fb419bd822f9e393f5d,train screech.wav,yes_first,source_or_event,0,-0.75,2.5,-0.125,-0.5,-0.625,-0.25,0.375,-0.375
+30218fb419bd822f9e393f5d,train screech.wav,no_first,source_or_event,0,1.875,2.5,2.9375,2.25,2.375,2.5,2.8125,1.875
+7bafca02e1182327f9dfc464,train screech.wav,yes_first,source_or_event,1,5.8125,-1.875,3.375,3.375,3.1875,0.625,0.625,1.0
+7bafca02e1182327f9dfc464,train screech.wav,no_first,source_or_event,1,4.5625,-0.625,2.8125,2.75,2.75,1.5,1.5,1.75
+804da156eaec0d1a15e02e5e,trump.wav,yes_first,source_or_event,0,3.3125,4.125,2.75,2.9375,3.0,2.4375,2.375,3.0
+804da156eaec0d1a15e02e5e,trump.wav,no_first,source_or_event,0,4.875,4.6875,4.0,4.0,4.1875,3.625,3.8125,3.8125
+120add997a26e8d44ec67099,trump.wav,yes_first,source_or_event,1,1.75,-2.6875,0.5,0.125,1.375,-1.1875,-1.5625,-0.875
+120add997a26e8d44ec67099,trump.wav,no_first,source_or_event,1,4.0,-1.25,1.4375,1.4375,1.8125,-0.25,-0.375,-0.0
+254fb677d6f5e736ee6b0029,tua-mirandela_train_arrival_march2007.wav,yes_first,source_or_event,0,-1.625,2.875,2.875,2.375,2.0,2.5,2.75,3.1875
+254fb677d6f5e736ee6b0029,tua-mirandela_train_arrival_march2007.wav,no_first,source_or_event,0,3.6875,5.0625,4.625,4.4375,4.375,4.75,4.8125,4.5625
+62a8c7489e40c7eead1e7609,tua-mirandela_train_arrival_march2007.wav,yes_first,source_or_event,1,-2.3125,-3.0625,-2.4375,-2.625,-2.5,-3.75,-3.4375,-3.5625
+62a8c7489e40c7eead1e7609,tua-mirandela_train_arrival_march2007.wav,no_first,source_or_event,1,0.375,-1.25,-0.625,-0.5,-0.5,-0.875,-1.125,-1.5
+ff0450bb17aeb53a06f97b78,turning pages book slow quickly.wav,yes_first,time_pattern,0,-0.625,1.75,1.875,2.125,2.25,0.5,0.375,1.625
+ff0450bb17aeb53a06f97b78,turning pages book slow quickly.wav,no_first,time_pattern,0,2.625,4.75,2.625,2.75,2.875,2.75,2.25,2.625
+6ef13856e4b36e837fa774da,turning pages book slow quickly.wav,yes_first,source_or_event,1,4.75,1.0,4.0,3.75,3.875,1.5,0.875,2.25
+6ef13856e4b36e837fa774da,turning pages book slow quickly.wav,no_first,source_or_event,1,3.625,3.5,2.125,2.25,2.5,1.125,0.625,1.125
+ee68b82a69d8184d5c5b7c82,urinating on a wall.wav,yes_first,source_or_event,0,1.375,6.25,5.625,5.5,5.4375,6.3125,7.125,6.1875
+ee68b82a69d8184d5c5b7c82,urinating on a wall.wav,no_first,source_or_event,0,3.3125,4.5,3.5,3.375,3.5,3.375,3.5,3.625
+60277a0db57f694d18ba316b,urinating on a wall.wav,yes_first,count_or_relation,1,3.4375,0.25,1.8125,1.9375,1.875,0.375,0.5,0.375
+60277a0db57f694d18ba316b,urinating on a wall.wav,no_first,count_or_relation,1,2.8125,2.125,1.0,1.125,1.0625,0.875,0.375,1.0
+b4ce393621eeb6297e33ba5e,walking in gravel 2.wav,yes_first,source_or_event,0,3.3125,0.875,0.5,0.375,0.625,-1.25,-0.5,-0.625
+b4ce393621eeb6297e33ba5e,walking in gravel 2.wav,no_first,source_or_event,0,3.125,2.875,1.8125,1.875,1.9375,0.25,0.625,0.875
+9639c91d5d9d107e43b38208,walking in gravel 2.wav,yes_first,source_or_event,1,-0.125,-3.5625,-3.625,-3.5625,-3.125,-4.3125,-4.4375,-4.5625
+9639c91d5d9d107e43b38208,walking in gravel 2.wav,no_first,source_or_event,1,2.375,-1.25,-1.0,-0.875,-0.375,-2.125,-2.625,-2.3125
+a3dcbc7205db1d047d1a4f24,walking indoors footsteps tap tap tapping foley.wav,yes_first,source_or_event,0,2.625,5.875,3.625,3.375,2.625,4.625,5.125,5.625
+a3dcbc7205db1d047d1a4f24,walking indoors footsteps tap tap tapping foley.wav,no_first,source_or_event,0,3.375,6.125,2.875,2.875,2.5,3.75,4.25,4.25
+82b2f8dc9c160f207d1e35a6,walking indoors footsteps tap tap tapping foley.wav,yes_first,source_or_event,1,1.375,0.375,-2.625,-2.75,-1.625,-4.25,-4.4375,-4.25
+82b2f8dc9c160f207d1e35a6,walking indoors footsteps tap tap tapping foley.wav,no_first,source_or_event,1,5.6875,2.625,1.0,1.0,2.0,-0.5,-0.75,-0.625
+fb67baf6b65bad3d30a02c4c,washcloth.wav,yes_first,source_or_event,0,4.25,4.875,4.1875,4.125,4.125,5.125,4.9375,4.5625
+fb67baf6b65bad3d30a02c4c,washcloth.wav,no_first,source_or_event,0,3.625,2.875,2.625,2.5,2.5,3.125,3.125,3.0
+a0c1898d8a7bc7a54925c920,washcloth.wav,yes_first,source_or_event,1,2.0,-3.625,-2.0,-1.625,-1.25,-3.6875,-3.125,-3.0625
+a0c1898d8a7bc7a54925c920,washcloth.wav,no_first,source_or_event,1,0.625,-2.375,-1.0,-0.875,-0.375,-2.875,-3.0625,-3.125
+fd30e5d91702541794ee087e,water dripping 2.wav,yes_first,source_or_event,0,4.8125,6.0625,5.75,5.625,5.4375,6.0,6.0625,6.0625
+fd30e5d91702541794ee087e,water dripping 2.wav,no_first,source_or_event,0,2.75,5.625,3.0,3.0,2.875,3.0,3.375,3.375
+b7a40144322975cc27004845,water dripping 2.wav,yes_first,source_or_event,1,4.375,-1.625,0.375,0.375,0.5625,-0.9375,-1.125,-0.375
+b7a40144322975cc27004845,water dripping 2.wav,no_first,source_or_event,1,1.8125,-0.375,-1.4375,-1.3125,-1.0625,-2.625,-2.375,-1.6875
+1f9cea5b7d5ef72ccf3ef9a6,water fountian-hollow sm med pitch.wav,yes_first,time_pattern,0,-2.375,-2.375,-2.75,-3.0,-2.9375,-2.375,-2.625,-2.625
+1f9cea5b7d5ef72ccf3ef9a6,water fountian-hollow sm med pitch.wav,no_first,time_pattern,0,-4.8125,-0.125,-3.9375,-3.125,-4.0,-2.875,-3.25,-3.125
+244acba6c3b7ffae8f9564eb,water fountian-hollow sm med pitch.wav,yes_first,source_or_event,1,-1.1875,-4.3125,-3.5,-3.0,-3.125,-5.5625,-5.5,-5.25
+244acba6c3b7ffae8f9564eb,water fountian-hollow sm med pitch.wav,no_first,source_or_event,1,-1.125,-1.625,-2.0,-1.9375,-2.0,-3.0,-3.4375,-3.0
+f565da14152ac77cbab0c86a,water_boil_pour_stir-96.wav,yes_first,count_or_relation,0,2.5625,4.0,3.875,3.9375,3.4375,3.5625,3.875,3.8125
+f565da14152ac77cbab0c86a,water_boil_pour_stir-96.wav,no_first,count_or_relation,0,4.875,5.3125,2.5625,3.0625,3.125,3.25,3.625,3.375
+9bb08720b8b2b8c481791525,water_boil_pour_stir-96.wav,yes_first,scene_context,1,-0.25,-4.5,-2.625,-2.8125,-3.375,-3.75,-4.25,-3.875
+9bb08720b8b2b8c481791525,water_boil_pour_stir-96.wav,no_first,scene_context,1,3.4375,-0.375,-0.75,-0.75,-0.625,-0.875,-1.375,-1.25
+1335398b2150c894ad0136d6,wheaten field.wav,yes_first,acoustic_property,0,-5.0,-3.3125,-3.9375,-3.8125,-3.6875,-4.0,-4.0625,-4.4375
+1335398b2150c894ad0136d6,wheaten field.wav,no_first,acoustic_property,0,-2.3125,-0.875,-1.125,-1.1875,-0.9375,-1.375,-1.625,-1.75
+96144c6a0b5010740ef38d32,wheaten field.wav,yes_first,source_or_event,1,4.625,-3.25,-0.75,-1.0,0.25,-3.6875,-3.8125,-3.5625
+96144c6a0b5010740ef38d32,wheaten field.wav,no_first,source_or_event,1,5.3125,0.25,1.6875,1.75,2.0625,-0.0,-0.5,-0.125
+55afaa205113ffadf47559a0,wind and birds in the delta of the River Po 2.wav,yes_first,scene_context,0,1.0,6.125,3.625,3.625,2.4375,4.5625,4.9375,5.125
+55afaa205113ffadf47559a0,wind and birds in the delta of the River Po 2.wav,no_first,scene_context,0,1.25,6.75,2.5625,3.3125,3.25,3.6875,4.4375,4.4375
+bb3bcac65b2f2f1b2f11a71c,wind and birds in the delta of the River Po 2.wav,yes_first,source_or_event,1,0.75,-2.0,-0.875,-2.25,-0.5,-1.5,-2.75,-2.9375
+bb3bcac65b2f2f1b2f11a71c,wind and birds in the delta of the River Po 2.wav,no_first,source_or_event,1,3.25,1.625,1.125,1.125,1.75,0.75,0.625,0.5
+ab0472a5e27542755337a4c4,windup_dino_slow.wav,yes_first,source_or_event,0,3.8125,7.625,6.8125,6.625,6.375,7.3125,7.375,7.5
+ab0472a5e27542755337a4c4,windup_dino_slow.wav,no_first,source_or_event,0,3.5625,5.8125,3.875,4.0,4.125,4.4375,4.5625,4.5
+d2e5bf646858ca2e15276bd8,windup_dino_slow.wav,yes_first,scene_context,1,3.1875,0.625,1.375,1.5,1.375,1.0,0.0,0.875
+d2e5bf646858ca2e15276bd8,windup_dino_slow.wav,no_first,scene_context,1,1.8125,2.125,1.125,1.125,1.25,0.75,0.5,0.5
+457cea7fab27be7f5d36cb29,winter wren wind leaves.wav,yes_first,acoustic_property,0,-2.625,2.5,0.75,0.875,0.0,0.5,1.375,1.625
+457cea7fab27be7f5d36cb29,winter wren wind leaves.wav,no_first,acoustic_property,0,2.3125,3.25,3.375,3.6875,2.9375,2.625,3.25,3.25
+215615aa8d91cd1f07f99372,winter wren wind leaves.wav,yes_first,source_or_event,1,4.75,-2.875,1.625,1.75,2.375,0.125,-0.25,0.0
+215615aa8d91cd1f07f99372,winter wren wind leaves.wav,no_first,source_or_event,1,3.875,-1.875,1.625,1.625,1.875,0.125,0.25,0.375
+ee7e8ad0382c8eb48704a34a,wooden barndoor.wav,yes_first,acoustic_property,0,4.8125,4.125,4.4375,3.3125,4.5625,3.75,3.875,3.875
+ee7e8ad0382c8eb48704a34a,wooden barndoor.wav,no_first,acoustic_property,0,4.9375,5.9375,4.0,3.5,3.9375,3.5,3.875,4.25
+9f3e8087f329a3ee81760270,wooden barndoor.wav,yes_first,source_or_event,1,-2.625,-4.625,-3.375,-2.625,-3.125,-4.0,-4.375,-4.375
+9f3e8087f329a3ee81760270,wooden barndoor.wav,no_first,source_or_event,1,-0.875,-2.75,-2.25,-1.5,-2.125,-2.375,-3.0,-2.75
+91947f9831a9b30c739be94e,worktoilet.wav,yes_first,source_or_event,0,2.5,3.5,0.875,1.0,0.5,2.75,2.25,2.125
+91947f9831a9b30c739be94e,worktoilet.wav,no_first,source_or_event,0,2.625,5.5625,2.0,2.25,1.5,4.0625,4.0625,3.75
+aa6dd71321e62356ce5d1024,worktoilet.wav,yes_first,source_or_event,1,4.0625,0.5,-1.125,-1.3125,-0.625,-1.4375,-2.4375,-1.375
+aa6dd71321e62356ce5d1024,worktoilet.wav,no_first,source_or_event,1,3.5,1.75,-0.0,-0.125,0.5,0.125,-0.375,0.25

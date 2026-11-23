@@ -1,0 +1,167 @@
+{
+  "plan_sha256": "d8c91fb1e1adcee3dd3e7e35f80cdd34e29609882233a95f67925e6213f43320",
+  "pairs": 30,
+  "conditions": {
+    "full": {
+      "orders": {
+        "yes_first": {
+          "accuracy": 0.8,
+          "both_correct": 0.6,
+          "preference": 0.9333333333333333
+        },
+        "no_first": {
+          "accuracy": 0.8166666666666667,
+          "both_correct": 0.6333333333333333,
+          "preference": 0.9
+        }
+      },
+      "average_preference": 0.9166666666666666,
+      "checkpoint": ""
+    },
+    "pool4": {
+      "orders": {
+        "yes_first": {
+          "accuracy": 0.5,
+          "both_correct": 0.03333333333333333,
+          "preference": 0.55
+        },
+        "no_first": {
+          "accuracy": 0.5,
+          "both_correct": 0.0,
+          "preference": 0.48333333333333334
+        }
+      },
+      "average_preference": 0.5166666666666667,
+      "checkpoint": ""
+    },
+    "pool16": {
+      "orders": {
+        "yes_first": {
+          "accuracy": 0.5166666666666666,
+          "both_correct": 0.03333333333333333,
+          "preference": 0.7666666666666667
+        },
+        "no_first": {
+          "accuracy": 0.5166666666666667,
+          "both_correct": 0.03333333333333333,
+          "preference": 0.6666666666666666
+        }
+      },
+      "average_preference": 0.7166666666666667,
+      "checkpoint": ""
+    },
+    "K4-s17": {
+      "orders": {
+        "yes_first": {
+          "accuracy": 0.6499999999999999,
+          "both_correct": 0.3,
+          "preference": 0.7666666666666667
+        },
+        "no_first": {
+          "accuracy": 0.6333333333333333,
+          "both_correct": 0.3,
+          "preference": 0.7833333333333333
+        }
+      },
+      "average_preference": 0.775,
+      "checkpoint": "35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab"
+    },
+    "K4-s23": {
+      "orders": {
+        "yes_first": {
+          "accuracy": 0.6499999999999999,
+          "both_correct": 0.3,
+          "preference": 0.7333333333333333
+        },
+        "no_first": {
+          "accuracy": 0.6333333333333333,
+          "both_correct": 0.3,
+          "preference": 0.8166666666666667
+        }
+      },
+      "average_preference": 0.775,
+      "checkpoint": "4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659"
+    },
+    "K4-s41": {
+      "orders": {
+        "yes_first": {
+          "accuracy": 0.6166666666666667,
+          "both_correct": 0.23333333333333334,
+          "preference": 0.8333333333333334
+        },
+        "no_first": {
+          "accuracy": 0.6,
+          "both_correct": 0.2,
+          "preference": 0.7666666666666667
+        }
+      },
+      "average_preference": 0.8,
+      "checkpoint": "5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7"
+    },
+    "K16-s17": {
+      "orders": {
+        "yes_first": {
+          "accuracy": 0.7166666666666667,
+          "both_correct": 0.43333333333333335,
+          "preference": 0.9166666666666666
+        },
+        "no_first": {
+          "accuracy": 0.6666666666666666,
+          "both_correct": 0.36666666666666664,
+          "preference": 0.8666666666666667
+        }
+      },
+      "average_preference": 0.8916666666666667,
+      "checkpoint": "9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d"
+    },
+    "K16-s23": {
+      "orders": {
+        "yes_first": {
+          "accuracy": 0.7166666666666667,
+          "both_correct": 0.4666666666666667,
+          "preference": 0.8333333333333334
+        },
+        "no_first": {
+          "accuracy": 0.6833333333333333,
+          "both_correct": 0.4,
+          "preference": 0.8166666666666667
+        }
+      },
+      "average_preference": 0.825,
+      "checkpoint": "8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735"
+    },
+    "K16-s41": {
+      "orders": {
+        "yes_first": {
+          "accuracy": 0.7833333333333334,
+          "both_correct": 0.5666666666666667,
+          "preference": 0.85
+        },
+        "no_first": {
+          "accuracy": 0.6666666666666666,
+          "both_correct": 0.4,
+          "preference": 0.8666666666666667
+        }
+      },
+      "average_preference": 0.8583333333333333,
+      "checkpoint": "481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5"
+    }
+  },
+  "primary": {
+    "K4_preference": 0.7833333333333333,
+    "K16_preference": 0.8583333333333333,
+    "gain": 0.075,
+    "ci": [
+      0.002777777777777779,
+      0.15833333333333333
+    ],
+    "passes": true
+  },
+  "secondary_pool_gain": {
+    "gain": 0.2,
+    "ci": [
+      0.11666666666666667,
+      0.2833333333333333
+    ]
+  }
+}

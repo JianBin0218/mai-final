@@ -1,0 +1,901 @@
+model,profile,group,order,category_a,category_b,own_a,own_b,pool_a_residual_b,pool_b_residual_a,checkpoint
+full,long,0,0,door wood creaks,clock alarm,2.0,-6.75,,,
+full,long,0,1,door wood creaks,clock alarm,5.0625,-0.75,,,
+full,long,1,0,airplane,crickets,-3.875,-6.4375,,,
+full,long,1,1,airplane,crickets,6.5625,3.125,,,
+full,long,2,0,door wood knock,pig,4.125,-8.0,,,
+full,long,2,1,door wood knock,pig,12.5625,-1.25,,,
+full,long,3,0,train,clock tick,2.5,-6.9375,,,
+full,long,3,1,train,clock tick,7.4375,-2.375,,,
+full,long,4,0,brushing teeth,chirping birds,0.125,-8.75,,,
+full,long,4,1,brushing teeth,chirping birds,4.9375,-4.25,,,
+full,long,5,0,wind,snoring,-0.25,-6.3125,,,
+full,long,5,1,wind,snoring,5.9375,-1.25,,,
+full,long,6,0,glass breaking,rain,4.0,-5.4375,,,
+full,long,6,1,glass breaking,rain,9.0625,2.5,,,
+full,long,7,0,insects,breathing,2.125,-7.1875,,,
+full,long,7,1,insects,breathing,8.625,-3.5,,,
+full,long,8,0,mouse click,thunderstorm,6.4375,-9.0,,,
+full,long,8,1,mouse click,thunderstorm,7.5,-2.25,,,
+full,long,9,0,car horn,dog,-4.75,-8.5,,,
+full,long,9,1,car horn,dog,3.5,-1.875,,,
+full,long,10,0,laughing,vacuum cleaner,0.25,-7.625,,,
+full,long,10,1,laughing,vacuum cleaner,6.5625,-2.0,,,
+full,long,11,0,church bells,coughing,1.75,-9.6875,,,
+full,long,11,1,church bells,coughing,7.8125,-6.25,,,
+full,long,12,0,footsteps,drinking sipping,5.75,-0.375,,,
+full,long,12,1,footsteps,drinking sipping,8.1875,4.0,,,
+full,long,13,0,clapping,sneezing,4.5,-8.9375,,,
+full,long,13,1,clapping,sneezing,7.9375,-5.6875,,,
+full,long,14,0,cat,hen,5.1875,-8.5625,,,
+full,long,14,1,cat,hen,7.75,-3.625,,,
+full,long,15,0,sheep,engine,-1.5,-8.3125,,,
+full,long,15,1,sheep,engine,7.375,-2.875,,,
+full,long,16,0,chainsaw,helicopter,0.75,-2.75,,,
+full,long,16,1,chainsaw,helicopter,4.125,1.125,,,
+full,long,17,0,crow,can opening,2.625,-8.25,,,
+full,long,17,1,crow,can opening,8.125,-3.5,,,
+full,long,18,0,frog,cow,5.25,-5.875,,,
+full,long,18,1,frog,cow,8.1875,-3.25,,,
+full,long,19,0,keyboard typing,washing machine,5.0,-6.6875,,,
+full,long,19,1,keyboard typing,washing machine,4.75,-2.5,,,
+full,long,20,0,rooster,crying baby,4.0,-10.8125,,,
+full,long,20,1,rooster,crying baby,9.5,-4.5625,,,
+full,long,21,0,pouring water,siren,4.75,-9.125,,,
+full,long,21,1,pouring water,siren,8.625,-3.375,,,
+full,long,22,0,crackling fire,water drops,2.375,-1.5,,,
+full,long,22,1,crackling fire,water drops,7.625,5.5625,,,
+full,long,23,0,toilet flush,hand saw,0.875,-4.6875,,,
+full,long,23,1,toilet flush,hand saw,5.5,-1.625,,,
+full,long,24,0,fireworks,sea waves,4.5,-6.5625,,,
+full,long,24,1,fireworks,sea waves,9.375,1.0,,,
+full,short,0,0,door wood creaks,clock alarm,0.875,-5.6875,,,
+full,short,0,1,door wood creaks,clock alarm,4.0625,0.375,,,
+full,short,1,0,airplane,crickets,-6.3125,-5.375,,,
+full,short,1,1,airplane,crickets,3.125,2.75,,,
+full,short,2,0,door wood knock,pig,2.875,-6.4375,,,
+full,short,2,1,door wood knock,pig,12.3125,2.875,,,
+full,short,3,0,train,clock tick,0.25,-4.375,,,
+full,short,3,1,train,clock tick,5.9375,1.125,,,
+full,short,4,0,brushing teeth,chirping birds,-3.875,-8.3125,,,
+full,short,4,1,brushing teeth,chirping birds,3.25,-4.3125,,,
+full,short,5,0,wind,snoring,-1.75,-2.375,,,
+full,short,5,1,wind,snoring,4.125,3.4375,,,
+full,short,6,0,glass breaking,rain,3.875,-6.8125,,,
+full,short,6,1,glass breaking,rain,8.6875,-1.125,,,
+full,short,7,0,insects,breathing,1.0,-3.5,,,
+full,short,7,1,insects,breathing,7.6875,3.625,,,
+full,short,8,0,mouse click,thunderstorm,5.875,-4.25,,,
+full,short,8,1,mouse click,thunderstorm,7.25,2.75,,,
+full,short,9,0,car horn,dog,-4.6875,-8.875,,,
+full,short,9,1,car horn,dog,2.8125,-1.75,,,
+full,short,10,0,laughing,vacuum cleaner,-4.625,-6.0,,,
+full,short,10,1,laughing,vacuum cleaner,2.25,-0.0,,,
+full,short,11,0,church bells,coughing,0.125,-9.4375,,,
+full,short,11,1,church bells,coughing,7.5625,-6.1875,,,
+full,short,12,0,footsteps,drinking sipping,-0.875,2.0,,,
+full,short,12,1,footsteps,drinking sipping,5.5625,4.9375,,,
+full,short,13,0,clapping,sneezing,2.75,-9.625,,,
+full,short,13,1,clapping,sneezing,7.1875,-5.0,,,
+full,short,14,0,cat,hen,4.25,-6.375,,,
+full,short,14,1,cat,hen,7.125,-1.25,,,
+full,short,15,0,sheep,engine,-2.25,-5.5625,,,
+full,short,15,1,sheep,engine,6.25,0.5,,,
+full,short,16,0,chainsaw,helicopter,0.375,-2.375,,,
+full,short,16,1,chainsaw,helicopter,2.625,0.875,,,
+full,short,17,0,crow,can opening,2.25,-5.125,,,
+full,short,17,1,crow,can opening,7.5,1.0,,,
+full,short,18,0,frog,cow,5.25,-1.875,,,
+full,short,18,1,frog,cow,8.25,1.25,,,
+full,short,19,0,keyboard typing,washing machine,4.5625,-6.375,,,
+full,short,19,1,keyboard typing,washing machine,3.5,-3.625,,,
+full,short,20,0,rooster,crying baby,-1.25,-7.4375,,,
+full,short,20,1,rooster,crying baby,7.3125,0.25,,,
+full,short,21,0,pouring water,siren,5.6875,-7.625,,,
+full,short,21,1,pouring water,siren,8.875,-2.0625,,,
+full,short,22,0,crackling fire,water drops,-2.25,-2.125,,,
+full,short,22,1,crackling fire,water drops,3.25,5.75,,,
+full,short,23,0,toilet flush,hand saw,-2.875,-2.125,,,
+full,short,23,1,toilet flush,hand saw,3.0,1.625,,,
+full,short,24,0,fireworks,sea waves,-1.0,-5.875,,,
+full,short,24,1,fireworks,sea waves,6.6875,0.125,,,
+pool4,long,0,0,door wood creaks,clock alarm,3.25,3.25,,,
+pool4,long,0,1,door wood creaks,clock alarm,4.6875,4.5625,,,
+pool4,long,1,0,airplane,crickets,-4.25,-4.125,,,
+pool4,long,1,1,airplane,crickets,3.625,3.5,,,
+pool4,long,2,0,door wood knock,pig,-2.625,-2.875,,,
+pool4,long,2,1,door wood knock,pig,5.375,5.3125,,,
+pool4,long,3,0,train,clock tick,0.375,-0.125,,,
+pool4,long,3,1,train,clock tick,4.75,4.3125,,,
+pool4,long,4,0,brushing teeth,chirping birds,-2.5,-2.75,,,
+pool4,long,4,1,brushing teeth,chirping birds,1.75,1.375,,,
+pool4,long,5,0,wind,snoring,-3.5625,-4.4375,,,
+pool4,long,5,1,wind,snoring,3.5,1.75,,,
+pool4,long,6,0,glass breaking,rain,-1.375,-1.875,,,
+pool4,long,6,1,glass breaking,rain,2.0,1.25,,,
+pool4,long,7,0,insects,breathing,-3.5,-4.125,,,
+pool4,long,7,1,insects,breathing,3.125,2.25,,,
+pool4,long,8,0,mouse click,thunderstorm,-4.4375,-4.6875,,,
+pool4,long,8,1,mouse click,thunderstorm,1.25,0.875,,,
+pool4,long,9,0,car horn,dog,-3.875,-3.875,,,
+pool4,long,9,1,car horn,dog,3.6875,3.5625,,,
+pool4,long,10,0,laughing,vacuum cleaner,-5.6875,-5.75,,,
+pool4,long,10,1,laughing,vacuum cleaner,0.5,0.25,,,
+pool4,long,11,0,church bells,coughing,-5.1875,-5.3125,,,
+pool4,long,11,1,church bells,coughing,0.125,-0.0,,,
+pool4,long,12,0,footsteps,drinking sipping,0.875,0.875,,,
+pool4,long,12,1,footsteps,drinking sipping,4.625,4.4375,,,
+pool4,long,13,0,clapping,sneezing,-4.75,-5.1875,,,
+pool4,long,13,1,clapping,sneezing,0.125,-0.75,,,
+pool4,long,14,0,cat,hen,-2.75,-2.875,,,
+pool4,long,14,1,cat,hen,1.125,1.0,,,
+pool4,long,15,0,sheep,engine,-5.4375,-5.75,,,
+pool4,long,15,1,sheep,engine,3.0,1.75,,,
+pool4,long,16,0,chainsaw,helicopter,1.125,0.875,,,
+pool4,long,16,1,chainsaw,helicopter,2.875,2.875,,,
+pool4,long,17,0,crow,can opening,-2.125,-2.8125,,,
+pool4,long,17,1,crow,can opening,3.8125,3.25,,,
+pool4,long,18,0,frog,cow,-0.875,-1.0,,,
+pool4,long,18,1,frog,cow,1.5,1.5,,,
+pool4,long,19,0,keyboard typing,washing machine,-1.0,-2.25,,,
+pool4,long,19,1,keyboard typing,washing machine,0.125,-1.25,,,
+pool4,long,20,0,rooster,crying baby,-5.125,-5.3125,,,
+pool4,long,20,1,rooster,crying baby,1.625,1.125,,,
+pool4,long,21,0,pouring water,siren,-1.6875,-2.1875,,,
+pool4,long,21,1,pouring water,siren,4.125,4.0,,,
+pool4,long,22,0,crackling fire,water drops,1.625,1.625,,,
+pool4,long,22,1,crackling fire,water drops,4.9375,4.6875,,,
+pool4,long,23,0,toilet flush,hand saw,-0.125,-0.125,,,
+pool4,long,23,1,toilet flush,hand saw,1.75,1.625,,,
+pool4,long,24,0,fireworks,sea waves,-2.375,-2.75,,,
+pool4,long,24,1,fireworks,sea waves,3.0,2.75,,,
+pool4,short,0,0,door wood creaks,clock alarm,3.25,3.375,,,
+pool4,short,0,1,door wood creaks,clock alarm,4.625,4.625,,,
+pool4,short,1,0,airplane,crickets,-4.4375,-4.375,,,
+pool4,short,1,1,airplane,crickets,3.5,3.5,,,
+pool4,short,2,0,door wood knock,pig,-2.75,-2.875,,,
+pool4,short,2,1,door wood knock,pig,5.3125,5.4375,,,
+pool4,short,3,0,train,clock tick,-0.125,-0.25,,,
+pool4,short,3,1,train,clock tick,4.4375,4.3125,,,
+pool4,short,4,0,brushing teeth,chirping birds,-2.6875,-2.6875,,,
+pool4,short,4,1,brushing teeth,chirping birds,1.5,1.375,,,
+pool4,short,5,0,wind,snoring,-4.25,-4.375,,,
+pool4,short,5,1,wind,snoring,2.375,2.5,,,
+pool4,short,6,0,glass breaking,rain,-1.5,-1.875,,,
+pool4,short,6,1,glass breaking,rain,2.0,1.375,,,
+pool4,short,7,0,insects,breathing,-3.75,-3.625,,,
+pool4,short,7,1,insects,breathing,2.875,2.75,,,
+pool4,short,8,0,mouse click,thunderstorm,-4.4375,-4.5625,,,
+pool4,short,8,1,mouse click,thunderstorm,1.125,1.125,,,
+pool4,short,9,0,car horn,dog,-3.9375,-3.875,,,
+pool4,short,9,1,car horn,dog,3.625,3.6875,,,
+pool4,short,10,0,laughing,vacuum cleaner,-5.6875,-5.6875,,,
+pool4,short,10,1,laughing,vacuum cleaner,0.375,0.375,,,
+pool4,short,11,0,church bells,coughing,-5.25,-5.25,,,
+pool4,short,11,1,church bells,coughing,0.125,-0.0,,,
+pool4,short,12,0,footsteps,drinking sipping,0.875,0.75,,,
+pool4,short,12,1,footsteps,drinking sipping,4.6875,4.5625,,,
+pool4,short,13,0,clapping,sneezing,-5.25,-5.0625,,,
+pool4,short,13,1,clapping,sneezing,-0.125,-0.25,,,
+pool4,short,14,0,cat,hen,-2.75,-2.75,,,
+pool4,short,14,1,cat,hen,1.125,1.125,,,
+pool4,short,15,0,sheep,engine,-5.5,-5.5,,,
+pool4,short,15,1,sheep,engine,2.625,2.5,,,
+pool4,short,16,0,chainsaw,helicopter,1.0,0.875,,,
+pool4,short,16,1,chainsaw,helicopter,2.875,2.875,,,
+pool4,short,17,0,crow,can opening,-2.6875,-2.875,,,
+pool4,short,17,1,crow,can opening,3.4375,3.5625,,,
+pool4,short,18,0,frog,cow,-0.875,-1.0,,,
+pool4,short,18,1,frog,cow,1.5,1.375,,,
+pool4,short,19,0,keyboard typing,washing machine,-1.875,-1.875,,,
+pool4,short,19,1,keyboard typing,washing machine,-0.5,-0.625,,,
+pool4,short,20,0,rooster,crying baby,-5.25,-5.375,,,
+pool4,short,20,1,rooster,crying baby,1.25,1.25,,,
+pool4,short,21,0,pouring water,siren,-2.0,-2.25,,,
+pool4,short,21,1,pouring water,siren,4.1875,3.9375,,,
+pool4,short,22,0,crackling fire,water drops,1.625,1.75,,,
+pool4,short,22,1,crackling fire,water drops,4.5625,4.5625,,,
+pool4,short,23,0,toilet flush,hand saw,-0.125,-0.125,,,
+pool4,short,23,1,toilet flush,hand saw,1.75,1.625,,,
+pool4,short,24,0,fireworks,sea waves,-2.75,-2.75,,,
+pool4,short,24,1,fireworks,sea waves,3.0,2.75,,,
+pool16,long,0,0,door wood creaks,clock alarm,2.875,0.625,,,
+pool16,long,0,1,door wood creaks,clock alarm,4.5,4.0625,,,
+pool16,long,1,0,airplane,crickets,-4.75,-3.5,,,
+pool16,long,1,1,airplane,crickets,3.5,3.75,,,
+pool16,long,2,0,door wood knock,pig,-2.25,-3.875,,,
+pool16,long,2,1,door wood knock,pig,5.625,4.25,,,
+pool16,long,3,0,train,clock tick,1.875,-0.5,,,
+pool16,long,3,1,train,clock tick,5.8125,3.75,,,
+pool16,long,4,0,brushing teeth,chirping birds,-2.0,-5.8125,,,
+pool16,long,4,1,brushing teeth,chirping birds,2.375,-0.75,,,
+pool16,long,5,0,wind,snoring,-2.125,-5.1875,,,
+pool16,long,5,1,wind,snoring,4.75,0.25,,,
+pool16,long,6,0,glass breaking,rain,4.9375,-2.25,,,
+pool16,long,6,1,glass breaking,rain,8.0,1.625,,,
+pool16,long,7,0,insects,breathing,0.25,-5.25,,,
+pool16,long,7,1,insects,breathing,6.75,-0.875,,,
+pool16,long,8,0,mouse click,thunderstorm,-0.75,-5.9375,,,
+pool16,long,8,1,mouse click,thunderstorm,4.5,-0.125,,,
+pool16,long,9,0,car horn,dog,-3.6875,-4.8125,,,
+pool16,long,9,1,car horn,dog,3.1875,1.25,,,
+pool16,long,10,0,laughing,vacuum cleaner,-5.625,-6.125,,,
+pool16,long,10,1,laughing,vacuum cleaner,0.625,-0.0,,,
+pool16,long,11,0,church bells,coughing,-1.75,-7.5,,,
+pool16,long,11,1,church bells,coughing,6.5,-4.375,,,
+pool16,long,12,0,footsteps,drinking sipping,2.125,1.0,,,
+pool16,long,12,1,footsteps,drinking sipping,4.8125,4.25,,,
+pool16,long,13,0,clapping,sneezing,-1.5,-8.9375,,,
+pool16,long,13,1,clapping,sneezing,3.6875,-5.375,,,
+pool16,long,14,0,cat,hen,-0.75,-5.0,,,
+pool16,long,14,1,cat,hen,1.875,-1.5,,,
+pool16,long,15,0,sheep,engine,-4.9375,-6.3125,,,
+pool16,long,15,1,sheep,engine,4.8125,-1.0,,,
+pool16,long,16,0,chainsaw,helicopter,1.5,0.75,,,
+pool16,long,16,1,chainsaw,helicopter,3.25,2.875,,,
+pool16,long,17,0,crow,can opening,2.375,-5.125,,,
+pool16,long,17,1,crow,can opening,7.1875,0.375,,,
+pool16,long,18,0,frog,cow,2.75,-1.625,,,
+pool16,long,18,1,frog,cow,4.625,1.0,,,
+pool16,long,19,0,keyboard typing,washing machine,2.5,-3.25,,,
+pool16,long,19,1,keyboard typing,washing machine,2.75,-1.75,,,
+pool16,long,20,0,rooster,crying baby,-0.375,-5.8125,,,
+pool16,long,20,1,rooster,crying baby,7.3125,0.5,,,
+pool16,long,21,0,pouring water,siren,1.0,-5.0,,,
+pool16,long,21,1,pouring water,siren,6.0,2.5625,,,
+pool16,long,22,0,crackling fire,water drops,1.5,1.375,,,
+pool16,long,22,1,crackling fire,water drops,5.75,4.4375,,,
+pool16,long,23,0,toilet flush,hand saw,0.0,-1.25,,,
+pool16,long,23,1,toilet flush,hand saw,2.25,0.625,,,
+pool16,long,24,0,fireworks,sea waves,-1.625,-3.5,,,
+pool16,long,24,1,fireworks,sea waves,5.1875,2.75,,,
+pool16,short,0,0,door wood creaks,clock alarm,3.125,0.0,,,
+pool16,short,0,1,door wood creaks,clock alarm,4.75,3.75,,,
+pool16,short,1,0,airplane,crickets,-4.6875,-4.25,,,
+pool16,short,1,1,airplane,crickets,3.25,3.625,,,
+pool16,short,2,0,door wood knock,pig,-2.375,-3.625,,,
+pool16,short,2,1,door wood knock,pig,5.4375,5.5625,,,
+pool16,short,3,0,train,clock tick,0.875,-1.5,,,
+pool16,short,3,1,train,clock tick,5.875,4.0,,,
+pool16,short,4,0,brushing teeth,chirping birds,-2.875,-4.8125,,,
+pool16,short,4,1,brushing teeth,chirping birds,2.375,-0.125,,,
+pool16,short,5,0,wind,snoring,-3.5625,-3.8125,,,
+pool16,short,5,1,wind,snoring,3.125,2.75,,,
+pool16,short,6,0,glass breaking,rain,3.5,-3.1875,,,
+pool16,short,6,1,glass breaking,rain,6.75,0.875,,,
+pool16,short,7,0,insects,breathing,-0.875,-3.875,,,
+pool16,short,7,1,insects,breathing,5.5625,3.5,,,
+pool16,short,8,0,mouse click,thunderstorm,-1.5,-4.3125,,,
+pool16,short,8,1,mouse click,thunderstorm,4.125,1.375,,,
+pool16,short,9,0,car horn,dog,-4.125,-4.5625,,,
+pool16,short,9,1,car horn,dog,3.4375,2.5625,,,
+pool16,short,10,0,laughing,vacuum cleaner,-5.6875,-5.8125,,,
+pool16,short,10,1,laughing,vacuum cleaner,0.75,1.0,,,
+pool16,short,11,0,church bells,coughing,-4.75,-5.4375,,,
+pool16,short,11,1,church bells,coughing,2.125,-0.5,,,
+pool16,short,12,0,footsteps,drinking sipping,0.875,1.375,,,
+pool16,short,12,1,footsteps,drinking sipping,4.9375,4.8125,,,
+pool16,short,13,0,clapping,sneezing,-1.625,-7.3125,,,
+pool16,short,13,1,clapping,sneezing,2.9375,-2.75,,,
+pool16,short,14,0,cat,hen,-1.625,-3.625,,,
+pool16,short,14,1,cat,hen,0.25,0.5,,,
+pool16,short,15,0,sheep,engine,-5.1875,-5.3125,,,
+pool16,short,15,1,sheep,engine,3.6875,1.75,,,
+pool16,short,16,0,chainsaw,helicopter,1.0,-0.125,,,
+pool16,short,16,1,chainsaw,helicopter,3.0,2.375,,,
+pool16,short,17,0,crow,can opening,-2.125,-3.9375,,,
+pool16,short,17,1,crow,can opening,4.5,2.125,,,
+pool16,short,18,0,frog,cow,3.625,-1.25,,,
+pool16,short,18,1,frog,cow,5.375,1.5,,,
+pool16,short,19,0,keyboard typing,washing machine,1.375,-4.5,,,
+pool16,short,19,1,keyboard typing,washing machine,2.5,-2.5,,,
+pool16,short,20,0,rooster,crying baby,-4.6875,-6.0,,,
+pool16,short,20,1,rooster,crying baby,3.5,0.375,,,
+pool16,short,21,0,pouring water,siren,1.5625,-4.375,,,
+pool16,short,21,1,pouring water,siren,6.375,2.3125,,,
+pool16,short,22,0,crackling fire,water drops,-0.125,1.625,,,
+pool16,short,22,1,crackling fire,water drops,4.0625,4.625,,,
+pool16,short,23,0,toilet flush,hand saw,-0.5,-0.875,,,
+pool16,short,23,1,toilet flush,hand saw,2.0,1.375,,,
+pool16,short,24,0,fireworks,sea waves,-2.125,-3.875,,,
+pool16,short,24,1,fireworks,sea waves,4.5,2.875,,,
+K4-s17,long,0,0,door wood creaks,clock alarm,3.75,-4.4375,-2.25,3.25,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,long,0,1,door wood creaks,clock alarm,5.6875,2.125,3.375,4.9375,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,long,1,0,airplane,crickets,-2.0,-4.5625,-4.0,-1.875,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,long,1,1,airplane,crickets,4.6875,4.0,4.1875,4.5,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,long,2,0,door wood knock,pig,5.9375,-7.6875,-5.4375,3.875,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,long,2,1,door wood knock,pig,11.5,-1.625,1.125,10.5625,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,long,3,0,train,clock tick,3.0,-6.5625,-5.8125,3.125,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,long,3,1,train,clock tick,7.0625,-1.875,-0.875,7.0625,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,long,4,0,brushing teeth,chirping birds,-0.875,-7.5625,-6.625,-0.375,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,long,4,1,brushing teeth,chirping birds,3.25,-3.625,-3.25,3.4375,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,long,5,0,wind,snoring,1.625,-5.5625,-5.125,0.25,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,long,5,1,wind,snoring,6.5625,-0.5,1.0,5.875,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,long,6,0,glass breaking,rain,5.5,-3.5,-2.875,5.25,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,long,6,1,glass breaking,rain,8.4375,3.0,4.25,7.25,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,long,7,0,insects,breathing,2.5,-5.75,-5.125,1.875,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,long,7,1,insects,breathing,7.5,-3.375,-2.375,7.25,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,long,8,0,mouse click,thunderstorm,3.0,-7.125,-6.75,0.75,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,long,8,1,mouse click,thunderstorm,6.125,0.25,1.125,5.25,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,long,9,0,car horn,dog,-3.9375,-7.8125,-6.1875,-4.125,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,long,9,1,car horn,dog,3.4375,-2.875,-2.25,2.9375,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,long,10,0,laughing,vacuum cleaner,-2.0,-6.3125,-6.5,-2.625,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,long,10,1,laughing,vacuum cleaner,5.3125,-1.0,-1.25,4.0625,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,long,11,0,church bells,coughing,2.5,-9.5625,-9.6875,0.75,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,long,11,1,church bells,coughing,7.875,-7.1875,-7.1875,7.125,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,long,12,0,footsteps,drinking sipping,5.0625,0.0,0.125,4.6875,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,long,12,1,footsteps,drinking sipping,6.625,3.5,4.0,6.0625,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,long,13,0,clapping,sneezing,3.6875,-8.125,-8.0625,1.5,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,long,13,1,clapping,sneezing,7.4375,-6.1875,-5.875,5.6875,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,long,14,0,cat,hen,5.875,-7.8125,-7.125,6.5625,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,long,14,1,cat,hen,7.3125,-3.125,-2.0,7.125,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,long,15,0,sheep,engine,-4.875,-7.0,-6.6875,-5.4375,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,long,15,1,sheep,engine,3.5625,-2.875,-1.375,1.625,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,long,16,0,chainsaw,helicopter,2.0,-2.25,-1.875,1.625,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,long,16,1,chainsaw,helicopter,5.0,1.625,1.75,4.75,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,long,17,0,crow,can opening,3.8125,-6.375,-5.3125,3.625,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,long,17,1,crow,can opening,8.125,-1.625,-0.75,7.8125,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,long,18,0,frog,cow,6.0625,-4.625,-4.1875,5.0625,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,long,18,1,frog,cow,8.1875,-1.625,-1.125,7.125,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,long,19,0,keyboard typing,washing machine,1.625,-6.0625,-5.375,0.0,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,long,19,1,keyboard typing,washing machine,3.25,-1.875,-1.5,1.625,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,long,20,0,rooster,crying baby,1.875,-9.625,-7.75,-1.0,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,long,20,1,rooster,crying baby,8.0,-5.0,-3.0,7.1875,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,long,21,0,pouring water,siren,5.1875,-8.0625,-7.0625,3.4375,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,long,21,1,pouring water,siren,7.3125,-2.1875,-1.125,6.625,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,long,22,0,crackling fire,water drops,2.25,-1.5,-1.375,3.125,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,long,22,1,crackling fire,water drops,7.125,4.25,4.0,7.25,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,long,23,0,toilet flush,hand saw,2.0,-4.0,-3.25,0.75,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,long,23,1,toilet flush,hand saw,4.375,-0.625,-0.375,2.875,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,long,24,0,fireworks,sea waves,3.5,-5.0625,-4.5,2.5,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,long,24,1,fireworks,sea waves,7.625,1.625,2.25,7.75,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,0,0,door wood creaks,clock alarm,2.5,-2.625,-0.5,2.375,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,0,1,door wood creaks,clock alarm,4.9375,3.5,3.875,5.0,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,1,0,airplane,crickets,-4.6875,-3.125,-3.125,-5.0,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,1,1,airplane,crickets,3.375,4.1875,4.375,2.875,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,2,0,door wood knock,pig,4.125,-5.5625,-4.8125,2.625,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,2,1,door wood knock,pig,11.125,3.0,2.5,10.625,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,3,0,train,clock tick,1.25,-3.125,-3.0,1.25,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,3,1,train,clock tick,5.9375,3.0,3.0,6.25,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,4,0,brushing teeth,chirping birds,-3.3125,-7.75,-7.5,-3.25,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,4,1,brushing teeth,chirping birds,2.375,-4.4375,-4.25,2.625,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,5,0,wind,snoring,-2.25,-2.25,-2.0,-2.375,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,5,1,wind,snoring,4.75,4.0625,4.0,4.6875,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,6,0,glass breaking,rain,5.4375,-5.25,-5.125,5.25,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,6,1,glass breaking,rain,8.0625,0.25,2.0,7.4375,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,7,0,insects,breathing,2.0,-3.375,-2.875,1.5,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,7,1,insects,breathing,7.375,3.375,3.625,6.875,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,8,0,mouse click,thunderstorm,3.875,-4.9375,-4.9375,2.625,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,8,1,mouse click,thunderstorm,6.25,1.375,2.0,5.75,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,9,0,car horn,dog,-3.5625,-8.0625,-7.375,-3.8125,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,9,1,car horn,dog,3.625,-2.8125,-2.3125,3.1875,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,10,0,laughing,vacuum cleaner,-5.9375,-5.8125,-5.6875,-5.75,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,10,1,laughing,vacuum cleaner,1.5,0.5,0.375,1.75,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,11,0,church bells,coughing,0.125,-9.5625,-9.5625,-0.25,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,11,1,church bells,coughing,7.5,-7.1875,-7.375,7.0,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,12,0,footsteps,drinking sipping,-0.125,0.5,0.625,0.0,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,12,1,footsteps,drinking sipping,4.9375,4.625,4.8125,4.875,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,13,0,clapping,sneezing,-0.5,-9.0,-8.625,-4.0625,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,13,1,clapping,sneezing,5.4375,-5.8125,-6.4375,2.0,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,14,0,cat,hen,5.5,-4.6875,-3.5,5.4375,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,14,1,cat,hen,6.875,-0.0,1.0,7.125,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,15,0,sheep,engine,-4.25,-4.75,-4.875,-4.625,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,15,1,sheep,engine,4.25,1.125,1.375,3.625,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,16,0,chainsaw,helicopter,1.625,-1.125,-0.625,0.375,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,16,1,chainsaw,helicopter,4.5,1.875,2.375,3.125,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,17,0,crow,can opening,2.125,-3.375,-3.1875,1.125,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,17,1,crow,can opening,6.9375,2.5,2.6875,6.3125,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,18,0,frog,cow,6.8125,-2.625,-2.125,6.5625,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,18,1,frog,cow,8.8125,0.5,0.75,8.125,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,19,0,keyboard typing,washing machine,1.875,-6.375,-6.25,1.0,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,19,1,keyboard typing,washing machine,3.25,-3.25,-2.75,2.375,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,20,0,rooster,crying baby,-3.3125,-6.25,-5.4375,-3.75,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,20,1,rooster,crying baby,4.4375,1.75,2.5,4.3125,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,21,0,pouring water,siren,4.25,-6.625,-6.1875,3.9375,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,21,1,pouring water,siren,6.625,0.375,0.625,6.25,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,22,0,crackling fire,water drops,-2.625,-1.625,-1.25,-1.25,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,22,1,crackling fire,water drops,3.25,4.375,3.75,4.0,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,23,0,toilet flush,hand saw,-1.875,-2.0,-1.875,-1.875,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,23,1,toilet flush,hand saw,1.875,1.5,1.5,1.875,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,24,0,fireworks,sea waves,-2.25,-5.125,-4.9375,-2.75,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s17,short,24,1,fireworks,sea waves,6.375,0.125,-0.0,7.0,35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab
+K4-s23,long,0,0,door wood creaks,clock alarm,3.75,-6.0,-5.5625,2.5,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,long,0,1,door wood creaks,clock alarm,5.5625,1.25,2.0,4.6875,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,long,1,0,airplane,crickets,-1.625,-6.0625,-5.375,-1.625,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,long,1,1,airplane,crickets,4.75,2.5,3.375,4.75,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,long,2,0,door wood knock,pig,5.5625,-6.0,-3.875,3.5,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,long,2,1,door wood knock,pig,11.3125,1.375,3.0,10.4375,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,long,3,0,train,clock tick,2.875,-6.4375,-5.9375,3.0,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,long,3,1,train,clock tick,7.0625,-1.5,-0.75,7.125,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,long,4,0,brushing teeth,chirping birds,-0.375,-7.625,-6.875,0.5,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,long,4,1,brushing teeth,chirping birds,3.1875,-3.4375,-3.25,3.5625,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,long,5,0,wind,snoring,2.125,-5.5625,-5.0,1.625,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,long,5,1,wind,snoring,7.0625,-0.5,0.875,6.75,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,long,6,0,glass breaking,rain,5.25,-3.3125,-2.875,5.0,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,long,6,1,glass breaking,rain,8.375,3.0,4.125,7.25,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,long,7,0,insects,breathing,2.5,-5.6875,-4.875,2.0,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,long,7,1,insects,breathing,7.375,-3.25,-1.875,7.3125,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,long,8,0,mouse click,thunderstorm,3.875,-7.25,-7.25,1.5,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,long,8,1,mouse click,thunderstorm,6.25,-0.0,0.75,5.4375,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,long,9,0,car horn,dog,-4.0625,-7.9375,-6.625,-4.1875,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,long,9,1,car horn,dog,3.5625,-3.0625,-2.5,2.9375,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,long,10,0,laughing,vacuum cleaner,-1.25,-6.3125,-6.5,-1.875,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,long,10,1,laughing,vacuum cleaner,6.125,-1.0,-1.0,5.125,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,long,11,0,church bells,coughing,2.375,-9.5,-9.5,1.625,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,long,11,1,church bells,coughing,7.9375,-7.3125,-7.25,7.6875,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,long,12,0,footsteps,drinking sipping,5.1875,-0.25,-0.25,4.9375,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,long,12,1,footsteps,drinking sipping,7.0625,3.375,3.9375,6.625,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,long,13,0,clapping,sneezing,3.25,-8.125,-7.9375,2.0,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,long,13,1,clapping,sneezing,7.8125,-6.375,-5.8125,6.4375,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,long,14,0,cat,hen,5.9375,-7.625,-7.25,6.625,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,long,14,1,cat,hen,7.25,-2.75,-1.875,7.125,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,long,15,0,sheep,engine,-3.75,-6.875,-6.6875,-4.4375,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,long,15,1,sheep,engine,4.875,-2.8125,-1.5,3.375,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,long,16,0,chainsaw,helicopter,1.875,-2.375,-2.0,1.375,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,long,16,1,chainsaw,helicopter,4.8125,1.625,1.75,4.5,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,long,17,0,crow,can opening,4.0,-6.3125,-5.5,3.5,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,long,17,1,crow,can opening,8.0,-1.875,-1.0,7.8125,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,long,18,0,frog,cow,6.5625,-5.4375,-4.875,6.0625,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,long,18,1,frog,cow,8.5,-2.75,-1.625,8.0625,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,long,19,0,keyboard typing,washing machine,4.4375,-6.0,-5.6875,2.125,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,long,19,1,keyboard typing,washing machine,4.625,-1.25,-1.75,3.375,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,long,20,0,rooster,crying baby,1.5,-9.75,-7.875,-2.0,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,long,20,1,rooster,crying baby,8.125,-5.375,-3.25,7.375,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,long,21,0,pouring water,siren,4.5625,-8.625,-7.9375,3.25,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,long,21,1,pouring water,siren,7.125,-2.3125,-2.125,6.6875,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,long,22,0,crackling fire,water drops,2.125,-1.375,-1.5,3.0,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,long,22,1,crackling fire,water drops,7.0625,4.0,3.875,7.25,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,long,23,0,toilet flush,hand saw,1.375,-4.125,-3.5,0.375,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,long,23,1,toilet flush,hand saw,4.0,-0.875,-0.5,2.625,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,long,24,0,fireworks,sea waves,4.625,-4.9375,-4.625,3.875,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,long,24,1,fireworks,sea waves,8.25,1.375,2.125,8.0625,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,0,0,door wood creaks,clock alarm,2.375,-4.375,-3.625,2.0,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,0,1,door wood creaks,clock alarm,4.8125,3.0,3.375,4.875,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,1,0,airplane,crickets,-5.3125,-3.25,-3.25,-5.625,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,1,1,airplane,crickets,2.875,4.1875,4.3125,2.5,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,2,0,door wood knock,pig,3.5,-5.875,-5.0,2.125,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,2,1,door wood knock,pig,10.9375,2.625,2.0,10.6875,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,3,0,train,clock tick,0.75,-3.25,-3.125,1.125,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,3,1,train,clock tick,6.0,2.875,3.125,6.625,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,4,0,brushing teeth,chirping birds,-3.25,-7.9375,-7.75,-3.125,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,4,1,brushing teeth,chirping birds,2.375,-4.8125,-4.625,2.75,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,5,0,wind,snoring,-1.625,-2.125,-1.875,-1.875,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,5,1,wind,snoring,5.375,4.0,4.0625,5.125,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,6,0,glass breaking,rain,5.5,-5.1875,-5.125,5.5625,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,6,1,glass breaking,rain,8.0625,0.25,2.125,7.4375,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,7,0,insects,breathing,2.0,-3.375,-2.875,1.625,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,7,1,insects,breathing,7.3125,3.25,3.5,6.9375,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,8,0,mouse click,thunderstorm,5.0625,-5.0,-5.125,4.3125,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,8,1,mouse click,thunderstorm,6.4375,1.5,2.125,6.0625,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,9,0,car horn,dog,-3.6875,-8.3125,-7.5,-3.8125,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,9,1,car horn,dog,3.5625,-3.0625,-2.375,3.375,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,10,0,laughing,vacuum cleaner,-6.125,-5.6875,-5.5,-6.0,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,10,1,laughing,vacuum cleaner,1.125,0.75,0.625,1.625,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,11,0,church bells,coughing,0.375,-9.6875,-9.75,0.375,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,11,1,church bells,coughing,7.375,-7.3125,-7.625,7.125,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,12,0,footsteps,drinking sipping,-0.125,0.25,0.5,0.125,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,12,1,footsteps,drinking sipping,4.875,4.6875,4.8125,4.9375,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,13,0,clapping,sneezing,-2.0,-9.0,-8.625,-3.75,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,13,1,clapping,sneezing,5.5,-5.875,-6.3125,3.0625,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,14,0,cat,hen,5.5625,-5.75,-4.0625,5.5,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,14,1,cat,hen,6.875,-0.25,1.25,7.0625,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,15,0,sheep,engine,-3.875,-4.6875,-4.8125,-4.1875,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,15,1,sheep,engine,4.5625,1.25,1.5,3.8125,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,16,0,chainsaw,helicopter,1.5,-0.75,-0.375,0.125,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,16,1,chainsaw,helicopter,3.875,2.125,2.5,2.625,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,17,0,crow,can opening,2.125,-3.4375,-3.125,1.0,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,17,1,crow,can opening,6.875,2.375,2.6875,6.25,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,18,0,frog,cow,6.875,-2.875,-2.625,6.75,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,18,1,frog,cow,8.75,0.625,0.75,8.0625,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,19,0,keyboard typing,washing machine,2.125,-6.375,-6.3125,0.375,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,19,1,keyboard typing,washing machine,3.5,-3.25,-2.625,2.5,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,20,0,rooster,crying baby,-3.5625,-6.1875,-5.375,-4.375,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,20,1,rooster,crying baby,4.9375,1.625,2.375,4.25,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,21,0,pouring water,siren,4.375,-7.0625,-6.9375,3.75,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,21,1,pouring water,siren,7.0625,0.375,0.25,6.875,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,22,0,crackling fire,water drops,-2.5,-1.75,-1.5,-1.125,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,22,1,crackling fire,water drops,3.375,4.0625,3.375,4.0625,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,23,0,toilet flush,hand saw,-1.875,-2.125,-2.125,-2.125,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,23,1,toilet flush,hand saw,2.125,1.375,1.375,2.0,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,24,0,fireworks,sea waves,-1.875,-5.125,-5.0,-2.125,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s23,short,24,1,fireworks,sea waves,6.375,0.125,-0.0,7.0,4eaf9b743d7b1924826ee1812cc912f54927a5b682e1df6c353ce5f8d4913659
+K4-s41,long,0,0,door wood creaks,clock alarm,4.0,-5.3125,-5.1875,3.25,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,long,0,1,door wood creaks,clock alarm,5.5625,1.75,2.125,4.75,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,long,1,0,airplane,crickets,-1.75,-6.5625,-5.75,-1.625,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,long,1,1,airplane,crickets,4.8125,1.625,3.125,4.5625,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,long,2,0,door wood knock,pig,5.6875,-7.5625,-6.1875,2.625,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,long,2,1,door wood knock,pig,11.375,-1.25,-0.0,10.1875,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,long,3,0,train,clock tick,2.625,-5.875,-5.75,2.625,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,long,3,1,train,clock tick,6.75,-0.5,-0.125,6.875,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,long,4,0,brushing teeth,chirping birds,-1.0,-6.5625,-6.0,-0.375,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,long,4,1,brushing teeth,chirping birds,3.125,-1.875,-1.625,3.1875,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,long,5,0,wind,snoring,1.5,-5.6875,-5.1875,1.125,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,long,5,1,wind,snoring,6.75,-0.75,0.25,6.5,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,long,6,0,glass breaking,rain,5.4375,-3.4375,-2.8125,5.125,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,long,6,1,glass breaking,rain,8.125,2.8125,3.75,7.25,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,long,7,0,insects,breathing,2.375,-5.75,-4.625,1.75,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,long,7,1,insects,breathing,7.3125,-2.75,-1.375,7.0625,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,long,8,0,mouse click,thunderstorm,3.0,-7.25,-7.1875,0.875,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,long,8,1,mouse click,thunderstorm,6.0625,0.125,0.75,5.3125,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,long,9,0,car horn,dog,-4.0625,-7.75,-6.8125,-4.1875,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,long,9,1,car horn,dog,3.625,-2.75,-2.125,2.9375,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,long,10,0,laughing,vacuum cleaner,-1.75,-6.0625,-6.1875,-2.5,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,long,10,1,laughing,vacuum cleaner,5.6875,-0.875,-0.875,4.8125,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,long,11,0,church bells,coughing,1.875,-9.375,-9.4375,0.625,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,long,11,1,church bells,coughing,7.75,-7.25,-7.1875,7.25,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,long,12,0,footsteps,drinking sipping,4.875,0.0,-0.125,4.5,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,long,12,1,footsteps,drinking sipping,6.625,3.1875,3.75,6.125,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,long,13,0,clapping,sneezing,3.4375,-8.375,-8.1875,2.375,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,long,13,1,clapping,sneezing,7.625,-6.3125,-5.75,6.5625,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,long,14,0,cat,hen,4.75,-6.9375,-6.0,5.875,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,long,14,1,cat,hen,6.75,-2.5,-1.25,6.9375,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,long,15,0,sheep,engine,-4.3125,-6.5625,-6.125,-4.6875,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,long,15,1,sheep,engine,4.4375,-1.875,-0.75,3.625,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,long,16,0,chainsaw,helicopter,1.75,-2.125,-1.75,1.75,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,long,16,1,chainsaw,helicopter,4.4375,1.625,1.875,4.625,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,long,17,0,crow,can opening,3.75,-6.3125,-5.3125,3.125,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,long,17,1,crow,can opening,8.0,-1.5,-0.5,7.625,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,long,18,0,frog,cow,6.5,-5.3125,-5.125,5.5625,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,long,18,1,frog,cow,8.5,-2.625,-2.125,7.9375,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,long,19,0,keyboard typing,washing machine,2.625,-5.6875,-5.5625,1.0,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,long,19,1,keyboard typing,washing machine,3.5,-1.375,-1.625,2.375,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,long,20,0,rooster,crying baby,0.375,-9.375,-7.625,-2.25,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,long,20,1,rooster,crying baby,7.5625,-4.8125,-2.875,6.8125,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,long,21,0,pouring water,siren,4.75,-8.25,-7.375,3.3125,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,long,21,1,pouring water,siren,7.0625,-1.875,-1.75,6.5,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,long,22,0,crackling fire,water drops,2.125,-1.25,-1.375,3.0,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,long,22,1,crackling fire,water drops,6.9375,4.125,3.9375,7.0,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,long,23,0,toilet flush,hand saw,1.25,-3.875,-2.625,0.125,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,long,23,1,toilet flush,hand saw,3.625,-0.625,0.125,2.5,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,long,24,0,fireworks,sea waves,4.5,-4.8125,-4.4375,3.25,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,long,24,1,fireworks,sea waves,8.125,1.375,2.125,7.8125,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,0,0,door wood creaks,clock alarm,2.625,-4.0,-3.75,2.5,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,0,1,door wood creaks,clock alarm,4.8125,3.0,3.125,4.75,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,1,0,airplane,crickets,-2.125,-3.25,-3.125,-2.625,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,1,1,airplane,crickets,4.375,4.0625,4.375,4.0,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,2,0,door wood knock,pig,2.875,-5.375,-4.625,1.0,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,2,1,door wood knock,pig,10.8125,2.75,2.375,9.9375,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,3,0,train,clock tick,1.125,-2.875,-3.125,1.375,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,3,1,train,clock tick,6.0625,3.25,3.125,6.5,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,4,0,brushing teeth,chirping birds,-3.3125,-7.1875,-7.0,-3.125,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,4,1,brushing teeth,chirping birds,2.375,-3.4375,-3.125,2.5,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,5,0,wind,snoring,-1.875,-2.5625,-2.3125,-2.0,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,5,1,wind,snoring,5.0625,3.875,3.875,4.8125,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,6,0,glass breaking,rain,5.4375,-4.875,-4.75,5.3125,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,6,1,glass breaking,rain,7.8125,0.5,2.0,7.375,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,7,0,insects,breathing,1.875,-3.5,-3.0,1.375,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,7,1,insects,breathing,7.25,3.25,3.5,6.875,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,8,0,mouse click,thunderstorm,3.9375,-5.1875,-5.1875,2.75,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,8,1,mouse click,thunderstorm,6.1875,1.0,1.75,5.6875,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,9,0,car horn,dog,-3.625,-8.125,-7.3125,-3.8125,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,9,1,car horn,dog,3.4375,-2.8125,-2.0,3.125,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,10,0,laughing,vacuum cleaner,-6.1875,-5.8125,-5.6875,-5.9375,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,10,1,laughing,vacuum cleaner,1.125,0.875,0.625,1.5,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,11,0,church bells,coughing,-0.5,-9.5625,-9.625,-0.625,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,11,1,church bells,coughing,7.375,-7.375,-7.5625,6.75,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,12,0,footsteps,drinking sipping,0.125,0.625,0.75,0.25,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,12,1,footsteps,drinking sipping,4.875,4.625,4.8125,5.0,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,13,0,clapping,sneezing,-0.25,-9.0625,-8.75,-3.4375,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,13,1,clapping,sneezing,5.9375,-5.75,-6.0625,3.1875,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,14,0,cat,hen,5.125,-4.5,-3.375,5.0,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,14,1,cat,hen,6.625,-0.125,0.875,6.875,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,15,0,sheep,engine,-3.875,-4.625,-4.75,-4.25,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,15,1,sheep,engine,4.75,1.125,1.375,4.3125,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,16,0,chainsaw,helicopter,1.375,-0.875,-0.25,0.375,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,16,1,chainsaw,helicopter,4.0,2.0,2.25,3.0,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,17,0,crow,can opening,1.875,-3.5,-3.3125,0.875,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,17,1,crow,can opening,6.75,2.3125,2.9375,5.9375,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,18,0,frog,cow,6.625,-2.625,-2.5,6.4375,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,18,1,frog,cow,8.5625,0.625,0.75,8.0625,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,19,0,keyboard typing,washing machine,3.125,-6.1875,-6.1875,2.25,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,19,1,keyboard typing,washing machine,3.625,-3.0,-2.375,3.0,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,20,0,rooster,crying baby,-3.9375,-5.625,-5.625,-4.1875,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,20,1,rooster,crying baby,4.4375,2.375,2.125,4.125,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,21,0,pouring water,siren,4.9375,-6.6875,-6.3125,4.625,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,21,1,pouring water,siren,6.9375,0.75,1.0,6.5,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,22,0,crackling fire,water drops,-1.625,-1.625,-1.25,-0.5,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,22,1,crackling fire,water drops,3.625,4.25,3.6875,4.4375,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,23,0,toilet flush,hand saw,-1.75,-2.125,-1.875,-1.875,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,23,1,toilet flush,hand saw,2.125,1.5,1.5,2.0,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,24,0,fireworks,sea waves,-1.875,-5.125,-4.875,-2.0,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K4-s41,short,24,1,fireworks,sea waves,6.375,0.375,0.625,6.9375,5b4da2f48ff5270440e233636955aadb80aff406ff7841104cfbec829a946cb7
+K16-s17,long,0,0,door wood creaks,clock alarm,3.125,-5.75,-5.625,2.25,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,long,0,1,door wood creaks,clock alarm,5.5,2.25,2.125,4.8125,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,long,1,0,airplane,crickets,-2.0,-3.25,-3.0,-1.875,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,long,1,1,airplane,crickets,5.0625,4.6875,4.9375,5.125,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,long,2,0,door wood knock,pig,4.75,-7.5,-4.5,3.375,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,long,2,1,door wood knock,pig,11.4375,-0.375,3.125,10.625,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,long,3,0,train,clock tick,3.25,-6.75,-6.1875,3.0,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,long,3,1,train,clock tick,7.5,-3.25,-2.25,7.3125,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,long,4,0,brushing teeth,chirping birds,-0.75,-7.625,-6.5,0.625,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,long,4,1,brushing teeth,chirping birds,3.6875,-3.875,-2.5,3.875,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,long,5,0,wind,snoring,1.875,-5.8125,-4.5625,-0.375,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,long,5,1,wind,snoring,7.0,-0.875,2.25,6.0,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,long,6,0,glass breaking,rain,4.625,-4.375,-1.375,3.375,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,long,6,1,glass breaking,rain,8.4375,3.8125,6.6875,7.0,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,long,7,0,insects,breathing,2.25,-6.125,-5.25,1.375,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,long,7,1,insects,breathing,7.8125,-2.625,-1.375,7.1875,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,long,8,0,mouse click,thunderstorm,4.8125,-7.1875,-6.3125,2.75,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,long,8,1,mouse click,thunderstorm,6.8125,-0.625,2.0,6.0625,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,long,9,0,car horn,dog,-3.8125,-6.9375,-5.3125,-4.125,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,long,9,1,car horn,dog,3.3125,-1.875,-0.125,2.875,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,long,10,0,laughing,vacuum cleaner,-0.625,-6.5,-6.75,-2.125,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,long,10,1,laughing,vacuum cleaner,6.125,-1.25,-1.5,4.9375,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,long,11,0,church bells,coughing,3.25,-9.3125,-9.4375,1.75,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,long,11,1,church bells,coughing,7.875,-7.0625,-6.75,7.3125,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,long,12,0,footsteps,drinking sipping,5.0625,-0.25,-0.125,4.8125,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,long,12,1,footsteps,drinking sipping,6.875,3.625,4.625,6.1875,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,long,13,0,clapping,sneezing,3.5625,-8.6875,-8.5625,-5.8125,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,long,13,1,clapping,sneezing,7.4375,-6.3125,-5.6875,3.6875,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,long,14,0,cat,hen,5.0625,-8.6875,-8.0625,5.25,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,long,14,1,cat,hen,6.5625,-4.0,-2.875,6.1875,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,long,15,0,sheep,engine,-3.75,-6.9375,-6.5,-4.875,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,long,15,1,sheep,engine,4.75,-3.1875,-0.5,1.625,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,long,16,0,chainsaw,helicopter,2.75,-2.625,-2.125,1.5,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,long,16,1,chainsaw,helicopter,5.0,1.375,1.75,4.125,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,long,17,0,crow,can opening,3.5,-7.0625,-5.75,2.625,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,long,17,1,crow,can opening,7.5625,-3.4375,-1.5,6.875,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,long,18,0,frog,cow,5.6875,-4.25,-2.375,5.3125,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,long,18,1,frog,cow,8.0,-1.0,0.625,7.1875,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,long,19,0,keyboard typing,washing machine,4.625,-6.9375,-5.6875,0.875,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,long,19,1,keyboard typing,washing machine,4.625,-2.125,-1.75,2.375,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,long,20,0,rooster,crying baby,4.0,-10.0625,-7.8125,-0.375,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,long,20,1,rooster,crying baby,8.9375,-5.25,-1.875,8.0625,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,long,21,0,pouring water,siren,4.8125,-9.125,-8.3125,3.5625,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,long,21,1,pouring water,siren,7.3125,-3.875,-3.0625,6.9375,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,long,22,0,crackling fire,water drops,2.625,-1.25,-1.5,3.125,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,long,22,1,crackling fire,water drops,7.6875,4.3125,4.5,7.5,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,long,23,0,toilet flush,hand saw,1.125,-4.3125,-4.375,-0.625,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,long,23,1,toilet flush,hand saw,4.375,-0.75,-0.625,2.75,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,long,24,0,fireworks,sea waves,4.75,-4.5625,-3.875,2.5,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,long,24,1,fireworks,sea waves,8.5,2.25,3.5,8.1875,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,0,0,door wood creaks,clock alarm,1.75,-5.25,-4.125,0.625,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,0,1,door wood creaks,clock alarm,5.125,3.0,3.5,4.9375,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,1,0,airplane,crickets,-5.5625,-3.375,-3.0,-5.6875,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,1,1,airplane,crickets,2.75,4.375,4.5,2.25,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,2,0,door wood knock,pig,3.0,-5.625,-4.5,1.625,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,2,1,door wood knock,pig,11.125,3.375,3.5,10.5,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,3,0,train,clock tick,0.625,-3.75,-2.25,0.75,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,3,1,train,clock tick,5.875,2.875,3.4375,6.5,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,4,0,brushing teeth,chirping birds,-3.25,-7.75,-7.4375,-3.25,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,4,1,brushing teeth,chirping birds,2.75,-3.9375,-3.25,3.125,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,5,0,wind,snoring,-2.375,-2.4375,-2.0625,-2.75,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,5,1,wind,snoring,5.25,4.4375,4.5625,4.8125,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,6,0,glass breaking,rain,4.6875,-6.0625,-5.25,4.5625,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,6,1,glass breaking,rain,8.3125,1.75,4.625,7.8125,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,7,0,insects,breathing,1.875,-3.6875,-2.875,1.0,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,7,1,insects,breathing,7.1875,3.75,4.4375,6.875,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,8,0,mouse click,thunderstorm,4.75,-5.0625,-4.9375,4.5,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,8,1,mouse click,thunderstorm,6.9375,1.75,3.0625,6.3125,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,9,0,car horn,dog,-3.625,-7.5,-6.5,-4.5,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,9,1,car horn,dog,3.4375,-2.0,-1.9375,3.3125,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,10,0,laughing,vacuum cleaner,-5.8125,-5.875,-5.875,-5.5625,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,10,1,laughing,vacuum cleaner,2.125,0.5,0.5,2.25,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,11,0,church bells,coughing,1.0,-9.5625,-9.4375,-0.125,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,11,1,church bells,coughing,7.5625,-6.8125,-7.125,7.0,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,12,0,footsteps,drinking sipping,-0.125,0.375,0.625,0.125,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,12,1,footsteps,drinking sipping,5.1875,5.0,5.125,5.25,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,13,0,clapping,sneezing,1.625,-9.125,-8.6875,-4.75,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,13,1,clapping,sneezing,6.5,-5.3125,-6.1875,2.75,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,14,0,cat,hen,4.9375,-6.125,-4.0625,4.25,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,14,1,cat,hen,6.0625,-0.125,0.75,6.3125,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,15,0,sheep,engine,-3.8125,-4.75,-4.75,-4.375,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,15,1,sheep,engine,4.3125,1.0,1.375,3.75,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,16,0,chainsaw,helicopter,1.375,-2.125,-1.75,0.0,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,16,1,chainsaw,helicopter,4.3125,0.75,2.25,2.75,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,17,0,crow,can opening,0.25,-3.75,-3.1875,-0.5,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,17,1,crow,can opening,6.1875,2.375,3.0,5.125,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,18,0,frog,cow,6.0,-3.25,-2.875,6.625,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,18,1,frog,cow,8.4375,1.0,1.25,7.75,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,19,0,keyboard typing,washing machine,0.75,-6.6875,-6.625,-0.5,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,19,1,keyboard typing,washing machine,2.75,-3.375,-3.0,1.625,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,20,0,rooster,crying baby,-2.0,-6.1875,-5.0,-3.6875,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,20,1,rooster,crying baby,6.375,1.875,3.125,5.375,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,21,0,pouring water,siren,4.875,-7.875,-7.125,3.5625,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,21,1,pouring water,siren,7.125,-1.0,0.125,6.375,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,22,0,crackling fire,water drops,-3.8125,-1.625,-2.0,-2.125,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,22,1,crackling fire,water drops,3.125,4.625,3.75,3.9375,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,23,0,toilet flush,hand saw,-2.25,-2.375,-2.25,-2.75,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,23,1,toilet flush,hand saw,2.25,1.25,1.5,1.875,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,24,0,fireworks,sea waves,-1.875,-4.6875,-4.5625,-3.0,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s17,short,24,1,fireworks,sea waves,6.3125,0.5,1.375,6.4375,9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d
+K16-s23,long,0,0,door wood creaks,clock alarm,3.0,-6.0625,-5.25,1.25,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,long,0,1,door wood creaks,clock alarm,5.6875,1.375,2.5,4.625,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,long,1,0,airplane,crickets,-1.875,-4.25,-3.5,-2.5,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,long,1,1,airplane,crickets,5.125,4.125,4.6875,4.9375,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,long,2,0,door wood knock,pig,4.9375,-7.3125,-5.125,2.5,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,long,2,1,door wood knock,pig,12.0,0.125,2.25,10.5625,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,long,3,0,train,clock tick,3.375,-6.6875,-6.0,3.0,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,long,3,1,train,clock tick,7.6875,-2.75,-1.625,7.625,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,long,4,0,brushing teeth,chirping birds,-0.625,-8.0625,-6.6875,0.875,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,long,4,1,brushing teeth,chirping birds,3.8125,-4.25,-2.625,4.3125,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,long,5,0,wind,snoring,2.25,-5.4375,-4.6875,-0.375,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,long,5,1,wind,snoring,7.0,-0.625,2.0,5.9375,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,long,6,0,glass breaking,rain,4.9375,-4.5625,-1.125,4.3125,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,long,6,1,glass breaking,rain,8.875,3.375,6.8125,7.4375,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,long,7,0,insects,breathing,2.375,-6.1875,-4.625,1.375,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,long,7,1,insects,breathing,7.6875,-3.75,-1.25,6.8125,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,long,8,0,mouse click,thunderstorm,5.75,-7.4375,-6.1875,2.875,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,long,8,1,mouse click,thunderstorm,6.8125,-0.75,1.375,5.9375,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,long,9,0,car horn,dog,-3.875,-7.625,-6.25,-4.0625,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,long,9,1,car horn,dog,3.3125,-2.375,-1.5,2.9375,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,long,10,0,laughing,vacuum cleaner,-0.625,-6.75,-6.875,-1.375,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,long,10,1,laughing,vacuum cleaner,6.375,-1.375,-1.5,5.375,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,long,11,0,church bells,coughing,3.625,-9.75,-9.6875,2.875,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,long,11,1,church bells,coughing,8.125,-6.9375,-6.5625,7.8125,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,long,12,0,footsteps,drinking sipping,5.5625,-0.75,0.125,4.8125,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,long,12,1,footsteps,drinking sipping,7.5625,3.75,5.25,6.625,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,long,13,0,clapping,sneezing,3.5,-8.5,-8.4375,-3.1875,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,long,13,1,clapping,sneezing,7.8125,-6.4375,-5.625,5.1875,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,long,14,0,cat,hen,5.9375,-8.875,-7.4375,5.875,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,long,14,1,cat,hen,7.4375,-4.1875,-1.875,6.8125,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,long,15,0,sheep,engine,-3.625,-7.0625,-6.875,-5.125,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,long,15,1,sheep,engine,5.0625,-3.375,-0.875,1.875,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,long,16,0,chainsaw,helicopter,2.25,-2.625,-2.625,0.875,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,long,16,1,chainsaw,helicopter,5.0625,1.25,1.125,4.0,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,long,17,0,crow,can opening,3.625,-7.125,-5.9375,2.875,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,long,17,1,crow,can opening,8.0625,-3.0,-1.0,7.3125,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,long,18,0,frog,cow,6.0,-5.25,-2.5,5.875,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,long,18,1,frog,cow,8.4375,-1.625,1.625,7.625,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,long,19,0,keyboard typing,washing machine,4.8125,-6.9375,-5.5625,-2.125,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,long,19,1,keyboard typing,washing machine,4.6875,-2.0,-1.625,0.875,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,long,20,0,rooster,crying baby,4.0,-10.5,-8.1875,-0.25,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,long,20,1,rooster,crying baby,9.0625,-5.6875,-1.5,8.125,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,long,21,0,pouring water,siren,5.375,-9.375,-8.1875,3.375,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,long,21,1,pouring water,siren,7.5625,-4.0625,-2.5,7.125,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,long,22,0,crackling fire,water drops,3.0,-1.5,-1.625,3.375,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,long,22,1,crackling fire,water drops,8.0,4.25,4.3125,8.125,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,long,23,0,toilet flush,hand saw,1.5,-4.5625,-4.5,-0.75,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,long,23,1,toilet flush,hand saw,4.75,-1.0,-0.5,2.75,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,long,24,0,fireworks,sea waves,5.25,-4.4375,-4.125,4.5,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,long,24,1,fireworks,sea waves,8.8125,2.125,3.25,8.5,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,0,0,door wood creaks,clock alarm,1.625,-5.125,-3.625,0.375,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,0,1,door wood creaks,clock alarm,5.125,2.625,3.4375,4.9375,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,1,0,airplane,crickets,-5.4375,-2.75,-2.375,-5.25,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,1,1,airplane,crickets,2.875,4.5,4.625,2.75,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,2,0,door wood knock,pig,3.875,-5.875,-4.75,1.75,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,2,1,door wood knock,pig,12.0,3.25,3.25,10.6875,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,3,0,train,clock tick,0.625,-3.8125,-2.75,0.875,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,3,1,train,clock tick,5.8125,3.125,3.4375,6.5625,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,4,0,brushing teeth,chirping birds,-3.3125,-8.125,-7.8125,-2.9375,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,4,1,brushing teeth,chirping birds,2.75,-4.0,-3.6875,3.375,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,5,0,wind,snoring,-2.375,-2.0,-1.625,-2.625,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,5,1,wind,snoring,5.0625,4.5625,4.4375,4.75,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,6,0,glass breaking,rain,5.0625,-6.5,-5.4375,4.875,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,6,1,glass breaking,rain,8.5,0.75,4.625,7.875,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,7,0,insects,breathing,2.0,-3.5625,-2.5,1.25,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,7,1,insects,breathing,7.3125,3.75,4.5,6.8125,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,8,0,mouse click,thunderstorm,6.4375,-5.0,-4.5,4.8125,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,8,1,mouse click,thunderstorm,7.1875,1.75,3.4375,6.4375,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,9,0,car horn,dog,-3.6875,-8.4375,-6.8125,-4.0625,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,9,1,car horn,dog,3.375,-2.5,-2.5,3.75,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,10,0,laughing,vacuum cleaner,-6.0625,-5.9375,-5.9375,-5.5625,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,10,1,laughing,vacuum cleaner,2.25,0.375,0.25,2.5,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,11,0,church bells,coughing,1.375,-9.8125,-9.625,1.0,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,11,1,church bells,coughing,7.875,-6.8125,-7.0625,7.5,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,12,0,footsteps,drinking sipping,-0.375,0.125,0.625,-0.125,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,12,1,footsteps,drinking sipping,5.3125,5.1875,5.4375,5.3125,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,13,0,clapping,sneezing,0.875,-9.125,-8.625,-5.1875,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,13,1,clapping,sneezing,6.3125,-5.625,-6.3125,2.0,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,14,0,cat,hen,5.1875,-6.0625,-3.5,4.75,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,14,1,cat,hen,6.3125,-0.25,1.25,6.4375,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,15,0,sheep,engine,-3.8125,-4.8125,-4.8125,-4.375,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,15,1,sheep,engine,4.5,1.0,1.5,4.0,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,16,0,chainsaw,helicopter,0.875,-1.75,-0.875,-1.0,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,16,1,chainsaw,helicopter,4.125,1.125,2.5,1.875,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,17,0,crow,can opening,0.75,-3.3125,-3.0,0.5,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,17,1,crow,can opening,6.6875,2.375,2.8125,5.75,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,18,0,frog,cow,6.25,-3.1875,-2.375,6.5625,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,18,1,frog,cow,8.625,0.75,1.625,7.75,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,19,0,keyboard typing,washing machine,1.5,-6.6875,-6.75,-0.625,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,19,1,keyboard typing,washing machine,2.75,-3.375,-3.375,1.5,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,20,0,rooster,crying baby,-2.125,-6.125,-5.1875,-3.5625,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,20,1,rooster,crying baby,6.4375,1.875,2.75,5.6875,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,21,0,pouring water,siren,5.0625,-7.9375,-7.6875,4.125,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,21,1,pouring water,siren,7.375,-0.8125,-0.625,7.0,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,22,0,crackling fire,water drops,-4.3125,-1.875,-2.0,-2.375,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,22,1,crackling fire,water drops,3.25,4.625,3.625,4.0625,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,23,0,toilet flush,hand saw,-2.875,-2.625,-2.625,-3.125,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,23,1,toilet flush,hand saw,2.25,1.25,1.375,2.0,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,24,0,fireworks,sea waves,-2.125,-4.5625,-4.625,-3.0,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s23,short,24,1,fireworks,sea waves,6.8125,0.625,0.5,6.625,8007ff3ee733e507e04ba3a1156332f2ef948bdf966a2ef4ad5083e5788f4735
+K16-s41,long,0,0,door wood creaks,clock alarm,2.5,-4.8125,-5.125,1.125,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,long,0,1,door wood creaks,clock alarm,5.5,2.25,2.75,4.75,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,long,1,0,airplane,crickets,-1.625,-4.0,-3.375,-1.75,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,long,1,1,airplane,crickets,4.875,4.4375,4.625,5.0,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,long,2,0,door wood knock,pig,5.125,-7.5,-5.125,3.375,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,long,2,1,door wood knock,pig,12.25,-0.875,2.0,10.4375,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,long,3,0,train,clock tick,2.875,-6.625,-5.6875,2.75,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,long,3,1,train,clock tick,7.75,-2.75,-1.25,7.4375,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,long,4,0,brushing teeth,chirping birds,-0.625,-8.5,-6.6875,0.0,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,long,4,1,brushing teeth,chirping birds,4.25,-4.125,-2.25,4.6875,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,long,5,0,wind,snoring,1.875,-5.5,-4.5,-0.5,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,long,5,1,wind,snoring,7.0625,-0.625,2.5,5.9375,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,long,6,0,glass breaking,rain,5.4375,-4.6875,-0.875,3.0,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,long,6,1,glass breaking,rain,8.875,3.5625,6.875,6.875,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,long,7,0,insects,breathing,2.375,-5.875,-5.0,1.5,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,long,7,1,insects,breathing,8.0625,-3.875,-1.625,7.0,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,long,8,0,mouse click,thunderstorm,4.875,-7.0,-6.1875,1.875,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,long,8,1,mouse click,thunderstorm,6.9375,-0.0,2.375,6.1875,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,long,9,0,car horn,dog,-3.8125,-7.625,-6.0,-4.25,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,long,9,1,car horn,dog,3.875,-2.375,-0.875,3.0,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,long,10,0,laughing,vacuum cleaner,-0.75,-6.5,-6.8125,-1.25,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,long,10,1,laughing,vacuum cleaner,6.75,-0.875,-1.125,5.5625,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,long,11,0,church bells,coughing,3.8125,-9.75,-9.625,2.875,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,long,11,1,church bells,coughing,7.9375,-7.1875,-6.5,7.75,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,long,12,0,footsteps,drinking sipping,6.125,-0.75,0.375,5.3125,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,long,12,1,footsteps,drinking sipping,7.6875,4.1875,5.3125,7.0,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,long,13,0,clapping,sneezing,3.8125,-8.5625,-8.1875,-2.6875,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,long,13,1,clapping,sneezing,7.5625,-6.5,-4.875,5.1875,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,long,14,0,cat,hen,5.5625,-8.625,-7.5625,4.9375,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,long,14,1,cat,hen,7.3125,-4.0,-2.625,6.1875,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,long,15,0,sheep,engine,-4.0,-7.0,-6.6875,-5.3125,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,long,15,1,sheep,engine,5.0625,-3.5,-0.5,1.875,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,long,16,0,chainsaw,helicopter,2.25,-3.125,-2.625,0.5,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,long,16,1,chainsaw,helicopter,4.875,1.0,1.25,3.375,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,long,17,0,crow,can opening,3.625,-7.1875,-6.0,2.125,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,long,17,1,crow,can opening,8.25,-3.0,-1.375,7.5,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,long,18,0,frog,cow,5.0625,-5.0,-2.875,5.0,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,long,18,1,frog,cow,8.125,-1.75,1.125,7.125,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,long,19,0,keyboard typing,washing machine,2.875,-6.4375,-4.875,-2.375,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,long,19,1,keyboard typing,washing machine,4.0625,-1.5,-0.875,1.5,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,long,20,0,rooster,crying baby,3.5625,-10.6875,-8.4375,-1.125,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,long,20,1,rooster,crying baby,8.8125,-6.0625,-2.875,7.875,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,long,21,0,pouring water,siren,4.5625,-9.125,-8.1875,1.75,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,long,21,1,pouring water,siren,7.75,-4.0,-2.5,6.3125,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,long,22,0,crackling fire,water drops,2.375,-1.625,-1.75,3.0,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,long,22,1,crackling fire,water drops,7.75,4.125,4.25,8.125,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,long,23,0,toilet flush,hand saw,0.625,-4.8125,-4.5625,-1.5,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,long,23,1,toilet flush,hand saw,4.625,-1.25,-1.0,2.0,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,long,24,0,fireworks,sea waves,3.875,-4.875,-4.1875,2.875,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,long,24,1,fireworks,sea waves,8.75,2.125,3.875,8.75,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,0,0,door wood creaks,clock alarm,1.75,-3.875,-2.875,0.75,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,0,1,door wood creaks,clock alarm,5.0625,3.375,3.9375,5.0,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,1,0,airplane,crickets,-4.875,-3.125,-2.625,-5.1875,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,1,1,airplane,crickets,3.0,4.5,4.625,2.5,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,2,0,door wood knock,pig,4.0,-5.75,-4.5,2.0,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,2,1,door wood knock,pig,11.875,4.0,4.0,10.9375,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,3,0,train,clock tick,0.125,-3.625,-2.375,0.625,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,3,1,train,clock tick,5.9375,3.625,3.75,6.625,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,4,0,brushing teeth,chirping birds,-3.4375,-8.6875,-8.0625,-4.0,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,4,1,brushing teeth,chirping birds,3.0,-4.4375,-4.125,3.4375,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,5,0,wind,snoring,-2.875,-1.875,-1.5,-3.375,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,5,1,wind,snoring,4.875,4.5625,4.625,4.3125,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,6,0,glass breaking,rain,4.75,-6.375,-5.625,4.5625,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,6,1,glass breaking,rain,8.625,0.75,3.875,8.0,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,7,0,insects,breathing,1.75,-3.5,-2.625,1.25,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,7,1,insects,breathing,7.5625,3.9375,4.5625,7.125,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,8,0,mouse click,thunderstorm,5.5625,-4.9375,-4.4375,4.3125,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,8,1,mouse click,thunderstorm,7.0625,1.875,3.25,6.4375,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,9,0,car horn,dog,-3.6875,-8.4375,-7.375,-4.0625,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,9,1,car horn,dog,3.6875,-2.5625,-2.375,3.875,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,10,0,laughing,vacuum cleaner,-6.0,-5.8125,-5.75,-5.4375,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,10,1,laughing,vacuum cleaner,3.25,0.75,0.5,3.3125,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,11,0,church bells,coughing,2.0,-9.625,-9.6875,1.375,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,11,1,church bells,coughing,7.75,-6.9375,-7.1875,7.25,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,12,0,footsteps,drinking sipping,-0.375,0.375,0.5,-0.25,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,12,1,footsteps,drinking sipping,5.1875,5.125,5.5,5.125,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,13,0,clapping,sneezing,0.75,-9.25,-8.5,-4.625,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,13,1,clapping,sneezing,6.6875,-5.3125,-5.8125,2.9375,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,14,0,cat,hen,5.0,-6.0625,-4.875,5.0625,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,14,1,cat,hen,6.625,-0.375,1.25,6.75,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,15,0,sheep,engine,-4.1875,-5.0,-4.9375,-4.5625,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,15,1,sheep,engine,4.5625,1.625,2.1875,3.9375,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,16,0,chainsaw,helicopter,0.75,-2.125,-1.375,-0.75,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,16,1,chainsaw,helicopter,3.6875,0.875,1.625,2.125,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,17,0,crow,can opening,0.5,-3.375,-3.375,0.25,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,17,1,crow,can opening,6.875,2.1875,2.375,5.8125,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,18,0,frog,cow,6.0,-2.75,-1.375,6.375,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,18,1,frog,cow,8.875,0.875,2.125,7.9375,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,19,0,keyboard typing,washing machine,1.5,-6.5,-6.375,-1.625,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,19,1,keyboard typing,washing machine,2.625,-3.0,-3.0,0.75,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,20,0,rooster,crying baby,-2.75,-8.0,-6.25,-4.625,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,20,1,rooster,crying baby,6.125,-0.75,1.875,4.875,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,21,0,pouring water,siren,4.6875,-7.625,-7.375,2.0,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,21,1,pouring water,siren,7.75,-0.625,-0.625,6.125,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,22,0,crackling fire,water drops,-4.25,-2.0,-2.375,-2.75,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,22,1,crackling fire,water drops,3.0,4.4375,3.0625,3.6875,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,23,0,toilet flush,hand saw,-2.875,-2.625,-2.75,-3.125,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,23,1,toilet flush,hand saw,2.375,1.375,1.375,1.875,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,24,0,fireworks,sea waves,-2.375,-4.8125,-4.8125,-3.125,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5
+K16-s41,short,24,1,fireworks,sea waves,6.3125,1.0,1.5,6.3125,481af2cfdb5d433618d58e2dc2b450483743bfad7c69fb4506ad606a8fa2b3c5

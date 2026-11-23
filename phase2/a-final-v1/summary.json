@@ -1,0 +1,751 @@
+{
+  "recordings": 257,
+  "questions": 514,
+  "orders": {
+    "yes_first": {
+      "all": {
+        "questions": 514,
+        "recordings": 257,
+        "yes_n": 257,
+        "no_n": 257,
+        "performance": {
+          "text": {
+            "accuracy": 0.5428015564202334,
+            "yes_recall": 0.7315175097276264,
+            "no_recall": 0.3540856031128405,
+            "balanced_accuracy": 0.5428015564202334
+          },
+          "K4": {
+            "accuracy": 0.6900129701686121,
+            "yes_recall": 0.7185473411154345,
+            "no_recall": 0.6614785992217899,
+            "balanced_accuracy": 0.6900129701686122
+          },
+          "K16": {
+            "accuracy": 0.7963683527885862,
+            "yes_recall": 0.7678339818417639,
+            "no_recall": 0.8249027237354085,
+            "balanced_accuracy": 0.7963683527885862
+          },
+          "full": {
+            "accuracy": 0.8249027237354085,
+            "yes_recall": 0.8599221789883269,
+            "no_recall": 0.7898832684824902,
+            "balanced_accuracy": 0.8249027237354085
+          }
+        },
+        "contrasts": {
+          "full_minus_text": {
+            "pp": 28.21011673151751,
+            "ci_pp": [
+              24.124513618677042,
+              32.295719844357976
+            ],
+            "level": 0.95
+          },
+          "K16_minus_K4": {
+            "pp": 10.635538261997407,
+            "ci_pp": [
+              8.041504539559014,
+              13.359273670557716
+            ],
+            "level": 0.95
+          },
+          "full_minus_K16": {
+            "pp": 2.8534370946822314,
+            "ci_pp": [
+              0.1945525291828797,
+              5.513942931258082
+            ],
+            "level": 0.95
+          }
+        }
+      },
+      "source_or_event": {
+        "questions": 367,
+        "recordings": 234,
+        "yes_n": 173,
+        "no_n": 194,
+        "performance": {
+          "text": {
+            "accuracy": 0.5231607629427792,
+            "yes_recall": 0.7687861271676301,
+            "no_recall": 0.30412371134020616,
+            "balanced_accuracy": 0.5364549192539181
+          },
+          "K4": {
+            "accuracy": 0.6784741144414169,
+            "yes_recall": 0.7341040462427746,
+            "no_recall": 0.6288659793814433,
+            "balanced_accuracy": 0.6814850128121089
+          },
+          "K16": {
+            "accuracy": 0.8029064486830153,
+            "yes_recall": 0.7784200385356455,
+            "no_recall": 0.8247422680412371,
+            "balanced_accuracy": 0.8015811532884413
+          },
+          "full": {
+            "accuracy": 0.8392370572207084,
+            "yes_recall": 0.884393063583815,
+            "no_recall": 0.7989690721649485,
+            "balanced_accuracy": 0.8416810678743818
+          }
+        },
+        "contrasts": {
+          "full_minus_text": {
+            "pp": 31.607629427792915,
+            "ci_pp": [
+              26.430517711171664,
+              36.78474114441417
+            ],
+            "level": 0.95
+          },
+          "K16_minus_K4": {
+            "pp": 12.443233424159857,
+            "ci_pp": [
+              9.389377116926259,
+              15.625070573622404
+            ],
+            "level": 0.95
+          },
+          "full_minus_K16": {
+            "pp": 3.633060853769301,
+            "ci_pp": [
+              -0.1801801801801799,
+              7.5300190904257995
+            ],
+            "level": 0.975
+          }
+        }
+      },
+      "count_or_relation": {
+        "questions": 54,
+        "recordings": 50,
+        "yes_n": 29,
+        "no_n": 25,
+        "performance": {
+          "text": {
+            "accuracy": 0.6851851851851852,
+            "yes_recall": 0.896551724137931,
+            "no_recall": 0.44,
+            "balanced_accuracy": 0.6682758620689655
+          },
+          "K4": {
+            "accuracy": 0.8086419753086419,
+            "yes_recall": 0.8160919540229884,
+            "no_recall": 0.8,
+            "balanced_accuracy": 0.8080459770114943
+          },
+          "K16": {
+            "accuracy": 0.8395061728395061,
+            "yes_recall": 0.8275862068965517,
+            "no_recall": 0.8533333333333333,
+            "balanced_accuracy": 0.8404597701149426
+          },
+          "full": {
+            "accuracy": 0.8333333333333334,
+            "yes_recall": 0.896551724137931,
+            "no_recall": 0.76,
+            "balanced_accuracy": 0.8282758620689655
+          }
+        },
+        "contrasts": {
+          "full_minus_text": {
+            "pp": 14.814814814814813,
+            "ci_pp": [
+              1.8181818181818181,
+              28.30188679245283
+            ],
+            "level": 0.95
+          },
+          "K16_minus_K4": {
+            "pp": 3.08641975308642,
+            "ci_pp": [
+              -3.508771929824561,
+              10.062893081761008
+            ],
+            "level": 0.95
+          },
+          "full_minus_K16": {
+            "pp": -0.6172839506172838,
+            "ci_pp": [
+              -6.5359477124183005,
+              4.320987654320988
+            ],
+            "level": 0.975
+          }
+        }
+      },
+      "time_pattern": {
+        "questions": 33,
+        "recordings": 30,
+        "yes_n": 22,
+        "no_n": 11,
+        "performance": {
+          "text": {
+            "accuracy": 0.3333333333333333,
+            "yes_recall": 0.22727272727272727,
+            "no_recall": 0.5454545454545454,
+            "balanced_accuracy": 0.38636363636363635
+          },
+          "K4": {
+            "accuracy": 0.4949494949494949,
+            "yes_recall": 0.4090909090909091,
+            "no_recall": 0.6666666666666666,
+            "balanced_accuracy": 0.5378787878787878
+          },
+          "K16": {
+            "accuracy": 0.6262626262626262,
+            "yes_recall": 0.5909090909090909,
+            "no_recall": 0.6969696969696969,
+            "balanced_accuracy": 0.6439393939393939
+          },
+          "full": {
+            "accuracy": 0.6363636363636364,
+            "yes_recall": 0.6363636363636364,
+            "no_recall": 0.6363636363636364,
+            "balanced_accuracy": 0.6363636363636364
+          }
+        },
+        "contrasts": {
+          "full_minus_text": {
+            "pp": 30.303030303030305,
+            "ci_pp": [
+              12.5,
+              48.484848484848484
+            ],
+            "level": 0.95
+          },
+          "K16_minus_K4": {
+            "pp": 13.131313131313133,
+            "ci_pp": [
+              -2.150537634408602,
+              28.125
+            ],
+            "level": 0.95
+          },
+          "full_minus_K16": {
+            "pp": 1.0101010101010106,
+            "ci_pp": [
+              -12.037037037037036,
+              16.129032258064516
+            ],
+            "level": 0.95
+          }
+        }
+      },
+      "scene_context": {
+        "questions": 35,
+        "recordings": 32,
+        "yes_n": 18,
+        "no_n": 17,
+        "performance": {
+          "text": {
+            "accuracy": 0.7428571428571429,
+            "yes_recall": 0.8333333333333334,
+            "no_recall": 0.6470588235294118,
+            "balanced_accuracy": 0.7401960784313726
+          },
+          "K4": {
+            "accuracy": 0.9142857142857143,
+            "yes_recall": 0.9444444444444444,
+            "no_recall": 0.8823529411764706,
+            "balanced_accuracy": 0.9133986928104575
+          },
+          "K16": {
+            "accuracy": 0.9333333333333332,
+            "yes_recall": 0.9814814814814814,
+            "no_recall": 0.8823529411764706,
+            "balanced_accuracy": 0.931917211328976
+          },
+          "full": {
+            "accuracy": 0.9428571428571428,
+            "yes_recall": 1.0,
+            "no_recall": 0.8823529411764706,
+            "balanced_accuracy": 0.9411764705882353
+          }
+        },
+        "contrasts": {
+          "full_minus_text": {
+            "pp": 20.0,
+            "ci_pp": [
+              5.882352941176471,
+              36.111111111111114
+            ],
+            "level": 0.95
+          },
+          "K16_minus_K4": {
+            "pp": 1.9047619047619049,
+            "ci_pp": [
+              -1.96078431372549,
+              6.862745098039216
+            ],
+            "level": 0.95
+          },
+          "full_minus_K16": {
+            "pp": 0.9523809523809524,
+            "ci_pp": [
+              0.0,
+              3.0303030303030303
+            ],
+            "level": 0.95
+          }
+        }
+      },
+      "acoustic_property": {
+        "questions": 25,
+        "recordings": 25,
+        "yes_n": 15,
+        "no_n": 10,
+        "performance": {
+          "text": {
+            "accuracy": 0.52,
+            "yes_recall": 0.6,
+            "no_recall": 0.4,
+            "balanced_accuracy": 0.5
+          },
+          "K4": {
+            "accuracy": 0.5466666666666666,
+            "yes_recall": 0.5333333333333333,
+            "no_recall": 0.5666666666666667,
+            "balanced_accuracy": 0.55
+          },
+          "K16": {
+            "accuracy": 0.64,
+            "yes_recall": 0.5333333333333333,
+            "no_recall": 0.8,
+            "balanced_accuracy": 0.6666666666666667
+          },
+          "full": {
+            "accuracy": 0.68,
+            "yes_recall": 0.6666666666666666,
+            "no_recall": 0.7,
+            "balanced_accuracy": 0.6833333333333333
+          }
+        },
+        "contrasts": {
+          "full_minus_text": {
+            "pp": 16.0,
+            "ci_pp": [
+              4.0,
+              32.0
+            ],
+            "level": 0.95
+          },
+          "K16_minus_K4": {
+            "pp": 9.333333333333334,
+            "ci_pp": [
+              0.0,
+              21.333333333333336
+            ],
+            "level": 0.95
+          },
+          "full_minus_K16": {
+            "pp": 4.0,
+            "ci_pp": [
+              -8.0,
+              16.0
+            ],
+            "level": 0.95
+          }
+        }
+      }
+    },
+    "no_first": {
+      "all": {
+        "questions": 514,
+        "recordings": 257,
+        "yes_n": 257,
+        "no_n": 257,
+        "performance": {
+          "text": {
+            "accuracy": 0.5097276264591439,
+            "yes_recall": 0.8871595330739299,
+            "no_recall": 0.13229571984435798,
+            "balanced_accuracy": 0.5097276264591439
+          },
+          "K4": {
+            "accuracy": 0.6498054474708171,
+            "yes_recall": 0.8690012970168611,
+            "no_recall": 0.43060959792477305,
+            "balanced_accuracy": 0.649805447470817
+          },
+          "K16": {
+            "accuracy": 0.72568093385214,
+            "yes_recall": 0.8456549935149157,
+            "no_recall": 0.6057068741893645,
+            "balanced_accuracy": 0.7256809338521402
+          },
+          "full": {
+            "accuracy": 0.7568093385214008,
+            "yes_recall": 0.914396887159533,
+            "no_recall": 0.5992217898832685,
+            "balanced_accuracy": 0.7568093385214008
+          }
+        },
+        "contrasts": {
+          "full_minus_text": {
+            "pp": 24.708171206225682,
+            "ci_pp": [
+              20.817120622568094,
+              28.59922178988327
+            ],
+            "level": 0.95
+          },
+          "K16_minus_K4": {
+            "pp": 7.587548638132295,
+            "ci_pp": [
+              4.993514915693905,
+              10.116731517509729
+            ],
+            "level": 0.95
+          },
+          "full_minus_K16": {
+            "pp": 3.112840466926071,
+            "ci_pp": [
+              0.1297016861219199,
+              6.2905317769131
+            ],
+            "level": 0.95
+          }
+        }
+      },
+      "source_or_event": {
+        "questions": 367,
+        "recordings": 234,
+        "yes_n": 173,
+        "no_n": 194,
+        "performance": {
+          "text": {
+            "accuracy": 0.49591280653950953,
+            "yes_recall": 0.9190751445086706,
+            "no_recall": 0.11855670103092783,
+            "balanced_accuracy": 0.5188159227697992
+          },
+          "K4": {
+            "accuracy": 0.63669391462307,
+            "yes_recall": 0.8805394990366088,
+            "no_recall": 0.4192439862542956,
+            "balanced_accuracy": 0.6498917426454522
+          },
+          "K16": {
+            "accuracy": 0.7338782924613988,
+            "yes_recall": 0.8670520231213873,
+            "no_recall": 0.6151202749140894,
+            "balanced_accuracy": 0.7410861490177383
+          },
+          "full": {
+            "accuracy": 0.7629427792915532,
+            "yes_recall": 0.9421965317919075,
+            "no_recall": 0.6030927835051546,
+            "balanced_accuracy": 0.7726446576485311
+          }
+        },
+        "contrasts": {
+          "full_minus_text": {
+            "pp": 26.70299727520436,
+            "ci_pp": [
+              22.03344872544172,
+              31.283459803423657
+            ],
+            "level": 0.95
+          },
+          "K16_minus_K4": {
+            "pp": 9.71843778383288,
+            "ci_pp": [
+              6.612318840579709,
+              12.897366030881017
+            ],
+            "level": 0.95
+          },
+          "full_minus_K16": {
+            "pp": 2.9064486830154412,
+            "ci_pp": [
+              -0.6463527239150504,
+              6.506576459785012
+            ],
+            "level": 0.95
+          }
+        }
+      },
+      "count_or_relation": {
+        "questions": 54,
+        "recordings": 50,
+        "yes_n": 29,
+        "no_n": 25,
+        "performance": {
+          "text": {
+            "accuracy": 0.5555555555555556,
+            "yes_recall": 1.0,
+            "no_recall": 0.04,
+            "balanced_accuracy": 0.52
+          },
+          "K4": {
+            "accuracy": 0.6728395061728394,
+            "yes_recall": 0.9310344827586207,
+            "no_recall": 0.3733333333333333,
+            "balanced_accuracy": 0.652183908045977
+          },
+          "K16": {
+            "accuracy": 0.697530864197531,
+            "yes_recall": 0.8620689655172413,
+            "no_recall": 0.5066666666666666,
+            "balanced_accuracy": 0.684367816091954
+          },
+          "full": {
+            "accuracy": 0.7592592592592593,
+            "yes_recall": 0.896551724137931,
+            "no_recall": 0.6,
+            "balanced_accuracy": 0.7482758620689656
+          }
+        },
+        "contrasts": {
+          "full_minus_text": {
+            "pp": 20.37037037037037,
+            "ci_pp": [
+              6.896551724137931,
+              35.18518518518518
+            ],
+            "level": 0.95
+          },
+          "K16_minus_K4": {
+            "pp": 2.4691358024691357,
+            "ci_pp": [
+              -4.761904761904762,
+              9.433962264150944
+            ],
+            "level": 0.95
+          },
+          "full_minus_K16": {
+            "pp": 6.17283950617284,
+            "ci_pp": [
+              -1.818181818181818,
+              15.09433962264151
+            ],
+            "level": 0.95
+          }
+        }
+      },
+      "time_pattern": {
+        "questions": 33,
+        "recordings": 30,
+        "yes_n": 22,
+        "no_n": 11,
+        "performance": {
+          "text": {
+            "accuracy": 0.45454545454545453,
+            "yes_recall": 0.45454545454545453,
+            "no_recall": 0.45454545454545453,
+            "balanced_accuracy": 0.45454545454545453
+          },
+          "K4": {
+            "accuracy": 0.5454545454545454,
+            "yes_recall": 0.606060606060606,
+            "no_recall": 0.4242424242424242,
+            "balanced_accuracy": 0.5151515151515151
+          },
+          "K16": {
+            "accuracy": 0.5858585858585859,
+            "yes_recall": 0.6666666666666666,
+            "no_recall": 0.4242424242424242,
+            "balanced_accuracy": 0.5454545454545454
+          },
+          "full": {
+            "accuracy": 0.6666666666666666,
+            "yes_recall": 0.7727272727272727,
+            "no_recall": 0.45454545454545453,
+            "balanced_accuracy": 0.6136363636363636
+          }
+        },
+        "contrasts": {
+          "full_minus_text": {
+            "pp": 21.21212121212121,
+            "ci_pp": [
+              5.882352941176471,
+              37.5
+            ],
+            "level": 0.95
+          },
+          "K16_minus_K4": {
+            "pp": 4.04040404040404,
+            "ci_pp": [
+              -6.249999999999999,
+              13.131313131313133
+            ],
+            "level": 0.95
+          },
+          "full_minus_K16": {
+            "pp": 8.080808080808081,
+            "ci_pp": [
+              1.9047619047619049,
+              16.666666666666664
+            ],
+            "level": 0.95
+          }
+        }
+      },
+      "scene_context": {
+        "questions": 35,
+        "recordings": 32,
+        "yes_n": 18,
+        "no_n": 17,
+        "performance": {
+          "text": {
+            "accuracy": 0.6,
+            "yes_recall": 0.9444444444444444,
+            "no_recall": 0.23529411764705882,
+            "balanced_accuracy": 0.5898692810457516
+          },
+          "K4": {
+            "accuracy": 0.8095238095238096,
+            "yes_recall": 0.9629629629629629,
+            "no_recall": 0.6470588235294118,
+            "balanced_accuracy": 0.8050108932461874
+          },
+          "K16": {
+            "accuracy": 0.8666666666666667,
+            "yes_recall": 0.9629629629629629,
+            "no_recall": 0.7647058823529411,
+            "balanced_accuracy": 0.863834422657952
+          },
+          "full": {
+            "accuracy": 0.8285714285714286,
+            "yes_recall": 1.0,
+            "no_recall": 0.6470588235294118,
+            "balanced_accuracy": 0.8235294117647058
+          }
+        },
+        "contrasts": {
+          "full_minus_text": {
+            "pp": 22.857142857142858,
+            "ci_pp": [
+              5.714285714285714,
+              40.0
+            ],
+            "level": 0.95
+          },
+          "K16_minus_K4": {
+            "pp": 5.714285714285714,
+            "ci_pp": [
+              0.0,
+              14.285714285714286
+            ],
+            "level": 0.95
+          },
+          "full_minus_K16": {
+            "pp": -3.8095238095238093,
+            "ci_pp": [
+              -13.333333333333332,
+              3.9215686274509807
+            ],
+            "level": 0.95
+          }
+        }
+      },
+      "acoustic_property": {
+        "questions": 25,
+        "recordings": 25,
+        "yes_n": 15,
+        "no_n": 10,
+        "performance": {
+          "text": {
+            "accuracy": 0.56,
+            "yes_recall": 0.8666666666666667,
+            "no_recall": 0.1,
+            "balanced_accuracy": 0.48333333333333334
+          },
+          "K4": {
+            "accuracy": 0.7066666666666666,
+            "yes_recall": 0.8888888888888888,
+            "no_recall": 0.4333333333333333,
+            "balanced_accuracy": 0.6611111111111111
+          },
+          "K16": {
+            "accuracy": 0.6533333333333333,
+            "yes_recall": 0.6888888888888888,
+            "no_recall": 0.6,
+            "balanced_accuracy": 0.6444444444444444
+          },
+          "full": {
+            "accuracy": 0.68,
+            "yes_recall": 0.7333333333333333,
+            "no_recall": 0.6,
+            "balanced_accuracy": 0.6666666666666666
+          }
+        },
+        "contrasts": {
+          "full_minus_text": {
+            "pp": 12.0,
+            "ci_pp": [
+              -8.0,
+              32.0
+            ],
+            "level": 0.95
+          },
+          "K16_minus_K4": {
+            "pp": -5.333333333333333,
+            "ci_pp": [
+              -21.33333333333333,
+              10.666666666666668
+            ],
+            "level": 0.95
+          },
+          "full_minus_K16": {
+            "pp": 2.666666666666667,
+            "ci_pp": [
+              -10.666666666666664,
+              16.0
+            ],
+            "level": 0.95
+          }
+        }
+      }
+    }
+  },
+  "descriptive_types": [
+    "source_or_event",
+    "count_or_relation",
+    "time_pattern",
+    "scene_context",
+    "acoustic_property"
+  ],
+  "cases": {
+    "source_preserved": "08c687a1a333ad1d36ba3972",
+    "relation_gap": "57557598b18b91b74bc8cd7b",
+    "timing_full_failure": "0da3bfcd3c757c09148bf8b9"
+  },
+  "primary": {
+    "pp": 10.635538261997407,
+    "ci_pp": [
+      8.041504539559014,
+      13.359273670557716
+    ],
+    "level": 0.95,
+    "supported": true
+  },
+  "source_or_event": {
+    "minimum_support_met": true,
+    "supported": false,
+    "contrast": {
+      "pp": 3.633060853769301,
+      "ci_pp": [
+        -0.1801801801801799,
+        7.5300190904257995
+      ],
+      "level": 0.975
+    }
+  },
+  "count_or_relation": {
+    "minimum_support_met": true,
+    "supported": false,
+    "contrast": {
+      "pp": -0.6172839506172838,
+      "ci_pp": [
+        -6.5359477124183005,
+        4.320987654320988
+      ],
+      "level": 0.975
+    }
+  }
+}

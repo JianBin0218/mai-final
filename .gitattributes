@@ -1,1 +1,14 @@
 *.sh text eol=lf
+
+# Keep the recorded evaluation hashes valid on Windows and Linux checkouts.
+/a_final_test.py text eol=lf
+/a_final_types.py text eol=lf
+/baseline.py text eol=crlf
+/bottleneck.py text eol=crlf
+/prepare.py text eol=lf
+/phase2/fresh-capacity/question_types.csv text eol=crlf
+/phase2/a-*/plan.json text eol=lf
+/phase2/count-confirmation-v1/plan.json text eol=lf
+/phase2/a-final-v1/** text eol=lf
+/phase2/a-final-v1/lock.json text eol=crlf
+/phase2/a-final-v1/smoke/smoke_check.json text eol=crlf
