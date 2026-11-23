@@ -8,3 +8,5 @@ tools/
 
 .env
 .env.*
+runs/
+*.pt

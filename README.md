@@ -2,14 +2,31 @@
 
 [中文專題進度、暫定規劃與研究分工](PROJECT_HANDOFF.md)
 
-Run from `/tmp2/b12902071/m_final` on cml30. The local checkout contains code and small result files. The remote `.venv`, audio and checkpoint stay on the SSD.
+The shared server is cml30 (`/tmp2/b12902071/m_final`), but every script runs on any machine with one 24 GB GPU. The Git checkout contains code and small result files. The `.venv`, model, audio and checkpoints stay on the machine that runs them.
+
+## Set up a new machine
+
+Run every command from the checkout root; result files store data paths relative to it.
+
+```bash
+python3 -m venv .venv
+.venv/bin/pip install torch==2.5.1 --index-url https://download.pytorch.org/whl/cu121
+.venv/bin/pip install -r requirements.txt
+.venv/bin/python download_model.py        # ~16 GB into model/, pinned revision
+.venv/bin/python prepare_clotho.py        # Clotho-AQA audio and question manifest
+.venv/bin/python prepare.py               # ESC-50 / CompA-Order pilot pairs
+```
+
+Several checkouts or worktrees on one machine can share a single model copy: set `MAI_MODEL_DIR=/path/to/model`. To share audio, symlink `data` to one prepared copy, because manifests record paths as `data/...`. Write checkpoints under `runs/`, which Git ignores; copy only `train.json`/`pool.json` into `phase2/<name>/`.
+
+`track_comparison.py` defaults to the cml30 layout. Use `--host local` to run in this checkout, or `--host <ssh-alias> --project-dir <path>` for another server; `MAI_HOST`, `MAI_PROJECT_DIR` and `MAI_PYTHON` set the same defaults from the environment.
 
 ## Reproduce on the prepared server
 
 Choose one available GPU after checking `nvidia-smi` and the lab limits. Substitute its index for N. Use a persistent SSH terminal and run the commands inside tmux.
 
 ```bash
-cd /tmp2/b12902071/m_final
+cd /tmp2/b12902071/m_final   # or your own checkout
 export CUDA_DEVICE_ORDER=PCI_BUS_ID CUDA_VISIBLE_DEVICES=N
 export OMP_NUM_THREADS=4 OPENBLAS_NUM_THREADS=4 MKL_NUM_THREADS=4
 .venv/bin/python prepare.py
@@ -48,6 +65,13 @@ From the local checkout, with the code synced to cml30, choose a free GPU with e
 ```powershell
 python -u track_comparison.py --gpu N --tag clotho-k16-repeat --steps 192
 python compare_pilot.py clotho-k16-repeat
+```
+
+On a machine that already has the model and data, run both arms in place instead, optionally from a shared parent checkpoint:
+
+```bash
+.venv/bin/python -u track_comparison.py --host local --gpu N --tag mywarm-k16-s17 --out-root runs --init-from runs/my-parent/compressor.pt
+.venv/bin/python compare_pilot.py mywarm-k16-s17
 ```
 
 To evaluate a saved conditioned checkpoint directly on cml30, select the GPU as above and run:
@@ -109,3 +133,25 @@ Both arms decode the same question and A/B options. Only the conditioned compres
 ```
 
 將 fresh-controls 下四個 JSON 放入本機 phase2/fresh-controls，執行 `python analyze_controls.py`（NumPy）會生成逐題型 metrics.csv 與配對 contrasts.csv。yes/no recall 分別以各自正解數為分母；balanced accuracy 是兩者的平均。差異區間以錄音為單位配對 bootstrap，條件在本次三個固定訓練 seed 與單一 donor 排列。
+
+## Track B: question-guidance grid
+
+Prepare the extended manifest (adds `val_extra` and a 768-question `train_large`; `manifest.json` is unchanged) and Jianbin's shared `fresh_val.json`:
+
+```bash
+.venv/bin/python prepare_clotho.py --extended
+.venv/bin/python prepare_clotho.py --fresh-val
+```
+
+`guidance_grid.sh GPU "K..." "SEED..." [OUT_ROOT] [TRAIN_SPLIT] [STEPS] [ARMS]` trains an audio-only parent per K and seed, then warm-starts each arm from it: `audio`, `add` (original), `gated` (unit-normalized question term with a zero-init tanh gate), `gatedc` (gated, centered question embeddings), `gatedh`/`gatedch` (frozen-LM layer-16 hidden state). Features are cached under `cache/features`; finished runs are skipped. One GPU fits one run (16 GiB peak).
+
+```bash
+bash guidance_grid.sh 0 "1 4 16" "17 18 19"                                         # 96 training questions
+bash guidance_grid.sh 1 "1 4" "17 18 19" runs/guidance-large train_large 1536 "audio gated gatedc"
+MODE=eval bash guidance_grid.sh 0 "1 4 16" "17 18 19" runs/guidance train 192 "audio add gated gatedc gatedh gatedch"
+.venv/bin/python bottleneck.py probe --clotho --conditioned --condition gated --center-question --k 16 --seed 17 \
+    --out runs/guidance/k16-s17-gatedc --manifest data/clotho/manifest_extended.json \
+    --extra-manifest data/clotho/fresh_val.json --extra-split val --feature-cache cache/features
+python export_guidance.py      # writes phase2/guidance-v1 from runs/
+python compare_guidance.py     # --grid large, --split val, --probe
+```

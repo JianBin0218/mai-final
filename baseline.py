@@ -14,6 +14,8 @@ from scipy.signal import resample_poly
 from math import gcd
 from transformers import AutoProcessor, Qwen2AudioForConditionalGeneration
 
+MODEL_DIR = os.environ.get("MAI_MODEL_DIR", "model")
+
 
 def waveform(path):
     samples, rate = sf.read(path, dtype="float32", always_2d=True)
@@ -26,9 +28,9 @@ def waveform(path):
 def main():
     start = time.monotonic()
     torch.set_num_threads(4)
-    processor = AutoProcessor.from_pretrained("model")
+    processor = AutoProcessor.from_pretrained(MODEL_DIR)
     model = Qwen2AudioForConditionalGeneration.from_pretrained(
-        "model", torch_dtype=torch.bfloat16, device_map={"": 0}
+        MODEL_DIR, torch_dtype=torch.bfloat16, device_map={"": 0}
     ).eval()
     ids = [processor.tokenizer.encode(letter, add_special_tokens=False) for letter in "AB"]
     assert all(len(x) == 1 for x in ids)
@@ -48,7 +50,7 @@ def main():
         return logits[1] - logits[0]
 
     output = Path(os.environ.get("RESULT_DIR", "results"))
-    output.mkdir(exist_ok=True)
+    output.mkdir(exist_ok=True, parents=True)
     pairs = json.loads(Path(os.environ.get("PAIR_FILE", "data/pairs.json")).read_text())
     rows = []
     load_seconds = time.monotonic() - start
