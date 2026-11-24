@@ -57,7 +57,7 @@ def main():
     parser.add_argument("mode", choices=["train", "eval", "pool", "probe", "fresh", "controls",
                                         "intervene", "opposite", "level-probe", "count-evidence",
                                         "count-prompts", "count-confirmation", "natural-capacity",
-                                        "natural-components", "event-components", "a-final", "level-contrast", "llm-writer"])
+                                        "natural-components", "event-components", "a-final", "level-contrast", "llm-writer", "c-readout"])
     parser.add_argument("--out", type=Path, required=True)
     parser.add_argument("--steps", type=int, default=16)
     parser.add_argument("--k", type=int, default=16)
@@ -107,10 +107,14 @@ def main():
     parser.add_argument("--writer-pair-plan", type=Path, help="Frozen opposite-audio evaluation for trained writers")
     parser.add_argument("--writer-load", type=Path, help="Audio-only writer for the paired evaluation")
     parser.add_argument("--writer-question-load", type=Path, help="Question-conditioned writer for the paired evaluation")
+    parser.add_argument("--compressor", type=Path, help="Audio-only K=16 compressor.pt for c-readout")
+    parser.add_argument("--adapter-hidden", type=int, default=256, help="Hidden width of the c-readout adapter")
+    parser.add_argument("--adapter-lr", type=float, default=3e-4, help="Learning rate of the c-readout adapter")
+    parser.add_argument("--folds", type=int, default=5, help="Source-group folds for c-readout")
     args = parser.parse_args()
     audio_only_modes = ("fresh", "controls", "intervene", "count-evidence", "count-prompts",
                         "count-confirmation", "natural-capacity", "natural-components", "event-components", "a-final",
-                        "level-contrast", "llm-writer")
+                        "level-contrast", "llm-writer", "c-readout")
     if args.mode in audio_only_modes and (not args.clotho or args.conditioned):
         parser.error(f"{args.mode} requires --clotho and audio-only checkpoints")
     if args.mode in ("count-prompts", "count-confirmation") and args.batch_size < 1:
@@ -136,6 +140,8 @@ def main():
         writer_plan = json.loads(args.writer_pair_plan.read_text(encoding="utf-8"))
         if ("writer_question" in writer_plan["checkpoints"]) != bool(args.writer_question_load):
             parser.error("The writer evaluation requires exactly the checkpoints specified by its plan")
+    if args.mode == "c-readout" and (args.compressor is None or args.steps < 1 or args.batch_size < 1 or args.folds < 2):
+        parser.error("c-readout requires --compressor, positive --steps and --batch-size, and --folds >= 2")
     if args.mode == "pool" and (not args.clotho or args.conditioned or min(args.pool_ks) < 1):
         parser.error("pool requires --clotho and positive slot counts without --conditioned")
     if args.mode == "probe" and (not args.conditioned or args.condition != "gated"):
@@ -220,7 +226,7 @@ def main():
             def capture(module, positional, kwargs):
                 cache[path] = kwargs["inputs_embeds"][0, mask].detach().cpu()
                 if args.mode in ("count-confirmation", "natural-capacity", "natural-components", "event-components", "a-final",
-                                 "level-contrast", "llm-writer"):
+                                 "level-contrast", "llm-writer", "c-readout"):
                     raise AudioFeaturesCaptured
             hook = lm.register_forward_pre_hook(capture, with_kwargs=True)
             try:
@@ -325,6 +331,10 @@ def main():
         from llm_writer import measure
         measure(args, comp, features, decode, decode_text, lm, embed, proc, base.config.audio_token_index,
                 train, test, extra, donor_stems)
+        return
+    if args.mode == "c-readout":
+        from c_readout import measure
+        measure(args, comp, features, decode)
         return
     if args.mode == "opposite":
         from opposite_eval import measure
