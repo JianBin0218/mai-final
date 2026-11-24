@@ -1,0 +1,13 @@
+{
+  "id": "a-level-dose-v1",
+  "classification": "Exploratory extension on the same 100 evaluation recordings. The original 24 dB evaluation selected this question and source panel.",
+  "parent_manifest_sha256": "977138655440fa789137862c181917a33892981bb4e2e90d734b495a60193aea",
+  "new_levels_db": [
+    6,
+    12,
+    18
+  ],
+  "prompt": "which",
+  "contrasts": "Full, fixed temporal pooling with 16 slots, and three learned K16 checkpoints under both answer orders. Rank within each original recording. Reuse 24 dB scores for full/learned K16 and add the fixed pooling control.",
+  "readout": "Fit the fixed ridge readout at 24 dB using only the original development sources and test transfer to lower gains. Bootstrap clusters are original recording IDs."
+}

@@ -57,7 +57,7 @@ def main():
     parser.add_argument("mode", choices=["train", "eval", "pool", "probe", "fresh", "controls",
                                         "intervene", "opposite", "level-probe", "count-evidence",
                                         "count-prompts", "count-confirmation", "natural-capacity",
-                                        "natural-components", "event-components", "a-final", "level-contrast"])
+                                        "natural-components", "event-components", "a-final", "level-contrast", "llm-writer"])
     parser.add_argument("--out", type=Path, required=True)
     parser.add_argument("--steps", type=int, default=16)
     parser.add_argument("--k", type=int, default=16)
@@ -98,12 +98,19 @@ def main():
     parser.add_argument("--capacity-references", type=Path, help="Saved natural-capacity scores for natural-components")
     parser.add_argument("--event-plan", type=Path, help="Fixed plan for event-components")
     parser.add_argument("--final-plan", type=Path, help="Fixed A-line evaluation plan")
-    parser.add_argument("--level-stage", choices=("screen", "confirm"), help="Stage for level-contrast")
+    parser.add_argument("--level-stage", choices=("screen", "confirm", "dose"), help="Stage for level-contrast")
     parser.add_argument("--level-lock", type=Path, help="Locked screen outcome for level-contrast confirmation")
+    parser.add_argument("--writer-rank", type=int, default=4, help="Rank of writer-only adapters, or zero for slots only")
+    parser.add_argument("--writer-lr", type=float, default=0.001, help="Learning rate for llm-writer")
+    parser.add_argument("--writer-reference", type=Path, help="External audio-only comparator checkpoint for llm-writer")
+    parser.add_argument("--writer-conditioned", action="store_true", help="Show the question to the writer before compression")
+    parser.add_argument("--writer-pair-plan", type=Path, help="Frozen opposite-audio evaluation for trained writers")
+    parser.add_argument("--writer-load", type=Path, help="Audio-only writer for the paired evaluation")
+    parser.add_argument("--writer-question-load", type=Path, help="Question-conditioned writer for the paired evaluation")
     args = parser.parse_args()
     audio_only_modes = ("fresh", "controls", "intervene", "count-evidence", "count-prompts",
                         "count-confirmation", "natural-capacity", "natural-components", "event-components", "a-final",
-                        "level-contrast")
+                        "level-contrast", "llm-writer")
     if args.mode in audio_only_modes and (not args.clotho or args.conditioned):
         parser.error(f"{args.mode} requires --clotho and audio-only checkpoints")
     if args.mode in ("count-prompts", "count-confirmation") and args.batch_size < 1:
@@ -121,6 +128,14 @@ def main():
     if args.mode == "level-contrast" and (args.level_stage is None or args.batch_size < 1
                                          or (args.level_stage == "confirm") != (args.level_lock is not None)):
         parser.error("level-contrast requires --level-stage, a positive --batch-size, and --level-lock only for confirm")
+    if args.mode == "llm-writer" and (args.writer_rank < 0 or args.writer_lr <= 0 or args.k < 1 or args.steps < 1):
+        parser.error("llm-writer requires positive slot count, training steps and learning rate, and a nonnegative rank")
+    if any((args.writer_pair_plan, args.writer_load, args.writer_question_load)):
+        if not (args.mode == "llm-writer" and args.writer_pair_plan and args.writer_load):
+            parser.error("Paired writer evaluation requires llm-writer, a plan, and the audio writer checkpoint")
+        writer_plan = json.loads(args.writer_pair_plan.read_text(encoding="utf-8"))
+        if ("writer_question" in writer_plan["checkpoints"]) != bool(args.writer_question_load):
+            parser.error("The writer evaluation requires exactly the checkpoints specified by its plan")
     if args.mode == "pool" and (not args.clotho or args.conditioned or min(args.pool_ks) < 1):
         parser.error("pool requires --clotho and positive slot counts without --conditioned")
     if args.mode == "probe" and (not args.conditioned or args.condition != "gated"):
@@ -205,7 +220,7 @@ def main():
             def capture(module, positional, kwargs):
                 cache[path] = kwargs["inputs_embeds"][0, mask].detach().cpu()
                 if args.mode in ("count-confirmation", "natural-capacity", "natural-components", "event-components", "a-final",
-                                 "level-contrast"):
+                                 "level-contrast", "llm-writer"):
                     raise AudioFeaturesCaptured
             hook = lm.register_forward_pre_hook(capture, with_kwargs=True)
             try:
@@ -300,8 +315,16 @@ def main():
         probe(args, comp, features)
         return
     if args.mode == "level-contrast":
-        from level_contrast import measure
+        if args.level_stage == "dose":
+            from level_dose import measure
+        else:
+            from level_contrast import measure
         measure(args, comp, features, decode)
+        return
+    if args.mode == "llm-writer":
+        from llm_writer import measure
+        measure(args, comp, features, decode, decode_text, lm, embed, proc, base.config.audio_token_index,
+                train, test, extra, donor_stems)
         return
     if args.mode == "opposite":
         from opposite_eval import measure

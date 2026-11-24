@@ -1,0 +1,20 @@
+{
+  "id": "b-writer-position-v1",
+  "position_study": true,
+  "classification": "Exploratory: the existing replication motivated the order hypothesis. Within each group, move the same target block to all four slots by cyclic rotation, keeping duration, gain, question, and source identities fixed.",
+  "parent_manifest_sha256": "53137b318178f9b7e0e4535885cbaa78664179c9c3b261eda2cf81de6da6610e",
+  "parent_scores_sha256": "37bbf93acd34c357d8adfd59fe93ff04b2eee2e6ba92b3c05fea2d57aedf5231",
+  "checkpoints": {
+    "writer_audio": "b0d4d5d31c74ed95a21cf02bec14f1fd5db0c74fe407bf30b58c829b63c0c585",
+    "external": "35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab"
+  },
+  "primary": "Within-pair last minus first target-position ranking for the two writers. Difference of the changes compares writer-specific position sensitivity against external compression.",
+  "bootstrap_seed": 54113,
+  "bootstrap_replicates": 10000,
+  "k": 4,
+  "writer_seed": 17,
+  "writer_rank": 4,
+  "segment_seconds": 1.5,
+  "gap_seconds": 0.2,
+  "events": 4
+}

@@ -1,0 +1,3609 @@
+{
+  "plan_sha256": "426f68b1b3bafd30edbf115fee8653595257d0d3794b9ce7fb955a871b9a1fc1",
+  "development": [
+    {
+      "source": "5-117120-A-42.wav",
+      "original_id": "117120",
+      "category": "siren",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-117120-A-42-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-117120-A-42-24db-second.wav"
+    },
+    {
+      "source": "5-117250-A-2.wav",
+      "original_id": "117250",
+      "category": "pig",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-117250-A-2-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-117250-A-2-24db-second.wav"
+    },
+    {
+      "source": "5-141683-A-35.wav",
+      "original_id": "141683",
+      "category": "washing_machine",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-141683-A-35-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-141683-A-35-24db-second.wav"
+    },
+    {
+      "source": "5-156698-A-18.wav",
+      "original_id": "156698",
+      "category": "toilet_flush",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-156698-A-18-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-156698-A-18-24db-second.wav"
+    },
+    {
+      "source": "5-156999-C-19.wav",
+      "original_id": "156999",
+      "category": "thunderstorm",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-156999-C-19-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-156999-C-19-24db-second.wav"
+    },
+    {
+      "source": "5-160614-D-48.wav",
+      "original_id": "160614",
+      "category": "fireworks",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-160614-D-48-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-160614-D-48-24db-second.wav"
+    },
+    {
+      "source": "5-172299-A-5.wav",
+      "original_id": "172299",
+      "category": "cat",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-172299-A-5-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-172299-A-5-24db-second.wav"
+    },
+    {
+      "source": "5-173568-A-33.wav",
+      "original_id": "173568",
+      "category": "door_wood_creaks",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-173568-A-33-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-173568-A-33-24db-second.wav"
+    },
+    {
+      "source": "5-177957-D-40.wav",
+      "original_id": "177957",
+      "category": "helicopter",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-177957-D-40-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-177957-D-40-24db-second.wav"
+    },
+    {
+      "source": "5-179496-B-16.wav",
+      "original_id": "179496",
+      "category": "wind",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-179496-B-16-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-179496-B-16-24db-second.wav"
+    },
+    {
+      "source": "5-179865-A-43.wav",
+      "original_id": "179865",
+      "category": "car_horn",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-179865-A-43-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-179865-A-43-24db-second.wav"
+    },
+    {
+      "source": "5-184871-A-24.wav",
+      "original_id": "184871",
+      "category": "coughing",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-184871-A-24-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-184871-A-24-24db-second.wav"
+    },
+    {
+      "source": "5-185516-A-27.wav",
+      "original_id": "185516",
+      "category": "brushing_teeth",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-185516-A-27-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-185516-A-27-24db-second.wav"
+    },
+    {
+      "source": "5-185579-A-41.wav",
+      "original_id": "185579",
+      "category": "chainsaw",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-185579-A-41-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-185579-A-41-24db-second.wav"
+    },
+    {
+      "source": "5-187201-B-4.wav",
+      "original_id": "187201",
+      "category": "frog",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-187201-B-4-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-187201-B-4-24db-second.wav"
+    },
+    {
+      "source": "5-188716-A-46.wav",
+      "original_id": "188716",
+      "category": "church_bells",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-188716-A-46-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-188716-A-46-24db-second.wav"
+    },
+    {
+      "source": "5-194892-A-10.wav",
+      "original_id": "194892",
+      "category": "rain",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-194892-A-10-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-194892-A-10-24db-second.wav"
+    },
+    {
+      "source": "5-194899-C-3.wav",
+      "original_id": "194899",
+      "category": "cow",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-194899-C-3-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-194899-C-3-24db-second.wav"
+    },
+    {
+      "source": "5-195518-A-7.wav",
+      "original_id": "195518",
+      "category": "insects",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-195518-A-7-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-195518-A-7-24db-second.wav"
+    },
+    {
+      "source": "5-197121-B-45.wav",
+      "original_id": "197121",
+      "category": "train",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-197121-B-45-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-197121-B-45-24db-second.wav"
+    },
+    {
+      "source": "5-198411-G-20.wav",
+      "original_id": "198411",
+      "category": "crying_baby",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-198411-G-20-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-198411-G-20-24db-second.wav"
+    },
+    {
+      "source": "5-198891-B-8.wav",
+      "original_id": "198891",
+      "category": "sheep",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-198891-B-8-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-198891-B-8-24db-second.wav"
+    },
+    {
+      "source": "5-200334-B-1.wav",
+      "original_id": "200334",
+      "category": "rooster",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-200334-B-1-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-200334-B-1-24db-second.wav"
+    },
+    {
+      "source": "5-202220-A-21.wav",
+      "original_id": "202220",
+      "category": "sneezing",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-202220-A-21-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-202220-A-21-24db-second.wav"
+    },
+    {
+      "source": "5-208030-A-0.wav",
+      "original_id": "208030",
+      "category": "dog",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-208030-A-0-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-208030-A-0-24db-second.wav"
+    },
+    {
+      "source": "5-208624-A-38.wav",
+      "original_id": "208624",
+      "category": "clock_tick",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-208624-A-38-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-208624-A-38-24db-second.wav"
+    },
+    {
+      "source": "5-210540-A-13.wav",
+      "original_id": "210540",
+      "category": "crickets",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-210540-A-13-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-210540-A-13-24db-second.wav"
+    },
+    {
+      "source": "5-212736-A-17.wav",
+      "original_id": "212736",
+      "category": "pouring_water",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-212736-A-17-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-212736-A-17-24db-second.wav"
+    },
+    {
+      "source": "5-213836-D-9.wav",
+      "original_id": "213836",
+      "category": "crow",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-213836-D-9-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-213836-D-9-24db-second.wav"
+    },
+    {
+      "source": "5-215658-A-12.wav",
+      "original_id": "215658",
+      "category": "crackling_fire",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-215658-A-12-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-215658-A-12-24db-second.wav"
+    },
+    {
+      "source": "5-218494-A-22.wav",
+      "original_id": "218494",
+      "category": "clapping",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-218494-A-22-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-218494-A-22-24db-second.wav"
+    },
+    {
+      "source": "5-218981-A-30.wav",
+      "original_id": "218981",
+      "category": "door_wood_knock",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-218981-A-30-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-218981-A-30-24db-second.wav"
+    },
+    {
+      "source": "5-219379-C-11.wav",
+      "original_id": "219379",
+      "category": "sea_waves",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-219379-C-11-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-219379-C-11-24db-second.wav"
+    },
+    {
+      "source": "5-234247-A-37.wav",
+      "original_id": "234247",
+      "category": "clock_alarm",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-234247-A-37-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-234247-A-37-24db-second.wav"
+    },
+    {
+      "source": "5-234335-A-23.wav",
+      "original_id": "234335",
+      "category": "breathing",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-234335-A-23-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-234335-A-23-24db-second.wav"
+    },
+    {
+      "source": "5-234923-A-32.wav",
+      "original_id": "234923",
+      "category": "keyboard_typing",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-234923-A-32-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-234923-A-32-24db-second.wav"
+    },
+    {
+      "source": "5-238926-A-31.wav",
+      "original_id": "238926",
+      "category": "mouse_click",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-238926-A-31-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-238926-A-31-24db-second.wav"
+    },
+    {
+      "source": "5-243459-B-14.wav",
+      "original_id": "243459",
+      "category": "chirping_birds",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-243459-B-14-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-243459-B-14-24db-second.wav"
+    },
+    {
+      "source": "5-243635-A-29.wav",
+      "original_id": "243635",
+      "category": "drinking_sipping",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-243635-A-29-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-243635-A-29-24db-second.wav"
+    },
+    {
+      "source": "5-243773-B-44.wav",
+      "original_id": "243773",
+      "category": "engine",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-243773-B-44-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-243773-B-44-24db-second.wav"
+    },
+    {
+      "source": "5-248341-B-6.wav",
+      "original_id": "248341",
+      "category": "hen",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-248341-B-6-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-248341-B-6-24db-second.wav"
+    },
+    {
+      "source": "5-249748-A-28.wav",
+      "original_id": "249748",
+      "category": "snoring",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-249748-A-28-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-249748-A-28-24db-second.wav"
+    },
+    {
+      "source": "5-251957-A-47.wav",
+      "original_id": "251957",
+      "category": "airplane",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-251957-A-47-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-251957-A-47-24db-second.wav"
+    },
+    {
+      "source": "5-253094-D-49.wav",
+      "original_id": "253094",
+      "category": "hand_saw",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-253094-D-49-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-253094-D-49-24db-second.wav"
+    },
+    {
+      "source": "5-259514-A-26.wav",
+      "original_id": "259514",
+      "category": "laughing",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-259514-A-26-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-259514-A-26-24db-second.wav"
+    },
+    {
+      "source": "5-260011-A-34.wav",
+      "original_id": "260011",
+      "category": "can_opening",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-260011-A-34-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-260011-A-34-24db-second.wav"
+    },
+    {
+      "source": "5-260434-A-39.wav",
+      "original_id": "260434",
+      "category": "glass_breaking",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-260434-A-39-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-260434-A-39-24db-second.wav"
+    },
+    {
+      "source": "5-261439-A-15.wav",
+      "original_id": "261439",
+      "category": "water_drops",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-261439-A-15-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-261439-A-15-24db-second.wav"
+    },
+    {
+      "source": "5-263490-A-25.wav",
+      "original_id": "263490",
+      "category": "footsteps",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-263490-A-25-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-263490-A-25-24db-second.wav"
+    },
+    {
+      "source": "5-263902-A-36.wav",
+      "original_id": "263902",
+      "category": "vacuum_cleaner",
+      "db": 24,
+      "first": "runs/a-screen-v1/stimuli/5-263902-A-36-24db-first.wav",
+      "second": "runs/a-screen-v1/stimuli/5-263902-A-36-24db-second.wav"
+    }
+  ],
+  "evaluation": [
+    {
+      "source": "3-128512-A-47.wav",
+      "original_id": "128512",
+      "category": "airplane",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/128512-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/128512-6db-second.wav"
+    },
+    {
+      "source": "3-128512-A-47.wav",
+      "original_id": "128512",
+      "category": "airplane",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/128512-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/128512-12db-second.wav"
+    },
+    {
+      "source": "3-128512-A-47.wav",
+      "original_id": "128512",
+      "category": "airplane",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/128512-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/128512-18db-second.wav"
+    },
+    {
+      "source": "4-161103-A-47.wav",
+      "original_id": "161103",
+      "category": "airplane",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/161103-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/161103-6db-second.wav"
+    },
+    {
+      "source": "4-161103-A-47.wav",
+      "original_id": "161103",
+      "category": "airplane",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/161103-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/161103-12db-second.wav"
+    },
+    {
+      "source": "4-161103-A-47.wav",
+      "original_id": "161103",
+      "category": "airplane",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/161103-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/161103-18db-second.wav"
+    },
+    {
+      "source": "3-166125-A-23.wav",
+      "original_id": "166125",
+      "category": "breathing",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/166125-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/166125-6db-second.wav"
+    },
+    {
+      "source": "3-166125-A-23.wav",
+      "original_id": "166125",
+      "category": "breathing",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/166125-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/166125-12db-second.wav"
+    },
+    {
+      "source": "3-166125-A-23.wav",
+      "original_id": "166125",
+      "category": "breathing",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/166125-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/166125-18db-second.wav"
+    },
+    {
+      "source": "4-207116-A-23.wav",
+      "original_id": "207116",
+      "category": "breathing",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/207116-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/207116-6db-second.wav"
+    },
+    {
+      "source": "4-207116-A-23.wav",
+      "original_id": "207116",
+      "category": "breathing",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/207116-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/207116-12db-second.wav"
+    },
+    {
+      "source": "4-207116-A-23.wav",
+      "original_id": "207116",
+      "category": "breathing",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/207116-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/207116-18db-second.wav"
+    },
+    {
+      "source": "3-118069-A-27.wav",
+      "original_id": "118069",
+      "category": "brushing_teeth",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/118069-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/118069-6db-second.wav"
+    },
+    {
+      "source": "3-118069-A-27.wav",
+      "original_id": "118069",
+      "category": "brushing_teeth",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/118069-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/118069-12db-second.wav"
+    },
+    {
+      "source": "3-118069-A-27.wav",
+      "original_id": "118069",
+      "category": "brushing_teeth",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/118069-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/118069-18db-second.wav"
+    },
+    {
+      "source": "3-100024-B-27.wav",
+      "original_id": "100024",
+      "category": "brushing_teeth",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/100024-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/100024-6db-second.wav"
+    },
+    {
+      "source": "3-100024-B-27.wav",
+      "original_id": "100024",
+      "category": "brushing_teeth",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/100024-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/100024-12db-second.wav"
+    },
+    {
+      "source": "3-100024-B-27.wav",
+      "original_id": "100024",
+      "category": "brushing_teeth",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/100024-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/100024-18db-second.wav"
+    },
+    {
+      "source": "4-216349-A-34.wav",
+      "original_id": "216349",
+      "category": "can_opening",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/216349-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/216349-6db-second.wav"
+    },
+    {
+      "source": "4-216349-A-34.wav",
+      "original_id": "216349",
+      "category": "can_opening",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/216349-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/216349-12db-second.wav"
+    },
+    {
+      "source": "4-216349-A-34.wav",
+      "original_id": "216349",
+      "category": "can_opening",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/216349-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/216349-18db-second.wav"
+    },
+    {
+      "source": "4-179836-A-34.wav",
+      "original_id": "179836",
+      "category": "can_opening",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/179836-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/179836-6db-second.wav"
+    },
+    {
+      "source": "4-179836-A-34.wav",
+      "original_id": "179836",
+      "category": "can_opening",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/179836-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/179836-12db-second.wav"
+    },
+    {
+      "source": "4-179836-A-34.wav",
+      "original_id": "179836",
+      "category": "can_opening",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/179836-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/179836-18db-second.wav"
+    },
+    {
+      "source": "3-145577-A-43.wav",
+      "original_id": "145577",
+      "category": "car_horn",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/145577-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/145577-6db-second.wav"
+    },
+    {
+      "source": "3-145577-A-43.wav",
+      "original_id": "145577",
+      "category": "car_horn",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/145577-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/145577-12db-second.wav"
+    },
+    {
+      "source": "3-145577-A-43.wav",
+      "original_id": "145577",
+      "category": "car_horn",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/145577-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/145577-18db-second.wav"
+    },
+    {
+      "source": "4-175855-A-43.wav",
+      "original_id": "175855",
+      "category": "car_horn",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/175855-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/175855-6db-second.wav"
+    },
+    {
+      "source": "4-175855-A-43.wav",
+      "original_id": "175855",
+      "category": "car_horn",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/175855-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/175855-12db-second.wav"
+    },
+    {
+      "source": "4-175855-A-43.wav",
+      "original_id": "175855",
+      "category": "car_horn",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/175855-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/175855-18db-second.wav"
+    },
+    {
+      "source": "3-95695-A-5.wav",
+      "original_id": "95695",
+      "category": "cat",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/95695-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/95695-6db-second.wav"
+    },
+    {
+      "source": "3-95695-A-5.wav",
+      "original_id": "95695",
+      "category": "cat",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/95695-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/95695-12db-second.wav"
+    },
+    {
+      "source": "3-95695-A-5.wav",
+      "original_id": "95695",
+      "category": "cat",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/95695-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/95695-18db-second.wav"
+    },
+    {
+      "source": "3-95694-A-5.wav",
+      "original_id": "95694",
+      "category": "cat",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/95694-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/95694-6db-second.wav"
+    },
+    {
+      "source": "3-95694-A-5.wav",
+      "original_id": "95694",
+      "category": "cat",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/95694-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/95694-12db-second.wav"
+    },
+    {
+      "source": "3-95694-A-5.wav",
+      "original_id": "95694",
+      "category": "cat",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/95694-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/95694-18db-second.wav"
+    },
+    {
+      "source": "4-157611-A-41.wav",
+      "original_id": "157611",
+      "category": "chainsaw",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/157611-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/157611-6db-second.wav"
+    },
+    {
+      "source": "4-157611-A-41.wav",
+      "original_id": "157611",
+      "category": "chainsaw",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/157611-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/157611-12db-second.wav"
+    },
+    {
+      "source": "4-157611-A-41.wav",
+      "original_id": "157611",
+      "category": "chainsaw",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/157611-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/157611-18db-second.wav"
+    },
+    {
+      "source": "4-165823-B-41.wav",
+      "original_id": "165823",
+      "category": "chainsaw",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/165823-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/165823-6db-second.wav"
+    },
+    {
+      "source": "4-165823-B-41.wav",
+      "original_id": "165823",
+      "category": "chainsaw",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/165823-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/165823-12db-second.wav"
+    },
+    {
+      "source": "4-165823-B-41.wav",
+      "original_id": "165823",
+      "category": "chainsaw",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/165823-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/165823-18db-second.wav"
+    },
+    {
+      "source": "3-155583-A-14.wav",
+      "original_id": "155583",
+      "category": "chirping_birds",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/155583-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/155583-6db-second.wav"
+    },
+    {
+      "source": "3-155583-A-14.wav",
+      "original_id": "155583",
+      "category": "chirping_birds",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/155583-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/155583-12db-second.wav"
+    },
+    {
+      "source": "3-155583-A-14.wav",
+      "original_id": "155583",
+      "category": "chirping_birds",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/155583-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/155583-18db-second.wav"
+    },
+    {
+      "source": "3-155579-A-14.wav",
+      "original_id": "155579",
+      "category": "chirping_birds",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/155579-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/155579-6db-second.wav"
+    },
+    {
+      "source": "3-155579-A-14.wav",
+      "original_id": "155579",
+      "category": "chirping_birds",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/155579-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/155579-12db-second.wav"
+    },
+    {
+      "source": "3-155579-A-14.wav",
+      "original_id": "155579",
+      "category": "chirping_birds",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/155579-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/155579-18db-second.wav"
+    },
+    {
+      "source": "4-156827-A-46.wav",
+      "original_id": "156827",
+      "category": "church_bells",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/156827-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/156827-6db-second.wav"
+    },
+    {
+      "source": "4-156827-A-46.wav",
+      "original_id": "156827",
+      "category": "church_bells",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/156827-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/156827-12db-second.wav"
+    },
+    {
+      "source": "4-156827-A-46.wav",
+      "original_id": "156827",
+      "category": "church_bells",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/156827-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/156827-18db-second.wav"
+    },
+    {
+      "source": "4-147658-A-46.wav",
+      "original_id": "147658",
+      "category": "church_bells",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/147658-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/147658-6db-second.wav"
+    },
+    {
+      "source": "4-147658-A-46.wav",
+      "original_id": "147658",
+      "category": "church_bells",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/147658-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/147658-12db-second.wav"
+    },
+    {
+      "source": "4-147658-A-46.wav",
+      "original_id": "147658",
+      "category": "church_bells",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/147658-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/147658-18db-second.wav"
+    },
+    {
+      "source": "3-197435-A-22.wav",
+      "original_id": "197435",
+      "category": "clapping",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/197435-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/197435-6db-second.wav"
+    },
+    {
+      "source": "3-197435-A-22.wav",
+      "original_id": "197435",
+      "category": "clapping",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/197435-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/197435-12db-second.wav"
+    },
+    {
+      "source": "3-197435-A-22.wav",
+      "original_id": "197435",
+      "category": "clapping",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/197435-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/197435-18db-second.wav"
+    },
+    {
+      "source": "4-189833-A-22.wav",
+      "original_id": "189833",
+      "category": "clapping",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/189833-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/189833-6db-second.wav"
+    },
+    {
+      "source": "4-189833-A-22.wav",
+      "original_id": "189833",
+      "category": "clapping",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/189833-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/189833-12db-second.wav"
+    },
+    {
+      "source": "4-189833-A-22.wav",
+      "original_id": "189833",
+      "category": "clapping",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/189833-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/189833-18db-second.wav"
+    },
+    {
+      "source": "4-169508-A-37.wav",
+      "original_id": "169508",
+      "category": "clock_alarm",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/169508-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/169508-6db-second.wav"
+    },
+    {
+      "source": "4-169508-A-37.wav",
+      "original_id": "169508",
+      "category": "clock_alarm",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/169508-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/169508-12db-second.wav"
+    },
+    {
+      "source": "4-169508-A-37.wav",
+      "original_id": "169508",
+      "category": "clock_alarm",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/169508-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/169508-18db-second.wav"
+    },
+    {
+      "source": "3-117883-A-37.wav",
+      "original_id": "117883",
+      "category": "clock_alarm",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/117883-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/117883-6db-second.wav"
+    },
+    {
+      "source": "3-117883-A-37.wav",
+      "original_id": "117883",
+      "category": "clock_alarm",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/117883-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/117883-12db-second.wav"
+    },
+    {
+      "source": "3-117883-A-37.wav",
+      "original_id": "117883",
+      "category": "clock_alarm",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/117883-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/117883-18db-second.wav"
+    },
+    {
+      "source": "3-170383-A-38.wav",
+      "original_id": "170383",
+      "category": "clock_tick",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/170383-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/170383-6db-second.wav"
+    },
+    {
+      "source": "3-170383-A-38.wav",
+      "original_id": "170383",
+      "category": "clock_tick",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/170383-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/170383-12db-second.wav"
+    },
+    {
+      "source": "3-170383-A-38.wav",
+      "original_id": "170383",
+      "category": "clock_tick",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/170383-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/170383-18db-second.wav"
+    },
+    {
+      "source": "3-164688-A-38.wav",
+      "original_id": "164688",
+      "category": "clock_tick",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/164688-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/164688-6db-second.wav"
+    },
+    {
+      "source": "3-164688-A-38.wav",
+      "original_id": "164688",
+      "category": "clock_tick",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/164688-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/164688-12db-second.wav"
+    },
+    {
+      "source": "3-164688-A-38.wav",
+      "original_id": "164688",
+      "category": "clock_tick",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/164688-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/164688-18db-second.wav"
+    },
+    {
+      "source": "4-177835-A-24.wav",
+      "original_id": "177835",
+      "category": "coughing",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/177835-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/177835-6db-second.wav"
+    },
+    {
+      "source": "4-177835-A-24.wav",
+      "original_id": "177835",
+      "category": "coughing",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/177835-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/177835-12db-second.wav"
+    },
+    {
+      "source": "4-177835-A-24.wav",
+      "original_id": "177835",
+      "category": "coughing",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/177835-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/177835-18db-second.wav"
+    },
+    {
+      "source": "4-155650-A-24.wav",
+      "original_id": "155650",
+      "category": "coughing",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/155650-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/155650-6db-second.wav"
+    },
+    {
+      "source": "4-155650-A-24.wav",
+      "original_id": "155650",
+      "category": "coughing",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/155650-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/155650-12db-second.wav"
+    },
+    {
+      "source": "4-155650-A-24.wav",
+      "original_id": "155650",
+      "category": "coughing",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/155650-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/155650-18db-second.wav"
+    },
+    {
+      "source": "3-124376-A-3.wav",
+      "original_id": "124376",
+      "category": "cow",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/124376-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/124376-6db-second.wav"
+    },
+    {
+      "source": "3-124376-A-3.wav",
+      "original_id": "124376",
+      "category": "cow",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/124376-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/124376-12db-second.wav"
+    },
+    {
+      "source": "3-124376-A-3.wav",
+      "original_id": "124376",
+      "category": "cow",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/124376-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/124376-18db-second.wav"
+    },
+    {
+      "source": "4-181955-B-3.wav",
+      "original_id": "181955",
+      "category": "cow",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/181955-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/181955-6db-second.wav"
+    },
+    {
+      "source": "4-181955-B-3.wav",
+      "original_id": "181955",
+      "category": "cow",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/181955-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/181955-12db-second.wav"
+    },
+    {
+      "source": "4-181955-B-3.wav",
+      "original_id": "181955",
+      "category": "cow",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/181955-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/181955-18db-second.wav"
+    },
+    {
+      "source": "3-104958-A-12.wav",
+      "original_id": "104958",
+      "category": "crackling_fire",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/104958-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/104958-6db-second.wav"
+    },
+    {
+      "source": "3-104958-A-12.wav",
+      "original_id": "104958",
+      "category": "crackling_fire",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/104958-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/104958-12db-second.wav"
+    },
+    {
+      "source": "3-104958-A-12.wav",
+      "original_id": "104958",
+      "category": "crackling_fire",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/104958-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/104958-18db-second.wav"
+    },
+    {
+      "source": "4-170247-A-12.wav",
+      "original_id": "170247",
+      "category": "crackling_fire",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/170247-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/170247-6db-second.wav"
+    },
+    {
+      "source": "4-170247-A-12.wav",
+      "original_id": "170247",
+      "category": "crackling_fire",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/170247-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/170247-12db-second.wav"
+    },
+    {
+      "source": "4-170247-A-12.wav",
+      "original_id": "170247",
+      "category": "crackling_fire",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/170247-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/170247-18db-second.wav"
+    },
+    {
+      "source": "3-134802-A-13.wav",
+      "original_id": "134802",
+      "category": "crickets",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/134802-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/134802-6db-second.wav"
+    },
+    {
+      "source": "3-134802-A-13.wav",
+      "original_id": "134802",
+      "category": "crickets",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/134802-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/134802-12db-second.wav"
+    },
+    {
+      "source": "3-134802-A-13.wav",
+      "original_id": "134802",
+      "category": "crickets",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/134802-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/134802-18db-second.wav"
+    },
+    {
+      "source": "4-202749-A-13.wav",
+      "original_id": "202749",
+      "category": "crickets",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/202749-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/202749-6db-second.wav"
+    },
+    {
+      "source": "4-202749-A-13.wav",
+      "original_id": "202749",
+      "category": "crickets",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/202749-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/202749-12db-second.wav"
+    },
+    {
+      "source": "4-202749-A-13.wav",
+      "original_id": "202749",
+      "category": "crickets",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/202749-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/202749-18db-second.wav"
+    },
+    {
+      "source": "4-145081-A-9.wav",
+      "original_id": "145081",
+      "category": "crow",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/145081-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/145081-6db-second.wav"
+    },
+    {
+      "source": "4-145081-A-9.wav",
+      "original_id": "145081",
+      "category": "crow",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/145081-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/145081-12db-second.wav"
+    },
+    {
+      "source": "4-145081-A-9.wav",
+      "original_id": "145081",
+      "category": "crow",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/145081-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/145081-18db-second.wav"
+    },
+    {
+      "source": "4-173865-A-9.wav",
+      "original_id": "173865",
+      "category": "crow",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/173865-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/173865-6db-second.wav"
+    },
+    {
+      "source": "4-173865-A-9.wav",
+      "original_id": "173865",
+      "category": "crow",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/173865-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/173865-12db-second.wav"
+    },
+    {
+      "source": "4-173865-A-9.wav",
+      "original_id": "173865",
+      "category": "crow",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/173865-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/173865-18db-second.wav"
+    },
+    {
+      "source": "4-59579-A-20.wav",
+      "original_id": "59579",
+      "category": "crying_baby",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/59579-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/59579-6db-second.wav"
+    },
+    {
+      "source": "4-59579-A-20.wav",
+      "original_id": "59579",
+      "category": "crying_baby",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/59579-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/59579-12db-second.wav"
+    },
+    {
+      "source": "4-59579-A-20.wav",
+      "original_id": "59579",
+      "category": "crying_baby",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/59579-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/59579-18db-second.wav"
+    },
+    {
+      "source": "4-185575-C-20.wav",
+      "original_id": "185575",
+      "category": "crying_baby",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/185575-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/185575-6db-second.wav"
+    },
+    {
+      "source": "4-185575-C-20.wav",
+      "original_id": "185575",
+      "category": "crying_baby",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/185575-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/185575-12db-second.wav"
+    },
+    {
+      "source": "4-185575-C-20.wav",
+      "original_id": "185575",
+      "category": "crying_baby",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/185575-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/185575-18db-second.wav"
+    },
+    {
+      "source": "3-170015-A-0.wav",
+      "original_id": "170015",
+      "category": "dog",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/170015-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/170015-6db-second.wav"
+    },
+    {
+      "source": "3-170015-A-0.wav",
+      "original_id": "170015",
+      "category": "dog",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/170015-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/170015-12db-second.wav"
+    },
+    {
+      "source": "3-170015-A-0.wav",
+      "original_id": "170015",
+      "category": "dog",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/170015-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/170015-18db-second.wav"
+    },
+    {
+      "source": "3-136288-A-0.wav",
+      "original_id": "136288",
+      "category": "dog",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/136288-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/136288-6db-second.wav"
+    },
+    {
+      "source": "3-136288-A-0.wav",
+      "original_id": "136288",
+      "category": "dog",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/136288-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/136288-12db-second.wav"
+    },
+    {
+      "source": "3-136288-A-0.wav",
+      "original_id": "136288",
+      "category": "dog",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/136288-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/136288-18db-second.wav"
+    },
+    {
+      "source": "4-107117-A-33.wav",
+      "original_id": "107117",
+      "category": "door_wood_creaks",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/107117-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/107117-6db-second.wav"
+    },
+    {
+      "source": "4-107117-A-33.wav",
+      "original_id": "107117",
+      "category": "door_wood_creaks",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/107117-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/107117-12db-second.wav"
+    },
+    {
+      "source": "4-107117-A-33.wav",
+      "original_id": "107117",
+      "category": "door_wood_creaks",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/107117-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/107117-18db-second.wav"
+    },
+    {
+      "source": "4-160036-A-33.wav",
+      "original_id": "160036",
+      "category": "door_wood_creaks",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/160036-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/160036-6db-second.wav"
+    },
+    {
+      "source": "4-160036-A-33.wav",
+      "original_id": "160036",
+      "category": "door_wood_creaks",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/160036-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/160036-12db-second.wav"
+    },
+    {
+      "source": "4-160036-A-33.wav",
+      "original_id": "160036",
+      "category": "door_wood_creaks",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/160036-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/160036-18db-second.wav"
+    },
+    {
+      "source": "3-154378-A-30.wav",
+      "original_id": "154378",
+      "category": "door_wood_knock",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/154378-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/154378-6db-second.wav"
+    },
+    {
+      "source": "3-154378-A-30.wav",
+      "original_id": "154378",
+      "category": "door_wood_knock",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/154378-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/154378-12db-second.wav"
+    },
+    {
+      "source": "3-154378-A-30.wav",
+      "original_id": "154378",
+      "category": "door_wood_knock",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/154378-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/154378-18db-second.wav"
+    },
+    {
+      "source": "4-211502-A-30.wav",
+      "original_id": "211502",
+      "category": "door_wood_knock",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/211502-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/211502-6db-second.wav"
+    },
+    {
+      "source": "4-211502-A-30.wav",
+      "original_id": "211502",
+      "category": "door_wood_knock",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/211502-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/211502-12db-second.wav"
+    },
+    {
+      "source": "4-211502-A-30.wav",
+      "original_id": "211502",
+      "category": "door_wood_knock",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/211502-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/211502-18db-second.wav"
+    },
+    {
+      "source": "4-194808-A-29.wav",
+      "original_id": "194808",
+      "category": "drinking_sipping",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/194808-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/194808-6db-second.wav"
+    },
+    {
+      "source": "4-194808-A-29.wav",
+      "original_id": "194808",
+      "category": "drinking_sipping",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/194808-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/194808-12db-second.wav"
+    },
+    {
+      "source": "4-194808-A-29.wav",
+      "original_id": "194808",
+      "category": "drinking_sipping",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/194808-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/194808-18db-second.wav"
+    },
+    {
+      "source": "3-185456-A-29.wav",
+      "original_id": "185456",
+      "category": "drinking_sipping",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/185456-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/185456-6db-second.wav"
+    },
+    {
+      "source": "3-185456-A-29.wav",
+      "original_id": "185456",
+      "category": "drinking_sipping",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/185456-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/185456-12db-second.wav"
+    },
+    {
+      "source": "3-185456-A-29.wav",
+      "original_id": "185456",
+      "category": "drinking_sipping",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/185456-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/185456-18db-second.wav"
+    },
+    {
+      "source": "4-186935-A-44.wav",
+      "original_id": "186935",
+      "category": "engine",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/186935-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/186935-6db-second.wav"
+    },
+    {
+      "source": "4-186935-A-44.wav",
+      "original_id": "186935",
+      "category": "engine",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/186935-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/186935-12db-second.wav"
+    },
+    {
+      "source": "4-186935-A-44.wav",
+      "original_id": "186935",
+      "category": "engine",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/186935-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/186935-18db-second.wav"
+    },
+    {
+      "source": "4-186938-A-44.wav",
+      "original_id": "186938",
+      "category": "engine",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/186938-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/186938-6db-second.wav"
+    },
+    {
+      "source": "4-186938-A-44.wav",
+      "original_id": "186938",
+      "category": "engine",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/186938-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/186938-12db-second.wav"
+    },
+    {
+      "source": "4-186938-A-44.wav",
+      "original_id": "186938",
+      "category": "engine",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/186938-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/186938-18db-second.wav"
+    },
+    {
+      "source": "3-172881-A-48.wav",
+      "original_id": "172881",
+      "category": "fireworks",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/172881-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/172881-6db-second.wav"
+    },
+    {
+      "source": "3-172881-A-48.wav",
+      "original_id": "172881",
+      "category": "fireworks",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/172881-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/172881-12db-second.wav"
+    },
+    {
+      "source": "3-172881-A-48.wav",
+      "original_id": "172881",
+      "category": "fireworks",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/172881-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/172881-18db-second.wav"
+    },
+    {
+      "source": "3-172922-A-48.wav",
+      "original_id": "172922",
+      "category": "fireworks",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/172922-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/172922-6db-second.wav"
+    },
+    {
+      "source": "3-172922-A-48.wav",
+      "original_id": "172922",
+      "category": "fireworks",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/172922-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/172922-12db-second.wav"
+    },
+    {
+      "source": "3-172922-A-48.wav",
+      "original_id": "172922",
+      "category": "fireworks",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/172922-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/172922-18db-second.wav"
+    },
+    {
+      "source": "3-249913-A-25.wav",
+      "original_id": "249913",
+      "category": "footsteps",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/249913-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/249913-6db-second.wav"
+    },
+    {
+      "source": "3-249913-A-25.wav",
+      "original_id": "249913",
+      "category": "footsteps",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/249913-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/249913-12db-second.wav"
+    },
+    {
+      "source": "3-249913-A-25.wav",
+      "original_id": "249913",
+      "category": "footsteps",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/249913-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/249913-18db-second.wav"
+    },
+    {
+      "source": "4-194981-A-25.wav",
+      "original_id": "194981",
+      "category": "footsteps",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/194981-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/194981-6db-second.wav"
+    },
+    {
+      "source": "4-194981-A-25.wav",
+      "original_id": "194981",
+      "category": "footsteps",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/194981-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/194981-12db-second.wav"
+    },
+    {
+      "source": "4-194981-A-25.wav",
+      "original_id": "194981",
+      "category": "footsteps",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/194981-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/194981-18db-second.wav"
+    },
+    {
+      "source": "4-99644-C-4.wav",
+      "original_id": "99644",
+      "category": "frog",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/99644-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/99644-6db-second.wav"
+    },
+    {
+      "source": "4-99644-C-4.wav",
+      "original_id": "99644",
+      "category": "frog",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/99644-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/99644-12db-second.wav"
+    },
+    {
+      "source": "4-99644-C-4.wav",
+      "original_id": "99644",
+      "category": "frog",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/99644-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/99644-18db-second.wav"
+    },
+    {
+      "source": "3-70962-A-4.wav",
+      "original_id": "70962",
+      "category": "frog",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/70962-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/70962-6db-second.wav"
+    },
+    {
+      "source": "3-70962-A-4.wav",
+      "original_id": "70962",
+      "category": "frog",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/70962-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/70962-12db-second.wav"
+    },
+    {
+      "source": "3-70962-A-4.wav",
+      "original_id": "70962",
+      "category": "frog",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/70962-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/70962-18db-second.wav"
+    },
+    {
+      "source": "4-204119-A-39.wav",
+      "original_id": "204119",
+      "category": "glass_breaking",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/204119-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/204119-6db-second.wav"
+    },
+    {
+      "source": "4-204119-A-39.wav",
+      "original_id": "204119",
+      "category": "glass_breaking",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/204119-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/204119-12db-second.wav"
+    },
+    {
+      "source": "4-204119-A-39.wav",
+      "original_id": "204119",
+      "category": "glass_breaking",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/204119-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/204119-18db-second.wav"
+    },
+    {
+      "source": "4-204123-A-39.wav",
+      "original_id": "204123",
+      "category": "glass_breaking",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/204123-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/204123-6db-second.wav"
+    },
+    {
+      "source": "4-204123-A-39.wav",
+      "original_id": "204123",
+      "category": "glass_breaking",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/204123-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/204123-12db-second.wav"
+    },
+    {
+      "source": "4-204123-A-39.wav",
+      "original_id": "204123",
+      "category": "glass_breaking",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/204123-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/204123-18db-second.wav"
+    },
+    {
+      "source": "3-97909-B-49.wav",
+      "original_id": "97909",
+      "category": "hand_saw",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/97909-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/97909-6db-second.wav"
+    },
+    {
+      "source": "3-97909-B-49.wav",
+      "original_id": "97909",
+      "category": "hand_saw",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/97909-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/97909-12db-second.wav"
+    },
+    {
+      "source": "3-97909-B-49.wav",
+      "original_id": "97909",
+      "category": "hand_saw",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/97909-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/97909-18db-second.wav"
+    },
+    {
+      "source": "3-102583-B-49.wav",
+      "original_id": "102583",
+      "category": "hand_saw",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/102583-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/102583-6db-second.wav"
+    },
+    {
+      "source": "3-102583-B-49.wav",
+      "original_id": "102583",
+      "category": "hand_saw",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/102583-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/102583-12db-second.wav"
+    },
+    {
+      "source": "3-102583-B-49.wav",
+      "original_id": "102583",
+      "category": "hand_saw",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/102583-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/102583-18db-second.wav"
+    },
+    {
+      "source": "3-68630-A-40.wav",
+      "original_id": "68630",
+      "category": "helicopter",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/68630-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/68630-6db-second.wav"
+    },
+    {
+      "source": "3-68630-A-40.wav",
+      "original_id": "68630",
+      "category": "helicopter",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/68630-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/68630-12db-second.wav"
+    },
+    {
+      "source": "3-68630-A-40.wav",
+      "original_id": "68630",
+      "category": "helicopter",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/68630-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/68630-18db-second.wav"
+    },
+    {
+      "source": "4-125929-A-40.wav",
+      "original_id": "125929",
+      "category": "helicopter",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/125929-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/125929-6db-second.wav"
+    },
+    {
+      "source": "4-125929-A-40.wav",
+      "original_id": "125929",
+      "category": "helicopter",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/125929-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/125929-12db-second.wav"
+    },
+    {
+      "source": "4-125929-A-40.wav",
+      "original_id": "125929",
+      "category": "helicopter",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/125929-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/125929-18db-second.wav"
+    },
+    {
+      "source": "4-234879-A-6.wav",
+      "original_id": "234879",
+      "category": "hen",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/234879-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/234879-6db-second.wav"
+    },
+    {
+      "source": "4-234879-A-6.wav",
+      "original_id": "234879",
+      "category": "hen",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/234879-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/234879-12db-second.wav"
+    },
+    {
+      "source": "4-234879-A-6.wav",
+      "original_id": "234879",
+      "category": "hen",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/234879-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/234879-18db-second.wav"
+    },
+    {
+      "source": "3-164216-B-6.wav",
+      "original_id": "164216",
+      "category": "hen",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/164216-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/164216-6db-second.wav"
+    },
+    {
+      "source": "3-164216-B-6.wav",
+      "original_id": "164216",
+      "category": "hen",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/164216-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/164216-12db-second.wav"
+    },
+    {
+      "source": "3-164216-B-6.wav",
+      "original_id": "164216",
+      "category": "hen",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/164216-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/164216-18db-second.wav"
+    },
+    {
+      "source": "4-182314-B-7.wav",
+      "original_id": "182314",
+      "category": "insects",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/182314-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/182314-6db-second.wav"
+    },
+    {
+      "source": "4-182314-B-7.wav",
+      "original_id": "182314",
+      "category": "insects",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/182314-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/182314-12db-second.wav"
+    },
+    {
+      "source": "4-182314-B-7.wav",
+      "original_id": "182314",
+      "category": "insects",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/182314-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/182314-18db-second.wav"
+    },
+    {
+      "source": "4-130891-A-7.wav",
+      "original_id": "130891",
+      "category": "insects",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/130891-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/130891-6db-second.wav"
+    },
+    {
+      "source": "4-130891-A-7.wav",
+      "original_id": "130891",
+      "category": "insects",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/130891-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/130891-12db-second.wav"
+    },
+    {
+      "source": "4-130891-A-7.wav",
+      "original_id": "130891",
+      "category": "insects",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/130891-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/130891-18db-second.wav"
+    },
+    {
+      "source": "4-172742-A-32.wav",
+      "original_id": "172742",
+      "category": "keyboard_typing",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/172742-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/172742-6db-second.wav"
+    },
+    {
+      "source": "4-172742-A-32.wav",
+      "original_id": "172742",
+      "category": "keyboard_typing",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/172742-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/172742-12db-second.wav"
+    },
+    {
+      "source": "4-172742-A-32.wav",
+      "original_id": "172742",
+      "category": "keyboard_typing",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/172742-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/172742-18db-second.wav"
+    },
+    {
+      "source": "3-125548-A-32.wav",
+      "original_id": "125548",
+      "category": "keyboard_typing",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/125548-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/125548-6db-second.wav"
+    },
+    {
+      "source": "3-125548-A-32.wav",
+      "original_id": "125548",
+      "category": "keyboard_typing",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/125548-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/125548-12db-second.wav"
+    },
+    {
+      "source": "3-125548-A-32.wav",
+      "original_id": "125548",
+      "category": "keyboard_typing",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/125548-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/125548-18db-second.wav"
+    },
+    {
+      "source": "4-155670-A-26.wav",
+      "original_id": "155670",
+      "category": "laughing",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/155670-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/155670-6db-second.wav"
+    },
+    {
+      "source": "4-155670-A-26.wav",
+      "original_id": "155670",
+      "category": "laughing",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/155670-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/155670-12db-second.wav"
+    },
+    {
+      "source": "4-155670-A-26.wav",
+      "original_id": "155670",
+      "category": "laughing",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/155670-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/155670-18db-second.wav"
+    },
+    {
+      "source": "3-152997-A-26.wav",
+      "original_id": "152997",
+      "category": "laughing",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/152997-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/152997-6db-second.wav"
+    },
+    {
+      "source": "3-152997-A-26.wav",
+      "original_id": "152997",
+      "category": "laughing",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/152997-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/152997-12db-second.wav"
+    },
+    {
+      "source": "3-152997-A-26.wav",
+      "original_id": "152997",
+      "category": "laughing",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/152997-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/152997-18db-second.wav"
+    },
+    {
+      "source": "4-204683-A-31.wav",
+      "original_id": "204683",
+      "category": "mouse_click",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/204683-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/204683-6db-second.wav"
+    },
+    {
+      "source": "4-204683-A-31.wav",
+      "original_id": "204683",
+      "category": "mouse_click",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/204683-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/204683-12db-second.wav"
+    },
+    {
+      "source": "4-204683-A-31.wav",
+      "original_id": "204683",
+      "category": "mouse_click",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/204683-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/204683-18db-second.wav"
+    },
+    {
+      "source": "4-204612-A-31.wav",
+      "original_id": "204612",
+      "category": "mouse_click",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/204612-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/204612-6db-second.wav"
+    },
+    {
+      "source": "4-204612-A-31.wav",
+      "original_id": "204612",
+      "category": "mouse_click",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/204612-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/204612-12db-second.wav"
+    },
+    {
+      "source": "4-204612-A-31.wav",
+      "original_id": "204612",
+      "category": "mouse_click",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/204612-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/204612-18db-second.wav"
+    },
+    {
+      "source": "4-250869-A-2.wav",
+      "original_id": "250869",
+      "category": "pig",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/250869-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/250869-6db-second.wav"
+    },
+    {
+      "source": "4-250869-A-2.wav",
+      "original_id": "250869",
+      "category": "pig",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/250869-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/250869-12db-second.wav"
+    },
+    {
+      "source": "4-250869-A-2.wav",
+      "original_id": "250869",
+      "category": "pig",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/250869-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/250869-18db-second.wav"
+    },
+    {
+      "source": "4-132383-B-2.wav",
+      "original_id": "132383",
+      "category": "pig",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/132383-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/132383-6db-second.wav"
+    },
+    {
+      "source": "4-132383-B-2.wav",
+      "original_id": "132383",
+      "category": "pig",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/132383-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/132383-12db-second.wav"
+    },
+    {
+      "source": "4-132383-B-2.wav",
+      "original_id": "132383",
+      "category": "pig",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/132383-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/132383-18db-second.wav"
+    },
+    {
+      "source": "3-149448-A-17.wav",
+      "original_id": "149448",
+      "category": "pouring_water",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/149448-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/149448-6db-second.wav"
+    },
+    {
+      "source": "3-149448-A-17.wav",
+      "original_id": "149448",
+      "category": "pouring_water",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/149448-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/149448-12db-second.wav"
+    },
+    {
+      "source": "3-149448-A-17.wav",
+      "original_id": "149448",
+      "category": "pouring_water",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/149448-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/149448-18db-second.wav"
+    },
+    {
+      "source": "4-187504-B-17.wav",
+      "original_id": "187504",
+      "category": "pouring_water",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/187504-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/187504-6db-second.wav"
+    },
+    {
+      "source": "4-187504-B-17.wav",
+      "original_id": "187504",
+      "category": "pouring_water",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/187504-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/187504-12db-second.wav"
+    },
+    {
+      "source": "4-187504-B-17.wav",
+      "original_id": "187504",
+      "category": "pouring_water",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/187504-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/187504-18db-second.wav"
+    },
+    {
+      "source": "4-180380-A-10.wav",
+      "original_id": "180380",
+      "category": "rain",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/180380-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/180380-6db-second.wav"
+    },
+    {
+      "source": "4-180380-A-10.wav",
+      "original_id": "180380",
+      "category": "rain",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/180380-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/180380-12db-second.wav"
+    },
+    {
+      "source": "4-180380-A-10.wav",
+      "original_id": "180380",
+      "category": "rain",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/180380-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/180380-18db-second.wav"
+    },
+    {
+      "source": "3-157487-A-10.wav",
+      "original_id": "157487",
+      "category": "rain",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/157487-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/157487-6db-second.wav"
+    },
+    {
+      "source": "3-157487-A-10.wav",
+      "original_id": "157487",
+      "category": "rain",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/157487-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/157487-12db-second.wav"
+    },
+    {
+      "source": "3-157487-A-10.wav",
+      "original_id": "157487",
+      "category": "rain",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/157487-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/157487-18db-second.wav"
+    },
+    {
+      "source": "3-154957-A-1.wav",
+      "original_id": "154957",
+      "category": "rooster",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/154957-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/154957-6db-second.wav"
+    },
+    {
+      "source": "3-154957-A-1.wav",
+      "original_id": "154957",
+      "category": "rooster",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/154957-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/154957-12db-second.wav"
+    },
+    {
+      "source": "3-154957-A-1.wav",
+      "original_id": "154957",
+      "category": "rooster",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/154957-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/154957-18db-second.wav"
+    },
+    {
+      "source": "3-107219-A-1.wav",
+      "original_id": "107219",
+      "category": "rooster",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/107219-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/107219-6db-second.wav"
+    },
+    {
+      "source": "3-107219-A-1.wav",
+      "original_id": "107219",
+      "category": "rooster",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/107219-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/107219-12db-second.wav"
+    },
+    {
+      "source": "3-107219-A-1.wav",
+      "original_id": "107219",
+      "category": "rooster",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/107219-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/107219-18db-second.wav"
+    },
+    {
+      "source": "3-166422-A-11.wav",
+      "original_id": "166422",
+      "category": "sea_waves",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/166422-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/166422-6db-second.wav"
+    },
+    {
+      "source": "3-166422-A-11.wav",
+      "original_id": "166422",
+      "category": "sea_waves",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/166422-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/166422-12db-second.wav"
+    },
+    {
+      "source": "3-166422-A-11.wav",
+      "original_id": "166422",
+      "category": "sea_waves",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/166422-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/166422-18db-second.wav"
+    },
+    {
+      "source": "3-187710-A-11.wav",
+      "original_id": "187710",
+      "category": "sea_waves",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/187710-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/187710-6db-second.wav"
+    },
+    {
+      "source": "3-187710-A-11.wav",
+      "original_id": "187710",
+      "category": "sea_waves",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/187710-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/187710-12db-second.wav"
+    },
+    {
+      "source": "3-187710-A-11.wav",
+      "original_id": "187710",
+      "category": "sea_waves",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/187710-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/187710-18db-second.wav"
+    },
+    {
+      "source": "4-188703-C-8.wav",
+      "original_id": "188703",
+      "category": "sheep",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/188703-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/188703-6db-second.wav"
+    },
+    {
+      "source": "4-188703-C-8.wav",
+      "original_id": "188703",
+      "category": "sheep",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/188703-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/188703-12db-second.wav"
+    },
+    {
+      "source": "4-188703-C-8.wav",
+      "original_id": "188703",
+      "category": "sheep",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/188703-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/188703-18db-second.wav"
+    },
+    {
+      "source": "3-197408-B-8.wav",
+      "original_id": "197408",
+      "category": "sheep",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/197408-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/197408-6db-second.wav"
+    },
+    {
+      "source": "3-197408-B-8.wav",
+      "original_id": "197408",
+      "category": "sheep",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/197408-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/197408-12db-second.wav"
+    },
+    {
+      "source": "3-197408-B-8.wav",
+      "original_id": "197408",
+      "category": "sheep",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/197408-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/197408-18db-second.wav"
+    },
+    {
+      "source": "4-102871-A-42.wav",
+      "original_id": "102871",
+      "category": "siren",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/102871-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/102871-6db-second.wav"
+    },
+    {
+      "source": "4-102871-A-42.wav",
+      "original_id": "102871",
+      "category": "siren",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/102871-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/102871-12db-second.wav"
+    },
+    {
+      "source": "4-102871-A-42.wav",
+      "original_id": "102871",
+      "category": "siren",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/102871-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/102871-18db-second.wav"
+    },
+    {
+      "source": "3-62878-B-42.wav",
+      "original_id": "62878",
+      "category": "siren",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/62878-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/62878-6db-second.wav"
+    },
+    {
+      "source": "3-62878-B-42.wav",
+      "original_id": "62878",
+      "category": "siren",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/62878-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/62878-12db-second.wav"
+    },
+    {
+      "source": "3-62878-B-42.wav",
+      "original_id": "62878",
+      "category": "siren",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/62878-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/62878-18db-second.wav"
+    },
+    {
+      "source": "4-167642-A-21.wav",
+      "original_id": "167642",
+      "category": "sneezing",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/167642-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/167642-6db-second.wav"
+    },
+    {
+      "source": "4-167642-A-21.wav",
+      "original_id": "167642",
+      "category": "sneezing",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/167642-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/167642-12db-second.wav"
+    },
+    {
+      "source": "4-167642-A-21.wav",
+      "original_id": "167642",
+      "category": "sneezing",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/167642-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/167642-18db-second.wav"
+    },
+    {
+      "source": "3-141684-A-21.wav",
+      "original_id": "141684",
+      "category": "sneezing",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/141684-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/141684-6db-second.wav"
+    },
+    {
+      "source": "3-141684-A-21.wav",
+      "original_id": "141684",
+      "category": "sneezing",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/141684-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/141684-12db-second.wav"
+    },
+    {
+      "source": "3-141684-A-21.wav",
+      "original_id": "141684",
+      "category": "sneezing",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/141684-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/141684-18db-second.wav"
+    },
+    {
+      "source": "4-180337-A-28.wav",
+      "original_id": "180337",
+      "category": "snoring",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/180337-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/180337-6db-second.wav"
+    },
+    {
+      "source": "4-180337-A-28.wav",
+      "original_id": "180337",
+      "category": "snoring",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/180337-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/180337-12db-second.wav"
+    },
+    {
+      "source": "4-180337-A-28.wav",
+      "original_id": "180337",
+      "category": "snoring",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/180337-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/180337-18db-second.wav"
+    },
+    {
+      "source": "3-124958-A-28.wav",
+      "original_id": "124958",
+      "category": "snoring",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/124958-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/124958-6db-second.wav"
+    },
+    {
+      "source": "3-124958-A-28.wav",
+      "original_id": "124958",
+      "category": "snoring",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/124958-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/124958-12db-second.wav"
+    },
+    {
+      "source": "3-124958-A-28.wav",
+      "original_id": "124958",
+      "category": "snoring",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/124958-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/124958-18db-second.wav"
+    },
+    {
+      "source": "4-125072-A-19.wav",
+      "original_id": "125072",
+      "category": "thunderstorm",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/125072-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/125072-6db-second.wav"
+    },
+    {
+      "source": "4-125072-A-19.wav",
+      "original_id": "125072",
+      "category": "thunderstorm",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/125072-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/125072-12db-second.wav"
+    },
+    {
+      "source": "4-125072-A-19.wav",
+      "original_id": "125072",
+      "category": "thunderstorm",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/125072-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/125072-18db-second.wav"
+    },
+    {
+      "source": "4-165813-A-19.wav",
+      "original_id": "165813",
+      "category": "thunderstorm",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/165813-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/165813-6db-second.wav"
+    },
+    {
+      "source": "4-165813-A-19.wav",
+      "original_id": "165813",
+      "category": "thunderstorm",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/165813-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/165813-12db-second.wav"
+    },
+    {
+      "source": "4-165813-A-19.wav",
+      "original_id": "165813",
+      "category": "thunderstorm",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/165813-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/165813-18db-second.wav"
+    },
+    {
+      "source": "3-108791-A-18.wav",
+      "original_id": "108791",
+      "category": "toilet_flush",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/108791-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/108791-6db-second.wav"
+    },
+    {
+      "source": "3-108791-A-18.wav",
+      "original_id": "108791",
+      "category": "toilet_flush",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/108791-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/108791-12db-second.wav"
+    },
+    {
+      "source": "3-108791-A-18.wav",
+      "original_id": "108791",
+      "category": "toilet_flush",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/108791-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/108791-18db-second.wav"
+    },
+    {
+      "source": "4-123680-A-18.wav",
+      "original_id": "123680",
+      "category": "toilet_flush",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/123680-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/123680-6db-second.wav"
+    },
+    {
+      "source": "4-123680-A-18.wav",
+      "original_id": "123680",
+      "category": "toilet_flush",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/123680-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/123680-12db-second.wav"
+    },
+    {
+      "source": "4-123680-A-18.wav",
+      "original_id": "123680",
+      "category": "toilet_flush",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/123680-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/123680-18db-second.wav"
+    },
+    {
+      "source": "4-165845-A-45.wav",
+      "original_id": "165845",
+      "category": "train",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/165845-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/165845-6db-second.wav"
+    },
+    {
+      "source": "4-165845-A-45.wav",
+      "original_id": "165845",
+      "category": "train",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/165845-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/165845-12db-second.wav"
+    },
+    {
+      "source": "4-165845-A-45.wav",
+      "original_id": "165845",
+      "category": "train",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/165845-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/165845-18db-second.wav"
+    },
+    {
+      "source": "3-135650-A-45.wav",
+      "original_id": "135650",
+      "category": "train",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/135650-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/135650-6db-second.wav"
+    },
+    {
+      "source": "3-135650-A-45.wav",
+      "original_id": "135650",
+      "category": "train",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/135650-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/135650-12db-second.wav"
+    },
+    {
+      "source": "3-135650-A-45.wav",
+      "original_id": "135650",
+      "category": "train",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/135650-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/135650-18db-second.wav"
+    },
+    {
+      "source": "4-172736-A-36.wav",
+      "original_id": "172736",
+      "category": "vacuum_cleaner",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/172736-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/172736-6db-second.wav"
+    },
+    {
+      "source": "4-172736-A-36.wav",
+      "original_id": "172736",
+      "category": "vacuum_cleaner",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/172736-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/172736-12db-second.wav"
+    },
+    {
+      "source": "4-172736-A-36.wav",
+      "original_id": "172736",
+      "category": "vacuum_cleaner",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/172736-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/172736-18db-second.wav"
+    },
+    {
+      "source": "3-159348-A-36.wav",
+      "original_id": "159348",
+      "category": "vacuum_cleaner",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/159348-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/159348-6db-second.wav"
+    },
+    {
+      "source": "3-159348-A-36.wav",
+      "original_id": "159348",
+      "category": "vacuum_cleaner",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/159348-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/159348-12db-second.wav"
+    },
+    {
+      "source": "3-159348-A-36.wav",
+      "original_id": "159348",
+      "category": "vacuum_cleaner",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/159348-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/159348-18db-second.wav"
+    },
+    {
+      "source": "3-151273-A-35.wav",
+      "original_id": "151273",
+      "category": "washing_machine",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/151273-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/151273-6db-second.wav"
+    },
+    {
+      "source": "3-151273-A-35.wav",
+      "original_id": "151273",
+      "category": "washing_machine",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/151273-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/151273-12db-second.wav"
+    },
+    {
+      "source": "3-151273-A-35.wav",
+      "original_id": "151273",
+      "category": "washing_machine",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/151273-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/151273-18db-second.wav"
+    },
+    {
+      "source": "3-182710-A-35.wav",
+      "original_id": "182710",
+      "category": "washing_machine",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/182710-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/182710-6db-second.wav"
+    },
+    {
+      "source": "3-182710-A-35.wav",
+      "original_id": "182710",
+      "category": "washing_machine",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/182710-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/182710-12db-second.wav"
+    },
+    {
+      "source": "3-182710-A-35.wav",
+      "original_id": "182710",
+      "category": "washing_machine",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/182710-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/182710-18db-second.wav"
+    },
+    {
+      "source": "4-212604-C-15.wav",
+      "original_id": "212604",
+      "category": "water_drops",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/212604-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/212604-6db-second.wav"
+    },
+    {
+      "source": "4-212604-C-15.wav",
+      "original_id": "212604",
+      "category": "water_drops",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/212604-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/212604-12db-second.wav"
+    },
+    {
+      "source": "4-212604-C-15.wav",
+      "original_id": "212604",
+      "category": "water_drops",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/212604-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/212604-18db-second.wav"
+    },
+    {
+      "source": "3-164592-A-15.wav",
+      "original_id": "164592",
+      "category": "water_drops",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/164592-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/164592-6db-second.wav"
+    },
+    {
+      "source": "3-164592-A-15.wav",
+      "original_id": "164592",
+      "category": "water_drops",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/164592-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/164592-12db-second.wav"
+    },
+    {
+      "source": "3-164592-A-15.wav",
+      "original_id": "164592",
+      "category": "water_drops",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/164592-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/164592-18db-second.wav"
+    },
+    {
+      "source": "3-117504-A-16.wav",
+      "original_id": "117504",
+      "category": "wind",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/117504-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/117504-6db-second.wav"
+    },
+    {
+      "source": "3-117504-A-16.wav",
+      "original_id": "117504",
+      "category": "wind",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/117504-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/117504-12db-second.wav"
+    },
+    {
+      "source": "3-117504-A-16.wav",
+      "original_id": "117504",
+      "category": "wind",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/117504-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/117504-18db-second.wav"
+    },
+    {
+      "source": "3-134699-C-16.wav",
+      "original_id": "134699",
+      "category": "wind",
+      "db": 6,
+      "first": "runs/a-level-dose-v1/stimuli/134699-6db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/134699-6db-second.wav"
+    },
+    {
+      "source": "3-134699-C-16.wav",
+      "original_id": "134699",
+      "category": "wind",
+      "db": 12,
+      "first": "runs/a-level-dose-v1/stimuli/134699-12db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/134699-12db-second.wav"
+    },
+    {
+      "source": "3-134699-C-16.wav",
+      "original_id": "134699",
+      "category": "wind",
+      "db": 18,
+      "first": "runs/a-level-dose-v1/stimuli/134699-18db-first.wav",
+      "second": "runs/a-level-dose-v1/stimuli/134699-18db-second.wav"
+    }
+  ],
+  "reference_24db": [
+    {
+      "source": "3-128512-A-47.wav",
+      "original_id": "128512",
+      "category": "airplane",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/3-128512-A-47-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/3-128512-A-47-24db-second.wav"
+    },
+    {
+      "source": "4-161103-A-47.wav",
+      "original_id": "161103",
+      "category": "airplane",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-161103-A-47-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-161103-A-47-24db-second.wav"
+    },
+    {
+      "source": "3-166125-A-23.wav",
+      "original_id": "166125",
+      "category": "breathing",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/3-166125-A-23-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/3-166125-A-23-24db-second.wav"
+    },
+    {
+      "source": "4-207116-A-23.wav",
+      "original_id": "207116",
+      "category": "breathing",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-207116-A-23-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-207116-A-23-24db-second.wav"
+    },
+    {
+      "source": "3-118069-A-27.wav",
+      "original_id": "118069",
+      "category": "brushing_teeth",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/3-118069-A-27-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/3-118069-A-27-24db-second.wav"
+    },
+    {
+      "source": "3-100024-B-27.wav",
+      "original_id": "100024",
+      "category": "brushing_teeth",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/3-100024-B-27-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/3-100024-B-27-24db-second.wav"
+    },
+    {
+      "source": "4-216349-A-34.wav",
+      "original_id": "216349",
+      "category": "can_opening",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-216349-A-34-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-216349-A-34-24db-second.wav"
+    },
+    {
+      "source": "4-179836-A-34.wav",
+      "original_id": "179836",
+      "category": "can_opening",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-179836-A-34-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-179836-A-34-24db-second.wav"
+    },
+    {
+      "source": "3-145577-A-43.wav",
+      "original_id": "145577",
+      "category": "car_horn",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/3-145577-A-43-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/3-145577-A-43-24db-second.wav"
+    },
+    {
+      "source": "4-175855-A-43.wav",
+      "original_id": "175855",
+      "category": "car_horn",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-175855-A-43-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-175855-A-43-24db-second.wav"
+    },
+    {
+      "source": "3-95695-A-5.wav",
+      "original_id": "95695",
+      "category": "cat",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/3-95695-A-5-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/3-95695-A-5-24db-second.wav"
+    },
+    {
+      "source": "3-95694-A-5.wav",
+      "original_id": "95694",
+      "category": "cat",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/3-95694-A-5-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/3-95694-A-5-24db-second.wav"
+    },
+    {
+      "source": "4-157611-A-41.wav",
+      "original_id": "157611",
+      "category": "chainsaw",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-157611-A-41-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-157611-A-41-24db-second.wav"
+    },
+    {
+      "source": "4-165823-B-41.wav",
+      "original_id": "165823",
+      "category": "chainsaw",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-165823-B-41-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-165823-B-41-24db-second.wav"
+    },
+    {
+      "source": "3-155583-A-14.wav",
+      "original_id": "155583",
+      "category": "chirping_birds",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/3-155583-A-14-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/3-155583-A-14-24db-second.wav"
+    },
+    {
+      "source": "3-155579-A-14.wav",
+      "original_id": "155579",
+      "category": "chirping_birds",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/3-155579-A-14-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/3-155579-A-14-24db-second.wav"
+    },
+    {
+      "source": "4-156827-A-46.wav",
+      "original_id": "156827",
+      "category": "church_bells",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-156827-A-46-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-156827-A-46-24db-second.wav"
+    },
+    {
+      "source": "4-147658-A-46.wav",
+      "original_id": "147658",
+      "category": "church_bells",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-147658-A-46-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-147658-A-46-24db-second.wav"
+    },
+    {
+      "source": "3-197435-A-22.wav",
+      "original_id": "197435",
+      "category": "clapping",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/3-197435-A-22-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/3-197435-A-22-24db-second.wav"
+    },
+    {
+      "source": "4-189833-A-22.wav",
+      "original_id": "189833",
+      "category": "clapping",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-189833-A-22-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-189833-A-22-24db-second.wav"
+    },
+    {
+      "source": "4-169508-A-37.wav",
+      "original_id": "169508",
+      "category": "clock_alarm",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-169508-A-37-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-169508-A-37-24db-second.wav"
+    },
+    {
+      "source": "3-117883-A-37.wav",
+      "original_id": "117883",
+      "category": "clock_alarm",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/3-117883-A-37-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/3-117883-A-37-24db-second.wav"
+    },
+    {
+      "source": "3-170383-A-38.wav",
+      "original_id": "170383",
+      "category": "clock_tick",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/3-170383-A-38-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/3-170383-A-38-24db-second.wav"
+    },
+    {
+      "source": "3-164688-A-38.wav",
+      "original_id": "164688",
+      "category": "clock_tick",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/3-164688-A-38-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/3-164688-A-38-24db-second.wav"
+    },
+    {
+      "source": "4-177835-A-24.wav",
+      "original_id": "177835",
+      "category": "coughing",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-177835-A-24-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-177835-A-24-24db-second.wav"
+    },
+    {
+      "source": "4-155650-A-24.wav",
+      "original_id": "155650",
+      "category": "coughing",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-155650-A-24-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-155650-A-24-24db-second.wav"
+    },
+    {
+      "source": "3-124376-A-3.wav",
+      "original_id": "124376",
+      "category": "cow",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/3-124376-A-3-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/3-124376-A-3-24db-second.wav"
+    },
+    {
+      "source": "4-181955-B-3.wav",
+      "original_id": "181955",
+      "category": "cow",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-181955-B-3-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-181955-B-3-24db-second.wav"
+    },
+    {
+      "source": "3-104958-A-12.wav",
+      "original_id": "104958",
+      "category": "crackling_fire",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/3-104958-A-12-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/3-104958-A-12-24db-second.wav"
+    },
+    {
+      "source": "4-170247-A-12.wav",
+      "original_id": "170247",
+      "category": "crackling_fire",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-170247-A-12-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-170247-A-12-24db-second.wav"
+    },
+    {
+      "source": "3-134802-A-13.wav",
+      "original_id": "134802",
+      "category": "crickets",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/3-134802-A-13-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/3-134802-A-13-24db-second.wav"
+    },
+    {
+      "source": "4-202749-A-13.wav",
+      "original_id": "202749",
+      "category": "crickets",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-202749-A-13-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-202749-A-13-24db-second.wav"
+    },
+    {
+      "source": "4-145081-A-9.wav",
+      "original_id": "145081",
+      "category": "crow",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-145081-A-9-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-145081-A-9-24db-second.wav"
+    },
+    {
+      "source": "4-173865-A-9.wav",
+      "original_id": "173865",
+      "category": "crow",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-173865-A-9-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-173865-A-9-24db-second.wav"
+    },
+    {
+      "source": "4-59579-A-20.wav",
+      "original_id": "59579",
+      "category": "crying_baby",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-59579-A-20-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-59579-A-20-24db-second.wav"
+    },
+    {
+      "source": "4-185575-C-20.wav",
+      "original_id": "185575",
+      "category": "crying_baby",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-185575-C-20-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-185575-C-20-24db-second.wav"
+    },
+    {
+      "source": "3-170015-A-0.wav",
+      "original_id": "170015",
+      "category": "dog",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/3-170015-A-0-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/3-170015-A-0-24db-second.wav"
+    },
+    {
+      "source": "3-136288-A-0.wav",
+      "original_id": "136288",
+      "category": "dog",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/3-136288-A-0-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/3-136288-A-0-24db-second.wav"
+    },
+    {
+      "source": "4-107117-A-33.wav",
+      "original_id": "107117",
+      "category": "door_wood_creaks",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-107117-A-33-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-107117-A-33-24db-second.wav"
+    },
+    {
+      "source": "4-160036-A-33.wav",
+      "original_id": "160036",
+      "category": "door_wood_creaks",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-160036-A-33-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-160036-A-33-24db-second.wav"
+    },
+    {
+      "source": "3-154378-A-30.wav",
+      "original_id": "154378",
+      "category": "door_wood_knock",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/3-154378-A-30-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/3-154378-A-30-24db-second.wav"
+    },
+    {
+      "source": "4-211502-A-30.wav",
+      "original_id": "211502",
+      "category": "door_wood_knock",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-211502-A-30-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-211502-A-30-24db-second.wav"
+    },
+    {
+      "source": "4-194808-A-29.wav",
+      "original_id": "194808",
+      "category": "drinking_sipping",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-194808-A-29-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-194808-A-29-24db-second.wav"
+    },
+    {
+      "source": "3-185456-A-29.wav",
+      "original_id": "185456",
+      "category": "drinking_sipping",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/3-185456-A-29-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/3-185456-A-29-24db-second.wav"
+    },
+    {
+      "source": "4-186935-A-44.wav",
+      "original_id": "186935",
+      "category": "engine",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-186935-A-44-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-186935-A-44-24db-second.wav"
+    },
+    {
+      "source": "4-186938-A-44.wav",
+      "original_id": "186938",
+      "category": "engine",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-186938-A-44-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-186938-A-44-24db-second.wav"
+    },
+    {
+      "source": "3-172881-A-48.wav",
+      "original_id": "172881",
+      "category": "fireworks",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/3-172881-A-48-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/3-172881-A-48-24db-second.wav"
+    },
+    {
+      "source": "3-172922-A-48.wav",
+      "original_id": "172922",
+      "category": "fireworks",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/3-172922-A-48-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/3-172922-A-48-24db-second.wav"
+    },
+    {
+      "source": "3-249913-A-25.wav",
+      "original_id": "249913",
+      "category": "footsteps",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/3-249913-A-25-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/3-249913-A-25-24db-second.wav"
+    },
+    {
+      "source": "4-194981-A-25.wav",
+      "original_id": "194981",
+      "category": "footsteps",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-194981-A-25-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-194981-A-25-24db-second.wav"
+    },
+    {
+      "source": "4-99644-C-4.wav",
+      "original_id": "99644",
+      "category": "frog",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-99644-C-4-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-99644-C-4-24db-second.wav"
+    },
+    {
+      "source": "3-70962-A-4.wav",
+      "original_id": "70962",
+      "category": "frog",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/3-70962-A-4-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/3-70962-A-4-24db-second.wav"
+    },
+    {
+      "source": "4-204119-A-39.wav",
+      "original_id": "204119",
+      "category": "glass_breaking",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-204119-A-39-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-204119-A-39-24db-second.wav"
+    },
+    {
+      "source": "4-204123-A-39.wav",
+      "original_id": "204123",
+      "category": "glass_breaking",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-204123-A-39-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-204123-A-39-24db-second.wav"
+    },
+    {
+      "source": "3-97909-B-49.wav",
+      "original_id": "97909",
+      "category": "hand_saw",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/3-97909-B-49-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/3-97909-B-49-24db-second.wav"
+    },
+    {
+      "source": "3-102583-B-49.wav",
+      "original_id": "102583",
+      "category": "hand_saw",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/3-102583-B-49-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/3-102583-B-49-24db-second.wav"
+    },
+    {
+      "source": "3-68630-A-40.wav",
+      "original_id": "68630",
+      "category": "helicopter",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/3-68630-A-40-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/3-68630-A-40-24db-second.wav"
+    },
+    {
+      "source": "4-125929-A-40.wav",
+      "original_id": "125929",
+      "category": "helicopter",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-125929-A-40-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-125929-A-40-24db-second.wav"
+    },
+    {
+      "source": "4-234879-A-6.wav",
+      "original_id": "234879",
+      "category": "hen",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-234879-A-6-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-234879-A-6-24db-second.wav"
+    },
+    {
+      "source": "3-164216-B-6.wav",
+      "original_id": "164216",
+      "category": "hen",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/3-164216-B-6-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/3-164216-B-6-24db-second.wav"
+    },
+    {
+      "source": "4-182314-B-7.wav",
+      "original_id": "182314",
+      "category": "insects",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-182314-B-7-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-182314-B-7-24db-second.wav"
+    },
+    {
+      "source": "4-130891-A-7.wav",
+      "original_id": "130891",
+      "category": "insects",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-130891-A-7-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-130891-A-7-24db-second.wav"
+    },
+    {
+      "source": "4-172742-A-32.wav",
+      "original_id": "172742",
+      "category": "keyboard_typing",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-172742-A-32-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-172742-A-32-24db-second.wav"
+    },
+    {
+      "source": "3-125548-A-32.wav",
+      "original_id": "125548",
+      "category": "keyboard_typing",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/3-125548-A-32-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/3-125548-A-32-24db-second.wav"
+    },
+    {
+      "source": "4-155670-A-26.wav",
+      "original_id": "155670",
+      "category": "laughing",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-155670-A-26-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-155670-A-26-24db-second.wav"
+    },
+    {
+      "source": "3-152997-A-26.wav",
+      "original_id": "152997",
+      "category": "laughing",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/3-152997-A-26-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/3-152997-A-26-24db-second.wav"
+    },
+    {
+      "source": "4-204683-A-31.wav",
+      "original_id": "204683",
+      "category": "mouse_click",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-204683-A-31-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-204683-A-31-24db-second.wav"
+    },
+    {
+      "source": "4-204612-A-31.wav",
+      "original_id": "204612",
+      "category": "mouse_click",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-204612-A-31-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-204612-A-31-24db-second.wav"
+    },
+    {
+      "source": "4-250869-A-2.wav",
+      "original_id": "250869",
+      "category": "pig",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-250869-A-2-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-250869-A-2-24db-second.wav"
+    },
+    {
+      "source": "4-132383-B-2.wav",
+      "original_id": "132383",
+      "category": "pig",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-132383-B-2-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-132383-B-2-24db-second.wav"
+    },
+    {
+      "source": "3-149448-A-17.wav",
+      "original_id": "149448",
+      "category": "pouring_water",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/3-149448-A-17-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/3-149448-A-17-24db-second.wav"
+    },
+    {
+      "source": "4-187504-B-17.wav",
+      "original_id": "187504",
+      "category": "pouring_water",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-187504-B-17-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-187504-B-17-24db-second.wav"
+    },
+    {
+      "source": "4-180380-A-10.wav",
+      "original_id": "180380",
+      "category": "rain",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-180380-A-10-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-180380-A-10-24db-second.wav"
+    },
+    {
+      "source": "3-157487-A-10.wav",
+      "original_id": "157487",
+      "category": "rain",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/3-157487-A-10-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/3-157487-A-10-24db-second.wav"
+    },
+    {
+      "source": "3-154957-A-1.wav",
+      "original_id": "154957",
+      "category": "rooster",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/3-154957-A-1-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/3-154957-A-1-24db-second.wav"
+    },
+    {
+      "source": "3-107219-A-1.wav",
+      "original_id": "107219",
+      "category": "rooster",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/3-107219-A-1-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/3-107219-A-1-24db-second.wav"
+    },
+    {
+      "source": "3-166422-A-11.wav",
+      "original_id": "166422",
+      "category": "sea_waves",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/3-166422-A-11-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/3-166422-A-11-24db-second.wav"
+    },
+    {
+      "source": "3-187710-A-11.wav",
+      "original_id": "187710",
+      "category": "sea_waves",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/3-187710-A-11-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/3-187710-A-11-24db-second.wav"
+    },
+    {
+      "source": "4-188703-C-8.wav",
+      "original_id": "188703",
+      "category": "sheep",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-188703-C-8-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-188703-C-8-24db-second.wav"
+    },
+    {
+      "source": "3-197408-B-8.wav",
+      "original_id": "197408",
+      "category": "sheep",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/3-197408-B-8-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/3-197408-B-8-24db-second.wav"
+    },
+    {
+      "source": "4-102871-A-42.wav",
+      "original_id": "102871",
+      "category": "siren",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-102871-A-42-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-102871-A-42-24db-second.wav"
+    },
+    {
+      "source": "3-62878-B-42.wav",
+      "original_id": "62878",
+      "category": "siren",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/3-62878-B-42-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/3-62878-B-42-24db-second.wav"
+    },
+    {
+      "source": "4-167642-A-21.wav",
+      "original_id": "167642",
+      "category": "sneezing",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-167642-A-21-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-167642-A-21-24db-second.wav"
+    },
+    {
+      "source": "3-141684-A-21.wav",
+      "original_id": "141684",
+      "category": "sneezing",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/3-141684-A-21-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/3-141684-A-21-24db-second.wav"
+    },
+    {
+      "source": "4-180337-A-28.wav",
+      "original_id": "180337",
+      "category": "snoring",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-180337-A-28-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-180337-A-28-24db-second.wav"
+    },
+    {
+      "source": "3-124958-A-28.wav",
+      "original_id": "124958",
+      "category": "snoring",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/3-124958-A-28-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/3-124958-A-28-24db-second.wav"
+    },
+    {
+      "source": "4-125072-A-19.wav",
+      "original_id": "125072",
+      "category": "thunderstorm",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-125072-A-19-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-125072-A-19-24db-second.wav"
+    },
+    {
+      "source": "4-165813-A-19.wav",
+      "original_id": "165813",
+      "category": "thunderstorm",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-165813-A-19-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-165813-A-19-24db-second.wav"
+    },
+    {
+      "source": "3-108791-A-18.wav",
+      "original_id": "108791",
+      "category": "toilet_flush",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/3-108791-A-18-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/3-108791-A-18-24db-second.wav"
+    },
+    {
+      "source": "4-123680-A-18.wav",
+      "original_id": "123680",
+      "category": "toilet_flush",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-123680-A-18-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-123680-A-18-24db-second.wav"
+    },
+    {
+      "source": "4-165845-A-45.wav",
+      "original_id": "165845",
+      "category": "train",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-165845-A-45-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-165845-A-45-24db-second.wav"
+    },
+    {
+      "source": "3-135650-A-45.wav",
+      "original_id": "135650",
+      "category": "train",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/3-135650-A-45-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/3-135650-A-45-24db-second.wav"
+    },
+    {
+      "source": "4-172736-A-36.wav",
+      "original_id": "172736",
+      "category": "vacuum_cleaner",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-172736-A-36-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-172736-A-36-24db-second.wav"
+    },
+    {
+      "source": "3-159348-A-36.wav",
+      "original_id": "159348",
+      "category": "vacuum_cleaner",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/3-159348-A-36-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/3-159348-A-36-24db-second.wav"
+    },
+    {
+      "source": "3-151273-A-35.wav",
+      "original_id": "151273",
+      "category": "washing_machine",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/3-151273-A-35-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/3-151273-A-35-24db-second.wav"
+    },
+    {
+      "source": "3-182710-A-35.wav",
+      "original_id": "182710",
+      "category": "washing_machine",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/3-182710-A-35-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/3-182710-A-35-24db-second.wav"
+    },
+    {
+      "source": "4-212604-C-15.wav",
+      "original_id": "212604",
+      "category": "water_drops",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/4-212604-C-15-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/4-212604-C-15-24db-second.wav"
+    },
+    {
+      "source": "3-164592-A-15.wav",
+      "original_id": "164592",
+      "category": "water_drops",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/3-164592-A-15-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/3-164592-A-15-24db-second.wav"
+    },
+    {
+      "source": "3-117504-A-16.wav",
+      "original_id": "117504",
+      "category": "wind",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/3-117504-A-16-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/3-117504-A-16-24db-second.wav"
+    },
+    {
+      "source": "3-134699-C-16.wav",
+      "original_id": "134699",
+      "category": "wind",
+      "db": 24,
+      "first": "runs/a-response-v2/stimuli/3-134699-C-16-24db-first.wav",
+      "second": "runs/a-response-v2/stimuli/3-134699-C-16-24db-second.wav"
+    }
+  ]
+}

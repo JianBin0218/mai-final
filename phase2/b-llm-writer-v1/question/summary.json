@@ -1,0 +1,195 @@
+{
+  "k": 4,
+  "seed": 17,
+  "steps": 192,
+  "writer_rank": 4,
+  "writer_conditioned": true,
+  "target_norm": 28.94113540649414,
+  "first_grad_norm": 0.06120232492685318,
+  "reference_sha256": "35820ad99fdae43bca157ea57f1af985e081adf035b0056648f9c2824731c1ab",
+  "train_manifest_sha256": "4494338b51290fc5730479ab0d80f4e2d3caa22a61df8d44f2ab64a4c54bef15",
+  "extra_manifest_sha256": "d5fd04fe5c7984aff803aa6287523af94692cf706de7896d3450e5abafb2026f",
+  "peak_allocated_gib": 19.132267475128174,
+  "results": {
+    "fresh": {
+      "AB": {
+        "external": {
+          "n": 340,
+          "accuracy": 0.7411764705882353,
+          "n_pairs": 170,
+          "ranking": 0.861764705882353
+        },
+        "full": {
+          "n": 340,
+          "accuracy": 0.8647058823529412,
+          "n_pairs": 170,
+          "ranking": 0.9294117647058824
+        },
+        "generic_stem": {
+          "n": 340,
+          "accuracy": 0.6294117647058823,
+          "n_pairs": 170,
+          "ranking": 0.7205882352941176
+        },
+        "no_stem": {
+          "n": 340,
+          "accuracy": 0.6323529411764706,
+          "n_pairs": 170,
+          "ranking": 0.7264705882352941
+        },
+        "text": {
+          "n": 340,
+          "accuracy": 0.538235294117647,
+          "n_pairs": 170,
+          "ranking": 0.5911764705882353
+        },
+        "writer": {
+          "n": 340,
+          "accuracy": 0.6352941176470588,
+          "n_pairs": 170,
+          "ranking": 0.7294117647058823
+        },
+        "wrong_stem": {
+          "n": 340,
+          "accuracy": 0.6323529411764706,
+          "n_pairs": 170,
+          "ranking": 0.7382352941176471
+        }
+      },
+      "BA": {
+        "external": {
+          "n": 340,
+          "accuracy": 0.6441176470588236,
+          "n_pairs": 170,
+          "ranking": 0.8205882352941176
+        },
+        "full": {
+          "n": 340,
+          "accuracy": 0.7764705882352941,
+          "n_pairs": 170,
+          "ranking": 0.9235294117647059
+        },
+        "generic_stem": {
+          "n": 340,
+          "accuracy": 0.5647058823529412,
+          "n_pairs": 170,
+          "ranking": 0.65
+        },
+        "no_stem": {
+          "n": 340,
+          "accuracy": 0.5764705882352941,
+          "n_pairs": 170,
+          "ranking": 0.6676470588235294
+        },
+        "text": {
+          "n": 340,
+          "accuracy": 0.5058823529411764,
+          "n_pairs": 170,
+          "ranking": 0.5588235294117647
+        },
+        "writer": {
+          "n": 340,
+          "accuracy": 0.5735294117647058,
+          "n_pairs": 170,
+          "ranking": 0.65
+        },
+        "wrong_stem": {
+          "n": 340,
+          "accuracy": 0.5676470588235294,
+          "n_pairs": 170,
+          "ranking": 0.6705882352941176
+        }
+      }
+    },
+    "pilot": {
+      "AB": {
+        "external": {
+          "n": 64,
+          "accuracy": 0.6875,
+          "n_pairs": 32,
+          "ranking": 0.75
+        },
+        "full": {
+          "n": 64,
+          "accuracy": 0.84375,
+          "n_pairs": 32,
+          "ranking": 0.875
+        },
+        "generic_stem": {
+          "n": 64,
+          "accuracy": 0.65625,
+          "n_pairs": 32,
+          "ranking": 0.78125
+        },
+        "no_stem": {
+          "n": 64,
+          "accuracy": 0.65625,
+          "n_pairs": 32,
+          "ranking": 0.78125
+        },
+        "text": {
+          "n": 64,
+          "accuracy": 0.453125,
+          "n_pairs": 32,
+          "ranking": 0.4375
+        },
+        "writer": {
+          "n": 64,
+          "accuracy": 0.65625,
+          "n_pairs": 32,
+          "ranking": 0.78125
+        },
+        "wrong_stem": {
+          "n": 64,
+          "accuracy": 0.640625,
+          "n_pairs": 32,
+          "ranking": 0.78125
+        }
+      },
+      "BA": {
+        "external": {
+          "n": 64,
+          "accuracy": 0.65625,
+          "n_pairs": 32,
+          "ranking": 0.78125
+        },
+        "full": {
+          "n": 64,
+          "accuracy": 0.78125,
+          "n_pairs": 32,
+          "ranking": 0.90625
+        },
+        "generic_stem": {
+          "n": 64,
+          "accuracy": 0.546875,
+          "n_pairs": 32,
+          "ranking": 0.71875
+        },
+        "no_stem": {
+          "n": 64,
+          "accuracy": 0.53125,
+          "n_pairs": 32,
+          "ranking": 0.71875
+        },
+        "text": {
+          "n": 64,
+          "accuracy": 0.46875,
+          "n_pairs": 32,
+          "ranking": 0.515625
+        },
+        "writer": {
+          "n": 64,
+          "accuracy": 0.53125,
+          "n_pairs": 32,
+          "ranking": 0.703125
+        },
+        "wrong_stem": {
+          "n": 64,
+          "accuracy": 0.53125,
+          "n_pairs": 32,
+          "ranking": 0.71875
+        }
+      }
+    }
+  }
+}

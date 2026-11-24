@@ -16,6 +16,7 @@ from scipy.signal import resample_poly
 
 
 PROTOCOL = Path("phase2/a-level-contrast-v1/protocol.json")
+RESPONSE_PROTOCOL = Path("phase2/a-level-response-v2/protocol.json")
 PREVIOUS_PAIRS = Path("phase2/opposite-v1/pairs.json")
 RATE = 16000
 PROMPTS = {
@@ -47,13 +48,14 @@ def development_sources(metadata):
 
 
 def select_sources(metadata, development, protocol):
-    used = {row["src_file"] for row in development}
+    used = {row["src_file"] for row in development} | set(protocol.get("excluded_source_ids", ()))
+    folds = protocol.get("evaluation_folds") or [protocol["evaluation_fold"]]
     rng = random.Random(protocol["selection_seed"])
     chosen = []
     for category in sorted({row["category"] for row in development}):
         candidates = sorted((row for row in metadata.values()
                              if row["category"] == category
-                             and int(row["fold"]) == protocol["evaluation_fold"]
+                             and int(row["fold"]) in folds
                              and row["src_file"] not in used), key=lambda row: row["filename"])
         rng.shuffle(candidates)
         category_rows = []
@@ -118,7 +120,8 @@ def prepare_stage(stage, root, lock_path):
     with meta.open(encoding="utf-8", newline="") as handle:
         metadata = {row["filename"]: row for row in csv.DictReader(handle)}
     development = development_sources(metadata)
-    evaluation = select_sources(metadata, development, protocol) if lock else []
+    selection = response_plan(lock)["source_selection"] if lock and "response_protocol_sha256" in lock else protocol
+    evaluation = select_sources(metadata, development, selection) if lock else []
 
     def synthesize(row):
         name = row["filename"]
@@ -225,7 +228,53 @@ def verify_lock(path):
     lock = read_json(path)
     if lock["protocol_sha256"] != digest(PROTOCOL):
         raise ValueError("Confirmation uses a different protocol from the lock")
+    if "response_protocol_sha256" in lock:
+        response_plan(lock)
+        if digest(Path(lock["screen_scores"])) != lock["screen_scores_sha256"]:
+            raise ValueError("Screen scores used for calibration have changed")
     return lock
+
+
+def response_plan(lock):
+    if digest(RESPONSE_PROTOCOL) != lock["response_protocol_sha256"]:
+        raise ValueError("Response study protocol has changed since locking")
+    return read_json(RESPONSE_PROTOCOL)
+
+
+def lock_response(screen_path, screen_scores, out):
+    plan = read_json(RESPONSE_PROTOCOL)
+    screen = read_json(screen_path)
+    if screen["protocol_sha256"] != digest(PROTOCOL):
+        raise ValueError("Screen was generated with a different protocol")
+    candidate = screen["candidates"][f"{plan['db']}:{plan['prompt']}"]
+    if any(result["mean"] < plan["full_ranking_gate"]["mean_each_order"]
+           for result in candidate["ranking"].values()):
+        raise ValueError("Locked response profile lacks a directional signal on development sources")
+    write_json(out, {"db": plan["db"], "prompt": plan["prompt"], "screen_sha256": digest(screen_path),
+                     "screen_scores": str(screen_scores), "screen_scores_sha256": digest(screen_scores),
+                     "development_manifest": screen["manifest"], "development_manifest_sha256": screen["manifest_sha256"],
+                     "protocol_sha256": digest(PROTOCOL), "response_protocol_sha256": digest(RESPONSE_PROTOCOL)})
+
+
+def saved_full_response(lock, development):
+    with Path(lock["screen_scores"]).open(encoding="utf-8", newline="") as handle:
+        matches = {row["source"]: [float(row[f"{order}_{clip}_clip"])
+                                   for order in ("AB", "BA") for clip in ("first", "second")]
+                   for row in csv.DictReader(handle)
+                   if int(row["db"]) == lock["db"] and row["prompt"] == lock["prompt"] and row["model"] == "full"}
+    if set(matches) != {pair["source"] for pair in development}:
+        raise ValueError("Saved scores do not cover the locked development recordings")
+    return np.asarray([matches[pair["source"]] for pair in development]).reshape(-1, 2, 2)
+
+
+def calibration(train_margins, test_margins, pairs, protocol):
+    thresholds = np.median(train_margins, axis=(0, 2))
+    calibrated = test_margins - thresholds[None, :, None]
+    raw = pair_metrics(test_margins)["accuracy"].mean(axis=1)
+    adjusted = pair_metrics(calibrated)["accuracy"].mean(axis=1)
+    return {"thresholds": dict(zip(("AB", "BA"), thresholds.tolist())),
+            "scores": summarize(calibrated, pairs, protocol),
+            "accuracy_gain": estimate(adjusted - raw, pairs, protocol)}
 
 
 def representation_readout(development, evaluation, latent, protocol):
@@ -297,7 +346,15 @@ def confirm(args, summary, protocol, lock, development, evaluation, prototype, f
     if any(pair["db"] != lock["db"] for pair in development + evaluation):
         raise ValueError("Confirmation audio does not match the locked level difference")
     full_margins, summary["full"] = native("full", evaluation, features, prompt)
-    summary["full_gate_passed"] = passes_full(summary["full"], protocol["confirmation_gate"])
+    response = response_plan(lock) if "response_protocol_sha256" in lock else None
+    if response:
+        gate = response["full_ranking_gate"]
+        summary["full_gate_passed"] = all(order["mean"] >= gate["mean_each_order"]
+                                         and order["ci"][0] > gate["lower_ci_each_order"]
+                                         for order in summary["full"]["ranking"].values())
+        summary["full_calibrated"] = calibration(saved_full_response(lock, development), full_margins, evaluation, protocol)
+    else:
+        summary["full_gate_passed"] = passes_full(summary["full"], protocol["confirmation_gate"])
     summary["models"] = {}
     model_rankings, model_hits, model_readouts = [], [], []
     out = args.out / "readout.csv"
@@ -323,6 +380,9 @@ def confirm(args, summary, protocol, lock, development, evaluation, prototype, f
                 metrics = pair_metrics(margins)
                 model_rankings.append(metrics["ranking"].mean(axis=1))
                 model_hits.append(metrics["both_correct"].mean(axis=1))
+                if response:
+                    dev_margins, _ = native(f"{name}-development", development, latent, prompt)
+                    result["calibrated"] = calibration(dev_margins, margins, evaluation, protocol)
             summary["models"][name] = result
     out.with_suffix(".partial").replace(out)
     readout = estimate(np.mean(model_readouts, axis=0), evaluation, protocol)
@@ -351,9 +411,13 @@ if __name__ == "__main__":
     freeze = commands.add_parser("lock")
     freeze.add_argument("--screen", type=Path, required=True)
     freeze.add_argument("--out", type=Path, required=True)
+    freeze.add_argument("--response-scores", type=Path, help="Lock the follow-up response protocol using saved full-audio margins")
     args = parser.parse_args()
     if args.command == "lock":
-        lock_screen(args.screen, args.out)
+        if args.response_scores:
+            lock_response(args.screen, args.response_scores, args.out)
+        else:
+            lock_screen(args.screen, args.out)
     else:
         if (args.stage == "confirm") != (args.lock is not None):
             parser.error("Provide --lock only for confirmation")

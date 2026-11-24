@@ -1,0 +1,11 @@
+{
+  "db": 24,
+  "prompt": "which",
+  "screen_sha256": "846edfea3cfca385f576e13dd7abcf23b2e5f4e890206fb33321c7f2a5be45ab",
+  "screen_scores": "runs/a-screen-v1/scores/native.csv",
+  "screen_scores_sha256": "947eb10e89ce35c89cbe53ba24cc8acc738578be7c07dc2864a7a92d36c45228",
+  "development_manifest": "runs/a-screen-v1/stimuli/pairs.json",
+  "development_manifest_sha256": "fec36f3ac49e4c6d234d9d3f4aa36e85ff1872af25086c46cee6484d383b3f00",
+  "protocol_sha256": "5f16ad17f4da4178438002c77d915fc7ae30ed4904a4f606b8bb3bf9e47b66dd",
+  "response_protocol_sha256": "885355d65ed39d21ac9d8263313ac581aa423557eec50a13474532112aa7e9b1"
+}

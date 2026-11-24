@@ -1,0 +1,1061 @@
+{
+  "plan_sha256": "f360e4ceda48ddf4acb32202f75527b9ed9ef734f292383de5c79ce319546a3d",
+  "pairs": [
+    {
+      "original_id": "0",
+      "source_ids": [
+        "180229",
+        "188796",
+        "164064",
+        "192191",
+        "90014"
+      ],
+      "source_files": [
+        "5-180229-A-27.wav",
+        "5-188796-A-45.wav",
+        "4-164064-A-1.wav",
+        "5-192191-A-19.wav",
+        "4-90014-A-42.wav"
+      ],
+      "target_slot": 3,
+      "stem": "Can you hear the sound of brushing teeth?",
+      "wrong_stem": "Can you hear the sound of rooster?",
+      "yes": "runs/b-writer-pairs-v1/stimuli/pair-00-yes.wav",
+      "no": "runs/b-writer-pairs-v1/stimuli/pair-00-no.wav"
+    },
+    {
+      "original_id": "1",
+      "source_ids": [
+        "220026",
+        "235893",
+        "179863",
+        "161270",
+        "147297"
+      ],
+      "source_files": [
+        "5-220026-A-21.wav",
+        "5-235893-A-28.wav",
+        "5-179863-A-43.wav",
+        "5-161270-A-33.wav",
+        "5-147297-A-27.wav"
+      ],
+      "target_slot": 0,
+      "stem": "Can you hear the sound of sneezing?",
+      "wrong_stem": "Can you hear the sound of car horn?",
+      "yes": "runs/b-writer-pairs-v1/stimuli/pair-01-yes.wav",
+      "no": "runs/b-writer-pairs-v1/stimuli/pair-01-no.wav"
+    },
+    {
+      "original_id": "2",
+      "source_ids": [
+        "156393",
+        "126391",
+        "161100",
+        "216213",
+        "166661"
+      ],
+      "source_files": [
+        "3-156393-A-35.wav",
+        "3-126391-A-27.wav",
+        "4-161100-A-47.wav",
+        "5-216213-A-13.wav",
+        "4-166661-A-10.wav"
+      ],
+      "target_slot": 1,
+      "stem": "Can you hear the sound of washing machine?",
+      "wrong_stem": "Can you hear the sound of airplane?",
+      "yes": "runs/b-writer-pairs-v1/stimuli/pair-02-yes.wav",
+      "no": "runs/b-writer-pairs-v1/stimuli/pair-02-no.wav"
+    },
+    {
+      "original_id": "3",
+      "source_ids": [
+        "234145",
+        "151080",
+        "171281",
+        "254832",
+        "177614"
+      ],
+      "source_files": [
+        "5-234145-A-28.wav",
+        "3-151080-A-20.wav",
+        "3-171281-A-6.wav",
+        "5-254832-A-15.wav",
+        "5-177614-A-5.wav"
+      ],
+      "target_slot": 0,
+      "stem": "Can you hear the sound of snoring?",
+      "wrong_stem": "Can you hear the sound of hen?",
+      "yes": "runs/b-writer-pairs-v1/stimuli/pair-03-yes.wav",
+      "no": "runs/b-writer-pairs-v1/stimuli/pair-03-no.wav"
+    },
+    {
+      "original_id": "4",
+      "source_ids": [
+        "165856",
+        "121532",
+        "257858",
+        "215447",
+        "125070"
+      ],
+      "source_files": [
+        "3-165856-A-41.wav",
+        "4-121532-A-42.wav",
+        "3-257858-A-2.wav",
+        "5-215447-A-47.wav",
+        "4-125070-A-19.wav"
+      ],
+      "target_slot": 0,
+      "stem": "Can you hear the sound of chainsaw?",
+      "wrong_stem": "Can you hear the sound of pig?",
+      "yes": "runs/b-writer-pairs-v1/stimuli/pair-04-yes.wav",
+      "no": "runs/b-writer-pairs-v1/stimuli/pair-04-no.wav"
+    },
+    {
+      "original_id": "5",
+      "source_ids": [
+        "154793",
+        "220955",
+        "112522",
+        "126358",
+        "101381"
+      ],
+      "source_files": [
+        "4-154793-A-4.wav",
+        "5-220955-A-40.wav",
+        "3-112522-A-27.wav",
+        "3-126358-A-3.wav",
+        "3-101381-A-33.wav"
+      ],
+      "target_slot": 2,
+      "stem": "Can you hear the sound of frog?",
+      "wrong_stem": "Can you hear the sound of brushing teeth?",
+      "yes": "runs/b-writer-pairs-v1/stimuli/pair-05-yes.wav",
+      "no": "runs/b-writer-pairs-v1/stimuli/pair-05-no.wav"
+    },
+    {
+      "original_id": "6",
+      "source_ids": [
+        "174797",
+        "177250",
+        "146972",
+        "251617",
+        "58772"
+      ],
+      "source_files": [
+        "4-174797-A-15.wav",
+        "4-177250-A-10.wav",
+        "3-146972-A-5.wav",
+        "3-251617-A-48.wav",
+        "3-58772-A-42.wav"
+      ],
+      "target_slot": 1,
+      "stem": "Can you hear the sound of water drops?",
+      "wrong_stem": "Can you hear the sound of cat?",
+      "yes": "runs/b-writer-pairs-v1/stimuli/pair-06-yes.wav",
+      "no": "runs/b-writer-pairs-v1/stimuli/pair-06-no.wav"
+    },
+    {
+      "original_id": "7",
+      "source_ids": [
+        "51909",
+        "102844",
+        "251489",
+        "215449",
+        "261464"
+      ],
+      "source_files": [
+        "3-51909-A-42.wav",
+        "4-102844-A-49.wav",
+        "5-251489-A-24.wav",
+        "5-215449-A-47.wav",
+        "5-261464-A-23.wav"
+      ],
+      "target_slot": 0,
+      "stem": "Can you hear the sound of siren?",
+      "wrong_stem": "Can you hear the sound of coughing?",
+      "yes": "runs/b-writer-pairs-v1/stimuli/pair-07-yes.wav",
+      "no": "runs/b-writer-pairs-v1/stimuli/pair-07-no.wav"
+    },
+    {
+      "original_id": "8",
+      "source_ids": [
+        "195805",
+        "241846",
+        "151557",
+        "193480",
+        "169983"
+      ],
+      "source_files": [
+        "4-195805-A-13.wav",
+        "5-241846-A-15.wav",
+        "3-151557-A-28.wav",
+        "4-193480-A-40.wav",
+        "5-169983-A-5.wav"
+      ],
+      "target_slot": 0,
+      "stem": "Can you hear the sound of crickets?",
+      "wrong_stem": "Can you hear the sound of snoring?",
+      "yes": "runs/b-writer-pairs-v1/stimuli/pair-08-yes.wav",
+      "no": "runs/b-writer-pairs-v1/stimuli/pair-08-no.wav"
+    },
+    {
+      "original_id": "9",
+      "source_ids": [
+        "172366",
+        "117122",
+        "191497",
+        "221878",
+        "244178"
+      ],
+      "source_files": [
+        "4-172366-A-37.wav",
+        "5-117122-A-42.wav",
+        "5-191497-A-33.wav",
+        "5-221878-A-34.wav",
+        "5-244178-A-32.wav"
+      ],
+      "target_slot": 0,
+      "stem": "Can you hear the sound of clock alarm?",
+      "wrong_stem": "Can you hear the sound of door wood creaks?",
+      "yes": "runs/b-writer-pairs-v1/stimuli/pair-09-yes.wav",
+      "no": "runs/b-writer-pairs-v1/stimuli/pair-09-no.wav"
+    },
+    {
+      "original_id": "10",
+      "source_ids": [
+        "115382",
+        "120160",
+        "152007",
+        "140323",
+        "181563"
+      ],
+      "source_files": [
+        "3-115382-A-44.wav",
+        "4-120160-A-5.wav",
+        "3-152007-A-20.wav",
+        "3-140323-A-29.wav",
+        "4-181563-A-12.wav"
+      ],
+      "target_slot": 2,
+      "stem": "Can you hear the sound of engine?",
+      "wrong_stem": "Can you hear the sound of crying baby?",
+      "yes": "runs/b-writer-pairs-v1/stimuli/pair-10-yes.wav",
+      "no": "runs/b-writer-pairs-v1/stimuli/pair-10-no.wav"
+    },
+    {
+      "original_id": "11",
+      "source_ids": [
+        "146873",
+        "136608",
+        "201172",
+        "163727",
+        "153057"
+      ],
+      "source_files": [
+        "3-146873-A-24.wav",
+        "3-136608-A-16.wav",
+        "5-201172-A-46.wav",
+        "3-163727-A-3.wav",
+        "3-153057-A-43.wav"
+      ],
+      "target_slot": 0,
+      "stem": "Can you hear the sound of coughing?",
+      "wrong_stem": "Can you hear the sound of church bells?",
+      "yes": "runs/b-writer-pairs-v1/stimuli/pair-11-yes.wav",
+      "no": "runs/b-writer-pairs-v1/stimuli/pair-11-no.wav"
+    },
+    {
+      "original_id": "12",
+      "source_ids": [
+        "151206",
+        "93010",
+        "188390",
+        "103051",
+        "222524"
+      ],
+      "source_files": [
+        "3-151206-A-23.wav",
+        "3-93010-A-18.wav",
+        "3-188390-A-6.wav",
+        "3-103051-A-19.wav",
+        "5-222524-A-41.wav"
+      ],
+      "target_slot": 2,
+      "stem": "Can you hear the sound of breathing?",
+      "wrong_stem": "Can you hear the sound of hen?",
+      "yes": "runs/b-writer-pairs-v1/stimuli/pair-12-yes.wav",
+      "no": "runs/b-writer-pairs-v1/stimuli/pair-12-no.wav"
+    },
+    {
+      "original_id": "13",
+      "source_ids": [
+        "179860",
+        "103050",
+        "161099",
+        "150409",
+        "156026"
+      ],
+      "source_files": [
+        "5-179860-A-43.wav",
+        "3-103050-A-19.wav",
+        "4-161099-A-47.wav",
+        "5-150409-A-42.wav",
+        "5-156026-A-4.wav"
+      ],
+      "target_slot": 3,
+      "stem": "Can you hear the sound of car horn?",
+      "wrong_stem": "Can you hear the sound of airplane?",
+      "yes": "runs/b-writer-pairs-v1/stimuli/pair-13-yes.wav",
+      "no": "runs/b-writer-pairs-v1/stimuli/pair-13-no.wav"
+    },
+    {
+      "original_id": "14",
+      "source_ids": [
+        "119459",
+        "253085",
+        "166324",
+        "221568",
+        "244310"
+      ],
+      "source_files": [
+        "3-119459-A-26.wav",
+        "5-253085-A-3.wav",
+        "3-166324-A-15.wav",
+        "5-221568-A-22.wav",
+        "5-244310-A-25.wav"
+      ],
+      "target_slot": 0,
+      "stem": "Can you hear the sound of laughing?",
+      "wrong_stem": "Can you hear the sound of water drops?",
+      "yes": "runs/b-writer-pairs-v1/stimuli/pair-14-yes.wav",
+      "no": "runs/b-writer-pairs-v1/stimuli/pair-14-no.wav"
+    },
+    {
+      "original_id": "15",
+      "source_ids": [
+        "211197",
+        "136381",
+        "132803",
+        "238492",
+        "189212"
+      ],
+      "source_files": [
+        "5-211197-A-24.wav",
+        "4-136381-A-9.wav",
+        "4-132803-A-26.wav",
+        "5-238492-A-23.wav",
+        "5-189212-A-12.wav"
+      ],
+      "target_slot": 0,
+      "stem": "Can you hear the sound of coughing?",
+      "wrong_stem": "Can you hear the sound of laughing?",
+      "yes": "runs/b-writer-pairs-v1/stimuli/pair-15-yes.wav",
+      "no": "runs/b-writer-pairs-v1/stimuli/pair-15-no.wav"
+    },
+    {
+      "original_id": "16",
+      "source_ids": [
+        "182795",
+        "195707",
+        "242711",
+        "67358",
+        "250258"
+      ],
+      "source_files": [
+        "4-182795-A-14.wav",
+        "4-195707-A-13.wav",
+        "5-242711-A-9.wav",
+        "4-67358-A-42.wav",
+        "5-250258-A-49.wav"
+      ],
+      "target_slot": 0,
+      "stem": "Can you hear the sound of chirping birds?",
+      "wrong_stem": "Can you hear the sound of crow?",
+      "yes": "runs/b-writer-pairs-v1/stimuli/pair-16-yes.wav",
+      "no": "runs/b-writer-pairs-v1/stimuli/pair-16-no.wav"
+    },
+    {
+      "original_id": "17",
+      "source_ids": [
+        "160119",
+        "208820",
+        "156993",
+        "207811",
+        "171823"
+      ],
+      "source_files": [
+        "3-160119-A-15.wav",
+        "3-208820-A-49.wav",
+        "4-156993-A-19.wav",
+        "5-207811-A-35.wav",
+        "4-171823-A-13.wav"
+      ],
+      "target_slot": 1,
+      "stem": "Can you hear the sound of water drops?",
+      "wrong_stem": "Can you hear the sound of thunderstorm?",
+      "yes": "runs/b-writer-pairs-v1/stimuli/pair-17-yes.wav",
+      "no": "runs/b-writer-pairs-v1/stimuli/pair-17-no.wav"
+    },
+    {
+      "original_id": "18",
+      "source_ids": [
+        "149189",
+        "142605",
+        "111671",
+        "131943",
+        "166326"
+      ],
+      "source_files": [
+        "3-149189-A-1.wav",
+        "3-142605-A-21.wav",
+        "4-111671-A-42.wav",
+        "3-131943-A-37.wav",
+        "3-166326-A-15.wav"
+      ],
+      "target_slot": 2,
+      "stem": "Can you hear the sound of rooster?",
+      "wrong_stem": "Can you hear the sound of siren?",
+      "yes": "runs/b-writer-pairs-v1/stimuli/pair-18-yes.wav",
+      "no": "runs/b-writer-pairs-v1/stimuli/pair-18-no.wav"
+    },
+    {
+      "original_id": "19",
+      "source_ids": [
+        "112397",
+        "203739",
+        "94344",
+        "243448",
+        "213802"
+      ],
+      "source_files": [
+        "3-112397-A-9.wav",
+        "5-203739-A-10.wav",
+        "3-94344-A-25.wav",
+        "5-243448-A-14.wav",
+        "5-213802-A-12.wav"
+      ],
+      "target_slot": 3,
+      "stem": "Can you hear the sound of crow?",
+      "wrong_stem": "Can you hear the sound of footsteps?",
+      "yes": "runs/b-writer-pairs-v1/stimuli/pair-19-yes.wav",
+      "no": "runs/b-writer-pairs-v1/stimuli/pair-19-no.wav"
+    },
+    {
+      "original_id": "20",
+      "source_ids": [
+        "253649",
+        "152912",
+        "184237",
+        "160999",
+        "123224"
+      ],
+      "source_files": [
+        "4-253649-A-6.wav",
+        "3-152912-A-26.wav",
+        "4-184237-A-28.wav",
+        "4-160999-A-10.wav",
+        "3-123224-A-19.wav"
+      ],
+      "target_slot": 3,
+      "stem": "Can you hear the sound of hen?",
+      "wrong_stem": "Can you hear the sound of snoring?",
+      "yes": "runs/b-writer-pairs-v1/stimuli/pair-20-yes.wav",
+      "no": "runs/b-writer-pairs-v1/stimuli/pair-20-no.wav"
+    },
+    {
+      "original_id": "21",
+      "source_ids": [
+        "161579",
+        "103415",
+        "221529",
+        "171706",
+        "192068"
+      ],
+      "source_files": [
+        "4-161579-A-40.wav",
+        "5-103415-A-2.wav",
+        "5-221529-A-39.wav",
+        "4-171706-A-23.wav",
+        "4-192068-A-31.wav"
+      ],
+      "target_slot": 2,
+      "stem": "Can you hear the sound of helicopter?",
+      "wrong_stem": "Can you hear the sound of glass breaking?",
+      "yes": "runs/b-writer-pairs-v1/stimuli/pair-21-yes.wav",
+      "no": "runs/b-writer-pairs-v1/stimuli/pair-21-no.wav"
+    },
+    {
+      "original_id": "22",
+      "source_ids": [
+        "182369",
+        "207836",
+        "182007",
+        "124600",
+        "203373"
+      ],
+      "source_files": [
+        "4-182369-A-12.wav",
+        "5-207836-A-29.wav",
+        "5-182007-A-36.wav",
+        "3-124600-A-19.wav",
+        "3-203373-A-39.wav"
+      ],
+      "target_slot": 0,
+      "stem": "Can you hear the sound of crackling fire?",
+      "wrong_stem": "Can you hear the sound of vacuum cleaner?",
+      "yes": "runs/b-writer-pairs-v1/stimuli/pair-22-yes.wav",
+      "no": "runs/b-writer-pairs-v1/stimuli/pair-22-no.wav"
+    },
+    {
+      "original_id": "23",
+      "source_ids": [
+        "198373",
+        "144085",
+        "204830",
+        "174840",
+        "133047"
+      ],
+      "source_files": [
+        "5-198373-A-46.wav",
+        "4-144085-A-16.wav",
+        "4-204830-A-6.wav",
+        "3-174840-A-43.wav",
+        "4-133047-A-5.wav"
+      ],
+      "target_slot": 0,
+      "stem": "Can you hear the sound of church bells?",
+      "wrong_stem": "Can you hear the sound of hen?",
+      "yes": "runs/b-writer-pairs-v1/stimuli/pair-23-yes.wav",
+      "no": "runs/b-writer-pairs-v1/stimuli/pair-23-no.wav"
+    },
+    {
+      "original_id": "24",
+      "source_ids": [
+        "203128",
+        "83527",
+        "133989",
+        "154926",
+        "174860"
+      ],
+      "source_files": [
+        "5-203128-A-0.wav",
+        "3-83527-A-4.wav",
+        "5-133989-A-42.wav",
+        "3-154926-A-40.wav",
+        "4-174860-A-3.wav"
+      ],
+      "target_slot": 3,
+      "stem": "Can you hear the sound of dog?",
+      "wrong_stem": "Can you hear the sound of siren?",
+      "yes": "runs/b-writer-pairs-v1/stimuli/pair-24-yes.wav",
+      "no": "runs/b-writer-pairs-v1/stimuli/pair-24-no.wav"
+    },
+    {
+      "original_id": "25",
+      "source_ids": [
+        "165791",
+        "163609",
+        "144259",
+        "188003",
+        "200339"
+      ],
+      "source_files": [
+        "4-165791-A-45.wav",
+        "4-163609-A-16.wav",
+        "3-144259-A-29.wav",
+        "4-188003-A-34.wav",
+        "5-200339-A-1.wav"
+      ],
+      "target_slot": 0,
+      "stem": "Can you hear the sound of train?",
+      "wrong_stem": "Can you hear the sound of drinking sipping?",
+      "yes": "runs/b-writer-pairs-v1/stimuli/pair-25-yes.wav",
+      "no": "runs/b-writer-pairs-v1/stimuli/pair-25-no.wav"
+    },
+    {
+      "original_id": "26",
+      "source_ids": [
+        "184323",
+        "132340",
+        "151089",
+        "210000",
+        "161519"
+      ],
+      "source_files": [
+        "5-184323-A-42.wav",
+        "3-132340-A-37.wav",
+        "3-151089-A-30.wav",
+        "4-210000-A-23.wav",
+        "4-161519-A-19.wav"
+      ],
+      "target_slot": 0,
+      "stem": "Can you hear the sound of siren?",
+      "wrong_stem": "Can you hear the sound of door wood knock?",
+      "yes": "runs/b-writer-pairs-v1/stimuli/pair-26-yes.wav",
+      "no": "runs/b-writer-pairs-v1/stimuli/pair-26-no.wav"
+    },
+    {
+      "original_id": "27",
+      "source_ids": [
+        "126532",
+        "260875",
+        "170574",
+        "117773",
+        "237499"
+      ],
+      "source_files": [
+        "4-126532-A-18.wav",
+        "5-260875-A-35.wav",
+        "3-170574-A-30.wav",
+        "5-117773-A-16.wav",
+        "5-237499-A-4.wav"
+      ],
+      "target_slot": 1,
+      "stem": "Can you hear the sound of toilet flush?",
+      "wrong_stem": "Can you hear the sound of door wood knock?",
+      "yes": "runs/b-writer-pairs-v1/stimuli/pair-27-yes.wav",
+      "no": "runs/b-writer-pairs-v1/stimuli/pair-27-no.wav"
+    },
+    {
+      "original_id": "28",
+      "source_ids": [
+        "154405",
+        "195517",
+        "61635",
+        "189830",
+        "163608"
+      ],
+      "source_files": [
+        "4-154405-A-27.wav",
+        "5-195517-A-7.wav",
+        "5-61635-A-8.wav",
+        "4-189830-A-22.wav",
+        "4-163608-B-16.wav"
+      ],
+      "target_slot": 2,
+      "stem": "Can you hear the sound of brushing teeth?",
+      "wrong_stem": "Can you hear the sound of sheep?",
+      "yes": "runs/b-writer-pairs-v1/stimuli/pair-28-yes.wav",
+      "no": "runs/b-writer-pairs-v1/stimuli/pair-28-no.wav"
+    },
+    {
+      "original_id": "29",
+      "source_ids": [
+        "161303",
+        "20861",
+        "244526",
+        "107122",
+        "139958"
+      ],
+      "source_files": [
+        "4-161303-A-5.wav",
+        "3-20861-A-8.wav",
+        "5-244526-A-26.wav",
+        "4-107122-A-33.wav",
+        "3-139958-A-37.wav"
+      ],
+      "target_slot": 0,
+      "stem": "Can you hear the sound of cat?",
+      "wrong_stem": "Can you hear the sound of laughing?",
+      "yes": "runs/b-writer-pairs-v1/stimuli/pair-29-yes.wav",
+      "no": "runs/b-writer-pairs-v1/stimuli/pair-29-no.wav"
+    },
+    {
+      "original_id": "30",
+      "source_ids": [
+        "138212",
+        "130330",
+        "186962",
+        "233645",
+        "208021"
+      ],
+      "source_files": [
+        "3-138212-A-45.wav",
+        "3-130330-A-22.wav",
+        "4-186962-A-44.wav",
+        "5-233645-A-37.wav",
+        "4-208021-A-1.wav"
+      ],
+      "target_slot": 2,
+      "stem": "Can you hear the sound of train?",
+      "wrong_stem": "Can you hear the sound of engine?",
+      "yes": "runs/b-writer-pairs-v1/stimuli/pair-30-yes.wav",
+      "no": "runs/b-writer-pairs-v1/stimuli/pair-30-no.wav"
+    },
+    {
+      "original_id": "31",
+      "source_ids": [
+        "250629",
+        "183882",
+        "154781",
+        "167096",
+        "242490"
+      ],
+      "source_files": [
+        "5-250629-A-37.wav",
+        "4-183882-A-28.wav",
+        "3-154781-A-32.wav",
+        "3-167096-A-31.wav",
+        "5-242490-A-14.wav"
+      ],
+      "target_slot": 3,
+      "stem": "Can you hear the sound of clock alarm?",
+      "wrong_stem": "Can you hear the sound of keyboard typing?",
+      "yes": "runs/b-writer-pairs-v1/stimuli/pair-31-yes.wav",
+      "no": "runs/b-writer-pairs-v1/stimuli/pair-31-no.wav"
+    },
+    {
+      "original_id": "32",
+      "source_ids": [
+        "164661",
+        "243450",
+        "185613",
+        "182839",
+        "188495"
+      ],
+      "source_files": [
+        "4-164661-A-12.wav",
+        "5-243450-A-14.wav",
+        "4-185613-A-32.wav",
+        "4-182839-A-17.wav",
+        "5-188495-A-19.wav"
+      ],
+      "target_slot": 3,
+      "stem": "Can you hear the sound of crackling fire?",
+      "wrong_stem": "Can you hear the sound of keyboard typing?",
+      "yes": "runs/b-writer-pairs-v1/stimuli/pair-32-yes.wav",
+      "no": "runs/b-writer-pairs-v1/stimuli/pair-32-no.wav"
+    },
+    {
+      "original_id": "33",
+      "source_ids": [
+        "149042",
+        "204684",
+        "159609",
+        "172733",
+        "257349"
+      ],
+      "source_files": [
+        "3-149042-A-24.wav",
+        "4-204684-A-37.wav",
+        "4-159609-A-14.wav",
+        "4-172733-A-36.wav",
+        "5-257349-A-15.wav"
+      ],
+      "target_slot": 2,
+      "stem": "Can you hear the sound of coughing?",
+      "wrong_stem": "Can you hear the sound of chirping birds?",
+      "yes": "runs/b-writer-pairs-v1/stimuli/pair-33-yes.wav",
+      "no": "runs/b-writer-pairs-v1/stimuli/pair-33-no.wav"
+    },
+    {
+      "original_id": "34",
+      "source_ids": [
+        "216368",
+        "195451",
+        "51149",
+        "144128",
+        "180156"
+      ],
+      "source_files": [
+        "5-216368-A-28.wav",
+        "4-195451-A-44.wav",
+        "5-51149-A-25.wav",
+        "3-144128-A-23.wav",
+        "5-180156-A-43.wav"
+      ],
+      "target_slot": 0,
+      "stem": "Can you hear the sound of snoring?",
+      "wrong_stem": "Can you hear the sound of footsteps?",
+      "yes": "runs/b-writer-pairs-v1/stimuli/pair-34-yes.wav",
+      "no": "runs/b-writer-pairs-v1/stimuli/pair-34-no.wav"
+    },
+    {
+      "original_id": "35",
+      "source_ids": [
+        "150364",
+        "235507",
+        "171653",
+        "260164",
+        "141365"
+      ],
+      "source_files": [
+        "4-150364-A-46.wav",
+        "5-235507-A-44.wav",
+        "5-171653-A-41.wav",
+        "5-260164-A-23.wav",
+        "4-141365-A-18.wav"
+      ],
+      "target_slot": 3,
+      "stem": "Can you hear the sound of church bells?",
+      "wrong_stem": "Can you hear the sound of chainsaw?",
+      "yes": "runs/b-writer-pairs-v1/stimuli/pair-35-yes.wav",
+      "no": "runs/b-writer-pairs-v1/stimuli/pair-35-no.wav"
+    },
+    {
+      "original_id": "36",
+      "source_ids": [
+        "152039",
+        "197103",
+        "164243",
+        "156558",
+        "99193"
+      ],
+      "source_files": [
+        "3-152039-A-3.wav",
+        "4-197103-A-6.wav",
+        "4-164243-A-26.wav",
+        "3-156558-A-21.wav",
+        "4-99193-A-4.wav"
+      ],
+      "target_slot": 1,
+      "stem": "Can you hear the sound of cow?",
+      "wrong_stem": "Can you hear the sound of laughing?",
+      "yes": "runs/b-writer-pairs-v1/stimuli/pair-36-yes.wav",
+      "no": "runs/b-writer-pairs-v1/stimuli/pair-36-no.wav"
+    },
+    {
+      "original_id": "37",
+      "source_ids": [
+        "242491",
+        "197118",
+        "128659",
+        "242492",
+        "223103"
+      ],
+      "source_files": [
+        "5-242491-A-14.wav",
+        "5-197118-A-45.wav",
+        "4-128659-A-33.wav",
+        "5-242492-A-3.wav",
+        "5-223103-A-31.wav"
+      ],
+      "target_slot": 1,
+      "stem": "Can you hear the sound of chirping birds?",
+      "wrong_stem": "Can you hear the sound of door wood creaks?",
+      "yes": "runs/b-writer-pairs-v1/stimuli/pair-37-yes.wav",
+      "no": "runs/b-writer-pairs-v1/stimuli/pair-37-no.wav"
+    },
+    {
+      "original_id": "38",
+      "source_ids": [
+        "155568",
+        "201170",
+        "205526",
+        "130998",
+        "185619"
+      ],
+      "source_files": [
+        "3-155568-A-32.wav",
+        "5-201170-A-46.wav",
+        "4-205526-A-23.wav",
+        "3-130998-A-28.wav",
+        "4-185619-A-21.wav"
+      ],
+      "target_slot": 2,
+      "stem": "Can you hear the sound of keyboard typing?",
+      "wrong_stem": "Can you hear the sound of breathing?",
+      "yes": "runs/b-writer-pairs-v1/stimuli/pair-38-yes.wav",
+      "no": "runs/b-writer-pairs-v1/stimuli/pair-38-no.wav"
+    },
+    {
+      "original_id": "39",
+      "source_ids": [
+        "182368",
+        "155642",
+        "161010",
+        "117293",
+        "185908"
+      ],
+      "source_files": [
+        "4-182368-A-12.wav",
+        "3-155642-A-11.wav",
+        "3-161010-A-43.wav",
+        "3-117293-A-9.wav",
+        "5-185908-A-18.wav"
+      ],
+      "target_slot": 3,
+      "stem": "Can you hear the sound of crackling fire?",
+      "wrong_stem": "Can you hear the sound of car horn?",
+      "yes": "runs/b-writer-pairs-v1/stimuli/pair-39-yes.wav",
+      "no": "runs/b-writer-pairs-v1/stimuli/pair-39-no.wav"
+    },
+    {
+      "original_id": "40",
+      "source_ids": [
+        "216216",
+        "102908",
+        "198360",
+        "144253",
+        "135439"
+      ],
+      "source_files": [
+        "5-216216-A-13.wav",
+        "3-102908-A-4.wav",
+        "4-198360-A-49.wav",
+        "3-144253-A-29.wav",
+        "4-135439-A-18.wav"
+      ],
+      "target_slot": 3,
+      "stem": "Can you hear the sound of crickets?",
+      "wrong_stem": "Can you hear the sound of hand saw?",
+      "yes": "runs/b-writer-pairs-v1/stimuli/pair-40-yes.wav",
+      "no": "runs/b-writer-pairs-v1/stimuli/pair-40-no.wav"
+    },
+    {
+      "original_id": "41",
+      "source_ids": [
+        "181599",
+        "188595",
+        "238938",
+        "160551",
+        "223127"
+      ],
+      "source_files": [
+        "4-181599-A-26.wav",
+        "4-188595-A-29.wav",
+        "5-238938-A-27.wav",
+        "5-160551-A-42.wav",
+        "4-223127-A-14.wav"
+      ],
+      "target_slot": 3,
+      "stem": "Can you hear the sound of laughing?",
+      "wrong_stem": "Can you hear the sound of brushing teeth?",
+      "yes": "runs/b-writer-pairs-v1/stimuli/pair-41-yes.wav",
+      "no": "runs/b-writer-pairs-v1/stimuli/pair-41-no.wav"
+    },
+    {
+      "original_id": "42",
+      "source_ids": [
+        "103598",
+        "244933",
+        "203377",
+        "148330",
+        "204741"
+      ],
+      "source_files": [
+        "3-103598-A-25.wav",
+        "5-244933-A-34.wav",
+        "3-203377-A-39.wav",
+        "3-148330-A-21.wav",
+        "5-204741-A-46.wav"
+      ],
+      "target_slot": 2,
+      "stem": "Can you hear the sound of footsteps?",
+      "wrong_stem": "Can you hear the sound of glass breaking?",
+      "yes": "runs/b-writer-pairs-v1/stimuli/pair-42-yes.wav",
+      "no": "runs/b-writer-pairs-v1/stimuli/pair-42-no.wav"
+    },
+    {
+      "original_id": "43",
+      "source_ids": [
+        "233019",
+        "176914",
+        "175846",
+        "250864",
+        "151213"
+      ],
+      "source_files": [
+        "5-233019-A-31.wav",
+        "4-176914-A-23.wav",
+        "4-175846-A-43.wav",
+        "4-250864-A-8.wav",
+        "3-151213-A-24.wav"
+      ],
+      "target_slot": 1,
+      "stem": "Can you hear the sound of mouse click?",
+      "wrong_stem": "Can you hear the sound of car horn?",
+      "yes": "runs/b-writer-pairs-v1/stimuli/pair-43-yes.wav",
+      "no": "runs/b-writer-pairs-v1/stimuli/pair-43-no.wav"
+    },
+    {
+      "original_id": "44",
+      "source_ids": [
+        "145387",
+        "210612",
+        "144510",
+        "118656",
+        "235874"
+      ],
+      "source_files": [
+        "3-145387-A-29.wav",
+        "5-210612-A-37.wav",
+        "3-144510-A-30.wav",
+        "3-118656-A-41.wav",
+        "5-235874-A-28.wav"
+      ],
+      "target_slot": 0,
+      "stem": "Can you hear the sound of drinking sipping?",
+      "wrong_stem": "Can you hear the sound of door wood knock?",
+      "yes": "runs/b-writer-pairs-v1/stimuli/pair-44-yes.wav",
+      "no": "runs/b-writer-pairs-v1/stimuli/pair-44-no.wav"
+    },
+    {
+      "original_id": "45",
+      "source_ids": [
+        "118059",
+        "191015",
+        "142604",
+        "112557",
+        "118658"
+      ],
+      "source_files": [
+        "3-118059-A-18.wav",
+        "4-191015-A-43.wav",
+        "3-142604-A-24.wav",
+        "3-112557-A-23.wav",
+        "3-118658-A-41.wav"
+      ],
+      "target_slot": 0,
+      "stem": "Can you hear the sound of toilet flush?",
+      "wrong_stem": "Can you hear the sound of coughing?",
+      "yes": "runs/b-writer-pairs-v1/stimuli/pair-45-yes.wav",
+      "no": "runs/b-writer-pairs-v1/stimuli/pair-45-no.wav"
+    },
+    {
+      "original_id": "46",
+      "source_ids": [
+        "157187",
+        "127990",
+        "220027",
+        "233260",
+        "146964"
+      ],
+      "source_files": [
+        "3-157187-A-12.wav",
+        "5-127990-A-2.wav",
+        "5-220027-A-21.wav",
+        "5-233260-A-23.wav",
+        "3-146964-A-5.wav"
+      ],
+      "target_slot": 1,
+      "stem": "Can you hear the sound of crackling fire?",
+      "wrong_stem": "Can you hear the sound of sneezing?",
+      "yes": "runs/b-writer-pairs-v1/stimuli/pair-46-yes.wav",
+      "no": "runs/b-writer-pairs-v1/stimuli/pair-46-no.wav"
+    },
+    {
+      "original_id": "47",
+      "source_ids": [
+        "157204",
+        "98869",
+        "235956",
+        "51376",
+        "251426"
+      ],
+      "source_files": [
+        "5-157204-A-16.wav",
+        "3-98869-A-46.wav",
+        "5-235956-A-47.wav",
+        "3-51376-A-42.wav",
+        "5-251426-A-30.wav"
+      ],
+      "target_slot": 3,
+      "stem": "Can you hear the sound of wind?",
+      "wrong_stem": "Can you hear the sound of airplane?",
+      "yes": "runs/b-writer-pairs-v1/stimuli/pair-47-yes.wav",
+      "no": "runs/b-writer-pairs-v1/stimuli/pair-47-no.wav"
+    }
+  ]
+}
