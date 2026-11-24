@@ -105,7 +105,9 @@ def measure(args, prototype, features, decode, decode_text, lm, embed, proc, aud
 
     if args.writer_pair_plan:
         plan = json.loads(args.writer_pair_plan.read_text(encoding="utf-8"))
-        if plan.get("position_study"):
+        if plan.get("event_probe"):
+            from writer_event_probe import measure as measure_pairs
+        elif plan.get("position_study"):
             from writer_position import measure as measure_pairs
         else:
             from writer_pairs import measure as measure_pairs

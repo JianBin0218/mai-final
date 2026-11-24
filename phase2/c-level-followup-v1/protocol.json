@@ -1,0 +1,15 @@
+{
+  "id": "c-level-followup-v1",
+  "classification": "Exploratory on A\u2019s already evaluated ESC sources; fixed before adapter training.",
+  "manifest_sha256": "977138655440fa789137862c181917a33892981bb4e2e90d734b495a60193aea",
+  "checkpoint_sha256": "9e88fb1953b00e0c8a57058f322f7650bc807e238b80194f49029ce63331581d",
+  "prompt": "which",
+  "steps": 96,
+  "train_batch": 4,
+  "lr": 0.0003,
+  "hidden": 256,
+  "seed": 17,
+  "bootstrap_seed": 829,
+  "bootstrap_replicates": 10000,
+  "diagnosis": "Train only on A development clips, compare reader, order-specific median threshold, and adapter on A evaluation. Report pair ranking, pair accuracy, and natural QA regression."
+}

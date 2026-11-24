@@ -97,6 +97,8 @@ def prepare(args):
     source_dir.mkdir(parents=True, exist_ok=True)
     by_split = pools(plan)
     plan_splits = (("confirmation", "confirm"),) if args.confirmation else (("train", "train"), ("development", "dev"))
+    if getattr(args, "train_only", False):
+        plan_splits = (("train", "train"),)
     needed = [r["filename"] for split, _ in plan_splits for r in by_split[split]]
     with ThreadPoolExecutor(max_workers=8) as workers:
         list(workers.map(lambda name: download(f"{ESC}/audio/{name}", source_dir / name), needed))
@@ -147,7 +149,7 @@ def prepare(args):
         manifest["val"] = [x for n in settings["event_counts"] for x in manifest[f"confirm_N{n}"]]
     else:
         manifest["train"] = [x for n in settings["event_counts"] for x in manifest[f"train_N{n}"]]
-        manifest["val"] = [x for n in settings["event_counts"] for x in manifest[f"dev_N{n}"]]
+        manifest["val"] = [x for n in settings["event_counts"] for x in manifest.get(f"dev_N{n}", ())]
     (args.out / "manifest.json").write_text(json.dumps(manifest, indent=1), encoding="utf-8")
     used = {s: sorted({r["src_file"] for r in by_split[s]}) for s in by_split}
     assert not set(used["development"]) & set(used["confirmation"])

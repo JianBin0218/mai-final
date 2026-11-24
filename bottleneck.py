@@ -111,6 +111,7 @@ def main():
     parser.add_argument("--adapter-hidden", type=int, default=256, help="Hidden width of the c-readout adapter")
     parser.add_argument("--adapter-lr", type=float, default=3e-4, help="Learning rate of the c-readout adapter")
     parser.add_argument("--folds", type=int, default=5, help="Source-group folds for c-readout")
+    parser.add_argument("--c-level-plan", type=Path, help="Use the Track C 24 dB adapter follow-up plan")
     args = parser.parse_args()
     audio_only_modes = ("fresh", "controls", "intervene", "count-evidence", "count-prompts",
                         "count-confirmation", "natural-capacity", "natural-components", "event-components", "a-final",
@@ -333,7 +334,10 @@ def main():
                 train, test, extra, donor_stems)
         return
     if args.mode == "c-readout":
-        from c_readout import measure
+        if args.c_level_plan:
+            from c_level_followup import measure
+        else:
+            from c_readout import measure
         measure(args, comp, features, decode)
         return
     if args.mode == "opposite":

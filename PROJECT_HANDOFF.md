@@ -1,6 +1,6 @@
 # 音訊問答中的 latent 瓶頸｜研究進度與分工
 
-更新於 2026-11-24。A 線已完成鎖定方案的官方 test 評估，涵蓋整體容量、五類題型與逐題案例。B 線完成 B2（合成多事件任務、確認半與 Clotho 多題訓練），[結果](#b2-v2-研究紀錄合成任務訓練確認半與-clotho-多題訓練)未通過事前成功標準。早期各節保留當時可用資料和後續決策。[A 線最終評估](#a-線最終評估官方-clotho-aqa-test) · [C 線轉接層](#c-線研究紀錄回答端轉接層c-readout-v1探索性)
+更新於 2026-11-25。A 線完成鎖定方案的官方 test 評估。B 線在固定 K=4 向量的事件讀出中找到原回答端未充分使用的訊號。C 線在 A 的 K=16 向量上改善相對音量的判讀，但自然問答表現下降。[A 線最終評估](#a-線最終評估官方-clotho-aqa-test) · [B2 題幹導引](#b2-v2-研究紀錄合成任務訓練確認半與-clotho-多題訓練) · [轉向後首輪結果](#轉向後首輪結果2026-11-25探索性)
 
 ## 研究問題與目前判斷
 
@@ -99,6 +99,50 @@ ESC-50 fold 2 的確認半已在 B2 用過。步驟 3 需要新的聲源，例�
 
 [A 線音量確認](phase2/a-level-response-v2) · [B 線 Qwen 寫入重測](phase2/b-llm-writer-pairs-replication-v1) · [B2 題幹導引](https://github.com/JianBin0218/mai-final/pull/3) · [C 線第一輪](https://github.com/JianBin0218/mai-final/pull/5)
 
+### 轉向後首輪結果（2026-11-25，探索性）
+
+**A→C｜固定 latent，改變音量的讀法。** 沿用 A 的 K=16、seed 17 checkpoint。以 50 個開發聲源的 24 dB 配對訓練小型殘差轉接層，也用同一批錄音估計各選項順序的回答門檻。用另外 100 個、A 先前已分析的聲源評估。三種音訊表示各自使用相同的轉接層架構和訓練預算。表中數字為兩種選項順序的平均。
+
+| 音訊表示 | 配對排序，原回答端 → 轉接 | 兩段皆對，原回答端 → 只校準門檻 → 轉接 |
+|---|---:|---:|
+| 完整音訊 | 82.5% → 98.5% | 0.5% → 22.5% → 90.5% |
+| 固定池化 16 槽 | 55.3% → 64.5% | 0.0% → 17.5% → 0.0% |
+| 學習式 K=16 | 64.0% → 98.0% | 0.0% → 18.0% → 60.0% |
+
+校準門檻改變最終選項，保留每個選項順序內的配對排序。K=16 加轉接層的排序高 34.0 個百分點（95% 聲源配對區間 +28.8 至 +39.3），表示它在這項任務上能用到固定 latent 中更多的相對音量線索。完整音訊也受益，且原本排序較高，提升幅度的差異應連同基準與上限解讀。未針對自然題訓練的同一個 K=16 轉接層在 340 道 Clotho 開發題上由 280/340（82.4%）降為 254/340（74.7%）。[方案、逐題分數與摘要](phase2/c-level-followup-v1)
+
+**B｜固定兩個 K=4 寫入器，另訓練事件讀出。** 以 B2 既有配方產生的 200 段四事件混音與 50 類事件標籤，對兩組 latent 分別訓練同規格的 ridge 線性讀出。訓練聲源與兩批評估聲源分開。將原題目指定的事件分數拿來比較成對錄音，95% 區間以配對為單位重抽樣。A→C 與 B 的比較皆以既有的 seed 17 壓縮器為條件。
+
+| 已分析過的評估集 | 外部壓縮器探針 | Qwen 壓縮器探針 | Qwen − 外部，百分點 |
+|---|---:|---:|---:|
+| 首批 48 組 | 95.8% | 97.9% | +2.1（−4.2 至 +10.4） |
+| 重測 72 組 | 94.4% | 91.7% | −2.8（−11.1 至 +4.2） |
+
+同一批 72 組的原回答端排序差為 −19.4 點（Qwen 60.8%，外部 80.2%）。兩種 K=4 latent 都能由額外訓練的探針讀出目標事件，回答端的讀取是可直接檢驗的解釋。探針有事件標籤監督，回答端用題目作答，因此兩套分數的差異仍可能包含題意對應或訓練目標的影響。[方案、逐題分數與摘要](phase2/b-writer-event-probe-v1)
+
+**下一步。** 選 B 的同題事件辨識和共同的 K=4 補齊四格。先在開發資料用相同訓練切分、標籤和轉接層適配兩個固定寫入器，保留原回答端與完整音訊對照，同時量 Clotho 自然題回歸。定案後以新聲源確認，這輪的音量及事件結果都屬開發診斷。
+
+<details>
+<summary>重跑指令（單卡，從 repository 根目錄執行）</summary>
+
+```bash
+.venv/bin/python -u bottleneck.py c-readout --clotho --batch-size 8 \
+  --compressor clotho-k16-s17-audio/compressor.pt \
+  --c-level-plan phase2/c-level-followup-v1/protocol.json \
+  --pair-manifest runs/a-response-v2/stimuli/pairs.json \
+  --extra-manifest data/clotho/fresh_val.json --feature-cache runs/a-screen-v1/features \
+  --out runs/c-level-followup-v1/scores
+
+.venv/bin/python writer_event_probe.py --out runs/b-writer-event-probe-v1/stimuli
+.venv/bin/python -u bottleneck.py llm-writer --clotho --k 4 --seed 17 --writer-rank 4 \
+  --writer-pair-plan phase2/b-writer-event-probe-v1/protocol.json \
+  --writer-load runs/b-writer-audio-v1/scores/writer.pt \
+  --pair-manifest runs/b-writer-event-probe-v1/stimuli/manifest.json \
+  --feature-cache runs/b-writer-audio-v1/features --out runs/b-writer-event-probe-v1/scores
+```
+
+</details>
+
 ## 已完成的實驗
 
 | 實驗 | 設計與實測結果 | 對下一步的意義 |
@@ -172,6 +216,8 @@ A 線在這類 46 題上，K=16 平均答對 74.6%，完整音訊為 89.1%，相
 兩種選項順序的結果相近（K=16：yes 在 A 為 56%，yes 在 B 為 56%），收益不是來自字母偏好。換成其他來源組的錄音時，加轉接層的答案有 64–71% 跟著 donor 的正解，原標籤只有約 50%，表示答案跟著實際給的聲音走。三種輸入的增益差都無法判定：K=16 減完整音訊為 +15 點（−7 至 +38），K=16 減平均池化為 +2 點（−15 至 +18）。
 
 **自然題回歸。** 把各折轉接層套用到 `fresh_val` 的 340 題（只用原本的 yes 在 A 順序，五折平均）。K=16 由 82.1% 降到 59.7%，完整音訊由 86.5% 降到 77.6%，平均池化由 59.1% 降到 54.1%。K=16 的數量／關係題由 76.1% 降到 58.3%。只用段數題訓練的轉接層會破壞其他題型。
+
+**平手規則。** 上表保留原分析兩種順序皆把同分算成 yes 的結果。依實際二選一 `argmax` 的平手選 A 重算，轉接後的兩段皆對率為 K=16 55%、固定池化 55%、完整音訊 44%，三組原回答端仍為 0%。音量接續實驗採用平手選 A。[原始分數](phase2/c-readout-v1)
 
 **解讀。** 依事前規則，三種輸入都改善，這輪支持「轉接層教會解碼器這項任務」，而不是「轉接層讀出壓縮後才難用的證據」。加轉接層後仍低於線性讀出（K=16 為 56% 對 80%）。這是單一 checkpoint、單一題幹，且這批 fold 5 聲源已被 A 線多次使用，屬於開發資料。官方 test 未使用。
 
