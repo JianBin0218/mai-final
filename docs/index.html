@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>音訊 Latent 瓶頸</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="MAI 期末專題：音訊問答中的 latent 瓶頸。動機、架構、A/B 兩線進度、結果與研究規劃。">
+<meta name="description" content="MAI 期末專題：音訊問答中的 latent 瓶頸。動機、架構、A/B/C 三線進度、結果與研究規劃。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,500&family=Noto+Serif+TC:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -19,11 +19,12 @@
 -->
 <script type="application/json" id="roadmap-seed">
 {
-  "updated": "2026-11-23",
+  "updated": "2026-11-24",
   "tracks": [
     { "code": "A", "name": "瓶頸容量與證據保留", "owner": "健賓", "question": "瓶頸容量決定哪些聲音線索能被保留？", "slot": 1, "order": 1 },
     { "code": "B", "name": "問題導引", "owner": "cshsieh", "question": "壓縮器先讀題目，能不能幫它挑對聲音證據？", "slot": 2, "order": 2 },
-    { "code": "AB", "name": "兩線整合與交付", "owner": "全組", "question": "兩線在哪裡交會？怎麼一起交付？", "slot": 3, "order": 3 }
+    { "code": "C", "name": "回答端讀取", "owner": "第三位組員", "question": "latent 裡讀得出的線索，回答端能不能用上？", "slot": 3, "order": 3 },
+    { "code": "AB", "name": "各線整合與交付", "owner": "全組", "question": "各線在哪裡交會？怎麼一起交付？", "slot": 3, "order": 4 }
   ],
   "plans": [
     { "id": "j1", "track": "AB", "status": "active", "title": "提案投影片與 5 分鐘報告", "why": "11/25 23:59 前上傳提案投影片，11/26 報告 5 分鐘。用已完成的 pilot 與兩線結果說明動機和方法，共同起點之後的實驗標成後續計畫。", "todos": [["動機與架構圖", false], ["A 線：容量與題型結果一頁", false], ["B 線：題幹導引結果一頁", false], ["下一步規劃一頁", false], ["上傳投影片（11/25 23:59 前）", false], ["排練 5 分鐘報告", false]] },
@@ -35,6 +36,10 @@
     { "id": "b3", "track": "B", "status": "planned", "title": "latent 線性探針：回答端讀得到嗎", "why": "在固定的純音訊 latent 上訓練線性 probe 預測各題答案。若 latent 已含答案資訊、回答端仍答錯，改進方向應放在回答端，而不是讓壓縮端讀題。", "todos": [["匯出 fresh_val 的 K = 1/4/16 latent", false], ["以錄音為單位交叉驗證 probe", false], ["和回答端準確率逐題對照", false]] },
     { "id": "a1", "track": "A", "status": "idea", "title": "音量讀出的泛化", "why": "固定 latent 的線性音量讀出達 84–90%，問答卻只有 51.5%。還沒測試讀出器能否泛化到其他聲源組或其他音量差。", "todos": [["設計泛化切分（新聲源組、不同音量差）", false], ["跑 level-probe 泛化評估", false]] },
     { "id": "a2", "track": "A", "status": "planned", "title": "重跑 counterbalanced-v1", "why": "完整原模型評測途中停止，只保存 manifest 與部分結果，目前不計入結論。", "todos": [["重跑完整原模型評測", false], ["和 opposite-v1 結果合併分析", false]] },
+    { "id": "c1", "track": "C", "status": "done", "title": "回答端轉接層：一段／兩段配對", "why": "凍結壓縮器與解碼器，只訓練 latent 後的殘差轉接層。三種輸入的配對兩段皆對都由 0% 升到 41–56%，但輸入間的差異無法判定，且會傷害自然題。", "todos": [["重建 A 線的 50 對段數刺激", true], ["本機重訓 K = 16 並對照 A 線結果", true], ["完整音訊、平均池化、K = 16 各訓練 5 折轉接層", true], ["donor 置換與 fresh_val 回歸檢查", true]] },
+    { "id": "c2", "track": "C", "status": "planned", "title": "混入自然題訓練轉接層", "why": "只用段數題訓練時，K = 16 在 fresh_val 由 82.1% 掉到 59.7%。訓練時混入 Clotho 訓練題，檢查能否保留段數收益又不傷自然題。", "todos": [["轉接層訓練加入 Clotho 訓練題", false], ["重測 fresh_val 340 題與段數配對", false]] },
+    { "id": "c3", "track": "C", "status": "planned", "title": "新聲源與其他 checkpoint 確認", "why": "這輪只用 fold 5 開發聲源與單一 K = 16 checkpoint。需在另留聲源和 seed 23、41 上確認。", "todos": [["事前固定確認方案", false], ["在另留聲源評估", false], ["換 K = 16 seed 23、41", false]] },
+    { "id": "c4", "track": "C", "status": "idea", "title": "改用音量作為第二個屬性", "why": "若 A 線的音量篩選通過完整音訊正對照，音量就有可比較的完整音訊參考，比段數更適合檢驗回答端讀取。", "todos": [["等待 A 線 level-contrast 篩選結果", false]] },
     { "id": "a3", "track": "A", "status": "done", "title": "確認自然數量／關係題的差距", "why": "開發集的 14.5 點落差在官方 test 的主要選項順序未重現。完整音訊為 83.3%，K = 16 為 84.0%。", "todos": [["固定題型規則並在保留資料評估", true], ["保存整類結果與逐題失敗案例", true]] }
   ]
 }
@@ -172,7 +177,7 @@ h2 { font-size: clamp(26px, 2.2vw + 16px, 36px); line-height: 1.45; letter-spaci
 .strip-note { margin-top: 10px; font: 400 12.5px/1.8 var(--sans); color: var(--ink-3); }
 
 /* ---------- architecture ---------- */
-.premise { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; margin-bottom: 80px; border-top: 1px solid var(--rule); }
+.premise { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; margin-bottom: 80px; border-top: 1px solid var(--rule); }
 .premise > div { padding: 26px 28px 4px 0; display: grid; gap: 10px; align-content: start; min-width: 0; }
 .premise > div + div { padding-left: 28px; border-left: 1px solid var(--rule); }
 .premise .tag { font: 400 12px/1 var(--sans); letter-spacing: .18em; color: var(--ink-3); display: flex; align-items: center; gap: 10px; }
@@ -488,10 +493,11 @@ footer .links { display: flex; flex-wrap: wrap; gap: 6px 24px; }
     <div class="read">
       <p class="eyebrow">MAI 期末專題　·　CLOTHO-AQA　·　QWEN2-AUDIO-7B</p>
       <h1>只用 <em>K</em> 個向量聽一段錄音，<br>模型還答得對嗎？</h1>
-      <p class="sub">Qwen2-Audio 會把一段錄音變成數百個音訊向量交給語言模型。我們在中間放進一個瓶頸，把它們收成 K 個 latent，再請凍結的語言模型回答 yes/no 題。A 線研究容量 K 決定哪些聲音線索留得下來；B 線研究讓壓縮器先讀題目，能不能幫它挑對證據。</p>
+      <p class="sub">Qwen2-Audio 會把一段錄音變成數百個音訊向量交給語言模型。我們在中間放進一個瓶頸，把它們收成 K 個 latent，再請凍結的語言模型回答 yes/no 題。A 線研究容量 K 決定哪些聲音線索留得下來；B 線研究讓壓縮器先讀題目，能不能幫它挑對證據；C 線研究回答端能不能用上 latent 裡已經讀得出的線索。</p>
       <div class="byline">
         <span><i class="swatch a"></i>A 線　瓶頸容量　<b>健賓</b></span>
         <span><i class="swatch b"></i>B 線　問題導引　<b>cshsieh</b></span>
+        <span><i class="swatch c"></i>C 線　回答端讀取　<b>第三位組員</b></span>
         <span class="due" id="deadline" hidden></span>
       </div>
     </div>
@@ -523,12 +529,13 @@ footer .links { display: flex; flex-wrap: wrap; gap: 6px 24px; }
     <div class="sec-head read">
       <p class="kicker"><span class="no">一</span>動機與架構<span class="en">Motivation</span></p>
       <h2>回答端永遠不變，<br>我們只動壓縮端。</h2>
-      <p class="lede">把數百個音訊向量收成固定的 K 個，就能直接量兩件事：留下多少資訊才夠用，以及先看題目能不能留對資訊。其他條件全部固定，所以分數的差異只來自壓縮端。</p>
+      <p class="lede">把數百個音訊向量收成固定的 K 個，就能直接量兩件事：留下多少資訊才夠用，以及先看題目能不能留對資訊。其他條件全部固定，所以 A、B 兩線分數的差異只來自壓縮端。C 線反過來固定壓縮端，只在 latent 和凍結的解碼器之間加一層小轉接層。</p>
     </div>
     <div class="premise">
       <div><p class="tag">固定不動</p><h3>凍結的 Qwen2-Audio</h3><p>音訊編碼器、投影層、7B 語言模型都不訓練。回答端永遠讀到完整題目與 A/B 選項，只比較第一個輸出 token 是 A 還是 B。</p></div>
       <div><p class="tag"><i class="swatch a"></i>A 線的變因</p><h3>容量 K</h3><p>K = 1、4、16 個 latent，加上免訓練的平均池化對照。看哪些題型最先因為容量不足而答錯。</p></div>
       <div><p class="tag"><i class="swatch b"></i>B 線的變因</p><h3>壓縮時讀不讀題目</h3><p>題幹（不含選項）加進壓縮器的 query。換成錯置題、通用句或關閉，檢查效果是否來自題目內容。</p></div>
+      <div><p class="tag"><i class="swatch c"></i>C 線的變因</p><h3>回答端怎麼讀 latent</h3><p>壓縮器和解碼器都凍結，只訓練 latent 進解碼器前的殘差轉接層。和線性讀出比較，看讀得出的線索能不能用來作答。</p></div>
     </div>
 
     <div class="arch-tools">
@@ -561,8 +568,8 @@ footer .links { display: flex; flex-wrap: wrap; gap: 6px 24px; }
   <div class="wrap">
     <div class="sec-head read">
       <p class="kicker"><span class="no">二</span>分工與進度<span class="en">Tracks</span></p>
-      <h2>兩條研究線，<br>同一個瓶頸。</h2>
-      <p class="lede">兩線共用模型、資料切分與評分，各自選假說和對照。點開任一里程碑，可以看到結果與對應的檔案。進度截至 2026 年 11 月 23 日。</p>
+      <h2>三條研究線，<br>同一個瓶頸。</h2>
+      <p class="lede">各線共用模型、資料切分與評分，各自選假說和對照。點開任一里程碑，可以看到結果與對應的檔案。進度截至 2026 年 11 月 24 日。</p>
     </div>
     <div class="shared">
       <h3>共同基礎</h3>
@@ -581,12 +588,13 @@ footer .links { display: flex; flex-wrap: wrap; gap: 6px 24px; }
     <div class="sec-head read">
       <p class="kicker"><span class="no">三</span>主要結果<span class="en">Findings</span></p>
       <h2>容量有用，<br>讀題目還看不出幫助。</h2>
-      <p class="lede">A 線同時報告 340 題開發集和 514 題官方 test。B 線圖表使用 340 題開發集。兩組結果皆可用 repo 裡的逐題分數重算。</p>
+      <p class="lede">A 線同時報告 340 題開發集和 514 題官方 test。B 線圖表使用 340 題開發集。C 線使用 A 線的 50 對受控段數配對，並以 340 題開發集檢查回歸。各線結果皆可用 repo 裡的逐題分數重算。</p>
     </div>
     <div class="tabs" role="tablist" aria-label="結果分頁">
       <button class="tab" role="tab" id="tab-a" aria-controls="panel-a" aria-selected="true"><i class="swatch a"></i>容量與題型</button>
       <button class="tab" role="tab" id="tab-b" aria-controls="panel-b" aria-selected="false" tabindex="-1"><i class="swatch b"></i>題幹導引</button>
       <button class="tab" role="tab" id="tab-d" aria-controls="panel-d" aria-selected="false" tabindex="-1"><i class="swatch b"></i>劑量反應</button>
+      <button class="tab" role="tab" id="tab-e" aria-controls="panel-e" aria-selected="false" tabindex="-1"><i class="swatch c"></i>回答端讀取</button>
     </div>
 
     <div class="panel" id="panel-a" role="tabpanel" aria-labelledby="tab-a">
@@ -642,6 +650,31 @@ footer .links { display: flex; flex-wrap: wrap; gap: 6px 24px; }
         <p>模型自己學到的 |tanh(gate)| 都在 0.02–0.39，停在無害區，所以 gated 版不傷也不幫。</p>
         <p>放大到 2–16 倍時，seed 17、19 是正確題幹較差，seed 18 反而較好；方向不一致，不能解讀成題目內容有害。</p>
         <p class="src">重算　<code>python compare_guidance.py --probe</code></p>
+      </div>
+    </div>
+
+    <div class="panel" id="panel-e" role="tabpanel" aria-labelledby="tab-e" hidden>
+      <div>
+        <div class="figure">
+          <div class="fig-head"><span class="fig">圖六</span><h3>加一層轉接層，段數題的配對</h3><span class="sub">50 對一段／兩段聲音，兩段皆答對的比例，兩種選項順序平均</span><button class="tbtn" data-table="e">表格</button></div>
+          <div class="legend"><span><i class="key tick"></i>原回答端</span><span><i class="key dotk" style="background:var(--c)"></i>加轉接層（95% 區間）</span><span><i class="key hollow" style="border-color:var(--ink-2)"></i>線性讀出</span></div>
+          <div class="chart" id="chart-e"></div>
+          <div class="dtable" id="table-e" hidden></div>
+        </div>
+        <div class="figure">
+          <div class="fig-head"><span class="fig">圖七</span><h3>同一個轉接層套到自然題</h3><span class="sub">fresh_val 340 題準確率，五折轉接層平均</span><button class="tbtn" data-table="f">表格</button></div>
+          <div class="legend"><span><i class="key tick"></i>原回答端</span><span><i class="key dotk" style="background:var(--c)"></i>加轉接層</span></div>
+          <div class="chart" id="chart-f"></div>
+          <div class="dtable" id="table-f" hidden></div>
+        </div>
+      </div>
+      <div class="take">
+        <h3>讀得出來的線索，<br>轉接層能教會一部分</h3>
+        <p class="pull">原回答端在三種輸入上兩段皆對都是 <b>0%</b>；加轉接層後為 41–56%，K = 16 為 <b>56%</b>，仍低於線性讀出的 80%。</p>
+        <p>兩種選項順序結果相近。換成其他錄音的 latent 時，答案有 64–71% 跟著 donor 的正解，表示收益跟著實際給的聲音走。</p>
+        <p>完整音訊、平均池化和 K = 16 都改善，彼此的差異無法判定（K = 16 減平均池化 +2 點，區間 −15 至 +18）。依事前規則，這輪支持轉接層教會解碼器這項任務，而不是讀出壓縮後才難用的證據。</p>
+        <p>只用段數題訓練的轉接層會傷害自然題：K = 16 在 340 題由 82.1% 降到 59.7%。這輪為探索性，使用單一 checkpoint 和 A 線已用過的開發聲源。</p>
+        <p class="src">重算　<code>python analyze_c_readout.py</code>　·　<a href="https://github.com/JianBin0218/mai-final/tree/main/phase2/c-readout-v1" target="_blank" rel="noopener">方案與逐題分數</a></p>
       </div>
     </div>
   </div>
@@ -723,7 +756,7 @@ footer .links { display: flex; flex-wrap: wrap; gap: 6px 24px; }
 
 <footer>
   <div class="wrap">
-    <p class="colophon"><b>Colophon</b>研究內容依據 main 的 PROJECT_HANDOFF.md，涵蓋 2026 年 11 月 23 日公布的 A 線最終結果。</p>
+    <p class="colophon"><b>Colophon</b>研究內容依據 main 的 PROJECT_HANDOFF.md，涵蓋 2026 年 11 月 23 日公布的 A 線最終結果，以及 11 月 24 日的 C 線轉接層探索結果。</p>
     <p class="links">
       <a href="https://github.com/JianBin0218/mai-final" target="_blank" rel="noopener">GitHub</a>
       <a href="https://github.com/JianBin0218/mai-final/pull/1" target="_blank" rel="noopener">PR #1</a>
@@ -1197,6 +1230,13 @@ const TRACKS = [
     { s: "done", t: "對齊 fresh_val 並合併 main", r: "66 個模型在 A 線的 340 題上重評，結論不變。", f: "phase2/guidance-v1" },
     { s: "next", t: "下一輪候選", r: "slot 層級題幹路由、時序合成題、latent 線性探針，詳見研究規劃。" },
   ] },
+  { code: "C", name: "回答端讀取", owner: "負責　第三位組員", q: "latent 裡讀得出的線索，回答端能不能用上？", ms: [
+    { s: "done", t: "重新定位問題", r: "A 線發現段數配對上完整音訊也通不過正對照，但 latent 的線性讀出達 89–90%。C 線改問回答端能否用上讀得出的線索。", f: "phase2/count-evidence-v1" },
+    { s: "done", t: "本機重現 A 線基準", r: "重建的 50 對刺激與 A 線一致；重訓的 K = 16 驗證集 53/64，與 A 線相同。", f: "phase2/c-readout-v1/plan.json" },
+    { s: "done", t: "回答端轉接層", r: "兩段皆對由 0% 升到 41–56%（K = 16 為 +56 點，+40 至 +72）；三種輸入間的差異無法判定，自然題 K = 16 由 82.1% 降到 59.7%。", f: "phase2/c-readout-v1" },
+    { s: "next", t: "混入自然題訓練", r: "檢查能否保留段數收益又不傷自然題。" },
+    { s: "next", t: "新聲源與其他 checkpoint", r: "在另留聲源和 K = 16 seed 23、41 上確認。" },
+  ] },
 ];
 const ST_LABEL = { done: "完成", active: "進行中", paused: "暫停", next: "下一步" };
 function renderTracks() {
@@ -1247,6 +1287,11 @@ const D_SER = [
   { l: "K = 1", c: "--ramp-1", v: [212.0, 212.7, 207.7, 203.0, 202.3, 201.3], dy: 4 },
   { l: "K = 4", c: "--ramp-2", v: [253.3, 248.0, 231.3, 219.3, 214.0, 211.7], dy: -7 },
   { l: "K = 16", c: "--ramp-3", v: [284.0, 275.3, 248.0, 224.3, 214.7, 210.3], dy: 8 },
+];
+const E_IN = [
+  { t: "完整音訊", base: 0, ad: 41, lo: 27, hi: 55, donor: 64, probe: null, nat0: 86.5, nat1: 77.6 },
+  { t: "平均池化 16 格", base: 0, ad: 54, lo: 42, hi: 66, donor: 71, probe: 82, nat0: 59.1, nat1: 54.1 },
+  { t: "學習式 K = 16", base: 0, ad: 56, lo: 40, hi: 72, donor: 70, probe: 80, nat0: 82.1, nat1: 59.7 },
 ];
 const drawn = new Set();
 const chartWidth = (host) => Math.max(300, host.clientWidth);
@@ -1373,7 +1418,51 @@ function chartD() {
   });
   $("#table-d").innerHTML = `<table><thead><tr><th>題幹項 / query 範數</th>${D_X.map((v) => `<th>${v}×</th>`).join("")}</tr></thead><tbody>${D_SER.map((se) => `<tr><td>${se.l}</td>${se.v.map((v) => `<td>${fmt1(v)}</td>`).join("")}</tr>`).join("")}</tbody></table>`;
 }
-const CHARTS = { a: [chartA], b: [chartB, chartC], d: [chartD] };
+function dotRows(host, opt) {
+  host.innerHTML = "";
+  const w = chartWidth(host), narrow = w < 560;
+  const left = narrow ? 0 : 150, right = 8, rowH = narrow ? 62 : 52, top = 6;
+  const hh = top + opt.rows.length * rowH + 30;
+  const x = (v) => left + ((v - opt.x0) / (opt.x1 - opt.x0)) * (w - left - right);
+  const s = svg("svg", { viewBox: `0 0 ${w} ${hh}`, role: "img", "aria-label": opt.aria }, host);
+  const g = svg("g", { class: "grid" }, s);
+  for (let v = opt.x0; v <= opt.x1; v += opt.step) {
+    svg("line", { x1: x(v), x2: x(v), y1: top, y2: hh - 26 }, g);
+    txt(s, { x: x(v), y: hh - 6, "text-anchor": "middle" }, v + "%");
+  }
+  opt.rows.forEach((d, i) => {
+    const cy = top + i * rowH + (narrow ? 42 : rowH / 2), m = opt.mark(d);
+    txt(s, { x: narrow ? left : left - 18, y: narrow ? cy - 16 : cy + 5, "text-anchor": narrow ? "start" : "end", class: "lab" }, d.t);
+    if (m.lo != null) svg("line", { x1: x(m.lo), x2: x(m.hi), y1: cy, y2: cy, stroke: "var(--c)", "stroke-width": 1.5, "stroke-linecap": "round" }, s);
+    else svg("line", { x1: x(m.base), x2: x(m.ad), y1: cy, y2: cy, class: "connector" }, s);
+    svg("line", { x1: x(m.base), x2: x(m.base), y1: cy - 9, y2: cy + 9, stroke: "var(--ink-3)", "stroke-width": 1.5 }, s);
+    if (m.ring != null) svg("circle", { cx: x(m.ring), cy, r: 4.5, fill: "var(--paper)", stroke: "var(--ink-2)", "stroke-width": 1.5 }, s);
+    svg("circle", { cx: x(m.ad), cy, r: 5.5, fill: "var(--c)", class: "mk" }, s);
+    const hit = svg("rect", { x: left, y: cy - rowH / 2 - (narrow ? 8 : 0), width: w - left - right, height: rowH, class: "hit" }, s);
+    hit.addEventListener("pointermove", (e) => showTip(`<div class="th">${d.t}</div>` + opt.tip(d), e.clientX, e.clientY));
+    hit.addEventListener("pointerleave", hideTip);
+  });
+}
+function chartE() {
+  dotRows($("#chart-e"), {
+    rows: E_IN, x0: 0, x1: 100, step: 20, aria: "三種輸入加轉接層前後的配對兩段皆對比例與線性讀出",
+    mark: (d) => ({ base: d.base, ad: d.ad, lo: d.lo, hi: d.hi, ring: d.probe }),
+    tip: (d) => tipRow(cssv("--ink-3"), "原回答端", d.base + "%") + tipRow(cssv("--c"), "加轉接層", d.ad + "%") +
+      tipRow(cssv("--ink-3"), "增益 95% 區間", `[+${d.lo}, +${d.hi}]`) + tipRow(cssv("--ink-3"), "換錄音後跟著 donor", d.donor + "%") +
+      tipRow(cssv("--ink-2"), "線性讀出", d.probe == null ? "見平均池化" : d.probe + "%"),
+  });
+  $("#table-e").innerHTML = `<table><thead><tr><th>輸入</th><th>原回答端</th><th>加轉接層</th><th>增益（95% 區間）</th><th>跟著 donor</th><th>線性讀出</th></tr></thead><tbody>${E_IN.map((d) => `<tr><td>${d.t}</td><td>${d.base}%</td><td>${d.ad}%</td><td>+${d.ad - d.base} [+${d.lo}, +${d.hi}]</td><td>${d.donor}%</td><td>${d.probe == null ? "見平均池化" : d.probe + "%"}</td></tr>`).join("")}</tbody></table>`;
+}
+function chartF() {
+  dotRows($("#chart-f"), {
+    rows: E_IN, x0: 40, x1: 100, step: 10, aria: "轉接層套到 fresh_val 340 題前後的準確率",
+    mark: (d) => ({ base: d.nat0, ad: d.nat1 }),
+    tip: (d) => tipRow(cssv("--ink-3"), "原回答端", d.nat0.toFixed(1) + "%") + tipRow(cssv("--c"), "加轉接層", d.nat1.toFixed(1) + "%") +
+      tipRow(cssv("--ink-3"), "差距", signed(d.nat1 - d.nat0) + " pp"),
+  });
+  $("#table-f").innerHTML = `<table><thead><tr><th>輸入</th><th>原回答端</th><th>加轉接層</th><th>差距（pp）</th></tr></thead><tbody>${E_IN.map((d) => `<tr><td>${d.t}</td><td>${d.nat0.toFixed(1)}%</td><td>${d.nat1.toFixed(1)}%</td><td>${signed(d.nat1 - d.nat0)}</td></tr>`).join("")}</tbody></table>`;
+}
+const CHARTS = { a: [chartA], b: [chartB, chartC], d: [chartD], e: [chartE, chartF] };
 let curTab = "a";
 const renderTab = () => CHARTS[curTab].forEach((f) => f());
 function selectTab(t) {
@@ -1468,7 +1557,7 @@ async function initRoadmap() {
   }, fail);
 }
 function renderLiveCounts() {
-  for (const code of ["A", "B"]) {
+  for (const code of ["A", "B", "C"]) {
     const box = $("#live-" + code);
     if (!box) continue;
     box.innerHTML = "";
@@ -1482,7 +1571,7 @@ function renderLiveCounts() {
   }
 }
 function renderExtraTracks() {
-  const list = sortedTracks().filter(([id]) => id !== "A" && id !== "B");
+  const list = sortedTracks().filter(([id]) => id !== "A" && id !== "B" && id !== "C");
   const wrap = $("#extra-wrap"), box = $("#extra-tracks");
   wrap.hidden = !list.length;
   box.innerHTML = "";
