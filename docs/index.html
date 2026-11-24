@@ -575,12 +575,13 @@ footer .links { display: flex; flex-wrap: wrap; gap: 6px 24px; }
     <div class="sec-head read">
       <p class="kicker"><span class="no">三</span>主要結果<span class="en">Findings</span></p>
       <h2>增加容量有用，<br>題幹導引的效果有限。</h2>
-      <p class="lede">A 線報告開發集與官方測試的容量結果。B 線圖表呈現第一輪，第二輪涵蓋多事件錄音與 Clotho 多題訓練。C 線的研究設計與下一步可在研究線區查看。</p>
+      <p class="lede">A 線報告開發集與官方測試的容量結果。B 線圖表呈現第一輪，第二輪涵蓋多事件錄音與 Clotho 多題訓練。C 線報告受控段數題的轉接層探索和自然題表現。</p>
     </div>
     <div class="tabs" role="tablist" aria-label="結果分頁">
       <button class="tab" role="tab" id="tab-a" aria-controls="panel-a" aria-selected="true"><i class="swatch a"></i>容量與題型</button>
       <button class="tab" role="tab" id="tab-b" aria-controls="panel-b" aria-selected="false" tabindex="-1"><i class="swatch b"></i>題幹導引</button>
       <button class="tab" role="tab" id="tab-d" aria-controls="panel-d" aria-selected="false" tabindex="-1"><i class="swatch b"></i>劑量反應</button>
+      <button class="tab" role="tab" id="tab-e" aria-controls="panel-e" aria-selected="false" tabindex="-1"><i class="swatch c"></i>回答端讀取</button>
     </div>
 
     <div class="panel" id="panel-a" role="tabpanel" aria-labelledby="tab-a">
@@ -639,6 +640,30 @@ footer .links { display: flex; flex-wrap: wrap; gap: 6px 24px; }
         <p>模型自己學到的 |tanh(gate)| 都在 0.02–0.39，停在無害區，所以 gated 版不傷也不幫。</p>
         <p>放大到 2–16 倍時，seed 17、19 是正確題幹較差，seed 18 反而較好；方向不一致，不能解讀成題目內容有害。</p>
         <p class="src">重算　<code>python compare_guidance.py --probe</code></p>
+      </div>
+    </div>
+    <div class="panel" id="panel-e" role="tabpanel" aria-labelledby="tab-e" hidden>
+      <div>
+        <div class="figure">
+          <div class="fig-head"><span class="fig">圖六</span><h3>加一層轉接層，段數題的配對</h3><span class="sub">50 對一段／兩段聲音，兩段皆答對的比例，兩種選項順序平均</span><button class="tbtn" data-table="e">表格</button></div>
+          <div class="legend"><span><i class="key tick"></i>原回答端</span><span><i class="key dotk" style="background:var(--c)"></i>加轉接層（95% 區間）</span><span><i class="key hollow" style="border-color:var(--ink-2)"></i>線性讀出</span></div>
+          <div class="chart" id="chart-e"></div>
+          <div class="dtable" id="table-e" hidden></div>
+        </div>
+        <div class="figure">
+          <div class="fig-head"><span class="fig">圖七</span><h3>同一個轉接層套到自然題</h3><span class="sub">fresh_val 340 題準確率，五折轉接層平均</span><button class="tbtn" data-table="f">表格</button></div>
+          <div class="legend"><span><i class="key tick"></i>原回答端</span><span><i class="key dotk" style="background:var(--c)"></i>加轉接層</span></div>
+          <div class="chart" id="chart-f"></div>
+          <div class="dtable" id="table-f" hidden></div>
+        </div>
+      </div>
+      <div class="take">
+        <h3>讀得出來的線索，<br>轉接層能教會一部分</h3>
+        <p class="pull">原回答端在三種輸入上兩段皆對都是 <b>0%</b>；加轉接層後為 41–56%，K = 16 為 <b>56%</b>，仍低於線性讀出的 80%。</p>
+        <p>兩種選項順序結果相近。換成其他錄音的 latent 時，答案有 64–71% 跟著 donor 的正解，表示收益跟著實際給的聲音走。</p>
+        <p>完整音訊、平均池化和 K = 16 都改善，彼此的差異無法判定（K = 16 減平均池化 +2 點，區間 −15 至 +18）。依事前規則，這輪支持轉接層教會解碼器這項任務，而不是讀出壓縮後才難用的證據。</p>
+        <p>只用段數題訓練的轉接層會傷害自然題：K = 16 在 340 題由 82.1% 降到 59.7%。這輪為探索性，使用單一 checkpoint 和 A 線已用過的開發聲源。</p>
+        <p class="src">重算　<code>python analyze_c_readout.py</code>　·　<a href="https://github.com/JianBin0218/mai-final/tree/main/phase2/c-readout-v1" target="_blank" rel="noopener">方案與逐題分數</a></p>
       </div>
     </div>
   </div>
@@ -1182,7 +1207,8 @@ const TRACKS = [
   ] },
   { code: "C", name: "回答端讀取證據", owner: "負責　pqweraddy", q: "固定壓縮後的向量，改變讀法能不能答得更好？", ms: [
     { s: "done", t: "訂出讀取證據的研究設計", r: "共用 A 線的 K = 16 向量，將變因放在回答端。先選擇事件數量作為可控制的聲音線索。", url: "https://github.com/JianBin0218/mai-final/blob/67425e739d4d5889c7047ea5525f800ad580da12/PROJECT_HANDOFF.md#c-線讓回答端讀取壓縮證據" },
-    { s: "next", t: "比較原回答端與小型轉接層", r: "用相同題目和向量比較作答，再交換錄音的向量，檢查改善是否跟著聲音走。" },
+    { s: "done", t: "段數題轉接層探索", r: "固定 K = 16 時，受控段數題兩段皆對率從 0% 到 56%，自然開發題表現下降。", url: "https://github.com/JianBin0218/mai-final/tree/main/phase2/c-readout-v1" },
+    { s: "next", t: "比較相對音量的讀取方式", r: "沿用同一組壓縮向量，比較答案門檻校準與小型轉接層，同時檢查自然題表現。" },
   ] },
 ];
 const ST_LABEL = { done: "已做", next: "下一步" };
@@ -1233,6 +1259,11 @@ const D_SER = [
   { l: "K = 1", c: "--ramp-1", v: [212.0, 212.7, 207.7, 203.0, 202.3, 201.3], dy: 4 },
   { l: "K = 4", c: "--ramp-2", v: [253.3, 248.0, 231.3, 219.3, 214.0, 211.7], dy: -7 },
   { l: "K = 16", c: "--ramp-3", v: [284.0, 275.3, 248.0, 224.3, 214.7, 210.3], dy: 8 },
+];
+const E_IN = [
+  { t: "完整音訊", base: 0, ad: 41, lo: 27, hi: 55, donor: 64, probe: null, nat0: 86.5, nat1: 77.6 },
+  { t: "平均池化 16 格", base: 0, ad: 54, lo: 42, hi: 66, donor: 71, probe: 82, nat0: 59.1, nat1: 54.1 },
+  { t: "學習式 K = 16", base: 0, ad: 56, lo: 40, hi: 72, donor: 70, probe: 80, nat0: 82.1, nat1: 59.7 },
 ];
 const drawn = new Set();
 const chartWidth = (host) => Math.max(300, host.clientWidth);
@@ -1359,7 +1390,51 @@ function chartD() {
   });
   $("#table-d").innerHTML = `<table><thead><tr><th>題幹項 / query 範數</th>${D_X.map((v) => `<th>${v}×</th>`).join("")}</tr></thead><tbody>${D_SER.map((se) => `<tr><td>${se.l}</td>${se.v.map((v) => `<td>${fmt1(v)}</td>`).join("")}</tr>`).join("")}</tbody></table>`;
 }
-const CHARTS = { a: [chartA], b: [chartB, chartC], d: [chartD] };
+function dotRows(host, opt) {
+  host.innerHTML = "";
+  const w = chartWidth(host), narrow = w < 560;
+  const left = narrow ? 0 : 150, right = 8, rowH = narrow ? 62 : 52, top = 6;
+  const hh = top + opt.rows.length * rowH + 30;
+  const x = (v) => left + ((v - opt.x0) / (opt.x1 - opt.x0)) * (w - left - right);
+  const s = svg("svg", { viewBox: `0 0 ${w} ${hh}`, role: "img", "aria-label": opt.aria }, host);
+  const g = svg("g", { class: "grid" }, s);
+  for (let v = opt.x0; v <= opt.x1; v += opt.step) {
+    svg("line", { x1: x(v), x2: x(v), y1: top, y2: hh - 26 }, g);
+    txt(s, { x: x(v), y: hh - 6, "text-anchor": "middle" }, v + "%");
+  }
+  opt.rows.forEach((d, i) => {
+    const cy = top + i * rowH + (narrow ? 42 : rowH / 2), m = opt.mark(d);
+    txt(s, { x: narrow ? left : left - 18, y: narrow ? cy - 16 : cy + 5, "text-anchor": narrow ? "start" : "end", class: "lab" }, d.t);
+    if (m.lo != null) svg("line", { x1: x(m.lo), x2: x(m.hi), y1: cy, y2: cy, stroke: "var(--c)", "stroke-width": 1.5, "stroke-linecap": "round" }, s);
+    else svg("line", { x1: x(m.base), x2: x(m.ad), y1: cy, y2: cy, class: "connector" }, s);
+    svg("line", { x1: x(m.base), x2: x(m.base), y1: cy - 9, y2: cy + 9, stroke: "var(--ink-3)", "stroke-width": 1.5 }, s);
+    if (m.ring != null) svg("circle", { cx: x(m.ring), cy, r: 4.5, fill: "var(--paper)", stroke: "var(--ink-2)", "stroke-width": 1.5 }, s);
+    svg("circle", { cx: x(m.ad), cy, r: 5.5, fill: "var(--c)", class: "mk" }, s);
+    const hit = svg("rect", { x: left, y: cy - rowH / 2 - (narrow ? 8 : 0), width: w - left - right, height: rowH, class: "hit" }, s);
+    hit.addEventListener("pointermove", (e) => showTip(`<div class="th">${d.t}</div>` + opt.tip(d), e.clientX, e.clientY));
+    hit.addEventListener("pointerleave", hideTip);
+  });
+}
+function chartE() {
+  dotRows($("#chart-e"), {
+    rows: E_IN, x0: 0, x1: 100, step: 20, aria: "三種輸入加轉接層前後的配對兩段皆對比例與線性讀出",
+    mark: (d) => ({ base: d.base, ad: d.ad, lo: d.lo, hi: d.hi, ring: d.probe }),
+    tip: (d) => tipRow(cssv("--ink-3"), "原回答端", d.base + "%") + tipRow(cssv("--c"), "加轉接層", d.ad + "%") +
+      tipRow(cssv("--ink-3"), "增益 95% 區間", `[+${d.lo}, +${d.hi}]`) + tipRow(cssv("--ink-3"), "換錄音後跟著 donor", d.donor + "%") +
+      tipRow(cssv("--ink-2"), "線性讀出", d.probe == null ? "見平均池化" : d.probe + "%"),
+  });
+  $("#table-e").innerHTML = `<table><thead><tr><th>輸入</th><th>原回答端</th><th>加轉接層</th><th>增益（95% 區間）</th><th>跟著 donor</th><th>線性讀出</th></tr></thead><tbody>${E_IN.map((d) => `<tr><td>${d.t}</td><td>${d.base}%</td><td>${d.ad}%</td><td>+${d.ad - d.base} [+${d.lo}, +${d.hi}]</td><td>${d.donor}%</td><td>${d.probe == null ? "見平均池化" : d.probe + "%"}</td></tr>`).join("")}</tbody></table>`;
+}
+function chartF() {
+  dotRows($("#chart-f"), {
+    rows: E_IN, x0: 40, x1: 100, step: 10, aria: "轉接層套到 fresh_val 340 題前後的準確率",
+    mark: (d) => ({ base: d.nat0, ad: d.nat1 }),
+    tip: (d) => tipRow(cssv("--ink-3"), "原回答端", d.nat0.toFixed(1) + "%") + tipRow(cssv("--c"), "加轉接層", d.nat1.toFixed(1) + "%") +
+      tipRow(cssv("--ink-3"), "差距", signed(d.nat1 - d.nat0) + " pp"),
+  });
+  $("#table-f").innerHTML = `<table><thead><tr><th>輸入</th><th>原回答端</th><th>加轉接層</th><th>差距（pp）</th></tr></thead><tbody>${E_IN.map((d) => `<tr><td>${d.t}</td><td>${d.nat0.toFixed(1)}%</td><td>${d.nat1.toFixed(1)}%</td><td>${signed(d.nat1 - d.nat0)}</td></tr>`).join("")}</tbody></table>`;
+}
+const CHARTS = { a: [chartA], b: [chartB, chartC], d: [chartD], e: [chartE, chartF] };
 let curTab = "a";
 const renderTab = () => CHARTS[curTab].forEach((f) => f());
 function selectTab(t) {

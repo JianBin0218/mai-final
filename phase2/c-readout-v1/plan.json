@@ -1,0 +1,16 @@
+{
+  "status": "exploratory development run; fixed before inference",
+  "question": "With the compressor and decoder frozen, can a zero-initialised residual adapter on the latents make the decoder use the one-versus-two burst cue that a linear readout already finds?",
+  "stimuli": "count_evidence.py prepare, identical to phase2/count-evidence-v1/pairs.json (ESC-50 fold-5 sources, 50 pairs, 25 source groups)",
+  "question_text": "Are there two separate bursts of sound with a quiet gap between them?",
+  "option_orders": ["yes_first", "no_first"],
+  "inputs": ["full", "pool16", "K16"],
+  "compressor": "runs/c-k16-s17-audio/compressor.pt, retrained locally with A's command (seed 17, 192 steps)",
+  "adapter": {"form": "x + W2 gelu(W1 LayerNorm(x)), W2 zero-initialised, applied to every latent row", "hidden": 256},
+  "training": {"steps": 150, "batch_size": 8, "lr": 0.0003, "weight_decay": 0.01, "order": "random per example"},
+  "split": "5 folds over source groups, seed 17; adapters never see held-out groups",
+  "primary_metric": "pair both-correct rate averaged over the two option orders, adapter minus base, group bootstrap 95% interval (seed 29, 10000 draws)",
+  "decision": "A gain counts only if its interval excludes zero and the adapter's held-out answers follow donor latents rather than the original labels; K16 versus full/pool16 tells whether the adapter reads compressed evidence or teaches the task",
+  "controls": ["identity at init", "donor latents from another held-out source group", "grouped ridge readout ceiling", "fresh_val 340-question regression with each fold's adapter"],
+  "deviations": ["torch 2.7.1+cu128 instead of 2.5.1+cu121 (Blackwell GPUs); baseline scores agree with count-evidence-v1/full.csv in sign on 100/100 clips, max |diff| 0.125 logit", "K16 checkpoint retrained locally: held-out 53/64 as in A's run, 62/64 identical predictions"]
+}
