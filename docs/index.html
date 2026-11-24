@@ -1,12 +1,12 @@
 <!doctype html>
-<!-- site-source: aad71dbf6ab8245fc3d2e57b2cfcd22d82c52973 -->
+<!-- site-source: 8c78de94c3a0eda84a93b4bc1fd37184ec5e092f -->
 <html lang="zh-Hant">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>音訊 Latent 瓶頸</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="MAI 期末專題：音訊問答中的 latent 瓶頸。動機、架構、A/B 兩線進度、結果與研究規劃。">
+<meta name="description" content="MAI 期末專題：音訊問答中的 latent 瓶頸。A、B、C 三條研究線的成果與下一步。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,500&family=Noto+Serif+TC:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -19,23 +19,18 @@
 -->
 <script type="application/json" id="roadmap-seed">
 {
-  "updated": "2026-11-23",
+  "updated": "2026-11-24",
   "tracks": [
-    { "code": "A", "name": "瓶頸容量與證據保留", "owner": "健賓", "question": "瓶頸容量決定哪些聲音線索能被保留？", "slot": 1, "order": 1 },
-    { "code": "B", "name": "問題導引", "owner": "cshsieh", "question": "壓縮器先讀題目，能不能幫它挑對聲音證據？", "slot": 2, "order": 2 },
-    { "code": "AB", "name": "兩線整合與交付", "owner": "全組", "question": "兩線在哪裡交會？怎麼一起交付？", "slot": 3, "order": 3 }
+    {"code": "A", "name": "瓶頸容量與證據保留", "owner": "健賓", "question": "瓶頸容量決定哪些聲音線索能被保留？", "slot": 1, "order": 1},
+    {"code": "B", "name": "題幹導引", "owner": "cshsieh", "question": "壓縮器先讀題目，能不能選出與題目有關的證據？", "slot": 2, "order": 2},
+    {"code": "C", "name": "回答端讀取證據", "owner": "pqweraddy", "question": "固定同一組 latent，改變回答端的讀取方式能幫助作答嗎？", "slot": 3, "order": 3},
+    {"code": "ABC", "name": "整合與交付", "owner": "全組", "question": "如何把三條研究線整合成同一個專題？", "slot": 4, "order": 4}
   ],
   "plans": [
-    { "id": "j1", "track": "AB", "status": "active", "title": "提案投影片與 5 分鐘報告", "why": "11/25 23:59 前上傳提案投影片，11/26 報告 5 分鐘。用已完成的 pilot 與兩線結果說明動機和方法，共同起點之後的實驗標成後續計畫。", "todos": [["動機與架構圖", false], ["A 線：容量與題型結果一頁", false], ["B 線：題幹導引結果一頁", false], ["下一步規劃一頁", false], ["上傳投影片（11/25 23:59 前）", false], ["排練 5 分鐘報告", false]] },
-    { "id": "j2", "track": "AB", "status": "done", "title": "合併 B 線首輪結果", "why": "PR #1 已將 B 線題幹導引實驗與對齊結果合併進 main。", "todos": [["合併進 main", true]] },
-    { "id": "j3", "track": "AB", "status": "idea", "title": "小容量下，正確題幹能否救回特定題型", "why": "兩線若在某類題目交會，就一起測：容量較小時（K = 1、4），正確題幹能否救回 A 線找到的容量敏感題型。", "todos": [["選定 A 線的容量敏感題型", false], ["在 K = 1、4 依題型比較正確與錯置題幹", false]] },
-    { "id": "j4", "track": "A", "status": "done", "title": "A 線官方 test 評估", "why": "鎖定方案後評估 257 段錄音、514 題，並保存逐題分數和錄音配對區間。", "todos": [["鎖定方案與題型規則", true], ["完成單次正式推論", true], ["離線重算與驗證", true]] },
-    { "id": "b1", "track": "B", "status": "planned", "title": "slot 層級的題幹路由", "why": "目前所有 query 加的是同一個題幹向量。改成讓題幹 token 和音訊做 cross-attention，產生 K 個不同的 query，檢驗「選擇不同證據」是否需要 slot 層級的路由。", "todos": [["設計 per-slot 題幹 query，零初始化，確認起點和純音訊逐位元相同", false], ["加進 guidance_grid：K = 1/4/16 × seed 17/18/19", false], ["在 fresh_val 比較正確、錯置、關閉題幹", false]] },
-    { "id": "b2", "track": "B", "status": "idea", "title": "需要時間定位的合成題", "why": "做「事件 A 是否在事件 B 之前」這類題，在 K = 1 測試題幹能否決定要保留錄音的哪一段。", "todos": [["拼接兩段事件錄音，生成順序題", false], ["確認完整音訊與只看文字的基準", false], ["K = 1 比較純音訊與題幹導引", false]] },
-    { "id": "b3", "track": "B", "status": "planned", "title": "latent 線性探針：回答端讀得到嗎", "why": "在固定的純音訊 latent 上訓練線性 probe 預測各題答案。若 latent 已含答案資訊、回答端仍答錯，改進方向應放在回答端，而不是讓壓縮端讀題。", "todos": [["匯出 fresh_val 的 K = 1/4/16 latent", false], ["以錄音為單位交叉驗證 probe", false], ["和回答端準確率逐題對照", false]] },
-    { "id": "a1", "track": "A", "status": "idea", "title": "音量讀出的泛化", "why": "固定 latent 的線性音量讀出達 84–90%，問答卻只有 51.5%。還沒測試讀出器能否泛化到其他聲源組或其他音量差。", "todos": [["設計泛化切分（新聲源組、不同音量差）", false], ["跑 level-probe 泛化評估", false]] },
-    { "id": "a2", "track": "A", "status": "planned", "title": "重跑 counterbalanced-v1", "why": "完整原模型評測途中停止，只保存 manifest 與部分結果，目前不計入結論。", "todos": [["重跑完整原模型評測", false], ["和 opposite-v1 結果合併分析", false]] },
-    { "id": "a3", "track": "A", "status": "done", "title": "確認自然數量／關係題的差距", "why": "開發集的 14.5 點落差在官方 test 的主要選項順序未重現。完整音訊為 83.3%，K = 16 為 84.0%。", "todos": [["固定題型規則並在保留資料評估", true], ["保存整類結果與逐題失敗案例", true]] }
+    {"id": "a1", "track": "A", "status": "planned", "title": "分辨音量線索的保留與使用", "why": "只交換同一錄音中兩段聲音的相對音量，比較完整音訊作答、K = 16 作答和線性讀出。", "todos": [["建立完整音訊能辨認音量差的題目", false], ["在新錄音上比較作答與線性讀出", false]]},
+    {"id": "b1", "track": "B", "status": "idea", "title": "追查多事件錄音中的題幹導引", "why": "第二輪整體未達成功標準。多事件錄音在 K = 4、16 的部分條件中出現題幹效果，適合獨立檢驗。", "todos": [["限定多事件錄音與容量", false], ["用新聲源比較純音訊、正確題幹與錯置題幹", false]]},
+    {"id": "c1", "track": "C", "status": "planned", "title": "固定 latent，改變回答端讀法", "why": "從事件數量開始，檢查小型轉接層能否讓 Qwen 更有效利用同一組向量。", "todos": [["設計只改變事件次數的題對", false], ["比較原回答端與加入轉接層後的表現", false], ["交換 latent 檢查改善是否依賴聲音", false]]},
+    {"id": "j1", "track": "ABC", "status": "active", "title": "提案投影片與 5 分鐘報告", "why": "11/25 23:59 前上傳投影片，11/26 報告。用三條線說明證據如何保留、選取和使用。", "todos": [["整理共同架構與各線的成果、下一步", false], ["完成投影片與報告排練", false]]}
   ]
 }
 </script>
@@ -172,7 +167,7 @@ h2 { font-size: clamp(26px, 2.2vw + 16px, 36px); line-height: 1.45; letter-spaci
 .strip-note { margin-top: 10px; font: 400 12.5px/1.8 var(--sans); color: var(--ink-3); }
 
 /* ---------- architecture ---------- */
-.premise { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; margin-bottom: 80px; border-top: 1px solid var(--rule); }
+.premise { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; margin-bottom: 80px; border-top: 1px solid var(--rule); }
 .premise > div { padding: 26px 28px 4px 0; display: grid; gap: 10px; align-content: start; min-width: 0; }
 .premise > div + div { padding-left: 28px; border-left: 1px solid var(--rule); }
 .premise .tag { font: 400 12px/1 var(--sans); letter-spacing: .18em; color: var(--ink-3); display: flex; align-items: center; gap: 10px; }
@@ -229,7 +224,7 @@ h2 { font-size: clamp(26px, 2.2vw + 16px, 36px); line-height: 1.45; letter-spaci
 /* ---------- tracks ---------- */
 .shared { margin-bottom: 88px; }
 .shared h3 { font-size: 13px; font-family: var(--sans); font-weight: 400; letter-spacing: .2em; color: var(--ink-3); margin-bottom: 26px; }
-.steps { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0 24px; }
+.steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 24px; }
 .step { position: relative; padding-top: 26px; min-width: 0; }
 .step::before { content: ""; position: absolute; top: 4px; left: 12px; right: -24px; height: 1px; background: var(--rule-2); transform-origin: left; animation: grow 1.4s cubic-bezier(.2,.7,.2,1) both; }
 .step:last-child::before { display: none; }
@@ -252,21 +247,16 @@ h2 { font-size: clamp(26px, 2.2vw + 16px, 36px); line-height: 1.45; letter-spaci
 }
 @keyframes growy { from { transform: scaleY(0); } to { transform: scaleY(1); } }
 
-.tracks { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 64px; align-items: start; }
-@media (max-width: 900px) { .tracks { grid-template-columns: 1fr; gap: 72px; } }
+.tracks { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 40px; align-items: start; }
+@media (max-width: 900px) { .tracks { grid-template-columns: 1fr; gap: 56px; } }
 .track { --tc: var(--a); min-width: 0; }
 .track[data-code="B"] { --tc: var(--b); }
 .track[data-code="C"] { --tc: var(--c); }
-.tracks .track:nth-child(3) { grid-column: 1 / -1; }
 .track-head { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 0 22px; align-items: start; padding-bottom: 26px; border-bottom: 1px solid var(--rule); }
 .letter { font: italic 500 76px/.8 var(--serif); color: var(--tc); margin-top: 4px; }
 .track-head .name { font-size: 22px; letter-spacing: .04em; }
 .track-head .owner { margin-top: 4px; font: 400 13px/1.6 var(--sans); color: var(--ink-3); letter-spacing: .06em; }
 .track-q { margin-top: 26px; font-size: 18px; line-height: 1.95; letter-spacing: .02em; }
-.progress { margin-top: 22px; display: flex; align-items: center; gap: 16px; font: 400 12.5px/1 var(--sans); color: var(--ink-3); letter-spacing: .06em; }
-.progress .bar { flex: 1; height: 1px; background: var(--rule); position: relative; }
-.progress .bar i { position: absolute; left: 0; top: -0.5px; height: 2px; background: var(--tc); width: 0; transition: width 1.6s cubic-bezier(.2,.7,.2,1); }
-.progress .num { font-size: 16px; color: var(--ink); letter-spacing: 0; }
 .live { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 4px 18px; min-height: 22px; font: 400 12.5px/1.7 var(--sans); color: var(--ink-3); }
 .live a { text-decoration: none; border-bottom: 1px solid var(--rule-2); }
 .live a:hover { color: var(--ink); border-bottom-color: var(--ink); }
@@ -281,7 +271,9 @@ h2 { font-size: clamp(26px, 2.2vw + 16px, 36px); line-height: 1.45; letter-spaci
 .ms.active .mpin { border-color: var(--warn); }
 .ms.active .mpin::after { content: ""; position: absolute; inset: 1.5px; border-radius: 50%; background: var(--warn); animation: breathe 2.4s infinite; }
 .ms details { padding: 8px 0; }
-.ms summary { list-style: none; cursor: pointer; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 14px; padding: 4px 0; }
+.ms summary, .ms-copy { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 14px; padding: 4px 0; }
+.ms summary { list-style: none; cursor: pointer; }
+.ms-copy { padding: 12px 0; }
 .ms summary::-webkit-details-marker { display: none; }
 .ms .mt { font-size: 16px; line-height: 1.7; letter-spacing: .02em; transition: color .3s; }
 .ms summary:hover .mt { color: var(--tc); }
@@ -488,10 +480,11 @@ footer .links { display: flex; flex-wrap: wrap; gap: 6px 24px; }
     <div class="read">
       <p class="eyebrow">MAI 期末專題　·　CLOTHO-AQA　·　QWEN2-AUDIO-7B</p>
       <h1>只用 <em>K</em> 個向量聽一段錄音，<br>模型還答得對嗎？</h1>
-      <p class="sub">Qwen2-Audio 會把一段錄音變成數百個音訊向量交給語言模型。我們在中間放進一個瓶頸，把它們收成 K 個 latent，再請凍結的語言模型回答 yes/no 題。A 線研究容量 K 決定哪些聲音線索留得下來；B 線研究讓壓縮器先讀題目，能不能幫它挑對證據。</p>
+      <p class="sub">我們把一段錄音壓成 K 個向量，再交給 Qwen2-Audio 回答問題。三條線分別研究聲音證據能保留多少、能不能依題目挑選，以及留下的證據能不能用來作答。</p>
       <div class="byline">
         <span><i class="swatch a"></i>A 線　瓶頸容量　<b>健賓</b></span>
-        <span><i class="swatch b"></i>B 線　問題導引　<b>cshsieh</b></span>
+        <span><i class="swatch b"></i>B 線　題幹導引　<b>cshsieh</b></span>
+        <span><i class="swatch c"></i>C 線　證據讀取　<b>pqweraddy</b></span>
         <span class="due" id="deadline" hidden></span>
       </div>
     </div>
@@ -522,13 +515,14 @@ footer .links { display: flex; flex-wrap: wrap; gap: 6px 24px; }
   <div class="wrap">
     <div class="sec-head read">
       <p class="kicker"><span class="no">一</span>動機與架構<span class="en">Motivation</span></p>
-      <h2>回答端永遠不變，<br>我們只動壓縮端。</h2>
-      <p class="lede">把數百個音訊向量收成固定的 K 個，就能直接量兩件事：留下多少資訊才夠用，以及先看題目能不能留對資訊。其他條件全部固定，所以分數的差異只來自壓縮端。</p>
+      <h2>聲音怎麼保留、<br>怎麼選、怎麼用。</h2>
+      <p class="lede">回答模型透過 K 個向量讀取聲音，並看到完整題目。A、B 改變壓縮端，C 固定向量，改變回答端讀取它們的方式。</p>
     </div>
     <div class="premise">
       <div><p class="tag">固定不動</p><h3>凍結的 Qwen2-Audio</h3><p>音訊編碼器、投影層、7B 語言模型都不訓練。回答端永遠讀到完整題目與 A/B 選項，只比較第一個輸出 token 是 A 還是 B。</p></div>
       <div><p class="tag"><i class="swatch a"></i>A 線的變因</p><h3>容量 K</h3><p>K = 1、4、16 個 latent，加上免訓練的平均池化對照。看哪些題型最先因為容量不足而答錯。</p></div>
       <div><p class="tag"><i class="swatch b"></i>B 線的變因</p><h3>壓縮時讀不讀題目</h3><p>題幹（不含選項）加進壓縮器的 query。換成錯置題、通用句或關閉，檢查效果是否來自題目內容。</p></div>
+      <div><p class="tag"><i class="swatch c"></i>C 線的變因</p><h3>回答端怎麼讀</h3><p>同一組 latent 分別直接解碼、經小型轉接層再解碼，比較模型能否用上相同的聲音證據。</p></div>
     </div>
 
     <div class="arch-tools">
@@ -561,8 +555,8 @@ footer .links { display: flex; flex-wrap: wrap; gap: 6px 24px; }
   <div class="wrap">
     <div class="sec-head read">
       <p class="kicker"><span class="no">二</span>分工與進度<span class="en">Tracks</span></p>
-      <h2>兩條研究線，<br>同一個瓶頸。</h2>
-      <p class="lede">兩線共用模型、資料切分與評分，各自選假說和對照。點開任一里程碑，可以看到結果與對應的檔案。進度截至 2026 年 11 月 23 日。</p>
+      <h2>三條研究線，<br>同一個瓶頸。</h2>
+      <p class="lede">每條線從同一個音訊瓶頸出發。下方依序列出已做的研究和下一步。</p>
     </div>
     <div class="shared">
       <h3>共同基礎</h3>
@@ -580,8 +574,8 @@ footer .links { display: flex; flex-wrap: wrap; gap: 6px 24px; }
   <div class="wrap">
     <div class="sec-head read">
       <p class="kicker"><span class="no">三</span>主要結果<span class="en">Findings</span></p>
-      <h2>容量有用，<br>讀題目還看不出幫助。</h2>
-      <p class="lede">A 線同時報告 340 題開發集和 514 題官方 test。B 線圖表使用 340 題開發集。兩組結果皆可用 repo 裡的逐題分數重算。</p>
+      <h2>增加容量有用，<br>題幹導引的效果有限。</h2>
+      <p class="lede">A 線報告開發集與官方測試的容量結果。B 線圖表呈現第一輪，第二輪涵蓋多事件錄音與 Clotho 多題訓練。C 線的研究設計與下一步可在研究線區查看。</p>
     </div>
     <div class="tabs" role="tablist" aria-label="結果分頁">
       <button class="tab" role="tab" id="tab-a" aria-controls="panel-a" aria-selected="true"><i class="swatch a"></i>容量與題型</button>
@@ -602,6 +596,8 @@ footer .links { display: flex; flex-wrap: wrap; gap: 6px 24px; }
         <p>聲源／事件題提升 12.4 個百分點，占整體淨增答對約 84%。完整音訊領先 K = 16 的估計為 3.6 點，仍未通過事前設定的 5 點非劣性門檻。</p>
         <p>數量／關係題在開發集觀察到的 14.5 點落差，未在官方 test 的主要選項順序重現。時間規律與聲學屬性題仍有較大的區間，需按各自條件判讀。</p>
         <p class="src"><a href="https://github.com/JianBin0218/mai-final/tree/main/phase2/a-final-v1" target="_blank" rel="noopener">官方 test 方案、案例與逐題結果</a></p>
+        <h3>讀得到的線索，回答端用得上嗎？</h3>
+        <p>探索實驗中，簡單分類器能從壓縮向量讀出相對音量，但兩個作答版本都接近猜測。下一步用只改變音量的錄音配對，檢查聲音線索的保留與使用。</p>
       </div>
     </div>
 
@@ -625,7 +621,8 @@ footer .links { display: flex; flex-wrap: wrap; gap: 6px 24px; }
         <p class="pull">原版在 K = 16 少了 <b>15.7</b> pp，但正確題幹與錯置題幹只差 <b>−0.4</b> pp。</p>
         <p>原版的題幹項訓練後約為 query 的 90 倍。加入 gate 並減去平均題幹後，表現回到接近純音訊的水準。正確與錯置題幹的對照仍缺乏穩定差異。</p>
         <p>在模型自然學到的尺度下，三個 seed 平均的正確題幹與錯置題幹都在 ±1 pp 內；更多訓練資料、改用 LM hidden state 也一樣。目前的機制沒有觀察到穩定的題目專屬幫助。</p>
-        <p class="src">重算　<code>python compare_guidance.py</code></p>
+        <p>第二輪加入逐槽路由，並在合成多事件錄音和 Clotho 多題訓練上比較。兩種導引方式都未達預定成功標準。多事件錄音在部分條件出現題幹效果，值得用新聲源獨立檢驗。</p>
+        <p class="src"><a href="https://github.com/JianBin0218/mai-final/tree/931f3fa7361d46cf69944b3aedcc5275f50a15ca/phase2/b2-v2" target="_blank" rel="noopener">B 線第二輪研究紀錄</a></p>
       </div>
     </div>
 
@@ -652,7 +649,7 @@ footer .links { display: flex; flex-wrap: wrap; gap: 6px 24px; }
     <div class="sec-head read">
       <p class="kicker"><span class="no">四</span>研究規劃<span class="en">Roadmap</span></p>
       <h2>接下來要做的事。</h2>
-      <p class="lede">每一項是一個實驗或想法，附自己的待辦清單。新的方向可以先開一條研究線，再把計畫掛上去。</p>
+      <p class="lede">A 追查音量線索，B 釐清多事件錄音裡的題幹效果，C 比較回答端的讀法。</p>
     </div>
     <div class="rm-bar" id="rm-bar" hidden>
       <div class="fchips" id="fchips" role="group" aria-label="依研究線篩選"></div>
@@ -706,7 +703,7 @@ footer .links { display: flex; flex-wrap: wrap; gap: 6px 24px; }
       <details>
         <summary><span class="q">v.</span><span>為什麼只比較 A、B 兩個 logit，不讓模型生成答案？</span><span class="pm" aria-hidden="true"></span></summary>
         <div class="ans">
-          <p>題目都是 yes/no，我們把選項寫成「A. yes / B. no」，只看第一個輸出 token 是 A 還是 B 的分數比較高。不需要解析生成的文字，評分完全確定，也能直接用 logit 差做分析。</p>
+          <p>Clotho-AQA 的題目是 yes/no，我們把答案放在 A、B 選項，直接比較第一個輸出 token 的分數。這樣可以固定評分規則，也能用 logit 差分析模型對聲音變化的反應。</p>
         </div>
       </details>
       <details>
@@ -723,7 +720,7 @@ footer .links { display: flex; flex-wrap: wrap; gap: 6px 24px; }
 
 <footer>
   <div class="wrap">
-    <p class="colophon"><b>Colophon</b>研究內容依據 main 的 PROJECT_HANDOFF.md，涵蓋 2026 年 11 月 23 日公布的 A 線最終結果。</p>
+    <p class="colophon"><b>Colophon</b>研究內容依據專題研究紀錄與各線交接，更新至 2026 年 11 月 24 日。</p>
     <p class="links">
       <a href="https://github.com/JianBin0218/mai-final" target="_blank" rel="noopener">GitHub</a>
       <a href="https://github.com/JianBin0218/mai-final/pull/1" target="_blank" rel="noopener">PR #1</a>
@@ -1167,38 +1164,28 @@ if (document.fonts && document.fonts.ready) document.fonts.ready.then(renderEdge
 
 /* ---------- tracks ---------- */
 const SHARED = [
-  { s: "done", t: "原模型的聲音能力", r: "ESC-50 事件二選一 49/50；CompA 順序配對 404/724，時序是壓力測試。" },
-  { s: "done", t: "瓶頸工程驗證", r: "凍結 backbone、只訓練壓縮器；重新解碼的 logit 差為 0，單卡峰值約 16 GiB。" },
-  { s: "done", t: "Clotho-AQA pilot", r: "48 段訓練、32 段驗證錄音。K = 16 純音訊 53/64，完整音訊 54/64。" },
-  { s: "done", t: "共用驗證集 fresh_val", r: "官方 validation 另外 170 段錄音、340 題，兩線逐題對齊。" },
-  { s: "done", t: "PR #1：B 線併入 main", r: "B 線的題幹導引網格和逐題對照已合併。" },
+  { s: "done", t: "共用瓶頸架構", r: "凍結 Qwen2-Audio，只訓練壓縮器，讓音訊證據經由固定數量的向量送到回答端。" },
+  { s: "done", t: "對齊自然問答", r: "在同一批 Clotho-AQA 開發題上比較完整音訊、純文字與壓縮版本。" },
+  { s: "done", t: "分開檢查聲音與文字", r: "固定題目換錄音、固定錄音換壓縮端題幹，分別測聲音與題目內容會不會改變答案。" },
 ];
 const TRACKS = [
-  { code: "A", name: "瓶頸容量與證據保留", owner: "負責　健賓", q: "瓶頸容量決定哪些聲音線索能被保留？", ms: [
-    { s: "done", t: "共同起點與控制組", r: "從同一個父 checkpoint 續訓 192 步，驗證 53 → 54/64，作為 B 線的音訊對照。", f: "phase2/warm-k16-s17-audio" },
-    { s: "done", t: "容量與固定池化", r: "學習式 K = 4 答對 44/64、K = 16 答對 53/64；免訓練的平均池化只有 30、32/64。", f: "compare_capacity.py" },
-    { s: "done", t: "三個 seed 與題型", r: "K = 16 − K = 4 平均 +13.5 pp（+5.7 至 +22.9），增益集中在聲源／事件題。", f: "analyze_capacity_types.py" },
-    { s: "done", t: "新錄音重現容量優勢", r: "fresh_val 上 K = 4 平均 249.0、K = 16 平均 279.7，差 +9.0 pp（+5.9 至 +12.3）。", f: "phase2/fresh-capacity" },
-    { s: "done", t: "原模型與聲音置換對照", r: "完整音訊 292、只看文字 182、換成其他錄音 207（/340）；配對的聲音帶來 +25.0 pp。", f: "phase2/fresh-controls" },
-    { s: "done", t: "關係題 latent 置換", r: "混合表示中，保留原錄音的學習式修正比只保留分段平均高 11.1 pp（+2.0 至 +20.3）。", f: "phase2/interventions-v1" },
-    { s: "done", t: "相反正解配對與音量讀出", r: "交換學習式修正後 80.6% 跟著來源錄音的正解；latent 的線性音量讀出 84–90%，問答卻只有 51.5%。", f: "phase2/opposite-v1、level-probe-v1" },
-    { s: "done", t: "自然錄音容量確認", r: "30 組同題相反正解的自然配對，K = 16 比 K = 4 提高排序正確率 7.5 個百分點。", f: "phase2/a-natural-capacity-v1" },
-    { s: "done", t: "獨立聲源確認", r: "1.6 秒聲源配對的 K = 16 混合 latent 分數有 99.7% 跟著學習式修正來源。", f: "phase2/a-event-components-v1" },
-    { s: "done", t: "官方 test 最終評估", r: "257 段錄音、514 題，K = 16 比 K = 4 高 10.6 個百分點。", f: "phase2/a-final-v1" },
-    { s: "paused", t: "平衡配對 counterbalanced-v1", r: "完整原模型評測途中停止，只保存 manifest 與部分結果，不計入結論。" },
-    { s: "next", t: "音量讀出的泛化", r: "尚未執行。" },
+  { code: "A", name: "瓶頸容量與證據保留", owner: "負責　健賓", q: "壓成幾個向量後，還保有足夠的作答證據？", ms: [
+    { s: "done", t: "比較容量與壓縮方式", r: "比較學習式壓縮與固定平均池化，再用自然錄音測試增加容量的效果。", url: "https://github.com/JianBin0218/mai-final/blob/main/PROJECT_HANDOFF.md" },
+    { s: "done", t: "官方測試重現容量增益", r: "514 題上，K = 4 為 69.0%，K = 16 為 79.6%，完整音訊為 82.5%。", url: "https://github.com/JianBin0218/mai-final/tree/main/phase2/a-final-v1" },
+    { s: "done", t: "從向量讀出聲音線索", r: "交換向量成分能改變聲源題的答案。音量探索中，獨立讀出器也能辨認相對音量。", url: "https://github.com/JianBin0218/mai-final/blob/main/PROJECT_HANDOFF.md#已知相反正解的配對與音量讀出" },
+    { s: "next", t: "研究相對音量", r: "用配對錄音分辨音量線索能否保留、以及回答端怎麼使用。", url: "https://github.com/JianBin0218/mai-final/tree/main/phase2/a-level-contrast-v1" },
   ] },
-  { code: "B", name: "問題導引", owner: "負責　cshsieh", q: "壓縮器先讀題目，能不能幫它挑對聲音證據？", ms: [
-    { s: "done", t: "第一版題幹 pilot", r: "正確題幹 31/64，比純音訊低 34.4 pp；和錯置題幹只差 2 題。", f: "phase2/clotho-k16-s17-question" },
-    { s: "done", t: "共同起點續訓，找到失敗機制", r: "從同一父模型出發仍掉到 27/64。題幹項是 query 的 90 倍，attention 飽和，預測和題目無關。", f: "phase2/gpu3warm-k16-s17-question" },
-    { s: "done", t: "題幹導引網格", r: "K = 1/4/16 × 3 seed × 4 種分支。gated 限制尺度後干擾消失；在學到的尺度下，正確 − 錯置題幹都在 ±1 pp 內。", f: "guidance_grid.sh" },
-    { s: "done", t: "擴充資料與 LM hidden state", r: "768 題訓練時 K = 4 進步 +2.5 pp，推論時關閉題幹仍保留，無法分離是哪個訓練因素造成；改用 LM 第 16 層表示也沒有題目專屬效果。", f: "phase2/guidance-v1/runs.csv" },
-    { s: "done", t: "劑量反應探針", r: "題幹項超過 query 範數約 0.5 倍開始傷害，K = 16 最多少 74 題；模型學到的 gate 停在 0.02–0.39。", f: "compare_guidance.py --probe" },
-    { s: "done", t: "對齊 fresh_val 並合併 main", r: "66 個模型在 A 線的 340 題上重評，結論不變。", f: "phase2/guidance-v1" },
-    { s: "next", t: "下一輪候選", r: "slot 層級題幹路由、時序合成題、latent 線性探針，詳見研究規劃。" },
+  { code: "B", name: "題幹導引", owner: "負責　cshsieh", q: "壓縮器先看題目，能不能挑對聲音證據？", ms: [
+    { s: "done", t: "測試題幹偏移", r: "直接加題幹會拉低表現。限制強度後，干擾減少，正確題幹相較錯置題幹仍沒有穩定增益。", url: "https://github.com/JianBin0218/mai-final/tree/main/phase2/guidance-v1" },
+    { s: "done", t: "測試逐槽路由與多事件錄音", r: "第二輪以合成錄音和 Clotho 多題訓練測試。兩種導引方式都未達預定成功標準。", url: "https://github.com/JianBin0218/mai-final/tree/931f3fa7361d46cf69944b3aedcc5275f50a15ca/phase2/b2-v2" },
+    { s: "next", t: "聚焦同一錄音中的不同事件", r: "把多事件錄音上的初步訊號當作假說，用新聲源重測正確與錯置題幹的差距。", url: "https://github.com/JianBin0218/mai-final/blob/931f3fa7361d46cf69944b3aedcc5275f50a15ca/PROJECT_HANDOFF.md#對-b-線的建議" },
+  ] },
+  { code: "C", name: "回答端讀取證據", owner: "負責　pqweraddy", q: "固定壓縮後的向量，改變讀法能不能答得更好？", ms: [
+    { s: "done", t: "訂出讀取證據的研究設計", r: "共用 A 線的 K = 16 向量，將變因放在回答端。先選擇事件數量作為可控制的聲音線索。", url: "https://github.com/JianBin0218/mai-final/blob/67425e739d4d5889c7047ea5525f800ad580da12/PROJECT_HANDOFF.md#c-線讓回答端讀取壓縮證據" },
+    { s: "next", t: "比較原回答端與小型轉接層", r: "用相同題目和向量比較作答，再交換錄音的向量，檢查改善是否跟著聲音走。" },
   ] },
 ];
-const ST_LABEL = { done: "完成", active: "進行中", paused: "暫停", next: "下一步" };
+const ST_LABEL = { done: "已做", next: "下一步" };
 function renderTracks() {
   const ss = $("#shared-steps");
   ss.innerHTML = "";
@@ -1206,18 +1193,17 @@ function renderTracks() {
   const grid = $("#track-grid");
   grid.innerHTML = "";
   for (const T of TRACKS) {
-    const done = T.ms.filter((m) => m.s === "done").length, total = T.ms.length;
-    const fill = h("i");
     grid.append(h("article", { class: "track", "data-code": T.code },
       h("div", { class: "track-head" }, h("span", { class: "letter", "aria-hidden": "true", text: T.code }), h("div", {}, h("h3", { class: "name", text: T.name }), h("p", { class: "owner", text: T.owner }))),
       h("p", { class: "track-q", text: T.q }),
-      h("div", { class: "progress" }, h("span", {}, "里程碑"), h("span", { class: "bar" }, fill), h("span", { class: "num", text: `${done} / ${total}` })),
       h("div", { class: "live", id: "live-" + T.code }),
-      h("ol", { class: "mslist" }, T.ms.map((m) => h("li", { class: "ms " + m.s },
-        h("span", { class: "mpin", "aria-hidden": "true" }),
-        h("details", {}, h("summary", {}, h("span", { class: "mt", text: m.t }), h("span", { class: "st", text: ST_LABEL[m.s] }), h("span", { class: "mr", text: m.r })),
-          h("div", { class: "more" }, m.f ? ["對應檔案　", h("code", { text: m.f })] : "尚無對應檔案。")))))));
-    requestAnimationFrame(() => requestAnimationFrame(() => { fill.style.width = (100 * done / total) + "%"; }));
+      h("ol", { class: "mslist" }, T.ms.map((m) => {
+        const copy = [h("span", { class: "mt", text: m.t }), h("span", { class: "st", text: ST_LABEL[m.s] }), h("span", { class: "mr", text: m.r })];
+        return h("li", { class: "ms " + m.s }, h("span", { class: "mpin", "aria-hidden": "true" }),
+          m.url ? h("details", {}, h("summary", {}, copy),
+            h("p", { class: "more" }, h("a", { href: m.url, target: "_blank", rel: "noopener" }, "研究紀錄")))
+            : h("div", { class: "ms-copy" }, copy));
+      }))));
   }
 }
 renderTracks();
@@ -1468,7 +1454,7 @@ async function initRoadmap() {
   }, fail);
 }
 function renderLiveCounts() {
-  for (const code of ["A", "B"]) {
+  for (const { code } of TRACKS) {
     const box = $("#live-" + code);
     if (!box) continue;
     box.innerHTML = "";
@@ -1482,7 +1468,7 @@ function renderLiveCounts() {
   }
 }
 function renderExtraTracks() {
-  const list = sortedTracks().filter(([id]) => id !== "A" && id !== "B");
+  const list = sortedTracks().filter(([id]) => !TRACKS.some((track) => track.code === id));
   const wrap = $("#extra-wrap"), box = $("#extra-tracks");
   wrap.hidden = !list.length;
   box.innerHTML = "";
@@ -1501,8 +1487,7 @@ function renderRoadmap() {
   bar.hidden = false;
   $("#rm-actions").hidden = RM.readOnly;
   if (RM.mode === "static") {
-    note.hidden = false;
-    note.innerHTML = `這是靜態版本${RM.updated ? "（資料更新於 " + RM.updated + "）" : ""}。要修改規劃，請編輯 <code>docs/index.html</code> 開頭的 <code>roadmap-seed</code> 資料並 commit；在 Claude 線上版裡，組員可以直接在頁面上新增與編輯。`;
+    note.hidden = true;
   } else if (RM.readOnly) {
     note.hidden = false;
     note.textContent = "你目前只能檢視研究規劃。需要編輯時，請擁有者把你的權限設為 Contributor 或以上。";

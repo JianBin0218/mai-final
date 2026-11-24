@@ -53,12 +53,12 @@
 | 五 常見疑問 | 名詞解釋，例如 latent、為什麼推論時看得到題目 | 直接改 HTML |
 | 頁尾 | 資料來源與更新日期 | `.colophon` |
 
-**`TRACKS` 里程碑格式。** `{ s, t, r, f }`：
+**`TRACKS` 里程碑格式。** `{ s, t, r, url }`
 
-- `s`：狀態，`"done"`、`"active"`、`"paused"` 或 `"next"`。
+- `s`：`"done"` 為已做的研究，`"next"` 為下一步。
 - `t`：標題。
 - `r`：一句結果或目的。
-- `f`：可展開的細節。
+- `url`：可選的研究紀錄連結。讀者可展開里程碑查看連結。
 
 **`roadmap-seed` 格式。**
 
@@ -89,11 +89,8 @@
 
 產生頁面的工作使用唯讀的 GitHub token。另一個工作只接收這個 HTML 檔，確認 `main` 仍指向同一個來源版本後開草稿 PR。組員審核數字和頁面後再合併。停用時將 `MAI_SITE_UPDATES_ENABLED` 改為 `false`。
 
-**線上版。** cshsieh 另外在 claude.ai 發布過一份可以共同編輯看板的副本。它不會跟著 repo 更新，以 repo 裡的這份為準。
+**線上版。** [專題總覽](https://mai-audio-research-overview.fastskunk.chatgpt.site) 使用 ChatGPT Sites 發布，以 repo 裡的 HTML 為來源。cshsieh 另有一份可共同編輯看板的 Claude 副本。
 
 ## 六、目前待更新的內容
 
-網頁已整理 PR #1 的 B 線驗證結果和 `aad71db` 的 A 線官方 test。後續仍可補充：
-
-1. **C 線**的讀取假說和實驗設計在 `codex/track-c-handoff` 分支。合併後可加到分工與規劃。
-2. **B 線**的 B2 計劃與結果在 `track-b-next` 分支。合併後更新 B 欄里程碑與看板。
+網頁已整理 A 線官方測試與相對音量規劃、B 線首輪與 `track-b-next` 的第二輪結果，以及 `codex/track-c-handoff` 的 C 線研究設計。後續更新優先保留各線的研究問題、已有成果和下一步。

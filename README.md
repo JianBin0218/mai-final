@@ -1,6 +1,6 @@
 # Audio bottleneck baseline
 
-[中文專題進度、暫定規劃與研究分工](PROJECT_HANDOFF.md) · [專題總覽網頁](docs/index.html)（單一 HTML 檔，下載後用瀏覽器打開即可）
+[專題總覽網頁](https://mai-audio-research-overview.fastskunk.chatgpt.site) · [中文研究紀錄](PROJECT_HANDOFF.md) · [總覽頁原始檔](docs/index.html)
 
 The shared server is cml30 (`/tmp2/b12902071/m_final`), but every script runs on any machine with one 24 GB GPU. The Git checkout contains code and small result files. The `.venv`, model, audio and checkpoints stay on the machine that runs them.
 
