@@ -1,0 +1,248 @@
+{
+ "K1": {
+  "accuracy": {
+   "audio-correct": 216.66666666666666,
+   "gatedc-correct": 213.66666666666666,
+   "gatedc-wrong": 214.66666666666666,
+   "gatedc-generic": 216.0,
+   "gatedc-none": 215.33333333333334,
+   "route-correct": 212.0,
+   "route-wrong": 214.66666666666666,
+   "route-generic": 214.0,
+   "route-none": 212.66666666666666
+  },
+  "contrasts": {
+   "gatedc:correct_minus_audio": [
+    -0.008823529411764706,
+    -0.020588235294117647,
+    0.0029411764705882353
+   ],
+   "gatedc:correct_minus_wrong": [
+    -0.0029411764705882353,
+    -0.012745098039215688,
+    0.0068627450980392165
+   ],
+   "gatedc:correct_minus_none": [
+    -0.004901960784313725,
+    -0.012745098039215688,
+    0.0029411764705882353
+   ],
+   "route:correct_minus_audio": [
+    -0.01372549019607843,
+    -0.02450980392156863,
+    -0.002941176470588235
+   ],
+   "route:correct_minus_wrong": [
+    -0.00784313725490196,
+    -0.014705882352941176,
+    -0.00196078431372549
+   ],
+   "route:correct_minus_none": [
+    -0.0019607843137254897,
+    -0.006862745098039215,
+    0.0029411764705882353
+   ]
+  },
+  "by_type": {
+   "acoustic_property": {
+    "audio-correct": 0.7058823529411765,
+    "gatedc-correct": 0.7058823529411765,
+    "gatedc-wrong": 0.7058823529411765,
+    "route-correct": 0.7058823529411765,
+    "route-wrong": 0.7058823529411765
+   },
+   "count_or_relation": {
+    "audio-correct": 0.6594202898550724,
+    "gatedc-correct": 0.6666666666666666,
+    "gatedc-wrong": 0.6594202898550724,
+    "route-correct": 0.6521739130434783,
+    "route-wrong": 0.6594202898550724
+   },
+   "scene_context": {
+    "audio-correct": 0.8111111111111111,
+    "gatedc-correct": 0.8000000000000002,
+    "gatedc-wrong": 0.8000000000000002,
+    "route-correct": 0.8,
+    "route-wrong": 0.8111111111111111
+   },
+   "source_or_event": {
+    "audio-correct": 0.6522435897435899,
+    "gatedc-correct": 0.6394230769230769,
+    "gatedc-wrong": 0.6394230769230769,
+    "route-correct": 0.6314102564102563,
+    "route-wrong": 0.641025641025641
+   },
+   "time_pattern": {
+    "audio-correct": 0.36752136752136755,
+    "gatedc-correct": 0.358974358974359,
+    "gatedc-wrong": 0.39316239316239315,
+    "route-correct": 0.37606837606837606,
+    "route-wrong": 0.37606837606837606
+   }
+  }
+ },
+ "K4": {
+  "accuracy": {
+   "audio-correct": 253.66666666666666,
+   "gatedc-correct": 256.3333333333333,
+   "gatedc-wrong": 258.3333333333333,
+   "gatedc-generic": 256.0,
+   "gatedc-none": 256.0,
+   "route-correct": 256.3333333333333,
+   "route-wrong": 255.66666666666666,
+   "route-generic": 255.66666666666666,
+   "route-none": 257.6666666666667
+  },
+  "contrasts": {
+   "gatedc:correct_minus_audio": [
+    0.007843137254901962,
+    -0.006862745098039215,
+    0.022549019607843137
+   ],
+   "gatedc:correct_minus_wrong": [
+    -0.0058823529411764705,
+    -0.01764705882352941,
+    0.004901960784313726
+   ],
+   "gatedc:correct_minus_none": [
+    0.0009803921568627455,
+    -0.00784313725490196,
+    0.00980392156862745
+   ],
+   "route:correct_minus_audio": [
+    0.00784313725490196,
+    -0.00882352941176471,
+    0.025490196078431372
+   ],
+   "route:correct_minus_wrong": [
+    0.0019607843137254906,
+    -0.00980392156862745,
+    0.01372549019607843
+   ],
+   "route:correct_minus_none": [
+    -0.003921568627450981,
+    -0.01470588235294118,
+    0.006862745098039215
+   ]
+  },
+  "by_type": {
+   "acoustic_property": {
+    "audio-correct": 0.7647058823529411,
+    "gatedc-correct": 0.7843137254901961,
+    "gatedc-wrong": 0.8039215686274509,
+    "route-correct": 0.7647058823529411,
+    "route-wrong": 0.8039215686274509
+   },
+   "count_or_relation": {
+    "audio-correct": 0.6811594202898551,
+    "gatedc-correct": 0.6811594202898551,
+    "gatedc-wrong": 0.6884057971014492,
+    "route-correct": 0.7318840579710144,
+    "route-wrong": 0.7391304347826089
+   },
+   "scene_context": {
+    "audio-correct": 0.9777777777777777,
+    "gatedc-correct": 0.9666666666666667,
+    "gatedc-wrong": 0.9666666666666667,
+    "route-correct": 0.9555555555555556,
+    "route-wrong": 0.9444444444444444
+   },
+   "source_or_event": {
+    "audio-correct": 0.7964743589743589,
+    "gatedc-correct": 0.8028846153846154,
+    "gatedc-wrong": 0.8044871794871795,
+    "route-correct": 0.7980769230769231,
+    "route-wrong": 0.7948717948717948
+   },
+   "time_pattern": {
+    "audio-correct": 0.3675213675213675,
+    "gatedc-correct": 0.40170940170940167,
+    "gatedc-wrong": 0.4273504273504273,
+    "route-correct": 0.38461538461538464,
+    "route-wrong": 0.3675213675213675
+   }
+  }
+ },
+ "K16": {
+  "accuracy": {
+   "audio-correct": 293.0,
+   "gatedc-correct": 288.3333333333333,
+   "gatedc-wrong": 286.6666666666667,
+   "gatedc-generic": 289.0,
+   "gatedc-none": 289.3333333333333,
+   "route-correct": 288.3333333333333,
+   "route-wrong": 289.0,
+   "route-generic": 290.3333333333333,
+   "route-none": 290.6666666666667
+  },
+  "contrasts": {
+   "gatedc:correct_minus_audio": [
+    -0.01372549019607843,
+    -0.0303921568627451,
+    0.0019607843137254897
+   ],
+   "gatedc:correct_minus_wrong": [
+    0.004901960784313726,
+    -0.006862745098039215,
+    0.015686274509803925
+   ],
+   "gatedc:correct_minus_none": [
+    -0.0029411764705882366,
+    -0.014705882352941176,
+    0.007843137254901962
+   ],
+   "route:correct_minus_audio": [
+    -0.013725490196078435,
+    -0.02747549019607822,
+    -6.530723674265627e-19
+   ],
+   "route:correct_minus_wrong": [
+    -0.0019607843137254906,
+    -0.00980392156862745,
+    0.00588235294117647
+   ],
+   "route:correct_minus_none": [
+    -0.0068627450980392165,
+    -0.014705882352941176,
+    0.0009803921568627449
+   ]
+  },
+  "by_type": {
+   "acoustic_property": {
+    "audio-correct": 0.7450980392156863,
+    "gatedc-correct": 0.8039215686274509,
+    "gatedc-wrong": 0.784313725490196,
+    "route-correct": 0.7647058823529411,
+    "route-wrong": 0.784313725490196
+   },
+   "count_or_relation": {
+    "audio-correct": 0.8115942028985508,
+    "gatedc-correct": 0.7971014492753623,
+    "gatedc-wrong": 0.7826086956521737,
+    "route-correct": 0.8043478260869565,
+    "route-wrong": 0.8115942028985507
+   },
+   "scene_context": {
+    "audio-correct": 0.9777777777777777,
+    "gatedc-correct": 0.9777777777777777,
+    "gatedc-wrong": 0.9666666666666666,
+    "route-correct": 0.9666666666666667,
+    "route-wrong": 0.9777777777777777
+   },
+   "source_or_event": {
+    "audio-correct": 0.9070512820512822,
+    "gatedc-correct": 0.8990384615384616,
+    "gatedc-wrong": 0.8926282051282052,
+    "route-correct": 0.8974358974358974,
+    "route-wrong": 0.8974358974358974
+   },
+   "time_pattern": {
+    "audio-correct": 0.6410256410256411,
+    "gatedc-correct": 0.5555555555555555,
+    "gatedc-wrong": 0.5811965811965811,
+    "route-correct": 0.5811965811965812,
+    "route-wrong": 0.5726495726495726
+   }
+  }
+ }
+}
