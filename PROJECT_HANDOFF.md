@@ -789,3 +789,83 @@ bash b2_confirm.sh 0 "full 1 4 16"
 
 - 若要繼續，只在 K=4、16、多事件的條件下，預先固定新方案，用新的刺激再確認一次。ESC-50 fold 2 已經用完，需要另一個資料來源（例如 FSD50K）。
 - 和 C 線的結果一起解讀：C 若顯示回答端讀得到 latent 裡的證據，B 的瓶頸就在壓縮端怎麼依題選證據；若讀不到，壓縮端選得再好也幫不上。
+
+### B3／B4 研究紀錄｜LLM 自己寫 latent，以及 latent 有沒有被用上（2026-11-25，進行中，探索性）
+
+**B3：讓 Qwen 自己產生 K 個 latent（`b3_latent.py`）。** 第一次跑 LLM 讀〔音訊〕〔題目〕和 K 個可學習 token，取最後一層 hidden state、逐維度縮放到音訊 token 的尺度，當作 latent。第二次沿用 B2 的回答端，只看 latent 和題目。LLM 凍結，只訓練 latent token 與縮放。以下都是 seed 17 單一模型。
+
+合成任務開發集，同錄音排序正確率（%）：
+
+| 寫入方式 | K | N=1 | N=2 | N=4 | N=6 |
+|---|---:|---:|---:|---:|---:|
+| 完整音訊（參考） | — | 96 | 92 | 87 | 78 |
+| B2 外部壓縮器，純音訊（三個 seed） | 1 | 62.7 | 52.3 | 50.0 | 56.0 |
+| B2 外部壓縮器，純音訊（三個 seed） | 4 | 92.3 | 74.0 | 65.7 | 63.7 |
+| Qwen，看題目，正確題 | 1 | 97 | 93 | 91 | 87 |
+| Qwen，看題目，錯置題 | 1 | 5 | 5 | 14 | 13 |
+| Qwen，看題目，正確題 | 4 | 96 | 92 | 88 | 85 |
+| Qwen，看題目，錯置題 | 4 | 5 | 9 | 12 | 15 |
+| Qwen，不看題目 | 1 | 91 | 75 | 71 | 67 |
+| Qwen，不看題目 | 4 | 98 | 88 | 82 | 73 |
+
+- **寫入題目可主導答案。** 寫入端看得到正確題目時，K=1 在這批合成開發資料的排序達到完整音訊參考值；換成同錄音的相反題後，排序大幅反轉。這符合「寫入器先形成答案，再透過 latent 傳給回答端」的解釋。錯置題同時改變題意與正解，仍需額外對照區分傳遞答案和保留特定事件線索。
+- **合成開發集上的純音訊對照。** N=1、2、4 平均，Qwen 的 K=4 比外部壓縮器高 12.0 點（95% 區間 +7.4 至 +16.7），K=1 高 24.0 點（+17.8 至 +30.4）。區間重抽樣錄音，固定已訓練的 checkpoint。Clotho fresh_val 的原選項順序中，Qwen 不看題目 K=4 答對 288/340，B2 外部三 seed 平均為 253.7；Qwen 看題目 K=16 正確題答對 288、錯置題 274，B2 外部平均為 293.0。
+
+**和 `codex/ab-readout-followup` 的 Qwen 寫入結果比對（`b3_pairs.py`）。** 依其方案重新產生 72 組重測配對（聲源、題目、目標位置與其 `pairs.json` 一致），用相同的配對排序評分。
+
+| 模型（K=4） | 配對排序 %（兩種順序平均，95% 區間） |
+|---|---|
+| 完整音訊 | 91.3（92.4／90.3；該分支報告 92.4／88.9） |
+| B2 外部，Clotho 訓練（seed 17／18／19） | 74.7／74.0／68.1 |
+| Qwen 不看題目，Clotho 訓練 | 66.3 [56.6, 76.0] |
+| B2 外部，合成訓練（seed 17／18／19） | 69.4／67.4／70.1 |
+| Qwen 不看題目，合成訓練 | 81.6 [72.9, 89.6]，比外部 +12.2 [−0.7, +24.7] |
+| Qwen 看題目，合成訓練：正確／錯置／不給題目 | 93.1／54.9／44.4 |
+
+在這次重建的四事件配對，Clotho 訓練組的 Qwen 寫入器點估計較低，合成訓練組的點估計方向相反。合成組相對同 seed 外部壓縮器的差距區間涵蓋零。兩個專案分支使用不同寫入器實作及 checkpoint，重建音訊的完整音訊分數也有小幅差異。訓練資料是可檢驗的解釋，需固定寫入架構與訓練預算，在新配對確認。
+
+**B4：回到原本的問題，音訊 latent reasoning 有沒有被用上（`b4_think.py`）。** 三個條件共用寫入架構（第一次跑含音訊、題目與選項、start token、K 個 query），各自訓練。回答端的音訊條件如下。
+
+- **軟：** 回答時同時看得到音訊和 latent，像 CoAT。問：latent 有沒有被繞過？
+- **硬：** 只看得到 latent。問：切斷捷徑後掉多少？
+- **中間：** 訓練時以 0.5 機率遮掉回答端的音訊。問：能不能逼它把資訊寫進 latent？
+
+對照組包括純 LoRA、只加 start／end token（K=0）、寫入端不看題目、軟版本加 CoAT 式重建損失（`--recon`，以 latent 重建音訊 token 的分段平均作輔助目標）。評分時對每題的 latent 做介入，包括換成另一題的 latent、換成評估集平均、歸零與加噪。看得到音訊的版本另外拿掉音訊評一次。正式比較原順序與反轉順序時，兩端各自使用同一個選項排列。`--writer-choice-order fixed-original` 固定寫入端看原順序，可專門測選項順序不對齊的影響。
+
+資料（`b4_data.py`，放在 `data/reasoning/`，不進 Git）：
+
+| 資料 | 用途 | 題數 | 授權 |
+|---|---|---|---|
+| AVQA-R1-6K | 訓練 3,991／開發 500（seed 17 切分），另有 valid 1,911 | 四選一，環境音 | Apache-2.0 |
+| MMAU test-mini | 開發評估 | 1,000（音樂 334、環境音 333、語音 333） | CC BY-NC 4.0 |
+| MMAR | 保留到方案固定後才評 | 995（5 題答案不在選項中，略過） | CC BY-NC 4.0 |
+
+原始 Qwen2-Audio（以選項字母 logit 作答，兩種順序平均）：
+
+| 評估集 | 有音訊 | 不給音訊 |
+|---|---:|---:|
+| AVQA 開發 500 題 | 67.3 | 32.4 |
+| MMAU test-mini 全部 | 65.1 [62.5, 67.6] | 41.9 |
+| MMAU 音樂／環境音／語音 | 65.7／69.7／59.9 | 45.2／43.1／37.4 |
+
+MMAU 純文字為 41.9%，正解原先落在 A 的比例為 39.5%。分數報告兩種順序平均，並並列純文字基準。
+
+**首輪試跑。** 方案為 seed 17、K=4、3,000 步，包含純 LoRA、K=0、軟、軟加重建、硬、硬且不看題目及中間七組，評估 AVQA 開發與 MMAU。小規模測試（40 題、600 步）的軟版本，latent 換成別題、平均、歸零時答案都不變。審查前的試跑固定寫入端的原始選項順序。對齊順序後可直接重評既有 checkpoint，無須重訓。提案可引用已歸檔的原模型基準，三種音訊條件的適配結果待逐題輸出歸檔與核對。
+
+**背景文獻。** CoAT 用與音訊 token 等長的連續思考區塊，在同一次 prefill 中保留音訊。Qwen2-Audio 的 MMAU 準確率為 52.50% → 66.90%。論文的讀出及移除整個訓練元件對照，與 B4 固定模型後置換 latent 的問題不同。SPARE 用 SALMONN 檢驗長推理序列可能使注意力偏離音訊的假設。[CoAT 方法與表 1](https://arxiv.org/html/2606.18273v2#S3) · [SPARE](https://arxiv.org/abs/2609.20849)
+
+**限制。** 都是單一 seed。AVQA 訓練題只有環境音，MMAU 音樂與語音只能看轉移；「容量對題型」需要再加語音資料（例如 MMSU，MIT 授權）。AVQA 與 MMAU 的來源影片可能部分重疊，尚未檢查。
+
+逐題分數：[phase2/b3-pilot](phase2/b3-pilot)、[phase2/b4-pilot](phase2/b4-pilot)。重算與重跑：
+
+```bash
+python b3_latent.py train --data synthetic --arm internal-blind --k 4 --seed 17 --out runs/b3-pilot/syn-k4-s17-internal-blind
+python b3_analyze.py synthetic --runs runs/b3-pilot
+python b3_pairs.py --pairs runs/b3-pairs/stimuli/pairs.json --out runs/b3-pairs/scores.csv
+python b4_data.py mmau && python b4_data.py mmar && python b4_data.py avqa
+python b4_think.py train --no-lora --no-think --steps 0 --eval avqa-dev mmau --out runs/b4/base
+bash b4_pilot.sh 1 "soft-k4:--reader soft --k 4" "hard-k4:--reader hard --k 4" "mid-k4:--reader mid --k 4"
+python b4_analyze.py runs/b4/*/scores-mmau.csv
+```
+
+`b3_pairs.py` 的配對錄音由 `codex/ab-readout-followup` 的 `writer_pairs.py` 產生。`bottleneck.py` 未改動。
