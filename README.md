@@ -1,6 +1,10 @@
-# Audio bottleneck baseline
+# Do audio language models use their own latents to answer questions?
 
-[專題總覽網頁](https://mai-audio-research-overview.fastskunk.chatgpt.site) · [中文研究紀錄](PROJECT_HANDOFF.md) · [總覽頁原始檔](docs/index.html)
+[現行研究計畫與紀錄](PROJECT_HANDOFF.md) · [早期 A／B／C 總覽](https://mai-audio-research-overview.fastskunk.chatgpt.site) · [總覽頁原始檔](docs/index.html)
+
+**When Qwen2-Audio-7B-Instruct can still access the original audio, do the latents it produces affect its answers?** In the primary B4 comparison, we keep the trained model, audio, question, and choices fixed and intervene on the latents. We measure changes in predictions and scores, then use paired recordings to test whether changes follow the substituted audio evidence.
+
+The hard bottleneck routes audio evidence through K vectors. The external compressor (A) provides a capacity baseline. Readout and adapter experiments (C) help diagnose which evidence can be recovered. B4 tests reliance on the model's own latents, with multi-step reasoning as a follow-up question. See [主實驗與對照](PROJECT_HANDOFF.md#主實驗與對照) and [下一步](PROJECT_HANDOFF.md#下一步). The sections below document the implementation and previous experiments.
 
 [第三位組員的研究交接：C 線，讓回答端讀取壓縮證據](PROJECT_HANDOFF.md#c-線讓回答端讀取壓縮證據)
 
