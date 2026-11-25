@@ -1,12 +1,12 @@
 <!doctype html>
-<!-- site-source: 8c78de94c3a0eda84a93b4bc1fd37184ec5e092f -->
+<!-- site-source: 4d144a32de6eb857ca7046b2d9de3ec647d4f33c -->
 <html lang="zh-Hant">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>音訊 Latent 瓶頸</title>
+<title>音訊 LLM 的 Latent</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="MAI 期末專題：音訊問答中的 latent 瓶頸。A、B、C 三條研究線的成果與下一步。">
+<meta name="description" content="MAI 期末專題：音訊 LLM 會用自己產生的 latent 答題嗎？B4 的 latent 介入主實驗，以及 A、C 線的基準與對照。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,500&family=Noto+Serif+TC:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -19,18 +19,22 @@
 -->
 <script type="application/json" id="roadmap-seed">
 {
-  "updated": "2026-11-24",
+  "updated": "2026-11-25",
   "tracks": [
-    {"code": "A", "name": "瓶頸容量與證據保留", "owner": "健賓", "question": "瓶頸容量決定哪些聲音線索能被保留？", "slot": 1, "order": 1},
-    {"code": "B", "name": "題幹導引", "owner": "cshsieh", "question": "壓縮器先讀題目，能不能選出與題目有關的證據？", "slot": 2, "order": 2},
-    {"code": "C", "name": "回答端讀取證據", "owner": "pqweraddy", "question": "固定同一組 latent，改變回答端的讀取方式能幫助作答嗎？", "slot": 3, "order": 3},
+    {"code": "A", "name": "容量基準與聲音介入", "owner": "健賓", "question": "外部壓縮器給的 K 個向量，能保留多少作答證據？", "slot": 1, "order": 1},
+    {"code": "B", "name": "latent 介入（主實驗）", "owner": "cshsieh", "question": "回答端聽得到音訊時，Qwen 會用自己寫的 latent 嗎？", "slot": 2, "order": 2},
+    {"code": "C", "name": "讀取對照", "owner": "pqweraddy", "question": "固定同一組 latent，改變回答端的讀取方式，能讀出哪些線索？", "slot": 3, "order": 3},
     {"code": "ABC", "name": "整合與交付", "owner": "全組", "question": "如何把三條研究線整合成同一個專題？", "slot": 4, "order": 4}
   ],
   "plans": [
-    {"id": "a1", "track": "A", "status": "planned", "title": "分辨音量線索的保留與使用", "why": "只交換同一錄音中兩段聲音的相對音量，比較完整音訊作答、K = 16 作答和線性讀出。", "todos": [["建立完整音訊能辨認音量差的題目", false], ["在新錄音上比較作答與線性讀出", false]]},
-    {"id": "b1", "track": "B", "status": "idea", "title": "追查多事件錄音中的題幹導引", "why": "第二輪整體未達成功標準。多事件錄音在 K = 4、16 的部分條件中出現題幹效果，適合獨立檢驗。", "todos": [["限定多事件錄音與容量", false], ["用新聲源比較純音訊、正確題幹與錯置題幹", false]]},
-    {"id": "c1", "track": "C", "status": "planned", "title": "固定 latent，改變回答端讀法", "why": "從事件數量開始，檢查小型轉接層能否讓 Qwen 更有效利用同一組向量。", "todos": [["設計只改變事件次數的題對", false], ["比較原回答端與加入轉接層後的表現", false], ["交換 latent 檢查改善是否依賴聲音", false]]},
-    {"id": "j1", "track": "ABC", "status": "active", "title": "提案投影片與 5 分鐘報告", "why": "11/25 23:59 前上傳投影片，11/26 報告。用三條線說明證據如何保留、選取和使用。", "todos": [["整理共同架構與各線的成果、下一步", false], ["完成投影片與報告排練", false]]}
+    {"id": "b0", "track": "B", "status": "done", "title": "B4 首輪：Soft、Hard、Mid 與 latent 介入", "why": "同一個寫入架構、K = 4、AVQA 訓練。Soft 的介入只改變 0.1–0.9% 的 MMAU 答案；Hard、Mid 依賴 latent。單一 seed，開發診斷。", "todos": [["整理 AVQA、MMAU、MMAR 的資料格式", true], ["七組試跑與四種介入", true], ["兩端對齊選項順序後重評", true]]},
+    {"id": "b1", "track": "B", "status": "planned", "title": "確認 Soft 繞過 latent", "why": "首輪是單一 seed 的開發診斷。先固定指標與最小有意義的效應，再用多個 seed 與保留的 MMAR 確認。", "todos": [["寫下主要指標與最小有意義的效應", false], ["檢查 AVQA 與 MMAU 的來源影片是否重疊", false], ["Soft、純 LoRA、K = 0、Hard、Mid 各跑多個 seed", false], ["評估保留的 MMAR", false]]},
+    {"id": "b2", "track": "B", "status": "idea", "title": "後續：latent 傳的是答案還是聲音證據", "why": "Hard、Mid 依賴 latent，但寫入端看得到題目和選項，latent 可能只傳寫入端選好的答案。", "todos": [["修好寫入端不看題的 Hard（loss 停在 ln 4）", false], ["同題相反證據的配對交換", false], ["兩端獨立換選項順序", false]]},
+    {"id": "b3", "track": "B", "status": "idea", "title": "選做：推論時修正 latent", "why": "Unsilencing 有公開程式碼。用同一組介入檢查優化後的 latent 是否被答案用上。", "todos": [["套用到 Soft checkpoint", false], ["以四種介入評估", false]]},
+    {"id": "a1", "track": "A", "status": "done", "title": "分辨音量線索的保留與使用", "why": "只改變兩段聲音的相對音量。24 dB 的 100 個新聲源上，K = 16 線性讀出 97.8%，原回答端配對排序 66.4%（兩者指標不同）。", "todos": [["建立完整音訊能辨認音量差的題目", true], ["在新錄音上比較作答與線性讀出", true]]},
+    {"id": "c1", "track": "C", "status": "done", "title": "固定 latent，改變回答端讀法", "why": "受控段數題上，轉接層讓兩段皆對率由 0% 升到 41–56%，但自然題 K = 16 由 82.1% 降到 59.7%。探索性。", "todos": [["設計只改變事件次數的題對", true], ["比較原回答端與加入轉接層後的表現", true], ["交換 latent 檢查改善是否依賴聲音", true]]},
+    {"id": "c2", "track": "C", "status": "planned", "title": "比較相對音量的讀取方式", "why": "沿用同一組壓縮向量，比較答案門檻校準與小型轉接層，同時檢查自然題表現。", "todos": [["校準答案門檻", false], ["小型轉接層", false], ["檢查自然題表現", false]]},
+    {"id": "j1", "track": "ABC", "status": "active", "title": "提案投影片與 5 分鐘報告", "why": "11/25 23:59 前上傳投影片，11/26 報告。主軸：音訊 LLM 會用自己產生的 latent 答題嗎？", "todos": [["以 B4 介入結果整理動機、設計和發現", false], ["A、C 作為容量基準與讀取對照", false], ["完成投影片與報告排練", false]]}
   ]
 }
 </script>
@@ -463,7 +467,7 @@ footer .links { display: flex; flex-wrap: wrap; gap: 6px 24px; }
 
 <header class="mast" id="mast">
   <div class="wrap">
-    <a class="mark" href="#overview"><b>音訊 Latent 瓶頸</b><span>MAI Final Project</span></a>
+    <a class="mark" href="#overview"><b>音訊 Latent 推理</b><span>MAI Final Project</span></a>
     <nav class="nav" aria-label="頁面章節">
       <a href="#architecture">架構</a>
       <a href="#tracks">研究線</a>
@@ -478,36 +482,35 @@ footer .links { display: flex; flex-wrap: wrap; gap: 6px 24px; }
 <section class="hero" id="overview">
   <div class="wrap">
     <div class="read">
-      <p class="eyebrow">MAI 期末專題　·　CLOTHO-AQA　·　QWEN2-AUDIO-7B</p>
-      <h1>只用 <em>K</em> 個向量聽一段錄音，<br>模型還答得對嗎？</h1>
-      <p class="sub">我們把一段錄音壓成 K 個向量，再交給 Qwen2-Audio 回答問題。三條線分別研究聲音證據能保留多少、能不能依題目挑選，以及留下的證據能不能用來作答。</p>
+      <p class="eyebrow">MAI 期末專題　·　AVQA　·　MMAU　·　QWEN2-AUDIO-7B</p>
+      <h1>音訊 LLM 會用自己<br>產生的 <em>latent</em> 答題嗎？</h1>
+      <p class="sub">Qwen2-Audio 先聽音訊、讀題目，寫出 K 個 latent，再看著這些 latent 作答。我們固定其他輸入，只換掉 latent，看答案會不會改變。目前的答案（單一 seed，開發診斷）：回答時還聽得到原音訊，latent 幾乎不影響答案；拿掉直接音訊，模型才會依賴 latent。</p>
       <div class="byline">
-        <span><i class="swatch a"></i>A 線　瓶頸容量　<b>健賓</b></span>
-        <span><i class="swatch b"></i>B 線　題幹導引　<b>cshsieh</b></span>
-        <span><i class="swatch c"></i>C 線　證據讀取　<b>pqweraddy</b></span>
+        <span><i class="swatch a"></i>A 線　容量基準　<b>健賓</b></span>
+        <span><i class="swatch b"></i>B 線　latent 介入　<b>cshsieh</b></span>
+        <span><i class="swatch c"></i>C 線　讀取對照　<b>pqweraddy</b></span>
         <span class="due" id="deadline" hidden></span>
       </div>
     </div>
 
-    <figure class="plate" aria-label="瓶頸示意動畫">
+    <figure class="plate" aria-label="latent 介入示意動畫">
       <div class="plate-tools">
-        <span class="label">壓縮端</span>
-        <div class="choice" id="scope-seg" role="group" aria-label="選擇回答端拿到的聲音資訊">
-          <button type="button" data-m="k1" aria-pressed="false">K = 1</button>
-          <button type="button" data-m="k4" aria-pressed="false">K = 4</button>
-          <button type="button" data-m="k16" aria-pressed="true">K = 16</button>
-          <button type="button" data-m="full" aria-pressed="false">完整音訊</button>
-          <button type="button" data-m="text" aria-pressed="false">只看文字</button>
+        <span class="label">回答端</span>
+        <div class="choice" id="scope-seg" role="group" aria-label="選擇回答端的音訊條件">
+          <button type="button" data-m="soft" aria-pressed="true">Soft　有音訊</button>
+          <button type="button" data-m="mid" aria-pressed="false">Mid　有音訊</button>
+          <button type="button" data-m="midx" aria-pressed="false">Mid　拿掉音訊</button>
+          <button type="button" data-m="hard" aria-pressed="false">Hard　只有 latent</button>
         </div>
       </div>
-      <canvas id="scope-canvas" role="img" aria-label="音訊特徵流進 K 個 latent，再交給凍結的語言模型作答"></canvas>
+      <canvas id="scope-canvas" role="img" aria-label="Qwen 把音訊寫成 4 個 latent，再由回答端作答；Soft 時原音訊也直接送進回答端"></canvas>
       <figcaption class="plate-foot">
         <p class="caption"><span class="fig">圖一</span><span id="scope-cap"></span></p>
-        <div class="reading"><span class="big" id="scope-num">281.7</span><span class="of">/ 340</span><span class="unit">fresh_val 答對題數　三個 seed 平均</span></div>
+        <div class="reading"><span class="big" id="scope-num">0.2</span><span class="of">%</span><span class="unit">換成別題的 latent 後　改變的 MMAU 答案</span></div>
       </figcaption>
     </figure>
     <div id="strip"></div>
-    <p class="strip-note">同一台 GPU、同一批 340 題。K 為純音訊壓縮器（訓練 384 步），完整音訊與只看文字為原模型。刻度上的點也可以點選。</p>
+    <p class="strip-note">同一個寫入架構、K = 4、AVQA 訓練 3,000 步、seed 17；MMAU test-mini 1,000 題，兩種選項順序。刻度上的點也可以點選。</p>
   </div>
 </section>
 
@@ -515,36 +518,36 @@ footer .links { display: flex; flex-wrap: wrap; gap: 6px 24px; }
   <div class="wrap">
     <div class="sec-head read">
       <p class="kicker"><span class="no">一</span>動機與架構<span class="en">Motivation</span></p>
-      <h2>聲音怎麼保留、<br>怎麼選、怎麼用。</h2>
-      <p class="lede">回答模型透過 K 個向量讀取聲音，並看到完整題目。A、B 改變壓縮端，C 固定向量，改變回答端讀取它們的方式。</p>
+      <h2>同一個模型寫 latent，<br>也讀 latent。</h2>
+      <p class="lede">Qwen2-Audio 跑兩次。第一次讀音訊、題目和選項，在 K 個位置寫出 latent；第二次讀題目、選項和 latent 作答。三個條件只差在第二次能不能直接聽到原音訊。CoAT 等音訊 latent reasoning 方法屬於 Soft：回答時仍讀得到音訊。</p>
     </div>
     <div class="premise">
-      <div><p class="tag">固定不動</p><h3>凍結的 Qwen2-Audio</h3><p>音訊編碼器、投影層、7B 語言模型都不訓練。回答端永遠讀到完整題目與 A/B 選項，只比較第一個輸出 token 是 A 還是 B。</p></div>
-      <div><p class="tag"><i class="swatch a"></i>A 線的變因</p><h3>容量 K</h3><p>K = 1、4、16 個 latent，加上免訓練的平均池化對照。看哪些題型最先因為容量不足而答錯。</p></div>
-      <div><p class="tag"><i class="swatch b"></i>B 線的變因</p><h3>壓縮時讀不讀題目</h3><p>題幹（不含選項）加進壓縮器的 query。換成錯置題、通用句或關閉，檢查效果是否來自題目內容。</p></div>
-      <div><p class="tag"><i class="swatch c"></i>C 線的變因</p><h3>回答端怎麼讀</h3><p>同一組 latent 分別直接解碼、經小型轉接層再解碼，比較模型能否用上相同的聲音證據。</p></div>
+      <div><p class="tag">固定不動</p><h3>同一個寫入架構</h3><p>Qwen2-Audio-7B 跑兩次，共用一組 LoRA（q、v 投影，rank 8）。寫入端讀音訊、題目和選項，寫出 K = 4 個 latent；回答端讀題目、選項和 latent，以選項字母 logit 作答。</p></div>
+      <div><p class="tag"><i class="swatch b"></i>變因一</p><h3>回答端的音訊</h3><p>Soft 保留原音訊；Hard 拿掉；Mid 訓練時以 0.5 機率遮掉，評估時兩種都報。三組各自訓練。</p></div>
+      <div><p class="tag"><i class="swatch b"></i>變因二</p><h3>只改 latent</h3><p>固定訓練好的模型和其他所有輸入，把 latent 換成別題的、評估集平均、全零，或加噪，看答案改變多少。</p></div>
+      <div><p class="tag">對照</p><h3>分開 latent 與微調</h3><p>純 LoRA（沒有 latent）、K = 0（只有邊界 token）、重建損失（逼 latent 記住音訊），以及寫入端不看題。</p></div>
     </div>
 
     <div class="arch-tools">
-      <div class="choice" id="arch-seg" role="group" aria-label="切換資訊流">
-        <button type="button" data-m="full" aria-pressed="false">完整音訊</button>
-        <button type="button" data-m="audio" aria-pressed="true">純音訊壓縮　A</button>
-        <button type="button" data-m="question" aria-pressed="false">題幹導引　B</button>
-        <button type="button" data-m="text" aria-pressed="false">只看文字</button>
+      <div class="choice" id="arch-seg" role="group" aria-label="切換回答端條件">
+        <button type="button" data-m="soft" aria-pressed="true">Soft</button>
+        <button type="button" data-m="mid" aria-pressed="false">Mid</button>
+        <button type="button" data-m="hard" aria-pressed="false">Hard</button>
+        <button type="button" data-m="lora" aria-pressed="false">純 LoRA</button>
       </div>
       <p class="arch-read" id="arch-read"></p>
     </div>
     <div class="diagram-box">
       <div class="diagram" id="diagram">
         <svg class="edges" id="edges" aria-hidden="true"></svg>
-        <button type="button" class="node" data-node="audio" data-kind="in" style="grid-area:audio"><span class="tag">輸入</span><span class="t">錄音</span><span class="s">Clotho · 15–30 秒</span></button>
+        <button type="button" class="node" data-node="audio" data-kind="in" style="grid-area:audio"><span class="tag">輸入</span><span class="t">錄音</span><span class="s">AVQA · MMAU</span></button>
         <button type="button" class="node" data-node="enc" data-kind="frozen" style="grid-area:enc"><span class="tag">凍結</span><span class="t">音訊編碼器</span><span class="s">數百個 4096 維向量</span></button>
-        <button type="button" class="node" data-node="stem" data-kind="b" style="grid-area:stem"><span class="tag">B 線</span><span class="t">題幹</span><span class="s">不含選項</span></button>
-        <button type="button" class="node" data-node="comp" data-kind="train" style="grid-area:comp"><span class="tag">唯一可訓練</span><span class="t">壓縮器</span><span class="s">K 個 learned query</span></button>
-        <button type="button" class="node" data-node="lat" data-kind="frozen" style="grid-area:lat"><span class="tag">瓶頸</span><span class="t">K 個 latent</span><span class="s">放在音訊 token 的位置</span></button>
-        <button type="button" class="node" data-node="prompt" data-kind="in" style="grid-area:prompt"><span class="tag">輸入</span><span class="t">題目與選項</span><span class="s">A. yes / B. no</span></button>
-        <button type="button" class="node" data-node="dec" data-kind="frozen" style="grid-area:dec"><span class="tag">凍結</span><span class="t">Qwen 解碼器</span><span class="s">7B 語言模型</span></button>
-        <button type="button" class="node" data-node="out" data-kind="out" style="grid-area:out"><span class="tag">輸出</span><span class="t">A／B logit</span><span class="s">不生成文字</span></button>
+        <button type="button" class="node" data-node="stem" data-kind="b" style="grid-area:stem"><span class="tag">寫入端讀</span><span class="t">題目與選項</span><span class="s">和回答端同一個排列</span></button>
+        <button type="button" class="node" data-node="comp" data-kind="train" style="grid-area:comp"><span class="tag">LoRA　第一次</span><span class="t">Qwen 寫入</span><span class="s">start + K 個 query</span></button>
+        <button type="button" class="node" data-node="lat" data-kind="frozen" style="grid-area:lat"><span class="tag">介入點</span><span class="t">K 個 latent</span><span class="s">最後一層 hidden state</span></button>
+        <button type="button" class="node" data-node="prompt" data-kind="in" style="grid-area:prompt"><span class="tag">回答端讀</span><span class="t">題目與選項</span><span class="s">四選一為主</span></button>
+        <button type="button" class="node" data-node="dec" data-kind="train" style="grid-area:dec"><span class="tag">LoRA　第二次</span><span class="t">Qwen 回答</span><span class="s">同一個 7B 模型</span></button>
+        <button type="button" class="node" data-node="out" data-kind="out" style="grid-area:out"><span class="tag">輸出</span><span class="t">選項字母 logit</span><span class="s">兩種選項順序平均</span></button>
       </div>
     </div>
     <div class="detail" id="detail" aria-live="polite"></div>
@@ -555,8 +558,8 @@ footer .links { display: flex; flex-wrap: wrap; gap: 6px 24px; }
   <div class="wrap">
     <div class="sec-head read">
       <p class="kicker"><span class="no">二</span>分工與進度<span class="en">Tracks</span></p>
-      <h2>三條研究線，<br>同一個瓶頸。</h2>
-      <p class="lede">每條線從同一個音訊瓶頸出發。下方依序列出已做的研究和下一步。</p>
+      <h2>主實驗在 B，<br>A、C 提供基準與對照。</h2>
+      <p class="lede">B 線以 B4 檢驗 Qwen 會不會用自己寫的 latent。A 線的外部壓縮器提供容量基準與聲音介入設計，C 線量固定 latent 能被讀出哪些線索。下方依序列出已做的研究和下一步。</p>
     </div>
     <div class="shared">
       <h3>共同基礎</h3>
@@ -574,19 +577,48 @@ footer .links { display: flex; flex-wrap: wrap; gap: 6px 24px; }
   <div class="wrap">
     <div class="sec-head read">
       <p class="kicker"><span class="no">三</span>主要結果<span class="en">Findings</span></p>
-      <h2>增加容量有用，<br>題幹導引的效果有限。</h2>
-      <p class="lede">A 線報告開發集與官方測試的容量結果。B 線圖表呈現第一輪，第二輪涵蓋多事件錄音與 Clotho 多題訓練。C 線報告受控段數題的轉接層探索和自然題表現。</p>
+      <h2>聽得到音訊時，<br>答案不跟著 latent 走。</h2>
+      <p class="lede">第一個分頁是 B4 主結果（單一 seed，開發診斷）。其餘分頁保留前期結果：A 線外部壓縮器的容量與官方測試、B 線早期的題幹導引，以及 C 線回答端轉接層的探索。</p>
     </div>
     <div class="tabs" role="tablist" aria-label="結果分頁">
-      <button class="tab" role="tab" id="tab-a" aria-controls="panel-a" aria-selected="true"><i class="swatch a"></i>容量與題型</button>
-      <button class="tab" role="tab" id="tab-b" aria-controls="panel-b" aria-selected="false" tabindex="-1"><i class="swatch b"></i>題幹導引</button>
-      <button class="tab" role="tab" id="tab-d" aria-controls="panel-d" aria-selected="false" tabindex="-1"><i class="swatch b"></i>劑量反應</button>
+      <button class="tab" role="tab" id="tab-l" aria-controls="panel-l" aria-selected="true"><i class="swatch b"></i>latent 介入</button>
+      <button class="tab" role="tab" id="tab-a" aria-controls="panel-a" aria-selected="false" tabindex="-1"><i class="swatch a"></i>容量與題型</button>
+      <button class="tab" role="tab" id="tab-b" aria-controls="panel-b" aria-selected="false" tabindex="-1"><i class="swatch b"></i>早期：題幹導引</button>
+      <button class="tab" role="tab" id="tab-d" aria-controls="panel-d" aria-selected="false" tabindex="-1"><i class="swatch b"></i>早期：劑量反應</button>
       <button class="tab" role="tab" id="tab-e" aria-controls="panel-e" aria-selected="false" tabindex="-1"><i class="swatch c"></i>回答端讀取</button>
     </div>
 
-    <div class="panel" id="panel-a" role="tabpanel" aria-labelledby="tab-a">
+    <div class="panel" id="panel-l" role="tabpanel" aria-labelledby="tab-l">
+      <div>
+        <div class="figure">
+          <div class="fig-head"><span class="fig">圖二</span><h3>回答端的音訊條件與答對率</h3><span class="sub">MMAU test-mini 1,000 題，兩種選項順序平均，seed 17</span><button class="tbtn" data-table="l1">表格</button></div>
+          <div class="legend"><span><i class="key dotk" style="background:var(--b)"></i>回答端有音訊</span><span><i class="key hollow"></i>回答端無音訊</span></div>
+          <div class="chart" id="chart-l1"></div>
+          <div class="dtable" id="table-l1" hidden></div>
+        </div>
+        <div class="figure">
+          <div class="fig-head"><span class="fig">圖三</span><h3>只改 latent，答案改變多少</h3><span class="sub">MMAU；每格為答案改變的比例，下方小字為答對率變化（點）</span><button class="tbtn" data-table="l2">表格</button></div>
+          <div class="legend"><span><i class="key" style="background:var(--b);opacity:.55"></i>顏色越深，改變的答案越多</span></div>
+          <div class="chart" id="chart-l2"></div>
+          <div class="dtable" id="table-l2" hidden></div>
+        </div>
+      </div>
+      <div class="take">
+        <h3>聽得到音訊時，<br>latent 被繞過</h3>
+        <p class="pull">Soft 的四種介入只改變 <b>0.1–0.9%</b> 的 MMAU 答案，答對率變化在 ±0.1 點內。Soft、純 LoRA、K = 0 的 MMAU 分別是 66.0、66.8、66.0。</p>
+        <p>微調帶來的提升（AVQA 開發約 +13 點，MMAU +1–2 點）和 latent 無關。加 CoAT 式重建損失後，latent 能重建音訊 token 的分段平均（相對誤差 1.24 → 約 0.17），但拿掉音訊再介入，也只改變 0.7–1.2% 的答案。</p>
+        <h3>拿掉直接音訊，<br>才會依賴 latent</h3>
+        <p>Hard 只靠 latent 就達 MMAU 66.5%，換成別題的 latent 降 40.1 點，74.0% 的答案改變。Mid 有無音訊分數相同（63.6／63.8），保留音訊時換掉 latent 仍改變 19.7% 的答案，代價是比純 LoRA 低約 3 點。</p>
+        <p>單一 seed、K = 4、AVQA 訓練 3,000 步；MMAU test-mini 是開發評估，MMAR 保留到確認方案固定後。兩種選項順序分開看，結論相同。</p>
+        <h3>後續：latent 傳的是什麼？</h3>
+        <p>寫入端看得到題目和選項，Hard、Mid 的 latent 可能只是傳寫入端選好的答案。兩端選項順序不一致時 Hard 只答對 7–11%，符合這個解釋。寫入端不看題的 Hard 還沒學起來（MMAU 25.1%），這個對照留到後續。</p>
+        <p class="src">重算　<code>python b4_analyze.py runs/b4/*/scores-mmau.csv</code>　·　<a href="https://github.com/JianBin0218/mai-final/tree/main/phase2/b4-pilot" target="_blank" rel="noopener">逐題分數</a>　·　<a href="https://github.com/JianBin0218/mai-final/blob/main/PROJECT_HANDOFF.md#研究問題" target="_blank" rel="noopener">研究問題與定位</a></p>
+      </div>
+    </div>
+
+    <div class="panel" id="panel-a" role="tabpanel" aria-labelledby="tab-a" hidden>
       <div class="figure">
-        <div class="fig-head"><span class="fig">圖二</span><h3>開發集各題型的準確率</h3><span class="sub">fresh_val，三個 seed 平均，括號內為題數</span><button class="tbtn" data-table="a">表格</button></div>
+        <div class="fig-head"><span class="fig">圖四</span><h3>開發集各題型的準確率</h3><span class="sub">fresh_val，三個 seed 平均，括號內為題數</span><button class="tbtn" data-table="a">表格</button></div>
         <div class="legend"><span><i class="key dotk" style="background:var(--a)"></i>K = 4</span><span><i class="key dotk" style="background:var(--b)"></i>K = 16</span><span><i class="key dotk" style="background:var(--c)"></i>完整音訊</span><span><i class="key tick"></i>只看文字</span></div>
         <div class="chart" id="chart-a"></div>
         <div class="dtable" id="table-a" hidden></div>
@@ -605,13 +637,13 @@ footer .links { display: flex; flex-wrap: wrap; gap: 6px 24px; }
     <div class="panel" id="panel-b" role="tabpanel" aria-labelledby="tab-b" hidden>
       <div>
         <div class="figure">
-          <div class="fig-head"><span class="fig">圖三</span><h3>壓縮端讀題目的效果</h3><span class="sub">答對題數 / 340</span><button class="tbtn" data-table="b">表格</button></div>
+          <div class="fig-head"><span class="fig">圖五</span><h3>壓縮端讀題目的效果</h3><span class="sub">答對題數 / 340</span><button class="tbtn" data-table="b">表格</button></div>
           <div class="legend"><span><i class="key" style="background:var(--a)"></i>純音訊</span><span><i class="key" style="background:var(--b)"></i>原版加法題幹</span><span><i class="key" style="background:var(--c)"></i>gated＋centered</span><span><i class="key dash"></i>完整音訊　只看文字</span></div>
           <div class="chart" id="chart-b"></div>
           <div class="dtable" id="table-b" hidden></div>
         </div>
         <div class="figure">
-          <div class="fig-head"><span class="fig">圖四</span><h3>差異從哪裡來</h3><span class="sub">百分點，以錄音配對 bootstrap 的 95% 區間</span><button class="tbtn" data-table="c">表格</button></div>
+          <div class="fig-head"><span class="fig">圖六</span><h3>差異從哪裡來</h3><span class="sub">百分點，以錄音配對 bootstrap 的 95% 區間</span><button class="tbtn" data-table="c">表格</button></div>
           <div class="legend"><span><i class="key dotk" style="background:var(--b)"></i>原版加法 − 純音訊</span><span><i class="key hollow"></i>原版加法：正確 − 錯置題幹</span><span><i class="key dotk" style="background:var(--c)"></i>gated＋centered：正確 − 錯置題幹</span></div>
           <div class="chart" id="chart-c"></div>
           <div class="dtable" id="table-c" hidden></div>
@@ -629,7 +661,7 @@ footer .links { display: flex; flex-wrap: wrap; gap: 6px 24px; }
 
     <div class="panel" id="panel-d" role="tabpanel" aria-labelledby="tab-d" hidden>
       <div class="figure">
-        <div class="fig-head"><span class="fig">圖五</span><h3>把題幹項強制放大</h3><span class="sub">gated＋centered 模型，正確題幹答對數 / 340</span><button class="tbtn" data-table="d">表格</button></div>
+        <div class="fig-head"><span class="fig">圖七</span><h3>把題幹項強制放大</h3><span class="sub">gated＋centered 模型，正確題幹答對數 / 340</span><button class="tbtn" data-table="d">表格</button></div>
         <div class="legend"><span><i class="key" style="background:var(--ramp-1)"></i>K = 1</span><span><i class="key" style="background:var(--ramp-2)"></i>K = 4</span><span><i class="key" style="background:var(--ramp-3)"></i>K = 16</span><span><i class="key band"></i>模型學到的範圍</span></div>
         <div class="chart" id="chart-d"></div>
         <div class="dtable" id="table-d" hidden></div>
@@ -645,13 +677,13 @@ footer .links { display: flex; flex-wrap: wrap; gap: 6px 24px; }
     <div class="panel" id="panel-e" role="tabpanel" aria-labelledby="tab-e" hidden>
       <div>
         <div class="figure">
-          <div class="fig-head"><span class="fig">圖六</span><h3>加一層轉接層，段數題的配對</h3><span class="sub">50 對一段／兩段聲音，兩段皆答對的比例，兩種選項順序平均</span><button class="tbtn" data-table="e">表格</button></div>
+          <div class="fig-head"><span class="fig">圖八</span><h3>加一層轉接層，段數題的配對</h3><span class="sub">50 對一段／兩段聲音，兩段皆答對的比例，兩種選項順序平均</span><button class="tbtn" data-table="e">表格</button></div>
           <div class="legend"><span><i class="key tick"></i>原回答端</span><span><i class="key dotk" style="background:var(--c)"></i>加轉接層（95% 區間）</span><span><i class="key hollow" style="border-color:var(--ink-2)"></i>線性讀出</span></div>
           <div class="chart" id="chart-e"></div>
           <div class="dtable" id="table-e" hidden></div>
         </div>
         <div class="figure">
-          <div class="fig-head"><span class="fig">圖七</span><h3>同一個轉接層套到自然題</h3><span class="sub">fresh_val 340 題準確率，五折轉接層平均</span><button class="tbtn" data-table="f">表格</button></div>
+          <div class="fig-head"><span class="fig">圖九</span><h3>同一個轉接層套到自然題</h3><span class="sub">fresh_val 340 題準確率，五折轉接層平均</span><button class="tbtn" data-table="f">表格</button></div>
           <div class="legend"><span><i class="key tick"></i>原回答端</span><span><i class="key dotk" style="background:var(--c)"></i>加轉接層</span></div>
           <div class="chart" id="chart-f"></div>
           <div class="dtable" id="table-f" hidden></div>
@@ -674,7 +706,7 @@ footer .links { display: flex; flex-wrap: wrap; gap: 6px 24px; }
     <div class="sec-head read">
       <p class="kicker"><span class="no">四</span>研究規劃<span class="en">Roadmap</span></p>
       <h2>接下來要做的事。</h2>
-      <p class="lede">A 追查音量線索，B 釐清多事件錄音裡的題幹效果，C 比較回答端的讀法。</p>
+      <p class="lede">B 線先用多個 seed 與保留的 MMAR 確認 Soft 的結果，之後再追 latent 傳的是答案還是聲音證據。A、C 的下一步照各線規劃。</p>
     </div>
     <div class="rm-bar" id="rm-bar" hidden>
       <div class="fchips" id="fchips" role="group" aria-label="依研究線篩選"></div>
@@ -698,44 +730,52 @@ footer .links { display: flex; flex-wrap: wrap; gap: 6px 24px; }
     </div>
     <div class="faq read" style="max-width:820px">
       <details>
-        <summary><span class="q">i.</span><span>MLLM 是在推論時吃多模態，還是在「推理」時？</span><span class="pm" aria-hidden="true"></span></summary>
+        <summary><span class="q">i.</span><span>Qwen2-Audio 怎麼讀聲音？</span><span class="pm" aria-hidden="true"></span></summary>
         <div class="ans">
-          <p>兩個說法指的是同一個過程。Qwen2-Audio 先用音訊編碼器把錄音轉成一串向量，投影到語言模型的 embedding 空間，再插進題目文字之間。之後語言模型就像處理一般 token 一樣，用同一套 Transformer 層一起處理聲音向量和文字。</p>
-          <p>所以<b>多模態發生在輸入端</b>：每次推論，模型都同時讀到聲音和文字，中間的運算不區分模態。在我們的專案裡，這個語言模型完全凍結，訓練時也不會改它。</p>
+          <p>Qwen2-Audio 先用音訊編碼器把錄音轉成一串向量，投影到語言模型的 embedding 空間，再插進題目文字之間。之後語言模型就像處理一般 token 一樣，用同一套 Transformer 層一起處理聲音向量和文字。</p>
+          <p>B4 的寫入端和回答端是同一個模型，用 LoRA 微調。早期 A、B、C 的實驗則讓語言模型完全凍結，只訓練外部壓縮器或轉接層。</p>
         </div>
       </details>
       <details>
-        <summary><span class="q">ii.</span><span>latent 是什麼？</span><span class="pm" aria-hidden="true"></span></summary>
+        <summary><span class="q">ii.</span><span>這裡的 latent 是什麼？</span><span class="pm" aria-hidden="true"></span></summary>
         <div class="ans">
-          <p>這裡的 latent 指壓縮器輸出的 K 個向量。每個向量和語言模型的 token embedding 一樣是 4096 維，但不對應任何文字。它們被放在原本音訊 token 的位置，語言模型把它們當成 K 個「聲音 token」來讀。</p>
-          <p>原本一段錄音會給語言模型數百個音訊向量；瓶頸版只給 <b>K 個（1、4 或 16）</b>。每個 latent 等於「第 k 段的平均」加上「注意力挑出的修正」，A 線的置換實驗就是分別換掉這兩部分。</p>
+          <p>在 B4 裡，latent 是 Qwen 第一次跑時，K 個可學習位置在最後一層的 hidden state。它們是 4096 維的連續向量，不對應任何文字。第二次跑時放在 start 與 end token 之間，讓回答端讀。</p>
+          <p>早期 A、B、C 的 latent 是 LLM 外部的小壓縮器輸出，放在原本音訊 token 的位置。那是「音訊 token 壓縮」；B4 才是 LLM 自己寫的 latent。</p>
         </div>
       </details>
       <details>
-        <summary><span class="q">iii.</span><span>為什麼可以有「只看音訊」的 latent？</span><span class="pm" aria-hidden="true"></span></summary>
+        <summary><span class="q">iii.</span><span>「沒有用 latent」是怎麼量的？</span><span class="pm" aria-hidden="true"></span></summary>
         <div class="ans">
-          <p>壓縮器不需要知道題目也能工作。它有 K 個學出來的 query，每次都用同一組 query 去讀錄音，輸出這段錄音的摘要。</p>
-          <p>訓練時，回答端答錯的 loss 會傳回壓縮器，讓它學會保留<b>大部分題目都用得到</b>的資訊，就像不知道考題時，先把整段內容做成筆記。K 越小筆記越短，能保留的細節越少，這就是 A 線量的東西。</p>
+          <p>固定訓練好的模型、音訊、題目和選項，只把 latent 換成別題的、平均、全零或加噪。答案幾乎不變，就表示這個模型在這個條件下不依賴 latent。</p>
+          <p>也看分數：Soft 和純 LoRA、K = 0 一樣，表示微調的提升不是 latent 帶來的。這裡量的是<b>答案有沒有用到 latent</b>，不是 latent 裡有沒有資訊。</p>
         </div>
       </details>
       <details>
-        <summary><span class="q">iv.</span><span>推論時，模型看得到題目嗎？</span><span class="pm" aria-hidden="true"></span></summary>
+        <summary><span class="q">iv.</span><span>latent 有聲音資訊，為什麼答案還是不用？</span><span class="pm" aria-hidden="true"></span></summary>
         <div class="ans">
-          <p><b>回答端一直看得到。</b>所有版本的語言模型都讀到完整題目和 A/B 選項。</p>
-          <p>差別只在壓縮端：純音訊版做筆記時看不到題目；題幹版做筆記時另外讀題幹（不含選項），想藉此只留下跟題目有關的聲音。B 線測的就是這一步有沒有用。</p>
+          <p>加重建損失後，latent 能重建音訊 token 的分段平均，代表它記住一部分聲音。但拿掉音訊再介入，答案也只改變 0.7–1.2%，分數接近純文字基準（44.4%；原模型純文字 41.9%）。</p>
+          <p>一個可能的解釋是：訓練時回答端一直聽得到原音訊，沒有壓力去學讀 latent。影像研究把這種現象稱為 latent bypass，B4 Soft 是它在音訊端的對應。</p>
         </div>
       </details>
       <details>
-        <summary><span class="q">v.</span><span>為什麼只比較 A、B 兩個 logit，不讓模型生成答案？</span><span class="pm" aria-hidden="true"></span></summary>
+        <summary><span class="q">v.</span><span>Hard 依賴 latent，代表 latent 在推理嗎？</span><span class="pm" aria-hidden="true"></span></summary>
         <div class="ans">
-          <p>Clotho-AQA 的題目是 yes/no，我們把答案放在 A、B 選項，直接比較第一個輸出 token 的分數。這樣可以固定評分規則，也能用 logit 差分析模型對聲音變化的反應。</p>
+          <p>還不能這樣說。寫入端讀得到題目和選項，可能先選好答案，再把答案寫進 latent。B3 的 K = 1 就達到完整音訊參考值；兩端選項順序不一致時，Hard 只答對 7–11%。兩者都符合這個解釋。</p>
+          <p>要分辨「傳答案」和「傳聲音證據」，需要能訓練的寫入端不看題版本、同題相反證據的配對交換，以及兩端獨立換選項順序。這是後續工作。</p>
         </div>
       </details>
       <details>
-        <summary><span class="q">vi.</span><span>開發集和官方 test 怎麼分開？</span><span class="pm" aria-hidden="true"></span></summary>
+        <summary><span class="q">vi.</span><span>為什麼用選項字母的 logit，而且每題評兩次？</span><span class="pm" aria-hidden="true"></span></summary>
         <div class="ans">
-          <p>fresh_val 是官方 validation 裡另外 170 段錄音、340 題，和 pilot 的訓練與驗證錄音互斥，每段一題 yes、一題 no。兩線都在這批題上報告，可以逐題比較。</p>
-          <p>A 線在固定樣本選取、題型與判讀規則後，才在 257 段官方 test 錄音上執行一次最終評估。</p>
+          <p>AVQA 與 MMAU 是選擇題。直接比較每個選項字母的第一個 token 分數，評分規則固定，不需要生成文字。</p>
+          <p>模型可能偏好某個字母（MMAU 正解原本落在 A 的比例是 39.5%），所以每題以原順序與反轉順序各評一次，寫入端和回答端用同一個排列，再平均。</p>
+        </div>
+      </details>
+      <details>
+        <summary><span class="q">vii.</span><span>開發與確認資料怎麼分？</span><span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">
+          <p>AVQA-R1-6K 的訓練檔切成訓練 3,991 題、開發 500 題（seed 17）。MMAU test-mini 1,000 題作開發評估。MMAR 保留到確認方案固定後才評。</p>
+          <p>A 線的官方 Clotho-AQA test（514 題）是另一套事前固定的評估，屬於外部壓縮器的容量基準。</p>
         </div>
       </details>
     </div>
@@ -745,10 +785,10 @@ footer .links { display: flex; flex-wrap: wrap; gap: 6px 24px; }
 
 <footer>
   <div class="wrap">
-    <p class="colophon"><b>Colophon</b>研究內容依據專題研究紀錄與各線交接，更新至 2026 年 11 月 24 日。</p>
+    <p class="colophon"><b>Colophon</b>研究內容依據 PROJECT_HANDOFF.md 與 phase2/ 的結果檔，更新至 2026 年 11 月 25 日。</p>
     <p class="links">
       <a href="https://github.com/JianBin0218/mai-final" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://github.com/JianBin0218/mai-final/pull/1" target="_blank" rel="noopener">PR #1</a>
+      <a href="https://github.com/JianBin0218/mai-final/pull/7" target="_blank" rel="noopener">PR #7</a>
       <a href="https://github.com/JianBin0218/mai-final/blob/main/PROJECT_HANDOFF.md" target="_blank" rel="noopener">研究進度文件</a>
     </p>
   </div>
@@ -829,22 +869,20 @@ const tipRow = (color, label, value) => `<div class="tr"><span><i class="dot" st
   if (t) { el.innerHTML = t; el.hidden = false; }
 })();
 
-/* ---------- figure 1: the bottleneck ---------- */
+/* ---------- figure 1: Qwen writes latents, then answers ---------- */
 const MODES = {
-  k1: { n: 213.0, K: 1, cap: "整段錄音只剩一個向量。比只看文字多答對 30 題，離完整音訊還差 81 題。" },
-  k4: { n: 250.3, K: 4, cap: "四個向量已經救回大部分的聲源題，比 K = 1 多答對 37 題。" },
-  k16: { n: 281.7, K: 16, cap: "十六個向量離完整音訊只差 12 題，剩下的落差主要在數量與相對關係題。" },
-  full: { n: 294, K: 16, cap: "原模型直接讀全部的音訊向量，不經過瓶頸。這是壓縮版的上限參考。" },
-  text: { n: 183, K: 16, cap: "拿掉所有聲音，只看題目與選項。每段錄音一題 yes、一題 no，亂猜約 170 題。" },
+  soft: { n: 0.2, direct: 60, use: 0.02, ear: "LoRA　聽得到原音訊", cap: "回答端同時讀原音訊和 latent，像 CoAT。把 latent 換成別題的，只有 0.2% 的答案改變；四種介入都只改變 0.1–0.9%。" },
+  mid: { n: 19.7, direct: 60, use: 0.3, ear: "LoRA　訓練時一半聽不到", cap: "訓練時以 0.5 機率遮掉音訊。評估時保留音訊，換掉 latent 仍改變 19.7% 的答案，答對率降 2.9 點。" },
+  midx: { n: 67.5, direct: 0, use: 0.35, ear: "LoRA　這次聽不到原音訊", cap: "同一個 Mid 模型，評估時拿掉音訊。分數和有音訊時相同（63.8%），換掉 latent 改變 67.5% 的答案。" },
+  hard: { n: 74.0, direct: 0, use: 0.35, ear: "LoRA　只讀 latent", cap: "回答端只讀 latent。MMAU 66.5%，和純 LoRA 有音訊時接近；換成別題的 latent，降 40.1 點、74.0% 的答案改變。" },
 };
 const STRIP = [
-  { m: "text", n: 183, l: "只看文字" }, { m: "k1", n: 213.0, l: "K = 1" }, { m: "k4", n: 250.3, l: "K = 4" },
-  { m: "k16", n: 281.7, l: "K = 16" }, { m: "full", n: 294, l: "完整音訊" },
+  { m: "soft", n: 0.2, l: "Soft" }, { m: "mid", n: 19.7, l: "Mid 有音訊" }, { m: "midx", n: 67.5, l: "Mid 拿掉音訊" }, { m: "hard", n: 74.0, l: "Hard" },
 ];
 const Scope = (() => {
   const canvas = $("#scope-canvas");
   const ctx = canvas.getContext("2d");
-  let W = 0, H = 0, horiz = true, mode = "k16", col = {};
+  let W = 0, H = 0, horiz = true, mode = "soft", col = {};
   let geo = {}, slots = [], glow = [], parts = [], outs = [], acc = 0, off = 0, last = 0, pulse = 0, running = false, inView = true;
   const R = 16, TOTAL = 540;
   const spec = (() => {
@@ -858,9 +896,9 @@ const Scope = (() => {
     return a;
   })();
   function readColors() {
-    col = { ink: cssv("--ink"), ink2: cssv("--ink-2"), ink3: cssv("--ink-3"), rule: cssv("--rule-2"), paper: cssv("--paper"), a: cssv("--a"), serif: cssv("--serif"), tc: cssv("--serif-tc"), sans: cssv("--sans") };
+    col = { ink: cssv("--ink"), ink2: cssv("--ink-2"), ink3: cssv("--ink-3"), rule: cssv("--rule-2"), paper: cssv("--paper"), a: cssv("--a"), b: cssv("--b"), serif: cssv("--serif"), tc: cssv("--serif-tc"), sans: cssv("--sans") };
   }
-  const K = () => MODES[mode].K;
+  const K = () => 4;
   function layout() {
     const rect = canvas.getBoundingClientRect();
     W = rect.width; H = rect.height;
@@ -906,14 +944,13 @@ const Scope = (() => {
     return horiz ? { x: L.x, y: L.y + L.h * (0.3 + 0.4 * Math.random()) } : { x: L.x + L.w * (0.25 + 0.5 * Math.random()), y: L.y };
   }
   function mk(p0, p1, dur, k, e) {
+    if (k === -1) return { p0, p1, c: horiz ? { x: (p0.x + p1.x) / 2, y: -40 } : { x: 0, y: (p0.y + p1.y) / 2 }, t: 0, dur, k, e };
     const c = horiz ? { x: (p0.x + p1.x) / 2, y: p0.y * 0.25 + p1.y * 0.75 } : { x: p0.x * 0.3 + p1.x * 0.7, y: (p0.y + p1.y) / 2 };
     return { p0, p1, c, t: 0, dur, k, e };
   }
   function spawn(dt) {
-    if (mode === "text") return;
-    const k = K();
-    const rate = mode === "full" ? 70 : k === 1 ? 12 : k === 4 ? 20 : 30;
-    acc += rate * dt;
+    const M = MODES[mode], lat = 20;
+    acc += (M.direct + lat) * dt;
     while (acc >= 1) {
       acc -= 1;
       let best = null;
@@ -922,12 +959,8 @@ const Scope = (() => {
         if (!best || e > best.e) best = { ci, r, e };
       }
       const p0 = cellC(best.ci, best.r);
-      if (mode === "full") parts.push(mk(p0, llmIn(), 1.7 + Math.random() * 0.5, -1, best.e));
-      else {
-        let s = Math.min(k - 1, Math.floor(best.ci / (geo.cols / k)));
-        if (k > 1 && Math.random() < 0.22) s = Math.floor(Math.random() * k);
-        parts.push(mk(p0, slotC(s), 1.3 + Math.random() * 0.5, s, best.e));
-      }
+      if (Math.random() < M.direct / (M.direct + lat)) parts.push(mk(p0, llmIn(), 1.7 + Math.random() * 0.5, -1, best.e));
+      else { const s = Math.floor(Math.random() * K()); parts.push(mk(p0, slotC(s), 1.3 + Math.random() * 0.5, s, best.e)); }
     }
   }
   const ease = (t) => (t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2);
@@ -943,7 +976,7 @@ const Scope = (() => {
         parts.splice(i, 1);
         if (p.k >= 0) {
           glow[p.k] = Math.min(1, glow[p.k] + 0.28);
-          if (Math.random() < 0.3) outs.push(mk(slotC(p.k), llmIn(), 1.0, -2, 1));
+          if (Math.random() < MODES[mode].use) outs.push(mk(slotC(p.k), llmIn(), 1.0, -2, 1));
         } else pulse = Math.min(1, pulse + 0.03);
       }
     }
@@ -963,8 +996,7 @@ const Scope = (() => {
     if (!W) return;
     ctx.globalAlpha = 1;
     ctx.clearRect(0, 0, W, H);
-    const k = K(), S = geo.spec;
-    const dim = mode === "text" ? 0.2 : 1;
+    const M = MODES[mode], k = K(), S = geo.spec;
     ctx.fillStyle = col.ink2;
     const start = Math.floor(off), maxR = Math.min(geo.cell, geo.rowH) * 0.42;
     for (let i = 0; i < geo.cols; i++) {
@@ -972,59 +1004,45 @@ const Scope = (() => {
       for (let r = 0; r < R; r++) {
         const e = Math.min(1, c[r]);
         const rad = 0.5 + maxR * Math.sqrt(e);
-        ctx.globalAlpha = (0.18 + 0.62 * e) * dim;
+        ctx.globalAlpha = 0.18 + 0.62 * e;
         ctx.beginPath(); ctx.arc(S.x + i * geo.cell + geo.cell / 2, S.y + S.h - (r + 0.5) * geo.rowH, rad, 0, 6.2832); ctx.fill();
       }
     }
     ctx.globalAlpha = 1;
-    label(mode === "text" ? "音訊　不提供" : "音訊特徵　時間 →", S.x, S.y - 22, "left", col.ink3, `400 12px ${col.sans}`);
-    if (mode.startsWith("k") && k > 1) {
-      ctx.strokeStyle = col.rule; ctx.lineWidth = 1; ctx.setLineDash([1, 4]);
-      for (let s = 1; s < k; s++) {
-        const x = Math.round(S.x + (s * geo.cols / k) * geo.cell) + 0.5;
-        ctx.beginPath(); ctx.moveTo(x, S.y - 6); ctx.lineTo(x, S.y + S.h + 6); ctx.stroke();
-      }
-      ctx.setLineDash([]);
-      label(`切成 ${k} 段`, S.x + S.w, S.y + S.h + 26, "right", col.ink3, `italic 400 14px ${col.serif}`);
-    }
+    label("音訊特徵　時間 →", S.x, S.y - 22, "left", col.ink3, `400 12px ${col.sans}`);
     ctx.lineCap = "round";
     const drawP = (p, color, alpha, wdt) => {
       const q = bez(p, ease(Math.min(1, p.t))), pr = bez(p, ease(Math.max(0, p.t - 0.08)));
       ctx.strokeStyle = color; ctx.globalAlpha = alpha; ctx.lineWidth = wdt;
       ctx.beginPath(); ctx.moveTo(pr.x, pr.y); ctx.lineTo(q.x, q.y); ctx.stroke();
     };
-    for (const p of parts) drawP(p, mode === "full" ? col.ink2 : col.a, (0.25 + 0.55 * p.e) * (mode === "full" ? 0.6 : 1), 1.2);
-    for (const p of outs) drawP(p, col.a, 0.85, 1.6);
+    for (const p of parts) drawP(p, p.k < 0 ? col.ink2 : col.b, (0.25 + 0.55 * p.e) * (p.k < 0 ? 0.55 : 1), 1.2);
+    for (const p of outs) drawP(p, col.b, 0.85, 1.6);
     ctx.globalAlpha = 1;
-    const ghost = mode === "full" || mode === "text";
     for (let i = 0; i < slots.length; i++) {
       const s = slots[i];
-      if (!ghost) { ctx.globalAlpha = 0.06 + 0.6 * glow[i]; ctx.fillStyle = col.a; ctx.fillRect(s.x, s.y, s.s, s.s); ctx.globalAlpha = 1; }
-      ctx.strokeStyle = ghost ? col.rule : col.a; ctx.lineWidth = 1;
-      if (ghost) ctx.setLineDash([2, 3]);
+      ctx.globalAlpha = 0.06 + 0.6 * glow[i]; ctx.fillStyle = col.b; ctx.fillRect(s.x, s.y, s.s, s.s); ctx.globalAlpha = 1;
+      ctx.strokeStyle = col.b; ctx.lineWidth = 1;
       ctx.strokeRect(s.x + 0.5, s.y + 0.5, s.s - 1, s.s - 1);
-      ctx.setLineDash([]);
     }
     const B = geo.box;
-    const slotTxt = mode === "full" ? "不經過瓶頸" : mode === "text" ? "沒有聲音" : `${k} 個 latent`;
-    label(slotTxt, geo.slot.x, B.y - 18, "center", ghost ? col.ink3 : col.ink, `600 14px ${col.tc}`);
-    if (!ghost) label("可訓練的壓縮器", geo.slot.x, B.y + B.h + 28, "center", col.ink3, `400 12px ${col.sans}`);
+    label(`${k} 個 latent`, geo.slot.x, B.y - 18, "center", col.ink, `600 14px ${col.tc}`);
+    label("Qwen 寫入　第一次", geo.slot.x, B.y + B.h + 28, "center", col.ink3, `400 12px ${col.sans}`);
     const L = geo.llm;
     ctx.strokeStyle = col.rule; ctx.lineWidth = 1;
     ctx.strokeRect(L.x + 0.5, L.y + 0.5, L.w - 1, L.h - 1);
-    if (pulse > 0.01) { ctx.globalAlpha = Math.min(0.9, pulse); ctx.strokeStyle = col.a; ctx.beginPath(); ctx.moveTo(L.x, L.y + 0.5); ctx.lineTo(L.x + L.w * Math.min(1, pulse * 1.4), L.y + 0.5); ctx.stroke(); ctx.globalAlpha = 1; }
+    if (pulse > 0.01) { ctx.globalAlpha = Math.min(0.9, pulse); ctx.strokeStyle = col.b; ctx.beginPath(); ctx.moveTo(L.x, L.y + 0.5); ctx.lineTo(L.x + L.w * Math.min(1, pulse * 1.4), L.y + 0.5); ctx.stroke(); ctx.globalAlpha = 1; }
     const px = L.x + 18;
-    label("Qwen 解碼器", px, L.y + 34, "left", col.ink, `600 16px ${col.tc}`);
-    label("凍結　7B", px, L.y + 56, "left", col.ink3, `400 12px ${col.sans}`);
+    label("Qwen 回答　第二次", px, L.y + 34, "left", col.ink, `600 16px ${col.tc}`);
+    label(M.ear, px, L.y + 56, "left", col.ink3, `400 12px ${col.sans}`);
     const qy = horiz ? L.y + 98 : L.y + 86;
-    label("Is a bird chirping?", px, qy, "left", col.ink2, `italic 400 17px ${col.serif}`);
-    label("A. yes　　B. no", px, qy + 24, "left", col.ink3, `italic 400 15px ${col.serif}`);
-    const ans = mode === "text" ? "只能憑文字猜" : "A";
-    label(ans, L.x + L.w - 18, L.y + L.h - 20, "right", col.ink, mode === "text" ? `italic 400 15px ${col.serif}` : `italic 500 30px ${col.serif}`);
+    label("What is making the sound?", px, qy, "left", col.ink2, `italic 400 17px ${col.serif}`);
+    label("A. dog　B. car　C. rain　D. bell", px, qy + 24, "left", col.ink3, `italic 400 15px ${col.serif}`);
+    label("A", L.x + L.w - 18, L.y + L.h - 20, "right", col.ink, `italic 500 30px ${col.serif}`);
   }
   function frame(ts) {
     if (!running) return;
-    const dt = Math.min(0.05, (ts - last) / 1000 || 0);
+    const dt = Math.max(0, Math.min(0.05, (ts - last) / 1000 || 0));
     last = ts;
     off = (off + dt * 8) % TOTAL;
     spawn(dt); update(dt); draw();
@@ -1049,7 +1067,7 @@ const Scope = (() => {
     computeSlots();
     if (!running) { if (reduced.matches) staticFrame(); else draw(); }
     $("#scope-cap").textContent = MODES[m].cap;
-    animateNumber($("#scope-num"), MODES[m].n, m === "full" || m === "text" ? 0 : 1);
+    animateNumber($("#scope-num"), MODES[m].n, 1);
     $$("#scope-seg button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.m === m)));
     drawStrip();
   }
@@ -1076,56 +1094,56 @@ function animateNumber(node, to, digits) {
 function drawStrip() {
   const host = $("#strip");
   const w = Math.max(300, host.clientWidth), hh = 92, padL = 4, padR = 4;
-  const x = (v) => padL + ((v - 170) / (300 - 170)) * (w - padL - padR);
+  const x = (v) => padL + (v / 100) * (w - padL - padR);
   host.innerHTML = "";
-  const s = svg("svg", { viewBox: `0 0 ${w} ${hh}`, role: "img", "aria-label": "答對題數刻度：只看文字 183、K=1 213、K=4 250.3、K=16 281.7、完整音訊 294" }, host);
+  const s = svg("svg", { viewBox: `0 0 ${w} ${hh}`, role: "img", "aria-label": "換成別題的 latent 後改變的 MMAU 答案：Soft 0.2%、Mid 有音訊 19.7%、Mid 拿掉音訊 67.5%、Hard 74.0%" }, host);
   const axisY = 46;
-  svg("line", { x1: x(170), x2: x(300), y1: axisY, y2: axisY, stroke: "var(--rule-2)", "stroke-width": 1 }, s);
-  for (let v = 180; v <= 300; v += 20) {
+  svg("line", { x1: x(0), x2: x(100), y1: axisY, y2: axisY, stroke: "var(--rule-2)", "stroke-width": 1 }, s);
+  for (let v = 0; v <= 100; v += 20) {
     svg("line", { x1: x(v), x2: x(v), y1: axisY - 3, y2: axisY + 3, stroke: "var(--rule-2)" }, s);
-    txt(s, { x: x(v), y: hh - 2, "text-anchor": "middle", fill: "var(--ink-3)", style: "font:italic 400 13px var(--serif)" }, String(v));
+    txt(s, { x: x(v), y: hh - 2, "text-anchor": v === 0 ? "start" : v === 100 ? "end" : "middle", fill: "var(--ink-3)", style: "font:italic 400 13px var(--serif)" }, v + "%");
   }
   const cur = Scope.mode;
   STRIP.forEach((p, i) => {
     const on = p.m === cur, up = i % 2 === 1;
-    const g = svg("g", { style: "cursor:pointer", tabindex: 0, role: "button", "aria-label": `${p.l}：${p.n}` }, s);
+    const g = svg("g", { style: "cursor:pointer", tabindex: 0, role: "button", "aria-label": `${p.l}：${p.n}%` }, s);
     svg("circle", { cx: x(p.n), cy: axisY, r: 16, fill: "transparent" }, g);
     svg("circle", { cx: x(p.n), cy: axisY, r: on ? 5 : 3.5, fill: on ? "var(--ink)" : "var(--paper)", stroke: on ? "var(--ink)" : "var(--ink-3)", "stroke-width": 1 }, g);
     const anchor = i === 0 ? "start" : i === STRIP.length - 1 ? "end" : "middle";
     const lx = i === 0 ? x(p.n) - 4 : i === STRIP.length - 1 ? x(p.n) + 4 : x(p.n);
-    txt(g, { x: lx, y: up ? axisY - 16 : axisY + 26, "text-anchor": anchor, fill: on ? "var(--ink)" : "var(--ink-3)", style: `font:${on ? 500 : 400} 12.5px var(--sans)` }, `${p.l}　${p.n}`);
+    txt(g, { x: lx, y: up ? axisY - 16 : axisY + 26, "text-anchor": anchor, fill: on ? "var(--ink)" : "var(--ink-3)", style: `font:${on ? 500 : 400} 12.5px var(--sans)` }, `${p.l}　${p.n.toFixed(1)}%`);
     const go = () => Scope.setMode(p.m);
     g.addEventListener("click", go);
     g.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); go(); } });
   });
 }
 $$("#scope-seg button").forEach((b) => b.addEventListener("click", () => Scope.setMode(b.dataset.m)));
-Scope.setMode("k16");
+Scope.setMode("soft");
 Scope.start();
 new ResizeObserver(() => drawStrip()).observe($("#strip"));
 
 /* ---------- architecture ---------- */
 const NODES = {
-  audio: { tag: "輸入", title: "錄音", body: ["Clotho-AQA 的環境聲錄音，每段 15–30 秒。資料切分以錄音為單位：同一段錄音的題目不會同時出現在訓練和驗證。"], facts: [["資料集", "Clotho-AQA"], ["pilot", "48 段訓練、32 段驗證"], ["fresh_val", "170 段、340 題"]] },
-  enc: { tag: "凍結", title: "音訊編碼器與投影層", body: ["Qwen2-Audio 自帶的 Whisper 式編碼器，把錄音轉成一串時間步向量，再投影到語言模型的 4096 維 embedding 空間。", "原模型會把這整串向量直接放進語言模型。我們在這裡截住它，交給壓縮器。"], facts: [["輸出", "數百個 4096 維向量"], ["訓練", "不訓練"], ["快取", "cache/features"]] },
-  stem: { tag: "B 線", title: "題幹分支", body: ["只用題目文字（不含選項），取 token embedding 的平均，或凍結 LM 第 16 層的 hidden state，經過 4096 → 64 的線性投影，加到每一個 query 上。", "原版直接相加，訓練後題幹項是 query 的 90 倍。gated 版先單位化，再乘上從 0 開始的 tanh(gate)，所以起點和純音訊版逐位元相同。"], facts: [["投影", "4096 → 64"], ["gated 上限", "範數 ≤ 1"], ["gate 學習率", "0.01"], ["對照", "錯置題、通用句、關閉"]] },
-  comp: { tag: "唯一可訓練", title: "壓縮器", body: ["K 個 64 維的 learned query 對音訊做 attention。每個輸出等於「第 k 段的平均」加上「注意力加權的音訊減去全段平均」，所以 K = 1 時也至少保有整段的平均。"], formula: true, facts: [["參數量", "約 26 萬（題幹版另加 26 萬）"], ["K", "1、4、16"], ["訓練", "192 步，lr 1e-3，AdamW"], ["峰值記憶體", "約 16 GiB / 卡"]] },
-  lat: { tag: "瓶頸", title: "K 個 latent", body: ["壓縮器輸出的 K 個 4096 維向量，放在原本音訊 token 的位置。語言模型把它們當成 K 個聲音 token 讀，其他文字完全不變。", "A 線的置換實驗會把某段錄音的 latent（或其中的平均、修正部分）換成另一段錄音的，看答案跟著誰走。"], facts: [["維度", "4096，與 token embedding 相同"], ["數量", "K 個，取代原本數百個"]] },
-  prompt: { tag: "輸入", title: "題目與選項", body: ["回答端永遠看到完整題目和選項：「題目 ⏎ A. yes ⏎ B. no ⏎ Answer with only A or B.」所有版本在這裡完全相同。"], facts: [["題型", "yes / no"], ["每段錄音", "一題 yes、一題 no"]] },
-  dec: { tag: "凍結", title: "Qwen2-Audio 語言模型", body: ["Qwen2-Audio-7B-Instruct 的語言模型部分。它不知道收到的是壓縮過的 latent 還是原本的音訊向量，只是照常讀整個 token 序列。"], facts: [["模型", "Qwen2-Audio-7B-Instruct"], ["revision", "0a09522"], ["訓練", "不訓練"]] },
-  out: { tag: "輸出", title: "A／B logit", body: ["只看第一個輸出 token 中 A 和 B 的 logit，哪個大就選哪個。不生成文字，評分完全確定。", "所有比較都以錄音為單位做配對 bootstrap，三個 seed 先平均再重抽樣。"], facts: [["指標", "答對題數 / 340"], ["區間", "錄音配對 bootstrap 95%"]] },
+  audio: { tag: "輸入", title: "錄音", body: ["AVQA-R1-6K 的環境音題目用來訓練；MMAU test-mini 的音樂、環境音、語音題作開發評估。MMAR 保留到確認方案固定後才評。"], facts: [["訓練", "AVQA 3,991 題"], ["開發", "AVQA 500 題、MMAU 1,000 題"], ["保留", "MMAR 995 題"]] },
+  enc: { tag: "凍結", title: "音訊編碼器與投影層", body: ["Qwen2-Audio 自帶的 Whisper 式編碼器，把錄音轉成一串 4096 維向量。", "寫入端一定讀得到這串向量。回答端只有 Soft，以及評估時保留音訊的 Mid 讀得到；下方的弧線就是這條直接音訊路徑。"], facts: [["輸出", "數百個 4096 維向量"], ["訓練", "不訓練"]] },
+  stem: { tag: "寫入端讀", title: "題目與選項（寫入端）", body: ["寫入端讀和回答端同一個題目與選項排列。這讓寫入端可以先想好答案，再寫進 latent。", "要分開「傳答案」和「傳聲音證據」，需要寫入端不看題的版本。它目前沒學起來（loss 停在 ln 4），列為後續工作。"], facts: [["選項順序", "兩端一致，原序與反序各評一次"], ["對照", "寫入端不看題"]] },
+  comp: { tag: "LoRA　第一次", title: "Qwen 寫入", body: ["Qwen2-Audio 讀〔音訊〕〔題目與選項〕〈assistant〉，後面接一個 start token 和 K 個可學習 query，取這 K 個位置最後一層的 hidden state 當作 latent。", "寫入和回答是同一個模型、同一組 LoRA。"], formula: "寫入　[音訊][題目＋選項]〈assistant〉[start][q<sub>1</sub>…q<sub>K</sub>] → z<sub>1</sub>…z<sub>K</sub>\n回答　[音訊?][題目＋選項]〈assistant〉[start][z<sub>1</sub>…z<sub>K</sub>][end] → 選項字母\n<span class=\"cm\">Soft 保留音訊　Hard 不給　Mid 訓練時以 0.5 機率遮掉</span>", facts: [["K", "4（對照 K = 0）"], ["LoRA", "q、v 投影，rank 8"], ["訓練", "AVQA，3,000 步"], ["學習率", "latent 1e-3，LoRA 1e-4"]] },
+  lat: { tag: "介入點", title: "K 個 latent", body: ["第二次跑時放在 start 與 end token 之間。評估時固定其他所有輸入，只把它換成別題的、評估集平均、全零，或加上同尺度的高斯噪聲。", "每種介入報兩個數字：答案改變的比例，以及答對率的變化。"], facts: [["數量", "K = 4"], ["介入", "換別題、平均、歸零、加噪"], ["指標", "答案改變比例、答對率變化"]] },
+  prompt: { tag: "回答端讀", title: "題目與選項（回答端）", body: ["回答端看完整題目和選項，最後以選項字母的 logit 作答。所有條件在這裡相同。"], facts: [["題型", "四選一為主"], ["純文字基準", "MMAU 41.9%"]] },
+  dec: { tag: "LoRA　第二次", title: "Qwen 回答", body: ["同一個 Qwen2-Audio。Soft 時原音訊也在序列裡；Hard 時拿掉；Mid 訓練時一半機率拿掉，評估時兩種都報。", "純 LoRA 對照沒有 latent，只保留直接音訊，用來分開微調本身的提升。"], facts: [["模型", "Qwen2-Audio-7B-Instruct"], ["revision", "0a09522"], ["精度", "bf16"]] },
+  out: { tag: "輸出", title: "選項字母 logit", body: ["比較每個選項字母在第一個輸出 token 的 logit，取最大。不生成文字，評分完全確定。", "每題以原順序與反轉順序各評一次再平均，控制模型對特定字母的偏好。區間以題目 bootstrap。"], facts: [["指標", "答對率，兩種順序平均"], ["區間", "題目 bootstrap 95%"]] },
 };
 const EDGES = [
   ["audio", "enc", ""], ["enc", "comp", ""], ["stem", "comp", "b"], ["comp", "lat", ""], ["lat", "dec", ""],
   ["prompt", "dec", ""], ["dec", "out", ""], ["enc", "dec", "bypass"],
 ];
 const ARCH = {
-  full: { off: ["stem", "comp", "lat"], edges: (e) => !["stem", "comp", "lat"].includes(e[0]) && e[1] !== "comp", read: "完整音訊 <b>294</b> / 340　原模型，不壓縮" },
-  audio: { off: ["stem"], edges: (e) => e[0] !== "stem" && e[2] !== "bypass", read: "K = 16 純音訊 <b>281.7</b> / 340" },
-  question: { off: [], edges: (e) => e[2] !== "bypass", read: "K = 16　原版加法 <b>228.3</b>　gated＋centered <b>284.7</b>" },
-  text: { off: ["audio", "enc", "stem", "comp", "lat"], edges: (e) => ["prompt", "dec"].includes(e[0]), read: "只看文字 <b>183</b> / 340　下限參考" },
+  soft: { off: [], edges: () => true, read: "Soft　MMAU <b>66.0</b>%　換成別題的 latent，改變 <b>0.2%</b> 的答案" },
+  mid: { off: [], edges: () => true, read: "Mid　有音訊 <b>63.6</b>%　換成別題的 latent，仍改變 <b>19.7%</b> 的答案" },
+  hard: { off: [], edges: (e) => e[2] !== "bypass", read: "Hard　MMAU <b>66.5</b>%　換成別題的 latent，降 <b>40.1</b> 點" },
+  lora: { off: ["stem", "comp", "lat"], edges: (e) => !["stem", "comp", "lat"].includes(e[0]) && !["comp", "lat"].includes(e[1]), read: "純 LoRA，沒有 latent　MMAU <b>66.8</b>%" },
 };
-let archMode = "audio", archSel = "comp";
+let archMode = "soft", archSel = "lat";
 function renderEdges() {
   const dg = $("#diagram"), host = $("#edges");
   const box = dg.getBoundingClientRect();
@@ -1162,7 +1180,7 @@ function renderDetail() {
   const body = h("div", { class: "body" }, h("p", { class: "tag", text: n.tag }), h("h3", { text: n.title }), n.body.map((t) => h("p", { text: t })));
   if (n.formula) {
     const pre = h("pre", { class: "formula" });
-    pre.innerHTML = "z<sub>k</sub> = pool<sub>k</sub>(h) + Σ<sub>t</sub> α<sub>kt</sub>·h<sub>t</sub> − mean(h)\nα<sub>k</sub> = softmax( (q<sub>k</sub> + c) · W·LN(h)ᵀ / √64 )\n<span class=\"cm\">c = 0                          純音訊</span>\n<span class=\"cm\">c = W<sub>c</sub>·e(題幹)                原版加法</span>\n<span class=\"cm\">c = tanh(g)·normalize(W<sub>c</sub>·e)     gated</span>";
+    pre.innerHTML = n.formula;
     body.append(pre);
   }
   const dl = h("dl", {}, n.facts.flatMap(([k, v]) => [h("dt", { text: k }), h("dd", { text: v })]));
@@ -1182,30 +1200,32 @@ $$("#diagram .node").forEach((n) => n.addEventListener("click", () => {
   $$("#diagram .node").forEach((x) => x.classList.toggle("sel", x === n));
   renderDetail();
 }));
-$('.node[data-node="comp"]').classList.add("sel");
-setArch("audio"); renderDetail();
+$('.node[data-node="lat"]').classList.add("sel");
+setArch("soft"); renderDetail();
 new ResizeObserver(() => renderEdges()).observe($("#diagram"));
 if (document.fonts && document.fonts.ready) document.fonts.ready.then(renderEdges);
 
 /* ---------- tracks ---------- */
 const SHARED = [
-  { s: "done", t: "共用瓶頸架構", r: "凍結 Qwen2-Audio，只訓練壓縮器，讓音訊證據經由固定數量的向量送到回答端。" },
-  { s: "done", t: "對齊自然問答", r: "在同一批 Clotho-AQA 開發題上比較完整音訊、純文字與壓縮版本。" },
-  { s: "done", t: "分開檢查聲音與文字", r: "固定題目換錄音、固定錄音換壓縮端題幹，分別測聲音與題目內容會不會改變答案。" },
+  { s: "done", t: "共用模型與評分", r: "同一個 Qwen2-Audio-7B-Instruct revision，以選項 logit 作答，比較完整音訊、純文字與 latent 版本。" },
+  { s: "done", t: "分開檢查聲音與文字", r: "固定題目換錄音、固定錄音換題目，分別測聲音與題目內容會不會改變答案。" },
+  { s: "done", t: "收斂主問題", r: "11/25 定案：主問題是 Qwen 會不會用自己寫的 latent。A、C 改作容量基準與讀取對照。" },
 ];
 const TRACKS = [
-  { code: "A", name: "瓶頸容量與證據保留", owner: "負責　健賓", q: "壓成幾個向量後，還保有足夠的作答證據？", ms: [
+  { code: "A", name: "容量基準與聲音介入", owner: "負責　健賓", q: "外部壓縮器給的 K 個向量，能保留多少作答證據？", ms: [
     { s: "done", t: "比較容量與壓縮方式", r: "比較學習式壓縮與固定平均池化，再用自然錄音測試增加容量的效果。", url: "https://github.com/JianBin0218/mai-final/blob/main/PROJECT_HANDOFF.md" },
-    { s: "done", t: "官方測試重現容量增益", r: "514 題上，K = 4 為 69.0%，K = 16 為 79.6%，完整音訊為 82.5%。", url: "https://github.com/JianBin0218/mai-final/tree/main/phase2/a-final-v1" },
-    { s: "done", t: "從向量讀出聲音線索", r: "交換向量成分能改變聲源題的答案。音量探索中，獨立讀出器也能辨認相對音量。", url: "https://github.com/JianBin0218/mai-final/blob/main/PROJECT_HANDOFF.md#已知相反正解的配對與音量讀出" },
-    { s: "next", t: "研究相對音量", r: "用配對錄音分辨音量線索能否保留、以及回答端怎麼使用。", url: "https://github.com/JianBin0218/mai-final/tree/main/phase2/a-level-contrast-v1" },
+    { s: "done", t: "官方測試重現容量增益", r: "514 題上，純文字 54.3%，K = 4 為 69.0%，K = 16 為 79.6%，完整音訊為 82.5%。", url: "https://github.com/JianBin0218/mai-final/tree/main/phase2/a-final-v1" },
+    { s: "done", t: "音量線索的保留與使用", r: "24 dB 的 100 個新聲源上，K = 16 線性讀出 97.8%，原回答端配對排序 66.4%（指標不同）。", url: "https://github.com/JianBin0218/mai-final/tree/73b6a57a0dfa798a0d4c90eb6b6442a3401a26d4/phase2/a-level-response-v2" },
+    { s: "next", t: "提供 B4 能沿用的配對刺激", r: "把受控的聲音介入與指標整理成 B4 也能用的配對錄音。" },
   ] },
-  { code: "B", name: "題幹導引", owner: "負責　cshsieh", q: "壓縮器先看題目，能不能挑對聲音證據？", ms: [
-    { s: "done", t: "測試題幹偏移", r: "直接加題幹會拉低表現。限制強度後，干擾減少，正確題幹相較錯置題幹仍沒有穩定增益。", url: "https://github.com/JianBin0218/mai-final/tree/main/phase2/guidance-v1" },
-    { s: "done", t: "測試逐槽路由與多事件錄音", r: "第二輪以合成錄音和 Clotho 多題訓練測試。兩種導引方式都未達預定成功標準。", url: "https://github.com/JianBin0218/mai-final/tree/931f3fa7361d46cf69944b3aedcc5275f50a15ca/phase2/b2-v2" },
-    { s: "next", t: "聚焦同一錄音中的不同事件", r: "把多事件錄音上的初步訊號當作假說，用新聲源重測正確與錯置題幹的差距。", url: "https://github.com/JianBin0218/mai-final/blob/931f3fa7361d46cf69944b3aedcc5275f50a15ca/PROJECT_HANDOFF.md#對-b-線的建議" },
+  { code: "B", name: "latent 介入（主實驗）", owner: "負責　cshsieh", q: "回答端聽得到音訊時，Qwen 會用自己寫的 latent 嗎？", ms: [
+    { s: "done", t: "早期：外部壓縮器讀題目", r: "B1、B2 讓壓縮器先讀題幹。限制尺度後不再干擾，但正確題幹相較錯置題幹沒有穩定增益。", url: "https://github.com/JianBin0218/mai-final/tree/931f3fa7361d46cf69944b3aedcc5275f50a15ca/phase2/b2-v2" },
+    { s: "done", t: "讓 Qwen 自己寫 latent", r: "B3：回答端只看 latent 時，K = 1 就達到完整音訊參考值；寫入端換看相反題，排序大幅反轉。", url: "https://github.com/JianBin0218/mai-final/tree/main/phase2/b3-pilot" },
+    { s: "done", t: "B4：Soft、Hard、Mid 與 latent 介入", r: "Soft 的介入只改變 0.1–0.9% 的 MMAU 答案；Hard、Mid 依賴 latent。單一 seed，開發診斷。", url: "https://github.com/JianBin0218/mai-final/tree/main/phase2/b4-pilot" },
+    { s: "next", t: "確認 Soft 繞過 latent", r: "事先固定指標與最小效應，跑多個 seed，再評保留的 MMAR。", url: "https://github.com/JianBin0218/mai-final/blob/main/PROJECT_HANDOFF.md#下一步" },
+    { s: "next", t: "後續：latent 傳答案還是證據", r: "修好寫入端不看題的 Hard，再做同題相反證據的配對交換。" },
   ] },
-  { code: "C", name: "回答端讀取證據", owner: "負責　pqweraddy", q: "固定壓縮後的向量，改變讀法能不能答得更好？", ms: [
+  { code: "C", name: "讀取對照", owner: "負責　pqweraddy", q: "固定同一組 latent，改變回答端的讀取方式，能讀出哪些線索？", ms: [
     { s: "done", t: "訂出讀取證據的研究設計", r: "共用 A 線的 K = 16 向量，將變因放在回答端。先選擇事件數量作為可控制的聲音線索。", url: "https://github.com/JianBin0218/mai-final/blob/67425e739d4d5889c7047ea5525f800ad580da12/PROJECT_HANDOFF.md#c-線讓回答端讀取壓縮證據" },
     { s: "done", t: "段數題轉接層探索", r: "固定 K = 16 時，受控段數題兩段皆對率從 0% 到 56%，自然開發題表現下降。", url: "https://github.com/JianBin0218/mai-final/tree/main/phase2/c-readout-v1" },
     { s: "next", t: "比較相對音量的讀取方式", r: "沿用同一組壓縮向量，比較答案門檻校準與小型轉接層，同時檢查自然題表現。" },
@@ -1265,12 +1285,78 @@ const E_IN = [
   { t: "平均池化 16 格", base: 0, ad: 54, lo: 42, hi: 66, donor: 71, probe: 82, nat0: 59.1, nat1: 54.1 },
   { t: "學習式 K = 16", base: 0, ad: 56, lo: 40, hi: 72, donor: 70, probe: 80, nat0: 82.1, nat1: 59.7 },
 ];
+const L_ACC = [
+  { t: "原始模型", av: [67.3, 32.4], mm: [65.1, 41.9] },
+  { t: "純 LoRA", av: [80.8, 48.8], mm: [66.8, 43.5] },
+  { t: "K = 0，只有邊界 token", av: [80.3, 48.3], mm: [66.0, 43.2] },
+  { t: "Soft", av: [80.4, 49.0], mm: [66.0, 43.4] },
+  { t: "Soft 加重建損失", av: [79.1, 47.1], mm: [66.3, 44.4] },
+  { t: "Mid", av: [77.3, 77.1], mm: [63.6, 63.8] },
+  { t: "Hard", av: [null, 80.1], mm: [null, 66.5] },
+  { t: "Hard，寫入端不看題", av: [null, 26.2], mm: [null, 25.1] },
+];
+const L_INT = ["換成別題", "換成平均", "歸零", "加噪"];
+const L_ROWS = [
+  { t: "Soft，有音訊", v: [[0.1, 0.2], [-0.1, 0.1], [0.1, 0.9], [0.1, 0.4]] },
+  { t: "Soft 加重建，無音訊", v: [[-0.1, 0.7], [-0.4, 0.7], [-0.3, 1.2], [-0.5, 0.9]] },
+  { t: "Mid，有音訊", v: [[-2.9, 19.7], [0.2, 5.5], [0.3, 1.5], [0.1, 0.8]] },
+  { t: "Mid，無音訊", v: [[-33.6, 67.5], [-25.8, 49.4], [-21.6, 40.9], [0.1, 3.0]] },
+  { t: "Hard", v: [[-40.1, 74.0], [-24.8, 59.0], [-31.9, 59.7], [-0.4, 2.2]] },
+];
 const drawn = new Set();
 const chartWidth = (host) => Math.max(300, host.clientWidth);
 function addPath(s, d, color, animate) {
   const p = svg("path", { d, class: "series", stroke: `var(${color})` }, s);
   if (animate && !reduced.matches) { const len = p.getTotalLength(); p.style.setProperty("--len", len); p.classList.add("draw"); }
   return p;
+}
+function chartL1() {
+  const host = $("#chart-l1"); host.innerHTML = "";
+  const w = chartWidth(host), narrow = w < 560;
+  const left = narrow ? 0 : 170, right = 8, rowH = narrow ? 56 : 40, top = 6;
+  const hh = top + L_ACC.length * rowH + 30;
+  const x = (v) => left + ((v - 20) / 70) * (w - left - right);
+  const s = svg("svg", { viewBox: `0 0 ${w} ${hh}`, role: "img", "aria-label": "各模型在回答端有音訊與無音訊時的 MMAU 答對率" }, host);
+  const g = svg("g", { class: "grid" }, s);
+  for (let v = 20; v <= 90; v += 10) {
+    svg("line", { x1: x(v), x2: x(v), y1: top, y2: hh - 26 }, g);
+    txt(s, { x: x(v), y: hh - 6, "text-anchor": "middle" }, v + "%");
+  }
+  L_ACC.forEach((d, i) => {
+    const cy = top + i * rowH + (narrow ? 38 : rowH / 2), [on, off] = d.mm;
+    txt(s, { x: narrow ? left : left - 18, y: narrow ? cy - 14 : cy + 5, "text-anchor": narrow ? "start" : "end", class: "lab" }, d.t);
+    if (on != null) svg("line", { x1: x(Math.min(on, off)), x2: x(Math.max(on, off)), y1: cy, y2: cy, class: "connector" }, s);
+    svg("circle", { cx: x(off), cy, r: 5, fill: "var(--paper)", stroke: "var(--ink-2)", "stroke-width": 1.5 }, s);
+    if (on != null) svg("circle", { cx: x(on), cy, r: 5.5, fill: "var(--b)", class: "mk" }, s);
+    const hit = svg("rect", { x: left, y: cy - rowH / 2 - (narrow ? 8 : 0), width: w - left - right, height: rowH, class: "hit" }, s);
+    hit.addEventListener("pointermove", (e) => showTip(`<div class="th">${d.t}</div>` +
+      (on != null ? tipRow(cssv("--b"), "MMAU　有音訊", on.toFixed(1) + "%") : "") + tipRow(cssv("--ink-2"), "MMAU　無音訊", off.toFixed(1) + "%") +
+      (d.av[0] != null ? tipRow(cssv("--ink-3"), "AVQA 開發　有音訊", d.av[0].toFixed(1) + "%") : "") + tipRow(cssv("--ink-3"), "AVQA 開發　無音訊", d.av[1].toFixed(1) + "%"), e.clientX, e.clientY));
+    hit.addEventListener("pointerleave", hideTip);
+  });
+  const f = (v) => (v == null ? "—" : v.toFixed(1) + "%");
+  $("#table-l1").innerHTML = `<table><thead><tr><th>模型</th><th>AVQA 有音訊</th><th>AVQA 無音訊</th><th>MMAU 有音訊</th><th>MMAU 無音訊</th></tr></thead><tbody>${L_ACC.map((d) => `<tr><td>${d.t}</td><td>${f(d.av[0])}</td><td>${f(d.av[1])}</td><td>${f(d.mm[0])}</td><td>${f(d.mm[1])}</td></tr>`).join("")}</tbody></table>`;
+}
+function chartL2() {
+  const host = $("#chart-l2"); host.innerHTML = "";
+  const w = chartWidth(host), narrow = w < 560;
+  const left = narrow ? 0 : 170, gap = 2, head = 30, rowH = narrow ? 70 : 52, labH = narrow ? 22 : 0;
+  const cw = (w - left - gap * 3) / 4, hh = head + L_ROWS.length * rowH + 4;
+  const s = svg("svg", { viewBox: `0 0 ${w} ${hh}`, role: "img", "aria-label": "五種模型與回答端條件下，四種 latent 介入改變的 MMAU 答案比例" }, host);
+  L_INT.forEach((c, j) => txt(s, { x: left + j * (cw + gap) + cw / 2, y: 18, "text-anchor": "middle", class: "lab", style: "font-size:12.5px" }, c));
+  L_ROWS.forEach((d, i) => {
+    const y0 = head + i * rowH;
+    txt(s, narrow ? { x: 0, y: y0 + 15, class: "lab", style: "font-size:12.5px" } : { x: left - 18, y: y0 + rowH / 2 + 5, "text-anchor": "end", class: "lab" }, d.t);
+    d.v.forEach(([da, ch], j) => {
+      const x0 = left + j * (cw + gap), y = y0 + labH, ch_h = rowH - labH - gap;
+      const cell = svg("rect", { x: x0, y, width: cw, height: ch_h, rx: 2, fill: "var(--b)", "fill-opacity": (0.05 + 0.5 * Math.min(1, ch / 75)).toFixed(3) }, s);
+      txt(s, { x: x0 + cw / 2, y: y + ch_h / 2 + (narrow ? 1 : 2), "text-anchor": "middle", style: `font:500 ${narrow ? 15 : 17}px var(--serif);font-variant-numeric:lining-nums;fill:var(--ink)` }, ch.toFixed(1) + "%");
+      txt(s, { x: x0 + cw / 2, y: y + ch_h / 2 + (narrow ? 15 : 17), "text-anchor": "middle", style: "font:400 11px var(--sans);fill:var(--ink-2)" }, signed(da) + " 點");
+      cell.addEventListener("pointermove", (e) => showTip(`<div class="th">${d.t}　${L_INT[j]}</div>` + tipRow(cssv("--b"), "答案改變", ch.toFixed(1) + "%") + tipRow(cssv("--ink-3"), "答對率變化", signed(da) + " 點"), e.clientX, e.clientY));
+      cell.addEventListener("pointerleave", hideTip);
+    });
+  });
+  $("#table-l2").innerHTML = `<table><thead><tr><th>模型與回答端輸入</th>${L_INT.map((c) => `<th>${c}</th>`).join("")}</tr></thead><tbody>${L_ROWS.map((d) => `<tr><td>${d.t}</td>${d.v.map(([da, ch]) => `<td>${signed(da)}（${ch.toFixed(1)}%）</td>`).join("")}</tr>`).join("")}</tbody></table><p class="src" style="margin-top:8px">答對率變化（點），括號內為答案改變的比例。</p>`;
 }
 function chartA() {
   const host = $("#chart-a"); host.innerHTML = "";
@@ -1434,8 +1520,8 @@ function chartF() {
   });
   $("#table-f").innerHTML = `<table><thead><tr><th>輸入</th><th>原回答端</th><th>加轉接層</th><th>差距（pp）</th></tr></thead><tbody>${E_IN.map((d) => `<tr><td>${d.t}</td><td>${d.nat0.toFixed(1)}%</td><td>${d.nat1.toFixed(1)}%</td><td>${signed(d.nat1 - d.nat0)}</td></tr>`).join("")}</tbody></table>`;
 }
-const CHARTS = { a: [chartA], b: [chartB, chartC], d: [chartD], e: [chartE, chartF] };
-let curTab = "a";
+const CHARTS = { l: [chartL1, chartL2], a: [chartA], b: [chartB, chartC], d: [chartD], e: [chartE, chartF] };
+let curTab = "l";
 const renderTab = () => CHARTS[curTab].forEach((f) => f());
 function selectTab(t) {
   $$(".tab").forEach((x) => { const on = x === t; x.setAttribute("aria-selected", String(on)); x.tabIndex = on ? 0 : -1; $("#" + x.getAttribute("aria-controls")).hidden = !on; });
