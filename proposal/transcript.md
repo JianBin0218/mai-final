@@ -1,73 +1,90 @@
-# 提案報告逐字稿（5 分鐘）
+# 提案報告逐字稿（約 4 分 35 秒）
 
-對應 `proposal/slides.typ`。括號內是時間預算，以每分鐘約 230 字估算。
+對應 Typst 專案裡的 11 頁投影片（Introduction、Related Work、Methodology and Experiments、Next Steps）。有圖、無圖兩個版本都適用。括號內是每頁的時間預算，以每分鐘約 230 字估算。
 
-## 開場（0:10）
+## 1. 標題頁（0:10）
 
-大家好，我們的題目是：音訊語言模型，到底有沒有用到它自己產生的 latent？
+大家好，我們是第 29 組。我們的題目是：Do Audio Language Models Use Their Own Latents？也就是，音訊語言模型到底有沒有用到它自己產生的 latent。
 
-## Introduction / Motivation
+## 2. Outline（0:05）
 
-### The question（0:40）
+報告分成四個部分：動機、相關研究、方法與初步結果，以及下一步。
 
-最近有一類方法叫 latent reasoning，讓模型在回答前先產生一段連續的「思考」向量。像 CoAT 把這個做法用在 Qwen2-Audio 上，MMAU 的準確率從 52.5% 提升到 66.9%。
+## Introduction
 
-但這裡有一個問題：模型回答的時候，原始音訊其實還在。它大可以直接聽音訊作答，完全不理那段 latent。所以準確率變高，不代表答案真的依賴 latent。
+### 3. Motivation（0:30）
 
-因此我們的問題是：當模型還聽得到原始音訊時，它自己產生的 latent，會不會影響它最後的答案？
+Latent reasoning 是讓模型在回答之前，先產生一段連續向量來思考，而不是寫出文字的推理過程。CoAT 把這個方法用在 Qwen2-Audio 上，MMAU 準確率從 52.5% 提升到 66.9%。
 
-### How we got here（0:50）
+但是模型回答時，其實還聽得到原始音訊。所以這個提升可能來自 latent，也可能只是微調之後，模型直接聽音訊答得更好。單看準確率，分不出這兩種情況。
 
-這個問題其實是我們繞了一段路才釐清的。
+### 4. Research Question and Contributions（0:25）
 
-一開始的想法，就是讓 LLM 自己把聽到的聲音寫進 K 個 latent，再只靠這些 latent 答題。但我們實際先做出來的，是一個 LLM 外面的小壓縮器，類似 BLIP-2 的 Q-Former，把音訊特徵壓成 K 個向量，交給凍結的 Qwen 回答。這樣比較好控制，也比較好量測。
+所以我們的研究問題是：在聽得到原始音訊時，音訊語言模型會不會用自己的 latent 來回答？
 
-做了一陣子我們才發現，這其實是音訊 token 壓縮，不是 latent reasoning。表格裡可以看到差別：寫 latent 的不是 LLM 本身，它也不知道題目，LLM 也沒有訓練。
+我們有三點貢獻：針對音訊的因果測試，只改變 latent；用對照組區分微調和 latent 的效果；比較回答時有完整、部分或沒有音訊的設定。
 
-### What the detour taught us（0:50）
+初步結果顯示，音訊也有影像研究中提過的 latent bypass。
 
-不過這段繞路給了我們三個重要的觀察。
+## Related Work
 
-第一，少量向量就夠用。在 Clotho-AQA 官方 test 上，只給 16 個向量就有 79.6%，完整音訊是 82.5%，純文字只有 54.3%。
+### 5. Latent Reasoning in Vision（0:25）
 
-第二，讀得出來不等於有用到。在控制過的一段和兩段聲音上，線性 probe 可以從 latent 讀出答案將近九成，但回答端一百段錄音全部回答 yes。
+在影像領域，已經有好幾篇研究直接對 latent 做介入，例如歸零、加雜訊，或換成別的 latent，結果準確率幾乎不變，代表 latent 被繞過了。
 
-第三，小壓縮器學不會依題目挑證據。給它看題目，在自然題目上沒有題目專屬的幫助。
+也有研究提出修正方法：一種是在回答時拿掉影像，讓 latent 變成必要；另一種是在推論時直接最佳化 latent。
 
-所以，把資訊保存在 latent 裡，和真的用上它，是兩件事。我們要直接量測「有沒有用到」。
+### 6. Latent Reasoning in Audio（0:20）
 
-## Related Works
+音訊這邊，CoAT、JELAR、DeALR 都提出了 latent 方法，SPARE 也發現推理變長時，注意力會偏離音訊。但這些研究都沒有固定訓練好的模型、只對 latent 做介入。這就是我們要補上的缺口。
 
-### Related works（0:35）
+## Methodology and Experiments
 
-相關研究大致分四類。Coconut 用最後一層 hidden state 當連續思考，CoAT 把它延伸到音訊，而且保留原音訊。SPARE 則指出，推理過程變長時，注意力可能會離開音訊。BLIP-2 和 VoCo-LLaMA 是把資訊壓進少量 token 的代表作法。最後，probing 的文獻提醒我們，probe 讀得到資訊，不代表模型依賴它。
+### 7. Two-Pass Write–Read Architecture（0:35）
 
-這些研究大多比較「加不加這個元件」。我們的切入點不同：把訓練好的模型固定，只替換 latent，直接看答案會不會變。
+我們使用 Qwen2-Audio-7B-Instruct，兩個階段共用一組 LoRA。
 
-## Methods
+第一階段是寫入：模型讀音訊、題目和選項，取 4 個可學習位置的最後一層 hidden state，當作 4 個 latent。第二階段是回答：模型根據題目、選項和這 4 個 latent，輸出各選項字母的分數。
 
-### One writer, three readers（0:45）
+三種回答端只差在有沒有直接音訊：Soft 有音訊，和 CoAT 一樣，是主要測試；Hard 沒有音訊，只能靠 latent；Mid 在訓練時有一半機率拿掉音訊。
 
-方法分成兩次 forward。第一次是寫入端：模型讀音訊、題目和選項，再接上 K 個可學習的 query，我們取這些位置的最後一層 hidden state 當作 latent。第二次是讀取端：模型拿題目和 latent 來選答案。
+### 8. Interventions, Controls, and Data（0:25）
 
-關鍵在於讀取端看不看得到音訊。Soft 版本永遠看得到，這是我們的主要測試。Hard 版本完全看不到，可以量 latent 能承載多少資訊。Mid 版本在訓練時有一半機率遮掉音訊，看這樣能不能逼模型依賴 latent。
+訓練完之後，我們固定模型和輸入，只替換 latent：換成別題的、資料集平均、歸零，或加雜訊，再看有多少答案改變、準確率變多少。
 
-所以 bottleneck 在這裡是一個工具，用來控制音訊可以透過哪條路徑到達答案。
+對照組包括只做 LoRA、K 等於 0、加上重建損失，以及不看題目的寫入端。資料方面，用 AVQA 訓練，AVQA 和 MMAU 做開發，MMAR 留到最後才評估。
 
-### How we test whether the latent is used（0:40）
+### 9. Pilot Results: Latent Bypass with Direct Audio（0:35）
 
-測試方式是：固定模型、音訊、題目和選項，只替換 latent，例如換成別題的 latent、整個資料集的平均、歸零，或加上雜訊。
+這是 Soft 的初步結果。原始模型在 MMAU 是 65.1%，只做 LoRA 是 66.8%，K 等於 0 是 66.0%，而有 4 個 latent 的 Soft 也是 66.0%。有沒有 latent，分數都差不多，所以提升來自微調，不是 latent。
 
-如果 soft 版本在替換後答案都沒變，代表 latent 被繞過了，準確率的提升其實來自微調。如果準確率下降、答案跟著 latent 改變，代表即使聽得到音訊，模型還是有用 latent。如果 mid 的變化比 soft 大，代表遮音訊的訓練能製造這種依賴。
+四種介入只改變了 0.1% 到 0.9% 的答案。就算加上重建損失、確定 latent 裡有音訊資訊，也只改變 0.7% 到 1.2%。也就是說，模型直接聽音訊，繞過了 latent，和影像研究看到的現象一樣。
 
-另外，我們有只做 LoRA、K 等於 0、寫入端不看題目等對照組，用來區分「latent 有幫助」和「微調有幫助」。
+### 10. Pilot Results: Reader Conditions（0:30）
+
+那如果拿掉音訊呢？我們同樣把 latent 換成別題的。Soft 只有 0.2% 的答案改變；Mid 在有音訊時改變 19.7%，沒有音訊時改變 67.5%；Hard 準確率 66.5%，換掉 latent 後掉了 40 分，74% 的答案都變了。
+
+所以 latent 有能力攜帶資訊，但模型只有在聽不到音訊時才會用它。不過，寫入端看得到題目和選項，latent 裡可能只是答案，不一定是聲音證據。
 
 ## Next Steps
 
-### Status and next steps（0:30）
+### 11. Proposed Experiment: Paired Evidence Swap（0:35）
 
-目前資料和流程都準備好了。訓練用 AVQA，開發用 MMAU，MMAR 保留到評估方案固定之後才使用。原始 Qwen2-Audio 在 MMAU 有音訊是 65.1%，純文字是 41.9%。
+所以下一步，我們用配對錄音來區分這兩種情況。兩段錄音只差在有沒有目標聲音，例如狗叫。回答端聽有狗叫的 Clip A，latent 則改用沒有狗叫的 Clip B 來寫。
 
-接下來會先跑 K 等於 4 的第一輪，再固定成功標準、增加 seed 和不同的 K，最後在 MMAR 評估一次。更長遠的問題是，latent 裡有沒有多步推理。
+如果 Yes 減 No 的分數往 Clip B 的答案移動，代表 latent 帶的是聲音證據。我們也會用不看題目的寫入端，並讓兩端使用不同的選項順序，排除 latent 只是在傳答案的可能。
 
-最後補充一個早期跡象：在 40 題的小規模測試中，soft 版本替換 latent 後答案完全沒變。這還不是證據，但正是我們想正式回答的問題。謝謝大家。
+以上是我們的提案，謝謝大家。
+
+---
+
+## 備用問答（不在報告時間內）
+
+**為什麼原始 Qwen2-Audio 在我們這裡是 65.1%，CoAT 報告的是 52.5%？**
+評分方式不同。我們直接比較選項字母的分數，並平均正反兩種選項順序，不是讓模型生成文字再解析答案。
+
+**這些結果可靠嗎？**
+目前是 pilot：單一 seed、K = 4、開發集上的結果。之後會用多個 seed 重跑，並且只在保留的 MMAR 上做一次最終評估。
+
+**不看題目的寫入端現在可以用了嗎？**
+還不行。Pilot 中 blind Hard 只有 25.1%，接近亂猜，所以要先把它訓練好，才能跑配對交換實驗。
