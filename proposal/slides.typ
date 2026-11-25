@@ -1,106 +1,168 @@
-// Proposal talk, 5 minutes. Content only: the theme supplies the styling.
-// "Say:" comments give the spoken line and the time budget for each slide.
-
-= Introduction / Motivation
-
-== The question
-// Say (0:40): accuracy gains are the usual evidence; we want a test of use, not of benefit.
-
-Latent reasoning helps audio QA:
-- Continuous "thoughts" before the answer raise accuracy (CoAT: Qwen2-Audio on MMAU *52.50% → 66.90%*).
-- But the model *still hears the original audio* while it answers.
-- Higher accuracy does not show that the answer *depends* on the latent. The latent may be bypassed.
-
-*When an audio language model can still access the original audio, do its latent thoughts affect what it answers?*
-
-== How we got here
-// Say (0:50): we kept the detour because it gave us a baseline and two warning signs.
-
-+ *Original idea:* the LLM writes what it heard into K latents, then answers from them (latent reasoning + a capacity bottleneck).
-+ *What we built first:* a small external compressor (Q-Former-like) squeezes audio features into K slots for a *frozen* Qwen. It is easy to control and measure.
-+ *The gap we noticed:* that is audio-token compression, not latent reasoning. The LLM never writes the latent.
-
-#table(
-  columns: 3,
-  [], [*What we built*], [*What we meant to study*],
-  [Who writes the latent], [external compressor], [the LLM itself],
-  [Knows the question?], [only if we feed it the stem], [already read it],
-  [LLM trained?], [frozen], [LoRA],
+#set text(
+  font: "New Computer Modern Sans"
 )
 
-== What the detour taught us
-// Say (0:50): keeping evidence and using it are different, so we measure use directly.
+#import "@preview/touying:0.7.3": *
+#import themes.stargazer: *
 
-- *A few vectors are enough.* Official Clotho-AQA test, 514 yes/no questions, reader sees only the slots: text only 54.3%, K=4 69.0%, *K=16 79.6%*, full audio 82.5%.
-- *Readable ≠ used.* On controlled one- vs two-segment clips, a linear probe reads the cue from K=16 latents *89–90%* of the time on held-out sources. The frozen decoder answers "yes" to all 100 clips.
-- *A small compressor can't pick evidence.* Feeding it the question gave no question-specific gain on Clotho. A synthetic multi-event task showed a signal at K=4/16 but failed our pre-registered bar.
 
-→ Keeping evidence in a latent and using it are different. *Measure use directly.*
-
-// Clotho numbers: locked plan, paired bootstrap over recordings.
-// Probe and question-guidance results are development-set findings.
-
-= Related Works
-
-== Related works
-// Say (0:35): CoAT reports gains from adding the block; we ask whether the answer moves when the latent changes.
-
-- *Latent reasoning:* Coconut (continuous thoughts from last-layer hidden states); CoAT (audio latent thoughts, audio kept in context).
-- *Does reasoning look at audio?* SPARE: long reasoning chains may pull attention away from the audio.
-- *Compressing into K tokens:* BLIP-2 Q-Former, Flamingo resampler (external); VoCo-LLaMA (inside the LLM).
-- *Decodable ≠ used:* probing with control tasks. A probe finding information does not mean the model relies on it.
-
-Our angle: *freeze a trained model and replace only its latent*, an ablation of the latent itself rather than of a training component.
-
-= Methods
-
-== One writer, three readers
-// Say (0:45): same writer in all three; only the reader's access to audio changes.
-
-- *Pass 1 (writer):* [audio] [question + options] [start] [K learned queries] → last-layer hidden states = *K latents*
-- *Pass 2 (reader):* [audio?] [question + options] [start] [K latents] [end] → answer-letter logits
-
-#table(
-  columns: 3,
-  [*Reader*], [*Audio at answer time*], [*What it tells us*],
-  [Soft], [always], [Is the latent bypassed? (main test)],
-  [Hard], [never], [How much evidence K latents can carry],
-  [Mid], [dropped with p = 0.5 in training], [Can training force reliance?],
+#show: stargazer-theme.with(
+  aspect-ratio: "16-9",
+  config-common(new-section-slide-fn: none),
+  config-info(
+    title: [Do Audio Language Models Use Their Own Latents?],
+    subtitle: [Team 29 · MAI 2026 Final Project Proposal],
+    author: [Cheng-Hsian Hsieh,  Yu-Syuan Lee, Jian-Bin Wu],
+    date: "2026-11-26",
+    institution: [Dept. of Computer Science & Information Engineering, National Taiwan University],
+  ),
 )
 
-The bottleneck is a *tool*: it controls which path audio can take to the answer. Qwen2-Audio-7B with LoRA, trained on AVQA.
+#set heading(numbering: none)
 
-== How we test whether the latent is used
-// Say (0:40): the plain-LoRA and K=0 controls separate "the latent helps" from "fine-tuning helps".
+#let ink-blue = rgb("#075a9e")
+#let pale-blue = rgb("#edf5fc")
+#let pale-gray = rgb("#f2f4f6")
+#let accent(body) = text(fill: ink-blue, weight: "bold", body)
+#let panel(tone, body) = block(width: 100%, fill: tone, inset: (x: 12pt, y: 9pt), radius: 4pt, body)
 
-Fix the trained model, audio, question and options. *Replace only the latent:* normal, swap (another item's latent), dataset mean, zero, added noise. For soft/mid readers, also remove the audio.
+// 5-minute proposal. Timing includes the title and outline slides (total about 4:35).
+// Say (0:10): We study whether audio language models actually use the latent vectors they write before answering.
+#title-slide()
+
+// Say (0:05): Introduction, related work, our setup and pilot results, and next steps.
+#outline-slide()
+
+= Introduction
+
+== Motivation
+// Say (0:30): Latent reasoning lets a model think in continuous vectors instead of text. CoAT brings this to audio and improves MMAU a lot (CoAT, Table 1). But its reader still sees the original audio, so the gain may come from the latents, or from fine-tuning while the model keeps reading the audio. Accuracy alone cannot tell these apart.
+
+*Latent reasoning:* the model writes continuous vectors before answering, instead of a text chain of thought.
+
+#panel(pale-blue)[
+  #accent[CoAT on MMAU] · Qwen2-Audio accuracy *52.50% → 66.90%*
+]
+
+#align(center, image("figures/fig-motivation.svg", width: 90%))
+
+== Research Question and Contributions
+// Say (0:25): Our question: when direct audio is available, does an audio model use its own latents? Our pilot already suggests the answer is no, the same latent bypass reported for images.
+
+#panel(pale-blue)[
+  *Research question.* When direct audio is available, do audio language models use their own latents to answer?
+]
+
++ *Causal latent test for audio.* Fix the trained model and all inputs; change only the latents.
++ *Controls that separate fine-tuning from latents.* Plain LoRA, K = 0, and a reconstruction loss.
++ *Reader conditions.* Compare readers with full, partial, or no direct audio.
+
+*Pilot finding:* audio latent reasoning shows the same bypass reported in vision.
+
+= Related Work
+
+== Latent Reasoning in Vision
+// Say (0:25): In vision, several papers already intervene on latents and find they are bypassed. Two lines of fixes exist: making latents necessary by removing the image at answer time, and optimizing latents at inference time. We test whether the same bypass holds for audio.
+
+#text(size: 0.85em)[
+#table(
+  columns: (1.1fr, 1fr), inset: (x: 8pt, y: 5pt),
+  [*Work*], [*Finding*],
+  [Imagination Helps (ICML 2026)], [Changing latents barely changes answers],
+  [What's Holding Back Latent Visual Reasoning?], [Zero / noise / random latents: accuracy almost unchanged],
+  [Latent Visual Reasoning in Silence (NeurIPS 2026)], [Replacing or removing latents barely hurts],
+  [Visual Latents Know More (NeurIPS 2026)], [Silent latents; fix by inference-time optimization],
+  [Reason Through the Latent! (CVRR)], [Removes image states so latents become necessary],
+)
+]
+
+== Latent Reasoning in Audio
+// Say (0:20): Audio has latent reasoning methods with accuracy gains, but none of them fixes the model and changes only the latents. That is the gap we fill.
+
+#text(size: 0.9em)[#table(
+  columns: (auto, 1fr, auto), inset: (x: 8pt, y: 5pt),
+  [*Work*], [*Approach*], [*Latent intervention*],
+  [CoAT], [Continuous thinking positions; Qwen2-Audio], [No],
+  [JELAR], [WavJEPA features as latent targets; Audio-Reasoner], [No],
+  [DeALR], [Training-free latent optimization; Qwen2-Audio, Qwen2.5-Omni], [No],
+  [SPARE (Interspeech 2026)], [Attention drifts from audio during long reasoning], [No],
+)]
+
+#panel(pale-blue)[
+  *Gap.* None of these audio studies fixes a trained model and intervenes only on its latents.
+]
+
+= Methodology and Experiments
+
+== Two-Pass Write–Read Architecture
+// Say (0:35): Qwen2-Audio-7B-Instruct writes latents in the first pass and answers in the second, with one shared LoRA (q and v projections, rank 8). Three readers share the architecture and are trained separately; they differ only in direct audio. Soft matches CoAT and is our main test.
+
+#align(center, image("figures/fig-architecture.svg", width: 76%))
 
 #table(
-  columns: 2,
-  [*Observation (soft reader)*], [*Reading*],
-  [answers unchanged under swap / mean / zero], [latent is *bypassed*: gains come from fine-tuning],
-  [accuracy drops, answers move with the latent], [latent is *used* even with audio available],
-  [mid reader moves more than soft], [audio dropout *creates* reliance],
+  columns: (auto, 1fr), inset: (x: 8pt, y: 5pt),
+  [*Reader*], [*Direct audio at the reader*],
+  [*Soft · main test*], [Available, as in CoAT],
+  [Hard], [Removed; audio reaches the answer only through latents],
+  [Mid], [Masked with p = 0.5 in training; evaluated with and without],
 )
 
-Controls: plain LoRA (no latent), K=0 (start/end tokens only), writer blind to the question, soft + CoAT-style reconstruction loss.
+== Interventions, Controls, and Data
+// Say (0:25): After training we fix the model and all inputs and change only the latents, four ways. We report how many answers change and how accuracy changes. Plain LoRA and K = 0 show how much of the gain needs latents at all. Each question is scored in the original and reversed option order, then averaged.
 
-// Both option orders, with writer and reader using the same order. Text-only baseline reported alongside.
+#align(center, image("figures/fig-interventions.svg", width: 78%))
+
+#panel(pale-gray)[#accent[Controls] · Plain LoRA (no latents) · K = 0 (boundary tokens only) · reconstruction loss · question-blind writer]
+
+#table(
+  columns: (auto, 1fr), inset: (x: 8pt, y: 5pt),
+  [*Split*], [*Data*],
+  [Train], [AVQA-R1-6K, 3,991 questions],
+  [Development], [AVQA dev 500 · MMAU test-mini 1,000],
+  [Held out], [MMAR, final evaluation only],
+)
+
+== Pilot Results: Latent Bypass with Direct Audio
+// Say (0:35): Soft scores the same as plain LoRA and K = 0, so the gain comes from fine-tuning, not from latents. All four interventions change at most 0.9% of answers, and accuracy moves by at most 0.1 points. Even latents forced to encode the audio are ignored. This mirrors the bypass found in vision. This is a pilot: one seed, K = 4, development evaluation.
+
+#table(
+  columns: (1fr, auto, auto), inset: (x: 9pt, y: 6pt), align: (left, center, center),
+  [*Model (MMAU test-mini)*], [*Accuracy*], [*Answers changed by interventions*],
+  [Original Qwen2-Audio], [65.1%], [—],
+  [Plain LoRA, no latents], [66.8%], [—],
+  [K = 0, boundary tokens only], [66.0%], [—],
+  [*Soft*], [*66.0%*], [*0.1–0.9%*],
+)
+
+#panel(pale-blue)[
+  With a reconstruction loss the latents encode the audio, yet interventions still change only *0.7–1.2%* of answers.
+]
+
+== Pilot Results: Reader Conditions
+// Say (0:30): Same pilot setting; a swap means latents written for another question. Once direct audio is removed, the swap matters. Hard answers well from latents alone and collapses under a swap. Mid keeps using latents even when audio is present. But the writer sees the question and options, so reliance does not yet show that latents carry audio evidence.
+
+#table(
+  columns: (1fr, auto, auto, auto), inset: (x: 9pt, y: 6pt), align: (left, center, center, center),
+  [*Reader at evaluation*], [*Accuracy*], [*After latent swap*], [*Answers changed*],
+  [Soft · audio], [66.0%], [+0.1 pt], [0.2%],
+  [Mid · audio], [63.6%], [−2.9 pt], [19.7%],
+  [Mid · no audio], [63.8%], [−33.6 pt], [67.5%],
+  [Hard · latents only], [66.5%], [−40.1 pt], [74.0%],
+)
+
+#panel(pale-gray)[
+  *Reliance is not yet evidence.* The writer sees the question and options, so latents may relay a chosen answer.
+]
 
 = Next Steps
 
-== Status and next steps
-// Say (0:30): close by repeating the question; the first run tells us whether the soft reader bypasses the latent.
+== Proposed Experiment: Paired Evidence Swap
+// Say (0:35): Next, we ask what the latents carry. We fix the reader's audio and question, and swap in latents written from a paired clip with the opposite answer. If the score moves toward the source clip's answer, the latents carry evidence. A question-blind writer and independent option orders rule out answer shortcuts.
 
-*Ready*
-- Data: AVQA train 3,991 / dev 500; MMAU test-mini 1,000 for development; *MMAR held out* until the plan is locked.
-- Base Qwen2-Audio on MMAU: *65.1%* with audio, 41.9% text-only.
-- Pipeline and latent interventions run end to end.
+#align(center, image("figures/fig-paired-swap.svg", width: 76%))
 
-*Next*
-+ First run: seed 17, K=4, all readers and controls.
-+ Lock success criteria in a plan; add seeds and K = 1 / 4 / 16.
-+ Evaluate MMAR once.
-+ Later: do the latents carry *multi-step* reasoning, beyond audio evidence?
+#panel(pale-blue)[
+  *Measure:* does the Yes-minus-No score move toward the source clip's answer?
+]
 
-_Early hint, not evidence:_ in a 40-question, 600-step smoke test, the soft reader's answers did not change under swap, mean or zero latents.
+*Answer-shortcut checks:* a question-blind writer and independent option orders at writer and reader.

@@ -1,6 +1,6 @@
 # 提案報告逐字稿（約 4 分 35 秒）
 
-對應 Typst 專案裡的 11 頁投影片（Introduction、Related Work、Methodology and Experiments、Next Steps）。有圖、無圖兩個版本都適用。括號內是每頁的時間預算，以每分鐘約 230 字估算。
+對應 `proposal/slides.typ`（11 頁，圖檔在 `proposal/figures/`）。括號內是每頁的時間預算，以每分鐘約 230 字估算。
 
 ## 1. 標題頁（0:10）
 
