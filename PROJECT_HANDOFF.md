@@ -849,7 +849,7 @@ bash b2_confirm.sh 0 "full 1 4 16"
 - 若要繼續，只在 K=4、16、多事件的條件下，預先固定新方案，用新的刺激再確認一次。ESC-50 fold 2 已經用完，需要另一個資料來源（例如 FSD50K）。
 - 和 C 線的結果一起解讀：C 若顯示回答端讀得到 latent 裡的證據，B 的瓶頸就在壓縮端怎麼依題選證據；若讀不到，壓縮端選得再好也幫不上。
 
-### B3／B4 研究紀錄｜LLM 自己寫 latent，以及 latent 有沒有被用上（2026-11-25，進行中，探索性）
+### B3／B4 研究紀錄｜LLM 自己寫 latent，以及 latent 有沒有被用上（2026-11-25，探索性）
 
 **B3：讓 Qwen 自己產生 K 個 latent（`b3_latent.py`）。** 第一次跑 LLM 讀〔音訊〕〔題目〕和 K 個可學習 token，取最後一層 hidden state、逐維度縮放到音訊 token 的尺度，當作 latent。第二次沿用 B2 的回答端，只看 latent 和題目。LLM 凍結，只訓練 latent token 與縮放。以下都是 seed 17 單一模型。
 
