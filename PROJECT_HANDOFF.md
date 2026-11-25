@@ -4,7 +4,7 @@
 
 ## 研究問題
 
-**背景。** CoAT 在音訊與文字回答之間加入連續思考位置。論文的 Qwen2-Audio 在 MMAU 由 52.50% 提高到 66.90%，回答時仍能讀取原音訊。影像研究也觀察到模型可能沿用原輸入，使得 latent 對答案的影響很小。這提供了音訊端可以直接檢驗的假說。[CoAT](https://arxiv.org/html/2606.18273v2) · [Visual Latents Know More Than They Say](https://arxiv.org/abs/2605.02735)
+**背景。** CoAT 在音訊與文字回答之間加入連續思考位置。論文的 Qwen2-Audio 在 MMAU 由 52.50% 提高到 66.90%，回答時仍能讀取原音訊。影像研究也觀察到模型可能沿用原輸入，使得 latent 對答案的影響很小。這提供了音訊端可以直接檢驗的假說。[CoAT](https://arxiv.org/html/2606.18273v2) · [Visual Latents Know More Than They Say](https://arxiv.org/abs/2605.02735) · 完整的相關研究與定位見下一節
 
 **主問題。** 當回答端仍然能讀取原音訊，替換 Qwen 自己產生的 latent，會不會改變它的答案？在這個專題裡，以固定模型後的 latent 介入操作化「有沒有用到」。答案對 latent 有反應、反應與聲音證據一致、以及 latent 是否承載多步推理，是深度不同的三個主張。前兩個是本提案要測的問題，多步推理留待後續研究。
 
@@ -14,7 +14,43 @@
 2. **latent 傳遞的內容。** 同一題換成相反聲音證據，答案是否往來源錄音的正解移動？遮掉寫入端的題目或獨立調換兩端的選項順序，可以進一步檢查是否直接傳遞答案。
 3. **證據與容量。** 改變 K 或回答端，哪些聲音線索仍可由獨立讀出器辨識，哪些會影響實際作答？
 
-**暫定題目。** 音訊 LLM 會用自己產生的 latent 答題嗎？（*Do audio language models use their own latents to answer questions?*）
+**暫定題目（二選一，待三人確認）。**
+
+- 音訊 LLM 會用自己產生的 latent 答題嗎？（*Do audio language models use their own latents to answer questions?*）
+- 音訊 LLM 的 latent：被沉默，還是只在傳答案？（*Silenced or relaying? What audio LLMs' latent thoughts actually carry*）
+
+第二個題目把重點放在延伸問題 2。理由見下一節。
+
+## 定位與相關研究（2026-11-25 查證）
+
+**影像端已經做過的。** 「latent 被繞過」的因果診斷在影像端已經有好幾篇，介入方式和 B4 幾乎相同，所以本專題不主張首先發現這個現象。
+
+| 研究 | 做了什麼 | 和本專題的關係 |
+|---|---|---|
+| [Imagination Helps Visual Reasoning, But Not Yet in Latent Space](https://arxiv.org/abs/2602.22766)（ICML 2026） | 因果中介分析找到兩個斷點：輸入大幅改變，latent 幾乎不變；改動 latent，答案幾乎不變（V* 甚至 +0.5%）。 | B4 Soft 的結果是第二個斷點的音訊版 |
+| [What's Holding Back Latent Visual Reasoning?](https://arxiv.org/abs/2605.18445) | 把 latent 歸零、加噪、換成隨機區域，準確率幾乎不變；內文稱為 latent bypass problem。 | 介入設計與 B4 相同 |
+| [Leveraging Latent Visual Reasoning in Silence](https://arxiv.org/abs/2605.18641)（NeurIPS 2026） | latent 換成隨機雜訊或直接拿掉，空間推理幾乎不掉；RL 後訓練讓模型更少產生 latent。有程式碼。 | 同上 |
+| [Beyond Visual Memory](https://arxiv.org/abs/2606.01287) | 拆成 latent 位置、邊界 token 與格式；在其中幾種設定下，只留邊界 token 能保住 78–100% 的增益。 | 對應 B4 的 K=0 對照；B4 的 K=0 與 Soft 相同 |
+| [Visual Latents Know More Than They Say](https://arxiv.org/abs/2605.02735)（NeurIPS 2026） | 以拿掉、加噪、換別題 latent 診斷「沉默」；推論時凍結模型、每題優化 latent 20 步（題目引導的對比對齊，加上 latent 位置 entropy 遞減的 reward）。有[程式碼](https://github.com/zhangxin-xd/Unsilencing-Latent-Reasoning)。 | 影像端的診斷加解法；可作為 Soft 的推論時修正 |
+| [Reason Through the Latent! Making Latent Visual Reasoning Necessary](https://arxiv.org/abs/2609.06746)（CVRR） | 作答前移除影像狀態與多模態 KV cache，只留遞迴 latent。 | 影像版的 Hard 條件 |
+
+**音訊端已經做過的。** 音訊端有 latent reasoning 方法，也有「推理時注意力離開音訊」的觀察，但都沒有「固定模型、只改 latent、看答案變不變」的檢驗。
+
+| 研究 | 做了什麼 | 沒做的 |
+|---|---|---|
+| [CoAT](https://arxiv.org/html/2606.18273v2) | 每個音訊 token 配一個思考位置，以專家特徵蒸餾訓練；Qwen2-Audio 的 MMAU 由 52.50 到 66.90。回答時仍讀得到音訊。 | 沒有 latent 介入，沒有公開權重 |
+| [JELAR](https://arxiv.org/abs/2609.34407) | 以凍結 WavJEPA 特徵作 latent 目標，backbone 是 Audio-Reasoner；MMAU-mini +2.70、MMAR +9.10。 | 沒有 latent 介入 |
+| [DeALR](https://arxiv.org/abs/2611.15439)（2026/11） | 不訓練，在凍結的 Qwen2.5-Omni、Qwen2-Audio 上，每題插入 8 個思考向量與 24 個音訊片段向量，以模型信心為 reward 優化 15 步，作答前換回乾淨音訊片段。MMAU：Qwen2-Audio 58.4 → 60.7。 | 沒有改動思考向量看答案的檢驗（證據是元件消融與 attention 比例）；不研究訓練過的 latent 模型；沒找到程式碼 |
+| [SPARE](https://arxiv.org/abs/2609.20849)（Interspeech 2026） | SALMONN 13B；假設長推理序列使注意力離開音訊。 | 不是 latent 介入 |
+
+**本專題的定位。**
+
+1. **音訊端的「latent 到答案」斷點。** 在訓練過的 CoAT 式模型上，用固定模型的介入直接量答案是否依賴 latent。B4 Soft 的初步結果是不依賴。這一層是把影像端的發現搬到音訊端確認。
+2. **latent 被用上之後傳的是什麼（主要新意）。** CVRR 等做法讓 latent 變成必要，但「必要」不代表 latent 帶的是感官證據。在音訊上已有跡象顯示，寫入端看得到題目時，latent 傳的是已經想好的答案：B3 的 K=1 就等於完整音訊，錯置題會讓答案反轉；B4 Hard 在兩端選項順序不一致時只答對 7–11%。要區分「傳答案」和「傳證據」，需要寫入端不看題、兩端獨立換選項順序、同一份 latent 改問另一題、同題配對交換等對照。
+3. **回答端讀取條件的比較。** 同一個寫入端，配 Soft（如 CoAT）、Hard（如 CVRR）、Mid（訓練時遮音訊）。
+4. **選做：檢驗推論時修正法。** 用同一組介入，檢查 Unsilencing 或 DeALR 式優化後的 latent，有沒有真的被答案用上。
+
+上表的描述都對過原文。其他候選文獻（Echo、MATA、Audio-Aware Decoding、AURAL、HyPeR、LatentOmni、Hidden in Plain Sight、Amnesic Probing 等）尚未逐篇查證，寫進報告前要先讀原文。
 
 ## 主實驗與對照
 
@@ -50,8 +86,10 @@ Qwen2-Audio 第一次讀音訊、題目和選項，以 K 個可學習位置的�
 ## 下一步
 
 1. **重評 B4（已完成，2026-11-25）。** 逐題分數在 [phase2/b4-pilot](phase2/b4-pilot)，結果見下方〈B3／B4 研究紀錄〉。兩種選項順序分開看結論相同：Soft 在 MMAU 為 67.8／64.1，Hard 66.7／66.3，Mid（無音訊）63.7／63.9。寫入端不看題的 Hard 需先修好訓練，才能做下一步的對照。
-2. **做同題證據置換。** 用答案相反的配對錄音，固定回答端的音訊，交換 Qwen 產生的 latent。比較答案變動率及朝來源正解的分數變化。加入寫入端不看題的對照，並用獨立改選項順序檢查答案字母捷徑。現有 B4 的跨題任意交換先作開發診斷。
-3. **固定確認方案。** 事先指定主要對照、同題分數方向、最小有意義的效應與錄音來源切分，再評新聲源及多個 seed。MMAR 保留到方案固定後評估。其他 K 和題型可作後續擴展。
+2. **先修好寫入端不看題的 Hard。** 目前訓練 loss 停在 ln 4。沒有它，「傳答案或傳證據」的對照做不起來。
+3. **做同題證據置換。** 用答案相反的配對錄音，固定回答端的音訊，交換 Qwen 產生的 latent。比較答案變動率及朝來源正解的分數變化。加入寫入端不看題的對照，並用獨立改選項順序檢查答案字母捷徑。現有 B4 的跨題任意交換先作開發診斷。
+4. **固定確認方案。** 事先指定主要對照、同題分數方向、最小有意義的效應與錄音來源切分，再評新聲源及多個 seed。MMAR 保留到方案固定後評估。其他 K 和題型可作後續擴展。
+5. **選做：推論時修正法。** 以 Unsilencing 公開程式碼為起點，套用到 Soft checkpoint，再用同一組介入檢查優化後的 latent 是否被答案使用。
 
 <details>
 <summary>舊的研究問題與 2×2 方向提案（2026-11-24 以前的寫法，保留作紀錄）</summary>
