@@ -1,0 +1,22 @@
+{
+ "config": {
+  "reader": "soft",
+  "k": 0,
+  "think": false,
+  "lora": false,
+  "blind_writer": false,
+  "drop": null,
+  "seed": 17,
+  "steps": 0,
+  "train": "avqa-train",
+  "lora_spec": {
+   "rank": 8,
+   "alpha": 16,
+   "modules": "q_proj,v_proj"
+  }
+ },
+ "train_items": 0,
+ "loss_by_200": [],
+ "train_seconds": 0.0001385211944580078,
+ "peak_allocated_GiB": null
+}
