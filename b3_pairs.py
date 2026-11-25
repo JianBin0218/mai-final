@@ -47,6 +47,9 @@ def main():
                 arms[f"b2-{data}-k4-s{seed}-audio"] = lambda audio, pair, ext=ext: [(None, ext.latent(audio, None))]
     for run in sorted(Path("runs/b3-pilot").glob("*/state.pt")):
         config = json.loads((run.parent / "train.json").read_text())["config"]
+        # A LoRA arm mutates the shared Backbone and would also change the other arms' reader.
+        if config["arm"] not in ("internal", "internal-blind"):
+            continue
         arm = Internal(model, config["arm"], config["k"])
         arm.load(torch.load(run, weights_only=True))
         if arm.blind:

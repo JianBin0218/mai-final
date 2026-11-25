@@ -17,7 +17,8 @@ Controls: --k 0 keeps the start/end tokens and the same LoRA but no latents (the
 
 Scoring applies interventions to the latents of every item: normal, swap (another item's latents), mean (the
 evaluation-set mean latent), zero, noise (Gaussian at the latents' RMS added), and for readers that can see audio,
-the same without audio. Choices are scored in the original and the reversed order.
+the same without audio. Choices are scored in the original and the reversed order, with the writer and reader
+using the same order. --writer-choice-order fixed-original keeps the writer's original order as a separate control.
 
     python b4_think.py train --reader soft --k 4 --seed 17 --steps 3000 --out runs/b4/soft-k4-s17
     python b4_think.py score --eval mmau --out runs/b4/soft-k4-s17
@@ -132,41 +133,51 @@ def load(name, limit=0):
     return items[:limit] if limit else items
 
 
-def score(r, items, out, cache, seed):
+def score(r, items, out, cache, seed, writer_choice_order="matched"):
     """Per item, order and condition: the predicted choice (mapped back to the original order) and all logits."""
     reader_audio = r.c["reader"] in ("soft", "mid")
-    with torch.no_grad():
-        latents = [r.write(cache(x["path"]), prompt(x["question"], x["choices"])) for x in items]
-    has_latents = latents[0] is not None
-    if has_latents:
-        stack = torch.stack(latents)
-        mean, rms = stack.mean(0), stack.pow(2).mean().sqrt()
-    generator = torch.Generator(device="cuda").manual_seed(seed)
     n = len(items)
-    conditions = {"normal": lambda i: latents[i]}
-    if has_latents:
-        conditions.update(swap=lambda i: latents[(i + n // 2) % n], mean=lambda i: mean, zero=lambda i: torch.zeros_like(mean),
-                          noise=lambda i: latents[i] + rms * torch.randn(latents[i].shape, device="cuda", generator=generator))
-    plan = [(name, audio) for name in conditions for audio in ((True, False) if reader_audio else (False,))]
-    if not has_latents and r.think is None and r.lora is None:
-        plan = [("normal", True), ("normal", False)]  # base model with and without audio
+    orders = []
+    for step in (1, -1):
+        indices = [list(range(len(x["choices"])))[::step] for x in items]
+        texts = [prompt(x["question"], [x["choices"][j] for j in index]) for x, index in zip(items, indices)]
+        orders.append((indices, texts))
+    writer_orders = (0, 1) if writer_choice_order == "matched" and not r.c["blind_writer"] else (0, 0)
+    with torch.no_grad():
+        latents = {order: [r.write(cache(x["path"]), text) for x, text in zip(items, orders[order][1])]
+                   for order in sorted(set(writer_orders))}
+        has_latents = latents[0][0] is not None
+        stacks = {order: torch.stack(values) for order, values in latents.items()} if has_latents else {}
+        means = {order: s.mean(0) for order, s in stacks.items()}
+        scales = {order: s.pow(2).mean().sqrt() for order, s in stacks.items()}
+    generator = torch.Generator(device="cuda").manual_seed(seed)
+    is_base = not has_latents and r.think is None and r.lora is None
+    audio_conditions = (True, False) if reader_audio or is_base else (False,)
     partial = out.with_suffix(".partial")
     with partial.open("w", newline="") as handle, torch.no_grad():
         writer = csv.writer(handle)
-        writer.writerow(["item", "id", "task", "category", "order", "condition", "audio", "answer", "pred", "logits"])
+        writer.writerow(["item", "id", "task", "category", "order", "condition", "audio", "answer", "pred", "logits", "writer_order"])
         for i, x in enumerate(items):
             audio = cache(x["path"])
-            for order in (0, 1):
-                index = list(range(len(x["choices"])))[::(1 if order == 0 else -1)]
-                text = prompt(x["question"], [x["choices"][j] for j in index])
-                for name, with_audio in plan:
-                    logits = r.read(audio if with_audio else None, text, conditions[name](i), len(index))
-                    pred = index[int(logits.argmax())]
-                    back = [0.0] * len(index)
-                    for slot, j in enumerate(index):
-                        back[j] = float(logits[slot])
-                    writer.writerow([i, x["id"], x["task"], x["category"], order, name, int(with_audio), x["answer"], pred,
-                                     ";".join(f"{v:.3f}" for v in back)])
+            for order, (indices, texts) in enumerate(orders):
+                index = indices[i]
+                writer_order = writer_orders[order]
+                values = latents[writer_order]
+                conditions = {"normal": values[i]}
+                if has_latents:
+                    mean, rms = means[writer_order], scales[writer_order]
+                    noise = torch.randn(values[i].shape, device="cuda", generator=generator)
+                    conditions.update(swap=values[(i + n // 2) % n], mean=mean, zero=torch.zeros_like(mean),
+                                      noise=values[i] + rms * noise)
+                for name, latent in conditions.items():
+                    for with_audio in audio_conditions:
+                        logits = r.read(audio if with_audio else None, texts[i], latent, len(index))
+                        pred = index[int(logits.argmax())]
+                        back = [0.0] * len(index)
+                        for slot, j in enumerate(index):
+                            back[j] = float(logits[slot])
+                        writer.writerow([i, x["id"], x["task"], x["category"], order, name, int(with_audio), x["answer"], pred,
+                                         ";".join(f"{v:.3f}" for v in back), writer_order if has_latents else ""])
     partial.replace(out)
 
 
@@ -187,6 +198,8 @@ def main():
     parser.add_argument("--limit", type=int, default=0, help="score only the first N items of each set (smoke tests)")
     parser.add_argument("--out", type=Path, required=True)
     parser.add_argument("--feature-cache", type=Path, default=Path("cache/features"))
+    parser.add_argument("--writer-choice-order", choices=["matched", "fixed-original"], default="matched",
+                        help="Use matching writer and reader choice orders, or always write from the original order")
     args = parser.parse_args()
     if args.action == "score":
         config = json.loads((args.out / "train.json").read_text())["config"]
@@ -261,7 +274,7 @@ def main():
         (args.out / "train.json").write_text(json.dumps(result, indent=1))
     model.lm.eval()
     for name in args.eval:
-        score(r, load(name, args.limit), args.out / f"scores-{name}.csv", cache, config["seed"])
+        score(r, load(name, args.limit), args.out / f"scores-{name}.csv", cache, config["seed"], args.writer_choice_order)
         print("scored", name, flush=True)
 
 
